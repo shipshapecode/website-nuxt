@@ -1,0 +1,111 @@
+@import "fonts";
+@import "shevy/shevy";
+@import "variables";
+@import "tailwind";
+
+// Shevy
+
+$shevy: (
+  base-font-scale: (3.5, 2.5, 2, 1.5, 1.25, 1),
+  base-font-size: 18px,
+  base-line-height: 2,
+  proximity: true
+  // proximity-factor: 0.5
+);
+
+@include headings;
+@include body;
+@include content;
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  transition-property: background-color, color, fill;
+
+  &:active,
+  &:visited {
+    color: $red;
+  }
+
+  &:hover {
+    color: $navy;
+  }
+}
+
+body {
+  background-color: $white;
+  color: $grey-light;
+  font-family: 'Pier Sans', sans-serif;
+  font-weight: lighter;
+}
+
+.cd-form {
+  input[type="submit"] {
+    &:disabled {
+      background-color: $grey;
+      // pointer-events: none;
+
+      /* Button disabled - CSS color class */
+      color: darken($white, 20%);
+      cursor: not-allowed;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .cd-form .contact-item {
+    margin: 20px 0;
+  }
+}
+
+.fill-white {
+  path {
+    fill: $white;
+  }
+}
+
+.hero {
+  padding: 0 2rem;
+}
+
+.learn-more {
+  color: $navy;
+  font-weight: bold;
+
+  svg {
+    fill: $navy;
+    margin-bottom: -0.2rem;
+    transition-duration: 0.25s;
+    transition-property: margin-left;
+  }
+
+  &:active,
+  &:visited {
+    color: $navy;
+  }
+
+  &:hover {
+    color: $red;
+    cursor: pointer;
+
+    svg {
+      fill: $red;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.section {
+  padding: 5rem 2rem;
+}
+
+.section-content {
+  @apply .max-w-4xl .w-full;
+}

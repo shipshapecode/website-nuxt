@@ -1,0 +1,67 @@
+<template>
+  <nav class="flex items-center justify-between flex-wrap p-6">
+    <div class="flex flex-no-shrink items-center pl-2 pr-2 pt-2">
+      <a href="/" class="logo inline-flex">
+        <div
+          class="inline-block"
+          itemprop="logo"
+          itemscope
+          itemtype="https://schema.org/ImageObject"
+          itemid="shipshapelogo"
+        >
+          <img
+            alt="Ship Shape Logo"
+            class="mr-2"
+            itemprop="url"
+            height="38px"
+            src="/assets/svgs/logo.svg"
+            width="38px"
+          >
+          <meta itemprop="height" content="128">
+          <meta itemprop="width" content="128">
+        </div>
+        <div
+          class="-mt-1 text-navy text-3xl"
+          itemprop="name"
+        >
+          Ship Shape
+        </div>
+      </a>
+    </div>
+
+    <div class="block lg:hidden">
+      <button
+        aria-label="Open navigation menu"
+        class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
+      >
+      </button>
+    </div>
+
+    <div class="nav-links hidden lg:flex">
+      <div class="lg:flex lg:flex-grow lg:justify-end">
+        <div class="flex lg:hidden justify-end m-4">
+          <button
+            aria-label="Close navigation menu"
+            class="cursor-pointer"
+          >
+          </button>
+        </div>
+        <a class="nav-link" href="/work/">
+          Case Studies
+        </a>
+        <a class="nav-link" href="/work/">
+          Ember Consulting
+        </a>
+        <a class="nav-link" href="/work/">
+          Open Source
+        </a>
+        <a class="nav-link" href="/work/">
+          Blog
+        </a>
+        <a class="nav-link contact-link" href="/work/">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+</template>

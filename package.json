@@ -1,0 +1,45 @@
+{
+  "name": "website-nuxt",
+  "version": "1.0.0",
+  "description": "Nuxt port of shipshape.io",
+  "author": "Robert Wagner",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "nuxt": "^2.4.0",
+    "nuxt-svg": "^0.1.4",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "autoprefixer": "^8.6.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": ">=2.14.0",
+    "eslint-plugin-jest": ">=21.24.1",
+    "eslint-plugin-node": ">=7.0.1",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "tailwindcss": "^0.7.0",
+    "vue-jest": "^3.0.2"
+  }
+}
