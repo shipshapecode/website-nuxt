@@ -1,5 +1,7 @@
 # website-nuxt
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/shipshapecode/website-nuxt.svg)](https://greenkeeper.io/)
+
 > Nuxt port of shipshape.io
 
 ## Build Setup
