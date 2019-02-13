@@ -3,7 +3,7 @@
     <div class="section-content">
       <h1 class="heading">Case Studies</h1>
 
-      <clients-grid/>
+      <ClientsGrid/>
     </div>
   </div>
 </template>

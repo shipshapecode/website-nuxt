@@ -1,7 +1,7 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap p-6">
     <div class="flex flex-no-shrink items-center pl-2 pr-2 pt-2">
-      <a href="/" class="logo inline-flex">
+      <nuxt-link to="/" class="logo inline-flex">
         <div
           class="inline-block"
           itemprop="logo"
@@ -26,7 +26,7 @@
         >
           Ship Shape
         </div>
-      </a>
+      </nuxt-link>
     </div>
 
     <div class="block lg:hidden">
@@ -46,21 +46,21 @@
           >
           </button>
         </div>
-        <a class="nav-link" href="/work/">
+        <nuxt-link class="nav-link" to="/work/">
           Case Studies
-        </a>
-        <a class="nav-link" href="/work/">
+        </nuxt-link>
+        <nuxt-link class="nav-link" to="/ember-consulting/">
           Ember Consulting
-        </a>
-        <a class="nav-link" href="/work/">
+        </nuxt-link>
+        <nuxt-link class="nav-link" to="/open-source/">
           Open Source
-        </a>
-        <a class="nav-link" href="/work/">
+        </nuxt-link>
+        <nuxt-link class="nav-link" to="/blog/">
           Blog
-        </a>
-        <a class="nav-link contact-link" href="/work/">
+        </nuxt-link>
+        <nuxt-link class="nav-link contact-link" to="/contact/">
           Contact
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </nav>

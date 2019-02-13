@@ -25,33 +25,33 @@
 
       <div class="flex flex-wrap items-center justify-center flex-1">
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <a href="/work/">
+          <nuxt-link to="/work/">
             Case Studies
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <a href="/ember-consulting/">
+          <nuxt-link to="/ember-consulting/">
             Ember Consulting
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <a href="/open-source/">
+          <nuxt-link to="/open-source/">
             Open Source
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <a href="/blog/">
+          <nuxt-link to="/blog/">
             Blog
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <a href="/contact/">
+          <nuxt-link to="/contact/">
             Contact
-          </a>
+          </nuxt-link>
         </div>
       </div>
 
