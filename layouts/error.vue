@@ -1,13 +1,20 @@
 <template>
-  <div class="container">
-    <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>An error occurred</h1>
-    <nuxt-link to="/">Home page</nuxt-link>
+  <div v-if="error.statusCode === 404" class="section flex flex-wrap justify-center">
+    <div class="section-content text-center">
+      <div class="h-auto max-w-md w-full">
+        <LostAtSea/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  import LostAtSea from '~/assets/svgs/404.svg?inline';
+
   export default {
+    components: {
+      LostAtSea
+    },
     props: ['error']
   };
 </script>
