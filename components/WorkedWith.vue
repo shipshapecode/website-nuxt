@@ -9,29 +9,19 @@
 
       <div class="flex flex-wrap items-center w-full pb-8">
         <div class="client-logo">
-          <div class="h-full w-full max-w-xs">
-            <ScoutLogo/>
-          </div>
+          <ScoutLogo :class="'h-full w-full max-w-xs'"/>
         </div>
         <div class="client-logo">
-          <div class="h-full w-full max-w-xs">
-            <GreenlightGuruLogo/>
-          </div>
+          <GreenlightGuruLogo :class="'h-full w-full max-w-xs'"/>
         </div>
         <div class="client-logo">
-          <div class="h-full w-full max-w-xs">
-            <NetflixLogo/>
-          </div>
+          <NetflixLogo :class="'h-full w-full max-w-xs'"/>
         </div>
         <div class="client-logo">
-          <div class="h-full w-full max-w-xs">
-            <MarianaTekLogo/>
-          </div>
+          <MarianaTekLogo :class="'h-full w-full max-w-xs'"/>
         </div>
         <div class="client-logo">
-          <div class="h-full w-full max-w-xs">
-            <SocialCodeLogo/>
-          </div>
+          <SocialCodeLogo :class="'h-full w-full max-w-xs'"/>
         </div>
       </div>
 

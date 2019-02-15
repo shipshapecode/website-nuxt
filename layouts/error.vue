@@ -1,9 +1,7 @@
 <template>
   <div v-if="error.statusCode === 404" class="section flex flex-wrap justify-center">
     <div class="section-content text-center">
-      <div class="h-auto max-w-md w-full">
-        <LostAtSea/>
-      </div>
+      <LostAtSea :class="'h-auto max-w-md w-full'"/>
     </div>
   </div>
 </template>

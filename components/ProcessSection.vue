@@ -3,9 +3,7 @@
     <div class="section-content">
       <div class="flex flex-wrap items-center pt-6 pb-6">
         <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
-          <div class="max-w-md">
-            <Design/>
-          </div>
+          <Design :class="'max-w-md'"/>
         </div>
 
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
@@ -38,17 +36,13 @@
         </div>
 
         <div class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2">
-          <div class="max-w-md">
-            <Build/>
-          </div>
+          <Build :class="'max-w-md'"/>
         </div>
       </div>
 
       <div class="flex flex-wrap items-center pt-6 pb-6">
         <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
-          <div class="max-w-md">
-            <Ship/>
-          </div>
+          <Ship :class="'max-w-md'"/>
         </div>
 
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">

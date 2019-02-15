@@ -10,34 +10,22 @@
 
         <div class="flex flex-wrap w-full lg:pl-32 lg:w-4/5 text-grey">
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <div class="w-full h-full p-4 max-w-xxs">
-              <Ember/>
-            </div>
+            <Ember :class="'w-full h-full p-4 max-w-xxs'"/>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <div class="w-full h-full p-4 max-w-xxs">
-              <EmberCLI/>
-            </div>
+            <EmberCLI :class="'w-full h-full p-4 max-w-xxs'"/>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <div class="w-full h-full p-4 max-w-xxs">
-              <EmberData/>
-            </div>
+            <EmberData :class="'w-full h-full p-4 max-w-xxs'"/>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <div class="w-full h-full p-4 max-w-xxs">
-              <Node/>
-            </div>
+            <Node :class="'w-full h-full p-4 max-w-xxs'"/>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <div class="w-full h-full p-4 max-w-xxs">
-              <Sass/>
-            </div>
+            <Sass :class="'w-full h-full p-4 max-w-xxs'"/>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <div class="w-full h-full p-4 max-w-xxs">
-              <Travis/>
-            </div>
+            <Travis :class="'w-full h-full p-4 max-w-xxs'"/>
           </div>
         </div>
       </div>

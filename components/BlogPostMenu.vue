@@ -13,17 +13,19 @@
       </nuxt-link>
 
       <div class="attribution">
-        By {{ post.authorId}} {{ post.date }}
+        By {{ post.authorId }} {{ post.date }}
       </div>
 
-      <!--div class="tags pb-4 pt-4">
+      <div class="tags pb-4 pt-4">
         <nuxt-link
-          class="blog-tag"
-          :to="/"
           v-for="tag in post.categories"
+          :key="tag"
+          to="/"
+          class="blog-tag"
         >
+          {{ tag }}
         </nuxt-link>
-      </div-->
+      </div>
     </div>
   </div>
 </template>
