@@ -34,7 +34,11 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/pwa', 'nuxt-svg'],
+  modules: [
+    '@nuxtjs/pwa',
+    'nuxtent',
+    'nuxt-svg'
+  ],
 
   /*
   ** Build configuration
