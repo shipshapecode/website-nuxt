@@ -14,7 +14,7 @@
             class="mr-2"
             itemprop="url"
             height="38px"
-            src="/assets/svgs/logo.svg"
+            src="~assets/svgs/logo.svg"
             width="38px"
           >
           <meta itemprop="height" content="128">
