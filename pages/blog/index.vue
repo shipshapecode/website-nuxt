@@ -1,18 +1,21 @@
 <template>
-  <section class="container">
-    <nuxt-link to="/">Home</nuxt-link>
+  <div>
     <h1>Blog posts</h1>
     <ul>
-      <li v-for="post in posts" :key="post.permalink">
-        <nuxt-link :to="post.permalink">{{ post.linktitle || post.title }}</nuxt-link>
-      </li>
+      <BlogPostMenu :posts="posts"/>
     </ul>
-  </section>
+  </div>
 </template>
 
 <script>
+  import BlogPostMenu from '~/components/BlogPostMenu.vue';
+
   export default {
-    async asyncData({ app, route }) {
+    components: {
+      BlogPostMenu
+    },
+
+    async asyncData({ app }) {
       const posts = await app.$content('/').getAll();
       return { posts };
     }

@@ -24,7 +24,10 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~/assets/css/main.scss'],
+  css: [
+    '~/assets/css/main.scss',
+    'prismjs/themes/prism-okaidia.css'
+  ],
 
   /*
   ** Plugins to load before mounting the App

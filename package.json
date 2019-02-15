@@ -21,6 +21,7 @@
     "nuxt": "^2.4.0",
     "nuxt-svg": "^0.1.4",
     "nuxtent": "^1.4.1",
+    "prismjs": "^1.15.0",
     "sass-loader": "^7.1.0"
   },
   "devDependencies": {

@@ -46,19 +46,19 @@
           >
           </button>
         </div>
-        <nuxt-link class="nav-link" to="/work/">
+        <nuxt-link class="nav-link" to="/work">
           Case Studies
         </nuxt-link>
-        <nuxt-link class="nav-link" to="/ember-consulting/">
+        <nuxt-link class="nav-link" to="/ember-consulting">
           Ember Consulting
         </nuxt-link>
-        <nuxt-link class="nav-link" to="/open-source/">
+        <nuxt-link class="nav-link" to="/open-source">
           Open Source
         </nuxt-link>
-        <nuxt-link class="nav-link" to="/blog/">
+        <nuxt-link class="nav-link" to="/blog">
           Blog
         </nuxt-link>
-        <nuxt-link class="nav-link contact-link" to="/contact/">
+        <nuxt-link class="nav-link contact-link" to="/contact">
           Contact
         </nuxt-link>
       </div>

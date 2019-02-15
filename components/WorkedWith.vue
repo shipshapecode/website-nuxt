@@ -36,7 +36,7 @@
       </div>
 
       <div class="flex justify-center w-full">
-        <nuxt-link to="/work/" class="btn-navy mb-12">
+        <nuxt-link to="/work" class="btn-navy mb-12">
           View case studies
         </nuxt-link>
       </div>
