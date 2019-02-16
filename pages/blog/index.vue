@@ -2,7 +2,9 @@
   <div class="blog-posts section flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex items-center">
-        <h1>Blog</h1>
+        <h1>
+          Blog
+        </h1>
 
         <a
           class="p-12"
@@ -25,15 +27,22 @@
 
 <script>
   import BlogPostMenu from '~/components/BlogPostMenu.vue';
+  import slugs from '~/posts.json';
 
   export default {
     components: {
       BlogPostMenu
     },
 
-    async asyncData({ app }) {
-      const posts = await app.$content('/').getAll();
-      return { posts };
+    asyncData() {
+      async function asyncImport(slug) {
+        const post = await import(`~/blog/posts/${slug}.md`);
+        return post.attributes;
+      }
+
+      return Promise.all(slugs.map(slug => asyncImport(slug))).then((posts) => {
+        return { posts };
+      });
     }
   };
 </script>

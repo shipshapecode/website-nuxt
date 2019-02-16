@@ -2,6 +2,21 @@ const Prism = require('prismjs');
 const axios = require('axios');
 const path = require('path');
 const pkg = require('./package');
+const fs = require('fs');
+const blogPosts = fs.readdirSync('blog/posts/');
+
+const getBlogPosts = () => {
+  const slugs = blogPosts.map((post) => {
+    return post.slice(0, -3);
+  });
+
+  fs.writeFileSync(
+    path.resolve(__dirname, 'posts.json'),
+    JSON.stringify(slugs, null, 2)
+  );
+
+  return slugs.map(slug => `/blog/${slug}`);
+};
 
 module.exports = {
   mode: 'universal',
@@ -72,26 +87,8 @@ module.exports = {
     }
   },
 
-  sitemap: {
-    generate: true,
-    routes: () => {
-      return axios
-        .get('http://localhost:3000/content-api')
-        .then(res => {
-          return res.data['content-endpoints'];
-        })
-        .then(endpoints => {
-          return Promise.all(
-            endpoints.map(endpoint => {
-              return axios.get(`http://localhost:3000/content-api${endpoint}`);
-            })
-          );
-        })
-        .then(endpoints => {
-          return endpoints.reduce((routes, endpoint) => {
-            return routes.concat(endpoint.data.map(page => page.permalink));
-          }, []);
-        });
-    }
+  generate: {
+    routes: []
+      .concat(getBlogPosts())
   }
 };
