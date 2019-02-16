@@ -8,8 +8,12 @@
 
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
           <div class="lg:max-w-md">
-            <h3 class="heading">Design</h3>
-            <h3 class="sub-heading">Measure twice, cut once</h3>
+            <h3 class="heading">
+              Design
+            </h3>
+            <h3 class="sub-heading">
+              Measure twice, cut once
+            </h3>
 
             <p>
               We take the time necessary to develop a sound architecture and to ensure we
@@ -23,8 +27,12 @@
       <div class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row">
         <div class="w-full flex lg:pr-12 lg:w-1/2">
           <div class="lg:max-w-md">
-            <h3 class="heading">Build</h3>
-            <h3 class="sub-heading">Convention over configuration</h3>
+            <h3 class="heading">
+              Build
+            </h3>
+            <h3 class="sub-heading">
+              Convention over configuration
+            </h3>
 
             <p>
               We use the latest versions of Ember.js and Ember-CLI in all of our projects,
@@ -47,8 +55,12 @@
 
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
           <div class="lg:max-w-md">
-            <h3 class="heading">Ship</h3>
-            <h3 class="sub-heading">All Aboard</h3>
+            <h3 class="heading">
+              Ship
+            </h3>
+            <h3 class="sub-heading">
+              All Aboard
+            </h3>
 
             <p>
               We'll keep you in the loop with regular demos, frequent calls, chats, dinners,

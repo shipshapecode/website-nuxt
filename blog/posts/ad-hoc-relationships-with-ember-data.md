@@ -3,6 +3,7 @@ authorId: rwwagner90
 categories: 
   - ember.js
   - ember-data
+date: '2018-08-07'
 nextSlug: offline-first-prember-and-service-workers
 nextTitle: Offline First Prember Apps with Service Workers
 previousSlug: forcing-trailing-slashes-for-routes

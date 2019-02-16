@@ -1,4 +1,6 @@
+const Prism = require('prismjs');
 const axios = require('axios');
+const path = require('path');
 const pkg = require('./package');
 
 module.exports = {
@@ -40,7 +42,6 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
-    'nuxtent',
     'nuxt-svg',
     '@nuxtjs/sitemap'
   ],
@@ -62,6 +63,12 @@ module.exports = {
           exclude: /(node_modules)/
         });
       }
+
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        include: path.resolve(__dirname, 'blog')
+      });
     }
   },
 

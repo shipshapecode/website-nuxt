@@ -2,6 +2,7 @@
 authorId: rwwagner90
 categories: 
   - ember.js
+date: '2018-02-18'
 nextSlug: testing-ember-addons-in-an-app
 nextTitle: Testing Ember Addons in a Real App Using ember-cli-addon-tests
 previousSlug: static-blogs-with-prember-and-markdown

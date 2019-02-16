@@ -24,7 +24,9 @@
 
     <div class="section bg-grey-transparent flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="heading">Sponsored Open Source Development</h2>
+        <h2 class="heading">
+          Sponsored Open Source Development
+        </h2>
 
         <p>
           Ember could not be the incredible framework it is, without companies helping fund

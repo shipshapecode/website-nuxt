@@ -3,6 +3,7 @@ authorId: rwwagner90
 categories: 
   - ember.js
   - ember-data
+date: '2017-07-31'
 nextSlug: aiming-for-targets-with-ember
 nextTitle: Aiming for Targets with Ember
 previousSlug: ember-without-jquery

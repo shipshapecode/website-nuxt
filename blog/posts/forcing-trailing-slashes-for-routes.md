@@ -2,6 +2,7 @@
 authorId: rwwagner90
 categories: 
   - ember.js
+date: '2018-08-13'
 nextSlug: ad-hoc-relationships-with-ember-data
 nextTitle: Ad Hoc Relationships with Ember Data
 previousSlug: ember-data-belongs-to-find-or-create

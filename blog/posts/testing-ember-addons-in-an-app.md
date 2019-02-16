@@ -4,6 +4,7 @@ categories:
   - ember.js
   - ember addons
   - testing
+date: '2018-02-13'
 nextSlug: using-components-in-ember-mixin-unit-tests
 nextTitle: Using Components in Ember Mixin Unit Tests
 previousSlug: ember-3-1-testing-and-optional-features

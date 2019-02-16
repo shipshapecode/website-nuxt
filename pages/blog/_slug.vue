@@ -1,42 +1,32 @@
 <template>
-  <div itemscope itemtype="http://schema.org/BlogPosting">
-    <link itemprop="publisher" href="shipshapeorg">
-    <link itemprop="image" href="shipshapelogo">
-
-    <div class="section flex flex-wrap justify-center">
-      <div class="max-w-lg w-full">
-        <h1 class="blog-post-title" itemprop="headline">
-          {{ post.title }}
-        </h1>
-
-        <!--AuthorRow
-          @author={{this.author}}
-          @date={{this.date}}
-        >
-        </AuthorRow-->
-
-        <div class="post-content">
-          <nuxtent-body :body="post.body"/>
-        </div>
-
-        <!--BottomLinksWithPath
-          @nextLink="blog.post"
-          @nextLinkPath={{this.nextSlug}}
-          @nextLinkText={{this.nextTitle}}
-          @previousLink="blog.post"
-          @previousLinkPath={{this.previousSlug}}
-          @previousLinkText={{this.previousTitle}}
-        >
-        </BottomLinksWithPath-->
-      </div>
-    </div>
-  </div>
+  <BlogPost :post="post"/>
 </template>
 
 <script>
+  import BlogPost from '~/components/BlogPost.vue';
+
   export default {
-    async asyncData({ app, route, payload }) {
-      return { post: (await app.$content('/').get(route.path)) || payload };
+    components: {
+      BlogPost
+    },
+
+    async asyncData({ params }) {
+      const { attributes, html } = await import(`~/blog/posts/${params.slug}.md`);
+      const { authorId, date, nextSlug, nextTitle, previousSlug, previousTitle, title } = attributes;
+      const author = await import(`~/blog/authors/${authorId}.md`);
+
+      return {
+        post: {
+          author,
+          date,
+          html,
+          nextSlug,
+          nextTitle,
+          previousSlug,
+          previousTitle,
+          title
+        }
+      };
     }
   };
 </script>

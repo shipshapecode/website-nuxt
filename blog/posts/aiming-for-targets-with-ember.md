@@ -2,6 +2,7 @@
 authorId: rwwagner90
 categories:
   - ember.js
+date: '2017-04-29'
 nextSlug: ember-in-repo-addons
 nextTitle: Ember In-Repo Addons
 previousSlug: reloading-hasmany-relationships

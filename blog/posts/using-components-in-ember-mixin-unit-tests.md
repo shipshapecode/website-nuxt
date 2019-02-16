@@ -3,6 +3,7 @@ authorId: rwwagner90
 categories: 
   - ember.js
   - testing
+date: '2017-11-29'
 nextSlug: ember-without-jquery
 nextTitle: Removing jQuery from Ember - For Dummies
 previousSlug: testing-ember-addons-in-an-app

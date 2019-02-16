@@ -1,7 +1,9 @@
 <template>
   <div class="section flex flex-wrap justify-center">
     <div class="section-content">
-      <h1 class="heading">Case Studies</h1>
+      <h1 class="heading">
+        Case Studies
+      </h1>
 
       <ClientsGrid/>
     </div>

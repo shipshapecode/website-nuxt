@@ -5,6 +5,7 @@ categories:
   - shepherd.js
   - site tour
   - webpack
+date: '2019-02-05'
 nextSlug: ember-data-belongs-to-find-or-create
 nextTitle: Creating a Default Record When a belongsTo Request Errors
 previousSlug: ember-data-passing-query-params-to-save

@@ -6,6 +6,7 @@ categories:
   - markdown
   - prember
   - static
+date: '2018-04-04'
 nextSlug: ember-3-1-testing-and-optional-features
 nextTitle: Updating to Ember 3.1 and Enabling Optional Features
 previousSlug: ember-inspector-the-journey-so-far

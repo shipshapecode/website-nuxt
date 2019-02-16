@@ -7,6 +7,7 @@ categories:
   - meta
   - opengraph
   - prember
+date: '2018-04-15'
 nextSlug: ember-inspector-the-journey-so-far
 nextTitle: Ember Inspector - The Journey so Far
 previousSlug: offline-first-prember-and-service-workers

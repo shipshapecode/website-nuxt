@@ -3,6 +3,7 @@ authorId: rwwagner90
 categories: 
   - ember.js
   - ember inspector
+date: '2018-04-09'
 nextSlug: static-blogs-with-prember-and-markdown
 nextTitle: Static Blogs with Prember and Markdown
 previousSlug: ember-meta-tags-seo-social

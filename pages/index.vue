@@ -2,7 +2,9 @@
   <div>
     <HeroBlock :class="'home'">
       <template v-slot:content>
-        <h1 class="heading">Code that won't sink</h1>
+        <h1 class="heading">
+          Code that won't sink
+        </h1>
         <p>
           Ship Shape is a software consultancy specializing in all things Ember.
           We leverage Ember.js, and all the latest Ember addons and technologies,
