@@ -68,7 +68,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    extractCSS: true,
+    extractCSS: false,
 
     babel: {
       presets({ isServer }) {
