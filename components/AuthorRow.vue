@@ -27,7 +27,7 @@
         datetime="date"
         itemprop="datePublished dateModified"
       >
-        {{ date }}
+        {{ $dateFns.format(date) }}
       </time>
     </div>
   </div>

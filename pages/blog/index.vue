@@ -35,9 +35,23 @@
     },
 
     asyncData() {
+      const authors = {};
+
       async function asyncImport(slug) {
         const post = await import(`~/blog/posts/${slug}.md`);
+        await getAuthors(post.attributes);
         return post.attributes;
+      }
+
+      async function getAuthors(post) {
+        // If we don't already have a reference to the author, add it to the authors
+        if (!authors[post.authorId]) {
+          const author = await import(`~/blog/authors/${post.authorId}.md`);
+
+          authors[post.authorId] = author.attributes;
+        }
+
+        post.author = authors[post.authorId];
       }
 
       return Promise.all(slugs.map(slug => asyncImport(slug))).then((posts) => {

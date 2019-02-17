@@ -13,7 +13,7 @@
       </nuxt-link>
 
       <div class="attribution">
-        By {{ post.authorId }} {{ post.date }}
+        By {{ post.author.name }} {{ $dateFns.format(post.date) }}
       </div>
 
       <div class="tags pb-4 pt-4">

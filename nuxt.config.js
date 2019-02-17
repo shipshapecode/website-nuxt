@@ -58,6 +58,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/date-fns',
     '@nuxtjs/pwa',
     'nuxt-purgecss',
     'nuxt-svg',
@@ -104,6 +105,12 @@ module.exports = {
         include: path.resolve(__dirname, 'blog')
       });
     }
+  },
+
+  dateFns: {
+    locales: ['en'],
+    defaultLocale: 'en',
+    format: 'MM/DD/YYYY'
   },
 
   generate: {
