@@ -24,6 +24,8 @@
       </template>
     </HeroBlock>
 
+    <PortfolioContainer/>
+
     <div class="section bg-grey-transparent flex flex-wrap justify-center">
       <div class="section-content">
         <h2 class="heading">
@@ -46,12 +48,14 @@
   import Heart from '~/assets/svgs/heart1.svg?inline';
   import HeroBlock from '~/components/HeroBlock.vue';
   import OpenSourceIcon from '~/assets/svgs/hero-images/open-source.svg?inline';
+  import PortfolioContainer from '~/components/PortfolioContainer.vue';
 
   export default {
     components: {
       Heart,
       HeroBlock,
-      OpenSourceIcon
+      OpenSourceIcon,
+      PortfolioContainer
     },
 
     head() {

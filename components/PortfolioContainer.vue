@@ -1,0 +1,158 @@
+<template>
+  <div>
+    <div class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent">
+      <div class="section-content">
+        <h2 class="heading">JavaScript Libraries</h2>
+        <p>
+          We are passionate about JavaScript and all things UI related at Ship Shape. We are working hard
+          to create open source libraries for many common web app use cases.
+        </p>
+
+        <div class="flex flex-wrap justify-center">
+          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project flex-1">
+            <div>
+              <h3 class="text-navy">
+                Shepherd
+              </h3>
+
+              <h5 class="text-grey font-light">
+                Guide your users through a tour of your app
+              </h5>
+
+              <p>
+                Shepherd was initially created by HubSpot, and was taken over by Ship Shape in
+                2018. We did a complete rewrite, added full test coverage, and modernized everything.
+              </p>
+
+              <p>
+                <a
+                  class="learn-more"
+                  href="https://github.com/shipshapecode/shepherd"
+                  itemprop="codeRepository"
+                >
+                  View on GitHub
+                  <AngleRight :class="'h-4 w-4'"/>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-container section flex flex-wrap justify-center">
+      <div class="section-content">
+        <h2 class="heading">Ember Addons</h2>
+        <p>
+          The addons Ship Shape has created have been downloaded millions of times, and are used in
+          production apps of Fortune 100 companies.
+        </p>
+
+        <div class="flex flex-wrap justify-center">
+          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project w-full lg:w-1/3 lg:pr-8">
+            <div class="flex flex-wrap items-center justify-center">
+              <div>
+                <h3 class="text-navy">
+                  ember-shepherd
+                </h3>
+
+                <h5 class="text-grey font-light">
+                  An Ember addon for the site tour library Shepherd
+                </h5>
+
+                <p>
+                  ember-shepherd was originally written in 2015, and it still consistently ranks in
+                  the top 100 Ember addons on <a href="https://emberobserver.com/addons/ember-shepherd">Ember Observer</a>
+                  today. It is the best way to write site tours for your Ember app.
+                </p>
+
+                <p>
+                  <a
+                    class="learn-more"
+                    href="https://github.com/shipshapecode/ember-shepherd"
+                    itemprop="codeRepository"
+                  >
+                    View on GitHub
+                    <AngleRight :class="'h-4 w-4'"/>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project w-full lg:w-1/3 lg:pl-4 lg:pr-4">
+            <div class="flex flex-wrap items-center justify-center">
+              <div>
+                <h3 class="text-navy">
+                  ember-math-helpers
+                </h3>
+
+                <h5 class="text-grey font-light">
+                  Ember HTMLBars helpers for basic arithmetic
+                </h5>
+
+                <p>
+                  ember-math-helpers was inspired by the elegant simplicity of
+                  <a href="https://github.com/jmurphyau/ember-truth-helpers">ember-truth-helpers</a>.
+                  It aims to be a complete set of helpers for quick mathematical computations in your templates.
+                </p>
+
+                <p>
+                  <a
+                    class="learn-more"
+                    href="https://github.com/shipshapecode/ember-math-helpers"
+                    itemprop="codeRepository"
+                  >
+                    View on GitHub
+                    <AngleRight :class="'h-4 w-4'"/>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project w-full lg:w-1/3 lg:pl-8">
+            <div class="flex flex-wrap items-center justify-center">
+              <div>
+                <h3 class="text-navy">
+                  ember-flatpickr
+                </h3>
+
+                <h5 class="text-grey font-light">
+                  An Ember addon that wraps the Flatpickr date picker
+                </h5>
+
+                <p>
+                  ember-flatpickr was created as an alternative to ember-pikaday, which had become
+                  very outdated and had lots of open issues. It wraps the minimal datepicker library
+                  <a href="https://github.com/flatpickr/flatpickr">Flatpickr</a>.
+                </p>
+
+                <p>
+                  <a
+                    class="learn-more"
+                    href="https://github.com/shipshapecode/ember-flatpickr"
+                    itemprop="codeRepository"
+                  >
+                    View on GitHub
+                    <AngleRight :class="'h-4 w-4'"/>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  import AngleRight from '~/assets/svgs/angle-right.svg?inline';
+
+  export default {
+    components: {
+      AngleRight
+    }
+  };
+</script>
