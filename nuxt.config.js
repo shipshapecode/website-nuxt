@@ -2,7 +2,6 @@ const Prism = require('prismjs');
 const fs = require('fs');
 const path = require('path');
 const pkg = require('./package');
-const shrinkRay = require('shrink-ray-current');
 
 const blogPosts = fs.readdirSync('blog/posts/');
 
@@ -61,6 +60,10 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
     'nuxt-svg',
+    ['nuxt-brotli', {
+      asset: '[path]',
+      deleteOriginalAssets: false
+    }],
     '@nuxtjs/sitemap'
   ],
 
@@ -107,10 +110,6 @@ module.exports = {
   generate: {
     routes: []
       .concat(blogPostRoutes)
-  },
-
-  render: {
-    compressor: shrinkRay()
   },
 
   sitemap: {
