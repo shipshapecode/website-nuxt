@@ -20,6 +20,9 @@ const getBlogPosts = () => {
 
 const blogPostRoutes = getBlogPosts();
 
+const imgSrc = 'http://i.imgur.com/30OI4fv.png';
+const twitterUsername = '@shipshapecode';
+
 module.exports = {
   mode: 'universal',
 
@@ -27,13 +30,25 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { property: 'og:site_name', content: 'Ship Shape' },
+
+      // Image
+      { property: 'og:image', content: imgSrc },
+      { property: 'og:image:type', content: 'image/png' },
+      { property: 'og:image:height', content: '256' },
+      { property: 'og:image:width', content: '256' },
+
+      // Twitter
+      { name: 'twitter:site', content: twitterUsername },
+      { name: 'twitter:creator', content: twitterUsername },
+      { name: 'twitter:image:src', content: imgSrc }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
 
   /*
