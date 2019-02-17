@@ -1,5 +1,4 @@
 const Prism = require('prismjs');
-const axios = require('axios');
 const path = require('path');
 const pkg = require('./package');
 const fs = require('fs');
@@ -67,6 +66,20 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    babel: {
+      presets({ isServer }) {
+        const targets = isServer ? { node: '10' } : {
+          browsers: [
+            'last 2 Chrome versions',
+            'last 2 Firefox versions',
+            'last 2 Safari versions'
+          ]
+        };
+        return [
+          [require.resolve('@nuxt/babel-preset-app'), { targets }]
+        ];
+      }
+    },
     /*
     ** You can extend webpack config here
     */
