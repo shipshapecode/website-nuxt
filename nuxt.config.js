@@ -59,6 +59,7 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa',
+    'nuxt-purgecss',
     'nuxt-svg',
     '@nuxtjs/sitemap'
   ],
