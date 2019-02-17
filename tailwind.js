@@ -55,7 +55,7 @@ const colors = {
   'grey-transparent': 'rgba(236, 243, 246, 50)',
   red: '#EF898B',
   white: '#FFFFFF'
-}
+};
 
 module.exports = {
   /*
@@ -95,8 +95,7 @@ module.exports = {
   screens: {
     sm: '576px',
     md: '768px',
-    lg: '992px',
-    xl: '1200px'
+    lg: '992px'
   },
 
   /*
@@ -775,8 +774,8 @@ module.exports = {
     cursor: ['responsive'],
     display: ['responsive'],
     flexbox: ['responsive'],
-    float: ['responsive'],
-    fonts: ['responsive'],
+    float: false,
+    fonts: false,
     fontWeights: ['responsive', 'hover', 'focus'],
     height: ['responsive'],
     leading: ['responsive'],
@@ -794,7 +793,7 @@ module.exports = {
     pointerEvents: ['responsive'],
     position: ['responsive'],
     resize: ['responsive'],
-    shadows: ['responsive', 'hover', 'focus'],
+    shadows: false,
     svgFill: [],
     svgStroke: [],
     textAlign: ['responsive'],
@@ -846,4 +845,4 @@ module.exports = {
     important: false,
     separator: ':'
   }
-}
+};

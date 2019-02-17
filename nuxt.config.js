@@ -18,6 +18,8 @@ const getBlogPosts = () => {
   return slugs.map(slug => `/blog/${slug}`);
 };
 
+const blogPostRoutes = getBlogPosts();
+
 module.exports = {
   mode: 'universal',
 
@@ -89,6 +91,15 @@ module.exports = {
 
   generate: {
     routes: []
-      .concat(getBlogPosts())
+      .concat(blogPostRoutes)
+  },
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://shipshape.io',
+    cacheTime: 1000 * 60 * 15,
+    generate: true,
+    routes: []
+      .concat(blogPostRoutes)
   }
 };
