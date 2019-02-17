@@ -67,6 +67,29 @@
     components: {
       EmberConsultingIcon,
       HeroBlock
+    },
+
+    head() {
+      const description = 'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, ' +
+        'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
+        'Ember skills, while also churning out bulletproof features for your Ember app.';
+
+      return {
+        title: 'Ember.js Consulting and Training - Ship Shape',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: description
+          },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            property: 'og:description',
+            content: description
+          }
+        ]
+      };
     }
   };
 </script>

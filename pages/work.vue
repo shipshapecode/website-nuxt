@@ -16,6 +16,27 @@
   export default {
     components: {
       ClientsGrid
+    },
+
+    head() {
+      const description = 'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.';
+
+      return {
+        title: 'Case Studies - Ship Shape',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: description
+          },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            property: 'og:description',
+            content: description
+          }
+        ]
+      };
     }
   };
 </script>

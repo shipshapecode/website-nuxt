@@ -3,7 +3,9 @@
     <HeroBlock :class="'open-source'">
       <template v-slot:content>
         <h1 class="heading">
-          We <Heart :class="'heartIcon'"/> Open Source
+          We
+          <Heart :class="'heartIcon'"/>
+          Open Source
         </h1>
         <p>
           At Ship Shape, contributing to open source software is an addiction. We maintain
@@ -50,6 +52,30 @@
       Heart,
       HeroBlock,
       OpenSourceIcon
+    },
+
+    head() {
+      const description = 'We collaborate extensively with the Ember community on all facets of Ember. ' +
+        'From documentation, to Ember CLI, and Ember itself. ' +
+        'We have written several Ember addons of our own, and we are maintainers for the html-next ' +
+        'addons, including flexi and vertical-collection.';
+
+      return {
+        title: 'Ember Addons and Open Source - Ship Shape',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: description
+          },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            property: 'og:description',
+            content: description
+          }
+        ]
+      };
     }
   };
 </script>

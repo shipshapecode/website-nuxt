@@ -34,6 +34,7 @@
         aria-label="Open navigation menu"
         class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
       >
+        <Menu :class="'hamburger-menu'"/>
       </button>
     </div>
 
@@ -44,6 +45,7 @@
             aria-label="Close navigation menu"
             class="cursor-pointer"
           >
+            <Close :class="'h-10 m-2 p-2 w-10'"/>
           </button>
         </div>
         <nuxt-link class="nav-link" to="/work">
@@ -65,3 +67,22 @@
     </div>
   </nav>
 </template>
+
+<script>
+  import Close from '~/assets/svgs/close.svg?inline';
+  import Menu from '~/assets/svgs/menu.svg?inline';
+
+  export default {
+    components: {
+      Close,
+      Menu
+    }
+  };
+</script>
+
+<style lang="scss">
+  .hamburger-menu {
+    height: 36px;
+    width: 36px;
+  }
+</style>
