@@ -2,7 +2,10 @@
   <div>
     <div class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent">
       <div class="section-content">
-        <h2 class="heading">JavaScript Libraries</h2>
+        <h2 class="heading">
+          JavaScript Libraries
+        </h2>
+
         <p>
           We are passionate about JavaScript and all things UI related at Ship Shape. We are working hard
           to create open source libraries for many common web app use cases.
@@ -42,7 +45,10 @@
 
     <div class="portfolio-container section flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="heading">Ember Addons</h2>
+        <h2 class="heading">
+          Ember Addons
+        </h2>
+
         <p>
           The addons Ship Shape has created have been downloaded millions of times, and are used in
           production apps of Fortune 100 companies.

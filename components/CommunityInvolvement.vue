@@ -20,7 +20,9 @@
             <EmberConf :class="'ember-image p-12'"/>
           </div>
 
-          <h3 class="heading">EmberConf</h3>
+          <h3 class="heading">
+            EmberConf
+          </h3>
 
           <p class="h-auto lg:h-48">
             We ran the Improving Ember App Performance workshop at EmberConf 2018, where we explored techniques to reduce your bundle
@@ -42,7 +44,9 @@
             <EmberCares :class="'ember-image p-4'"/>
           </div>
 
-          <h3 class="heading">Ember Cares</h3>
+          <h3 class="heading">
+            Ember Cares
+          </h3>
 
           <p class="h-auto lg:h-48">
             We spearheaded the efforts behind Ember Cares in 2017, where we created a No Shave November Tomster and Breast Cancer Awareness
@@ -64,7 +68,9 @@
             <img class="ember-image p-8" src="/img/ember-dc.png" alt="Ember.JS DC Tomster in front of the White House">
           </div>
 
-          <h3 class="heading">Ember.JS DC</h3>
+          <h3 class="heading">
+            Ember.JS DC
+          </h3>
 
           <p class="h-auto lg:h-48">
             We organize the Ember.JS DC meetup, and we try to spread the love throughout Virginia and Maryland as well, alternating meeting

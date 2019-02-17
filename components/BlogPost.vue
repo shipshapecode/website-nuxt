@@ -14,15 +14,17 @@
           :date="post.date"
         />
 
-        <div v-html="post.html" class="post-content"/>
+        <div
+          class="post-content"
+          v-html="post.html"
+        />
 
         <BottomLinks
           :next-link="`/blog/${post.nextSlug}`"
           :next-link-text="post.nextTitle"
           :previous-link="`/blog/${post.previousSlug}`"
           :previous-link-text="post.previousTitle"
-        >
-        </BottomLinks>
+        />
       </div>
     </div>
   </div>

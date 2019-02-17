@@ -33,6 +33,7 @@
       <button
         aria-label="Open navigation menu"
         class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
+        @click="toggleNavMenu(true)"
       >
         <Menu :class="'hamburger-menu'"/>
       </button>
@@ -44,23 +45,44 @@
           <button
             aria-label="Close navigation menu"
             class="cursor-pointer"
+            @click="toggleNavMenu(false)"
           >
             <Close :class="'h-10 m-2 p-2 w-10'"/>
           </button>
         </div>
-        <nuxt-link class="nav-link" to="/work">
+
+        <nuxt-link
+          class="nav-link"
+          to="/work"
+          @click.native="toggleNavMenu(false)">
           Case Studies
         </nuxt-link>
-        <nuxt-link class="nav-link" to="/ember-consulting">
+
+        <nuxt-link
+          class="nav-link"
+          to="/ember-consulting"
+          @click.native="toggleNavMenu(false)">
           Ember Consulting
         </nuxt-link>
-        <nuxt-link class="nav-link" to="/open-source">
+
+        <nuxt-link
+          class="nav-link"
+          to="/open-source"
+          @click.native="toggleNavMenu(false)">
           Open Source
         </nuxt-link>
-        <nuxt-link class="nav-link" to="/blog">
+
+        <nuxt-link
+          class="nav-link"
+          to="/blog"
+          @click.native="toggleNavMenu(false)">
           Blog
         </nuxt-link>
-        <nuxt-link class="nav-link contact-link" to="/contact">
+
+        <nuxt-link
+          class="nav-link contact-link"
+          to="/contact"
+          @click.native="toggleNavMenu(false)">
           Contact
         </nuxt-link>
       </div>
@@ -76,6 +98,17 @@
     components: {
       Close,
       Menu
+    },
+    methods: {
+      toggleNavMenu(open) {
+        const navLinks = this.$el.querySelector('.nav-links');
+
+        if (open) {
+          navLinks.classList.remove('hidden');
+        } else {
+          navLinks.classList.add('hidden');
+        }
+      }
     }
   };
 </script>
