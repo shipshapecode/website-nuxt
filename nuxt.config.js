@@ -60,10 +60,6 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa',
     'nuxt-svg',
-    ['nuxt-brotli', {
-      asset: '[path]',
-      deleteOriginalAssets: false
-    }],
     '@nuxtjs/sitemap'
   ],
 
@@ -71,6 +67,8 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: true,
+
     babel: {
       presets({ isServer }) {
         const targets = isServer ? { node: '10' } : {
