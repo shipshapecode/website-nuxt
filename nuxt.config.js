@@ -35,16 +35,18 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'og:site_name', content: 'Ship Shape' },
 
-      // Image
-      { property: 'og:image', content: imgSrc },
-      { property: 'og:image:type', content: 'image/png' },
-      { property: 'og:image:height', content: '256' },
-      { property: 'og:image:width', content: '256' },
+      // Opengraph
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:image', property: 'og:image', content: imgSrc },
+      { hid: 'og:image:type', property: 'og:image:type', content: 'image/png' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '256' },
+      { hid: 'og:image:width', property: 'og:image:width', content: '256' },
 
       // Twitter
-      { name: 'twitter:site', content: twitterUsername },
-      { name: 'twitter:creator', content: twitterUsername },
-      { name: 'twitter:image:src', content: imgSrc }
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:site', name: 'twitter:site', content: twitterUsername },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: twitterUsername },
+      { hid: 'twitter:image:src', name: 'twitter:image:src', content: imgSrc }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

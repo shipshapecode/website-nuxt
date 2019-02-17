@@ -59,8 +59,12 @@
           },
           {
             hid: 'og:description',
-            name: 'og:description',
             property: 'og:description',
+            content: description
+          },
+          {
+            hid: 'twitter:description',
+            name: 'twitter:description',
             content: description
           }
         ],
