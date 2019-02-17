@@ -1,7 +1,9 @@
 const Prism = require('prismjs');
+const fs = require('fs');
 const path = require('path');
 const pkg = require('./package');
-const fs = require('fs');
+const shrinkRay = require('shrink-ray-current');
+
 const blogPosts = fs.readdirSync('blog/posts/');
 
 const getBlogPosts = () => {
@@ -105,6 +107,10 @@ module.exports = {
   generate: {
     routes: []
       .concat(blogPostRoutes)
+  },
+
+  render: {
+    compressor: shrinkRay()
   },
 
   sitemap: {
