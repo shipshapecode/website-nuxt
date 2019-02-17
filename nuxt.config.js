@@ -94,10 +94,6 @@ module.exports = {
       .concat(blogPostRoutes)
   },
 
-  render: {
-    resourceHints: false
-  },
-
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://shipshape.io',
