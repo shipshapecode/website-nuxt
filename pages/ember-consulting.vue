@@ -56,15 +56,19 @@
         </div>
       </div>
     </div>
+
+    <CommunityInvolvement/>
   </div>
 </template>
 
 <script>
+  import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
   import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
   import HeroBlock from '~/components/HeroBlock.vue';
 
   export default {
     components: {
+      CommunityInvolvement,
       EmberConsultingIcon,
       HeroBlock
     },
