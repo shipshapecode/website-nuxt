@@ -1,7 +1,5 @@
-const Prism = require('prismjs');
 const fs = require('fs');
 const path = require('path');
-const pkg = require('./package');
 
 const blogPosts = fs.readdirSync('blog/posts/');
 

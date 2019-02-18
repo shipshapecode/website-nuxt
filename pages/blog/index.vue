@@ -56,7 +56,19 @@
       }
 
       return Promise.all(slugs.map(slug => asyncImport(slug))).then((posts) => {
-        return { posts };
+        const sortedPosts = posts.sort((post1, post2) => {
+          if (post1.date > post2.date) {
+            return -1;
+          }
+
+          if (post1.date < post2.date) {
+            return 1;
+          }
+
+          return 0;
+        });
+
+        return { posts: sortedPosts };
       });
     },
 

@@ -3,6 +3,7 @@
 </template>
 
 <script>
+  import Prism from 'prismjs';
   import h2p from 'html2plaintext';
   import truncate from 'lodash.truncate';
   import BlogPost from '~/components/BlogPost.vue';
@@ -61,7 +62,19 @@
         );
       }
 
+      if (this.post.categories && this.post.categories.length) {
+        const keywords = this.post.categories.join(', ');
+        headData.meta.push(
+          { name: 'twitter:label2', content: 'Filed under' },
+          { name: 'twitter:data2', content: keywords }
+        );
+      }
+
       return headData;
+    },
+
+    mounted() {
+      Prism.highlightAll();
     }
   };
 </script>
