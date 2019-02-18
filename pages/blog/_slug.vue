@@ -13,13 +13,14 @@
 
     async asyncData({ params }) {
       const { attributes, html } = await import(`~/blog/posts/${params.slug}.md`);
-      const { authorId, date, nextSlug, nextTitle, previousSlug, previousTitle, slug, title } = attributes;
+      const { authorId, categories, date, nextSlug, nextTitle, previousSlug, previousTitle, slug, title } = attributes;
       const author = await import(`~/blog/authors/${authorId}.md`);
 
       return {
         post: {
           author,
           date,
+          categories,
           html,
           nextSlug,
           nextTitle,
@@ -33,10 +34,29 @@
 
     head() {
       const description = 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.';
-      const { slug, title } = this.post;
+      const { author, date, slug, title } = this.post;
       const url = `https://shipshape.io/blog/${slug}`;
 
-      return generateMeta(title, description, url);
+      const headData = generateMeta(title, description, url);
+      headData.meta.push(
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        { hid: 'article:published_time', property: 'article:published_time', content: date }
+      );
+
+      this.post.categories.forEach((tag) => {
+        headData.meta.push(
+          { property: 'article:tag', content: tag }
+        );
+      });
+
+      if (this.post.author) {
+        headData.meta.push(
+          { name: 'twitter:label1', content: 'Written by' },
+          { name: 'twitter:data1', content: author.attributes.name }
+        );
+      }
+
+      return headData;
     }
   };
 </script>

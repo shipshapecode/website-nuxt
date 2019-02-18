@@ -54,35 +54,40 @@
         <nuxt-link
           class="nav-link"
           to="/work"
-          @click.native="toggleNavMenu(false)">
+          @click.native="toggleNavMenu(false)"
+        >
           Case Studies
         </nuxt-link>
 
         <nuxt-link
           class="nav-link"
           to="/ember-consulting"
-          @click.native="toggleNavMenu(false)">
+          @click.native="toggleNavMenu(false)"
+        >
           Ember Consulting
         </nuxt-link>
 
         <nuxt-link
           class="nav-link"
           to="/open-source"
-          @click.native="toggleNavMenu(false)">
+          @click.native="toggleNavMenu(false)"
+        >
           Open Source
         </nuxt-link>
 
         <nuxt-link
           class="nav-link"
           to="/blog"
-          @click.native="toggleNavMenu(false)">
+          @click.native="toggleNavMenu(false)"
+        >
           Blog
         </nuxt-link>
 
         <nuxt-link
           class="nav-link contact-link"
           to="/contact"
-          @click.native="toggleNavMenu(false)">
+          @click.native="toggleNavMenu(false)"
+        >
           Contact
         </nuxt-link>
       </div>
