@@ -65,6 +65,7 @@
   import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
   import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
   import HeroBlock from '~/components/HeroBlock.vue';
+  import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
@@ -74,36 +75,13 @@
     },
 
     head() {
+      const title = 'Ember.js Consulting and Training - Ship Shape';
       const description = 'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, ' +
         'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
         'Ember skills, while also churning out bulletproof features for your Ember app.';
+      const url = 'https://shipshape.io/ember-consulting';
 
-      return {
-        title: 'Ember.js Consulting and Training - Ship Shape',
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: description
-          },
-          {
-            hid: 'og:description',
-            property: 'og:description',
-            content: description
-          },
-          {
-            hid: 'twitter:description',
-            name: 'twitter:description',
-            content: description
-          }
-        ],
-        'link': [
-          {
-            rel: 'canonical',
-            href: 'https://shipshape.io/ember-consulting'
-          }
-        ]
-      };
+      return generateMeta(title, description, url);
     }
   };
 </script>

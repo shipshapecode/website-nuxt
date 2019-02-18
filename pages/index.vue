@@ -35,6 +35,7 @@
   import ProcessSection from '~/components/ProcessSection.vue';
   import TechnologiesSection from '~/components/TechnologiesSection.vue';
   import WorkedWith from '~/components/WorkedWith.vue';
+  import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
@@ -45,36 +46,13 @@
       WorkedWith
     },
     head() {
+      const title = 'Ship Shape - Ember.js Code That Won\'t Sink';
       const description = 'Ship Shape is a software consultancy specializing in all things Ember. ' +
         'We leverage Ember.js, and all the latest Ember addons and technologies, to create truly ambitious, ' +
         'state of the art applications that are future-proof and easily maintainable.';
+      const url = 'https://shipshape.io/';
 
-      return {
-        title: 'Ship Shape - Ember.js Code That Won\'t Sink',
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: description
-          },
-          {
-            hid: 'og:description',
-            property: 'og:description',
-            content: description
-          },
-          {
-            hid: 'twitter:description',
-            name: 'twitter:description',
-            content: description
-          }
-        ],
-        'link': [
-          {
-            rel: 'canonical',
-            href: 'https://shipshape.io/'
-          }
-        ]
-      };
+      return generateMeta(title, description, url);
     }
   };
 </script>

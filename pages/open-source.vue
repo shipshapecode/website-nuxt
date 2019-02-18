@@ -49,6 +49,7 @@
   import HeroBlock from '~/components/HeroBlock.vue';
   import OpenSourceIcon from '~/assets/svgs/hero-images/open-source.svg?inline';
   import PortfolioContainer from '~/components/PortfolioContainer.vue';
+  import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
@@ -59,37 +60,14 @@
     },
 
     head() {
+      const title = 'Ember Addons and Open Source - Ship Shape';
       const description = 'We collaborate extensively with the Ember community on all facets of Ember. ' +
         'From documentation, to Ember CLI, and Ember itself. ' +
         'We have written several Ember addons of our own, and we are maintainers for the html-next ' +
         'addons, including flexi and vertical-collection.';
+      const url = 'https://shipshape.io/open-source';
 
-      return {
-        title: 'Ember Addons and Open Source - Ship Shape',
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: description
-          },
-          {
-            hid: 'og:description',
-            property: 'og:description',
-            content: description
-          },
-          {
-            hid: 'twitter:description',
-            name: 'twitter:description',
-            content: description
-          }
-        ],
-        'link': [
-          {
-            rel: 'canonical',
-            href: 'https://shipshape.io/open-source'
-          }
-        ]
-      };
+      return generateMeta(title, description, url);
     }
   };
 </script>

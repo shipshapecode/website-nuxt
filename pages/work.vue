@@ -12,6 +12,7 @@
 
 <script>
   import ClientsGrid from '~/components/ClientsGrid.vue';
+  import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
@@ -19,34 +20,11 @@
     },
 
     head() {
+      const title = 'Case Studies - Ship Shape';
       const description = 'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.';
+      const url = 'https://shipshape.io/work';
 
-      return {
-        title: 'Case Studies - Ship Shape',
-        meta: [
-          {
-            hid: 'description',
-            name: 'description',
-            content: description
-          },
-          {
-            hid: 'og:description',
-            property: 'og:description',
-            content: description
-          },
-          {
-            hid: 'twitter:description',
-            name: 'twitter:description',
-            content: description
-          }
-        ],
-        'link': [
-          {
-            rel: 'canonical',
-            href: 'https://shipshape.io/work'
-          }
-        ]
-      };
+      return generateMeta(title, description, url);
     }
   };
 </script>

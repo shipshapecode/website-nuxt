@@ -27,6 +27,7 @@
 
 <script>
   import BlogPostMenu from '~/components/BlogPostMenu.vue';
+  import { generateMeta } from '~/utils/meta';
   import slugs from '~/posts.json';
 
   export default {
@@ -57,6 +58,14 @@
       return Promise.all(slugs.map(slug => asyncImport(slug))).then((posts) => {
         return { posts };
       });
+    },
+
+    head() {
+      const title = 'Blog - Ship Shape';
+      const description = 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.';
+      const url = 'https://shipshape.io/blog';
+
+      return generateMeta(title, description, url);
     }
   };
 </script>

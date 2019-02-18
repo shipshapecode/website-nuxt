@@ -4,6 +4,7 @@
 
 <script>
   import BlogPost from '~/components/BlogPost.vue';
+  import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
@@ -12,7 +13,7 @@
 
     async asyncData({ params }) {
       const { attributes, html } = await import(`~/blog/posts/${params.slug}.md`);
-      const { authorId, date, nextSlug, nextTitle, previousSlug, previousTitle, title } = attributes;
+      const { authorId, date, nextSlug, nextTitle, previousSlug, previousTitle, slug, title } = attributes;
       const author = await import(`~/blog/authors/${authorId}.md`);
 
       return {
@@ -24,9 +25,18 @@
           nextTitle,
           previousSlug,
           previousTitle,
+          slug,
           title
         }
       };
+    },
+
+    head() {
+      const description = 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.';
+      const { slug, title } = this.post;
+      const url = `https://shipshape.io/blog/${slug}`;
+
+      return generateMeta(title, description, url);
     }
   };
 </script>
