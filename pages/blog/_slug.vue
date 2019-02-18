@@ -3,6 +3,8 @@
 </template>
 
 <script>
+  import h2p from 'html2plaintext';
+  import truncate from 'lodash.truncate';
   import BlogPost from '~/components/BlogPost.vue';
   import { generateMeta } from '~/utils/meta';
 
@@ -33,7 +35,10 @@
     },
 
     head() {
-      const description = 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.';
+      const description = truncate(h2p(this.post.html), {
+        length: 260,
+        separator: /,?\.* +/
+      });
       const { author, date, slug, title } = this.post;
       const url = `https://shipshape.io/blog/${slug}`;
 
