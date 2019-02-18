@@ -57,6 +57,7 @@
       </div>
     </div>
 
+    <WhyEmber/>
     <CommunityInvolvement/>
   </div>
 </template>
@@ -65,13 +66,15 @@
   import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
   import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
   import HeroBlock from '~/components/HeroBlock.vue';
+  import WhyEmber from '~/components/WhyEmber';
   import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
       CommunityInvolvement,
       EmberConsultingIcon,
-      HeroBlock
+      HeroBlock,
+      WhyEmber
     },
 
     head() {
