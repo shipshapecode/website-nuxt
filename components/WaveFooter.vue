@@ -135,16 +135,18 @@
         }
       }
 
-      svg {
-        path {
-          fill: $gold;
-          transition-duration: 0.25s;
-          transition-property: fill;
-        }
-
-        &:hover {
+      .social-links {
+        svg {
           path {
-            fill: $grey-transparent;
+            fill: $gold;
+            transition-duration: 0.25s;
+            transition-property: fill;
+          }
+
+          &:hover {
+            path {
+              fill: $grey-transparent;
+            }
           }
         }
       }
