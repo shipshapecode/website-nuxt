@@ -20,7 +20,7 @@
       </ul>
     </nav>
 
-    <div class="tabs-details">
+    <div class="content-wrap">
       <slot/>
     </div>
   </div>
@@ -43,3 +43,74 @@
     }
   };
 </script>
+
+<style lang="scss">
+  @import "assets/css/variables";
+
+  .tabs {
+    transition-duration: 0.25s;
+    transition-property: background-color, box-shadow, color, fill;
+
+    nav {
+      background: $transparent;
+      text-align: left;
+
+      ul {
+        justify-content: start;
+        margin-bottom: 0;
+        max-width: none;
+        padding: 0;
+
+        li {
+          cursor: pointer;
+          display: flex;
+          margin-bottom: 0;
+
+          a {
+            align-items: center;
+            box-shadow: inset 0 -2px $grey-transparent;
+            color: $grey-light;
+            display: flex;
+            flex: 1 0 auto;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 10px 20px 10px 10px;
+            white-space: nowrap;
+            width: 100%;
+
+            &:hover {
+              box-shadow: inset 0 -2px $navy;
+              color: $navy;
+            }
+          }
+
+          &.tab-current {
+            background: $transparent;
+
+            a {
+              box-shadow: inset 0 -2px $navy;
+              color: $navy;
+            }
+          }
+        }
+      }
+    }
+
+    .content-wrap {
+      max-width: none;
+      padding: 0;
+      text-align: left;
+
+      p {
+        color: $grey-light;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 2;
+        margin: 0;
+        min-height: 250px;
+        padding: 0.75em 0;
+      }
+    }
+  }
+</style>

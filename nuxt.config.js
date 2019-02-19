@@ -75,6 +75,7 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/date-fns',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     'nuxt-purgecss',
     'nuxt-svg',
@@ -132,6 +133,10 @@ module.exports = {
   generate: {
     routes: []
       .concat(blogPostRoutes)
+  },
+
+  googleAnalytics: {
+    id: 'UA-84561982-1'
   },
 
   sitemap: {
