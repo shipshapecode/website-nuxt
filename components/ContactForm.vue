@@ -15,18 +15,34 @@
         >
           Name
         </label>
+
         <input
+          id="cd-name"
+          v-model="name"
           class="user"
           type="text"
           name="cd-name"
-          id="cd-name"
           required
-          v-model="name">
+        >
       </div>
 
       <div class="icon">
-        <label class="cd-label" for="cd-name">Company</label>
-        <input class="company" type="text" name="cd-name" id="cd-name" required>
+        <label
+          :class="{'float': company}"
+          class="cd-label"
+          for="cd-company"
+        >
+          Company
+        </label>
+
+        <input
+          id="cd-company"
+          v-model="company"
+          class="company"
+          type="text"
+          name="cd-company"
+          required
+        >
       </div>
 
       <div class="icon">
@@ -117,6 +133,7 @@
   export default {
     data() {
       return {
+        company: '',
         name: ''
       };
     }
@@ -494,7 +511,7 @@
   }
 
   /* --------------------------------
-  FLoating labels
+  Floating labels
   -------------------------------- */
   .floating-labels div {
     margin: 28px 0;
@@ -502,11 +519,9 @@
 
   .floating-labels .cd-label {
     position: absolute;
-    top: 16px;
+    top: 6px;
     left: 16px;
     cursor: text;
-    -webkit-transition: top 0.2s, left 0.2s, font-size 0.2s;
-    -moz-transition: top 0.2s, left 0.2s, font-size 0.2s;
     transition: top 0.2s, left 0.2s, font-size 0.2s;
   }
 
@@ -516,8 +531,8 @@
 
   .floating-labels .cd-label.float {
     /* move label out the input field */
-    font-size: 1.2rem;
-    top: -16px;
+    font-size: 0.8rem;
+    top: -24px;
     left: 0 !important;
   }
 
@@ -528,7 +543,7 @@
     }
 
     .floating-labels .cd-label {
-      top: 20px;
+      top: 10px;
     }
   }
 </style>
