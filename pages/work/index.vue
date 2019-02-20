@@ -5,17 +5,21 @@
         Case Studies
       </h1>
 
+      <CaseStudiesList/>
+
       <ClientsGrid/>
     </div>
   </div>
 </template>
 
 <script>
+  import CaseStudiesList from '~/components/CaseStudiesList.vue';
   import ClientsGrid from '~/components/ClientsGrid.vue';
   import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
+      CaseStudiesList,
       ClientsGrid
     },
 
