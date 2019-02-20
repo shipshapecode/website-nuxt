@@ -26,7 +26,11 @@
       const { category } = params;
       const { posts } = await getBlogData();
       const filteredPosts = posts.filter((post) => {
-        return post.categories.includes(category);
+        const dasherizedCategories = post.categories.map((category) => {
+          return category.replace(/ /g, '-');
+        });
+
+        return dasherizedCategories.includes(category);
       });
       const numPosts = filteredPosts ? filteredPosts.length : 0;
 

@@ -12,7 +12,7 @@
           target="_blank"
           rel="noopener"
         >
-          <!-- TODO add RSS svg -->
+          <RSS/>
         </a>
       </div>
 
@@ -27,12 +27,14 @@
 
 <script>
   import BlogPostMenu from '~/components/BlogPostMenu.vue';
+  import RSS from '~/assets/svgs/rss.svg?inline';
   import { getBlogData } from '~/utils/blog';
   import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
-      BlogPostMenu
+      BlogPostMenu,
+      RSS
     },
 
     asyncData() {

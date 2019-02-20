@@ -1,22 +1,52 @@
-const fs = require('fs');
-const path = require('path');
+const { readdirSync, readFileSync, writeFileSync } = require('fs');
+const { extname, resolve } = require('path');
+const yamlFront = require('yaml-front-matter');
+const walkSync = require('walk-sync');
 
-const blogPosts = fs.readdirSync('blog/posts/');
+const blogPosts = readdirSync('blog/posts/');
 
-const getBlogPosts = () => {
+const _getBlogPosts = () => {
   const slugs = blogPosts.map((post) => {
     return post.slice(0, -3);
   });
 
-  fs.writeFileSync(
-    path.resolve(__dirname, 'posts.json'),
+  writeFileSync(
+    resolve(__dirname, 'posts.json'),
     JSON.stringify(slugs, null, 2)
   );
 
   return slugs.map(slug => `/blog/${slug}`);
 };
 
-const blogPostRoutes = getBlogPosts();
+function _getAuthorURLs() {
+  return walkSync('blog/authors')
+    .map(file => file.replace(/\.md$/, ''))
+    .map(id => `/blog/authors/${id}`);
+}
+
+function _getCategoryURLs() {
+  const paths = walkSync('blog/posts');
+  const postPaths = paths.filter(path => extname(path) === '.md');
+  const postsFrontmatter = postPaths.map((path) => {
+    return yamlFront.loadFront(readFileSync(`blog/posts/${path}`));
+  });
+
+  let categories = postsFrontmatter
+    .map(post => post.categories)
+    .reduce((a, b) => a.concat(b), [])
+    .filter(x => !!x)
+    .map(category => category.replace(' ', '-'));
+
+  // Get only unique categories
+  categories = [...new Set(categories)];
+
+  return categories.map(category => `/blog/categories/${category}`);
+}
+
+const authorRoutes = _getAuthorURLs();
+const blogPostRoutes = _getBlogPosts();
+const categoryRoutes = _getCategoryURLs();
+const blogRoutes = [...authorRoutes, ...categoryRoutes, ...blogPostRoutes];
 
 const imgSrc = 'http://i.imgur.com/30OI4fv.png';
 const twitterUsername = '@shipshapecode';
@@ -120,7 +150,7 @@ module.exports = {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
-        include: path.resolve(__dirname, 'blog')
+        include: resolve(__dirname, 'blog')
       });
     }
   },
@@ -133,7 +163,7 @@ module.exports = {
 
   generate: {
     routes: []
-      .concat(blogPostRoutes)
+      .concat(blogRoutes)
   },
 
   googleAnalytics: {
@@ -146,6 +176,6 @@ module.exports = {
     cacheTime: 1000 * 60 * 15,
     generate: true,
     routes: []
-      .concat(blogPostRoutes)
+      .concat(blogRoutes)
   }
 };
