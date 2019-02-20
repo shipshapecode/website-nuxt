@@ -20,8 +20,8 @@
         <nuxt-link
           v-for="tag in post.categories"
           :key="tag"
-          to="/"
-          class="blog-tag"
+          :to="`/blog/categories/${tag}`"
+          class="blog-tag mr-2"
         >
           {{ tag }}
         </nuxt-link>
