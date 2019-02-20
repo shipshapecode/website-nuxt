@@ -73,7 +73,7 @@
     },
 
     head() {
-      const title = 'Blog - Ship Shape';
+      const title = 'Blog';
       const description = 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.';
       const url = 'https://shipshape.io/blog';
 

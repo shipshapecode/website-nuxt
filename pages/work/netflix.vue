@@ -102,12 +102,21 @@
   // import BottomLinks from '~/components/BottomLinks.vue';
   import DataGraphic from '~/assets/svgs/data-graphic.svg?inline';
   import Netflix from '~/assets/svgs/clients/netflix.svg?inline';
+  import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
       // BottomLinks,
       DataGraphic,
       Netflix
+    },
+
+    head() {
+      const title = 'Case Study - Netflix';
+      const description = 'Learn how we helped build finance tools for the world\'s number one streaming platform.';
+      const url = 'https://shipshape.io/work/netflix';
+
+      return generateMeta(title, description, url);
     }
   };
 </script>

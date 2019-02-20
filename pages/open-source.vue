@@ -60,7 +60,7 @@
     },
 
     head() {
-      const title = 'Ember Addons and Open Source - Ship Shape';
+      const title = 'Ember Addons and Open Source';
       const description = 'We collaborate extensively with the Ember community on all facets of Ember. ' +
         'From documentation, to Ember CLI, and Ember itself. ' +
         'We have written several Ember addons of our own, and we are maintainers for the html-next ' +
