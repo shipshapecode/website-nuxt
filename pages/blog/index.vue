@@ -27,8 +27,8 @@
 
 <script>
   import BlogPostMenu from '~/components/BlogPostMenu.vue';
+  import { getBlogData } from '~/utils/blog';
   import { generateMeta } from '~/utils/meta';
-  import slugs from '~/posts.json';
 
   export default {
     components: {
@@ -36,40 +36,7 @@
     },
 
     asyncData() {
-      const authors = {};
-
-      async function asyncImport(slug) {
-        const post = await import(`~/blog/posts/${slug}.md`);
-        await getAuthors(post.attributes);
-        return post.attributes;
-      }
-
-      async function getAuthors(post) {
-        // If we don't already have a reference to the author, add it to the authors
-        if (!authors[post.authorId]) {
-          const author = await import(`~/blog/authors/${post.authorId}.md`);
-
-          authors[post.authorId] = author.attributes;
-        }
-
-        post.author = authors[post.authorId];
-      }
-
-      return Promise.all(slugs.map(slug => asyncImport(slug))).then((posts) => {
-        const sortedPosts = posts.sort((post1, post2) => {
-          if (post1.date > post2.date) {
-            return -1;
-          }
-
-          if (post1.date < post2.date) {
-            return 1;
-          }
-
-          return 0;
-        });
-
-        return { posts: sortedPosts };
-      });
+      return getBlogData();
     },
 
     head() {
