@@ -7,7 +7,7 @@
     @submit.prevent="sendContactRequest"
   >
     <fieldset>
-      <div
+      <!--div
         class="error-message"
       >
         <p
@@ -16,7 +16,7 @@
         >
           {{ error }}
         </p>
-      </div>
+      </div-->
       <legend>Personal Info</legend>
 
       <div class="bot-field">
@@ -35,7 +35,6 @@
         <input
           id="name"
           v-model="name"
-          v-validate
           class="user"
           type="text"
           name="name"
@@ -73,7 +72,6 @@
         <input
           id="email"
           v-model="email"
-          v-validate
           class="email"
           type="email"
           name="email"
@@ -162,7 +160,6 @@
         <textarea
           id="description"
           v-model="description"
-          v-validate
           class="message"
           name="description"
           required
@@ -171,7 +168,6 @@
 
       <div>
         <input
-          :disabled="!formValid"
           type="submit"
           value="Send Message"
         >
@@ -203,29 +199,29 @@
         projectType: 'Open Source'
       };
     },
-    computed: {
-      formValid() {
-        return Object.keys(this.fields).every((field) => {
-          return this.fields[field] && this.fields[field].valid;
-        });
-      }
-    },
+    // computed: {
+    //   formValid() {
+    //     return Object.keys(this.fields).every((field) => {
+    //       return this.fields[field] && this.fields[field].valid;
+    //     });
+    //   }
+    // },
     methods: {
       sendContactRequest() {
-        if (this.formValid) {
-          const axiosConfig = {
-            header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-          };
+        // if (this.formValid) {
+        const axiosConfig = {
+          header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        };
 
-          return this.$axios.post(
-            '/',
-            _encode({
-              'form-name': 'contact-us',
-              ...this.$data
-            }),
-            axiosConfig
-          );
-        }
+        return this.$axios.post(
+          '/',
+          _encode({
+            'form-name': 'contact-us',
+            ...this.$data
+          }),
+          axiosConfig
+        );
+        // }
       }
     }
   };
