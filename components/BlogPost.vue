@@ -31,7 +31,6 @@
 </template>
 
 <script>
-  import Prism from 'prismjs';
   import AuthorRow from '~/components/AuthorRow.vue';
   import BottomLinks from '~/components/BottomLinks.vue';
 
@@ -46,14 +45,6 @@
         type: Object,
         default: () => {}
       }
-    },
-
-    mounted() {
-      Prism.highlightAll();
-    },
-
-    updated() {
-      Prism.highlightAll();
     }
   };
 </script>

@@ -1,7 +1,19 @@
 const { readdirSync, readFileSync, writeFileSync } = require('fs');
 const { extname, resolve } = require('path');
+const hljs = require('highlight.js');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
+const md = require('markdown-it')({
+  highlight(str, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try {
+        return hljs.highlight(lang, str).value;
+      } catch (__) {}
+    }
+
+    return '';
+  }
+});
 
 const blogPosts = readdirSync('blog/posts/');
 
@@ -97,7 +109,7 @@ module.exports = {
   */
   css: [
     '~/assets/css/main.scss',
-    'prismjs/themes/prism-okaidia.css'
+    'highlight.js/styles/github-gist.css'
   ],
 
   /*
@@ -145,7 +157,6 @@ module.exports = {
         ];
       }
     },
-    vendor: ['prismjs'],
     /*
     ** You can extend webpack config here
     */
@@ -163,7 +174,12 @@ module.exports = {
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
-        include: resolve(__dirname, 'blog')
+        include: resolve(__dirname, 'blog'),
+        options: {
+          markdown(body) {
+            return md.render(body);
+          }
+        }
       });
     }
   },
