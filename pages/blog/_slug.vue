@@ -3,7 +3,6 @@
 </template>
 
 <script>
-  import Prism from 'prismjs';
   import h2p from 'html2plaintext';
   import truncate from 'lodash.truncate';
   import BlogPost from '~/components/BlogPost.vue';
@@ -71,14 +70,6 @@
       }
 
       return headData;
-    },
-
-    mounted() {
-      Prism.highlightAll();
-    },
-
-    updated() {
-      Prism.highlightAll();
     }
   };
 </script>
