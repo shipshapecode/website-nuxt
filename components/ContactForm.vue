@@ -1,10 +1,10 @@
 <template>
   <form
-    @submit.prevent="sendContactRequest"
     class="cd-form floating-labels"
     name="contact-us"
     netlify-honeypot="bot-field"
     netlify
+    @submit.prevent="sendContactRequest"
   >
     <fieldset>
       <div
