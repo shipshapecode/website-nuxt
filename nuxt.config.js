@@ -116,12 +116,12 @@ module.exports = {
     '@nuxtjs/style-resources',
     'nuxt-purgecss',
     'nuxt-svg',
-    // ['nuxt-validate', {
-    //   classes: true,
-    //   classNames: {
-    //     invalid: 'error'
-    //   }
-    // }],
+    ['nuxt-validate', {
+      classes: true,
+      classNames: {
+        invalid: 'error'
+      }
+    }],
     '@nuxtjs/sitemap'
   ],
 

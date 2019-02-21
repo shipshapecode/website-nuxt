@@ -24,6 +24,7 @@
     "lodash.truncate": "^4.4.2",
     "nuxt": "^2.4.0",
     "nuxt-svg": "^0.1.4",
+    "nuxt-validate": "^0.1.2",
     "prismjs": "^1.15.0"
   },
   "devDependencies": {

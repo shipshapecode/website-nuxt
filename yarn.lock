@@ -7149,6 +7149,13 @@ nuxt-svg@^0.1.4:
     url-loader "^1.1.2"
     vue-svg-loader "^0.11.0"
 
+nuxt-validate@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/nuxt-validate/-/nuxt-validate-0.1.2.tgz#799d80de7ef5192d080f4d8bb91531877726bee0"
+  integrity sha512-dYtyjSYfcLc+irwLR3RiF6cwDG5dK2tfgE+Jz6k5tiXrm6+v5XxJCHW6RPQEPO7QZtDG+MGmLIuu+Lrrk4jChw==
+  dependencies:
+    vee-validate "^2.1.2"
+
 nuxt@^2.4.0:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.4.3.tgz#1584fbbaed2bfb4839da2298c00bdcac2d71dcdd"
@@ -10385,6 +10392,11 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+vee-validate@^2.1.2:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-2.1.7.tgz#33984454d8a633cdc4825a2cf5857747d91bae67"
+  integrity sha512-IyPDTTvIRY6o9y14jXlgfY76Qv+hmvYDwNaMn9JY5KbQN8a1tJAu7H/+a/+EdHg1w8Zl9tsdG8lndGqY1lyMzQ==
 
 vendors@^1.0.0:
   version "1.0.2"
