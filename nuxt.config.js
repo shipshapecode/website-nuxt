@@ -55,7 +55,7 @@ module.exports = {
   mode: 'universal',
 
   axios: {
-    baseURL: 'https://suspicious-golick-63656d.netlify.com'
+    baseURL: 'https://shipshape.io'
   },
 
   /*
