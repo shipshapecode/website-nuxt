@@ -201,7 +201,7 @@ module.exports = {
 
   purgeCSS: {
     whitelist: ['hljs*'],
-    whitelistPatterns: [/hljs$/]
+    whitelistPatterns: [/^hljs/]
   },
 
   sitemap: {
