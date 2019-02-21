@@ -213,17 +213,18 @@
     methods: {
       sendContactRequest() {
         if (this.formValid) {
-          const data = this.$data;
-          data['form-name'] = 'contact-us';
-          const body = _encode(data);
-          debugger;
+          const axiosConfig = {
+            header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+          };
 
-          return this.$axios({
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            data: body,
-            url: '/'
-          });
+          return this.$axios.post(
+            '/',
+            _encode({
+              'form-name': 'contact-us',
+              ...this.$data
+            }),
+            axiosConfig
+          );
         }
       }
     }
