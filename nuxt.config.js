@@ -54,6 +54,10 @@ const twitterUsername = '@shipshapecode';
 module.exports = {
   mode: 'universal',
 
+  axios: {
+    baseURL: 'https://suspicious-golick-63656d.netlify.com'
+  },
+
   /*
   ** Headers of the page
   */
