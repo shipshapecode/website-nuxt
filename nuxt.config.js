@@ -108,8 +108,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/css/main.scss',
-    'highlight.js/styles/github-gist.css'
+    '~/assets/css/main.scss'
   ],
 
   /*
