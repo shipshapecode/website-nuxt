@@ -75,6 +75,10 @@
 
     mounted() {
       Prism.highlightAll();
+    },
+
+    updated() {
+      Prism.highlightAll();
     }
   };
 </script>

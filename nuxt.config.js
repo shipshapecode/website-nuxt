@@ -145,6 +145,7 @@ module.exports = {
         ];
       }
     },
+    vendor: ['prismjs'],
     /*
     ** You can extend webpack config here
     */
