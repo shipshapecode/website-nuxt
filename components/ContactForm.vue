@@ -1,27 +1,44 @@
 <template>
-  <form class="cd-form floating-labels">
+  <form
+    @submit.prevent="sendContactRequest"
+    class="cd-form floating-labels"
+    name="contact-us"
+    netlify-honeypot="bot-field"
+    netlify
+  >
     <fieldset>
-      <legend>Account Info</legend>
+      <div
+        class="error-message"
+      >
+        <p
+          v-for="error in errors.all()"
+          :key="error"
+        >
+          {{ error }}
+        </p>
+      </div>
+      <legend>Personal Info</legend>
 
-      <div class="error-message">
-        <p>Please enter a valid email address</p>
+      <div class="bot-field">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
       </div>
 
       <div class="icon">
         <label
           :class="{'float': name}"
           class="cd-label"
-          for="cd-name"
+          for="name"
         >
           Name
         </label>
 
         <input
-          id="cd-name"
+          id="name"
           v-model="name"
+          v-validate
           class="user"
           type="text"
-          name="cd-name"
+          name="name"
           required
         >
       </div>
@@ -30,32 +47,46 @@
         <label
           :class="{'float': company}"
           class="cd-label"
-          for="cd-company"
+          for="company"
         >
           Company
         </label>
 
         <input
-          id="cd-company"
+          id="company"
           v-model="company"
           class="company"
           type="text"
-          name="cd-company"
-          required
+          name="company"
         >
       </div>
 
       <div class="icon">
-        <label class="cd-label" for="cd-email">Email</label>
-        <input class="email error" type="email" name="cd-email" id="cd-email" required>
+        <label
+          :class="{'float': email}"
+          class="cd-label"
+          for="email"
+        >
+          Email
+        </label>
+
+        <input
+          id="email"
+          v-model="email"
+          v-validate
+          class="email"
+          type="email"
+          name="email"
+          required
+        >
       </div>
     </fieldset>
 
     <fieldset>
       <legend>Project Info</legend>
 
-      <div>
-        <h4>Budget</h4>
+      <!--div>
+        <h5>Budget</h5>
 
         <p class="cd-select icon">
           <select class="budget">
@@ -73,74 +104,137 @@
             </option>
           </select>
         </p>
-      </div>
+      </div-->
 
       <div>
-        <h4>Project type</h4>
+        <h5>Project type</h5>
 
         <ul class="cd-form-list">
           <li>
-            <input type="radio" name="radio-button" id="cd-radio-1" checked>
-            <label for="cd-radio-1">Choice 1</label>
+            <input
+              id="radio-1"
+              v-model="projectType"
+              type="radio"
+              name="radio-button"
+              value="Open Source"
+            >
+            <label for="radio-1">
+              Open Source
+            </label>
           </li>
 
           <li>
-            <input type="radio" name="radio-button" id="cd-radio-2">
-            <label for="cd-radio-2">Choice 2</label>
+            <input
+              id="radio-2"
+              v-model="projectType"
+              type="radio"
+              name="radio-button"
+              value="Training"
+            >
+            <label for="radio-2">
+              Training
+            </label>
           </li>
 
           <li>
-            <input type="radio" name="radio-button" id="cd-radio-3">
-            <label for="cd-radio-3">Choice 3</label>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Features</h4>
-
-        <ul class="cd-form-list">
-          <li>
-            <input type="checkbox" id="cd-checkbox-1">
-            <label for="cd-checkbox-1">Option 1</label>
-          </li>
-
-          <li>
-            <input type="checkbox" id="cd-checkbox-2">
-            <label for="cd-checkbox-2">Option 2</label>
-          </li>
-
-          <li>
-            <input type="checkbox" id="cd-checkbox-3">
-            <label for="cd-checkbox-3">Option 3</label>
+            <input
+              id="radio-3"
+              v-model="projectType"
+              type="radio"
+              name="radio-button"
+              value="Development"
+            >
+            <label for="radio-3">
+              Development
+            </label>
           </li>
         </ul>
       </div>
 
       <div class="icon">
-        <label class="cd-label" for="cd-textarea">Project description</label>
-        <textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+        <label
+          class="cd-label"
+          :class="{'float': description}"
+          for="description"
+        >
+          Project description
+        </label>
+        <textarea
+          id="description"
+          v-model="description"
+          v-validate
+          class="message"
+          name="description"
+          required
+        />
       </div>
 
       <div>
-        <input type="submit" value="Send Message">
+        <input
+          :disabled="!formValid"
+          type="submit"
+          value="Send Message"
+        >
       </div>
     </fieldset>
   </form>
 </template>
 
 <script>
+  /**
+   * Util function to encode data for netify forms
+   * @param data
+   * @returns {string}
+   * @private
+   */
+  function _encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+  }
+
   export default {
     data() {
       return {
         company: '',
-        name: ''
+        description: '',
+        email: '',
+        name: '',
+        projectType: 'Open Source'
       };
+    },
+    computed: {
+      formValid() {
+        return Object.keys(this.fields).every((field) => {
+          return this.fields[field] && this.fields[field].valid;
+        });
+      }
+    },
+    methods: {
+      sendContactRequest() {
+        if (this.formValid) {
+          const data = this.$data;
+          data['form-name'] = 'contact-us';
+          const body = _encode(data);
+          debugger;
+
+          return this.$axios({
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            data: body,
+            url: '/'
+          });
+        }
+      }
     }
   };
 </script>
 
 <style>
+  .bot-field {
+    display: none;
+  }
+
   .cd-form {
     width: 90%;
     max-width: 600px;

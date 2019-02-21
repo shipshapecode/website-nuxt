@@ -14,10 +14,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/date-fns": "^0.0.2",
     "@nuxtjs/google-analytics": "^2.1.0",
     "@nuxtjs/pwa": "^3.0.0-beta.7",
     "@nuxtjs/sitemap": "^0.2.0",
+    "@nuxtjs/style-resources": "^0.1.2",
     "cross-env": "^5.2.0",
     "frontmatter-markdown-loader": "^1.6.0",
     "html2plaintext": "^2.1.2",
@@ -26,6 +28,7 @@
     "nuxt": "^2.4.0",
     "nuxt-purgecss": "^0.2.1",
     "nuxt-svg": "^0.1.4",
+    "nuxt-validate": "^0.1.2",
     "prismjs": "^1.15.0",
     "sass-loader": "^7.1.0",
     "walk-sync": "^1.1.3",

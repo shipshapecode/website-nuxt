@@ -42,8 +42,6 @@
 </script>
 
 <style lang="scss">
-  @import "assets/css/variables";
-
   .blog-post {
     .blog-tag {
       a {

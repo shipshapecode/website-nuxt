@@ -80,7 +80,6 @@
 </script>
 
 <style lang="scss">
-  @import "assets/css/variables";
   @import "assets/css/shevy/shevy";
 
   .post-content {

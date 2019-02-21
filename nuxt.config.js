@@ -105,11 +105,19 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
     '@nuxtjs/date-fns',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
+    '@nuxtjs/style-resources',
     'nuxt-purgecss',
     'nuxt-svg',
+    ['nuxt-validate', {
+      classes: true,
+      classNames: {
+        invalid: 'error'
+      }
+    }],
     '@nuxtjs/sitemap'
   ],
 
@@ -177,5 +185,11 @@ module.exports = {
     generate: true,
     routes: []
       .concat(blogRoutes)
+  },
+
+  styleResources: {
+    scss: [
+      './assets/css/_variables.scss'
+    ]
   }
 };

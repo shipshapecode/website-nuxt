@@ -45,8 +45,6 @@
 </script>
 
 <style lang="scss">
-  @import "assets/css/variables";
-
   .tabs {
     transition-duration: 0.25s;
     transition-property: background-color, box-shadow, color, fill;

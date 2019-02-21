@@ -107,8 +107,6 @@
 </script>
 
 <style lang="scss">
-  @import "assets/css/variables";
-
   .wave {
     background: url(/img/sea.png);
     background-position: center;
