@@ -192,10 +192,10 @@
   export default {
     data() {
       return {
-        company: null,
-        description: null,
-        email: null,
-        name: null,
+        company: '',
+        description: '',
+        email: '',
+        name: '',
         projectType: 'Open Source'
       };
     },
