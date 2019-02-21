@@ -1,182 +1,186 @@
 <template>
-  <form
-    class="cd-form floating-labels"
-    name="contact-us"
-    netlify-honeypot="bot-field"
-    netlify
-    @submit.prevent="sendContactRequest"
-  >
-    <fieldset>
-      <!--div
-        class="error-message"
-      >
-        <p
-          v-for="error in errors.all()"
-          :key="error"
+  <div class="w-full">
+    <form
+      class="cd-form floating-labels"
+      name="contact-us"
+      netlify-honeypot="bot-field"
+      netlify
+      @submit.prevent="sendContactRequest"
+    >
+      <fieldset>
+        <!--div
+          class="error-message"
         >
-          {{ error }}
-        </p>
-      </div-->
-      <legend>Personal Info</legend>
+          <p
+            v-for="error in errors.all()"
+            :key="error"
+          >
+            {{ error }}
+          </p>
+        </div-->
+        <legend>Personal Info</legend>
 
-      <div class="bot-field">
-        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-      </div>
+        <div class="bot-field">
+          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+        </div>
 
-      <div class="icon">
-        <label
-          :class="{'float': name}"
-          class="cd-label"
-          for="name"
-        >
-          Name
-        </label>
+        <div class="icon">
+          <label
+            :class="{'float': name}"
+            class="cd-label"
+            for="name"
+          >
+            Name
+          </label>
 
-        <input
-          id="name"
-          v-model="name"
-          class="user"
-          type="text"
-          name="name"
-          required
-        >
-      </div>
+          <input
+            id="name"
+            v-model="name"
+            class="user"
+            type="text"
+            name="name"
+            required
+          >
+        </div>
 
-      <div class="icon">
-        <label
-          :class="{'float': company}"
-          class="cd-label"
-          for="company"
-        >
-          Company
-        </label>
+        <div class="icon">
+          <label
+            :class="{'float': company}"
+            class="cd-label"
+            for="company"
+          >
+            Company
+          </label>
 
-        <input
-          id="company"
-          v-model="company"
-          class="company"
-          type="text"
-          name="company"
-        >
-      </div>
+          <input
+            id="company"
+            v-model="company"
+            class="company"
+            type="text"
+            name="company"
+          >
+        </div>
 
-      <div class="icon">
-        <label
-          :class="{'float': email}"
-          class="cd-label"
-          for="email"
-        >
-          Email
-        </label>
+        <div class="icon">
+          <label
+            :class="{'float': email}"
+            class="cd-label"
+            for="email"
+          >
+            Email
+          </label>
 
-        <input
-          id="email"
-          v-model="email"
-          class="email"
-          type="email"
-          name="email"
-          required
-        >
-      </div>
-    </fieldset>
+          <input
+            id="email"
+            v-model="email"
+            class="email"
+            type="email"
+            name="email"
+            required
+          >
+        </div>
+      </fieldset>
 
-    <fieldset>
-      <legend>Project Info</legend>
+      <fieldset>
+        <legend>Project Info</legend>
 
-      <!--div>
-        <h5>Budget</h5>
+        <!--div>
+          <h5>Budget</h5>
 
-        <p class="cd-select icon">
-          <select class="budget">
-            <option value="0">
-              Select Budget
-            </option>
-            <option value="1">
-              &lt; $5000
-            </option>
-            <option value="2">
-              $5000 - $10000
-            </option>
-            <option value="3">
-              &gt; $10000
-            </option>
-          </select>
-        </p>
-      </div-->
+          <p class="cd-select icon">
+            <select class="budget">
+              <option value="0">
+                Select Budget
+              </option>
+              <option value="1">
+                &lt; $5000
+              </option>
+              <option value="2">
+                $5000 - $10000
+              </option>
+              <option value="3">
+                &gt; $10000
+              </option>
+            </select>
+          </p>
+        </div-->
 
-      <div>
-        <h5>Project type</h5>
+        <div>
+          <h5>Project type</h5>
 
-        <ul class="cd-form-list">
-          <li>
-            <input
-              id="radio-1"
-              v-model="projectType"
-              type="radio"
-              name="radio-button"
-              value="Open Source"
-            >
-            <label for="radio-1">
-              Open Source
-            </label>
-          </li>
+          <ul class="cd-form-list">
+            <li>
+              <input
+                id="radio-1"
+                v-model="projectType"
+                type="radio"
+                name="radio-button"
+                value="Open Source"
+              >
+              <label for="radio-1">
+                Open Source
+              </label>
+            </li>
 
-          <li>
-            <input
-              id="radio-2"
-              v-model="projectType"
-              type="radio"
-              name="radio-button"
-              value="Training"
-            >
-            <label for="radio-2">
-              Training
-            </label>
-          </li>
+            <li>
+              <input
+                id="radio-2"
+                v-model="projectType"
+                type="radio"
+                name="radio-button"
+                value="Training"
+              >
+              <label for="radio-2">
+                Training
+              </label>
+            </li>
 
-          <li>
-            <input
-              id="radio-3"
-              v-model="projectType"
-              type="radio"
-              name="radio-button"
-              value="Development"
-            >
-            <label for="radio-3">
-              Development
-            </label>
-          </li>
-        </ul>
-      </div>
+            <li>
+              <input
+                id="radio-3"
+                v-model="projectType"
+                type="radio"
+                name="radio-button"
+                value="Development"
+              >
+              <label for="radio-3">
+                Development
+              </label>
+            </li>
+          </ul>
+        </div>
 
-      <div class="icon">
-        <label
-          class="cd-label"
-          :class="{'float': description}"
-          for="description"
-        >
-          Project description
-        </label>
-        <textarea
-          id="description"
-          v-model="description"
-          class="message"
-          name="description"
-          required
-        />
-      </div>
+        <div class="icon">
+          <label
+            class="cd-label"
+            :class="{'float': description}"
+            for="description"
+          >
+            Project description
+          </label>
+          <textarea
+            id="description"
+            v-model="description"
+            class="message"
+            name="description"
+            required
+          />
+        </div>
 
-      <div>
-        <input
-          type="submit"
-          value="Send Message"
-        >
-      </div>
-    </fieldset>
-  </form>
+        <div>
+          <input
+            type="submit"
+            value="Send Message"
+          >
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </template>
 
 <script>
+  import axios from 'axios';
+
   /**
    * Util function to encode data for netify forms
    * @param data
@@ -213,7 +217,7 @@
           header: { 'Content-Type': 'application/x-www-form-urlencoded' }
         };
 
-        return this.$axios.post(
+        return axios.post(
           '/',
           _encode({
             'form-name': 'contact-us',
