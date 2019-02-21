@@ -108,7 +108,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/css/main.scss'
+    '~/assets/css/main.scss',
+    'highlight.js/styles/github-gist.css'
   ],
 
   /*
@@ -196,6 +197,11 @@ module.exports = {
 
   googleAnalytics: {
     id: 'UA-84561982-1'
+  },
+
+  purgeCSS: {
+    whitelist: ['hljs*'],
+    whitelistPatterns: [/hljs$/]
   },
 
   sitemap: {
