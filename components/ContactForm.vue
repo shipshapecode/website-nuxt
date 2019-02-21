@@ -35,7 +35,6 @@
         <input
           id="name"
           v-model="name"
-          v-validate
           class="user"
           type="text"
           name="name"
@@ -73,7 +72,6 @@
         <input
           id="email"
           v-model="email"
-          v-validate
           class="email"
           type="email"
           name="email"
@@ -84,27 +82,6 @@
 
     <fieldset>
       <legend>Project Info</legend>
-
-      <!--div>
-        <h5>Budget</h5>
-
-        <p class="cd-select icon">
-          <select class="budget">
-            <option value="0">
-              Select Budget
-            </option>
-            <option value="1">
-              &lt; $5000
-            </option>
-            <option value="2">
-              $5000 - $10000
-            </option>
-            <option value="3">
-              &gt; $10000
-            </option>
-          </select>
-        </p>
-      </div-->
 
       <div>
         <h5>Project type</h5>
@@ -162,7 +139,6 @@
         <textarea
           id="description"
           v-model="description"
-          v-validate
           class="message"
           name="description"
           required
@@ -205,9 +181,7 @@
     },
     computed: {
       formValid() {
-        return Object.keys(this.fields).every((field) => {
-          return this.fields[field] && this.fields[field].valid;
-        });
+        return true;
       }
     },
     methods: {
