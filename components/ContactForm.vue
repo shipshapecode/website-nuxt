@@ -1,7 +1,149 @@
 <template>
-  <div>
-    No more form!
-  </div>
+  <form
+    @submit.prevent="sendContactRequest"
+    class="cd-form floating-labels"
+    name="contact-us"
+    netlify-honeypot="bot-field"
+    netlify
+  >
+    <fieldset>
+      <legend>Personal Info</legend>
+
+      <div class="bot-field">
+        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+      </div>
+
+      <div class="icon">
+        <label
+          :class="{'float': name}"
+          class="cd-label"
+          for="name"
+        >
+          Name
+        </label>
+
+        <input
+          id="name"
+          v-model="name"
+          class="user"
+          type="text"
+          name="name"
+          required
+        >
+      </div>
+
+      <div class="icon">
+        <label
+          :class="{'float': company}"
+          class="cd-label"
+          for="company"
+        >
+          Company
+        </label>
+
+        <input
+          id="company"
+          v-model="company"
+          class="company"
+          type="text"
+          name="company"
+        >
+      </div>
+
+      <div class="icon">
+        <label
+          :class="{'float': email}"
+          class="cd-label"
+          for="email"
+        >
+          Email
+        </label>
+
+        <input
+          id="email"
+          v-model="email"
+          class="email"
+          type="email"
+          name="email"
+          required
+        >
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Project Info</legend>
+
+      <div>
+        <h5>Project type</h5>
+
+        <ul class="cd-form-list">
+          <li>
+            <input
+              id="radio-1"
+              v-model="projectType"
+              type="radio"
+              name="radio-button"
+              value="Open Source"
+            >
+            <label for="radio-1">
+              Open Source
+            </label>
+          </li>
+
+          <li>
+            <input
+              id="radio-2"
+              v-model="projectType"
+              type="radio"
+              name="radio-button"
+              value="Training"
+            >
+            <label for="radio-2">
+              Training
+            </label>
+          </li>
+
+          <li>
+            <input
+              id="radio-3"
+              v-model="projectType"
+              type="radio"
+              name="radio-button"
+              value="Development"
+            >
+            <label for="radio-3">
+              Development
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <label
+          class="cd-label"
+          :class="{'float': description}"
+          for="description"
+        >
+          Project description
+        </label>
+        <textarea
+          id="description"
+          v-model="description"
+          class="message"
+          name="description"
+          required
+        />
+      </div>
+
+      <div>
+        <input
+          :disabled="!formValid"
+          type="submit"
+          value="Send Message"
+        >
+      </div>
+    </fieldset>
+  </form>
 </template>
 
 <script>
