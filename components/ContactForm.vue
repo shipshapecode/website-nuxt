@@ -7,6 +7,16 @@
     netlify
   >
     <fieldset>
+      <div
+        class="error-message"
+      >
+        <p
+          v-for="error in errors.all()"
+          :key="error"
+        >
+          {{ error }}
+        </p>
+      </div>
       <legend>Personal Info</legend>
 
       <div class="bot-field">
