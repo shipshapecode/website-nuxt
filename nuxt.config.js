@@ -1,18 +1,12 @@
 const { readdirSync, readFileSync, writeFileSync } = require('fs');
 const { extname, resolve } = require('path');
-const hljs = require('highlight.js');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
-const md = require('markdown-it')({
-  highlight(str, lang) {
-    if (lang && hljs.getLanguage(lang)) {
-      try {
-        return hljs.highlight(lang, str).value;
-      } catch (__) {}
-    }
 
-    return '';
-  }
+const showdown = require('showdown');
+const showdownHighlight = require('showdown-highlight');
+const converter = new showdown.Converter({
+  extensions: [showdownHighlight]
 });
 
 const blogPosts = readdirSync('blog/posts/');
@@ -109,7 +103,7 @@ module.exports = {
   */
   css: [
     '~/assets/css/main.scss',
-    'highlight.js/styles/github-gist.css'
+    'highlight.js/styles/github.css'
   ],
 
   /*
@@ -177,7 +171,7 @@ module.exports = {
         include: resolve(__dirname, 'blog'),
         options: {
           markdown(body) {
-            return md.render(body);
+            return converter.makeHtml(body);
           }
         }
       });
@@ -200,7 +194,6 @@ module.exports = {
   },
 
   purgeCSS: {
-    whitelist: ['hljs*'],
     whitelistPatterns: [/^hljs/]
   },
 
