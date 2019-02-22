@@ -53,7 +53,7 @@
 
         <nuxt-link
           class="nav-link"
-          to="/work"
+          to="/work/"
           @click.native="toggleNavMenu(false)"
         >
           Case Studies
@@ -61,7 +61,7 @@
 
         <nuxt-link
           class="nav-link"
-          to="/ember-consulting"
+          to="/ember-consulting/"
           @click.native="toggleNavMenu(false)"
         >
           Ember Consulting
@@ -69,7 +69,7 @@
 
         <nuxt-link
           class="nav-link"
-          to="/open-source"
+          to="/open-source/"
           @click.native="toggleNavMenu(false)"
         >
           Open Source
@@ -77,7 +77,7 @@
 
         <nuxt-link
           class="nav-link"
-          to="/blog"
+          to="/blog/"
           @click.native="toggleNavMenu(false)"
         >
           Blog
@@ -85,7 +85,7 @@
 
         <nuxt-link
           class="nav-link contact-link"
-          to="/contact"
+          to="/contact/"
           @click.native="toggleNavMenu(false)"
         >
           Contact

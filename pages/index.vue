@@ -11,7 +11,7 @@
           to create truly ambitious, state of the art applications that are future-proof and easily maintainable.
         </p>
         <div>
-          <nuxt-link to="/work" class="btn-navy">
+          <nuxt-link to="/work/" class="btn-navy">
             See what we've helped create
           </nuxt-link>
         </div>

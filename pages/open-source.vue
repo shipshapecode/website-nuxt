@@ -13,7 +13,7 @@
           projects throughout the open source community.
         </p>
         <div>
-          <nuxt-link to="/work" class="btn-navy">
+          <nuxt-link to="/work/" class="btn-navy">
             Learn how we work
           </nuxt-link>
         </div>
@@ -65,7 +65,7 @@
         'From documentation, to Ember CLI, and Ember itself. ' +
         'We have written several Ember addons of our own, and we are maintainers for the html-next ' +
         'addons, including flexi and vertical-collection.';
-      const url = 'https://shipshape.io/open-source';
+      const url = 'https://shipshape.io/open-source/';
 
       return generateMeta(title, description, url);
     }

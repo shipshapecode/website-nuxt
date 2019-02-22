@@ -20,9 +20,9 @@
         />
 
         <BottomLinks
-          :next-link="`/blog/${post.nextSlug}`"
+          :next-link="`/blog/${post.nextSlug}/`"
           :next-link-text="post.nextTitle"
-          :previous-link="`/blog/${post.previousSlug}`"
+          :previous-link="`/blog/${post.previousSlug}/`"
           :previous-link-text="post.previousTitle"
         />
       </div>

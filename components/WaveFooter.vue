@@ -25,31 +25,31 @@
 
       <div class="flex flex-wrap items-center justify-center flex-1">
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/work">
+          <nuxt-link to="/work/">
             Case Studies
           </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/ember-consulting">
+          <nuxt-link to="/ember-consulting/">
             Ember Consulting
           </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/open-source">
+          <nuxt-link to="/open-source/">
             Open Source
           </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/blog">
+          <nuxt-link to="/blog/">
             Blog
           </nuxt-link>
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/contact">
+          <nuxt-link to="/contact/">
             Contact
           </nuxt-link>
         </div>

@@ -89,9 +89,9 @@
       </div>
 
       <!--BottomLinks
-        :next-link="'/work/brokermate'"
+        :next-link="'/work/brokermate/'"
         :next-link-text="'Brokermate'"
-        :previous-link="'/work/socialcode'"
+        :previous-link="'/work/socialcode/'"
         :previous-link-text="'SocialCode'"
       /-->
     </div>
@@ -114,7 +114,7 @@
     head() {
       const title = 'Case Study - Netflix';
       const description = 'Learn how we helped build finance tools for the world\'s number one streaming platform.';
-      const url = 'https://shipshape.io/work/netflix';
+      const url = 'https://shipshape.io/work/netflix/';
 
       return generateMeta(title, description, url);
     }

@@ -33,7 +33,7 @@
       const description = 'Let\'s create some amazing things together. We do Ember app development, Ember training, sponsored ' +
         'open source work, and anything and everything Ember. To get started on your Ember training or Ember consulting project, ' +
         'shoot us an email or fill out the contact form.';
-      const url = 'https://shipshape.io/contact';
+      const url = 'https://shipshape.io/contact/';
 
       return generateMeta(title, description, url);
     }

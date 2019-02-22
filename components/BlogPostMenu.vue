@@ -7,7 +7,7 @@
     >
       <nuxt-link
         class="title"
-        :to="`/blog/${post.slug}`"
+        :to="`/blog/${post.slug}/`"
       >
         {{ post.linktitle || post.title }}
       </nuxt-link>
@@ -20,7 +20,7 @@
         <nuxt-link
           v-for="tag in post.categories"
           :key="tag"
-          :to="`/blog/categories/${tag.replace(/ /g, '-')}`"
+          :to="`/blog/categories/${tag.replace(/ /g, '-')}/`"
           class="blog-tag mr-2"
         >
           {{ tag }}

@@ -13,7 +13,7 @@
           to large corporations, build scalable and maintainable apps that stand the test of time.
         </p>
         <div>
-          <nuxt-link class="btn-navy" to="/contact">
+          <nuxt-link class="btn-navy" to="/contact/">
             Let's build together
           </nuxt-link>
         </div>
@@ -82,7 +82,7 @@
       const description = 'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, ' +
         'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
         'Ember skills, while also churning out bulletproof features for your Ember app.';
-      const url = 'https://shipshape.io/ember-consulting';
+      const url = 'https://shipshape.io/ember-consulting/';
 
       return generateMeta(title, description, url);
     }

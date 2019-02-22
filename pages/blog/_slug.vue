@@ -40,7 +40,7 @@
         separator: /,?\.* +/
       });
       const { author, date, slug, title } = this.post;
-      const url = `https://shipshape.io/blog/${slug}`;
+      const url = `https://shipshape.io/blog/${slug}/`;
 
       const headData = generateMeta(title, description, url);
       headData.meta.push(

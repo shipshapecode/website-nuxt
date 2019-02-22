@@ -26,7 +26,7 @@
     head() {
       const title = 'Case Studies';
       const description = 'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.';
-      const url = 'https://shipshape.io/work';
+      const url = 'https://shipshape.io/work/';
 
       return generateMeta(title, description, url);
     }
