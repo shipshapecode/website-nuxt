@@ -10,32 +10,50 @@
 
         <div class="flex flex-wrap w-full lg:pl-32 lg:w-4/5 text-grey">
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://emberjs.com/">
+            <a
+              href="https://emberjs.com/"
+              aria-label="Ember.js"
+            >
               <Ember :class="'w-full h-full p-4 max-w-xxs'"/>
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://ember-cli.com/">
+            <a
+              href="https://ember-cli.com/"
+              aria-label="Ember CLI"
+            >
               <EmberCLI :class="'w-full h-full p-4 max-w-xxs'"/>
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://guides.emberjs.com/release/models/">
+            <a
+              href="https://guides.emberjs.com/release/models/"
+              aria-label="Ember Data"
+            >
               <EmberData :class="'w-full h-full p-4 max-w-xxs'"/>
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://nuxtjs.org/">
+            <a
+              href="https://nuxtjs.org/"
+              aria-label="Nuxt.js"
+            >
               <Nuxt :class="'w-full h-full p-4 max-w-xxs'"/>
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://sass-lang.com/">
+            <a
+              href="https://sass-lang.com/"
+              aria-label="Sass"
+            >
               <Sass :class="'w-full h-full p-4 max-w-xxs'"/>
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://travis-ci.org/">
+            <a
+              href="https://travis-ci.org/"
+              aria-label="Travis CI"
+            >
               <Travis :class="'w-full h-full p-4 max-w-xxs'"/>
             </a>
           </div>

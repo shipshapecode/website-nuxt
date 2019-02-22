@@ -8,7 +8,7 @@
         </p>
 
         <nuxt-link
-          class='btn-navy mb-12'
+          class="btn-navy mb-12"
           to="/work/netflix"
         >
           View Case
