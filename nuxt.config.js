@@ -195,6 +195,7 @@ module.exports = {
   },
 
   generate: {
+    fallback: '404.html',
     routes: []
       .concat(blogRoutes)
   },
