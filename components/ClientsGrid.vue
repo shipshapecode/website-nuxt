@@ -1,7 +1,12 @@
 <template>
   <div class="flex flex-wrap">
     <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
-      <social-code-logo class="h-8 w-auto"/>
+      <a
+        href="https://www.socialcode.com/"
+        aria-label="SocialCode"
+      >
+        <social-code-logo class="h-8 w-auto"/>
+      </a>
 
       <p>
         SocialCode has a unique "micro apps" setup, which we helped streamline, by moving common dependencies to a
@@ -12,7 +17,10 @@
     </div>
 
     <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
-      <a href="https://marianatek.com/">
+      <a
+        href="https://marianatek.com/"
+        aria-label="Mariana Tek"
+      >
         <mariana-tek-logo class="h-8 w-auto"/>
       </a>
 
@@ -25,7 +33,10 @@
     </div>
 
     <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
-      <a href="https://www.scoutforpets.com/">
+      <a
+        href="https://www.scoutforpets.com/"
+        aria-label="Scout"
+      >
         <scout-logo class="h-8 w-auto"/>
       </a>
       <p>
@@ -43,7 +54,10 @@
     </div>
 
     <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
-      <a href="https://www.greenlight.guru/">
+      <a
+        href="https://www.greenlight.guru/"
+        aria-label="Greenlight Guru"
+      >
         <greenlight-guru-logo class="h-8 w-auto"/>
       </a>
       <p>
@@ -54,7 +68,10 @@
     </div>
 
     <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
-      <a href="https://www.mentrs.com/">
+      <a
+        href="https://www.mentrs.com/"
+        aria-label="Mentrs"
+      >
         <mentrs-logo class="h-8 w-auto"/>
       </a>
 

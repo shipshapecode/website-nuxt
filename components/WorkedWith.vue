@@ -9,19 +9,44 @@
 
       <div class="flex flex-wrap items-center w-full pb-8">
         <div class="client-logo">
-          <ScoutLogo :class="'h-full w-full max-w-xs'"/>
+          <a
+            href="https://www.scoutforpets.com/"
+            aria-label="Scout"
+          >
+            <ScoutLogo :class="'h-full w-full max-w-xs'"/>
+          </a>
         </div>
         <div class="client-logo">
-          <GreenlightGuruLogo :class="'h-full w-full max-w-xs'"/>
+          <a
+            href="https://www.greenlight.guru/"
+            aria-label="Greenlight Guru"
+          >
+            <GreenlightGuruLogo :class="'h-full w-full max-w-xs'"/>
+          </a>
         </div>
         <div class="client-logo">
-          <NetflixLogo :class="'h-full w-full max-w-xs'"/>
+          <a
+            href="https://www.netflix.com/"
+            aria-label="Netflix"
+          >
+            <NetflixLogo :class="'h-full w-full max-w-xs'"/>
+          </a>
         </div>
         <div class="client-logo">
-          <MarianaTekLogo :class="'h-full w-full max-w-xs'"/>
+          <a
+            href="https://marianatek.com/"
+            aria-label="Mariana Tek"
+          >
+            <MarianaTekLogo :class="'h-full w-full max-w-xs'"/>
+          </a>
         </div>
         <div class="client-logo">
-          <SocialCodeLogo :class="'h-full w-full max-w-xs'"/>
+          <a
+            href="https://www.socialcode.com/"
+            aria-label="SocialCode"
+          >
+            <SocialCodeLogo :class="'h-full w-full max-w-xs'"/>
+          </a>
         </div>
       </div>
 
