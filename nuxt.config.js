@@ -205,7 +205,10 @@ module.exports = {
   },
 
   purgeCSS: {
-    whitelistPatterns: [/^hljs/]
+    whitelistPatterns: [
+      /^hljs/,
+      /^page-/
+    ]
   },
 
   sitemap: {
