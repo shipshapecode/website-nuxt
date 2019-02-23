@@ -3,7 +3,6 @@
 </template>
 
 <script>
-  import h2p from 'html2plaintext';
   import truncate from 'lodash/truncate';
   import BlogPost from '~/components/BlogPost.vue';
   import { generateMeta } from '~/utils/meta';
@@ -35,7 +34,7 @@
     },
 
     head() {
-      const description = truncate(h2p(this.post.html), {
+      const description = truncate(this.post.html.replace(/(<([^>]+)>)/ig, ''), {
         length: 260,
         separator: /,?\.* +/
       });
