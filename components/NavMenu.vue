@@ -1,6 +1,6 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap p-6">
-    <div class="flex flex-no-shrink items-center pl-2 pr-2 pt-2">
+    <div class="flex flex-no-shrink items-center pr-2 pt-2">
       <nuxt-link
         to="/"
         class="logo inline-flex"
@@ -15,11 +15,10 @@
         >
           <img
             alt="Ship Shape Logo"
-            class="mr-2"
             itemprop="url"
-            height="38px"
-            src="~assets/svgs/logo.svg"
-            width="38px"
+            height="54px"
+            src="/img/logo.png"
+            width="54px"
           >
           <meta itemprop="height" content="128">
           <meta itemprop="width" content="128">
