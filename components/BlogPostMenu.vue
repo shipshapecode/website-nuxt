@@ -1,12 +1,9 @@
 <template>
-  <section itemscope itemtype="http://schema.org/Blog">
-    <article
+  <div>
+    <div
       v-for="post in posts"
       :key="post.slug"
       class="blog-post border-b-2 border-grey-transparent border-solid pt-2 pb-2"
-      itemprop="blogPosts"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
     >
       <nuxt-link
         class="title"
@@ -29,8 +26,8 @@
           {{ tag }}
         </nuxt-link>
       </div>
-    </article>
-  </section>
+    </div>
+  </div>
 </template>
 
 <script>
