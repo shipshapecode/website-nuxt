@@ -1,7 +1,7 @@
 <template>
   <div
     itemscope
-    itemtype="https://schema.org/Corporation"
+    itemtype="https://schema.org/Organization"
     itemid="shipshapeorg"
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC">
