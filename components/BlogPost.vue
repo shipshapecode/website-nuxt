@@ -1,5 +1,6 @@
 <template>
-  <div itemscope itemtype="http://schema.org/BlogPosting">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <link itemprop="mainEntityOfPage" :href="$nuxt.$route.path">
     <link itemprop="publisher" href="shipshapeorg">
     <link itemprop="image" href="shipshapelogo">
 
@@ -27,7 +28,7 @@
         />
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>

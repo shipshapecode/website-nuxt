@@ -1,5 +1,9 @@
 <template>
-  <div itemscope itemtype="https://schema.org/Organization" itemid="shipshapeorg">
+  <div
+    itemscope
+    itemtype="https://schema.org/Organization"
+    itemid="shipshapeorg"
+  >
     <NavMenu/>
     <Nuxt/>
     <WaveFooter/>
