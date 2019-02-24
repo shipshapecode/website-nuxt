@@ -217,7 +217,13 @@ module.exports = {
     cacheTime: 1000 * 60 * 15,
     generate: true,
     routes: []
-      .concat(blogRoutes)
+      .concat(blogRoutes),
+    filter({ routes }) {
+      return routes.map((route) => {
+        route.url = `${route.url}/`;
+        return route;
+      });
+    }
   },
 
   styleResources: {
