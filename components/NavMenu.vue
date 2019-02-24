@@ -1,7 +1,11 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap p-6">
     <div class="flex flex-no-shrink items-center pl-2 pr-2 pt-2">
-      <nuxt-link to="/" class="logo inline-flex">
+      <nuxt-link
+        to="/"
+        class="logo inline-flex"
+        itemprop="url"
+      >
         <div
           class="inline-block"
           itemprop="logo"
