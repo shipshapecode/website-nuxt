@@ -126,4 +126,8 @@
     height: 36px;
     width: 36px;
   }
+
+  .logo {
+    word-spacing: -5px;
+  }
 </style>
