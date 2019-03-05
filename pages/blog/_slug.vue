@@ -86,6 +86,11 @@
     @include headings($shevy-blog-post);
     @include content($shevy-blog-post);
 
+    b,
+    strong {
+      font-weight: bold;
+    }
+
     code {
       &[class*="language-"] {
         font-size: 14px;
