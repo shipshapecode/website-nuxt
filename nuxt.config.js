@@ -136,7 +136,7 @@ module.exports = {
   */
   build: {
     // Set to true to pull common CSS into separate files
-    extractCSS: false,
+    extractCSS: true,
 
     babel: {
       plugins: [
