@@ -9,7 +9,12 @@
       </a>
 
       <p>
-        Description here
+        Draft needed to re-write their old Ember web application in React.
+        We worked with the frontend team making sure to adhere to industry best-practices, and use
+        the latest React tooling to produce high-quality code under a very
+        strict time constraint. In a short amount of time, we delivered a
+        feature complete re-write of their application with easy to read,
+        extensible, modern code.
       </p>
     </div>
 
