@@ -18,10 +18,10 @@
         </div>
         <div class="client-logo">
           <a
-            href="https://www.greenlight.guru/"
-            aria-label="Greenlight Guru"
+            href="https://www.fanduel.com/"
+            aria-label="FanDuel"
           >
-            <GreenlightGuruLogo :class="'h-full w-full max-w-xs'"/>
+            <FanDuelLogo :class="'h-full w-full max-w-xs'"/>
           </a>
         </div>
         <div class="client-logo">
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-  import GreenlightGuruLogo from '~/assets/svgs/clients/greenlight-guru.svg?inline';
+  import FanDuelLogo from '~/assets/svgs/clients/fanduel.svg?inline';
   import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
   import NetflixLogo from '~/assets/svgs/clients/netflix.svg?inline';
   import ScoutLogo from '~/assets/svgs/clients/scout.svg?inline';
@@ -68,7 +68,7 @@
 
   export default {
     components: {
-      GreenlightGuruLogo,
+      FanDuelLogo,
       MarianaTekLogo,
       NetflixLogo,
       ScoutLogo,
