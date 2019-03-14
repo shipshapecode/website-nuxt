@@ -2,10 +2,28 @@
   <div class="flex flex-wrap">
     <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
       <a
+        href="https://draft.com/"
+        aria-label="Draft"
+      >
+        <DraftLogo class="h-8 w-auto"/>
+      </a>
+
+      <p>
+        Draft needed to re-write their old Ember web application in React.
+        We worked with the frontend team making sure to adhere to industry best-practices, and use
+        the latest React tooling to produce high-quality code under a very
+        strict time constraint. In a short amount of time, we delivered a
+        feature complete re-write of their application with easy to read,
+        extensible, modern code.
+      </p>
+    </div>
+
+    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+      <a
         href="https://www.socialcode.com/"
         aria-label="SocialCode"
       >
-        <social-code-logo class="h-8 w-auto"/>
+        <SocialCodeLogo class="h-8 w-auto"/>
       </a>
 
       <p>
@@ -16,12 +34,12 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
       <a
         href="https://marianatek.com/"
         aria-label="Mariana Tek"
       >
-        <mariana-tek-logo class="h-8 w-auto"/>
+        <MarianaTekLogo class="h-8 w-auto"/>
       </a>
 
       <p>
@@ -32,12 +50,12 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
+    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
       <a
         href="https://www.scoutforpets.com/"
         aria-label="Scout"
       >
-        <scout-logo class="h-8 w-auto"/>
+        <ScoutLogo class="h-8 w-auto"/>
       </a>
       <p>
         We did several months of work with Scout,
@@ -53,12 +71,12 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
+    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
       <a
         href="https://www.greenlight.guru/"
         aria-label="Greenlight Guru"
       >
-        <greenlight-guru-logo class="h-8 w-auto"/>
+        <GreenlightGuruLogo class="h-8 w-auto"/>
       </a>
       <p>
         We first updated the greenlight.guru app to Ember 1.12, fixing deprecations as we went.
@@ -67,12 +85,12 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
       <a
         href="https://www.mentrs.com/"
         aria-label="Mentrs"
       >
-        <mentrs-logo class="h-8 w-auto"/>
+        <MentrsLogo class="h-8 w-auto"/>
       </a>
 
       <p>
@@ -89,6 +107,7 @@
 </template>
 
 <script>
+  import DraftLogo from '~/assets/svgs/clients/draft.svg?inline';
   import GreenlightGuruLogo from '~/assets/svgs/clients/greenlight-guru.svg?inline';
   import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
   import MentrsLogo from '~/assets/svgs/clients/mentrs.svg?inline';
@@ -97,6 +116,7 @@
 
   export default {
     components: {
+      DraftLogo,
       GreenlightGuruLogo,
       MarianaTekLogo,
       MentrsLogo,
