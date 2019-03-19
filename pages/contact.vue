@@ -11,9 +11,7 @@
       </p>
 
       <div class="flex flex-wrap justify-center items-center">
-        <no-ssr>
-          <ContactForm/>
-        </no-ssr>
+        <ContactForm/>
       </div>
     </div>
   </div>
