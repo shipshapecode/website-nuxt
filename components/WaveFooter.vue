@@ -43,6 +43,12 @@
         </div>
 
         <div class="w-full lg:w-auto flex justify-center p-4">
+          <nuxt-link to="/team/">
+            Team
+          </nuxt-link>
+        </div>
+
+        <div class="w-full lg:w-auto flex justify-center p-4">
           <nuxt-link to="/blog/">
             Blog
           </nuxt-link>

@@ -80,6 +80,14 @@
 
         <nuxt-link
           class="nav-link"
+          to="/team/"
+          @click.native="toggleNavMenu(false)"
+        >
+          Team
+        </nuxt-link>
+
+        <nuxt-link
+          class="nav-link"
           to="/blog/"
           @click.native="toggleNavMenu(false)"
         >

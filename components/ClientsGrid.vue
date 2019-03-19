@@ -103,11 +103,25 @@
         to class creation, and Stripe integration for paying to enroll in classes.
       </p>
     </div>
+
+    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
+      <a
+        href="http://www.gameface.photos/"
+        aria-label="Gameface"
+      >
+        <GamefaceLogo class="h-8 w-auto"/>
+      </a>
+
+      <p>
+        Description here
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
   import DraftLogo from '~/assets/svgs/clients/draft.svg?inline';
+  import GamefaceLogo from '~/assets/svgs/clients/gameface.svg?inline';
   import GreenlightGuruLogo from '~/assets/svgs/clients/greenlight-guru.svg?inline';
   import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
   import MentrsLogo from '~/assets/svgs/clients/mentrs.svg?inline';
@@ -117,6 +131,7 @@
   export default {
     components: {
       DraftLogo,
+      GamefaceLogo,
       GreenlightGuruLogo,
       MarianaTekLogo,
       MentrsLogo,
