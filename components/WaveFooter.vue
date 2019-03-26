@@ -1,5 +1,5 @@
 <template>
-  <div class="wave text-base">
+  <footer class="wave text-base">
     <div class="footer-top">
       <div class="text-center pt-32 lg:pb-32">
         <compass class="m-8"/>
@@ -85,7 +85,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>

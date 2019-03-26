@@ -49,7 +49,11 @@ In Nuxt, you'll define where your application content is inserted with `<Nuxt/>`
 
 {{head-layout}}
 
-<div itemscope itemtype="https://schema.org/Organization" itemid="shipshapeorg">
+<div 
+  itemscope 
+  itemtype="https://schema.org/Organization" 
+  itemid="shipshapeorg"
+>
   <NavMenu/>
 
   <main>
@@ -63,6 +67,8 @@ In Nuxt, you'll define where your application content is inserted with `<Nuxt/>`
 ##### Nuxt.js
 
 ```vue
+<!-- layouts/default.vue -->
+
 <template>
   <div
     itemscope
@@ -70,8 +76,13 @@ In Nuxt, you'll define where your application content is inserted with `<Nuxt/>`
     itemid="shipshapeorg"
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC">
+    
     <NavMenu/>
-    <Nuxt/>
+    
+    <main>
+      <Nuxt/>
+    </main>
+    
     <WaveFooter/>
   </div>
 </template>
@@ -98,7 +109,14 @@ I did not have to worry much about specific styles for each component.
 
 ### components/foo-bar.js + templates/components/foo-bar.hbs -> components/FooBar.vue
 
+In Ember you have separate JS and template files for components, typically housed either in the `components` or
+`templates/components` directory. In Nuxt you have just one file, containing the template, script, and styles for
+the component. In most cases, the bulk of the code can be directly copied over.
+
 ### {{yield}} -> &lt;slot/&gt;
+
+`{{yield}}` is used to pass through the contents of a block component in Ember, and in Nuxt you will replace it with
+`<slot/>` instead.
 
 ### Example
 
@@ -108,16 +126,150 @@ I did not have to worry much about specific styles for each component.
 
 # Routes
 
-### routes/foo.js + templates/foo.hbs -> pages/foo.vue
+### routes/blog/index.js + templates/blog/index.hbs -> pages/blog/index.vue
 
 In Ember, your routes have separate `JS` and `hbs` files, but in Nuxt you put your JavaScript, template, and styles
 all in one file. I find this to be a big downside of Nuxt, and would really prefer to keep separate files for everything.
+
+### model -> asyncData
+
+In Ember, you will typically do all of your data fetching in the [model](https://guides.emberjs.com/v3.8.0/routing/specifying-a-routes-model/) 
+hook. Nuxt has a similar concept in its [asyncData](https://nuxtjs.org/api/) method, which will load all the data server side, 
+allowing you to do `async` things, before setting the component data, much like Ember waits for the `model` hook to return, 
+before rendering the page. 
 
 ### Example
 
 ##### Ember.js
 
+```js
+// routes/blog/index.js
+
+import Route from '@ember/routing/route';
+import asyncForEach from 'ember-async-await-for-each';
+import fetch from 'fetch';
+
+export default class Blog extends Route {
+  async model() {
+    let authors = await fetch('/authors/authors.json');
+    authors = await authors.json();
+    authors = authors.data;
+
+    let posts = await fetch('/posts/posts.json');
+    posts = await posts.json();
+    posts = posts.data;
+
+    await asyncForEach(posts, async (post) => {
+      post.author = await authors.find((author) => {
+        return author.id === post.attributes.authorId;
+      });
+    });
+
+    return posts.sort((post1, post2) => {
+      if(post1.attributes.date > post2.attributes.date){
+        return -1;
+      }
+
+      if(post1.attributes.date < post2.attributes.date){
+        return 1;
+      }
+
+      return 0;
+    });
+  }
+}
+```
+
+```handlebars
+<div class="blog-posts section flex flex-wrap justify-center">
+  <div class="section-content">
+    <div class="flex items-center">
+      <h1>Blog</h1>
+
+      <a
+        class="p-12"
+        href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fshipshape.io%2Ffeed.xml"
+        target="_blank"
+        rel="noopener"
+      >
+        {{svg-jar "rss"}}
+      </a>
+    </div>
+
+    <p>
+      Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.
+    </p>
+
+    <BlogPostMenu
+      @navigatePages={{action "navigatePages"}}
+      @page={{this.page}}
+      @posts={{this.model}}
+      @totalPosts={{this.model.length}}
+    >
+    </BlogPostMenu>
+  </div>
+</div>
+```
+
+
 ##### Nuxt.js
+
+```vue
+<template>
+  <div class="blog-posts section flex flex-wrap justify-center">
+    <div class="section-content">
+      <div class="flex items-center">
+        <h1>
+          Blog
+        </h1>
+
+        <a
+          class="p-12"
+          href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fshipshape.io%2Ffeed.xml"
+          target="_blank"
+          rel="noopener"
+        >
+          <RSS/>
+        </a>
+      </div>
+
+      <p>
+        Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.
+      </p>
+
+      <BlogPostMenu :posts="posts"/>
+    </div>
+  </div>
+</template>
+
+<script>
+  import BlogPostMenu from '~/components/BlogPostMenu.vue';
+  import RSS from '~/assets/svgs/rss.svg?inline';
+  import { getBlogData } from '~/utils/blog';
+  import { generateMeta } from '~/utils/meta';
+
+  export default {
+    scrollToTop: true,
+
+    components: {
+      BlogPostMenu,
+      RSS
+    },
+
+    asyncData() {
+      return getBlogData();
+    },
+
+    head() {
+      const title = 'Blog';
+      const description = 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.';
+      const url = 'https://shipshape.io/blog/';
+
+      return generateMeta(title, description, url);
+    }
+  };
+</script>
+```
 
 # Static Site Generation
 
@@ -138,7 +290,8 @@ property to set your meta for each page.
 In Ember, you will need to install several service worker addons to get offline support and caching, but in Nuxt
 this is all built in to the framework, which is super nice because you do not have to worry about any of the
 service worker internals, and you know the framework has bought into the idea and will continue to support it
-as a first class feature.
+as a first class feature. You do need to ensure [@nuxtjs/pwa](https://github.com/nuxt-community/pwa-module) is
+installed, but other than that, it is zero config.
 
 # Sitemaps
 
