@@ -4,7 +4,11 @@ categories:
   - ember.js
   - nuxt.js
   - vue.js
-date: '2019-03-20'
+date: '2019-03-26'
+nextSlug: ux-trade-offs-of-two-ways-to-tour-a-site
+nextTitle: 'Slideshows and Safaris: UX Trade-offs of Two Very Different Ways To Tour a Site'
+previousSlug: ember-data-passing-query-params-to-save
+previousTitle: Ember Data | Passing query params to .save()
 slug: an-emberjs-developers-guide-to-nuxtjs
 title: An Ember.js Developer's Guide to Nuxt.js
 ---
@@ -26,6 +30,7 @@ and Nuxt and the benefits and drawbacks of each.
 1. [PWA](#pwa)
 1. [Sitemaps](#sitemaps)
 1. [Code Splitting, Tree Shaking, and PurgeCSS](#codesplittingtreeshakingandpurgecss)
+1. [Summary](#summary)
 
 # Application Wrapper
 
@@ -107,7 +112,7 @@ With the new angle bracket syntax for Ember's Glimmer components, copying and pa
 becomes much easier. Especially with the addition of [Tailwind CSS](https://tailwindcss.com/docs/what-is-tailwind/), 
 I did not have to worry much about specific styles for each component.
 
-### components/foo-bar.js + templates/components/foo-bar.hbs -> components/FooBar.vue
+### components/blog-post/component.js + components/blog-post/template.hbs -> components/BlogPost.vue
 
 In Ember you have separate JS and template files for components, typically housed either in the `components` or
 `templates/components` directory. In Nuxt you have just one file, containing the template, script, and styles for
@@ -122,7 +127,163 @@ the component. In most cases, the bulk of the code can be directly copied over.
 
 ##### Ember.js
 
+```js
+// components/blog-post/component.js
+
+import Component from '@ember/component';
+import { className, tagName } from '@ember-decorators/component';
+import { alias } from '@ember-decorators/object/computed';
+import { htmlSafe } from '@ember/template';
+import { set } from '@ember/object';
+
+@tagName('article')
+export default class BlogPost extends Component {
+  @alias('post.author')
+  author;
+
+  @alias('post.attributes.date')
+  date;
+
+  @alias('post.attributes.nextSlug')
+  nextSlug;
+
+  @alias('post.attributes.nextTitle')
+  nextTitle;
+
+  @alias('post.attributes.previousSlug')
+  previousSlug;
+
+  @alias('post.attributes.previousTitle')
+  previousTitle;
+
+  @alias('post.attributes.slug')
+  @className
+  slug;
+
+  @alias('post.attributes.title')
+  title;
+
+  didReceiveAttrs() {
+    super.didReceiveAttrs(...arguments);
+    set(this, 'content', htmlSafe(this.post.attributes.html));
+  }
+
+  didRender() {
+    super.didRender(...arguments);
+
+    let nodeList = this.element.querySelectorAll('pre:not(.no-line-numbers) > code');
+
+    if (nodeList) {
+      // console.log(nodeList);
+      nodeList.forEach((code) => {
+        code.parentNode.classList.add('line-numbers');
+      });
+    }
+
+    Prism.highlightAll();
+  }
+}
+
+```
+
+```handlebars
+{{! components/blog-post/template.hbs }}
+
+<div itemscope itemtype="http://schema.org/BlogPosting">
+  <link itemprop="publisher" href="shipshapeorg">
+  <link itemprop="image" href="shipshapelogo">
+
+  <div class="section flex flex-wrap justify-center">
+    <div class="max-w-lg w-full">
+      <h1 class="blog-post-title" itemprop="headline">
+        {{this.title}}
+      </h1>
+
+      <AuthorRow
+        @author={{this.author}}
+        @date={{this.date}}
+      >
+      </AuthorRow>
+
+      <div class="post-content">
+        {{this.content}}
+      </div>
+
+      <BottomLinksWithPath
+        @nextLink="blog.post"
+        @nextLinkPath={{this.nextSlug}}
+        @nextLinkText={{this.nextTitle}}
+        @previousLink="blog.post"
+        @previousLinkPath={{this.previousSlug}}
+        @previousLinkText={{this.previousTitle}}
+      >
+      </BottomLinksWithPath>
+    </div>
+  </div>
+</div>
+
+```
+
 ##### Nuxt.js
+
+```vue
+<!-- components/BlogPost.vue -->
+<template>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <link itemprop="mainEntityOfPage" :href="$nuxt.$route.path">
+    <link itemprop="publisher" href="shipshapeorg">
+    <link itemprop="image" href="shipshapelogo">
+
+    <div class="section flex flex-wrap justify-center">
+      <div class="max-w-lg w-full">
+        <h1 class="blog-post-title" itemprop="headline">
+          {{ post.title }}
+        </h1>
+
+        <AuthorRow
+          v-bind="post.author.attributes"
+          :date="post.date"
+        />
+
+        <div
+          class="post-content"
+          v-html="post.html"
+        />
+
+        <BottomLinks
+          :next-link="`/blog/${post.nextSlug}/`"
+          :next-link-text="post.nextTitle"
+          :previous-link="`/blog/${post.previousSlug}/`"
+          :previous-link-text="post.previousTitle"
+        />
+      </div>
+    </div>
+  </article>
+</template>
+
+<script>
+  import AuthorRow from '~/components/AuthorRow.vue';
+  import BottomLinks from '~/components/BottomLinks.vue';
+
+  export default {
+    components: {
+      AuthorRow,
+      BottomLinks
+    },
+
+    props: {
+      post: {
+        type: Object,
+        default: () => {}
+      }
+    }
+  };
+</script>
+```
+
+As you can see, the markup is very similar for both the Ember and Nuxt components. There are small differences, but in
+most cases you can change things like defining arguments to the component with `@foo` in Ember, to using `:foo` in
+Nuxt, and it will work.
 
 # Routes
 
@@ -309,5 +470,12 @@ possible to use PurgeCSS, without a lot of manual work.
 
 Code Splitting, Tree Shaking and PurgeCSS all work out of the box with Nuxt, and the only additional thing to install
 is the [nuxt-purgecss](https://github.com/Developmint/nuxt-purgecss) module.
+
+# Summary
+
+There is no right or wrong framework to use, only what you decide works best for your project. However, it is nice to see
+how much things are beginning to overlap in modern frameworks, and how copying and pasting code between them is 
+becoming more and more viable. This really solidifies my belief that both Ember and Nuxt are on the right track, and
+I am excited to see where each of them goes in the coming years!
 
 
