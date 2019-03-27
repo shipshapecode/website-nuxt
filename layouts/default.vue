@@ -5,8 +5,13 @@
     itemid="shipshapeorg"
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC">
+
     <NavMenu/>
-    <Nuxt/>
+
+    <main>
+      <Nuxt/>
+    </main>
+
     <WaveFooter/>
   </div>
 </template>
