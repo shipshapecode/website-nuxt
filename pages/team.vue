@@ -20,26 +20,6 @@
           </p>
         </div>
       </div>
-
-      <div class="flex-1 flex flex-wrap justify-center">
-        <div class="max-w-xs">
-          <img
-            src="/img/blog/authors/chris.jpg"
-            alt="Chris Power"
-          >
-          <h5 class="heading text-red">
-            Chris Power
-          </h5>
-
-          <p class="text-white">
-            Partner
-          </p>
-
-          <p class="text-white">
-            Description here
-          </p>
-        </div>
-      </div>
     </div>
   </div>
 </template>
