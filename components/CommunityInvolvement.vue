@@ -21,25 +21,52 @@
           </div>
 
           <h3 class="heading">
-            EmberConf
+            EmberConf 2019
           </h3>
 
-          <p class="h-auto lg:h-48">
-            We ran the Improving Ember App Performance workshop at EmberConf 2018, where we explored techniques to reduce your bundle
-            size, improving your rendering performance, and cache your assets to make reloads blazing fast.
+          <p class="h-auto lg:h-64 xl:h-48">
+            We gave a BonusConf talk at EmberConf 2019, Ember Data - It's Not Just for JSON API Anymore, in which
+            we detailed several approaches to use Ember Data with non-standard APIs.
           </p>
 
           <p>
             <a
               class="learn-more"
-              href="https://2018.emberconf.com/schedule.html#e-improving-ember-app-performance"
+              href="https://youtu.be/u5onNDpt8ks"
             >
-              Learn More <AngleRight :class="'h-4 w-4'"/>
+              Learn More
+              <AngleRight :class="'h-4 w-4'"/>
             </a>
           </p>
         </div>
 
         <div class="w-full lg:pl-6 lg:pr-6 lg:w-1/3">
+          <div class="text-center w-full">
+            <img class="ember-image p-8" src="/img/ember-nyc.png" alt="Ember.JS NYC Tomster">
+          </div>
+
+          <h3 class="heading">
+            Ember.js NYC
+          </h3>
+
+          <p class="h-auto lg:h-64 xl:h-48">
+            We have given talks at the Ember.JS NYC meetup a couple times, once was <a href="https://www.youtube.com/watch?v=ax6QI-WryH0&feature=youtu.be&t=4805">
+            an abridged version of our EmberConf 2018 workshop on performance</a>, and another was a dry run of our EmberConf 2019
+            talk <a href="https://www.youtube.com/watch?v=vnMvhykrW1A&feature=youtu.be&t=1365">Ember Data - It's Not Just for JSON API Anymore</a>.
+          </p>
+
+          <p>
+            <a
+              class="learn-more"
+              href="https://www.meetup.com/EmberJS-NYC/"
+            >
+              Learn More
+              <AngleRight :class="'h-4 w-4'"/>
+            </a>
+          </p>
+        </div>
+
+        <div class="w-full lg:pl-12 lg:w-1/3">
           <div class="text-center w-full">
             <EmberCares :class="'ember-image p-4'"/>
           </div>
@@ -48,7 +75,7 @@
             Ember Cares
           </h3>
 
-          <p class="h-auto lg:h-48">
+          <p class="h-auto lg:h-64 xl:h-48">
             We spearheaded the efforts behind Ember Cares in 2017, where we created a No Shave November Tomster and Breast Cancer Awareness
             Zoey and sold merch to raise money for the Cancer Research Institute.
           </p>
@@ -58,12 +85,38 @@
               class="learn-more"
               href="https://embercares.com/"
             >
-              Learn More <AngleRight :class="'h-4 w-4'"/>
+              Learn More
+              <AngleRight :class="'h-4 w-4'"/>
             </a>
           </p>
         </div>
 
-        <div class="w-full lg:pl-12 lg:w-1/3">
+        <div class="w-full lg:pr-12 lg:w-1/3">
+          <div class="text-center w-full">
+            <EmberConf :class="'ember-image p-12'"/>
+          </div>
+
+          <h3 class="heading">
+            EmberConf 2018
+          </h3>
+
+          <p class="h-auto lg:h-64 xl:h-48">
+            We ran the Improving Ember App Performance workshop at EmberConf 2018, where we explored techniques to reduce your bundle
+            size, improving your rendering performance, and cache your assets to make reloads blazing fast.
+          </p>
+
+          <p>
+            <a
+              class="learn-more"
+              href="https://2018.emberconf.com/schedule.html#e-improving-ember-app-performance"
+            >
+              Learn More
+              <AngleRight :class="'h-4 w-4'"/>
+            </a>
+          </p>
+        </div>
+
+        <div class="w-full lg:pl-6 lg:pr-6 lg:w-1/3">
           <div class="text-center w-full">
             <img class="ember-image p-8" src="/img/ember-dc.png" alt="Ember.JS DC Tomster in front of the White House">
           </div>
@@ -72,19 +125,22 @@
             Ember.JS DC
           </h3>
 
-          <p class="h-auto lg:h-48">
+          <p class="h-auto lg:h-64 xl:h-48">
             We organize the Ember.JS DC meetup, and we try to spread the love throughout Virginia and Maryland as well, alternating meeting
             spots. If you are an Ember enthusiast, of any level, we would love to have you come learn with us!
           </p>
 
-          <p>
-            <a
-              class="learn-more"
-              href="https://www.meetup.com/Ember-JS-DC/"
-            >
-              Learn More <AngleRight :class="'h-4 w-4'"/>
-            </a>
-          </p>
+          <div>
+            <p>
+              <a
+                class="learn-more"
+                href="https://www.meetup.com/Ember-JS-DC/"
+              >
+                Learn More
+                <AngleRight :class="'h-4 w-4'"/>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
