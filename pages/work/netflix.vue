@@ -88,25 +88,25 @@
         </p>
       </div>
 
-      <!--BottomLinks
-        :next-link="'/work/brokermate/'"
-        :next-link-text="'Brokermate'"
-        :previous-link="'/work/socialcode/'"
-        :previous-link-text="'SocialCode'"
-      /-->
+      <BottomLinks
+        next-link="/work/brokermate/"
+        next-link-text="Brokermate"
+        previous-link="/work/socialcode/"
+        previous-link-text="SocialCode"
+      />
     </div>
   </div>
 </template>
 
 <script>
-  // import BottomLinks from '~/components/BottomLinks.vue';
+  import BottomLinks from '~/components/BottomLinks.vue';
   import DataGraphic from '~/assets/svgs/data-graphic.svg?inline';
   import Netflix from '~/assets/svgs/clients/netflix.svg?inline';
   import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
-      // BottomLinks,
+      BottomLinks,
       DataGraphic,
       Netflix
     },
