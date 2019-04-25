@@ -1,3 +1,6 @@
+const container = require('tailwindcss/plugins/container');
+const gradient = require('./assets/css/tailwind/plugins/gradient');
+
 /*
 
 Tailwind - The Utility-First CSS Framework
@@ -826,9 +829,14 @@ module.exports = {
   */
 
   plugins: [
-    require('tailwindcss/plugins/container')({
+    container({
       // center: true,
       // padding: '1rem',
+    }),
+    gradient({
+      gradients: {
+        'brokermate': ['#3FB7E6', '#782599']
+      }
     })
   ],
 
