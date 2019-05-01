@@ -2,22 +2,6 @@
   <div class="flex flex-wrap">
     <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
       <a
-        href="https://www.socialcode.com/"
-        aria-label="SocialCode"
-      >
-        <SocialCodeLogo class="h-8 w-auto"/>
-      </a>
-
-      <p>
-        SocialCode has a unique "micro apps" setup, which we helped streamline, by moving common dependencies to a
-        common addon, and ensuring all apps adhered to the same standards by enforcing the latest eslint-plugin-ember
-        rules. We also migrated all the code to use the new modules syntax, and new testing syntax, and updated apps
-        to the latest Ember version to make sure we were on the latest and greatest of everything.
-      </p>
-    </div>
-
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
-      <a
         href="https://marianatek.com/"
         aria-label="Mariana Tek"
       >
@@ -32,7 +16,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
+    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
       <a
         href="https://www.scoutforpets.com/"
         aria-label="Scout"
@@ -53,7 +37,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
+    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
       <a
         href="https://www.greenlight.guru/"
         aria-label="Greenlight Guru"
@@ -67,7 +51,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
       <a
         href="https://www.mentrs.com/"
         aria-label="Mentrs"
@@ -93,15 +77,13 @@
   import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
   import MentrsLogo from '~/assets/svgs/clients/mentrs.svg?inline';
   import ScoutLogo from '~/assets/svgs/clients/scout.svg?inline';
-  import SocialCodeLogo from '~/assets/svgs/clients/socialcode.svg?inline';
 
   export default {
     components: {
       GreenlightGuruLogo,
       MarianaTekLogo,
       MentrsLogo,
-      ScoutLogo,
-      SocialCodeLogo
+      ScoutLogo
     }
   };
 </script>
