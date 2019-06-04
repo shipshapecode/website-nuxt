@@ -2,7 +2,6 @@ const { readdirSync, readFileSync, writeFileSync } = require('fs');
 const { extname, resolve } = require('path');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
-const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const showdown = require('showdown');
 const showdownHighlight = require('showdown-highlight');
 const converter = new showdown.Converter({
@@ -139,9 +138,6 @@ module.exports = {
     extractCSS: true,
 
     babel: {
-      plugins: [
-        'lodash'
-      ],
       presets({ isServer }) {
         const targets = isServer ? { node: '10' } : {
           browsers: [
@@ -155,10 +151,6 @@ module.exports = {
         ];
       }
     },
-
-    plugins: [
-      new LodashModuleReplacementPlugin()
-    ],
 
     /*
     ** You can extend webpack config here
@@ -226,7 +218,6 @@ module.exports = {
     path: '/sitemap.xml',
     hostname: 'https://shipshape.io',
     cacheTime: 1000 * 60 * 15,
-    generate: true,
     routes: []
       .concat(blogRoutes),
     filter({ routes }) {
