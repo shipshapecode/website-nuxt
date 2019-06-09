@@ -59,10 +59,6 @@ const twitterUsername = '@shipshapecode';
 module.exports = {
   mode: 'universal',
 
-  axios: {
-    baseURL: 'https://shipshape.io'
-  },
-
   /*
   ** Headers of the page
   */
@@ -114,7 +110,6 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios',
     '@nuxtjs/date-fns',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',

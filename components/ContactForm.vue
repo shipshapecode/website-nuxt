@@ -213,17 +213,13 @@
     methods: {
       sendContactRequest() {
         if (this.formValid) {
-          const axiosConfig = {
-            header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-          };
-
-          return this.$axios.post(
-            '/',
-            _encode({
-              'form-name': 'contact-us',
-              ...this.$data
-            }),
-            axiosConfig
+          return fetch(
+            'https://shipshape.io/',
+            {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: _encode({ 'form-name': 'contact-us', ...this.$data })
+            }
           );
         }
       }
