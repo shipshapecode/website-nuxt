@@ -6,8 +6,8 @@ categories:
 date: '2019-03-01'
 nextSlug: converting-a-webpack-build-to-rollup
 nextTitle: Converting a Webpack Build to Rollup
-previousSlug: ember-data-passing-query-params-to-save
-previousTitle: Ember Data | Passing query params to .save()
+previousSlug: an-emberjs-developers-guide-to-nuxtjs
+previousTitle: An Ember.js Developer's Guide to Nuxt.js
 slug: ux-trade-offs-of-two-ways-to-tour-a-site
 title: 'Slideshows and Safaris: UX Trade-offs of Two Very Different Ways To Tour a Site'
 ---
