@@ -87,3 +87,29 @@ Ember Inspector has come a long way, since we started working on it in February 
 to go. We redesigned a few things, removed some cruft, and started working toward supporting Octane, but Ember Inspector
 could still really use a full redesign, and should incorporate many of the long requested features, as well as pull in
 anything that would be nice to have from Vue and React DevTools.
+
+### New APIs for Ember Inspector
+
+Ember Inspector uses a lot of private APIs, and many specific version checks to coax the data needed out of Ember, so we 
+can display it. There has been a lot of discussion about providing public APIs for components, that would tell Inspector 
+all about the component, its arguments, etc. This would both allow us to remove some of the private API usage and ensure
+we continue to get all the data we need, long term, since it would be public, supported API.
+
+### Modernize Design
+
+We have been slowly redesigning Ember Inspector to make things more modern, but there is still more to do. We should
+redesign the whole thing, from the top down, to match the new look and feel of Ember, and the Ember website design.
+This will give us one cohesive look and feel for all things Ember and increase brand cohesiveness.
+
+### Make Configurable
+
+Ember Inspector currently offers no way to configure features. We could allow configuration for things like hiding or 
+showing only the tabs you are interested in, switching the layout from tabs on the left to tabs on the top, toggling
+dark vs light mode, and many other potentially configurable things.
+
+## Summary
+
+I am very excited for the future of Ember! We continue to iterate towards aligning with modern concepts, while still 
+staying true to the heart and soul of Ember.
+
+
