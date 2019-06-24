@@ -17,78 +17,133 @@
         </a>
       </div>
     </div>
-
-    <div class="footer-bottom flex flex-wrap pl-24 pr-24 pt-12 pb-12">
-      <div class="w-full flex justify-center lg:justify-start lg:w-auto">
-        <logo class="footer-logo h-16 w-16"/>
-      </div>
-
-      <div class="flex flex-wrap items-center justify-center flex-1">
-        <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/work/">
-            Case Studies
-          </nuxt-link>
+    <div class="flex flex-wrap w-full justify-center">
+      <div class="footer-bottom max-w-2xl w-full">
+        <div class="flex justify-center lg:justify-start w-full">
+          <logo class="footer-logo h-16 w-16"/>
         </div>
 
-        <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/ember-consulting/">
-            Ember Consulting
-          </nuxt-link>
-        </div>
+        <nav class="flex flex-wrap pt-12 pb-12 w-full">
+          <div class="w-full lg:w-1/4 max-w-xs p-4">
+            <h4 class="text-white">
+              Services
+            </h4>
 
-        <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/open-source/">
-            Open Source
-          </nuxt-link>
-        </div>
+            <nuxt-link to="/ember-consulting/" class="block">
+              Design
+            </nuxt-link>
 
-        <!--div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/team/">
-            Team
-          </nuxt-link>
-        </div-->
+            <nuxt-link to="/ember-consulting/" class="block">
+              Engineering
+            </nuxt-link>
 
-        <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/blog/">
-            Blog
-          </nuxt-link>
-        </div>
-
-        <div class="w-full lg:w-auto flex justify-center p-4">
-          <nuxt-link to="/contact/">
-            Contact
-          </nuxt-link>
-        </div>
-      </div>
-
-      <div class="social-links flex items-center justify-center w-full lg:justify-start lg:w-auto">
-        <a
-          aria-label="GitHub"
-          class="p-2"
-          href="https://github.com/shipshapecode"
-        >
-          <div class="github-logo">
-            <github/>
+            <nuxt-link to="/ember-consulting/" class="block">
+              Staff Augmentation
+            </nuxt-link>
           </div>
-        </a>
-        <a
-          aria-label="Twitter"
-          class="p-2"
-          href="https://twitter.com/shipshapecode"
-        >
-          <div class="twitter-logo">
-            <twitter/>
+
+          <div class="w-full lg:w-1/4 max-w-xs p-4">
+            <h4 class="text-white">
+              Specialties
+            </h4>
+
+            <nuxt-link to="/ember-consulting/" class="block">
+              Ember Consulting
+            </nuxt-link>
+
+            <nuxt-link to="/ember-consulting/" class="block">
+              Nuxt.js Consulting
+            </nuxt-link>
+
+            <nuxt-link to="/ember-consulting/" class="block">
+              Site Tours
+            </nuxt-link>
           </div>
-        </a>
-        <a
-          aria-label="LinkedIn"
-          class="p-2"
-          href="https://www.linkedin.com/company/ship-shape/"
-        >
-          <div class="linkedin-logo">
-            <linkedin/>
+
+          <div class="w-full lg:w-1/4 max-w-xs p-4">
+            <div class="w-full">
+              <h4 class="text-white">
+                Company
+              </h4>
+            </div>
+
+            <div class="w-full">
+              <nuxt-link to="/work/">
+                Case Studies
+              </nuxt-link>
+            </div>
+
+            <div class="w-full">
+              <nuxt-link to="/open-source/">
+                Open Source
+              </nuxt-link>
+            </div>
+
+            <div class="w-full">
+              <nuxt-link to="/blog/">
+                Blog
+              </nuxt-link>
+            </div>
+
+            <!--div class="w-full">
+              <nuxt-link to="/team/">
+                Team
+              </nuxt-link>
+            </div-->
           </div>
-        </a>
+
+          <div class="w-full lg:w-1/4 max-w-xs p-4">
+            <h4 class="text-white">
+              Connect
+            </h4>
+
+            <nuxt-link to="/contact/" class="block">
+              Contact
+            </nuxt-link>
+
+            <a href="" class="block">
+              GitHub
+            </a>
+
+            <a href="" class="block">
+              Twitter
+            </a>
+
+            <a href="" class="block">
+              LinkedIn
+            </a>
+          </div>
+        </nav>
+
+        <div class="social-links flex items-center justify-center w-full lg:justify-start w-full">
+          <a
+            aria-label="GitHub"
+            class="p-2"
+            href="https://github.com/shipshapecode"
+          >
+            <div class="github-logo">
+              <github/>
+            </div>
+          </a>
+          <a
+            aria-label="Twitter"
+            class="p-2"
+            href="https://twitter.com/shipshapecode"
+          >
+            <div class="twitter-logo">
+              <twitter/>
+            </div>
+          </a>
+          <a
+            aria-label="LinkedIn"
+            class="p-2"
+            href="https://www.linkedin.com/company/ship-shape/"
+          >
+            <div class="linkedin-logo">
+              <linkedin/>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </footer>

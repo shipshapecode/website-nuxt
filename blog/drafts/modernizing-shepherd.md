@@ -1,6 +1,7 @@
 ---
 authorId: rwwagner90
 categories: 
+  - a11y
   - rollup
   - shepherd.js
   - site tour
@@ -11,3 +12,13 @@ title: Modernizing Shepherd.js
 ---
 
 Coming Soon :)
+
+## Classes
+
+## Builds
+
+## a11y
+
+## Testing
+
+## Library Wrappers
