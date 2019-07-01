@@ -32,8 +32,6 @@
   import { generateMeta } from '~/utils/meta';
 
   export default {
-    scrollToTop: true,
-
     components: {
       BlogPostMenu,
       RSS
