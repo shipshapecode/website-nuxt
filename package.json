@@ -22,7 +22,8 @@
     "lodash.truncate": "^4.4.2",
     "nuxt": "^2.8.1",
     "nuxt-svg": "^0.1.4",
-    "nuxt-validate": "^0.1.3"
+    "nuxt-validate": "^0.1.3",
+    "vue-flash-message": "^0.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

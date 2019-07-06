@@ -169,13 +169,15 @@
         />
       </div>
 
-      <div>
+      <div class="flex flex-grow justify-end">
         <input
           :disabled="!formValid"
           type="submit"
           value="Send Message"
         >
       </div>
+
+      <flash-message class="flex flex-grow"/>
     </fieldset>
   </form>
 </template>
@@ -191,6 +193,14 @@
     return Object.keys(data)
       .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&');
+  }
+
+  function _successMessage() {
+    this.flashSuccess('Thanks for contacting us! We\'ll be in touch shortly.');
+  }
+
+  function _errorMessage() {
+    this.flashError('Something went wrong :(. Please refresh and try again.');
   }
 
   export default {
@@ -220,7 +230,9 @@
               headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
               body: _encode({ 'form-name': 'contact-us', ...this.$data })
             }
-          );
+          )
+            .then(_successMessage.bind(this))
+            .catch(_errorMessage.bind(this));
         }
       }
     }
@@ -245,6 +257,7 @@
   }
 
   .cd-form fieldset {
+    display: flex;
     margin: 24px 0;
   }
 
@@ -636,5 +649,11 @@
     .floating-labels .cd-label {
       top: 10px;
     }
+  }
+
+  .flash__wrapper, .flash__message {
+    flex: 1 0 auto;
+    margin: 0 !important;
+    text-align: center;
   }
 </style>
