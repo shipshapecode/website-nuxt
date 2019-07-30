@@ -23,7 +23,44 @@ from SCSS to CSSinJS, simplified the API, and tweaked the demo and API docs for 
 We also solidified our IE11 support, and made everything work out of the box with no need to add any more
 polyfills yourself, and focused heavily on improving our a11y support.
 
+## Table of Contents
+1. [API Simplification](#apisimplification)
+1. [IE 11 Support](#ie11support)
+1. [CSSinJS](#cssinjs)
+1. [Preact](#preact)
+1. [a11y](#a11y)
+1. [New JSDoc Site](#newjsdocsite)
+1. [New Website](#newwebsite)
+
 ## API Simplification
+
+TODO
+
+## IE 11 Support
+
+TODO
+
+## CSSinJS
+
+After a lot of searching for the smallest CSSinJS library, we settled on using nano-css. It is small
+and simple, but also provides a powerful API. It allows for setting prefixes for class names as well,
+which has helped us launch our new prefixing feature. 
+
+You can pass `classPrefix` in your tour options, and all `shepherd-*` classes will be prefixed. 
+For example `classPrefix: 'my-prefix'` would yield `my-prefix-shepherd-*` style classes. 
+This is an important feature if you potentially need to run two separate Shepherd instances and 
+ensure they do not conflict with one another.
+
+## Preact
+
+Switching to Preact components allowed us to greatly simplify our code. We had a lot of manual calls
+to create DOM, add and remove classes, and keep everything in sync with the tour options. Now everything
+is split into logical components. Things like the header, content, footer, cancel button, etc are all
+components now and handle their own logic, styles and classes.
+
+## a11y
+
+TODO
 
 ## New JSDoc Site
 
@@ -40,3 +77,7 @@ to add a section on theming and our existing usage docs, and nest them alongside
 instead of being separate, like they were before.
 
 Having everything in one place should make for a much more cohesive and easy to follow docs experience.
+
+## New Website
+
+TODO
