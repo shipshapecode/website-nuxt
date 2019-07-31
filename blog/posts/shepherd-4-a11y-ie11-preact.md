@@ -34,11 +34,22 @@ polyfills yourself, and focused heavily on improving our a11y support.
 
 ## API Simplification
 
-TODO
+We had several APIs that accepted more than one input format, such as `attachTo` and 
+`advanceOn`, which was both making the code harder to maintain and causing unnecessary 
+confusion for users. In the spirit of keeping things simple, we removed the `string` options
+in favor of passing an `object` hash of options.
 
 ## IE 11 Support
 
-TODO
+We always advertised IE 11 support, but we did not test it as often as we should have. 
+Sometime during the 2.x or 3.x era, we unwittingly broke support for IE. Most people did not
+notice, as you are likely already shipping a ton of polyfills, if your app supports IE, but
+for those who were not, things were broken.
+
+We tried to remove some usages of ES2015+ features that IE does not support, and we also
+started shipping the minimum polyfills needed for IE compatibility. This does add a bit of
+bloat for people who do not intend to support IE, but we wanted to ship what we promised first,
+and work on opting in/out to the IE polyfills later.
 
 ## CSSinJS
 
@@ -51,6 +62,24 @@ For example `classPrefix: 'my-prefix'` would yield `my-prefix-shepherd-*` style 
 This is an important feature if you potentially need to run two separate Shepherd instances and 
 ensure they do not conflict with one another.
 
+This also allowed us to revamp our approach to overriding style variables for theming. Previously,
+we used SCSS and SASS maps to allow overriding style variables. This worked, but required you to use
+SASS yourself. Now, with nano-css we are able to pass in JavaScript variables to set the styles. We do
+this via a `styleVariables` hash in your tour config.
+
+```js
+const tour = new Shepherd.Tour({
+  ...
+  styleVariables: {
+    shepherdThemePrimary: '#00213b',
+    shepherdThemeSecondary: '#e5e5e5'
+  },
+  ...
+});
+```
+
+You can see a full breakdown of the variables you can override [here](https://shepherdjs.dev/docs/tutorial-03-styling.html).
+
 ## Preact
 
 Switching to Preact components allowed us to greatly simplify our code. We had a lot of manual calls
@@ -60,7 +89,12 @@ components now and handle their own logic, styles and classes.
 
 ## a11y
 
-TODO
+There was an [issue](https://github.com/shipshapecode/shepherd/issues/198) opened on the Shepherd GitHub 
+repo awhile ago, asking about a11y support. We had always wanted to make Shepherd as accessible as possible, 
+but lacked the knowledge on what exactly to do. Luckily, with help from [@gorner](https://github.com/gorner)
+and [@knoobie](https://github.com/knoobie), as well as an [amazing post](https://bitsofco.de/accessible-modal-dialog/) 
+on making modal dialogs accessible, we were able to ship arrow key navigation, the proper `aria` attributes,
+focus trapping, etc to make things more accessible for both keyboard users and screen readers.
 
 ## New JSDoc Site
 
@@ -80,4 +114,11 @@ Having everything in one place should make for a much more cohesive and easy to 
 
 ## New Website
 
-TODO
+As things were evolving for 4.0, we realized we needed a dedicated home for all things Shepherd, and bought the
+domain [https://shepherdjs.dev/](https://shepherdjs.dev/). We have slowly been rebranding the demo page, and plan
+to host all the docs, demos, examples, and a landing page on this new site.
+
+We hope everyone will try out the new and improved Shepherd 4.0 and please let us know your thoughts!
+
+***If you would like us to help integrate Shepherd into your app, please [contact us](https://shipshape.io/contact/). We would love to 
+work with you!***
