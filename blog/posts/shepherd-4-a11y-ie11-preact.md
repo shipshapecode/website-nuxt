@@ -18,8 +18,9 @@ title: 'Shepherd 4.0: a11y, IE 11 support, and Preact Components'
 Shepherd.js has come a long way since its inception in 2014, and I am very pleased to announce the
 next major release, Shepherd 4.0! 🎉
 
-We rewrote a significant chunk of the library from the ground up, using Preact and nano-css, switched styles
-from SCSS to CSSinJS, simplified the API, and tweaked the demo and API docs for a more cohesive experience.
+We rewrote a significant chunk of the library from the ground up, using [Preact](https://preactjs.com/) and 
+[nano-css](https://github.com/streamich/nano-css), switched styles from SCSS to CSSinJS, simplified 
+the API, and tweaked the demo and API docs for a more cohesive experience.
 We also solidified our IE11 support, and made everything work out of the box with no need to add any more
 polyfills yourself, and focused heavily on improving our a11y support.
 
@@ -53,8 +54,8 @@ and work on opting in/out to the IE polyfills later.
 
 ## CSSinJS
 
-After a lot of searching for the smallest CSSinJS library, we settled on using nano-css. It is small
-and simple, but also provides a powerful API. It allows for setting prefixes for class names as well,
+After a lot of searching for the smallest CSSinJS library, we settled on using [nano-css](https://github.com/streamich/nano-css).
+It is small and simple, but also provides a powerful API. It allows for setting prefixes for class names as well,
 which has helped us launch our new prefixing feature. 
 
 You can pass `classPrefix` in your tour options, and all `shepherd-*` classes will be prefixed. 
@@ -82,7 +83,7 @@ You can see a full breakdown of the variables you can override [here](https://sh
 
 ## Preact
 
-Switching to Preact components allowed us to greatly simplify our code. We had a lot of manual calls
+Switching to [Preact](https://preactjs.com/) components allowed us to greatly simplify our code. We had a lot of manual calls
 to create DOM, add and remove classes, and keep everything in sync with the tour options. Now everything
 is split into logical components. Things like the header, content, footer, cancel button, etc are all
 components now and handle their own logic, styles and classes.
