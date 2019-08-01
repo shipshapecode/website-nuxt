@@ -13,7 +13,8 @@ module.exports = {
   rules: {
     indent: 'off',
     semi: ['error', 'always'],
+    'space-before-function-paren': 'off',
 
     'vue/html-closing-bracket-spacing': 'off'
   }
-}
+};
