@@ -16,7 +16,10 @@ title: 'Shepherd 4.0: a11y, IE 11 support, and Preact Components'
 ---
 
 Shepherd.js has come a long way since its inception in 2014, and I am very pleased to announce the
-next major release, Shepherd 4.0! 🎉
+next major release, Shepherd 4.0! 🎉 It is now easier than ever to create full featured site tours
+for your website or app.
+
+[![Shepherd.js Logo](/img/blog/shepherd-4-a11y-ie11-preact/shepherd-logo.png)](https://shepherdjs.dev/)
 
 We rewrote a significant chunk of the library from the ground up, using [Preact](https://preactjs.com/) and 
 [nano-css](https://github.com/streamich/nano-css), switched styles from SCSS to CSSinJS, simplified 
@@ -27,7 +30,7 @@ polyfills yourself, and focused heavily on improving our a11y support.
 ## Table of Contents
 1. [API Simplification](#apisimplification)
 1. [IE 11 Support](#ie11support)
-1. [CSSinJS](#cssinjs)
+1. [Styles](#styles)
 1. [Preact](#preact)
 1. [a11y](#a11y)
 1. [New JSDoc Site](#newjsdocsite)
@@ -38,7 +41,17 @@ polyfills yourself, and focused heavily on improving our a11y support.
 We had several APIs that accepted more than one input format, such as `attachTo` and 
 `advanceOn`, which was both making the code harder to maintain and causing unnecessary 
 confusion for users. In the spirit of keeping things simple, we removed the `string` options
-in favor of passing an `object` hash of options.
+in favor of passing an `object` hash of options. For example `attachTo` now only supports
+this format:
+
+```js
+tour.addStep({
+  attachTo: {
+    element: '.my-class-selector',
+    on: 'bottom'
+  }
+});
+```
 
 ## IE 11 Support
 
@@ -47,21 +60,32 @@ Sometime during the 2.x or 3.x era, we unwittingly broke support for IE. Most pe
 notice, as you are likely already shipping a ton of polyfills, if your app supports IE, but
 for those who were not, things were broken.
 
-We tried to remove some usages of ES2015+ features that IE does not support, and we also
+We tried to remove some usage of ES2015+ features that IE did not support, and we also
 started shipping the minimum polyfills needed for IE compatibility. This does add a bit of
 bloat for people who do not intend to support IE, but we wanted to ship what we promised first,
 and work on opting in/out to the IE polyfills later.
 
-## CSSinJS
+## Styles
 
+### CSSinJS
+
+We wanted to find an easy way to include all of our styles in our JS bundle, rather than shipping separate
+stylesheets, and we decided we wanted to explore CSSinJS solutions to solve this.
 After a lot of searching for the smallest CSSinJS library, we settled on using [nano-css](https://github.com/streamich/nano-css).
-It is small and simple, but also provides a powerful API. It allows for setting prefixes for class names as well,
+It is small and simple, but also provides a powerful API. 
+
+Including the styles in the JS does increase the bundle size, but it is the same amount of bytes, or less, 
+as including the old stylesheets separately. nano-css also allows for setting prefixes for class names as well,
 which has helped us launch our new prefixing feature. 
+
+### classPrefix
 
 You can pass `classPrefix` in your tour options, and all `shepherd-*` classes will be prefixed. 
 For example `classPrefix: 'my-prefix'` would yield `my-prefix-shepherd-*` style classes. 
 This is an important feature if you potentially need to run two separate Shepherd instances and 
 ensure they do not conflict with one another.
+
+### styleVariables
 
 This also allowed us to revamp our approach to overriding style variables for theming. Previously,
 we used SCSS and SASS maps to allow overriding style variables. This worked, but required you to use
@@ -99,6 +123,8 @@ focus trapping, etc to make things more accessible for both keyboard users and s
 
 ## New JSDoc Site
 
+[![Shepherd.js JSDoc API Documentation](/img/blog/shepherd-4-a11y-ie11-preact/docs.png)](https://shepherdjs.dev/docs/)
+
 We were previously using [ESDoc](https://esdoc.org/) to generate our API docs, but it was hard to customize,
 and we found ourselves wanting a nicer looking solution, that allowed us to nest our
 other pages alongside the generated docs. After spending several days exploring various
@@ -114,6 +140,9 @@ instead of being separate, like they were before.
 Having everything in one place should make for a much more cohesive and easy to follow docs experience.
 
 ## New Website
+
+[![Shepherd.js Landing Page](/img/blog/shepherd-4-a11y-ie11-preact/landing.png)](https://shepherdjs.dev/)
+
 
 As things were evolving for 4.0, we realized we needed a dedicated home for all things Shepherd, and bought the
 domain [https://shepherdjs.dev/](https://shepherdjs.dev/). We have slowly been rebranding the demo page, and plan
