@@ -10,8 +10,8 @@ categories:
 date: '2019-06-12'
 nextSlug: an-emberjs-developers-guide-to-nuxtjs
 nextTitle: An Ember.js Developer's Guide to Nuxt.js
-previousSlug: ember-data-passing-query-params-to-save
-previousTitle: Ember Data | Passing query params to .save()
+previousSlug: shepherd-4-a11y-ie11-preact
+previousTitle: 'Shepherd 4.0: a11y, IE 11 support, and Preact Components'
 slug: ember-2019
 title: Ember 2019
 ---
