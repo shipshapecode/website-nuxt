@@ -33,6 +33,7 @@ polyfills yourself, and focused heavily on improving our a11y support.
 1. [Styles](#styles)
 1. [Preact](#preact)
 1. [a11y](#a11y)
+1. [Revamped Demo](#revampeddemo)
 1. [New JSDoc Site](#newjsdocsite)
 1. [New Website](#newwebsite)
 
@@ -120,6 +121,14 @@ but lacked the knowledge on what exactly to do. Luckily, with help from [@gorner
 and [@knoobie](https://github.com/knoobie), as well as an [amazing post](https://bitsofco.de/accessible-modal-dialog/) 
 on making modal dialogs accessible, we were able to ship arrow key navigation, the proper `aria` attributes,
 focus trapping, etc to make things more accessible for both keyboard users and screen readers.
+
+## Revamped Demo
+
+[![Shepherd.js Demo](/img/blog/shepherd-4-a11y-ie11-preact/demo.png)](https://shepherdjs.dev/demo/)
+
+We revamped our outdated demo and tweaked the styles a bit, to make things a bit more modern.
+We plan to release several different demos and examples showing off all the possibilities of
+Shepherd in the coming months. Stay tuned!
 
 ## New JSDoc Site
 
