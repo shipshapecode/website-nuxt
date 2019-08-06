@@ -3,7 +3,7 @@ authorId: rwwagner90
 categories:
   - ember.js
   - ember-data
-date: '2018-10-8'
+date: '2018-10-08'
 previousSlug: converting-a-webpack-build-to-rollup
 previousTitle: Converting a Webpack Build to Rollup
 nextSlug: forcing-trailing-slashes-for-routes
