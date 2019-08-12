@@ -69,10 +69,30 @@
         to class creation, and Stripe integration for paying to enroll in classes.
       </p>
     </div>
+
+    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+      <a
+        href="https://anvyl.com/"
+        aria-label="Anvyl"
+      >
+        <AnvylLogo class="h-8 w-auto"/>
+      </a>
+      <p>
+        We helped Anvyl create a new messaging feature to allow
+        brands and suppliers to communicate directly within the
+        Anvyl app. This required us to implement many of the
+        features people are used to, from apps like Slack, such as
+        threaded replies, editing messages inline, user avatars,
+        and much more! This feature greatly simplifies things for
+        Anvyl users because they no longer have to leave the app
+        to communicate about an order.
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
+  import AnvylLogo from '~/assets/svgs/clients/anvyl.svg?inline';
   import GreenlightGuruLogo from '~/assets/svgs/clients/greenlight-guru.svg?inline';
   import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
   import MentrsLogo from '~/assets/svgs/clients/mentrs.svg?inline';
@@ -80,6 +100,7 @@
 
   export default {
     components: {
+      AnvylLogo,
       GreenlightGuruLogo,
       MarianaTekLogo,
       MentrsLogo,
