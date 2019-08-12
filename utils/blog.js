@@ -1,10 +1,10 @@
-import slugs from '~/posts.json';
+import fileNames from '~/posts.json';
 
 export function getBlogData() {
   const authors = {};
 
-  async function asyncImport(slug) {
-    const post = await import(`~/blog/posts/${slug}.md`);
+  async function asyncImport(fileName) {
+    const post = await import(`~/blog/posts/${fileName}.md`);
     await getAuthors(post.attributes);
     return post.attributes;
   }
@@ -20,7 +20,7 @@ export function getBlogData() {
     post.author = authors[post.authorId];
   }
 
-  return Promise.all(slugs.map(slug => asyncImport(slug))).then((posts) => {
+  return Promise.all(fileNames.map(fileName => asyncImport(fileName))).then((posts) => {
     const sortedPosts = posts.sort((post1, post2) => {
       if (post1.date > post2.date) {
         return -1;

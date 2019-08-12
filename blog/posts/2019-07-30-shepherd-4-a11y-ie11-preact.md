@@ -9,8 +9,8 @@ categories:
 date: '2019-07-30'
 nextSlug: ember-2019
 nextTitle: Ember 2019
-previousSlug: ember-data-passing-query-params-to-save
-previousTitle: Ember Data | Passing query params to .save()
+previousSlug: exporting-typescript-imports
+previousTitle: 'Exporting Imported TypeScript Types'
 slug: shepherd-4-a11y-ie11-preact
 title: 'Shepherd 4.0: a11y, IE 11 support, and Preact Components'
 ---

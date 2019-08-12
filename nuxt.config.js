@@ -11,13 +11,17 @@ const converter = new showdown.Converter({
 const blogPosts = readdirSync('blog/posts/');
 
 const _getBlogPosts = () => {
-  const slugs = blogPosts.map((post) => {
+  const fileNames = blogPosts.map((post) => {
     return post.slice(0, -3);
+  });
+
+  const slugs = blogPosts.map((post) => {
+    return post.slice(11, -3);
   });
 
   writeFileSync(
     resolve(__dirname, 'posts.json'),
-    JSON.stringify(slugs, null, 2)
+    JSON.stringify(fileNames, null, 2)
   );
 
   return slugs.map(slug => `/blog/${slug}`);

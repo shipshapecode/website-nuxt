@@ -4,6 +4,7 @@
 
 <script>
   import truncate from 'lodash.truncate';
+  import fileNames from '~/posts.json';
   import BlogPost from '~/components/BlogPost.vue';
   import { generateMeta } from '~/utils/meta';
 
@@ -15,7 +16,10 @@
     },
 
     async asyncData({ params }) {
-      const { attributes, html } = await import(`~/blog/posts/${params.slug}.md`);
+      const fileName = fileNames.find((fileName) => {
+        return fileName.includes(params.slug);
+      });
+      const { attributes, html } = await import(`~/blog/posts/${fileName}.md`);
       const { authorId, categories, date, nextSlug, nextTitle, previousSlug, previousTitle, slug, title } = attributes;
       const author = await import(`~/blog/authors/${authorId}.md`);
 
