@@ -2,7 +2,7 @@
   <div class="blog-posts section flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex items-center">
-        <h1>
+        <h1 class="font-semibold">
           {{ author.name }}
         </h1>
       </div>

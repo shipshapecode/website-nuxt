@@ -81,12 +81,10 @@ body {
 }
 
 .learn-more {
-  color: $navy;
-  font-weight: bold;
-
   svg {
     fill: $navy;
     margin-bottom: -0.2rem;
+    margin-left: 0.25rem;
     transition-duration: 0.25s;
     transition-property: margin-left;
   }
@@ -102,7 +100,7 @@ body {
 
     svg {
       fill: $red;
-      margin-left: 0.5rem;
+      margin-left: 0.75rem;
     }
   }
 }

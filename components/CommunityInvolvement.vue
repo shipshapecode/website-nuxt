@@ -31,7 +31,7 @@
 
           <p>
             <a
-              class="learn-more"
+              class="learn-more font-bold inline-flex items-center text-navy"
               href="https://youtu.be/u5onNDpt8ks"
             >
               Learn More
@@ -57,7 +57,7 @@
 
           <p>
             <a
-              class="learn-more"
+              class="learn-more font-bold inline-flex items-center text-navy"
               href="https://www.meetup.com/EmberJS-NYC/"
             >
               Learn More
@@ -82,7 +82,7 @@
 
           <p>
             <a
-              class="learn-more"
+              class="learn-more font-bold inline-flex items-center text-navy"
               href="https://embercares.com/"
             >
               Learn More
@@ -107,7 +107,7 @@
 
           <p>
             <a
-              class="learn-more"
+              class="learn-more font-bold inline-flex items-center text-navy"
               href="https://2018.emberconf.com/schedule.html#e-improving-ember-app-performance"
             >
               Learn More
@@ -133,7 +133,7 @@
           <div>
             <p>
               <a
-                class="learn-more"
+                class="learn-more font-bold inline-flex items-center text-navy"
                 href="https://www.meetup.com/Ember-JS-DC/"
               >
                 Learn More

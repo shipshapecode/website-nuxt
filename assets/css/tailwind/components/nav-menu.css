@@ -1,5 +1,5 @@
 .nav-links {
-  @apply .bg-white .fixed .flex-grow .h-screen .pin .w-full;
+  @apply .bg-white .fixed .flex-grow .h-screen .inset-0 .w-full;
 }
 
 @screen lg {
@@ -13,7 +13,7 @@
 }
 
 .contact-link {
-  @apply .absolute .bg-navy .mt-12 .pin-b .text-white .w-full;
+  @apply .absolute .bg-navy .mt-12 .bottom-0 .text-white .w-full;
 }
 
 @screen lg {
@@ -22,7 +22,7 @@
   }
 
   .contact-link {
-    @apply .bg-navy .-mt-12 .pin-none .pt-16 .static .text-white .w-auto;
+    @apply .bg-navy .-mt-12 .inset-auto .pt-16 .static .text-white .w-auto;
   }
 }
 
