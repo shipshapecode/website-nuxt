@@ -19,15 +19,9 @@
         </p>
       </div>
 
-      <div
-        class="bg-gradient-brokermate flex flex-wrap h-64 md:h-140 justify-center items-center"
-      >
+      <div class="bg-black flex flex-wrap h-64 md:h-140 justify-center items-center">
         <div class="w-1/2">
-          <img
-            alt="Jebbit Logo"
-            class="h-auto w-full"
-            src="/img/work/brokermate/brokermate-logo.png"
-          />
+          <JebbitLogo class="fill-white h-auto w-full" />
         </div>
       </div>
 
@@ -40,6 +34,16 @@
           lightweight version that is more accessible and easier to get started
           for new customers.
         </p>
+
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <img
+              alt="Jebbit Experience Builder Legacy"
+              class="flex"
+              src="/img/work/jebbit/jebbit-legacy-builder.png"
+            >
+          </div>
+        </div>
       </div>
 
       <div class="p-4 lg:p-12">
@@ -54,6 +58,16 @@
           could easily make customizations while the system handled necessary
           configurations in the background.
         </p>
+
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <img
+              alt="Jebbit Experience Builder Legacy"
+              class="flex"
+              src="/img/work/jebbit/jebbit-simple-builder.png"
+            >
+          </div>
+        </div>
       </div>
 
       <div class="p-4 lg:p-12">
@@ -67,11 +81,31 @@
           login.
         </p>
 
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <img
+              alt="Jebbit Experience Builder Legacy"
+              class="flex"
+              src="/img/work/jebbit/jebbit-simple-builder_active.png"
+            >
+          </div>
+        </div>
+
         <p>
           The new interface is more performant and user friendly to enable
           Jebbit to bridge the gap customers were having in providing value on
           initial setup.
         </p>
+
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <img
+              alt="Jebbit Experience Builder Legacy"
+              class="flex"
+              src="/img/work/jebbit/jebbit-simple-builder_published.png"
+            >
+          </div>
+        </div>
 
         <p>
           Also, using the latest Ember standards has helped the company get the
@@ -81,8 +115,8 @@
       </div>
 
       <BottomLinks
-        next-link="/work/socialcode/"
-        next-link-text="SocialCode"
+        next-link="/work/brokermate/"
+        next-link-text="Brokermate"
         previous-link="/work/netflix/"
         previous-link-text="Netflix"
       />
@@ -92,18 +126,20 @@
 
 <script>
 import BottomLinks from '~/components/BottomLinks.vue';
+import JebbitLogo from '~/assets/svgs/clients/jebbit.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    BottomLinks
+    BottomLinks,
+    JebbitLogo
   },
 
   head() {
-    const title = 'Case Study - Brokermate';
+    const title = 'Case Study - Jebbit';
     const description =
-      'Learn how we helped Brokermate create custom site tours, to walk new users through their brokerage app.';
-    const url = 'https://shipshape.io/work/brokermate/';
+      'Read how Ship Shape was able to leverage our best practices to deliver a performant and easy to use campaign builder.';
+    const url = 'https://shipshape.io/work/jebbit/';
 
     return generateMeta(title, description, url);
   }

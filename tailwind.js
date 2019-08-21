@@ -15,7 +15,6 @@ we've done our very best to explain each section.
 
 View the full documentation at https://tailwindcss.com.
 
-
 |-------------------------------------------------------------------------------
 | The default config
 |-------------------------------------------------------------------------------
@@ -74,7 +73,7 @@ module.exports = {
   |
   */
 
-  colors: colors,
+  colors,
 
   /*
   |-----------------------------------------------------------------------------
