@@ -24,6 +24,7 @@
         </div>
 
         <nav class="flex flex-wrap pt-12 pb-12 w-full">
+          <!--
           <div class="w-full lg:w-1/4 max-w-xs p-4">
             <h4 class="text-white">
               Services
@@ -41,6 +42,7 @@
               Staff Augmentation
             </nuxt-link>
           </div>
+          -->
 
           <div class="w-full lg:w-1/4 max-w-xs p-4">
             <h4 class="text-white">
@@ -51,9 +53,11 @@
               Ember Consulting
             </nuxt-link>
 
+            <!--
             <nuxt-link to="/ember-consulting/" class="block">
               Nuxt.js Consulting
             </nuxt-link>
+            -->
 
             <nuxt-link to="/ember-consulting/" class="block">
               Site Tours
@@ -101,15 +105,15 @@
               Contact
             </nuxt-link>
 
-            <a href="" class="block">
+            <a href="https://github.com/shipshapecode" class="block">
               GitHub
             </a>
 
-            <a href="" class="block">
+            <a href="https://twitter.com/shipshapecode" class="block">
               Twitter
             </a>
 
-            <a href="" class="block">
+            <a href="https://www.linkedin.com/company/ship-shape/" class="block">
               LinkedIn
             </a>
           </div>
