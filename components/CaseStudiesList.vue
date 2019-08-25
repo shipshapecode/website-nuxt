@@ -24,7 +24,7 @@
         </h2>
 
         <p class="lg:h-12">
-          Reworking the standard way clients create Jebbit campaigns to reduce complexity.
+          Simplifying the way Jebbit customers create their marketing campaigns.
         </p>
 
         <nuxt-link

@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <div class="bg-black flex flex-wrap h-64 md:h-140 justify-center items-center">
+      <div class="bg-jebbit-green flex flex-wrap h-64 md:h-140 justify-center items-center">
         <div class="w-1/2">
           <JebbitLogo class="fill-white h-auto w-full" />
         </div>
@@ -33,6 +33,17 @@
           in using the Campaign Builder product and sought to create a
           lightweight version that is more accessible and easier to get started
           for new customers.
+        </p>
+
+        <p>
+          Showing customers the mobile campaign as they are creating it and
+          having live previews improved the understanding of how the published
+          version would look immediately.
+        </p>
+
+        <p>
+          Customers needed to more clearly understand the outcomes of dynamic campaigns
+          and how to determine the option paths for those choices.
         </p>
 
         <div class="bg-grey-light flex justify-center lg:flex-1">
@@ -52,14 +63,25 @@
         <p>
           The Ship Shape team began by creating a flexible grid layout to
           maximize usability across various screen sizes and give the
-          application more familiar user patterns. In order to reduce the
-          complexity of creating campaigns in the Jebbit system, some custom
-          components were created to obfuscate those flows so that the user
-          could easily make customizations while the system handled necessary
-          configurations in the background.
+          application more familiar user patterns.
         </p>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
+        <p>
+          We created a contextual toolbar that would react to the type of
+          component the user clicked, then only provide the tools that could use
+          for that one content piece. Our team build simple text size and alignment
+          buttons to improve the easy and give visial feedback on the options
+          for toggling between the predefined options for styling.
+        </p>
+
+        <p>
+          Saving the changes were handled automatically anytime a user clicked
+          outside the card in an editing mode. Lastly, we created a completion
+          check service to determine if the user had completed all minimal steps
+          and provide visual feedback on the remaining parts to publish a campaign.
+        </p>
+
+        <div class="bg-jebbit-green flex justify-center lg:flex-1">
           <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
             <img
               alt="Jebbit Experience Builder Legacy"
@@ -74,11 +96,17 @@
         <h4>Outcome</h4>
 
         <p>
-          Leveraging some more modern practices in managing concurrency and
-          starting with more predictable configurations, the Jebbit Simple
-          Builder is now a much improved initial experience for new Jebbit
-          customers to get started with creating campaigns from their first
-          login.
+          We added concurrency to give the user improved feedback as they create
+          new content or edit and worked to make the components with similar
+          and familiar piece so that the Jebbit Simple Builder is now a much
+          improved initial experience for new Jebbit customers to get started
+          with creating campaigns from their first login.
+        </p>
+
+        <p>
+          Users see in context how to connect the results of questionaires or product
+          preferences and the outcomes their campaign will show as they are building,
+          instead of trying to work through complicated configuration settings.
         </p>
 
         <div class="bg-grey-light flex justify-center lg:flex-1">
@@ -92,12 +120,11 @@
         </div>
 
         <p>
-          The new interface is more performant and user friendly to enable
-          Jebbit to bridge the gap customers were having in providing value on
-          initial setup.
+          The new interface is more performant and user friendly, which  enables
+          Jebbit to provide their customers with a more intuitive initial setup.
         </p>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="bg-jebbit-green flex justify-center lg:flex-1">
           <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
             <img
               alt="Jebbit Experience Builder Legacy"
@@ -108,9 +135,9 @@
         </div>
 
         <p>
-          Also, using the latest Ember standards has helped the company get the
-          overall application on to to latest versions to improve overall speed
-          and maintainability.
+          Also, we helped ensure Jebbit was using the latest Ember best practices,
+          and helped them update to the latest Ember versions. This has helped to
+          improve the overall speed and maintainability of the app.
         </p>
       </div>
 
@@ -138,7 +165,7 @@ export default {
   head() {
     const title = 'Case Study - Jebbit';
     const description =
-      'Read how Ship Shape was able to leverage our best practices to deliver a performant and easy to use campaign builder.';
+      'Learn how Ship Shape helped Jebbit revamp their campaign builder and improve user experience.';
     const url = 'https://shipshape.io/work/jebbit/';
 
     return generateMeta(title, description, url);
