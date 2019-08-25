@@ -36,13 +36,13 @@
         </p>
 
         <p>
-          Showing customers the mobile campaign as they are creating it and
-          having live previews improved the understanding of how the published
-          version would look immediately.
+          Customers weren't clear on what the published version would look
+          like until after things were completed, so the number of revisions to
+          get a polished campaign would take a lot of extra time.
         </p>
 
         <p>
-          Customers needed to more clearly understand the outcomes of dynamic campaigns
+          Jebbit's users needed to more clearly understand the outcomes of dynamic campaigns
           and how to determine the option paths for those choices.
         </p>
 
@@ -70,15 +70,21 @@
           We created a contextual toolbar that would react to the type of
           component the user clicked, then only provide the tools that could be used
           for that one content piece. Our team built simple text size and alignment
-          buttons to improve the easy and give visial feedback on the options
+          buttons to improve the ease of option setting and give visual feedback
           for toggling between the predefined options for styling.
+        </p>
+
+        <p>
+          Showing customers the mobile campaign as they are creating it and
+          having live previews improved the understanding of how the published
+          version would look immediately.
         </p>
 
         <p>
           The application ensures that changes are saved as the user moves through
           the process to simplify saves while defining the campaign. Lastly, we
           created a completion check service to determine if the user had completed
-          all minimal steps and provide visual feedback on the remaining parts
+          all minimal steps and provide guiding steps on the remaining parts
           to publish a campaign.
         </p>
 
@@ -104,7 +110,7 @@
         </p>
 
         <p>
-          Users see in context how to connect the results of questionaires or product
+          Users see in context how to connect the results of questionnaires or product
           preferences and the outcomes their campaign will show as they are building,
           instead of trying to work through complicated configuration settings.
         </p>
