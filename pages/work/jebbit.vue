@@ -68,17 +68,18 @@
 
         <p>
           We created a contextual toolbar that would react to the type of
-          component the user clicked, then only provide the tools that could use
-          for that one content piece. Our team build simple text size and alignment
+          component the user clicked, then only provide the tools that could be used
+          for that one content piece. Our team built simple text size and alignment
           buttons to improve the easy and give visial feedback on the options
           for toggling between the predefined options for styling.
         </p>
 
         <p>
-          Saving the changes were handled automatically anytime a user clicked
-          outside the card in an editing mode. Lastly, we created a completion
-          check service to determine if the user had completed all minimal steps
-          and provide visual feedback on the remaining parts to publish a campaign.
+          The application ensures that changes are saved as the user moves through
+          the process to simplify saves while defining the campaign. Lastly, we
+          created a completion check service to determine if the user had completed
+          all minimal steps and provide visual feedback on the remaining parts
+          to publish a campaign.
         </p>
 
         <div class="bg-jebbit-green flex justify-center lg:flex-1">
@@ -96,11 +97,10 @@
         <h4>Outcome</h4>
 
         <p>
-          We added concurrency to give the user improved feedback as they create
-          new content or edit and worked to make the components with similar
-          and familiar piece so that the Jebbit Simple Builder is now a much
-          improved initial experience for new Jebbit customers to get started
-          with creating campaigns from their first login.
+          The application has been streamlined with defaults and we now handle
+          many setup requirements behind the scenes so that the Jebbit Simple
+          Builder is a much improved initial experience for new Jebbit customers
+          to get started with creating campaigns from their first login.
         </p>
 
         <p>
@@ -135,9 +135,9 @@
         </div>
 
         <p>
-          Also, we helped ensure Jebbit was using the latest Ember best practices,
-          and helped them update to the latest Ember versions. This has helped to
-          improve the overall speed and maintainability of the app.
+          Lastly, we helped ensure Jebbit was using the latest Ember best practices,
+          and helped them update to the latest Ember versions. This has greatly
+          improved the overall speed and maintainability of the app.
         </p>
       </div>
 
