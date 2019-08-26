@@ -31,14 +31,14 @@
         <p>
           Jebbit had several years of user feedback and data on the difficulty
           in using the Campaign Builder product and sought to create a
-          lightweight version that is more accessible and easier to get started
+          lightweight version, that is more accessible and easier to get started
           for new customers.
         </p>
 
         <p>
           Customers weren't clear on what the published version would look
-          like until after things were completed, so the number of revisions to
-          get a polished campaign would take a lot of extra time.
+          like, until they completed all the steps, so the number of revisions to
+          get a polished campaign could take a lot of extra time.
         </p>
 
         <p>
@@ -75,14 +75,14 @@
         </p>
 
         <p>
-          Showing customers the mobile campaign as they are creating it and
-          having live previews improved the understanding of how the published
-          version would look immediately.
+          Showing customers the mobile campaign as they are creating it, and
+          having live previews, improved the understanding of how the published
+          version would look, immediately.
         </p>
 
         <p>
           The application ensures that changes are saved as the user moves through
-          the process to simplify saves while defining the campaign. Lastly, we
+          the process, to simplify saves while defining the campaign. Lastly, we
           created a completion check service to determine if the user had completed
           all minimal steps and provide guiding steps on the remaining parts
           to publish a campaign.
@@ -103,15 +103,15 @@
         <h4>Outcome</h4>
 
         <p>
-          The application has been streamlined with defaults and we now handle
-          many setup requirements behind the scenes so that the Jebbit Simple
-          Builder is a much improved initial experience for new Jebbit customers
+          The application has been streamlined with defaults, and we now handle
+          many setup requirements behind the scenes, so that the Jebbit Simple
+          Builder provides a much improved initial experience for new Jebbit customers
           to get started with creating campaigns from their first login.
         </p>
 
         <p>
-          Users see in context how to connect the results of questionnaires or product
-          preferences and the outcomes their campaign will show as they are building,
+          Users see, in context, how to connect the results of questionnaires or product
+          preferences, and the outcomes their campaign will show, as they are building,
           instead of trying to work through complicated configuration settings.
         </p>
 
