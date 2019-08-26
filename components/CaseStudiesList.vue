@@ -2,7 +2,7 @@
   <div class="flex flex-wrap">
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="w-full">
-        <Netflix :class="'h-10 w-auto'"/>
+        <Netflix class="'h-10 w-auto'"/>
 
         <p class="lg:h-12">
           Building finance tools for the world's number one streaming platform
@@ -11,6 +11,25 @@
         <nuxt-link
           class="btn-navy mb-12"
           to="/work/netflix/"
+        >
+          View Case
+        </nuxt-link>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
+      <div class="w-full">
+        <h2 class="h-10 mb-2 w-auto">
+          <JebbitLogo class="h-10 w-auto" />
+        </h2>
+
+        <p class="lg:h-12">
+          Simplifying the way Jebbit customers create their marketing campaigns.
+        </p>
+
+        <nuxt-link
+          class="btn-navy mb-12"
+          to="/work/jebbit/"
         >
           View Case
         </nuxt-link>
@@ -57,10 +76,12 @@
 
 <script>
   import Netflix from '~/assets/svgs/clients/netflix.svg?inline';
+  import JebbitLogo from '~/assets/svgs/clients/jebbit.svg?inline';
   import SocialCodeLogo from '~/assets/svgs/clients/socialcode.svg?inline';
 
   export default {
     components: {
+      JebbitLogo,
       Netflix,
       SocialCodeLogo
     }

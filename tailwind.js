@@ -15,7 +15,6 @@ we've done our very best to explain each section.
 
 View the full documentation at https://tailwindcss.com.
 
-
 |-------------------------------------------------------------------------------
 | The default config
 |-------------------------------------------------------------------------------
@@ -56,6 +55,7 @@ const colors = {
   grey: '#5F6976',
   'grey-light': '#909BA0',
   'grey-transparent': 'rgba(236, 243, 246, 50)',
+  'jebbit-green': '#7ec0b2',
   red: '#EF898B',
   white: '#FFFFFF'
 };
@@ -74,7 +74,7 @@ module.exports = {
   |
   */
 
-  colors: colors,
+  colors,
 
   /*
   |-----------------------------------------------------------------------------
