@@ -20,7 +20,7 @@
 
       <div class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center">
         <div class="w-1/2 lg:w-1/3">
-          <Netflix :class="'fill-white h-auto w-full'"/>
+          <Netflix class="'fill-white h-auto w-full'"/>
         </div>
       </div>
 
@@ -89,8 +89,8 @@
       </div>
 
       <BottomLinks
-        next-link="/work/brokermate/"
-        next-link-text="Brokermate"
+        next-link="/work/jebbit/"
+        next-link-text="Jebbit"
         previous-link="/work/socialcode/"
         previous-link-text="SocialCode"
       />
