@@ -2,7 +2,7 @@
   <div class="flex flex-wrap">
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="w-full">
-        <Netflix class="'h-10 w-auto'"/>
+        <Netflix class="'h-10 mb-3 w-auto'"/>
 
         <p class="lg:h-12">
           Building finance tools for the world's number one streaming platform
@@ -19,9 +19,7 @@
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="w-full">
-        <h2 class="h-10 mb-2 w-auto">
-          <JebbitLogo class="h-10 w-auto" />
-        </h2>
+        <JebbitLogo class="h-10 mb-3 w-auto"/>
 
         <p class="lg:h-12">
           Simplifying the way Jebbit customers create their marketing campaigns.
@@ -38,7 +36,7 @@
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="w-full">
-        <h2 class="h-10 mb-2 w-auto">
+        <h2 class="h-10 mb-3 w-auto">
           Brokermate
         </h2>
 
@@ -57,7 +55,7 @@
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="w-full">
-        <SocialCodeLogo class="h-10 w-auto"/>
+        <SocialCodeLogo class="h-10 mb-3 w-auto"/>
 
         <p class="lg:h-12">
           Refactoring a suite of apps and addons for clients to manage social media

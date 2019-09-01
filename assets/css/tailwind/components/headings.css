@@ -1,9 +1,9 @@
 .heading {
-  @apply .text-navy .font-bold;
+  @apply font-bold text-navy;
 }
 
 .sub-heading {
-  @apply .text-grey-light .font-light;
+  @apply font-light text-grey-light;
 }
 
 h1,
@@ -12,5 +12,5 @@ h3,
 h4,
 h5,
 h6 {
-  @apply .heading;
+  @apply heading;
 }

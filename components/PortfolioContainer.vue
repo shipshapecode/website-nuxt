@@ -34,7 +34,7 @@
                   itemprop="codeRepository"
                 >
                   View on GitHub
-                  <AngleRight :class="'h-4 w-4'"/>
+                  <AngleRight class="h-4 inline mb-1 w-4"/>
                 </a>
               </p>
             </div>
@@ -79,7 +79,7 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight :class="'h-4 w-4'"/>
+                    <AngleRight class="h-4 inline mb-1 w-4"/>
                   </a>
                 </p>
               </div>
@@ -110,7 +110,7 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight :class="'h-4 w-4'"/>
+                    <AngleRight class="h-4 inline mb-1 w-4"/>
                   </a>
                 </p>
               </div>
@@ -141,7 +141,7 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight :class="'h-4 w-4'"/>
+                    <AngleRight class="h-4 inline mb-1 w-4"/>
                   </a>
                 </p>
               </div>

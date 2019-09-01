@@ -17,7 +17,9 @@
       <div class="flex flex-wrap">
         <div class="w-full lg:pr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberConf :class="'ember-image p-12'"/>
+            <EmberConf
+              class="ember-image inline p-12"
+            />
           </div>
 
           <h3 class="heading">
@@ -31,18 +33,22 @@
 
           <p>
             <a
-              class="learn-more font-bold inline-flex items-center text-navy"
+              class="learn-more"
               href="https://youtu.be/u5onNDpt8ks"
             >
               Learn More
-              <AngleRight :class="'h-4 w-4'"/>
+              <AngleRight class="h-4 inline mb-1 w-4"/>
             </a>
           </p>
         </div>
 
         <div class="w-full lg:pl-6 lg:pr-6 lg:w-1/3">
           <div class="text-center w-full">
-            <img class="ember-image p-8" src="/img/ember-nyc.png" alt="Ember.JS NYC Tomster">
+            <img
+              class="ember-image inline p-8"
+              src="/img/ember-nyc.png"
+              alt="Ember.JS NYC Tomster"
+            >
           </div>
 
           <h3 class="heading">
@@ -50,25 +56,28 @@
           </h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
-            We have given talks at the Ember.JS NYC meetup a couple times, once was <a href="https://www.youtube.com/watch?v=ax6QI-WryH0&feature=youtu.be&t=4805">
+            We have given talks at the Ember.JS NYC meetup a couple times, once was <a
+            href="https://www.youtube.com/watch?v=ax6QI-WryH0&feature=youtu.be&t=4805">
             an abridged version of our EmberConf 2018 workshop on performance</a>, and another was a dry run of our EmberConf 2019
             talk <a href="https://www.youtube.com/watch?v=vnMvhykrW1A&feature=youtu.be&t=1365">Ember Data - It's Not Just for JSON API Anymore</a>.
           </p>
 
           <p>
             <a
-              class="learn-more font-bold inline-flex items-center text-navy"
+              class="learn-more"
               href="https://www.meetup.com/EmberJS-NYC/"
             >
               Learn More
-              <AngleRight :class="'h-4 w-4'"/>
+              <AngleRight class="h-4 inline mb-1 w-4"/>
             </a>
           </p>
         </div>
 
         <div class="w-full lg:pl-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberCares :class="'ember-image p-4'"/>
+            <EmberCares
+              class="ember-image inline p-4"
+            />
           </div>
 
           <h3 class="heading">
@@ -82,18 +91,20 @@
 
           <p>
             <a
-              class="learn-more font-bold inline-flex items-center text-navy"
+              class="learn-more"
               href="https://embercares.com/"
             >
               Learn More
-              <AngleRight :class="'h-4 w-4'"/>
+              <AngleRight class="h-4 inline mb-1 w-4"/>
             </a>
           </p>
         </div>
 
         <div class="w-full lg:pr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberConf :class="'ember-image p-12'"/>
+            <EmberConf
+              class="ember-image inline p-12"
+            />
           </div>
 
           <h3 class="heading">
@@ -107,18 +118,22 @@
 
           <p>
             <a
-              class="learn-more font-bold inline-flex items-center text-navy"
+              class="learn-more"
               href="https://2018.emberconf.com/schedule.html#e-improving-ember-app-performance"
             >
               Learn More
-              <AngleRight :class="'h-4 w-4'"/>
+              <AngleRight class="h-4 inline mb-1 w-4"/>
             </a>
           </p>
         </div>
 
         <div class="w-full lg:pl-6 lg:pr-6 lg:w-1/3">
           <div class="text-center w-full">
-            <img class="ember-image p-8" src="/img/ember-dc.png" alt="Ember.JS DC Tomster in front of the White House">
+            <img
+              class="ember-image inline p-8"
+              src="/img/ember-dc.png"
+              alt="Ember.JS DC Tomster in front of the White House"
+            >
           </div>
 
           <h3 class="heading">
@@ -133,11 +148,11 @@
           <div>
             <p>
               <a
-                class="learn-more font-bold inline-flex items-center text-navy"
+                class="learn-more"
                 href="https://www.meetup.com/Ember-JS-DC/"
               >
                 Learn More
-                <AngleRight :class="'h-4 w-4'"/>
+                <AngleRight class="h-4 inline mb-1 w-4"/>
               </a>
             </p>
           </div>

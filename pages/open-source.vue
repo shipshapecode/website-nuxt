@@ -4,7 +4,7 @@
       <template v-slot:content>
         <h1 class="heading">
           We
-          <Heart :class="'heartIcon'"/>
+          <Heart class="heartIcon inline"/>
           Open Source
         </h1>
         <p>

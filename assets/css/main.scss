@@ -2,7 +2,6 @@
 @import "fonts";
 @import "shevy/shevy";
 @import "transitions";
-
 // Tailwind
 @import "tailwind";
 
@@ -51,6 +50,23 @@ body {
   font-weight: lighter;
 }
 
+.heading {
+  @apply font-bold text-navy;
+}
+
+.sub-heading {
+  @apply font-light text-grey-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply heading;
+}
+
 .cd-form {
   input[type="submit"] {
     &:disabled {
@@ -81,9 +97,11 @@ body {
 }
 
 .learn-more {
+  color: $navy;
+  font-weight: bold;
+
   svg {
     fill: $navy;
-    margin-bottom: -0.2rem;
     margin-left: 0.25rem;
     transition-duration: 0.25s;
     transition-property: margin-left;
