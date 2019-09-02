@@ -257,7 +257,6 @@
   }
 
   .cd-form fieldset {
-    display: flex;
     margin: 24px 0;
   }
 
