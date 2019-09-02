@@ -1,16 +1,15 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock :class="'ember-consulting'">
+    <HeroBlock :class="'site-tours'">
       <template v-slot:content>
         <h1
           class="heading"
           itemprop="name"
         >
-          Ember.js Consulting and Training
+          Site Tours with Shepherd.js
         </h1>
         <p>
-          We've been using Ember since 2012, and have helped countless clients, from startups
-          to large corporations, build scalable and maintainable apps that stand the test of time.
+          Something about Shepherd here
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
@@ -20,7 +19,7 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon class="max-w-2xl"/>
+        <EmberConsultingIcon :class="'max-w-2xl'"/>
       </template>
     </HeroBlock>
 
@@ -56,33 +55,24 @@
         </div>
       </div>
     </div>
-
-    <WhyEmber/>
-    <CommunityInvolvement/>
   </div>
 </template>
 
 <script>
-  import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
   import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
   import HeroBlock from '~/components/HeroBlock.vue';
-  import WhyEmber from '~/components/WhyEmber';
   import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
-      CommunityInvolvement,
       EmberConsultingIcon,
-      HeroBlock,
-      WhyEmber
+      HeroBlock
     },
 
     head() {
-      const title = 'Ember.js Consulting and Training';
-      const description = 'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, ' +
-        'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
-        'Ember skills, while also churning out bulletproof features for your Ember app.';
-      const url = 'https://shipshape.io/ember-consulting/';
+      const title = 'Site Tours with Shepherd.js';
+      const description = '';
+      const url = 'https://shipshape.io/site-tours/';
 
       return generateMeta(title, description, url);
     }

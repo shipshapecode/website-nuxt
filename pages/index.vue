@@ -17,7 +17,7 @@
         </div>
       </template>
       <template v-slot:icon>
-        <LandingIcon :class="'max-w-2xl'"/>
+        <LandingIcon class="max-w-2xl"/>
       </template>
     </HeroBlock>
 

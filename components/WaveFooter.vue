@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="flex flex-wrap w-full justify-center">
-      <div class="footer-bottom max-w-2xl w-full">
+      <div class="footer-bottom max-w-8xl p-8 w-full">
         <div class="flex justify-center lg:justify-start w-full">
           <logo class="footer-logo h-16 w-16"/>
         </div>
@@ -44,7 +44,7 @@
           </div>
           -->
 
-          <div class="w-full lg:w-1/4 max-w-xs p-4">
+          <div class="w-1/2 lg:w-1/3 p-4">
             <h4 class="text-white">
               Specialties
             </h4>
@@ -59,12 +59,12 @@
             </nuxt-link>
             -->
 
-            <nuxt-link to="/ember-consulting/" class="block">
+            <nuxt-link to="/site-tours/" class="block">
               Site Tours
             </nuxt-link>
           </div>
 
-          <div class="w-full lg:w-1/4 max-w-xs p-4">
+          <div class="w-1/2 lg:w-1/3 p-4">
             <div class="w-full">
               <h4 class="text-white">
                 Company
@@ -96,7 +96,7 @@
             </div-->
           </div>
 
-          <div class="w-full lg:w-1/4 max-w-xs p-4">
+          <div class="w-1/2 lg:w-1/3 p-4">
             <h4 class="text-white">
               Connect
             </h4>
