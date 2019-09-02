@@ -12,12 +12,12 @@
         </p>
         <div>
           <nuxt-link to="/work/" class="btn-navy">
-            See what we've helped create
+            Check out our work
           </nuxt-link>
         </div>
       </template>
       <template v-slot:icon>
-        <LandingIcon :class="'max-w-md'"/>
+        <LandingIcon :class="'max-w-2xl'"/>
       </template>
     </HeroBlock>
 

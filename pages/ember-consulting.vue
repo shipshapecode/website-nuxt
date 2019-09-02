@@ -20,7 +20,7 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon :class="'max-w-md'"/>
+        <EmberConsultingIcon :class="'max-w-2xl'"/>
       </template>
     </HeroBlock>
 

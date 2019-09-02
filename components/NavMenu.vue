@@ -16,15 +16,15 @@
           <img
             alt="Ship Shape Logo"
             itemprop="url"
-            height="54px"
+            height="50px"
             src="/img/logo.png"
-            width="54px"
+            width="50px"
           >
           <meta itemprop="height" content="128">
           <meta itemprop="width" content="128">
         </div>
         <div
-          class="-mt-1 text-navy text-3xl"
+          class="font-medium -mt-1 text-navy text-3xl"
           itemprop="name"
         >
           Ship Shape

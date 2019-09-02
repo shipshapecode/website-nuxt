@@ -3,11 +3,11 @@
     <div class="section-content">
       <div class="flex flex-wrap items-center pt-6 pb-6">
         <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
-          <Design :class="'max-w-md'"/>
+          <Design :class="'max-w-2xl'"/>
         </div>
 
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
-          <div class="lg:max-w-md">
+          <div class="lg:max-w-2xl">
             <h3 class="heading">
               Design
             </h3>
@@ -26,7 +26,7 @@
 
       <div class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row">
         <div class="w-full flex lg:pr-12 lg:w-1/2">
-          <div class="lg:max-w-md">
+          <div class="lg:max-w-2xl">
             <h3 class="heading">
               Build
             </h3>
@@ -44,17 +44,17 @@
         </div>
 
         <div class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2">
-          <Build :class="'max-w-md'"/>
+          <Build :class="'max-w-2xl'"/>
         </div>
       </div>
 
       <div class="flex flex-wrap items-center pt-6 pb-6">
         <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
-          <Ship :class="'max-w-md'"/>
+          <Ship :class="'max-w-2xl'"/>
         </div>
 
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
-          <div class="lg:max-w-md">
+          <div class="lg:max-w-2xl">
             <h3 class="heading">
               Ship
             </h3>

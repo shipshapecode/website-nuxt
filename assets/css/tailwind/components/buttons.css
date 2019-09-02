@@ -1,28 +1,28 @@
 .btn {
-  @apply .font-bold .inline-block .pb-2 .pl-8 .pr-8 .pt-2 .rounded .text-white .whitespace-no-wrap;
+  @apply font-bold inline-block pb-4 pl-12 pr-12 pt-4 rounded text-base text-white whitespace-no-wrap;
 }
 
 .btn-gold {
-  @apply .btn .bg-gold;
+  @apply btn bg-gold;
 }
 
 .btn-navy {
-  @apply .btn .bg-navy;
+  @apply btn bg-navy;
 }
 
 .btn:active,
 .btn-gold:active,
 .btn-navy:active {
-  @apply .text-white;
+  @apply text-white;
 }
 
 .btn:visited,
 .btn-gold:visited,
 .btn-navy:visited {
-  @apply .text-white;
+  @apply text-white;
 }
 
 .btn-gold:hover,
 .btn-navy:hover {
-  @apply .bg-grey-transparent .text-navy;
+  @apply bg-grey-transparent text-navy;
 }

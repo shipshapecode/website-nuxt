@@ -1,6 +1,6 @@
 <template>
   <div class="section flex flex-wrap justify-center">
-    <div class="max-w-2xl w-full">
+    <div class="max-w-5xl w-full">
       <div class="p-4 lg:p-12">
         <div class="text-xs">
           Case Study

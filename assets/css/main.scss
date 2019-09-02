@@ -50,14 +50,6 @@ body {
   font-weight: lighter;
 }
 
-.heading {
-  @apply font-bold text-navy;
-}
-
-.sub-heading {
-  @apply font-light text-grey-light;
-}
-
 h1,
 h2,
 h3,
@@ -128,5 +120,5 @@ h6 {
 }
 
 .section-content {
-  @apply .max-w-4xl .w-full;
+  @apply .max-w-8xl .w-full;
 }

@@ -6,7 +6,7 @@
           JavaScript Libraries
         </h2>
 
-        <p>
+        <p class="max-w-5xl">
           We are passionate about JavaScript and all things UI related at Ship Shape. We are working hard
           to create open source libraries for many common web app use cases.
         </p>
@@ -22,7 +22,7 @@
                 Guide your users through a tour of your app
               </h5>
 
-              <p>
+              <p class="max-w-5xl">
                 Shepherd was initially created by HubSpot, and was taken over by Ship Shape in
                 2018. We did a complete rewrite, added full test coverage, and modernized everything.
               </p>
@@ -49,13 +49,13 @@
           Ember Addons
         </h2>
 
-        <p>
+        <p class="max-w-5xl">
           The addons Ship Shape has created have been downloaded millions of times, and are used in
           production apps of Fortune 100 companies.
         </p>
 
         <div class="flex flex-wrap justify-center">
-          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project w-full lg:w-1/3 lg:pr-8">
+          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project pb-2 pt-2 w-full lg:w-1/3 lg:pr-8">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
@@ -86,7 +86,7 @@
             </div>
           </div>
 
-          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project w-full lg:w-1/3 lg:pl-4 lg:pr-4">
+          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-4 lg:pr-4">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
@@ -117,7 +117,7 @@
             </div>
           </div>
 
-          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project w-full lg:w-1/3 lg:pl-8">
+          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-8">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">

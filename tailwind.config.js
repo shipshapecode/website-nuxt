@@ -18,9 +18,32 @@ module.exports = {
       white: '#FFFFFF'
     },
 
-    height: {
-      auto: 'auto',
+    maxWidth: {
+      xxs: '13rem',
+      xs: '20rem',
+      sm: '24rem',
+      md: '28rem',
+      lg: '32rem',
+      xl: '36rem',
+      '2xl': '42rem',
+      '3xl': '48rem',
+      '4xl': '56rem',
+      '5xl': '64rem',
+      '6xl': '72rem',
+      '7xl': '80rem',
+      '8xl': '90rem',
+      '9xl': '100rem',
+      full: '100%'
+    },
+
+    // height: {
+    //   auto: 'auto',
+    //   px: '1px',
+    // },
+
+    spacing: {
       px: '1px',
+      '0': '0',
       '1': '0.25rem',
       '2': '0.5rem',
       '3': '0.75rem',
@@ -31,47 +54,15 @@ module.exports = {
       '10': '2.5rem',
       '12': '3rem',
       '16': '4rem',
+      '20': '5rem',
       '24': '6rem',
       '32': '8rem',
+      '40': '10rem',
       '48': '12rem',
+      '56': '14rem',
       '64': '16rem',
-      '140': '36rem',
-      full: '100%',
-      screen: '100vh'
+      '140': '36rem'
     },
-
-    maxWidth: {
-      xxs: '13rem',
-      xs: '20rem',
-      sm: '30rem',
-      md: '40rem',
-      lg: '50rem',
-      xl: '60rem',
-      '2xl': '70rem',
-      '3xl': '80rem',
-      '4xl': '90rem',
-      '5xl': '100rem',
-      full: '100%'
-    },
-
-    screens: {
-      sm: '576px',
-      md: '768px',
-      lg: '992px',
-      xl: '1200px'
-    },
-
-    textSizes: {
-      xs: '.75rem', // 12px
-      sm: '.875rem', // 14px
-      base: '1rem', // 16px
-      lg: '1.125rem', // 18px
-      xl: '1.25rem', // 20px
-      '2xl': '1.5rem', // 24px
-      '3xl': '1.875rem', // 30px
-      '4xl': '2.25rem', // 36px
-      '5xl': '3rem' // 48px
-    }
   },
   variants: {},
   plugins: [
