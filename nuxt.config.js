@@ -112,6 +112,13 @@ module.exports = {
     { src: '~/plugins/vue-flash-message', ssr: false }
   ],
 
+  postcss: {
+    plugins: {
+      'tailwindcss': {},
+      'autoprefixer': {}
+    }
+  },
+
   /*
   ** Nuxt.js modules
   */
@@ -120,6 +127,7 @@ module.exports = {
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
+    '@nuxtjs/tailwindcss',
     'nuxt-purgecss',
     'nuxt-svg',
     ['nuxt-validate', {

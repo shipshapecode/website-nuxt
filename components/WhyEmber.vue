@@ -6,7 +6,7 @@
       </h2>
 
       <Tabs>
-        <div class="max-w-lg">
+        <div class="max-w-3xl">
           <Tab name="Overview" :selected="true">
             <p>
               Ember is our JavaScript framework of choice for building ambitious web apps.

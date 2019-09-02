@@ -1,6 +1,6 @@
 <template>
   <div class="section flex flex-wrap justify-center">
-    <div class="max-w-2xl w-full">
+    <div class="max-w-5xl w-full">
       <div class="p-4 lg:p-12">
         <div class="text-xs">
           Case Study
@@ -21,7 +21,7 @@
 
       <div class="bg-jebbit-green flex flex-wrap h-64 md:h-140 justify-center items-center">
         <div class="w-1/2">
-          <JebbitLogo class="fill-white h-auto w-full" />
+          <JebbitLogo class="fill-white h-auto w-full"/>
         </div>
       </div>
 
@@ -45,15 +45,15 @@
           Jebbit's users needed to more clearly understand the outcomes of dynamic campaigns
           and how to determine the option paths for those choices.
         </p>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Jebbit Experience Builder Legacy"
-              class="flex"
-              src="/img/work/jebbit/jebbit-legacy-builder.png"
-            >
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Jebbit Experience Builder Legacy"
+            class="flex"
+            src="/img/work/jebbit/jebbit-legacy-builder.png"
+          >
         </div>
       </div>
 
@@ -87,15 +87,15 @@
           all minimal steps and provide guiding steps on the remaining parts
           to publish a campaign.
         </p>
+      </div>
 
-        <div class="bg-jebbit-green flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Jebbit Experience Builder Legacy"
-              class="flex"
-              src="/img/work/jebbit/jebbit-simple-builder.png"
-            >
-          </div>
+      <div class="bg-jebbit-green flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Jebbit Experience Builder Legacy"
+            class="flex"
+            src="/img/work/jebbit/jebbit-simple-builder.png"
+          >
         </div>
       </div>
 
@@ -114,32 +114,36 @@
           preferences, and the outcomes their campaign will show, as they are building,
           instead of trying to work through complicated configuration settings.
         </p>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Jebbit Experience Builder Legacy"
-              class="flex"
-              src="/img/work/jebbit/jebbit-simple-builder_active.png"
-            >
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Jebbit Experience Builder Legacy"
+            class="flex"
+            src="/img/work/jebbit/jebbit-simple-builder_active.png"
+          >
         </div>
+      </div>
 
+      <div class="p-4 lg:p-12">
         <p>
-          The new interface is more performant and user friendly, which  enables
+          The new interface is more performant and user friendly, which enables
           Jebbit to provide their customers with a more intuitive initial setup.
         </p>
+      </div>
 
-        <div class="bg-jebbit-green flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Jebbit Experience Builder Legacy"
-              class="flex"
-              src="/img/work/jebbit/jebbit-simple-builder_published.png"
-            >
-          </div>
+      <div class="bg-jebbit-green flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Jebbit Experience Builder Legacy"
+            class="flex"
+            src="/img/work/jebbit/jebbit-simple-builder_published.png"
+          >
         </div>
+      </div>
 
+      <div class="p-4 lg:p-12">
         <p>
           Lastly, we helped ensure Jebbit was using the latest Ember best practices,
           and helped them update to the latest Ember versions. This has greatly
@@ -158,23 +162,23 @@
 </template>
 
 <script>
-import BottomLinks from '~/components/BottomLinks.vue';
-import JebbitLogo from '~/assets/svgs/clients/jebbit.svg?inline';
-import { generateMeta } from '~/utils/meta';
+  import BottomLinks from '~/components/BottomLinks.vue';
+  import JebbitLogo from '~/assets/svgs/clients/jebbit.svg?inline';
+  import { generateMeta } from '~/utils/meta';
 
-export default {
-  components: {
-    BottomLinks,
-    JebbitLogo
-  },
+  export default {
+    components: {
+      BottomLinks,
+      JebbitLogo
+    },
 
-  head() {
-    const title = 'Case Study - Jebbit';
-    const description =
-      'Learn how Ship Shape helped Jebbit revamp their campaign builder and improve user experience.';
-    const url = 'https://shipshape.io/work/jebbit/';
+    head() {
+      const title = 'Case Study - Jebbit';
+      const description =
+        'Learn how Ship Shape helped Jebbit revamp their campaign builder and improve user experience.';
+      const url = 'https://shipshape.io/work/jebbit/';
 
-    return generateMeta(title, description, url);
-  }
-};
+      return generateMeta(title, description, url);
+    }
+  };
 </script>

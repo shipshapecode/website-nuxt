@@ -4,7 +4,7 @@
       <template v-slot:content>
         <h1 class="heading">
           We
-          <Heart :class="'heartIcon'"/>
+          <Heart class="heartIcon inline"/>
           Open Source
         </h1>
         <p>
@@ -20,7 +20,7 @@
       </template>
 
       <template v-slot:icon>
-        <OpenSourceIcon :class="'max-w-md'"/>
+        <OpenSourceIcon class="max-w-2xl"/>
       </template>
     </HeroBlock>
 

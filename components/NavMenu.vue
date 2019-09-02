@@ -16,15 +16,15 @@
           <img
             alt="Ship Shape Logo"
             itemprop="url"
-            height="54px"
+            height="50px"
             src="/img/logo.png"
-            width="54px"
+            width="50px"
           >
           <meta itemprop="height" content="128">
           <meta itemprop="width" content="128">
         </div>
         <div
-          class="-mt-1 text-navy text-3xl"
+          class="font-medium -mt-1 text-navy text-3xl"
           itemprop="name"
         >
           Ship Shape
@@ -38,11 +38,11 @@
         class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
         @click="toggleNavMenu(true)"
       >
-        <Menu :class="'hamburger-menu'"/>
+        <Menu class="hamburger-menu"/>
       </button>
     </div>
 
-    <div class="nav-links hidden lg:flex">
+    <div class="nav-links hidden z-50 lg:flex">
       <div class="lg:flex lg:flex-grow lg:justify-end">
         <div class="flex lg:hidden justify-end m-4">
           <button
@@ -50,7 +50,7 @@
             class="cursor-pointer"
             @click="toggleNavMenu(false)"
           >
-            <Close :class="'h-10 m-2 p-2 w-10'"/>
+            <Close class="h-10 m-2 p-2 w-10"/>
           </button>
         </div>
 
@@ -117,12 +117,17 @@
     },
     methods: {
       toggleNavMenu(open) {
-        const navLinks = this.$el.querySelector('.nav-links');
+        const mobileNavShown = window.innerWidth < 1024;
+        if (mobileNavShown) {
+          const navLinks = this.$el.querySelector('.nav-links');
 
-        if (open) {
-          navLinks.classList.remove('hidden');
-        } else {
-          navLinks.classList.add('hidden');
+          if (open) {
+            navLinks.classList.remove('hidden');
+            document.body.style.position = 'fixed';
+          } else {
+            navLinks.classList.add('hidden');
+            document.body.style.position = '';
+          }
         }
       }
     }

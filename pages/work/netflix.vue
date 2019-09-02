@@ -1,6 +1,6 @@
 <template>
   <div class="section flex flex-wrap justify-center">
-    <div class="max-w-2xl w-full">
+    <div class="max-w-5xl w-full">
       <div class="p-4 lg:p-12">
         <div class="text-xs">
           Case Study
@@ -20,7 +20,7 @@
 
       <div class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center">
         <div class="w-1/2 lg:w-1/3">
-          <Netflix class="'fill-white h-auto w-full'"/>
+          <Netflix class="fill-white h-auto w-full"/>
         </div>
       </div>
 

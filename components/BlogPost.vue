@@ -5,8 +5,8 @@
     <link itemprop="image" href="shipshapelogo">
 
     <div class="section flex flex-wrap justify-center">
-      <div class="max-w-lg w-full">
-        <h1 class="blog-post-title" itemprop="headline">
+      <div class="max-w-3xl w-full">
+        <h1 class="blog-post-title font-semibold" itemprop="headline">
           {{ post.title }}
         </h1>
 

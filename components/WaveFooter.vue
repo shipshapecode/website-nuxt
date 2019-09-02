@@ -2,7 +2,7 @@
   <footer class="wave text-base">
     <div class="footer-top">
       <div class="text-center pt-32 lg:pb-32">
-        <compass class="m-8"/>
+        <compass class="inline m-8"/>
 
         <h3 class="font-bold p-4 text-5xl text-white">
           Set a course for success

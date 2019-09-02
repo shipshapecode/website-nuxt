@@ -257,7 +257,6 @@
   }
 
   .cd-form fieldset {
-    display: flex;
     margin: 24px 0;
   }
 
@@ -306,6 +305,7 @@
     background-color: #ffffff;
     border-radius: .25em;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+    line-height: normal;
   }
 
   .cd-form input[type="text"]:focus,

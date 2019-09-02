@@ -2,7 +2,6 @@
 @import "fonts";
 @import "shevy/shevy";
 @import "transitions";
-
 // Tailwind
 @import "tailwind";
 
@@ -51,6 +50,15 @@ body {
   font-weight: lighter;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply heading;
+}
+
 .cd-form {
   input[type="submit"] {
     &:disabled {
@@ -86,7 +94,7 @@ body {
 
   svg {
     fill: $navy;
-    margin-bottom: -0.2rem;
+    margin-left: 0.25rem;
     transition-duration: 0.25s;
     transition-property: margin-left;
   }
@@ -102,7 +110,7 @@ body {
 
     svg {
       fill: $red;
-      margin-left: 0.5rem;
+      margin-left: 0.75rem;
     }
   }
 }
@@ -112,5 +120,5 @@ body {
 }
 
 .section-content {
-  @apply .max-w-4xl .w-full;
+  @apply .max-w-8xl .w-full;
 }
