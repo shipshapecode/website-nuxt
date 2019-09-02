@@ -5,7 +5,7 @@
         href="https://marianatek.com/"
         aria-label="Mariana Tek"
       >
-        <MarianaTekLogo class="h-8 mb-2 w-auto"/>
+        <MarianaTekLogo class="h-8 mb-3 w-auto"/>
       </a>
 
       <p>
@@ -21,7 +21,7 @@
         href="https://www.scoutforpets.com/"
         aria-label="Scout"
       >
-        <ScoutLogo class="h-8 mb-2 w-auto"/>
+        <ScoutLogo class="h-8 mb-3 w-auto"/>
       </a>
       <p>
         We did several months of work with Scout,
@@ -42,7 +42,7 @@
         href="https://www.greenlight.guru/"
         aria-label="Greenlight Guru"
       >
-        <GreenlightGuruLogo class="h-8 mb-2 w-auto"/>
+        <GreenlightGuruLogo class="h-8 mb-3 w-auto"/>
       </a>
       <p>
         We first updated the greenlight.guru app to Ember 1.12, fixing deprecations as we went.
@@ -56,7 +56,7 @@
         href="https://www.mentrs.com/"
         aria-label="Mentrs"
       >
-        <MentrsLogo class="h-8 mb-2 w-auto"/>
+        <MentrsLogo class="h-8 mb-3 w-auto"/>
       </a>
 
       <p>
@@ -75,7 +75,7 @@
         href="https://anvyl.com/"
         aria-label="Anvyl"
       >
-        <AnvylLogo class="h-8 mb-2 w-auto"/>
+        <AnvylLogo class="h-8 mb-3 w-auto"/>
       </a>
       <p>
         We helped Anvyl create a new messaging feature to allow

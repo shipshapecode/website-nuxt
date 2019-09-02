@@ -7,7 +7,7 @@
         </h1>
 
         <a
-          class="p-12"
+          class="-mt-3 p-12"
           href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fshipshape.io%2Ffeed.xml"
           target="_blank"
           rel="noopener"
@@ -32,6 +32,8 @@
   import { generateMeta } from '~/utils/meta';
 
   export default {
+    scrollToTop: true,
+
     components: {
       BlogPostMenu,
       RSS
