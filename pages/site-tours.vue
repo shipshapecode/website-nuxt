@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock :class="'site-tours'">
+    <HeroBlock class="site-tours">
       <template v-slot:content>
         <h1
           class="heading"
@@ -19,7 +19,7 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon :class="'max-w-2xl'"/>
+        <EmberConsultingIcon class="max-w-2xl"/>
       </template>
     </HeroBlock>
 

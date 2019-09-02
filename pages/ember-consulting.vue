@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock :class="'ember-consulting'">
+    <HeroBlock class="ember-consulting">
       <template v-slot:content>
         <h1
           class="heading"
