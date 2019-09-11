@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - '10'
+
+sudo: false
+dist: trusty
+
+cache:
+  yarn: true
+
+before_install:
+  - yarn global add greenkeeper-lockfile@1
+
+install:
+  - yarn install --ignore-engines
+
+script:
+  - yarn generate
+
+after_success:
+  - npx percy snapshot dist/
