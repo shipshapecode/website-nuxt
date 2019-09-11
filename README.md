@@ -1,5 +1,7 @@
 # website-nuxt
 
+[![Build Status](https://travis-ci.com/shipshapecode/website-nuxt.svg?branch=master)](https://travis-ci.com/shipshapecode/website-nuxt)
+
 > Nuxt port of shipshape.io
 
 ## Build Setup
