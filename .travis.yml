@@ -5,6 +5,10 @@ node_js:
 sudo: false
 dist: trusty
 
+branches:
+  only:
+    - master
+
 cache:
   yarn: true
 
