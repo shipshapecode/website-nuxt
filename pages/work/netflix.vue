@@ -47,7 +47,7 @@
         <p>
           One of the first issues we had to overcome was displaying a table of default values when a call to get
           the cost categories returned a 404. With JSON API, this would have returned a 200, with an empty response, but
-          with our API it returned a 404, which would typically but your app into an error state. To get around this,
+          with our API it returned a 404, which would typically put your app into an error state. To get around this,
           we caught the error, and instead returned the default data we wanted. The details of this approach are outlined
           in our blog post on
           <a href="/blog/ember-data-belongs-to-find-or-create/">Creating a Default Record When a belongsTo Request Errors</a>.
@@ -67,7 +67,7 @@
           add row functionality, for categories that supported multiple values of the same type. To accomplish this,
           we used <a href="https://github.com/offirgolan/ember-light-table">ember-light-table</a>, and nested
           <a href="https://github.com/cibernox/ember-power-select">ember-power-select</a> dropdowns in the cells.
-          This allowed us to set default placeholder values, and disabled fields that were not editable.
+          This allowed us to set default placeholder values, and disable fields that were not editable.
         </p>
       </div>
 
