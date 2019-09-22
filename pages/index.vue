@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock :class="'home'">
+    <HeroBlock class="home">
       <template v-slot:content>
         <h1 class="heading">
           Code that won't sink
@@ -17,7 +17,7 @@
         </div>
       </template>
       <template v-slot:icon>
-        <LandingIcon :class="'max-w-2xl'"/>
+        <LandingIcon class="max-w-2xl"/>
       </template>
     </HeroBlock>
 

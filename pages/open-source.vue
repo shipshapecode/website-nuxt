@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock :class="'open-source'">
+    <HeroBlock class="open-source">
       <template v-slot:content>
         <h1 class="heading">
           We
