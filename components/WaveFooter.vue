@@ -59,9 +59,11 @@
             </nuxt-link>
             -->
 
+            <!--
             <nuxt-link to="/site-tours/" class="block">
               Site Tours
             </nuxt-link>
+            -->
           </div>
 
           <div class="w-1/2 lg:w-1/3 p-4">
