@@ -5468,6 +5468,13 @@ ignore@^5.1.1, ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
   integrity sha512-MzbUSahkTW1u7JpKKjY7LCARd1fU5W2rLdxlM4kdkayuCwZImjkpluF9CM1aLewYJguPDqewLam18Y6AU69A8A==
 
+image-size@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.8.2.tgz#9b5cef7a18a0991beba861b731fb4cfe7a45822d"
+  integrity sha512-0AO8bEDtAcC+dScZmCDUvmxIYWlJ+0DQOl1BkTQYrrM3/oQORS03P0gDT7ZoElRozHlfoUxT+L2ErLFmbT5tdA==
+  dependencies:
+    queue "6.0.1"
+
 import-cwd@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/import-cwd/-/import-cwd-2.1.0.tgz#aa6cf36e722761285cb371ec6519f53e2435b0a9"
@@ -8063,10 +8070,10 @@ percy-client@^3.0.3:
     request-promise "^4.2.2"
     walk "^2.3.14"
 
-percy@^0.15.2:
-  version "0.15.2"
-  resolved "https://registry.yarnpkg.com/percy/-/percy-0.15.2.tgz#e3ced7be250a6b010657675150681e28c2b2d36c"
-  integrity sha512-aCGsrs7gocKauHjHxaCwj46IByF+OIUOtbZLiYM7MnURXi86w+IJURb6j1l13gv8OB4+eiV3/Rowug5whabpdw==
+percy@^0.16.1:
+  version "0.16.1"
+  resolved "https://registry.yarnpkg.com/percy/-/percy-0.16.1.tgz#3e8aea92d0ba1a9bde3b795384bcbfce2d8d03f0"
+  integrity sha512-kNqz6X0v2wd+T6Fo5A5G3U6pPohFDhpn7wruf2g6OvKUe0wxFNHZ2Pi0LdHFUhJyVzWa2/JIii7Iztck1sjGMQ==
   dependencies:
     "@oclif/command" "1.5.16"
     "@oclif/config" "^1"
@@ -8082,6 +8089,7 @@ percy@^0.15.2:
     follow-redirects "^1.9.0"
     generic-pool "^3.7.1"
     globby "^10.0.1"
+    image-size "^0.8.2"
     js-yaml "^3.13.1"
     percy-client "^3.0.3"
     puppeteer "^1.13.0"
@@ -9098,6 +9106,13 @@ querystring@0.2.0, querystring@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
+
+queue@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/queue/-/queue-6.0.1.tgz#abd5a5b0376912f070a25729e0b6a7d565683791"
+  integrity sha512-AJBQabRCCNr9ANq8v77RJEv73DPbn55cdTb+Giq4X0AVnNVZvMHlYp7XlQiN+1npCZj1DuSmaA2hYVUUDgxFDg==
+  dependencies:
+    inherits "~2.0.3"
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
