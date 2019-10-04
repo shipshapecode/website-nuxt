@@ -191,9 +191,9 @@ module.exports = {
   },
 
   dateFns: {
-    locales: ['en'],
-    defaultLocale: 'en',
-    format: 'MM/DD/YYYY'
+    locales: ['en-US'],
+    defaultLocale: 'en-US',
+    format: 'MM/dd/yyyy'
   },
 
   generate: {
