@@ -9,7 +9,8 @@
           Site Tours with Shepherd.js
         </h1>
         <p>
-          Something about Shepherd here
+          We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to create site tours to show new users around your app.
+          A step-by-step guide and feature introduction can help get them up to speed quickly.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
@@ -19,54 +20,55 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon class="max-w-2xl"/>
+        <ShepherdLogo class="shepherd-logo max-w-lg p-12 w-full"/>
       </template>
     </HeroBlock>
 
-    <div class="section quote bg-grey-transparent flex flex-wrap justify-center">
-      <div class="section-content">
-        <div class="font-bold text-5xl">
-          “
-        </div>
-
-        <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-          <h2 class="font-light text-navy text-2xl lg:text-4xl" itemprop="reviewBody">
-            Ship Shape knows what they’re doing. A thoughtful approach, pristine code and a 200% effort in everything they do, makes
-            recommending them a no-brainer.
-          </h2>
-
-          <p
-            class="font-bold"
-            itemprop="author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            <span itemprop="name">
-              James Dixon
-            </span>,
-            <span itemprop="jobTitle">
-              Founder
-            </span>
-            of
-            <a href="https://www.scoutforpets.com/">
-              Scout
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
+    <WhyShepherd/>
   </div>
 </template>
 
+<style>
+  .shepherd-logo .lines,
+  .shepherd-logo .open-eye,
+  .shepherd-logo .wink {
+    transition: visibility 0s, opacity 0.25s ease-in-out;
+  }
+
+  .shepherd-logo .open-eye {
+    opacity: 1;
+    visibility: visible !important;
+  }
+
+  .shepherd-logo .lines,
+  .shepherd-logo .wink {
+    opacity: 0;
+    visibility: hidden !important;
+  }
+
+  .shepherd-logo:hover .lines,
+  .shepherd-logo:hover .wink {
+    opacity: 1;
+    visibility: visible !important;
+  }
+
+  .shepherd-logo:hover .open-eye {
+    opacity: 0;
+    visibility: hidden !important;
+  }
+</style>
+
 <script>
-  import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
+  import ShepherdLogo from '~/assets/svgs/shepherd.svg?inline';
   import HeroBlock from '~/components/HeroBlock.vue';
+  import WhyShepherd from '~/components/WhyShepherd.vue';
   import { generateMeta } from '~/utils/meta';
 
   export default {
     components: {
-      EmberConsultingIcon,
-      HeroBlock
+      ShepherdLogo,
+      HeroBlock,
+      WhyShepherd
     },
 
     head() {
