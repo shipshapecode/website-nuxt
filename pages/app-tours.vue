@@ -1,16 +1,16 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="site-tours">
+    <HeroBlock class="app-tours">
       <template v-slot:content>
         <h1
           class="heading"
           itemprop="name"
         >
-          Site Tours with Shepherd.js
+          App Tours with Shepherd.js
         </h1>
         <p>
-          We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to create site tours to show new users around your app.
-          A step-by-step guide and feature introduction can help get them up to speed quickly.
+          We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to create step-by-step app tours and feature
+          introductions to help new users get up to speed quickly with your web app.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
@@ -72,9 +72,9 @@
     },
 
     head() {
-      const title = 'Site Tours with Shepherd.js';
+      const title = 'App Tours with Shepherd.js';
       const description = '';
-      const url = 'https://shipshape.io/site-tours/';
+      const url = 'https://shipshape.io/app-tours/';
 
       return generateMeta(title, description, url);
     }

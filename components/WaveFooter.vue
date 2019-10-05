@@ -59,8 +59,8 @@
             </nuxt-link>
             -->
 
-            <nuxt-link to="/site-tours/" class="block">
-              Site Tours
+            <nuxt-link to="/app-tours/" class="block">
+              App Tours
             </nuxt-link>
           </div>
 

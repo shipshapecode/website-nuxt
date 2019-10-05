@@ -9,19 +9,22 @@
         <div class="max-w-3xl">
           <Tab name="Accessibility" :selected="true">
             <p>
-              TBD
+              Shepherd has full keyboard navigation support, focus trapping, and a11y compliance
+              via aria attributes.
             </p>
           </Tab>
 
           <Tab name="Highly Customizable">
             <p>
-              TBD
+              Shepherd's styles are kept minimal, allowing you to easily customize the look and feel,
+              but still give you enough to drop in and be ready to go quickly.
             </p>
           </Tab>
 
           <Tab name="Framework Ready">
             <p>
-              TBD
+              Shepherd is ready to drop into your application using React, Ember,
+              Angular, Vue.js, ES Modules, or plain Javascript!
             </p>
           </Tab>
         </div>
