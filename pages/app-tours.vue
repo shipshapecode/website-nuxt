@@ -9,7 +9,7 @@
           App Tours with Shepherd.js
         </h1>
         <p>
-          We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to create step-by-step app tours and feature
+          We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to create step-by-step application tours and feature
           introductions to help new users get up to speed quickly with your web app.
         </p>
         <div>
