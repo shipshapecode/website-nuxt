@@ -24,6 +24,72 @@
       </template>
     </HeroBlock>
 
+    <div class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent">
+      <div class="section-content">
+        <h2 class="heading">
+          Why do I need an app tour?
+        </h2>
+
+        <p class="max-w-5xl">
+          We've leveraged the flexibility of these tours to lead users through a number of events. Upon the
+          first time logging into an application, tours can be used to validate and ensure a smooth setup process.
+          We used this technique for our  <nuxt-link to="/work/brokermate/">project with Brokermate</nuxt-link> to ensure
+          users completed all the required setup steps.
+        </p>
+
+        <div class="flex flex-wrap justify-center">
+          <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pr-8">
+            <div class="flex flex-wrap items-center justify-center">
+              <div>
+                <h3 class="text-navy">
+                  New Users
+                </h3>
+
+                <p>
+                  Introducing new users to the features of your product can help them get up and running much
+                  more quickly than if they were exploring the app on their own. If a new user gets confused
+                  with how to use your app, they may become frustrated and abandon your product all together.
+                  An application tour smoothly guides them through everything, for a great first impression.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-4 lg:pr-4">
+            <div class="flex flex-wrap items-center justify-center">
+              <div>
+                <h3 class="text-navy">
+                  New Features
+                </h3>
+
+                <p>
+                  After spending countless hours refreshing your app flow, you want to ensure your existing
+                  users are not confused when they encounter the new flow for the first time. Your existing
+                  visitors can be shown the exciting new features and how to maximize their ability to complete
+                  important tasks to ensure long term effectiveness for the investments you've made to improve
+                  your software.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-8">
+            <div class="flex flex-wrap items-center justify-center">
+              <div>
+                <h3 class="text-navy">
+                  TODO TODO
+                </h3>
+
+                <p>
+                  TODO TODO TODO TODO TODO TODO TODO TODO TODO
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <WhyShepherd/>
   </div>
 </template>
