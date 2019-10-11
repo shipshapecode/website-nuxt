@@ -10,7 +10,7 @@
         </h1>
         <p>
           We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to create step-by-step application tours and feature
-          introductions to help new users get up to speed quickly with your web application.
+          introductions to help new users get up to speed quickly with your web app.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
@@ -66,7 +66,7 @@
 
                 <p>
                   After spending countless hours refreshing your app flow, you want to ensure your existing
-                  users are not confused when they encounter the new flow for the first time. Your existing
+                  users are not confused when they encounter the latest changes for the first time. Your existing
                   visitors can be shown the exciting new features and how to maximize their ability to complete
                   important tasks to ensure long term effectiveness for the investments you've made to improve
                   your software.
@@ -83,10 +83,10 @@
                 </h3>
 
                 <p>
-                  When continued setup to have a completed profile or application experience is helpful to the successful
-                  experience of your users, multiple tours can be used to encourage and allow for just that outcome. Shepherd.js
-                  can be used to setup various seperate tours for a staggered encouragement campaign in improving a user's profile
-                  and allowing them to go through stages without inhibiting available functionality.
+                  When users have further steps to complete after they've signed up and used your product,
+                  multiple tours can be used to encourage breaking up of additional time consuming tasks and tracking of current progress.
+                  We've use Shepherd tours to do basic signup, lead a user in their second login, creating additional user accounts,
+                  and more detailed processes such as creating branding profiles in a white label web application.
                 </p>
               </div>
             </div>
