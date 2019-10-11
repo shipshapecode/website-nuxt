@@ -10,7 +10,7 @@
         </h1>
         <p>
           We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to create step-by-step application tours and feature
-          introductions to help new users get up to speed quickly with your web app.
+          introductions to help new users get up to speed quickly with your web application.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
@@ -33,7 +33,9 @@
         <p class="max-w-5xl">
           We've leveraged the flexibility of these tours to lead users through a number of events. Upon the
           first time logging into an application, tours can be used to validate and ensure a smooth setup process.
-          We used this technique for our  <nuxt-link to="/work/brokermate/">project with Brokermate</nuxt-link> to ensure
+          We used this technique for our  <nuxt-link to="/work/brokermate/">
+            project with Brokermate
+          </nuxt-link> to ensure
           users completed all the required setup steps.
         </p>
 
@@ -77,11 +79,14 @@
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
-                  TODO TODO
+                  Onboarding
                 </h3>
 
                 <p>
-                  TODO TODO TODO TODO TODO TODO TODO TODO TODO
+                  When continued setup to have a completed profile or application experience is helpful to the successful
+                  experience of your users, multiple tours can be used to encourage and allow for just that outcome. Shepherd.js
+                  can be used to setup various seperate tours for a staggered encouragement campaign in improving a user's profile
+                  and allowing them to go through stages without inhibiting available functionality.
                 </p>
               </div>
             </div>
