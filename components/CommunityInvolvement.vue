@@ -56,10 +56,14 @@
           </h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
-            We have given talks at the Ember.JS NYC meetup a couple times, once was <a
-            href="https://www.youtube.com/watch?v=ax6QI-WryH0&feature=youtu.be&t=4805">
-            an abridged version of our EmberConf 2018 workshop on performance</a>, and another was a dry run of our EmberConf 2019
-            talk <a href="https://www.youtube.com/watch?v=vnMvhykrW1A&feature=youtu.be&t=1365">Ember Data - It's Not Just for JSON API Anymore</a>.
+            We have given talks at the Ember.JS NYC meetup a couple times, once was
+            <a href="https://www.youtube.com/watch?v=ax6QI-WryH0&feature=youtu.be&t=4805">
+              an abridged version of our EmberConf 2018 workshop on performance,
+            </a> and another was a dry run of our EmberConf 2019
+            talk
+            <a href="https://www.youtube.com/watch?v=vnMvhykrW1A&feature=youtu.be&t=1365">
+              Ember Data - It's Not Just for JSON API Anymore.
+            </a>
           </p>
 
           <p>

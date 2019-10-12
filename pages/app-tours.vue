@@ -33,10 +33,11 @@
         <p class="max-w-5xl">
           We've leveraged the flexibility of these tours to lead users through a number of events. Upon the
           first time logging into an application, tours can be used to validate and ensure a smooth setup process.
-          We used this technique for our  <nuxt-link to="/work/brokermate/">
+          We used this technique for our
+          <nuxt-link to="/work/brokermate/">
             project with Brokermate
-          </nuxt-link> to ensure
-          users completed all the required setup steps.
+          </nuxt-link>
+          to ensure users completed all the required setup steps.
         </p>
 
         <div class="flex flex-wrap justify-center">
@@ -83,10 +84,16 @@
                 </h3>
 
                 <p>
-                  When users have further steps to complete after they've signed up and used your product,
-                  multiple tours can be used to encourage breaking up of additional time consuming tasks and tracking of current progress.
-                  We've use Shepherd tours to do basic signup, lead a user in their second login, creating additional user accounts,
-                  and more detailed processes such as creating branding profiles in a white label web application.
+                  If your product onboarding is a large, multi-step process, it may be helpful to break it up into multiple
+                  tours. This allows you to keep each step small and focused, so it is not overwhelming to the user. They
+                  can then complete each step at their own pace. You can also track their progress through these steps to
+                  continue encouraging them to complete all the onboarding steps.
+
+                  When users have further steps to complete, after they've signed up and used your product,
+                  multiple tours can be used to encourage breaking up of additional time consuming tasks, and
+                  tracking of current progress. We've use Shepherd tours to do basic signup, lead a user in their second login,
+                  creating additional user accounts, and more detailed processes such as creating branding profiles
+                  in a white label web application.
                 </p>
               </div>
             </div>
