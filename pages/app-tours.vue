@@ -84,15 +84,11 @@
                 </h3>
 
                 <p>
-                  If your product onboarding is a large, multi-step process, it may be helpful to break it up into multiple
-                  tours. This allows you to keep each step small and focused, so it is not overwhelming to the user. They
-                  can then complete each step at their own pace. You can also track their progress through these steps to
-                  continue encouraging them to complete all the onboarding steps.
-
-                  When users have further steps to complete, after they've signed up and used your product,
-                  multiple tours can be used to encourage breaking up of additional time consuming tasks, and
-                  tracking of current progress. We've use Shepherd tours to do basic signup, lead a user in their second login,
-                  creating additional user accounts, and more detailed processes such as creating branding profiles
+                  If your product onboarding is a large, multi-step process; it is helpful to break it up into multiple
+                  tours. This allows you to keep each tour small and focused, so it is not overwhelming to the user. They
+                  can then complete each section at their own pace. You can also track their progress to continue encouraging
+                  them to complete all the onboarding steps. We've use Shepherd tours to do basic signup, lead a customer in
+                  their second login, create additional accounts, and more detailed processes such as creating branding profiles
                   in a white label web application.
                 </p>
               </div>
@@ -151,7 +147,7 @@
 
     head() {
       const title = 'App Tours with Shepherd.js';
-      const description = '';
+      const description = 'We leverage Shepherd.js to create step-by-step application tours and feature introductions to help new users get up to speed quickly with your web app.';
       const url = 'https://shipshape.io/app-tours/';
 
       return generateMeta(title, description, url);
