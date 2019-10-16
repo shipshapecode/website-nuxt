@@ -125,6 +125,9 @@ module.exports = {
   modules: [
     '@nuxtjs/date-fns',
     '@nuxtjs/google-analytics',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-84561982-1'
+    }],
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     '@nuxtjs/tailwindcss',
@@ -200,10 +203,6 @@ module.exports = {
     fallback: '404.html',
     routes: []
       .concat(blogRoutes)
-  },
-
-  googleAnalytics: {
-    id: 'UA-84561982-1'
   },
 
   purgeCSS: {
