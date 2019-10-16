@@ -4866,10 +4866,10 @@ front-matter@^3.0.1:
   dependencies:
     js-yaml "^3.13.1"
 
-frontmatter-markdown-loader@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/frontmatter-markdown-loader/-/frontmatter-markdown-loader-2.1.0.tgz#5af60e64c11a1220acee367f9ff6ffd0dcdd02f3"
-  integrity sha512-2yh2j657vAnO8xSyU+pFc2+Vt5P38CMtzSEZe2+G3F8aJhEtprIbegwxPFX+8LIHJPCU3WcSPr5VWVm04tKghg==
+frontmatter-markdown-loader@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/frontmatter-markdown-loader/-/frontmatter-markdown-loader-2.2.0.tgz#618197ee3047320b2233058324212545aa187a08"
+  integrity sha512-BytPa/xpsw7Qa6HeQR1Un80NAENvZqNUUx6pRhfosevVpcxDKedePl3fkiWKN+JIzcYrB5zpftel0IxT4oPwxw==
   dependencies:
     front-matter "^3.0.1"
     loader-utils "^1.2.3"
