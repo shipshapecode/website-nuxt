@@ -28,7 +28,7 @@ our only dependency. We then decided we did not need the extra functionality tha
 Tippy offered, and we refactored back to using just Popper, which removed a pretty
 sizable chunk from our bundle.
 
-We wanted to keep saving more though, since Popper has become a pretty in depth
+We were inspired to keep saving more though, since Popper has become a pretty in depth
 framework, and might be more than we needed. This led us to try to create our
 own positioning functionality, and explore other libs, and we ultimately had an
 idea, why not try Tether again? For those who don't know, Shepherd was initially
