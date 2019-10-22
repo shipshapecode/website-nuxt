@@ -20,7 +20,7 @@ advice of the Tether maintainers who said they did not have time to maintain Tet
 and that Popper was a better option for now. We then doubled down and switched
 to [Tippy.js](https://atomiks.github.io/tippyjs/) which is built on top of Popper, and 
 provides animations and extra features. Ultimately, we ended up with a really bloated bundle, 
-with lots of dependencies, and we decided to try to trim the fat.
+with lots of dependencies, and we decided to "trim the fat".
 
 We removed `lodash`, `object-assign-deep`, and other various dependencies, in favor
 of shipping small util methods we wrote internally, and got down to Tippy being
