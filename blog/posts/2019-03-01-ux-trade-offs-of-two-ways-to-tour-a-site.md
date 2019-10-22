@@ -1,6 +1,7 @@
 ---
 authorId: BrianSipple
 categories: 
+  - app tour
   - shepherd.js
   - site tour
 date: '2019-03-01'
