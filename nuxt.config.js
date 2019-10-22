@@ -8,6 +8,8 @@ const converter = new showdown.Converter({
   extensions: [showdownHighlight]
 });
 
+const isProd = (process.env.NODE_ENV === 'production');
+
 const blogPosts = readdirSync('blog/posts/');
 
 const _getBlogPosts = () => {
@@ -124,9 +126,11 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/date-fns',
-    '@nuxtjs/google-analytics',
     ['@nuxtjs/google-analytics', {
-      id: 'UA-84561982-1'
+      id: 'UA-84561982-1',
+      debug: {
+        sendHitTask: isProd
+      }
     }],
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
