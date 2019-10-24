@@ -24,20 +24,20 @@ with lots of dependencies, and we decided to "trim the fat".
 
 We removed `lodash`, `object-assign-deep`, and other various dependencies, in favor
 of shipping small util methods we wrote internally, and got down to Tippy being
-our only dependency. We then decided we did not need the extra functionality that
+our only dependency. We then decided we didn't use most of the extra functionality that
 Tippy offered, and we refactored back to using just Popper, which removed a pretty
 sizable chunk from our bundle.
 
 We were inspired to keep saving more though, since Popper has become a pretty in depth
 framework, and might be more than we needed. This led us to try to create our
 own positioning functionality, and explore other libs, and we ultimately had an
-idea, why not try Tether again? For those who don't know, Shepherd was initially
+idea, why not try Tether again? Since Shepherd was initially
 built on top of Tether, and we figured if it worked then, it would probably work
 now, so we gave it a shot.
 
 To our delight, Tether worked almost identically to Popper, and we liked the idea
 of bringing Shepherd back to its roots, so we took the plunge and converted everything
-back. In the process we also acquired Tether from HubSpot and have begun refactoring it
+back. In the process we acquired Tether from HubSpot and have begun refactoring it
 to use Rollup, adding tests, and modernizing it as best we can. Tether is now the only
 dependency for Shepherd, which allows us to control all the code we are shipping and
 reuse common utils between the two. It also has the added benefit of reducing our bundle
@@ -45,7 +45,7 @@ size from `~35-40kb (min + gzip)` with Tippy + Popper, to `~15kb (min + gzip)` w
 
 Shepherd v6 will be out soon, and will include this huge bundle savings, and will use 
 Tether instead of Popper. It will also include various other tweaks, new features, and
-enhancements, that we are super excited to share with you! We hope to continue to improve
+enhancements, that we are very excited to share with you! We hope to continue to improve
 both Shepherd and Tether and bring them back to being industry standard choices for app
 tours and positioning elements together.
 
