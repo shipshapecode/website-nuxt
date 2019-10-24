@@ -45,7 +45,7 @@
           -->
 
           <div class="w-1/2 lg:w-1/3 p-4">
-            <h4 class="text-white">
+            <h4 class="text-white text-xl md:text-3xl">
               Specialties
             </h4>
 
@@ -66,7 +66,7 @@
 
           <div class="w-1/2 lg:w-1/3 p-4">
             <div class="w-full">
-              <h4 class="text-white">
+              <h4 class="text-white text-xl md:text-3xl">
                 Company
               </h4>
             </div>
@@ -97,7 +97,7 @@
           </div>
 
           <div class="w-1/2 lg:w-1/3 p-4">
-            <h4 class="text-white">
+            <h4 class="text-white text-xl md:text-3xl">
               Connect
             </h4>
 
