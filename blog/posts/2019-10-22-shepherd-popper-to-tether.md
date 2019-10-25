@@ -22,6 +22,8 @@ to [Tippy.js](https://atomiks.github.io/tippyjs/) which is built on top of Poppe
 provides animations and extra features. Ultimately, we ended up with a really bloated bundle, 
 with lots of dependencies, and we decided to "trim the fat".
 
+![Image of Tether attached to an element](/img/blog/tether.png)
+
 We removed `lodash`, `object-assign-deep`, and other various dependencies, in favor
 of shipping small util methods we wrote internally, and got down to Tippy being
 our only dependency. We then decided we didn't use most of the extra functionality that
