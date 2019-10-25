@@ -1,6 +1,7 @@
 ---
 authorId: rwwagner90
 categories: 
+  - app tour
   - rollup
   - shepherd.js
   - site tour

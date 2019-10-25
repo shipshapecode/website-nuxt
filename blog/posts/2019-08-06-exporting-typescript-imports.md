@@ -5,8 +5,8 @@ categories:
 date: '2019-08-06'
 nextSlug: shepherd-4-a11y-ie11-preact
 nextTitle: 'Shepherd 4.0: a11y, IE 11 support, and Preact Components'
-previousSlug: ember-data-passing-query-params-to-save
-previousTitle: Ember Data | Passing query params to .save()
+previousSlug: shepherd-popper-to-tether
+previousTitle: 'There and Back Again - Popper to Tether'
 slug: exporting-typescript-imports
 title: 'Exporting Imported TypeScript Types'
 ---
