@@ -7,8 +7,8 @@ categories:
 date: '2019-10-22'
 nextSlug: exporting-typescript-imports
 nextTitle: 'Exporting Imported TypeScript Types'
-previousSlug: ember-data-passing-query-params-to-save
-previousTitle: Ember Data | Passing query params to .save()
+previousSlug: unit-testing-private-non-exported-functions-with-rewire
+previousTitle: Unit Testing Private, Non-exported Functions with Rewire
 slug: shepherd-popper-to-tether
 title: 'There and Back Again - Popper to Tether'
 ---
