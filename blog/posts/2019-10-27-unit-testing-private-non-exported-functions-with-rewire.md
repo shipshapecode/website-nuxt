@@ -37,6 +37,8 @@ describe('Exported', () => {
 });
 ```
 
+## Private / Non-exported
+
 How would we test functions that we do not expose via `export` though?
 
 There is a great tool, [rewire](https://www.npmjs.com/package/rewire), that allows getting references 
@@ -60,8 +62,6 @@ plugins: [
 
 We can then import the whole file, and get references to the non-exported functions, using
 `__get__`.
-
-## Private / Non-exported
 
 ```js
 // private.js
