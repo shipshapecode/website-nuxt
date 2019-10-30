@@ -8235,10 +8235,10 @@ percy-client@^3.2.0:
     request-promise "^4.2.2"
     walk "^2.3.14"
 
-percy@^0.19.3:
-  version "0.19.3"
-  resolved "https://registry.yarnpkg.com/percy/-/percy-0.19.3.tgz#6cdf4a78a083da43509729dcff6842db5a3c358f"
-  integrity sha512-FxnA1NAktYtdlkHwus7irIrPLC3INUy6E5pGpf9TwO6/EwEj7iePp14bsfTOniJiDCwJsy5t0sRBtUGGJU9eYw==
+percy@^0.19.4:
+  version "0.19.4"
+  resolved "https://registry.yarnpkg.com/percy/-/percy-0.19.4.tgz#ea0dcead9392addcf83fe36b17f6c5342913f54b"
+  integrity sha512-FnKbBlDzZ2VFkHQA2ANEGJ2KrH7ionq4SCKGpVs16F411uxIMTRnkoXxRIRvbG1qmmJ6/l1LGlxkcqhdxzoAzA==
   dependencies:
     "@oclif/command" "1.5.16"
     "@oclif/config" "^1"
