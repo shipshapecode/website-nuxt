@@ -15,10 +15,8 @@ When a JavaScript function is exported, it is straightforward to unit test.
 We can import it directly into our test and test the functionality. For example,
 we could use something like Jest to setup a simple import and unit test.
 
-## Exported
-
 ```js
-// exported.js
+// foo.js
 
 export function foo() {
   return 'bar';
@@ -26,18 +24,16 @@ export function foo() {
 ```
 
 ```js
-// exported.spec.js
+// foo.spec.js
 
-import { foo } from './exported.js'
+import { foo } from './foo.js'
 
-describe('Exported', () => {
+describe('Foo', () => {
   describe('foo', () => {
     expect(foo()).toBe('bar');
   });
 });
 ```
-
-## Private / Non-exported
 
 How would we test functions that we do not expose via `export` though?
 
@@ -64,22 +60,22 @@ We can then import the whole file, and get references to the non-exported functi
 `__get__`.
 
 ```js
-// private.js
+// bar.js
 
-function _foo() {
-  return 'bar';
+function _bar() {
+  return 'baz';
 }
 ```
 
 ```js
-// private.spec.js
+// bar.spec.js
 
-import Private from './private.js'
+import Bar from './bar.js'
 
-describe('Private', () => {
-  describe('_foo', () => {
-    const _foo = Private.__get__('_foo');
-    expect(_foo()).toBe('bar');
+describe('Bar', () => {
+  describe('_bar', () => {
+    const _bar = Bar.__get__('_bar');
+    expect(_bar()).toBe('baz');
   });
 });
 ```
