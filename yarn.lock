@@ -1282,15 +1282,15 @@
     glob-all "^3.1.0"
     sass-resources-loader "^2.0.0"
 
-"@nuxtjs/tailwindcss@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-1.1.2.tgz#fb1c687c4f72797388f8c6a49a6e376f634ac7ff"
-  integrity sha512-/zda1/42glYtdNcZRPwu6WyKPOSmTTTVY1jXCM4ZrPrXqyH7aXb+C5LwS7ujM2UYm5D7rPECqMnTKaI1m3F4dg==
+"@nuxtjs/tailwindcss@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/tailwindcss/-/tailwindcss-1.2.0.tgz#e558ef3c4a19e57f5e962b7f4ae8522fa3494891"
+  integrity sha512-ZVwN7o6Ot/e3deJy8rfbzkl+JAbBouGosAY02UPiTMfBFGNYV+d3OXijpSfaMXnipHVgPZeBzs17tyGmx0p1ZQ==
   dependencies:
     consola "^2.10.1"
     fs-extra "^8.1.0"
     nuxt-purgecss "^0.2.1"
-    tailwindcss "^1.1.0"
+    tailwindcss "^1.1.3"
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -10588,7 +10588,7 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss@^1.1.0, tailwindcss@^1.1.3:
+tailwindcss@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.1.3.tgz#ad154f78e1e44060e32e3ed44b27287c2be126a6"
   integrity sha512-8sa/QO+blnu3WXUylsgvYZlUbBpVH36QeGuZxgSGqp1dF3g4AGe1azt8FsO8i8Hfe9Oyvwhx3iSjRDak3nngeQ==
