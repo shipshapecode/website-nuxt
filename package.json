@@ -52,7 +52,7 @@
     "node-sass": "^4.13.0",
     "nodemon": "^1.19.4",
     "nuxt-purgecss": "^0.2.1",
-    "percy": "^0.19.7",
+    "percy": "^0.20.0",
     "sass-loader": "^8.0.0",
     "showdown": "^1.9.1",
     "showdown-highlight": "^2.1.3",
