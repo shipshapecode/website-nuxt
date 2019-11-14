@@ -20,6 +20,11 @@
         Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.
       </p>
 
+      <div class="flex mb-4 mt-4 w-full">
+        <div id="codefund"><!-- fallback content --></div>
+        <script src="https://app.codefund.io/properties/31/funder.js" async="async"></script>
+      </div>
+
       <BlogPostMenu :posts="posts"/>
     </div>
   </div>
