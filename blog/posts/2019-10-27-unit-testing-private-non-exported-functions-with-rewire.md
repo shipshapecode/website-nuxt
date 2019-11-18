@@ -5,8 +5,8 @@ categories:
 date: '2019-10-27'
 nextSlug: shepherd-popper-to-tether
 nextTitle: 'There and Back Again - Popper to Tether'
-previousSlug: ember-data-passing-query-params-to-save
-previousTitle: Ember Data | Passing query params to .save()
+previousSlug: shepherd-6-smaller-faster-tether
+previousTitle: 'Shepherd 6.0: One Dependency, Smaller Bundle, and New Look!'
 slug: unit-testing-private-non-exported-functions-with-rewire
 title: Unit Testing Private, Non-exported Functions with Rewire
 ---
