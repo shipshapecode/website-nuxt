@@ -20,7 +20,7 @@ As Robert wrote about in a previous [post](/blog/shepherd-popper-to-tether/), we
 
 ## Smaller Size
 
-Getting back to the point on overall size. For implementors of Shepherd, we find it important to make sure we're able to ship a library that adds only what is needed to provide the Tour API and allow engineers to create rich experiences with small impact on their application's performance. We think we've done quite a bit by reducing the overall bundle size down to `~15kb (min + gzip)` and removing any other dependecies other than Tether.
+Getting back to the point on overall size. For implementers of Shepherd, we find it important to make sure we're able to ship a library that adds only what is needed for the Tour API and allow engineers to create rich experiences with little impact to their application's performance. We think we've done quite a bit by reducing the overall bundle size down to `~15kb (min + gzip)` and removing all dependencies other than Tether.
 
 ## Website Update
 
