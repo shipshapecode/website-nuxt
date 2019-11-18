@@ -26,6 +26,6 @@ Getting back to the point on overall size. For implementors of Shepherd, we find
 
 ![Image of Latest Shepherd Website](/img/blog/shepherd6-site4.png)
 
-Since we've continued to build on improving the library, we decided to work with the team at [make&model](https://www.makemodel.co) to create branding to help Shepherd be memorable and unique. This now combines the demo site and branding to help show the many benefits of the library and highlight companies already using it. 
+As we continued to iterate, on improving the library, we decided to work with the team at [make&model](https://www.makemodel.co) to create branding to help Shepherd be more memorable and unique. This now combines the demo site and branding to help show the many benefits of the library and highlight companies already using it. It also helps to show the seemingly limitless level of customization that can be achieved with Shepherd tours.
 
 We hope this latest release provides a speedy, low impact, and easy to use way to bring application tours to your users! Feedback is appreciated, as always.
