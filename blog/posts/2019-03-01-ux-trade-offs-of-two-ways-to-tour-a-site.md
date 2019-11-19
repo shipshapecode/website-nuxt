@@ -32,11 +32,11 @@ and fixate users on a collection of views that they can slide through one-at-a-t
 a single modal encompassing much of the screen can still be a rich design space for displaying text, screenshots, and even videos to show 
 off the underlying app. The tour for Google Inbox (RIP) does this well:
 
-![](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/inbox-tour-1.png)
+![First tour image](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/inbox-tour-1.png)
 
-![](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/inbox-tour-2.png)
+![Second tour image](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/inbox-tour-2.png)
 
-![](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/inbox-tour-3.png)
+![Third tour image](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/inbox-tour-3.png)
 
 This experience tones down what could otherwise be a blast of information for new users to process, distilling it into simplified, 
 segmented views that still preview different portions of the application. It even concludes by allowing users to set some 
@@ -81,7 +81,7 @@ Paradoxically, tooltip-based, interactive tours can be useful when your tour  is
 here or a set of navigation items there, a single tour sequence with a few discrete tooltips might be all you need. 
 The [Shepherd.js demo](https://shipshapecode.github.io/shepherd/docs/welcome/) is good example of this use case:
 
-![](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/shephered-tour.png)
+![Shepherd demo page showing an active tour](/img/blog/ux-trade-offs-of-two-ways-to-tour-a-site/shephered-tour.png)
 
 Alas, the safari-style tour is a slippery slope when it comes to complexity and the resources required to both integrate and maintain it going forward. 
 It’s directly coupled to the structure of the current markup, it needs to be aware of the current application state, and it might even involve maintaining 

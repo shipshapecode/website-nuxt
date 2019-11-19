@@ -39,7 +39,7 @@
       return {
         category,
         title: `${category} - Blog Category`,
-        description: `See our ${numPosts} blog posts we've written about ${category}`,
+        description: `See the ${numPosts} blog posts Ship Shape has written about ${category}.`,
         url: `https://shipshape.io/blog/categories/${category.replace(/ /g, '-')}/`,
         posts: filteredPosts
       };

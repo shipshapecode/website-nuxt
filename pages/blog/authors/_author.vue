@@ -41,7 +41,7 @@
       return {
         author,
         title: `Posts by ${author.name} - Blog`,
-        description: `${author.name} has written ${numPosts} posts for Ship Shape.`,
+        description: `See the ${numPosts} blog posts ${author.name} has written for Ship Shape.`,
         url: `https://shipshape.io/blog/authors/${encodeURIComponent(authorId)}/`,
         posts: filteredPosts
       };
