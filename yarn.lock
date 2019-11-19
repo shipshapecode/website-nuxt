@@ -1290,12 +1290,12 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/date-fns@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/date-fns/-/date-fns-1.0.0.tgz#73d22377179856fc5767c4e3f1f0a3439fbb9762"
-  integrity sha512-ZA3hFdhDc7duG8ej5ETAyy/cMSzOfcyCToGSDfdxLullBYpuJWApJEcpjcppd1C93euTaG1o+RVAGdEr4iPlDQ==
+"@nuxtjs/date-fns@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/date-fns/-/date-fns-1.1.0.tgz#fc333c4eec0699179941466e6570a58b1d1ef7f9"
+  integrity sha512-+y1LkNb0I2GfjSwmuDk9qbE4ySaxkp4Hs88EAHtQ0uik0ZxuuidY6y2Ak5QBdE2wq+VqefrTfg0G4EfjBUvwRA==
   dependencies:
-    date-fns "^2.0.1"
+    date-fns "^2.7.0"
 
 "@nuxtjs/eslint-config@^1.1.2":
   version "1.1.2"
@@ -3746,10 +3746,10 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-date-fns@^2.0.1:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.5.0.tgz#b939f17c2902ce81cffe449702ba22c0781b38ec"
-  integrity sha512-I6Tkis01//nRcmvMQw/MRE1HAtcuA5Ie6jGPb8bJZJub7494LGOObqkV3ParnsSVviAjk5C8mNKDqYVBzCopWg==
+date-fns@^2.7.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.8.0.tgz#628d865367e30e45747ed1e8b0c1572090b04f55"
+  integrity sha512-nbZMIMsoD7QiIKipZ5+XRTCtHZad1ch8OEkLaJxjGL6ThAK2IWAdjmAUAS7Fdz5fCaVWtqc+c8pAsN/MX8eaew==
 
 date-now@^0.1.4:
   version "0.1.4"
