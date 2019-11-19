@@ -216,6 +216,10 @@ module.exports = {
     ]
   },
 
+  router: {
+    trailingSlash: true
+  },
+
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://shipshape.io',
