@@ -119,34 +119,40 @@
           </div>
         </nav>
 
-        <div class="social-links flex items-center justify-center w-full lg:justify-start w-full">
-          <a
-            aria-label="GitHub"
-            class="p-2"
-            href="https://github.com/shipshapecode"
-          >
-            <div class="github-logo">
-              <github/>
-            </div>
-          </a>
-          <a
-            aria-label="Twitter"
-            class="p-2"
-            href="https://twitter.com/shipshapecode"
-          >
-            <div class="twitter-logo">
-              <twitter/>
-            </div>
-          </a>
-          <a
-            aria-label="LinkedIn"
-            class="p-2"
-            href="https://www.linkedin.com/company/ship-shape/"
-          >
-            <div class="linkedin-logo">
-              <linkedin/>
-            </div>
-          </a>
+        <div class="flex flex-wrap items-center justify-between">
+          <div class="social-links flex items-center justify-start w-full">
+            <a
+              aria-label="GitHub"
+              class="p-2"
+              href="https://github.com/shipshapecode"
+            >
+              <div class="github-logo">
+                <github/>
+              </div>
+            </a>
+            <a
+              aria-label="Twitter"
+              class="p-2"
+              href="https://twitter.com/shipshapecode"
+            >
+              <div class="twitter-logo">
+                <twitter/>
+              </div>
+            </a>
+            <a
+              aria-label="LinkedIn"
+              class="p-2"
+              href="https://www.linkedin.com/company/ship-shape/"
+            >
+              <div class="linkedin-logo">
+                <linkedin/>
+              </div>
+            </a>
+          </div>
+
+          <div class="flex flex-wrap p-2 w-full">
+            Copyright © 2019 Ship Shape Consulting LLC. All rights reserved.
+          </div>
         </div>
       </div>
     </div>
