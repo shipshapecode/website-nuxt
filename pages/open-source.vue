@@ -32,7 +32,7 @@
           Sponsored Open Source Development
         </h2>
 
-        <p>
+        <p class="max-w-5xl">
           Ember could not be the incredible framework it is, without companies helping fund
           its progress. Whether you need an Ember addon to implement your favorite
           library in native Ember, a custom Ember data adapter for your API setup,
