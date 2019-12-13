@@ -12,10 +12,12 @@
           Ember.js consulting, development, and training for your project.
         </p>
 
-        <a
+        <nuxt-link
           class="btn-gold inline-block m-12"
-          href="/contact/"
-        >Let's talk</a>
+          to="/contact/"
+        >
+          Let's talk
+        </nuxt-link>
       </div>
     </div>
     <div class="flex flex-wrap w-full justify-center">
