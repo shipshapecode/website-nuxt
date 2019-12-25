@@ -59,6 +59,6 @@
     "tailwindcss": "^1.1.4",
     "vue-jest": "^3.0.5",
     "walk-sync": "^2.0.2",
-    "yaml-front-matter": "^4.0.0"
+    "yaml-front-matter": "^4.1.0"
   }
 }
