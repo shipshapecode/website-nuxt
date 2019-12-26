@@ -56,18 +56,26 @@
 
         <nuxt-link
           class="nav-link"
-          to="/work/"
+          to="/services/"
           @click.native="toggleNavMenu(false)"
         >
-          Case Studies
+          Services
         </nuxt-link>
 
         <nuxt-link
           class="nav-link"
-          to="/ember-consulting/"
+          to="/work/"
           @click.native="toggleNavMenu(false)"
         >
-          Ember Consulting
+          Work
+        </nuxt-link>
+
+        <nuxt-link
+          class="nav-link"
+          to="/about/"
+          @click.native="toggleNavMenu(false)"
+        >
+          About
         </nuxt-link>
 
         <nuxt-link
@@ -77,14 +85,6 @@
         >
           Open Source
         </nuxt-link>
-
-        <!--nuxt-link
-          class="nav-link"
-          to="/team/"
-          @click.native="toggleNavMenu(false)"
-        >
-          Team
-        </nuxt-link-->
 
         <nuxt-link
           class="nav-link"

@@ -30,7 +30,7 @@
           Why do I need an app tour?
         </h2>
 
-        <p class="max-w-5xl">
+        <p class="max-w-5xl mb-16">
           We've leveraged the flexibility of these tours to lead users through a number of events. Upon the
           first time logging into an application, tours can be used to validate and ensure a smooth setup process.
           We used this technique for our

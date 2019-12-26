@@ -29,7 +29,7 @@
         <div class="flex flex-wrap justify-center w-full">
           <nav class="flex flex-wrap justify-center pt-12 pb-12 w-full lg:flex-no-wrap lg:justify-start">
             <div class="flex flex-shrink justify-start w-full max-w-lg">
-              <!-- <div class="w-1/2 lg:w-72 p-8 lg:p-4">
+              <div class="w-1/2 lg:w-72 p-8 lg:p-4">
                 <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
                   Services
                 </h4>
@@ -45,7 +45,7 @@
                 <nuxt-link to="/ember-consulting/" class="block">
                   Staff Augmentation
                 </nuxt-link>
-              </div>-->
+              </div>
 
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
                 <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
@@ -71,8 +71,17 @@
                 >
                   App Tours
                 </nuxt-link>
-              </div>
 
+                <nuxt-link
+                  to="/web-apps/"
+                  class="block"
+                >
+                  Web Apps
+                </nuxt-link>
+              </div>
+            </div>
+
+            <div class="flex flex-shrink justify-start w-full max-w-lg">
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
                 <div class="w-full">
                   <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
@@ -82,7 +91,7 @@
 
                 <div class="w-full">
                   <nuxt-link to="/work/">
-                    Case Studies
+                    Work
                   </nuxt-link>
                 </div>
 
@@ -97,16 +106,8 @@
                     Blog
                   </nuxt-link>
                 </div>
-
-                <!--div class="w-full">
-                  <nuxt-link to="/team/">
-                    Team
-                  </nuxt-link>
-                </div-->
               </div>
-            </div>
 
-            <div class="flex flex-shrink justify-start w-full max-w-lg">
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
                 <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
                   Connect
