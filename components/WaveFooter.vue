@@ -34,12 +34,15 @@
                   Services
                 </h4>
 
-                <nuxt-link to="/ember-consulting/" class="block">
-                  Design
+                <nuxt-link
+                  to="/web-apps/"
+                  class="block"
+                >
+                  Web Apps
                 </nuxt-link>
 
-                <nuxt-link to="/ember-consulting/" class="block">
-                  Engineering
+                <nuxt-link to="/mentoring/" class="block">
+                  Mentoring
                 </nuxt-link>
 
                 <nuxt-link to="/ember-consulting/" class="block">
@@ -53,19 +56,6 @@
                 </h4>
 
                 <nuxt-link
-                  to="/ember-consulting/"
-                  class="block"
-                >
-                  Ember Consulting
-                </nuxt-link>
-
-                <!--
-                <nuxt-link to="/ember-consulting/" class="block">
-                  Nuxt.js Consulting
-                </nuxt-link>
-                -->
-
-                <nuxt-link
                   to="/app-tours/"
                   class="block"
                 >
@@ -73,10 +63,21 @@
                 </nuxt-link>
 
                 <nuxt-link
-                  to="/web-apps/"
+                  to="/cross-platform-desktop-apps/"
                   class="block"
                 >
-                  Web Apps
+                  Desktop Apps
+                </nuxt-link>
+
+                <nuxt-link
+                  to="/ember-consulting/"
+                  class="block"
+                >
+                  Ember Consulting
+                </nuxt-link>
+
+                <nuxt-link to="/ember-consulting/" class="block">
+                  Nuxt.js Consulting
                 </nuxt-link>
               </div>
             </div>
