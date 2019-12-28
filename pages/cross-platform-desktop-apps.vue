@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="app-tours">
+    <HeroBlock class="cross-platform-desktop-apps">
       <template v-slot:content>
         <h1 class="heading" itemprop="name">
           Cross Platform Desktop Apps

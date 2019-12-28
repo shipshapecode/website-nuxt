@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="app-tours">
+    <HeroBlock class="web-apps">
       <template v-slot:content>
         <h1 class="heading" itemprop="name">
           Web Apps

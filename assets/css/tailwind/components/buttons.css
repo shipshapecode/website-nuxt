@@ -10,6 +10,10 @@
   @apply btn bg-navy;
 }
 
+.btn-white {
+  @apply btn bg-white;
+}
+
 .btn:active,
 .btn-gold:active,
 .btn-navy:active {

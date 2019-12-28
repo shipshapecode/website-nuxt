@@ -15,6 +15,7 @@ module.exports = {
     semi: ['error', 'always'],
     'space-before-function-paren': 'off',
 
-    'vue/html-closing-bracket-spacing': 'off'
+    'vue/html-closing-bracket-spacing': 'off',
+    'vue/html-self-closing': 'off'
   }
 };

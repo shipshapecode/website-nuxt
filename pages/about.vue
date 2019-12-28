@@ -1,8 +1,8 @@
 <template>
   <div>
-    <HeroBlock class="app-tours">
+    <HeroBlock class="about bg-navy text-white">
       <template v-slot:content>
-        <h1 class="heading" itemprop="name">
+        <h1 class="heading text-white">
           About Ship Shape
         </h1>
         <p>
@@ -11,14 +11,10 @@
           vitae viverra tellus.
         </p>
         <div>
-          <nuxt-link class="btn-navy" to="/contact/">
+          <nuxt-link class="btn-white" to="/contact/">
             Let's build together
           </nuxt-link>
         </div>
-      </template>
-
-      <template v-slot:icon>
-        <EmberConsultingIcon class="max-w-2xl" />
       </template>
     </HeroBlock>
 
@@ -86,13 +82,11 @@
 </template>
 
 <script>
-import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    EmberConsultingIcon,
     HeroBlock
   },
 
