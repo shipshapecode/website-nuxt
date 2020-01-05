@@ -44,10 +44,6 @@
                 <nuxt-link to="/mentoring/" class="block">
                   Mentoring
                 </nuxt-link>
-
-                <nuxt-link to="/ember-consulting/" class="block">
-                  Staff Augmentation
-                </nuxt-link>
               </div>
 
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
