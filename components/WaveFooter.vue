@@ -76,7 +76,7 @@
                   Ember Consulting
                 </nuxt-link>
 
-                <nuxt-link to="/ember-consulting/" class="block">
+                <nuxt-link to="/nuxtjs-consulting/" class="block">
                   Nuxt.js Consulting
                 </nuxt-link>
               </div>
@@ -88,6 +88,12 @@
                   <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
                     Company
                   </h4>
+                </div>
+
+                <div class="w-full">
+                  <nuxt-link to="/about/">
+                    About
+                  </nuxt-link>
                 </div>
 
                 <div class="w-full">

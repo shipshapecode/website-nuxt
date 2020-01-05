@@ -18,24 +18,50 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-navy">
+    <div class="section bg-navy flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="w-full">
-          <h2 class="text-white">
-            Clients
-          </h2>
+        <div class="w-full lg:w-1/2">
+          <h3 class="text-white">
+            Our Clients
+          </h3>
+
+          <p class="max-w-lg w-full">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
+            volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
+            vitae viverra tellus. Praesent tempus purus quis erat ultricies, ac
+            aliquam odio bibendum. Donec interdum magna nulla, nec venenatis
+            eros consectetur ac. Fusce auctor fermentum augue eu vestibulum.
+            Praesent tempus, est ut fermentum mattis, purus quam pulvinar elit,
+            eu tempor dolor diam sed leo.
+          </p>
+        </div>
+
+        <div class="w-full lg:w-1/2">
+          <h3 class="text-white">
+            Our Community
+          </h3>
+
+          <p class="max-w-lg w-full">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
+            volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
+            vitae viverra tellus. Praesent tempus purus quis erat ultricies, ac
+            aliquam odio bibendum. Donec interdum magna nulla, nec venenatis
+            eros consectetur ac. Fusce auctor fermentum augue eu vestibulum.
+            Praesent tempus, est ut fermentum mattis, purus quam pulvinar elit,
+            eu tempor dolor diam sed leo.
+          </p>
         </div>
       </div>
     </div>
 
-    <div class="section bg-navy">
+    <div class="section bg-navy flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
         <div class="w-full">
-          <h2 class="text-white">
-            Team
-          </h2>
+          <h3 class="text-white">
+            Our Team
+          </h3>
         </div>
-        <div class="flex-1 flex flex-wrap justify-center">
+        <div class="flex-1 flex flex-wrap">
           <div class="max-w-xs">
             <img
               class="mb-4"
@@ -56,7 +82,7 @@
           </div>
         </div>
 
-        <div class="flex-1 flex flex-wrap justify-center">
+        <div class="flex-1 flex flex-wrap">
           <div class="max-w-xs">
             <img
               class="mb-4"
