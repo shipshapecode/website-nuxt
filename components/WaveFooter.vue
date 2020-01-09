@@ -35,10 +35,10 @@
                 </h4>
 
                 <nuxt-link
-                  to="/services/web-apps/"
+                  to="/services/app-development/"
                   class="block"
                 >
-                  Web Apps
+                  App Development
                 </nuxt-link>
 
                 <nuxt-link to="/services/mentoring/" class="block">

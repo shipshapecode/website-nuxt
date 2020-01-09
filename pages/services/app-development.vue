@@ -3,7 +3,7 @@
     <HeroBlock class="web-apps">
       <template v-slot:content>
         <h1 class="heading" itemprop="name">
-          Web Apps
+          App Development
         </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac

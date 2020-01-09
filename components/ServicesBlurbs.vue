@@ -44,7 +44,7 @@
         <div class="w-full flex lg:pr-12 lg:w-1/2">
           <div class="lg:max-w-2xl">
             <h3 class="heading" itemprop="name">
-              Web App Development
+              App Development
             </h3>
             <h3 class="sub-heading">
               Lorem ipsum dolor
@@ -59,7 +59,7 @@
               ultricies.
             </p>
 
-            <nuxt-link class="learn-more" to="/services/web-apps/">
+            <nuxt-link class="learn-more" to="/services/app-development/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
