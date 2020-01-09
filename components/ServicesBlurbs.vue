@@ -28,7 +28,7 @@
               ultricies.
             </p>
 
-            <nuxt-link class="learn-more" to="/ember-consulting/">
+            <nuxt-link class="learn-more" to="/services/ember-consulting/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
@@ -59,7 +59,7 @@
               ultricies.
             </p>
 
-            <nuxt-link class="learn-more" to="/web-apps/">
+            <nuxt-link class="learn-more" to="/services/web-apps/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
@@ -102,7 +102,7 @@
               ultricies.
             </p>
 
-            <nuxt-link class="learn-more" to="/mentoring/">
+            <nuxt-link class="learn-more" to="/services/mentoring/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
@@ -133,7 +133,7 @@
               ultricies.
             </p>
 
-            <nuxt-link class="learn-more" to="/app-tours/">
+            <nuxt-link class="learn-more" to="/services/app-tours/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
@@ -172,7 +172,7 @@
               ultricies.
             </p>
 
-            <nuxt-link class="learn-more" to="/open-source/">
+            <nuxt-link class="learn-more" to="/services/open-source/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>

@@ -20,8 +20,8 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="flex flex-wrap w-full justify-center">
-      <div class="footer-bottom max-w-8xl p-8 w-full">
+    <div class="footer-bottom flex flex-wrap w-full justify-center">
+      <div class="max-w-8xl p-8 w-full">
         <div class="flex justify-center lg:justify-start w-full">
           <logo class="footer-logo h-16 w-16" />
         </div>
@@ -35,13 +35,13 @@
                 </h4>
 
                 <nuxt-link
-                  to="/web-apps/"
+                  to="/services/web-apps/"
                   class="block"
                 >
                   Web Apps
                 </nuxt-link>
 
-                <nuxt-link to="/mentoring/" class="block">
+                <nuxt-link to="/services/mentoring/" class="block">
                   Mentoring
                 </nuxt-link>
               </div>
@@ -52,27 +52,27 @@
                 </h4>
 
                 <nuxt-link
-                  to="/app-tours/"
+                  to="/services/app-tours/"
                   class="block"
                 >
                   App Tours
                 </nuxt-link>
 
                 <nuxt-link
-                  to="/cross-platform-desktop-apps/"
+                  to="/services/cross-platform-desktop-apps/"
                   class="block"
                 >
                   Desktop Apps
                 </nuxt-link>
 
                 <nuxt-link
-                  to="/ember-consulting/"
+                  to="/services/ember-consulting/"
                   class="block"
                 >
                   Ember Consulting
                 </nuxt-link>
 
-                <nuxt-link to="/nuxtjs-consulting/" class="block">
+                <nuxt-link to="/services/nuxtjs-consulting/" class="block">
                   Nuxt.js Consulting
                 </nuxt-link>
               </div>

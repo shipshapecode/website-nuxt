@@ -1,1 +1,3 @@
 https://blog.shipshape.io/* https://shipshape.io/blog/:splat 301!
+/app-tours /services/app-tours 301!
+/ember-consulting /services/ember-consulting 301!
