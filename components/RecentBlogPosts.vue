@@ -12,11 +12,15 @@
           <div
             v-for="post in posts"
             :key="post.slug"
-            class="bg-grey-transparent flex-grow m-2 p-12 lg:flex-1"
+            class="bg-grey-transparent flex-grow m-4 p-12 rounded lg:flex-1"
           >
-            <nuxt-link class="text-xl" :to="`/blog/${post.slug}/`">
+            <nuxt-link class="font-bold text-xl" :to="`/blog/${post.slug}/`">
               {{ post.linktitle || post.title }}
             </nuxt-link>
+
+            <div class="attribution">
+              By {{ post.author.name }} {{ $dateFns.format(post.date) }}
+            </div>
           </div>
         </div>
 
