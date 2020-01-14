@@ -35,7 +35,7 @@ export function generateMeta(title, description, url) {
         content: description
       }
     ],
-    'link': [
+    link: [
       {
         rel: 'canonical',
         href: url
