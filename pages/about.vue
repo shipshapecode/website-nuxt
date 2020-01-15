@@ -117,9 +117,11 @@ export default {
   },
 
   head() {
-    const title = 'Web Apps';
-    const description = 'TODO';
-    const url = 'https://shipshape.io/web-apps/';
+    const title = 'About Us';
+    const description =
+      'We can help streamline your Ember.js or Nuxt project. Learn how ' +
+      'Ship Shape designs and develops next-level software and app solutions.';
+    const url = 'https://shipshape.io/about/';
 
     return generateMeta(title, description, url);
   }

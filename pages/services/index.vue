@@ -40,8 +40,10 @@ export default {
   },
 
   head() {
-    const title = 'Services';
-    const description = 'TODO';
+    const title = 'Custom Software Development';
+    const description =
+      'Ship Shape specializes in custom software and app development services. ' +
+      'Learn how we turn ideas into world-class products.';
     const url = 'https://shipshape.io/services/';
 
     return generateMeta(title, description, url);

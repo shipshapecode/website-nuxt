@@ -24,7 +24,7 @@
     },
 
     head() {
-      const title = 'Case Studies';
+      const title = 'Our Work';
       const description = 'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.';
       const url = 'https://shipshape.io/work/';
 

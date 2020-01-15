@@ -78,10 +78,10 @@
     },
 
     head() {
-      const title = 'Ember.js Consulting and Training';
-      const description = 'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, ' +
-        'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
-        'Ember skills, while also churning out bulletproof features for your Ember app.';
+      const title = 'Ember.js Consulting';
+      const description = 'From startups to Fortune 100 companies, our Ember.js ' +
+       'consultants transform ideas into industry-leading software. ' +
+       'Learn more about our app development services.';
       const url = 'https://shipshape.io/ember-consulting/';
 
       return generateMeta(title, description, url);

@@ -56,11 +56,11 @@ export default {
     return { posts: posts.slice(0, 3) };
   },
   head() {
-    const title = "Ember.js Code That Won't Sink";
+    const title = 'App Development & Consulting Agency';
     const description =
-      'Ship Shape is a software consultancy specializing in all things Ember. ' +
-      'We leverage Ember.js, and all the latest Ember addons and technologies, to create truly ambitious, ' +
-      'state of the art applications that are future-proof and easily maintainable.';
+      'Ship Shape is a consulting agency, specializing in app development, ' +
+      'Ember.js and Nuxt. Hire us to deliver high-quality web apps that ' +
+      'work across all devices.';
     const url = 'https://shipshape.io/';
 
     return generateMeta(title, description, url);

@@ -40,9 +40,11 @@ export default {
   },
 
   head() {
-    const title = 'Mentoring';
-    const description = 'TODO';
-    const url = 'https://shipshape.io/services/';
+    const title = 'Ember & Open Source Mentoring';
+    const description =
+      'Ship Shape provides open source and Ember training ' +
+      'to take your team to the next level. Sign up for a team session today.';
+    const url = 'https://shipshape.io/services/mentoring/';
 
     return generateMeta(title, description, url);
   }

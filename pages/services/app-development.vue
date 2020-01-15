@@ -170,9 +170,11 @@ export default {
   },
 
   head() {
-    const title = 'Web Apps';
-    const description = 'TODO';
-    const url = 'https://shipshape.io/web-apps/';
+    const title = 'App Development Agency';
+    const description =
+      'Ship Shape develops progressive web apps from start to finish. ' +
+      "Hire us for code that won't sink.";
+    const url = 'https://shipshape.io/services/app-development/';
 
     return generateMeta(title, description, url);
   }

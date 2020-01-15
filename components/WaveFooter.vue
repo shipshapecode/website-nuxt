@@ -72,7 +72,7 @@
                   Ember Consulting
                 </nuxt-link>
 
-                <nuxt-link to="/services/nuxtjs-consulting/" class="block">
+                <nuxt-link to="/services/nuxt-consulting/" class="block">
                   Nuxt.js Consulting
                 </nuxt-link>
               </div>

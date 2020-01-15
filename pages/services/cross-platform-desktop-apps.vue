@@ -170,9 +170,11 @@ export default {
   },
 
   head() {
-    const title = 'Cross Platform Desktop Apps';
-    const description = 'TODO';
-    const url = 'https://shipshape.io/cross-platform-desktop-apps/';
+    const title = 'Cross Platform App Development';
+    const description =
+      'Ship Shape saves you time and money by building one app for macOS, Windows, and Linux. ' +
+      'Get started with our cross-platform app development.';
+    const url = 'https://shipshape.io/services/cross-platform-desktop-apps/';
 
     return generateMeta(title, description, url);
   }

@@ -52,7 +52,7 @@
 
     head() {
       const title = 'Blog';
-      const description = 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.';
+      const description = 'Read our blog to stay ahead of trends in Ember.js, JavaScript, and everything in between.';
       const url = 'https://shipshape.io/blog/';
 
       return generateMeta(title, description, url);
