@@ -6,9 +6,11 @@
           About Ship Shape
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus.
+          Ship Shape leads the future of full-stack web app development. Our
+          clients work with us because we are a one-stop boutique firm with over
+          25+ years combined experience - from full-stack engineering, to
+          front-end to back-end design and more. When you bring your idea to us,
+          it’s smooth sailing.
         </p>
         <div>
           <nuxt-link class="btn-white" to="/contact/">
@@ -26,13 +28,8 @@
           </h3>
 
           <p class="max-w-lg w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-            volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-            vitae viverra tellus. Praesent tempus purus quis erat ultricies, ac
-            aliquam odio bibendum. Donec interdum magna nulla, nec venenatis
-            eros consectetur ac. Fusce auctor fermentum augue eu vestibulum.
-            Praesent tempus, est ut fermentum mattis, purus quam pulvinar elit,
-            eu tempor dolor diam sed leo.
+            Ship Shape works with some of the best. We’ve exceeded client
+            expectations and can’t wait to help you with your next project.
           </p>
         </div>
 
@@ -42,13 +39,8 @@
           </h3>
 
           <p class="max-w-lg w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-            volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-            vitae viverra tellus. Praesent tempus purus quis erat ultricies, ac
-            aliquam odio bibendum. Donec interdum magna nulla, nec venenatis
-            eros consectetur ac. Fusce auctor fermentum augue eu vestibulum.
-            Praesent tempus, est ut fermentum mattis, purus quam pulvinar elit,
-            eu tempor dolor diam sed leo.
+            Everything we create is a conscious decision to further Ember as a
+            framework and as a community.
           </p>
         </div>
       </div>

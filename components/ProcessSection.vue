@@ -9,21 +9,20 @@
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
           <div class="lg:max-w-2xl">
             <h3 class="heading">
-              Services
+              Our Services
             </h3>
             <h3 class="sub-heading">
               What we do
             </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              ac volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam
-              lacus, vitae viverra tellus. Praesent tempus purus quis erat
-              ultricies, ac aliquam odio bibendum.
+              Ship Shape's fleet of services ensures the applications we build
+              for clients are future-proof. Explore what we have to offer, and
+              together, we’ll build something great.
             </p>
 
             <nuxt-link class="learn-more" to="/services/">
-              Learn More
+              Explore Our Services
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
           </div>
@@ -36,21 +35,19 @@
         <div class="w-full flex lg:pr-12 lg:w-1/2">
           <div class="lg:max-w-2xl">
             <h3 class="heading">
-              Work
+              Our Work
             </h3>
             <h3 class="sub-heading">
               What we've built
             </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              ac volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam
-              lacus, vitae viverra tellus. Praesent tempus purus quis erat
-              ultricies, ac aliquam odio bibendum.
+              We’re always up for a challenge. Ship Shape creates scalable
+              products and solutions that span across multiple industries.
             </p>
 
             <nuxt-link class="learn-more" to="/work/">
-              Learn More
+              See Our Work
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
           </div>
@@ -69,21 +66,22 @@
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
           <div class="lg:max-w-2xl">
             <h3 class="heading">
-              About
+              About Ship Shape
             </h3>
             <h3 class="sub-heading">
               What makes us tick
             </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              ac volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam
-              lacus, vitae viverra tellus. Praesent tempus purus quis erat
-              ultricies, ac aliquam odio bibendum.
+              Ship Shape rose from the need for more experts in Ember.js.
+              Combined with our passion for Ember.js and our adept understanding
+              of the user experience, we help companies build better apps,
+              provide mentoring to teams and contribute to the broader software
+              ecosystem.
             </p>
 
             <nuxt-link class="learn-more" to="/about/">
-              Learn More
+              Learn About Us
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
           </div>

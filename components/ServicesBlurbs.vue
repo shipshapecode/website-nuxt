@@ -51,12 +51,9 @@
             </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              ipsum massa, euismod non vestibulum ut, vestibulum id neque. Morbi
-              ligula nibh, imperdiet quis enim quis, porttitor vestibulum urna.
-              Duis tincidunt ligula vel leo cursus, id blandit massa tempor.
-              Nulla sagittis enim vel lorem commodo, ut interdum dolor
-              ultricies.
+              Building custom full stack web apps is our speciality. Ship Shape
+              designs, engineers and programs web apps from start-to-finish so
+              that user experience is flawless and reliable for years to come.
             </p>
 
             <nuxt-link class="learn-more" to="/services/app-development/">
@@ -87,19 +84,18 @@
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
           <div class="lg:max-w-2xl">
             <h3 class="heading" itemprop="name">
-              Mentoring
+              Mentoring and Team Training
             </h3>
             <h3 class="sub-heading">
               Lorem ipsum dolor
             </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              ipsum massa, euismod non vestibulum ut, vestibulum id neque. Morbi
-              ligula nibh, imperdiet quis enim quis, porttitor vestibulum urna.
-              Duis tincidunt ligula vel leo cursus, id blandit massa tempor.
-              Nulla sagittis enim vel lorem commodo, ut interdum dolor
-              ultricies.
+              Whether you’re a Senior Developer or Junior Developer, Ship Shape
+              fosters one-on-one connections that help make a difference in our
+              community. We offer several Ember mentorship programs that
+              identify your goals and prepare you and your team for the future
+              of Ember.
             </p>
 
             <nuxt-link class="learn-more" to="/services/mentoring/">
@@ -125,12 +121,11 @@
             </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              ipsum massa, euismod non vestibulum ut, vestibulum id neque. Morbi
-              ligula nibh, imperdiet quis enim quis, porttitor vestibulum urna.
-              Duis tincidunt ligula vel leo cursus, id blandit massa tempor.
-              Nulla sagittis enim vel lorem commodo, ut interdum dolor
-              ultricies.
+              We built our own open source library,
+              <a href="https://shepherdjs.dev/">Shepherd.js</a> to guide users
+              through the features and functions of your web app. It’s no
+              surprise that we’ve been tapped to help companies of all sizes to
+              implement user-friendly app tours.
             </p>
 
             <nuxt-link class="learn-more" to="/services/app-tours/">

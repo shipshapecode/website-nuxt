@@ -3,13 +3,13 @@
     <HeroBlock class="home">
       <template v-slot:content>
         <h1 class="heading">
-          Code that won't sink
+          Welcome Aboard!
         </h1>
         <p>
-          Ship Shape is a software consultancy specializing in all things Ember.
-          We leverage Ember.js, and all the latest Ember addons and
-          technologies, to create truly ambitious, state of the art applications
-          that are future-proof and easily maintainable.
+          We specialize in custom software and app development by leveraging the
+          latest in Ember.js, Nuxt and open source. Our passion lies in building
+          full stack web apps, mentoring teams and providing impactful solutions
+          for the development community.
         </p>
         <div>
           <nuxt-link to="/work/" class="btn-navy">

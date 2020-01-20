@@ -4,8 +4,13 @@
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap justify-center w-full">
           <h3 class="heading">
-            Ship Shape Blog
+            Ship Shape Insights
           </h3>
+
+          <p class="text-center w-full">
+            Let’s get down to the nitty gritty about the latest trends in
+            Ember.js, JavaScript and more.
+          </p>
         </div>
 
         <div class="flex flex-wrap justify-center mb-4 w-full">
