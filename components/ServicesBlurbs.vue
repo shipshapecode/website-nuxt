@@ -15,21 +15,16 @@
             <h3 class="heading" itemprop="name">
               Ember Consulting
             </h3>
-            <h3 class="sub-heading">
-              Lorem ipsum dolor
-            </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              ipsum massa, euismod non vestibulum ut, vestibulum id neque. Morbi
-              ligula nibh, imperdiet quis enim quis, porttitor vestibulum urna.
-              Duis tincidunt ligula vel leo cursus, id blandit massa tempor.
-              Nulla sagittis enim vel lorem commodo, ut interdum dolor
-              ultricies.
+              Ember.js is Ship Shape’s framework of choice, among the
+              multitude of other JavaScript frameworks out there. With Ember, we
+              can accomplish so much more - faster, with less errors and on a
+              larger scale.
             </p>
 
             <nuxt-link class="learn-more" to="/services/ember-consulting/">
-              Learn More
+              See How
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
           </div>
@@ -45,9 +40,6 @@
           <div class="lg:max-w-2xl">
             <h3 class="heading" itemprop="name">
               App Development
-            </h3>
-            <h3 class="sub-heading">
-              Lorem ipsum dolor
             </h3>
 
             <p>
@@ -86,9 +78,6 @@
             <h3 class="heading" itemprop="name">
               Mentoring and Team Training
             </h3>
-            <h3 class="sub-heading">
-              Lorem ipsum dolor
-            </h3>
 
             <p>
               Whether you’re a Senior Developer or Junior Developer, Ship Shape
@@ -115,9 +104,6 @@
           <div class="lg:max-w-2xl">
             <h3 class="heading" itemprop="name">
               App Tours
-            </h3>
-            <h3 class="sub-heading">
-              Lorem ipsum dolor
             </h3>
 
             <p>
@@ -154,17 +140,10 @@
             <h3 class="heading" itemprop="name">
               Sponsored Open Source
             </h3>
-            <h3 class="sub-heading">
-              Lorem ipsum dolor
-            </h3>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              ipsum massa, euismod non vestibulum ut, vestibulum id neque. Morbi
-              ligula nibh, imperdiet quis enim quis, porttitor vestibulum urna.
-              Duis tincidunt ligula vel leo cursus, id blandit massa tempor.
-              Nulla sagittis enim vel lorem commodo, ut interdum dolor
-              ultricies.
+              Ship Shape has created several data adapters, add-ons, and
+              libraries to fit into your company’s framework.
             </p>
 
             <nuxt-link class="learn-more" to="/services/open-source/">
@@ -172,6 +151,36 @@
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
           </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row"
+        itemscope
+        itemtype="http://schema.org/Service"
+      >
+        <div class="w-full flex lg:pr-12 lg:w-1/2">
+          <div class="lg:max-w-2xl">
+            <h3 class="heading" itemprop="name">
+              Nuxt.js Consulting
+            </h3>
+
+            <p>
+              Nuxt.js makes progressive web app development simple, powerful and
+              user friendly. Stay ahead of tech giants and build a solid
+              foundation for your digital future with Ship Shape’s Nuxt
+              consulting team.
+            </p>
+
+            <nuxt-link class="learn-more" to="/services/nuxt-consulting/">
+              Learn More
+              <AngleRight class="h-4 inline mb-1 w-4" />
+            </nuxt-link>
+          </div>
+        </div>
+
+        <div class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2">
+          <Build class="max-w-2xl" />
         </div>
       </div>
     </div>

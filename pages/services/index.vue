@@ -3,12 +3,12 @@
     <HeroBlock class="services">
       <template v-slot:content>
         <h1 class="heading">
-          Services
+          Our Services
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus.
+          We turn ideas into industry-leading products. Our experts proactively
+          remedy issues with existing code and build innovations from the ground
+          up.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
