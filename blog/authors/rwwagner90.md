@@ -1,7 +1,7 @@
 ---
-name: Robert Wagner
+name: Robbie Wagner
 id: rwwagner90
-image: /img/blog/authors/robert.jpg
-twitter: robbiecore
+image: /img/blog/authors/robbie.jpg
+twitter: rwwagner90
 location: Alexandria, VA
 ---

@@ -16,7 +16,7 @@ title: 'Shepherd 6.0: One Dependency, Smaller Bundle, and New Look!'
 
 ## Return to Tether
 
-As Robert wrote about in a previous [post](/blog/shepherd-popper-to-tether/), we moved back to the original element attachment and positioning library Shepherd.js shipped with. This was with the intent of not only controlling the overal bundle size (which I'll discuss next), but also about being able to control those dependencies over time. Since Ship Shape is now maintaining the [Tether](https://github.com/shipshapecode/tether) code base, we have a chance to ensure that it stays lean and performant for it's users, which are also ourselves for the future of Shepherd.
+As Robbie wrote about in a previous [post](/blog/shepherd-popper-to-tether/), we moved back to the original element attachment and positioning library Shepherd.js shipped with. This was with the intent of not only controlling the overal bundle size (which I'll discuss next), but also about being able to control those dependencies over time. Since Ship Shape is now maintaining the [Tether](https://github.com/shipshapecode/tether) code base, we have a chance to ensure that it stays lean and performant for it's users, which are also ourselves for the future of Shepherd.
 
 ## Smaller Size
 

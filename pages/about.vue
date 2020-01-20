@@ -57,7 +57,7 @@
           <div class="max-w-xs">
             <img
               class="mb-4"
-              src="/img/blog/authors/robert.jpg"
+              src="/img/blog/authors/robbie.jpg"
               alt="A picture of Robbie Wagner"
             />
             <h3 class="heading text-red text-2xl">
@@ -78,7 +78,7 @@
           <div class="max-w-xs">
             <img
               class="mb-4"
-              src="/img/blog/authors/robert.jpg"
+              src="/img/blog/authors/chuck.jpg"
               alt="A picture of Chuck Carpenter"
             />
             <h3 class="heading text-red text-2xl">
