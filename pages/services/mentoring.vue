@@ -3,12 +3,13 @@
     <HeroBlock class="services">
       <template v-slot:content>
         <h1 class="heading">
-          Mentoring
+          Ember & Open Source Mentoring
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus.
+          With Ship Shape’s deep experience in Ember.js, product strategy, user
+          experience, design, engineering, and project management, our
+          consultants are an impactful addition to your team - both short and
+          long term.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">

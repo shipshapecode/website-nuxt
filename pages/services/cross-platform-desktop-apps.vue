@@ -6,13 +6,13 @@
           Cross Platform Desktop Apps
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus.
+          We create top-notch multi-platform apps. In fact, our team can
+          complete the development of a desktop application from the ground up,
+          including UI/UX, API development and more.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
-            Let's build together
+            Get started
           </nuxt-link>
         </div>
       </template>

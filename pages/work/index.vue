@@ -1,34 +1,58 @@
 <template>
-  <div class="section flex flex-wrap justify-center">
-    <div class="section-content">
-      <h1 class="heading">
-        Case Studies
-      </h1>
+  <div>
+    <HeroBlock class="work">
+      <template v-slot:content>
+        <h1 class="heading">
+          Case Studies
+        </h1>
+        <p>
+          Unlike large corporations with offshore developers, Ship Shape crafts
+          homegrown, bespoke solutions to solve problems. This is how we’re
+          making waves for clients nationwide like Netflix and SocialCode.
+        </p>
+        <div>
+          <nuxt-link to="/work/" class="btn-navy">
+            Learn how we work
+          </nuxt-link>
+        </div>
+      </template>
 
-      <CaseStudiesList/>
+      <template v-slot:icon>
+        <OpenSourceIcon class="max-w-2xl" />
+      </template>
+    </HeroBlock>
+    <div class="section flex flex-wrap justify-center">
+      <div class="section-content">
+        <CaseStudiesList />
 
-      <ClientsGrid/>
+        <ClientsGrid />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  import CaseStudiesList from '~/components/CaseStudiesList.vue';
-  import ClientsGrid from '~/components/ClientsGrid.vue';
-  import { generateMeta } from '~/utils/meta';
+import CaseStudiesList from '~/components/CaseStudiesList.vue';
+import ClientsGrid from '~/components/ClientsGrid.vue';
+import HeroBlock from '~/components/HeroBlock.vue';
+import OpenSourceIcon from '~/assets/svgs/hero-images/open-source.svg?inline';
+import { generateMeta } from '~/utils/meta';
 
-  export default {
-    components: {
-      CaseStudiesList,
-      ClientsGrid
-    },
+export default {
+  components: {
+    CaseStudiesList,
+    ClientsGrid,
+    HeroBlock,
+    OpenSourceIcon
+  },
 
-    head() {
-      const title = 'Our Work';
-      const description = 'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.';
-      const url = 'https://shipshape.io/work/';
+  head() {
+    const title = 'Our Work';
+    const description =
+      'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.';
+    const url = 'https://shipshape.io/work/';
 
-      return generateMeta(title, description, url);
-    }
-  };
+    return generateMeta(title, description, url);
+  }
+};
 </script>

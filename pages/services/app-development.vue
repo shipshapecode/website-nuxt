@@ -6,9 +6,9 @@
           App Development
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus.
+          We’ve translated our expertise in full-stack engineering and front-end
+          to back-end design to expand on the possibilities of progressive web
+          apps.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
@@ -27,17 +27,13 @@
     >
       <div class="section-content">
         <h2 class="heading">
-          Lorem ipsum dolor sit
+          Combining the Best of Web And Mobile
         </h2>
 
         <p class="max-w-5xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus. Praesent tempus purus quis erat ultricies, ac
-          aliquam odio bibendum. Donec interdum magna nulla, nec venenatis eros
-          consectetur ac. Fusce auctor fermentum augue eu vestibulum. Praesent
-          tempus, est ut fermentum mattis, purus quam pulvinar elit, eu tempor
-          dolor diam sed leo. Mauris aliquam nisl nec mauris elementum sagittis.
+          Ship Shape enhances UX through progressive web apps. Our clients
+          experience the best of traditional and mobile web apps for any
+          platform that uses a standards-compliant browser.
         </p>
 
         <div class="flex flex-wrap justify-center">
@@ -45,19 +41,16 @@
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
-                  Lorem Ipsum
+                  Save Time and Money
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ac volutpat leo. Donec quis faucibus leo. Donec
-                  eleifend aliquam lacus, vitae viverra tellus. Praesent tempus
-                  purus quis erat ultricies, ac aliquam odio bibendum. Donec
-                  interdum magna nulla, nec venenatis eros consectetur ac. Fusce
-                  auctor fermentum augue eu vestibulum. Praesent tempus, est ut
-                  fermentum mattis, purus quam pulvinar elit, eu tempor dolor
-                  diam sed leo. Mauris aliquam nisl nec mauris elementum
-                  sagittis.
+                  PWAs can replace all of the functions of native apps and
+                  websites at once. Not only are they easy to maintain across
+                  multiple mobile platforms, they are less expensive upfront and
+                  built in less time. Additionally, you have the flexibility to
+                  create and release new versions of your app without all of the
+                  extra loopholes and marketplace approval.
                 </p>
               </div>
             </div>
@@ -67,20 +60,23 @@
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
-                  Lorem Ipsum
+                  PWA Benefits
                 </h3>
 
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ac volutpat leo. Donec quis faucibus leo. Donec
-                  eleifend aliquam lacus, vitae viverra tellus. Praesent tempus
-                  purus quis erat ultricies, ac aliquam odio bibendum. Donec
-                  interdum magna nulla, nec venenatis eros consectetur ac. Fusce
-                  auctor fermentum augue eu vestibulum. Praesent tempus, est ut
-                  fermentum mattis, purus quam pulvinar elit, eu tempor dolor
-                  diam sed leo. Mauris aliquam nisl nec mauris elementum
-                  sagittis.
-                </p>
+                <ul class="list-disc">
+                  <li class="m-0">Low development costs</li>
+                  <li class="m-0">Bypass approvals from app marketplace</li>
+                  <li class="m-0">Single code</li>
+                  <li class="m-0">Better performance</li>
+                  <li class="m-0">Responsive</li>
+                  <li class="m-0">Push Notifications</li>
+                  <li class="m-0">Faster Load Times</li>
+                  <li class="m-0">Increased Engagement</li>
+                  <li class="m-0">Platform and device agnostic</li>
+                  <li class="m-0">Easily accessible</li>
+                  <li class="m-0">Deemed home screen worthy</li>
+                  <li class="m-0">Seamless offline capability</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -89,19 +85,13 @@
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
-                  Lorem Ipsum
+                  Who’s Using PWA’s?
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam ac volutpat leo. Donec quis faucibus leo. Donec
-                  eleifend aliquam lacus, vitae viverra tellus. Praesent tempus
-                  purus quis erat ultricies, ac aliquam odio bibendum. Donec
-                  interdum magna nulla, nec venenatis eros consectetur ac. Fusce
-                  auctor fermentum augue eu vestibulum. Praesent tempus, est ut
-                  fermentum mattis, purus quam pulvinar elit, eu tempor dolor
-                  diam sed leo. Mauris aliquam nisl nec mauris elementum
-                  sagittis.
+                  The benefits of PWA’s caught the attention of several market
+                  players including Twitter, AliExpress, Alibaba, The Washington
+                  Post, Home Depot, Forbes and more.
                 </p>
               </div>
             </div>
