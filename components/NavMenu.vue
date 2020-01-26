@@ -1,11 +1,7 @@
 <template>
   <nav class="flex items-center justify-between flex-wrap p-6">
     <div class="flex flex-no-shrink items-center pr-2 pt-2">
-      <nuxt-link
-        to="/"
-        class="logo inline-flex"
-        itemprop="url"
-      >
+      <nuxt-link to="/" class="logo inline-flex" itemprop="url">
         <div
           class="inline-block"
           itemprop="logo"
@@ -19,14 +15,11 @@
             height="50px"
             src="/img/logo.png"
             width="50px"
-          >
-          <meta itemprop="height" content="128">
-          <meta itemprop="width" content="128">
+          />
+          <meta itemprop="height" content="128" />
+          <meta itemprop="width" content="128" />
         </div>
-        <div
-          class="font-medium -mt-1 text-navy text-3xl"
-          itemprop="name"
-        >
+        <div class="font-medium -mt-1 text-navy text-3xl" itemprop="name">
           Ship Shape
         </div>
       </nuxt-link>
@@ -38,7 +31,7 @@
         class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
         @click="toggleNavMenu(true)"
       >
-        <Menu class="hamburger-menu"/>
+        <Menu class="hamburger-menu" />
       </button>
     </div>
 
@@ -50,7 +43,7 @@
             class="cursor-pointer"
             @click="toggleNavMenu(false)"
           >
-            <Close class="h-10 m-2 p-2 w-10"/>
+            <Close class="h-10 m-2 p-2 w-10" />
           </button>
         </div>
 
@@ -99,40 +92,40 @@
 </template>
 
 <script>
-  import Close from '~/assets/svgs/close.svg?inline';
-  import Menu from '~/assets/svgs/menu.svg?inline';
+import Close from '~/assets/svgs/close.svg?inline';
+import Menu from '~/assets/svgs/menu.svg?inline';
 
-  export default {
-    components: {
-      Close,
-      Menu
-    },
-    methods: {
-      toggleNavMenu(open) {
-        const mobileNavShown = window.innerWidth < 1024;
-        if (mobileNavShown) {
-          const navLinks = this.$el.querySelector('.nav-links');
+export default {
+  components: {
+    Close,
+    Menu
+  },
+  methods: {
+    toggleNavMenu(open) {
+      const mobileNavShown = window.innerWidth < 1024;
+      if (mobileNavShown) {
+        const navLinks = this.$el.querySelector('.nav-links');
 
-          if (open) {
-            navLinks.classList.remove('hidden');
-            document.body.style.position = 'fixed';
-          } else {
-            navLinks.classList.add('hidden');
-            document.body.style.position = '';
-          }
+        if (open) {
+          navLinks.classList.remove('hidden');
+          document.body.style.position = 'fixed';
+        } else {
+          navLinks.classList.add('hidden');
+          document.body.style.position = '';
         }
       }
     }
-  };
+  }
+};
 </script>
 
 <style lang="scss">
-  .hamburger-menu {
-    height: 36px;
-    width: 36px;
-  }
+.hamburger-menu {
+  height: 36px;
+  width: 36px;
+}
 
-  .logo {
-    word-spacing: -5px;
-  }
+.logo {
+  word-spacing: -5px;
+}
 </style>

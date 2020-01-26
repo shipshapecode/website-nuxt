@@ -17,10 +17,10 @@
             </h3>
 
             <p>
-              Ember.js is Ship Shape’s framework of choice, among the
-              multitude of other JavaScript frameworks out there. With Ember, we
-              can accomplish so much more - faster, with less errors and on a
-              larger scale.
+              Ember.js is Ship Shape’s framework of choice, among the multitude
+              of other JavaScript frameworks out there. With Ember, we can
+              accomplish so much more - faster, with less errors and on a larger
+              scale.
             </p>
 
             <nuxt-link class="learn-more" to="/services/ember-consulting/">

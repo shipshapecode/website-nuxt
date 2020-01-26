@@ -1,18 +1,25 @@
 <template>
   <div>
-    <div class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent">
+    <div
+      class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent"
+    >
       <div class="section-content">
         <h2 class="heading">
           JavaScript Libraries
         </h2>
 
         <p class="max-w-5xl">
-          We are passionate about JavaScript and all things UI related at Ship Shape. We are working hard
-          to create open source libraries for many common web app use cases.
+          We are passionate about JavaScript and all things UI related at Ship
+          Shape. We are working hard to create open source libraries for many
+          common web app use cases.
         </p>
 
         <div class="flex flex-wrap justify-center">
-          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project flex-1">
+          <div
+            itemscope
+            itemtype="http://schema.org/SoftwareSourceCode"
+            class="project flex-1"
+          >
             <div>
               <h3 class="text-navy">
                 Shepherd
@@ -23,8 +30,9 @@
               </h5>
 
               <p class="max-w-5xl">
-                Shepherd was initially created by HubSpot, and was taken over by Ship Shape in
-                2018. We did a complete rewrite, added full test coverage, and modernized everything.
+                Shepherd was initially created by HubSpot, and was taken over by
+                Ship Shape in 2018. We did a complete rewrite, added full test
+                coverage, and modernized everything.
               </p>
 
               <p>
@@ -34,7 +42,7 @@
                   itemprop="codeRepository"
                 >
                   View on GitHub
-                  <AngleRight class="h-4 inline mb-1 w-4"/>
+                  <AngleRight class="h-4 inline mb-1 w-4" />
                 </a>
               </p>
             </div>
@@ -50,12 +58,16 @@
         </h2>
 
         <p class="max-w-5xl">
-          The addons Ship Shape has created have been downloaded millions of times, and are used in
-          production apps of Fortune 100 companies.
+          The addons Ship Shape has created have been downloaded millions of
+          times, and are used in production apps of Fortune 100 companies.
         </p>
 
         <div class="flex flex-wrap justify-center">
-          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project pb-2 pt-2 w-full lg:w-1/3 lg:pr-8">
+          <div
+            itemscope
+            itemtype="http://schema.org/SoftwareSourceCode"
+            class="project pb-2 pt-2 w-full lg:w-1/3 lg:pr-8"
+          >
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
@@ -67,9 +79,13 @@
                 </h5>
 
                 <p>
-                  ember-shepherd was originally written in 2015, and it still consistently ranks in
-                  the top 100 Ember addons on <a href="https://emberobserver.com/addons/ember-shepherd">Ember Observer</a>
-                  today. It is the best way to write site tours for your Ember app.
+                  ember-shepherd was originally written in 2015, and it still
+                  consistently ranks in the top 100 Ember addons on
+                  <a href="https://emberobserver.com/addons/ember-shepherd"
+                    >Ember Observer</a
+                  >
+                  today. It is the best way to write site tours for your Ember
+                  app.
                 </p>
 
                 <p>
@@ -79,14 +95,18 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight class="h-4 inline mb-1 w-4"/>
+                    <AngleRight class="h-4 inline mb-1 w-4" />
                   </a>
                 </p>
               </div>
             </div>
           </div>
 
-          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-4 lg:pr-4">
+          <div
+            itemscope
+            itemtype="http://schema.org/SoftwareSourceCode"
+            class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-4 lg:pr-4"
+          >
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
@@ -99,8 +119,10 @@
 
                 <p>
                   ember-math-helpers was inspired by the elegant simplicity of
-                  <a href="https://github.com/jmurphyau/ember-truth-helpers">ember-truth-helpers</a>.
-                  It aims to be a complete set of helpers for quick mathematical computations in your templates.
+                  <a href="https://github.com/jmurphyau/ember-truth-helpers"
+                    >ember-truth-helpers</a
+                  >. It aims to be a complete set of helpers for quick
+                  mathematical computations in your templates.
                 </p>
 
                 <p>
@@ -110,14 +132,18 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight class="h-4 inline mb-1 w-4"/>
+                    <AngleRight class="h-4 inline mb-1 w-4" />
                   </a>
                 </p>
               </div>
             </div>
           </div>
 
-          <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-8">
+          <div
+            itemscope
+            itemtype="http://schema.org/SoftwareSourceCode"
+            class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-8"
+          >
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
@@ -129,9 +155,11 @@
                 </h5>
 
                 <p>
-                  ember-flatpickr was created as an alternative to ember-pikaday, which had become
-                  very outdated and had lots of open issues. It wraps the minimal datepicker library
-                  <a href="https://github.com/flatpickr/flatpickr">Flatpickr</a>.
+                  ember-flatpickr was created as an alternative to
+                  ember-pikaday, which had become very outdated and had lots of
+                  open issues. It wraps the minimal datepicker library
+                  <a href="https://github.com/flatpickr/flatpickr">Flatpickr</a
+                  >.
                 </p>
 
                 <p>
@@ -141,7 +169,7 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight class="h-4 inline mb-1 w-4"/>
+                    <AngleRight class="h-4 inline mb-1 w-4" />
                   </a>
                 </p>
               </div>
@@ -154,11 +182,11 @@
 </template>
 
 <script>
-  import AngleRight from '~/assets/svgs/angle-right.svg?inline';
+import AngleRight from '~/assets/svgs/angle-right.svg?inline';
 
-  export default {
-    components: {
-      AngleRight
-    }
-  };
+export default {
+  components: {
+    AngleRight
+  }
+};
 </script>

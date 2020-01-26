@@ -1,8 +1,8 @@
 <template>
   <article itemscope itemtype="http://schema.org/BlogPosting">
-    <link itemprop="mainEntityOfPage" :href="$nuxt.$route.path">
-    <link itemprop="publisher" href="shipshapeorg">
-    <link itemprop="image" href="shipshapelogo">
+    <link itemprop="mainEntityOfPage" :href="$nuxt.$route.path" />
+    <link itemprop="publisher" href="shipshapeorg" />
+    <link itemprop="image" href="shipshapelogo" />
 
     <div class="section flex flex-wrap justify-center">
       <div class="max-w-3xl w-full">
@@ -10,22 +10,19 @@
           {{ post.title }}
         </h1>
 
-        <AuthorRow
-          v-bind="post.author.attributes"
-          :date="post.date"
-        />
+        <AuthorRow v-bind="post.author.attributes" :date="post.date" />
 
         <div class="flex mb-8 mt-2 w-full">
           <div id="codefund">
             <!-- fallback content -->
           </div>
-          <script src="https://app.codefund.io/properties/31/funder.js" async="async"></script>
+          <script
+            src="https://app.codefund.io/properties/31/funder.js"
+            async="async"
+          ></script>
         </div>
 
-        <div
-          class="post-content"
-          v-html="post.html"
-        />
+        <div class="post-content" v-html="post.html" />
 
         <BottomLinks
           :next-link="`/blog/${post.nextSlug}/`"
@@ -39,20 +36,20 @@
 </template>
 
 <script>
-  import AuthorRow from '~/components/AuthorRow.vue';
-  import BottomLinks from '~/components/BottomLinks.vue';
+import AuthorRow from '~/components/AuthorRow.vue';
+import BottomLinks from '~/components/BottomLinks.vue';
 
-  export default {
-    components: {
-      AuthorRow,
-      BottomLinks
-    },
+export default {
+  components: {
+    AuthorRow,
+    BottomLinks
+  },
 
-    props: {
-      post: {
-        type: Object,
-        default: () => {}
-      }
+  props: {
+    post: {
+      type: Object,
+      default: () => {}
     }
-  };
+  }
+};
 </script>

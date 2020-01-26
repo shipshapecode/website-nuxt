@@ -46,9 +46,7 @@
             itemscope
             itemtype="http://schema.org/Person"
           >
-            <span itemprop="name">
-              James Dixon
-            </span>,
+            <span itemprop="name">James Dixon</span>,
             <span itemprop="jobTitle">
               Founder
             </span>

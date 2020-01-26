@@ -1,5 +1,7 @@
 <template>
-  <div class="border-t-2 border-grey-transparent border-solid flex flex-wrap mt-24 w-full">
+  <div
+    class="border-t-2 border-grey-transparent border-solid flex flex-wrap mt-24 w-full"
+  >
     <nuxt-link
       class="border-r-2 border-grey-transparent border-solid flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-grey-transparent"
       :to="previousLink"
@@ -27,24 +29,24 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      nextLink: {
-        type: String,
-        default: ''
-      },
-      nextLinkText: {
-        type: String,
-        default: ''
-      },
-      previousLink: {
-        type: String,
-        default: ''
-      },
-      previousLinkText: {
-        type: String,
-        default: ''
-      }
+export default {
+  props: {
+    nextLink: {
+      type: String,
+      default: ''
+    },
+    nextLinkText: {
+      type: String,
+      default: ''
+    },
+    previousLink: {
+      type: String,
+      default: ''
+    },
+    previousLinkText: {
+      type: String,
+      default: ''
     }
-  };
+  }
+};
 </script>

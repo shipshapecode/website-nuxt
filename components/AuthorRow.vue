@@ -12,7 +12,7 @@
           :src="`${image}`"
           alt="Author image"
           itemprop="image"
-        >
+        />
       </div>
 
       <div class="pl-2 pb-2">
@@ -26,14 +26,9 @@
       </div>
     </div>
 
-    <div
-      class="flex items-center pb-8"
-    >
+    <div class="flex items-center pb-8">
       <div class="pl-2 pb-2">
-        <time
-          :datetime="date"
-          itemprop="datePublished dateModified"
-        >
+        <time :datetime="date" itemprop="datePublished dateModified">
           {{ $dateFns.format(date) }}
         </time>
       </div>
@@ -42,24 +37,24 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      date: {
-        type: String,
-        default: ''
-      },
-      id: {
-        type: String,
-        default: ''
-      },
-      image: {
-        type: String,
-        default: ''
-      },
-      name: {
-        type: String,
-        default: ''
-      }
+export default {
+  props: {
+    date: {
+      type: String,
+      default: ''
+    },
+    id: {
+      type: String,
+      default: ''
+    },
+    image: {
+      type: String,
+      default: ''
+    },
+    name: {
+      type: String,
+      default: ''
     }
-  };
+  }
+};
 </script>
