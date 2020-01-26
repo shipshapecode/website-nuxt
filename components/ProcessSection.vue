@@ -2,11 +2,17 @@
   <div class="section flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex flex-wrap items-center pt-6 pb-6">
-        <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
+        <div
+          class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
+          data-aos="fade-up"
+        >
           <Design class="m-auto max-w-2xl" />
         </div>
 
-        <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
+        <div
+          class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
+          data-aos="fade-up"
+        >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading">
               Our Services
@@ -32,7 +38,7 @@
       <div
         class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row"
       >
-        <div class="w-full flex lg:pr-12 lg:w-1/2">
+        <div class="w-full flex lg:pr-12 lg:w-1/2" data-aos="fade-up">
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading">
               Our Work
@@ -53,17 +59,26 @@
           </div>
         </div>
 
-        <div class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2">
+        <div
+          class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2"
+          data-aos="fade-up"
+        >
           <Build class="m-auto max-w-2xl" />
         </div>
       </div>
 
       <div class="flex flex-wrap items-center pt-6 pb-6">
-        <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
+        <div
+          class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
+          data-aos="fade-up"
+        >
           <Ship class="m-auto max-w-2xl" />
         </div>
 
-        <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
+        <div
+          class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
+          data-aos="fade-up"
+        >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading">
               About Ship Shape
