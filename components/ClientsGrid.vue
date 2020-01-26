@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap">
-    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
+    <div class="pt-4 pb-4 m-auto max-w-2xl w-full lg:pr-8 lg:w-1/3">
       <a
         href="https://marianatek.com/"
         aria-label="Mariana Tek"
@@ -16,7 +16,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+    <div class="pt-4 pb-4 m-auto max-w-2xl w-full lg:pl-4 lg:pr-4 lg:w-1/3">
       <a
         href="https://www.scoutforpets.com/"
         aria-label="Scout"
@@ -37,7 +37,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
+    <div class="pt-4 pb-4 m-auto max-w-2xl w-full lg:pl-8 lg:w-1/3">
       <a
         href="https://www.greenlight.guru/"
         aria-label="Greenlight Guru"
@@ -51,7 +51,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
+    <div class="pt-4 pb-4 m-auto max-w-2xl w-full lg:pr-8 lg:w-1/3">
       <a
         href="https://www.mentrs.com/"
         aria-label="Mentrs"
@@ -70,7 +70,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+    <div class="pt-4 pb-4 m-auto max-w-2xl w-full lg:pl-4 lg:pr-4 lg:w-1/3">
       <a
         href="https://anvyl.com/"
         aria-label="Anvyl"

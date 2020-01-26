@@ -22,7 +22,7 @@
 
     <div class="section bg-navy flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="w-full lg:w-1/2">
+        <div class="m-auto max-w-2xl w-full lg:w-1/2">
           <h3 class="text-white">
             Our Clients
           </h3>
@@ -33,7 +33,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:w-1/2">
+        <div class="m-auto max-w-2xl w-full lg:w-1/2">
           <h3 class="text-white">
             Our Community
           </h3>

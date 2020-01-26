@@ -7,11 +7,11 @@
         itemtype="http://schema.org/Service"
       >
         <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
-          <Design class="max-w-2xl" />
+          <Design class="m-auto max-w-2xl" />
         </div>
 
         <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
-          <div class="lg:max-w-2xl">
+          <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
               Mentoring
             </h3>
@@ -42,7 +42,7 @@
         itemtype="http://schema.org/Service"
       >
         <div class="w-full flex lg:pr-12 lg:w-1/2">
-          <div class="lg:max-w-2xl">
+          <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
               Ember.js
             </h3>
@@ -71,7 +71,7 @@
           itemscope
           itemtype="http://schema.org/Service"
         >
-          <Build class="max-w-2xl" />
+          <Build class="m-auto max-w-2xl" />
         </div>
       </div>
     </div>

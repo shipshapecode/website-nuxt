@@ -20,7 +20,7 @@
       </template>
 
       <template v-slot:icon>
-        <OpenSourceIcon class="max-w-2xl"/>
+        <OpenSourceIcon class="m-auto max-w-2xl"/>
       </template>
     </HeroBlock>
 
