@@ -3,7 +3,7 @@
     <HeroBlock class="work">
       <template v-slot:content>
         <h1 class="heading">
-          Case Studies
+          Making Waves
         </h1>
         <p>
           Unlike large corporations with offshore developers, Ship Shape crafts
@@ -11,8 +11,8 @@
           making waves for clients nationwide like Netflix and SocialCode.
         </p>
         <div>
-          <nuxt-link to="/work/" class="btn-navy">
-            Learn how we work
+          <nuxt-link to="/contact/" class="btn-navy">
+            Let's build together
           </nuxt-link>
         </div>
       </template>
