@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="about bg-navy text-white">
+    <HeroBlock class="about bg-navy flex h-140 items-center text-white">
       <template v-slot:content>
         <h1 class="heading text-white">
           About Ship Shape
@@ -22,7 +22,7 @@
 
     <div class="section bg-navy flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="m-auto max-w-2xl w-full lg:w-1/2">
+        <div class="max-w-2xl w-full lg:w-1/2">
           <h3 class="text-white">
             Our Clients
           </h3>
@@ -53,7 +53,7 @@
             Our Team
           </h3>
         </div>
-        <div class="flex-1 flex flex-wrap">
+        <div class="flex flex-grow flex-wrap lg:flex-1">
           <div class="max-w-xs">
             <img
               class="mb-4"
@@ -74,7 +74,7 @@
           </div>
         </div>
 
-        <div class="flex-1 flex flex-wrap">
+        <div class="flex flex-grow flex-wrap lg:flex-1">
           <div class="max-w-xs">
             <img
               class="mb-4"

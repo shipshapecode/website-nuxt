@@ -14,6 +14,11 @@
   @apply btn bg-white;
 }
 
+.btn-white:active,
+.btn-white:visited {
+  @apply text-navy;
+}
+
 .btn:active,
 .btn-gold:active,
 .btn-navy:active {
@@ -27,6 +32,7 @@
 }
 
 .btn-gold:hover,
-.btn-navy:hover {
+.btn-navy:hover,
+.btn-white:hover {
   @apply bg-grey-transparent text-navy;
 }
