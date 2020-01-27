@@ -3,16 +3,16 @@
     <HeroBlock class="nuxt-consulting">
       <template v-slot:content>
         <h1 class="heading" itemprop="name">
-          Nuxt.js Consulting
+          A Framework for Your Framework
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus.
+          Nuxt.js is a higher-level framework that simplifies the development of
+          universal or single page Vue apps. With Nuxt.js, Ship Shape’s team can
+          write and build universal apps simply.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
-            Let's build together
+            Get started
           </nuxt-link>
         </div>
       </template>
@@ -21,43 +21,6 @@
         <EmberConsultingIcon class="m-auto max-w-2xl" />
       </template>
     </HeroBlock>
-
-    <div
-      class="section quote bg-grey-transparent flex flex-wrap justify-center"
-    >
-      <div class="section-content">
-        <div class="font-bold text-5xl">
-          “
-        </div>
-
-        <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-          <h2
-            class="font-light text-navy text-2xl lg:text-4xl"
-            itemprop="reviewBody"
-          >
-            Ship Shape knows what they’re doing. A thoughtful approach, pristine
-            code and a 200% effort in everything they do, makes recommending
-            them a no-brainer.
-          </h2>
-
-          <p
-            class="font-bold"
-            itemprop="author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            <span itemprop="name">James Dixon</span>,
-            <span itemprop="jobTitle">
-              Founder
-            </span>
-            of
-            <a href="https://www.scoutforpets.com/">
-              Scout
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
 
     <WhyNuxt />
   </div>

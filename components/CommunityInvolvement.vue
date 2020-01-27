@@ -7,12 +7,9 @@
         </h2>
 
         <p>
-          We've been using Ember since 2012, and have been very active in the
-          community. We maintain countless Ember addons, contribute to Ember,
-          Ember-CLI, and the Ember docs sites, run the Ember.JS DC meetup,
-          sponsor and run workshops at EmberConf, and anything and everything we
-          can possibly do to help further Ember as a framework and as a
-          community.
+          We believe that every new connection or project is a learning
+          opportunity for us all. Ship Shape remains a staple in the community
+          by sharing our expertise and investing in the Ember.js framework.
         </p>
       </div>
 

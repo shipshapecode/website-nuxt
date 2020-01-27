@@ -27,17 +27,14 @@
     >
       <div class="section-content">
         <h2 class="heading">
-          Lorem ipsum dolor sit
+          Sail into an App Store
         </h2>
 
         <p class="max-w-5xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac
-          volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam lacus,
-          vitae viverra tellus. Praesent tempus purus quis erat ultricies, ac
-          aliquam odio bibendum. Donec interdum magna nulla, nec venenatis eros
-          consectetur ac. Fusce auctor fermentum augue eu vestibulum. Praesent
-          tempus, est ut fermentum mattis, purus quam pulvinar elit, eu tempor
-          dolor diam sed leo. Mauris aliquam nisl nec mauris elementum sagittis.
+          Save time and money. Ship Shape will code to power across many
+          platforms, then deploy on macOS, Windows and Linux, in addition to
+          landing you in macOS and Windows app stores to reach your target
+          audience.
         </p>
 
         <div class="flex flex-wrap justify-center">
