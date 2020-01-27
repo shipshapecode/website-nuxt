@@ -41,7 +41,7 @@
                   Mentoring
                 </nuxt-link>
 
-                <nuxt-link to="/services/open-source/">
+                <nuxt-link to="/services/open-source/" class="block">
                   Open Source
                 </nuxt-link>
               </div>
@@ -74,29 +74,25 @@
 
             <div class="flex flex-shrink justify-start w-full max-w-lg">
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
-                <div class="w-full">
-                  <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
-                    Company
-                  </h4>
-                </div>
+                <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
+                  Company
+                </h4>
 
-                <div class="w-full">
-                  <nuxt-link to="/about/">
-                    About
-                  </nuxt-link>
-                </div>
+                <nuxt-link to="/about/" class="block">
+                  About
+                </nuxt-link>
 
-                <div class="w-full">
-                  <nuxt-link to="/work/">
-                    Work
-                  </nuxt-link>
-                </div>
+                <nuxt-link to="/community/" class="block">
+                  Community
+                </nuxt-link>
 
-                <div class="w-full">
-                  <nuxt-link to="/blog/">
-                    Blog
-                  </nuxt-link>
-                </div>
+                <nuxt-link to="/work/" class="block">
+                  Work
+                </nuxt-link>
+
+                <nuxt-link to="/blog/" class="block">
+                  Blog
+                </nuxt-link>
               </div>
 
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">

@@ -57,12 +57,10 @@ export default {
   },
 
   head() {
-    const title = 'Ember Addons and Open Source';
+    const title = 'Open Source Software';
     const description =
-      'We collaborate extensively with the Ember community on all facets of Ember. ' +
-      'From documentation, to Ember CLI, and Ember itself. ' +
-      'We have written several Ember addons of our own, and we are maintainers for the html-next ' +
-      'addons, including flexi and vertical-collection.';
+      'We build and support countless open source projects. ' +
+      'Discover why Ship Shape loves open source development.';
     const url = 'https://shipshape.io/open-source/';
 
     return generateMeta(title, description, url);
