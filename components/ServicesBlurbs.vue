@@ -1,21 +1,12 @@
 <template>
-  <div class="section flex flex-wrap justify-center">
+  <div class="section bg-grey-transparent flex flex-wrap justify-center">
     <div class="section-content">
-      <div
-        class="flex flex-wrap items-center pt-6 pb-6"
-        itemscope
-        itemtype="http://schema.org/Service"
-      >
+      <div class="flex flex-wrap items-center">
         <div
-          class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
+          class="bg-white flex flex-grow m-2 p-6 justify-center items-center lg:flex-1 lg:h-80 lg:ml-0"
           data-aos="fade-up"
-        >
-          <Design class="m-auto max-w-2xl" />
-        </div>
-
-        <div
-          class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
-          data-aos="fade-up"
+          itemscope
+          itemtype="http://schema.org/Service"
         >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
@@ -35,14 +26,13 @@
             </nuxt-link>
           </div>
         </div>
-      </div>
 
-      <div
-        class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row"
-        itemscope
-        itemtype="http://schema.org/Service"
-      >
-        <div class="w-full flex lg:pr-12 lg:w-1/2" data-aos="fade-up">
+        <div
+          class="bg-white flex flex-grow m-2 p-6 justify-center items-center lg:flex-1 lg:h-80 lg:mr-0"
+          data-aos="fade-up"
+          itemscope
+          itemtype="http://schema.org/Service"
+        >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
               App Development
@@ -60,30 +50,14 @@
             </nuxt-link>
           </div>
         </div>
-
-        <div
-          class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2"
-          data-aos="fade-up"
-        >
-          <Build class="m-auto max-w-2xl" />
-        </div>
       </div>
 
-      <div
-        class="flex flex-wrap items-center pt-6 pb-6"
-        itemscope
-        itemtype="http://schema.org/Service"
-      >
+      <div class="flex flex-wrap items-center">
         <div
-          class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
+          class="bg-white flex flex-grow m-2 p-6 justify-center items-center lg:flex-1 lg:h-80 lg:ml-0"
           data-aos="fade-up"
-        >
-          <Ship class="m-auto max-w-2xl" />
-        </div>
-
-        <div
-          class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
-          data-aos="fade-up"
+          itemscope
+          itemtype="http://schema.org/Service"
         >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
@@ -104,14 +78,13 @@
             </nuxt-link>
           </div>
         </div>
-      </div>
 
-      <div
-        class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row"
-        itemscope
-        itemtype="http://schema.org/Service"
-      >
-        <div class="w-full flex lg:pr-12 lg:w-1/2" data-aos="fade-up">
+        <div
+          class="bg-white flex flex-grow m-2 p-6 justify-center items-center lg:flex-1 lg:h-80 lg:mr-0"
+          data-aos="fade-up"
+          itemscope
+          itemtype="http://schema.org/Service"
+        >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
               App Tours
@@ -131,30 +104,14 @@
             </nuxt-link>
           </div>
         </div>
-
-        <div
-          class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2"
-          data-aos="fade-up"
-        >
-          <Build class="m-auto max-w-2xl" />
-        </div>
       </div>
 
-      <div
-        class="flex flex-wrap items-center pt-6 pb-6"
-        itemscope
-        itemtype="http://schema.org/Service"
-      >
+      <div class="flex flex-wrap items-center">
         <div
-          class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
+          class="bg-white flex flex-grow m-2 p-6 justify-center items-center lg:flex-1 lg:h-80 lg:ml-0"
           data-aos="fade-up"
-        >
-          <Design class="m-auto max-w-2xl" />
-        </div>
-
-        <div
-          class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
-          data-aos="fade-up"
+          itemscope
+          itemtype="http://schema.org/Service"
         >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
@@ -166,20 +123,19 @@
               libraries to fit into your company’s framework.
             </p>
 
-            <nuxt-link class="learn-more" to="/services/open-source/">
+            <nuxt-link class="learn-more" to="/services/mentoring/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
           </div>
         </div>
-      </div>
 
-      <div
-        class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row"
-        itemscope
-        itemtype="http://schema.org/Service"
-      >
-        <div class="w-full flex lg:pr-12 lg:w-1/2" data-aos="fade-up">
+        <div
+          class="bg-white flex flex-grow m-2 p-6 justify-center items-center lg:flex-1 lg:h-80 lg:mr-0"
+          data-aos="fade-up"
+          itemscope
+          itemtype="http://schema.org/Service"
+        >
           <div class="m-auto max-w-2xl w-full">
             <h3 class="heading" itemprop="name">
               Nuxt.js Consulting
@@ -198,13 +154,6 @@
             </nuxt-link>
           </div>
         </div>
-
-        <div
-          class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2"
-          data-aos="fade-up"
-        >
-          <Build class="m-auto max-w-2xl" />
-        </div>
       </div>
     </div>
   </div>
@@ -212,16 +161,10 @@
 
 <script>
 import AngleRight from '~/assets/svgs/angle-right.svg?inline';
-import Build from '~/assets/svgs/illustrations/build.svg?inline';
-import Design from '~/assets/svgs/illustrations/design.svg?inline';
-import Ship from '~/assets/svgs/illustrations/ship.svg?inline';
 
 export default {
   components: {
-    AngleRight,
-    Build,
-    Design,
-    Ship
+    AngleRight
   }
 };
 </script>
