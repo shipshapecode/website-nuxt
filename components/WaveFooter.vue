@@ -40,6 +40,10 @@
                 <nuxt-link to="/services/mentoring/" class="block">
                   Mentoring
                 </nuxt-link>
+
+                <nuxt-link to="/services/open-source/">
+                  Open Source
+                </nuxt-link>
               </div>
 
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
@@ -85,12 +89,6 @@
                 <div class="w-full">
                   <nuxt-link to="/work/">
                     Work
-                  </nuxt-link>
-                </div>
-
-                <div class="w-full">
-                  <nuxt-link to="/open-source/">
-                    Open Source
                   </nuxt-link>
                 </div>
 

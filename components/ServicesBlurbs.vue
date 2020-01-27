@@ -123,7 +123,7 @@
               libraries to fit into your company’s framework.
             </p>
 
-            <nuxt-link class="learn-more" to="/services/mentoring/">
+            <nuxt-link class="learn-more" to="/services/open-source/">
               Learn More
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>

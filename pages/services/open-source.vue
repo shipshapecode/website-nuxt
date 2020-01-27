@@ -3,18 +3,16 @@
     <HeroBlock class="open-source">
       <template v-slot:content>
         <h1 class="heading">
-          We
-          <Heart class="heartIcon inline" />
-          Open Source
+          Our Open Source Community
         </h1>
         <p>
-          At Ship Shape, contributing to open source software is an addiction.
-          We maintain several Ember addons of our own, and have contributed to
-          countless other projects throughout the open source community.
+          We believe code should be accessible to all. Ship Shape's open source
+          projects enable us to play an active role in improving the world of
+          developers globally.
         </p>
         <div>
-          <nuxt-link to="/work/" class="btn-navy">
-            Learn how we work
+          <nuxt-link to="/community/" class="btn-navy">
+            Join our community
           </nuxt-link>
         </div>
       </template>
@@ -46,7 +44,6 @@
 </template>
 
 <script>
-import Heart from '~/assets/svgs/heart1.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import OpenSourceIcon from '~/assets/svgs/hero-images/open-source.svg?inline';
 import PortfolioContainer from '~/components/PortfolioContainer.vue';
@@ -54,7 +51,6 @@ import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    Heart,
     HeroBlock,
     OpenSourceIcon,
     PortfolioContainer
