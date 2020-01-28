@@ -70,11 +70,25 @@
         order.
       </p>
     </div>
+
+    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
+      <a href="https://cos.io/" aria-label="COS">
+        <COSLogo class="h-8 mb-3 w-auto" />
+      </a>
+      <p>
+        We helped The Center for Open Science develop some custom dashboards for
+        institutions to get a better view into their organization's usership.
+        These dashboards allowed admins to log in and see lists of the people
+        using the system and visualize the traffic based on the department each
+        user belonged to.
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
 import AnvylLogo from '~/assets/svgs/clients/anvyl.svg?inline';
+import COSLogo from '~/assets/svgs/clients/cos.svg?inline';
 import GreenlightGuruLogo from '~/assets/svgs/clients/greenlight-guru.svg?inline';
 import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
 import MentrsLogo from '~/assets/svgs/clients/mentrs.svg?inline';
@@ -83,6 +97,7 @@ import ScoutLogo from '~/assets/svgs/clients/scout.svg?inline';
 export default {
   components: {
     AnvylLogo,
+    COSLogo,
     GreenlightGuruLogo,
     MarianaTekLogo,
     MentrsLogo,
