@@ -22,9 +22,7 @@
       </template>
     </HeroBlock>
 
-    <div
-      class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent"
-    >
+    <div class="section flex flex-wrap justify-center bg-grey-transparent">
       <div class="section-content">
         <h2 class="heading">
           Combining the Best of Web And Mobile
@@ -37,7 +35,7 @@
         </p>
 
         <div class="flex flex-wrap justify-center">
-          <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pr-8">
+          <div class="pb-2 pt-2 w-full lg:w-1/2 lg:pr-16">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
@@ -56,32 +54,7 @@
             </div>
           </div>
 
-          <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-4 lg:pr-4">
-            <div class="flex flex-wrap items-center justify-center">
-              <div>
-                <h3 class="text-navy">
-                  PWA Benefits
-                </h3>
-
-                <ul class="list-disc">
-                  <li class="m-0">Low development costs</li>
-                  <li class="m-0">Bypass approvals from app marketplace</li>
-                  <li class="m-0">Single code</li>
-                  <li class="m-0">Better performance</li>
-                  <li class="m-0">Responsive</li>
-                  <li class="m-0">Push Notifications</li>
-                  <li class="m-0">Faster Load Times</li>
-                  <li class="m-0">Increased Engagement</li>
-                  <li class="m-0">Platform and device agnostic</li>
-                  <li class="m-0">Easily accessible</li>
-                  <li class="m-0">Deemed home screen worthy</li>
-                  <li class="m-0">Seamless offline capability</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-8">
+          <div class="pb-2 pt-2 w-full lg:w-1/2 lg:pl-16">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
@@ -102,43 +75,39 @@
 
     <div class="section flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="heading">
-          Lorem ipsum dolor
-        </h2>
-
-        <Tabs>
-          <div class="max-w-3xl">
-            <Tab name="Lorem ipsum" :selected="true">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                ac volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam
-                lacus, vitae viverra tellus. Praesent tempus purus quis erat
-                ultricies, ac aliquam odio bibendum. Donec interdum magna nulla,
-                nec venenatis eros consectetur ac.
-              </p>
-            </Tab>
-
-            <Tab name="Dolor sit">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                ac volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam
-                lacus, vitae viverra tellus. Praesent tempus purus quis erat
-                ultricies, ac aliquam odio bibendum. Donec interdum magna nulla,
-                nec venenatis eros consectetur ac.
-              </p>
-            </Tab>
-
-            <Tab name="Vitae viverra">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                ac volutpat leo. Donec quis faucibus leo. Donec eleifend aliquam
-                lacus, vitae viverra tellus. Praesent tempus purus quis erat
-                ultricies, ac aliquam odio bibendum. Donec interdum magna nulla,
-                nec venenatis eros consectetur ac.
-              </p>
-            </Tab>
+        <div class="flex flex-wrap items-center pt-6 pb-6">
+          <div
+            class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
+            data-aos="fade-up"
+          >
+            <Ship class="m-auto max-w-2xl" />
           </div>
-        </Tabs>
+          <div
+            class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
+            data-aos="fade-up"
+          >
+            <div class="m-auto max-w-2xl w-full">
+              <h3 class="heading">
+                PWA Benefits
+              </h3>
+
+              <ul class="list-disc">
+                <li class="m-0">Low development costs</li>
+                <li class="m-0">Bypass approvals from app marketplace</li>
+                <li class="m-0">Single code</li>
+                <li class="m-0">Better performance</li>
+                <li class="m-0">Responsive</li>
+                <li class="m-0">Push Notifications</li>
+                <li class="m-0">Faster Load Times</li>
+                <li class="m-0">Increased Engagement</li>
+                <li class="m-0">Platform and device agnostic</li>
+                <li class="m-0">Easily accessible</li>
+                <li class="m-0">Deemed home screen worthy</li>
+                <li class="m-0">Seamless offline capability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -147,16 +116,14 @@
 <script>
 import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
-import Tab from '~/components/Tab.vue';
-import Tabs from '~/components/Tabs.vue';
+import Ship from '~/assets/svgs/illustrations/ship.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
     EmberConsultingIcon,
     HeroBlock,
-    Tab,
-    Tabs
+    Ship
   },
 
   head() {
