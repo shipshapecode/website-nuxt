@@ -54,44 +54,77 @@
           </h3>
         </div>
         <div class="flex flex-grow flex-wrap lg:flex-1">
-          <div class="max-w-xs">
+          <div class="max-w-md">
             <img
               class="mb-4"
               src="/img/blog/authors/robbie.jpg"
               alt="A picture of Robbie Wagner"
             />
             <h3 class="heading text-red text-2xl">
-              Robbie Wagner
+              Robbie Wagner, CEO
             </h3>
 
-            <p class="text-white">
-              CEO
-            </p>
-
-            <p class="text-white">
-              Description here
-            </p>
+            <ul class="text-white">
+              <li class="list-disc">
+                <span class="font-black">Years of experience:</span> Started
+                developing in Ember back in 2012 while working for a startup,
+                Mail Pilot.
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  How did you arrive at Ship Shape?:
+                </span>
+                I worked at several Ember companies like RSA, and started
+                working on the side doing Ember consulting. Eventually, I
+                decided to transition full-time and created Ship Shape.
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Involvement in the Community:
+                </span>
+                I am active on the Ember Learning Team. I am speaking at
+                EmberConf in 2020. I’ve also led a sold out workshop at
+                EmberConf on performance.
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Where you're from?:
+                </span>
+                Born and raised in Roanoke, Virginia, I went to school at
+                Virginia Tech, and now live in Alexandria, VA.
+              </li>
+            </ul>
           </div>
         </div>
 
         <div class="flex flex-grow flex-wrap lg:flex-1">
-          <div class="max-w-xs">
+          <div class="max-w-md">
             <img
               class="mb-4"
               src="/img/blog/authors/chuck.jpg"
               alt="A picture of Chuck Carpenter"
             />
             <h3 class="heading text-red text-2xl">
-              Chuck Carpenter
+              Chuck Carpenter, COO
             </h3>
 
-            <p class="text-white">
-              COO
-            </p>
-
-            <p class="text-white">
-              Description here
-            </p>
+            <ul class="text-white">
+              <li class="list-disc">
+                <span class="font-black">Years of experience:</span> 18+ years
+                making things on the internet
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  How did you arrive at Ship Shape?:
+                </span>
+                At a time when the lines between web development and design were
+                heavily blurred, I learned to create sites buried in HTML tables
+                for layout and images cut up in Adobe Photoshop. As those
+                standards evolved, I’ve built experiences and applications
+                solving issues from media delivery, marketing analytics, and
+                entire business process management.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
