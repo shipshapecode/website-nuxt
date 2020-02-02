@@ -30,7 +30,7 @@
             </p>
 
             <nuxt-link class="learn-more" to="/contact/">
-              Learn More
+              Learn more
               <AngleRight class="h-4 inline mb-1 w-4" />
             </nuxt-link>
           </div>

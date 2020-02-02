@@ -12,7 +12,7 @@
 
         <p>
           Jebbit is an enterprise software platform that enables a future of
-          total data transparency between brands and consumers. Jebbit’s mission
+          total data transparency between brands and consumers. Jebbit's mission
           is to make every brand-and-consumer interaction assumption free by
           asking consumers explicitly and directly about their interests,
           motivations, and preferences.

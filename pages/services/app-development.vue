@@ -6,7 +6,7 @@
           App Development
         </h1>
         <p>
-          We’ve translated our expertise in full-stack engineering and front-end
+          We've translated our expertise in full-stack engineering and front-end
           to back-end design to expand on the possibilities of progressive web
           apps.
         </p>
@@ -39,7 +39,7 @@
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
-                  Save Time and Money
+                  Save time and money
                 </h3>
 
                 <p>
@@ -58,11 +58,11 @@
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <h3 class="text-navy">
-                  Who’s Using PWA’s?
+                  Who's Using PWA's?
                 </h3>
 
                 <p>
-                  The benefits of PWA’s caught the attention of several market
+                  The benefits of PWAs caught the attention of several market
                   players including Twitter, AliExpress, Alibaba, The Washington
                   Post, Home Depot, Forbes and more.
                 </p>

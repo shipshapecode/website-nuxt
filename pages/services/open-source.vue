@@ -7,8 +7,8 @@
         </h1>
         <p>
           We believe code should be accessible to all. Ship Shape's open source
-          projects enable us to play an active role in improving the world of
-          developers globally.
+          projects enable us to play an active role in the day-to-day lives of
+          developers.
         </p>
         <div>
           <nuxt-link to="/community/" class="btn-navy">
@@ -27,23 +27,29 @@
     <div class="section bg-grey-transparent flex flex-wrap justify-center">
       <div class="section-content">
         <h2 class="heading">
-          Sponsored Open Source Development
+          Sponsored Open Source
         </h2>
 
         <p class="max-w-5xl">
-          Ember could not be the incredible framework it is, without companies
-          helping fund its progress. Whether you need an Ember addon to
-          implement your favorite library in native Ember, a custom Ember data
-          adapter for your API setup, or changes to Ember itself, sponsored open
-          source development can help give back to the community, while also
-          solving your business needs.
+          From addons to custom Ember data adapters, our projects propel our
+          community forward. Ship Shape's open source contributions have been
+          downloaded millions of times by developers worldwide. Paid work
+          enables people from different walks of life to make meaningful
+          contributions. Interested in sponsoring or partnering with Ship Shape?
+          Contact us today.
         </p>
+
+        <nuxt-link class="learn-more" to="/contact/">
+          Contact us
+          <AngleRight class="h-4 inline mb-1 w-4" />
+        </nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import AngleRight from '~/assets/svgs/angle-right.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import OpenSourceIcon from '~/assets/svgs/hero-images/open-source.svg?inline';
 import PortfolioContainer from '~/components/PortfolioContainer.vue';
@@ -51,6 +57,7 @@ import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
+    AngleRight,
     HeroBlock,
     OpenSourceIcon,
     PortfolioContainer

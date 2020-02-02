@@ -7,7 +7,7 @@
         </h1>
         <p>
           Nuxt.js is a higher-level framework that simplifies the development of
-          universal or single page Vue apps. With Nuxt.js, Ship Shape’s team can
+          universal or single page Vue apps. With Nuxt.js, Ship Shape's team can
           write and build universal apps simply.
         </p>
         <div>

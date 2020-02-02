@@ -7,7 +7,7 @@
         </h1>
         <p>
           Unlike large corporations with offshore developers, Ship Shape crafts
-          homegrown, bespoke solutions to solve problems. This is how we’re
+          homegrown, bespoke solutions to solve problems. This is how we're
           making waves for clients nationwide like Netflix and SocialCode.
         </p>
         <div>

@@ -1,6 +1,6 @@
 <template>
   <footer class="wave text-base">
-    <div class="footer-top">
+    <div class="footer-top" data-aos="zoom-in-up">
       <div class="text-center pt-32 lg:pb-32">
         <compass class="inline m-8" />
 

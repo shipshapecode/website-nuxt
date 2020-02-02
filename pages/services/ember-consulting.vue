@@ -3,16 +3,16 @@
     <HeroBlock class="ember-consulting">
       <template v-slot:content>
         <h1 class="heading" itemprop="name">
-          Ember.js Consulting and Training
+          Ember Consulting
         </h1>
         <p>
-          We've been using Ember since 2012, and have helped countless clients,
-          from startups to large corporations, build scalable and maintainable
-          apps that stand the test of time.
+          Ship Shape's ambitious team of experts provide the guidance and
+          manpower that helps you build fast and responsive web applications
+          using Ember.js.
         </p>
         <div>
           <nuxt-link class="btn-navy" to="/contact/">
-            Let's build together
+            Start consultation
           </nuxt-link>
         </div>
       </template>
@@ -35,7 +35,7 @@
             class="font-light text-navy text-2xl lg:text-4xl"
             itemprop="reviewBody"
           >
-            Ship Shape knows what they’re doing. A thoughtful approach, pristine
+            Ship Shape knows what they're doing. A thoughtful approach, pristine
             code and a 200% effort in everything they do, makes recommending
             them a no-brainer.
           </h2>
@@ -60,12 +60,10 @@
     </div>
 
     <WhyEmber />
-    <CommunityInvolvement />
   </div>
 </template>
 
 <script>
-import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
 import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import WhyEmber from '~/components/WhyEmber';
@@ -73,7 +71,6 @@ import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    CommunityInvolvement,
     EmberConsultingIcon,
     HeroBlock,
     WhyEmber

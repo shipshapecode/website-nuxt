@@ -31,7 +31,7 @@
 
           <p>
             <a class="learn-more" href="https://youtu.be/u5onNDpt8ks">
-              Learn More
+              Learn more
               <AngleRight class="h-4 inline mb-1 w-4" />
             </a>
           </p>
@@ -68,7 +68,7 @@
 
           <p>
             <a class="learn-more" href="https://www.meetup.com/EmberJS-NYC/">
-              Learn More
+              Learn more
               <AngleRight class="h-4 inline mb-1 w-4" />
             </a>
           </p>
@@ -91,7 +91,7 @@
 
           <p>
             <a class="learn-more" href="https://embercares.com/">
-              Learn More
+              Learn more
               <AngleRight class="h-4 inline mb-1 w-4" />
             </a>
           </p>
@@ -118,7 +118,7 @@
               class="learn-more"
               href="https://2018.emberconf.com/schedule.html#e-improving-ember-app-performance"
             >
-              Learn More
+              Learn more
               <AngleRight class="h-4 inline mb-1 w-4" />
             </a>
           </p>
@@ -147,7 +147,7 @@
           <div>
             <p>
               <a class="learn-more" href="https://www.meetup.com/Ember-JS-DC/">
-                Learn More
+                Learn more
                 <AngleRight class="h-4 inline mb-1 w-4" />
               </a>
             </p>

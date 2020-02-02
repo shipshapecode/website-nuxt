@@ -24,6 +24,8 @@
     </HeroBlock>
 
     <CommunityInvolvement />
+
+    <RecentBlogPosts :posts="posts" />
   </div>
 </template>
 
@@ -31,13 +33,21 @@
 import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
 import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
+import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import { generateMeta } from '~/utils/meta';
+import { getBlogData } from '~/utils/blog';
 
 export default {
   components: {
     CommunityInvolvement,
     EmberConsultingIcon,
-    HeroBlock
+    HeroBlock,
+    RecentBlogPosts
+  },
+
+  async asyncData() {
+    const { posts } = await getBlogData();
+    return { posts: posts.slice(0, 3) };
   },
 
   head() {
