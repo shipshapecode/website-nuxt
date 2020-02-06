@@ -93,6 +93,20 @@
                 Born and raised in Roanoke, Virginia, I went to school at
                 Virginia Tech, and now live in Alexandria, VA.
               </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Projects you're most proud of:
+                </span>
+                I'm proud of the work our guys did on Jebbit and I’m also proud
+                of the dashboards I have been building for my current client,
+                Expel!
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Expertise:
+                </span>
+                Ember.js, Nuxt.js, JavaScript
+              </li>
             </ul>
           </div>
         </div>
@@ -123,6 +137,41 @@
                 standards evolved, I’ve built experiences and applications
                 solving issues from media delivery, marketing analytics, and
                 entire business process management.
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Awards or Honors:
+                </span>
+                Webby Award Winner for the National Geographic Magazine’s
+                website and also the Direct Selling Association Innovation in
+                Technology Award on office system.
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Where you're from?:
+                </span>
+                Northern Kentucky/Cincinnati tri-state area. I lived in DC for
+                awhile and now I currently reside in Phoenix, Arizona.
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Projects you're most proud of:
+                </span>
+                Building the completely redesigned Jebbit MVP for their campaign
+                flow. Jebbit had an extremely complex system for creating
+                campaigns and after a lot of research with their customers, an
+                entirely simplified experience has been created to allow for
+                detailed configuration and true ease to get from start to live
+                campaign quickly.
+              </li>
+              <li class="list-disc">
+                <span class="font-black">
+                  Expertise:
+                </span>
+                Leading teams to deliver high quality, nimble, reliable, and
+                valuable products in order to create demand and increase their
+                user base. Sometimes I make stuff in Javascript, Python, and
+                GraphQL.
               </li>
             </ul>
           </div>
