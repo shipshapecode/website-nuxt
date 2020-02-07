@@ -51,12 +51,12 @@
 
     <div class="section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="w-full">
+        <div class="mb-20 w-full">
           <h6 class="m-0 text-red text-xs uppercase">
             Our team
           </h6>
 
-          <h2 class="text-navy">
+          <h2 class="text-navy text-5xl">
             Get to know us
           </h2>
         </div>
