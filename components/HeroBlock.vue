@@ -10,10 +10,7 @@
           </div>
         </div>
 
-        <div
-          class="w-full text-center lg:pr-12 lg:w-1/2 lg:p-12"
-          data-aos="fade-up"
-        >
+        <div class="w-full lg:pr-12 lg:w-1/2 lg:p-12" data-aos="fade-up">
           <slot name="icon" />
         </div>
       </div>
