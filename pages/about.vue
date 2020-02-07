@@ -23,7 +23,7 @@
 
     <div class="section bg-navy flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="bg-navy-light h-80 max-w-2xl p-12 w-full lg:w-1/2">
+        <div class="bg-navy-light h-80 max-w-2xl p-16 w-full lg:w-1/2">
           <h3 class="text-white">
             Our Clients
           </h3>
@@ -35,7 +35,7 @@
         </div>
 
         <div
-          class="bg-navy-light h-80 m-auto max-w-2xl mt-12 p-12 w-full lg:w-1/2"
+          class="bg-navy-light h-80 m-auto max-w-2xl mt-12 p-16 w-full lg:w-1/2"
         >
           <h3 class="text-white">
             Our Community
