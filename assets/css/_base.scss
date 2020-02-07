@@ -26,6 +26,11 @@ a {
   transition-duration: 0.25s;
   transition-property: background-color, color, fill;
 
+  &:active,
+  &:visited {
+    color: $red;
+  }
+  
   &:hover {
     color: $navy;
   }

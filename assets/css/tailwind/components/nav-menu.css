@@ -9,7 +9,7 @@
 }
 
 .nav-link {
-  @apply block font-bold p-4 text-base;
+  @apply block font-bold p-4 text-base text-grey;
 }
 
 .contact-link {
@@ -22,10 +22,52 @@
   }
 
   .contact-link {
-    @apply -mt-12 inset-auto pt-16 static text-white w-auto;
+    @apply bg-navy -mt-12 inset-auto pt-16 static text-white w-auto;
   }
+}
+
+.nav-link:active,
+.nav-link:visited {
+  @apply text-grey;
+}
+
+.contact-link:active,
+.contact-link:visited {
+  @apply text-white;
+}
+
+.nav-link:hover {
+  @apply text-navy;
 }
 
 .contact-link:hover {
   @apply text-gold;
+}
+
+@screen lg {
+  .nav-link-alt {
+    @apply block font-bold p-4 text-base text-white;
+  }
+  
+  .nav-link-alt:active,
+  .nav-link-alt:visited {
+    @apply text-white;
+  }
+  
+  .nav-link-alt:hover {
+    @apply text-gold;
+  }
+  
+  .contact-link-alt {
+    @apply bg-white -mt-12 inset-auto pt-16 static text-navy w-auto;
+  }
+  
+  .contact-link-alt:active,
+  .contact-link-alt:visited {
+    @apply text-navy;
+  }
+  
+  .contact-link-alt:hover {
+    @apply text-gold;
+  }
 }

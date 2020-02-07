@@ -60,8 +60,7 @@
         <nuxt-link
           class="nav-link"
           :class="{
-            'text-grey hover:text-navy': this.$route.name !== 'about',
-            'text-white hover:text-grey': this.$route.name === 'about'
+            'nav-link-alt': this.$route.name === 'about'
           }"
           to="/services/"
           @click.native="toggleNavMenu(false)"
@@ -72,8 +71,7 @@
         <nuxt-link
           class="nav-link"
           :class="{
-            'text-grey hover:text-navy': this.$route.name !== 'about',
-            'text-white hover:text-grey': this.$route.name === 'about'
+            'nav-link-alt': this.$route.name === 'about'
           }"
           to="/work/"
           @click.native="toggleNavMenu(false)"
@@ -84,8 +82,7 @@
         <nuxt-link
           class="nav-link"
           :class="{
-            'text-grey hover:text-navy': this.$route.name !== 'about',
-            'text-white hover:text-grey': this.$route.name === 'about'
+            'nav-link-alt': this.$route.name === 'about'
           }"
           to="/about/"
           @click.native="toggleNavMenu(false)"
@@ -96,8 +93,7 @@
         <nuxt-link
           class="nav-link"
           :class="{
-            'text-grey hover:text-navy': this.$route.name !== 'about',
-            'text-white hover:text-grey': this.$route.name === 'about'
+            'nav-link-alt': this.$route.name === 'about'
           }"
           to="/blog/"
           @click.native="toggleNavMenu(false)"
@@ -108,10 +104,7 @@
         <nuxt-link
           class="nav-link contact-link"
           :class="{
-            'text-white hover:text-gold lg:bg-navy':
-              this.$route.name !== 'about',
-            'text-navy hover:text-grey lg:bg-white':
-              this.$route.name === 'about'
+            'contact-link-alt': this.$route.name === 'about'
           }"
           to="/contact/"
           @click.native="toggleNavMenu(false)"
