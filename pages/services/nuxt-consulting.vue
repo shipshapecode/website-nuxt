@@ -22,21 +22,64 @@
       </template>
     </HeroBlock>
 
-    <WhyNuxt />
+    <div class="bg-navy section flex flex-wrap justify-center">
+      <div class="section-content">
+        <h2 class="text-center text-white w-full">
+          Why use Nuxt?
+        </h2>
+
+        <div class="flex flex-wrap">
+          <div class="flex flex-wrap w-full lg:flex-no-wrap">
+            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+              <h5 class="text-white">Reason 1</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
+                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+              </p>
+            </div>
+            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+              <h5 class="text-white">Reason 2</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
+                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap w-full lg:flex-no-wrap">
+            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+              <h5 class="text-white">Reason 3</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
+                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+              </p>
+            </div>
+            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+              <h5 class="text-white">Reason 4</h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
+                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
-import WhyNuxt from '~/components/WhyNuxt';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
     EmberConsultingIcon,
-    HeroBlock,
-    WhyNuxt
+    HeroBlock
   },
 
   head() {
