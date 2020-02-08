@@ -1,29 +1,37 @@
 <template>
   <div>
-    <HeroBlock class="about bg-navy flex h-140 items-center text-white">
+    <HeroBlock class="about text-white">
       <template v-slot:content> </template>
       <template v-slot:icon>
-        <h1 class="heading text-white">
-          About Ship Shape
-        </h1>
-        <p>
-          Ship Shape leads the future of full-stack web app development. Our
-          clients work with us because we are a one-stop boutique firm with over
-          25+ years combined experience - from full-stack engineering, to
-          front-end to back-end design and more. When you bring your idea to us,
-          it's smooth sailing.
-        </p>
-        <div>
-          <nuxt-link class="btn-white" to="/contact/">
-            Let's build together
-          </nuxt-link>
+        <div class="m-auto max-w-2xl">
+          <h1 class="heading text-white">
+            About Ship Shape
+          </h1>
+
+          <p>
+            Ship Shape leads the future of full-stack web app development. Our
+            clients work with us because we are a one-stop boutique firm with
+            over 25+ years combined experience - from full-stack engineering, to
+            front-end to back-end design and more. When you bring your idea to
+            us, it's smooth sailing.
+          </p>
+
+          <div>
+            <nuxt-link class="btn-white" to="/contact/">
+              Let's build together
+            </nuxt-link>
+          </div>
         </div>
       </template>
     </HeroBlock>
 
     <div class="section bg-navy flex justify-center">
-      <div class="section-content flex flex-wrap justify-center">
-        <div class="bg-navy-light h-80 max-w-2xl p-16 w-full lg:w-1/2">
+      <div
+        class="section-content flex flex-wrap justify-center lg:flex-no-wrap"
+      >
+        <div
+          class="bg-navy-light flex flex-col justify-center min-h-80 mt-12 p-8 w-full lg:h-80 lg:mr-12 lg:mt-0 lg:p-16 lg:w-1/2"
+        >
           <h3 class="text-white">
             Our Clients
           </h3>
@@ -35,7 +43,7 @@
         </div>
 
         <div
-          class="bg-navy-light h-80 m-auto max-w-2xl mt-12 p-16 w-full lg:w-1/2"
+          class="bg-navy-light flex flex-col justify-center m-auto min-h-80 mt-12 p-8 w-full lg:h-80 lg:p-16 lg:w-1/2"
         >
           <h3 class="text-white">
             Our Community
@@ -49,7 +57,7 @@
       </div>
     </div>
 
-    <div class="section flex justify-center">
+    <div class="bg-white section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
         <div class="mb-20 w-full">
           <h6 class="m-0 text-red text-xs uppercase">

@@ -37,10 +37,12 @@ module.exports = {
       full: '100%'
     },
 
-    // height: {
-    //   auto: 'auto',
-    //   px: '1px',
-    // },
+    minHeight: {
+      '0': '0',
+      '80': '20rem',
+      full: '100%',
+      screen: '100vh'
+    },
 
     spacing: {
       px: '1px',
@@ -71,7 +73,7 @@ module.exports = {
   plugins: [
     gradient({
       gradients: {
-        'brokermate': ['#3FB7E6', '#782599']
+        brokermate: ['#3FB7E6', '#782599']
       }
     })
   ],

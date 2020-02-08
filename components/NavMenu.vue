@@ -1,8 +1,5 @@
 <template>
-  <nav
-    class="flex items-center justify-between flex-wrap p-6"
-    :class="{ 'bg-navy': this.$route.name === 'about' }"
-  >
+  <nav class="bg-transparent flex items-center justify-between flex-wrap p-6">
     <div class="flex flex-no-shrink items-center pr-2 pt-2">
       <nuxt-link to="/" class="logo inline-flex" itemprop="url">
         <div

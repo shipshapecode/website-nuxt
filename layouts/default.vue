@@ -3,6 +3,7 @@
     itemscope
     itemtype="https://schema.org/Organization"
     itemid="shipshapeorg"
+    :class="{ 'bg-navy': this.$route.name === 'about' }"
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC" />
 
