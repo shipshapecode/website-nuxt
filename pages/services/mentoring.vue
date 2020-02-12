@@ -19,7 +19,7 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon class="m-auto max-w-2xl" />
+        <MentoringIcon class="m-auto max-w-2xl" />
       </template>
     </HeroBlock>
 
@@ -28,14 +28,14 @@
 </template>
 
 <script>
-import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
+import MentoringIcon from '~/assets/svgs/hero-images/mentoring.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import MentoringBlurbs from '~/components/MentoringBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    EmberConsultingIcon,
+    MentoringIcon,
     HeroBlock,
     MentoringBlurbs
   },
