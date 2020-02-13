@@ -18,29 +18,33 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon class="m-auto max-w-2xl" />
+        <AppDevelopmentIcon class="m-auto max-w-2xl" />
       </template>
     </HeroBlock>
 
-    <div class="section flex flex-wrap justify-center bg-grey-transparent">
+    <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="heading">
-          Combining the Best of Web And Mobile
-        </h2>
+        <div class="flex flex-col items-center mb-12 text-center w-full">
+          <h2 class="heading text-5xl text-white">
+            Combining the Best of Web And Mobile
+          </h2>
 
-        <p class="max-w-5xl">
-          Ship Shape enhances UX through progressive web apps. Our clients
-          experience the best of traditional and mobile web apps for any
-          platform that uses a standards-compliant browser.
-        </p>
+          <p class="max-w-3xl">
+            Ship Shape enhances UX through progressive web apps. Our clients
+            experience the best of traditional and mobile web apps for any
+            platform that uses a standards-compliant browser.
+          </p>
+        </div>
 
-        <div class="flex flex-wrap justify-center">
-          <div class="pb-2 pt-2 w-full lg:w-1/2 lg:pr-16">
+        <div class="flex flex-wrap justify-center lg:flex-no-wrap">
+          <div class="bg-navy-light p-12 w-full lg:w-1/2 lg:mr-4">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
+                <TimeIcon class="h-20 inline-block mb-12 w-20" />
+
+                <h5 class="text-white">
                   Save time and money
-                </h3>
+                </h5>
 
                 <p>
                   PWAs can replace all of the functions of native apps and
@@ -54,12 +58,14 @@
             </div>
           </div>
 
-          <div class="pb-2 pt-2 w-full lg:w-1/2 lg:pl-16">
+          <div class="bg-navy-light p-12 w-full lg:w-1/2 lg:ml-4">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
+                <PWAIcon class="h-20 inline-block mb-12 w-20" />
+
+                <h5 class="text-white">
                   Who's Using PWA's?
-                </h3>
+                </h5>
 
                 <p>
                   The benefits of PWAs caught the attention of several market
@@ -80,7 +86,7 @@
             class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
             data-aos="fade-up"
           >
-            <Ship class="m-auto max-w-2xl" />
+            <AppIcon class="m-auto max-w-2xl" />
           </div>
           <div
             class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
@@ -114,16 +120,20 @@
 </template>
 
 <script>
-import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
+import AppDevelopmentIcon from '~/assets/svgs/hero-images/app-development.svg?inline';
+import AppIcon from '~/assets/svgs/pages/app-development/app.svg?inline';
+import PWAIcon from '~/assets/svgs/pages/app-development/pwa.svg?inline';
+import TimeIcon from '~/assets/svgs/pages/app-development/time.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
-import Ship from '~/assets/svgs/illustrations/ship.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    EmberConsultingIcon,
-    HeroBlock,
-    Ship
+    AppDevelopmentIcon,
+    AppIcon,
+    PWAIcon,
+    TimeIcon,
+    HeroBlock
   },
 
   head() {

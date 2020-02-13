@@ -19,6 +19,8 @@
           data-aos="fade-up"
         >
           <div class="flex flex-col w-full">
+            <RetainerIcon class="h-20 inline-block mb-12 w-20" />
+
             <h3 class="text-white text-xl" itemprop="name">
               The Ship Shape Retainer Model
             </h3>
@@ -43,6 +45,8 @@
           data-aos="fade-up"
         >
           <div class="flex flex-col w-full">
+            <StaffIcon class="h-20 inline-block mb-12 w-20" />
+
             <h3 class="text-white text-xl" itemprop="name">
               Staff Augmentation
             </h3>
@@ -67,6 +71,8 @@
           data-aos="fade-up"
         >
           <div class="flex flex-col w-full">
+            <MentorIcon class="h-20 inline-block mb-12 w-20" />
+
             <h3 class="text-white text-xl" itemprop="name">
               Learn the ropes
             </h3>
@@ -86,3 +92,17 @@
     </div>
   </div>
 </template>
+
+<script>
+import MentorIcon from '~/assets/svgs/pages/mentoring/mentor.svg?inline';
+import RetainerIcon from '~/assets/svgs/pages/mentoring/retainer.svg?inline';
+import StaffIcon from '~/assets/svgs/pages/mentoring/staff.svg?inline';
+
+export default {
+  components: {
+    MentorIcon,
+    RetainerIcon,
+    StaffIcon
+  }
+};
+</script>
