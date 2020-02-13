@@ -4,7 +4,7 @@
     class="contact-form section flex flex-wrap justify-center w-full"
   >
     <div class="section-content flex flex-wrap justify-center">
-      <h1 class="heading text-3xl sm:text-6xl">
+      <h1 class="heading">
         All Hands on Deck
       </h1>
 

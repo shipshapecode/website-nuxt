@@ -52,6 +52,12 @@ h6 {
   @apply heading;
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    @apply leading-tight text-3xl;
+  }
+}
+
 .cd-form {
   input[type="submit"] {
     &:disabled {

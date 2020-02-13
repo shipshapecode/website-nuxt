@@ -2,7 +2,7 @@
   <div>
     <HeroBlock class="services">
       <template v-slot:content>
-        <h1 class="heading text-3xl sm:text-6xl">
+        <h1 class="heading">
           Our Services
         </h1>
         <p>
