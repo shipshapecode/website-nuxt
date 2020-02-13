@@ -32,7 +32,7 @@
               pair programming and coaching for your team.
             </p>
 
-            <nuxt-link class="btn-white text-center" to="/contact/">
+            <nuxt-link class="btn btn-white text-center" to="/contact/">
               Learn more
             </nuxt-link>
           </div>
@@ -58,7 +58,7 @@
               lend our expertise in Ember.
             </p>
 
-            <nuxt-link class="btn-white text-center" to="/contact/">
+            <nuxt-link class="btn btn-white text-center" to="/contact/">
               Let's Build Together
             </nuxt-link>
           </div>
@@ -83,7 +83,7 @@
               latest in Javascript, code writing and Ember.js. development.
             </p>
 
-            <nuxt-link class="btn-white text-center" to="/contact/">
+            <nuxt-link class="btn btn-white text-center" to="/contact/">
               Sign Up for Team Training
             </nuxt-link>
           </div>

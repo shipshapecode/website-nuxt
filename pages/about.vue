@@ -17,7 +17,7 @@
           </p>
 
           <div>
-            <nuxt-link class="btn-white" to="/contact/">
+            <nuxt-link class="btn btn-white" to="/contact/">
               Let's build together
             </nuxt-link>
           </div>

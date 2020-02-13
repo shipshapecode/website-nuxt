@@ -12,7 +12,7 @@
           further Ember as a framework and as a community.
         </p>
         <div>
-          <nuxt-link class="btn-navy" to="/services/">
+          <nuxt-link class="btn btn-navy" to="/services/">
             Learn more
           </nuxt-link>
         </div>

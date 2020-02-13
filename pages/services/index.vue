@@ -11,7 +11,7 @@
           up.
         </p>
         <div>
-          <nuxt-link class="btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-navy" to="/contact/">
             Work with us
           </nuxt-link>
         </div>

@@ -11,7 +11,7 @@
           making waves for clients nationwide like Netflix and SocialCode.
         </p>
         <div>
-          <nuxt-link to="/contact/" class="btn-navy">
+          <nuxt-link to="/contact/" class="btn btn-navy">
             Let's build together
           </nuxt-link>
         </div>

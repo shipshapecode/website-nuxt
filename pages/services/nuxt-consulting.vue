@@ -11,7 +11,7 @@
           write and build universal apps simply.
         </p>
         <div>
-          <nuxt-link class="btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-navy" to="/contact/">
             Get started
           </nuxt-link>
         </div>

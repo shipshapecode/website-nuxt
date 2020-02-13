@@ -11,7 +11,7 @@
           developers.
         </p>
         <div>
-          <nuxt-link to="/community/" class="btn-navy">
+          <nuxt-link to="/community/" class="btn btn-navy">
             Join our community
           </nuxt-link>
         </div>

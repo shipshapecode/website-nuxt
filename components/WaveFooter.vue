@@ -12,7 +12,7 @@
           Let us help you exceed your company and team goals.
         </p>
 
-        <nuxt-link class="btn-gold inline-block m-12" to="/contact/">
+        <nuxt-link class="btn btn-gold inline-block m-12" to="/contact/">
           Let's talk
         </nuxt-link>
       </div>

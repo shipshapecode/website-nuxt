@@ -8,7 +8,7 @@
           Building finance tools for the world's number one streaming platform
         </p>
 
-        <nuxt-link class="btn-navy mb-12" to="/work/netflix/">
+        <nuxt-link class="btn btn-navy mb-12" to="/work/netflix/">
           View Case
         </nuxt-link>
       </div>
@@ -22,7 +22,7 @@
           Simplifying the way Jebbit customers create their marketing campaigns.
         </p>
 
-        <nuxt-link class="btn-navy mb-12" to="/work/jebbit/">
+        <nuxt-link class="btn btn-navy mb-12" to="/work/jebbit/">
           View Case
         </nuxt-link>
       </div>
@@ -38,7 +38,7 @@
           Creating in depth site tours with Shepherd
         </p>
 
-        <nuxt-link class="btn-navy mb-12" to="/work/brokermate/">
+        <nuxt-link class="btn btn-navy mb-12" to="/work/brokermate/">
           View Case
         </nuxt-link>
       </div>
@@ -53,7 +53,7 @@
           media
         </p>
 
-        <nuxt-link class="btn-navy mb-12" to="/work/socialcode/">
+        <nuxt-link class="btn btn-navy mb-12" to="/work/socialcode/">
           View Case
         </nuxt-link>
       </div>

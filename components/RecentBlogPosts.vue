@@ -30,7 +30,7 @@
         </div>
 
         <div class="text-center w-full">
-          <nuxt-link to="/blog/" class="btn-navy mb-12">
+          <nuxt-link to="/blog/" class="btn btn-navy mb-12">
             View all posts
           </nuxt-link>
         </div>

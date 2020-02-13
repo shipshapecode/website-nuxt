@@ -11,7 +11,7 @@
           help new users get up to speed quickly with your web app.
         </p>
         <div>
-          <nuxt-link class="btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-navy" to="/contact/">
             Let's build together
           </nuxt-link>
         </div>

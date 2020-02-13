@@ -3,7 +3,7 @@
     <div class="section-content">
       <div class="flex flex-wrap items-center">
         <div
-          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-96 lg:ml-0 lg:p-12"
+          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-104 lg:ml-0 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -28,7 +28,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-96 lg:mr-0 lg:p-12"
+          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-104 lg:mr-0 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -54,7 +54,7 @@
 
       <div class="flex flex-wrap items-center">
         <div
-          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-96 lg:ml-0 lg:p-12"
+          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-104 lg:ml-0 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -80,7 +80,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-96 lg:mr-0 lg:p-12"
+          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-104 lg:mr-0 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -108,7 +108,7 @@
 
       <div class="flex flex-wrap items-center">
         <div
-          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-96 lg:ml-0 lg:p-12"
+          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-104 lg:ml-0 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -131,7 +131,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-96 lg:mr-0 lg:p-12"
+          class="bg-white flex flex-grow m-2 p-6 justify-center lg:flex-1 lg:h-104 lg:mr-0 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"

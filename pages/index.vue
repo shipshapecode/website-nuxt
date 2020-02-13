@@ -12,7 +12,7 @@
           for the development community.
         </p>
         <div>
-          <nuxt-link to="/work/" class="btn-navy">
+          <nuxt-link to="/work/" class="btn btn-navy">
             Check out our work
           </nuxt-link>
         </div>
