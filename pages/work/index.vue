@@ -2,7 +2,7 @@
   <div>
     <HeroBlock class="work">
       <template v-slot:content>
-        <h1 class="heading">
+        <h1 class="heading text-3xl sm:text-6xl">
           Making Waves
         </h1>
         <p>

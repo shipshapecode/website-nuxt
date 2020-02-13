@@ -2,8 +2,8 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="nuxt-consulting">
       <template v-slot:content>
-        <h1 class="heading" itemprop="name">
-          A Framework for Your Framework
+        <h1 class="heading text-3xl sm:text-6xl" itemprop="name">
+          Nuxt Consulting
         </h1>
         <p>
           Nuxt.js is a higher-level framework that simplifies the development of

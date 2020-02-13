@@ -13,8 +13,8 @@
         </p>
       </div>
 
-      <div class="flex flex-wrap">
-        <div class="w-full lg:pr-12 lg:w-1/3">
+      <div class="flex flex-wrap lg:flex-no-wrap">
+        <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
             <EmberConf class="ember-image inline p-12" />
           </div>
@@ -37,7 +37,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:pl-6 lg:pr-6 lg:w-1/3">
+        <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
             <img
               class="ember-image inline p-8"
@@ -74,7 +74,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:pl-12 lg:w-1/3">
+        <div class="w-full lg:w-1/3">
           <div class="text-center w-full">
             <EmberCares class="ember-image inline p-4" />
           </div>
@@ -96,8 +96,10 @@
             </a>
           </p>
         </div>
+      </div>
 
-        <div class="w-full lg:pr-12 lg:w-1/3">
+      <div class="flex flex-wrap lg:flex-no-wrap">
+        <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
             <EmberConf class="ember-image inline p-12" />
           </div>
@@ -124,7 +126,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:pl-6 lg:pr-6 lg:w-1/3">
+        <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
             <img
               class="ember-image inline p-8"
@@ -153,6 +155,8 @@
             </p>
           </div>
         </div>
+
+        <div class="w-full lg:w-1/3"></div>
       </div>
     </div>
   </div>
@@ -176,5 +180,9 @@ export default {
 .ember-image {
   height: 200px;
   width: auto;
+
+  @media only screen and (max-width: 600px) {
+    height: 175px;
+  }
 }
 </style>

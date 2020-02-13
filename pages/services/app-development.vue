@@ -2,7 +2,7 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="web-apps">
       <template v-slot:content>
-        <h1 class="heading" itemprop="name">
+        <h1 class="heading text-3xl sm:text-6xl" itemprop="name">
           App Development
         </h1>
         <p>
@@ -37,7 +37,7 @@
         </div>
 
         <div class="flex flex-wrap justify-center lg:flex-no-wrap">
-          <div class="bg-navy-light mb-8 p-12 w-full lg:w-1/2 lg:mr-4">
+          <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <TimeIcon class="h-20 inline-block mb-12 w-20" />
@@ -58,7 +58,7 @@
             </div>
           </div>
 
-          <div class="bg-navy-light mb-8 p-12 w-full lg:w-1/2 lg:ml-4">
+          <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <PWAIcon class="h-20 inline-block mb-12 w-20" />

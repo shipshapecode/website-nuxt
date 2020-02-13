@@ -1,17 +1,17 @@
 .btn {
-  @apply font-bold inline-block pb-4 pl-12 pr-12 pt-4 rounded text-base text-white whitespace-no-wrap;
+  @apply font-bold inline-block pb-4 pl-12 pr-12 pt-4 rounded text-base whitespace-no-wrap;
 }
 
 .btn-gold {
-  @apply btn bg-gold;
+  @apply btn bg-gold text-white;
 }
 
 .btn-navy {
-  @apply btn bg-navy;
+  @apply btn bg-navy text-white;
 }
 
 .btn-white {
-  @apply btn bg-white;
+  @apply btn bg-white text-navy;
 }
 
 .btn-white:active,

@@ -2,7 +2,7 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="app-tours">
       <template v-slot:content>
-        <h1 class="heading" itemprop="name">
+        <h1 class="heading text-3xl sm:text-6xl" itemprop="name">
           App Tours with Shepherd.js
         </h1>
         <p>

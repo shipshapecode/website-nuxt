@@ -2,7 +2,7 @@
   <div>
     <HeroBlock class="open-source">
       <template v-slot:content>
-        <h1 class="heading">
+        <h1 class="heading text-3xl sm:text-6xl">
           Our Open Source Community
         </h1>
         <p>

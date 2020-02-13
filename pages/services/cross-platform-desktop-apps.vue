@@ -2,7 +2,7 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="cross-platform-desktop-apps">
       <template v-slot:content>
-        <h1 class="heading" itemprop="name">
+        <h1 class="heading text-3xl sm:text-6xl" itemprop="name">
           Cross Platform Desktop Apps
         </h1>
         <p>

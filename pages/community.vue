@@ -2,7 +2,7 @@
   <div>
     <HeroBlock class="ember-consulting">
       <template v-slot:content>
-        <h1 class="heading">
+        <h1 class="heading text-5xl sm:text-6xl">
           Building Our Community
         </h1>
         <p>
