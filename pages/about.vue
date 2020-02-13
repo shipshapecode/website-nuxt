@@ -30,8 +30,12 @@
         class="section-content flex flex-wrap justify-center lg:flex-no-wrap"
       >
         <div
-          class="bg-navy-light flex flex-col justify-center min-h-80 mt-12 p-8 w-full lg:h-80 lg:mr-12 lg:mt-0 lg:p-16 lg:w-1/2"
+          class="bg-navy-light flex flex-col justify-center min-h-80 mt-12 p-12 w-full lg:h-96 lg:mr-12 lg:mt-0 lg:p-24 lg:w-1/2"
         >
+          <div class="h-24 inline-block mb-8 mt-8 w-24">
+            <ClientIcon />
+          </div>
+
           <h3 class="text-white">
             Our Clients
           </h3>
@@ -43,8 +47,12 @@
         </div>
 
         <div
-          class="bg-navy-light flex flex-col justify-center m-auto min-h-80 mt-12 p-8 w-full lg:h-80 lg:p-16 lg:w-1/2"
+          class="bg-navy-light flex flex-col justify-center m-auto min-h-80 mt-12 p-12 w-full lg:h-96 lg:p-24 lg:w-1/2"
         >
+          <div class="h-24 inline-block mb-8 mt-8 w-24">
+            <CommunityIcon />
+          </div>
+
           <h3 class="text-white">
             Our Community
           </h3>
@@ -212,11 +220,15 @@
 
 <script>
 import HeroBlock from '~/components/HeroBlock.vue';
+import ClientIcon from '~/assets/svgs/pages/about/client.svg?inline';
+import CommunityIcon from '~/assets/svgs/pages/about/community.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    HeroBlock
+    HeroBlock,
+    ClientIcon,
+    CommunityIcon
   },
 
   head() {
