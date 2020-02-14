@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap" data-aos="fade">
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
-      <div class="m-auto max-w-2xl w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
         <Netflix class="'h-10 mb-3 w-auto'" />
 
         <p class="lg:h-12">
@@ -15,7 +15,7 @@
     </div>
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
-      <div class="m-auto max-w-2xl w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
         <JebbitLogo class="h-10 mb-3 w-auto" />
 
         <p class="lg:h-12">
@@ -29,7 +29,7 @@
     </div>
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
-      <div class="m-auto max-w-2xl w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
         <h2 class="h-10 mb-3 w-auto">
           Brokermate
         </h2>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
-      <div class="m-auto max-w-2xl w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
         <SocialCodeLogo class="h-10 mb-3 pb-2 pt-2 w-auto" />
 
         <p class="lg:h-12">
