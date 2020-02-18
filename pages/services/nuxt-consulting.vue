@@ -38,9 +38,11 @@
               </h5>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
-                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+                Nuxt is based on a powerful modular architecture. You can choose
+                from more than 50 modules to make your development faster and
+                easier. You don't have to reinvent the wheel to get PWA
+                benefits, add Google Analytics to your page or generate a
+                sitemap.
               </p>
             </div>
             <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
@@ -51,9 +53,11 @@
               </h5>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
-                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+                With Nuxt.js, your application will be optimized out of the box.
+                We do our best to build performant applications by utilizing
+                Vue.js and Node.js best practices. To squeeze every unnecessary
+                bit out of your app Nuxt includes a bundle analyzer and lots of
+                opportunities to fine-tune your app.
               </p>
             </div>
           </div>
@@ -66,9 +70,10 @@
               </h5>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
-                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+                Nuxt takes developer experience seriously, and is always
+                improving to make using it more enjoyable. Expect appealing
+                solutions, descriptive error messages, powerful defaults and
+                detailed documentation.
               </p>
             </div>
             <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
@@ -79,9 +84,10 @@
               </h5>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                placerat cursus ex, in pretium massa tincidunt vitae. Nulla
-                tincidunt lobortis faucibus. Donec pretium malesuada venenatis.
+                Nuxt.js supports several rendering modes, including server side
+                rendering or "universal", static or "JAMStack", and classic
+                single page application (SPA) mode to allow for maximum
+                flexibility out of the box.
               </p>
             </div>
           </div>

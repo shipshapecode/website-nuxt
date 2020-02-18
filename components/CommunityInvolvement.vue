@@ -16,7 +16,33 @@
       <div class="flex flex-wrap lg:flex-no-wrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberConf class="ember-image inline p-12" />
+            <EmberConf2020 class="ember-image inline p-12" />
+          </div>
+
+          <h3 class="heading">
+            EmberConf 2020
+          </h3>
+
+          <p class="h-auto lg:h-64 xl:h-48">
+            We are beyond excited to be giving a talk at EmberConf 2020, Talking
+            to Your Dog with Ember, where we will explore using the Web Audio
+            API to translate dog barks into something more meaningful.
+          </p>
+
+          <p>
+            <a
+              class="learn-more"
+              href="https://emberconf.com/#/schedule/day-2_talking-to-your-dog-with-ember"
+            >
+              Learn more
+              <AngleRight class="h-4 inline mb-1 w-4" />
+            </a>
+          </p>
+        </div>
+
+        <div class="w-full lg:mr-12 lg:w-1/3">
+          <div class="text-center w-full">
+            <EmberConf2019 class="ember-image inline p-12" />
           </div>
 
           <h3 class="heading">
@@ -37,7 +63,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:mr-12 lg:w-1/3">
+        <div class="w-full lg:w-1/3">
           <div class="text-center w-full">
             <img
               class="ember-image inline p-8"
@@ -73,8 +99,10 @@
             </a>
           </p>
         </div>
+      </div>
 
-        <div class="w-full lg:w-1/3">
+      <div class="flex flex-wrap lg:flex-no-wrap">
+        <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
             <EmberCares class="ember-image inline p-4" />
           </div>
@@ -96,9 +124,7 @@
             </a>
           </p>
         </div>
-      </div>
 
-      <div class="flex flex-wrap lg:flex-no-wrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
             <EmberConf class="ember-image inline p-12" />
@@ -126,7 +152,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:mr-12 lg:w-1/3">
+        <div class="w-full lg:w-1/3">
           <div class="text-center w-full">
             <img
               class="ember-image inline p-8"
@@ -155,8 +181,6 @@
             </p>
           </div>
         </div>
-
-        <div class="w-full lg:w-1/3"></div>
       </div>
     </div>
   </div>
@@ -166,12 +190,16 @@
 import AngleRight from '~/assets/svgs/angle-right.svg?inline';
 import EmberCares from '~/assets/svgs/ember-cares.svg?inline';
 import EmberConf from '~/assets/svgs/emberconf.svg?inline';
+import EmberConf2019 from '~/assets/svgs/emberconf/2019.svg?inline';
+import EmberConf2020 from '~/assets/svgs/emberconf/2020.svg?inline';
 
 export default {
   components: {
     AngleRight,
     EmberCares,
-    EmberConf
+    EmberConf,
+    EmberConf2019,
+    EmberConf2020
   }
 };
 </script>
