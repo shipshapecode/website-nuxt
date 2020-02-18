@@ -13,7 +13,7 @@
 
       <div class="flex flex-wrap w-full lg:flex-no-wrap">
         <div
-          class="bg-navy-light flex mb-6 p-12 w-full lg:mr-6 lg:w-1/3"
+          class="bg-navy-light flex mb-6 p-6 w-full lg:mr-6 lg:p-12 lg:w-1/3"
           itemscope
           itemtype="http://schema.org/Service"
           data-aos="fade-up"
@@ -39,7 +39,7 @@
         </div>
 
         <div
-          class="bg-navy-light flex mb-6 p-12 w-full lg:mr-6 lg:w-1/3"
+          class="bg-navy-light flex mb-6 p-6 w-full lg:mr-6 lg:p-12 lg:w-1/3"
           itemscope
           itemtype="http://schema.org/Service"
           data-aos="fade-up"
@@ -65,7 +65,7 @@
         </div>
 
         <div
-          class="bg-navy-light flex mb-6 p-12 w-full lg:mr-6 lg:w-1/3"
+          class="bg-navy-light flex mb-6 p-6 w-full lg:mr-6 lg:p-12 lg:w-1/3"
           itemscope
           itemtype="http://schema.org/Service"
           data-aos="fade-up"

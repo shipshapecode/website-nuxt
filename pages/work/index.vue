@@ -25,7 +25,7 @@
       <div class="section-content">
         <div class="flex flex-wrap w-full lg:flex-no-wrap">
           <div
-            class="bg-navy-light flex mb-6 p-12 w-full lg:mr-6 lg:w-1/3"
+            class="bg-navy-light flex mb-6 p-6 w-full lg:mr-6 lg:p-12 lg:w-1/3"
             data-aos="fade-up"
           >
             <div class="flex flex-col w-full">
@@ -49,7 +49,7 @@
           </div>
 
           <div
-            class="bg-navy-light flex mb-6 p-12 w-full lg:mr-6 lg:w-1/3"
+            class="bg-navy-light flex mb-6 p-6 w-full lg:mr-6 lg:p-12 lg:w-1/3"
             data-aos="fade-up"
           >
             <div class="flex flex-col w-full">
@@ -74,7 +74,7 @@
           </div>
 
           <div
-            class="bg-navy-light flex mb-6 p-12 w-full lg:mr-6 lg:w-1/3"
+            class="bg-navy-light flex mb-6 p-6 w-full lg:mr-6 lg:p-12 lg:w-1/3"
             data-aos="fade-up"
           >
             <div class="flex flex-col w-full">

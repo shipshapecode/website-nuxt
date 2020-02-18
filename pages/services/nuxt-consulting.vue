@@ -30,7 +30,7 @@
 
         <div class="flex flex-wrap">
           <div class="flex flex-wrap w-full lg:flex-no-wrap">
-            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
               <ModularIcon class="h-20 inline-block mb-8 w-auto" />
 
               <h5 class="text-white">
@@ -45,7 +45,7 @@
                 sitemap.
               </p>
             </div>
-            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
               <PerformanceIcon class="h-20 inline-block mb-8 w-auto" />
 
               <h5 class="text-white">
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="flex flex-wrap w-full lg:flex-no-wrap">
-            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
               <FunIcon class="h-20 inline-block mb-8 w-auto" />
 
               <h5 class="text-white">
@@ -76,7 +76,7 @@
                 detailed documentation.
               </p>
             </div>
-            <div class="bg-navy-light m-3 p-12 w-full lg:w-1/2">
+            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
               <StaticIcon class="h-24 inline-block mb-4 w-24" />
 
               <h5 class="text-white">

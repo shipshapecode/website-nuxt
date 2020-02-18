@@ -1,7 +1,14 @@
 <template>
   <div>
     <HeroBlock class="about text-white">
-      <template v-slot:content> </template>
+      <template v-slot:content>
+        <img
+          class="mt-8"
+          src="/img/about/desk.jpg"
+          alt="Ship Shape office desk"
+        />
+      </template>
+
       <template v-slot:icon>
         <div class="m-auto max-w-2xl">
           <h1 class="heading text-white">
@@ -30,7 +37,7 @@
         class="section-content flex flex-wrap justify-center lg:flex-no-wrap"
       >
         <div
-          class="bg-navy-light flex flex-col justify-center min-h-80 mt-12 p-8 w-full lg:h-96 lg:mr-12 lg:mt-0 lg:p-24 lg:w-1/2"
+          class="bg-navy-light flex flex-col justify-center min-h-80 mt-12 p-6 w-full lg:h-96 lg:mr-12 lg:mt-0 lg:p-24 lg:w-1/2"
         >
           <div class="h-24 inline-block mb-8 mt-8 w-24">
             <ClientIcon />
@@ -47,7 +54,7 @@
         </div>
 
         <div
-          class="bg-navy-light flex flex-col justify-center m-auto min-h-80 mt-12 p-8 w-full lg:h-96 lg:p-24 lg:w-1/2"
+          class="bg-navy-light flex flex-col justify-center m-auto min-h-80 mt-12 p-6 w-full lg:h-96 lg:p-24 lg:w-1/2"
         >
           <div class="h-24 inline-block mb-8 mt-8 w-24">
             <CommunityIcon />
