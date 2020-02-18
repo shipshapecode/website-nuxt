@@ -15,8 +15,8 @@
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://ember-cli.com/" aria-label="Ember CLI">
-              <EmberCLI class="w-full h-full p-8 max-w-xxs" />
+            <a href="https://www.electronjs.org/" aria-label="Ember CLI">
+              <Electron class="w-full h-full p-8 max-w-xxs" />
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
@@ -50,7 +50,7 @@
 
 <script>
 import Ember from '~/assets/svgs/technologies/ember.svg?inline';
-import EmberCLI from '~/assets/svgs/technologies/embercli.svg?inline';
+import Electron from '~/assets/svgs/technologies/electron.svg?inline';
 import EmberData from '~/assets/svgs/technologies/emberdata.svg?inline';
 import Nuxt from '~/assets/svgs/technologies/nuxt.svg?inline';
 import Sass from '~/assets/svgs/technologies/sass.svg?inline';
@@ -59,7 +59,7 @@ import Travis from '~/assets/svgs/technologies/travis.svg?inline';
 export default {
   components: {
     Ember,
-    EmberCLI,
+    Electron,
     EmberData,
     Nuxt,
     Sass,
