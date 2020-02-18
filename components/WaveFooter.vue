@@ -55,13 +55,6 @@
                   App Tours
                 </nuxt-link>
 
-                <nuxt-link
-                  to="/services/cross-platform-desktop-apps/"
-                  class="block"
-                >
-                  Desktop Apps
-                </nuxt-link>
-
                 <nuxt-link to="/services/ember-consulting/" class="block">
                   Ember Consulting
                 </nuxt-link>
