@@ -16,7 +16,11 @@
       <div class="flex flex-wrap lg:flex-no-wrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberConf2020 class="ember-image inline p-12" />
+            <img
+              class="ember-image inline p-8"
+              src="/img/emberconf-2020.png"
+              alt="EmberConf 2020 Ship Shape Sticker"
+            />
           </div>
 
           <h3 class="heading">
@@ -191,15 +195,13 @@ import AngleRight from '~/assets/svgs/angle-right.svg?inline';
 import EmberCares from '~/assets/svgs/ember-cares.svg?inline';
 import EmberConf from '~/assets/svgs/emberconf.svg?inline';
 import EmberConf2019 from '~/assets/svgs/emberconf/2019.svg?inline';
-import EmberConf2020 from '~/assets/svgs/emberconf/2020.svg?inline';
 
 export default {
   components: {
     AngleRight,
     EmberCares,
     EmberConf,
-    EmberConf2019,
-    EmberConf2020
+    EmberConf2019
   }
 };
 </script>
