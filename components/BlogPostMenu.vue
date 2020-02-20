@@ -5,10 +5,7 @@
       :key="post.slug"
       class="blog-post border-b-2 border-grey-transparent border-solid pt-2 pb-2"
     >
-      <nuxt-link
-        class="title"
-        :to="`/blog/${post.slug}/`"
-      >
+      <nuxt-link class="title" :to="`/blog/${post.slug}/`">
         {{ post.linktitle || post.title }}
       </nuxt-link>
 
@@ -31,28 +28,28 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      posts: {
-        type: Array,
-        default: () => []
-      }
+export default {
+  props: {
+    posts: {
+      type: Array,
+      default: () => []
     }
-  };
+  }
+};
 </script>
 
 <style lang="scss">
-  .blog-post {
-    .blog-tag {
-      a {
-        transition-duration: 0.25s;
-        transition-property: background-color, color, fill;
-      }
-    }
-
-    .title {
-      color: $navy;
-      font-size: 2rem;
+.blog-post {
+  .blog-tag {
+    a {
+      transition-duration: 0.25s;
+      transition-property: background-color, color, fill;
     }
   }
+
+  .title {
+    color: $navy;
+    font-size: 2rem;
+  }
+}
 </style>

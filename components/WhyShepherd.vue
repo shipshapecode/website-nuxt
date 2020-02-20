@@ -9,26 +9,29 @@
         <div class="max-w-3xl">
           <Tab name="Accessibility" :selected="true">
             <p>
-              Shepherd has full keyboard navigation support, focus trapping, and a11y compliance
-              via aria attributes. This ensures that everyone, regardless of abilities, is able
-              to have a great user experience when they interact with your product.
+              Shepherd has full keyboard navigation support, focus trapping, and
+              a11y compliance via aria attributes. This ensures that everyone,
+              regardless of abilities, is able to have a great user experience
+              when they interact with your product.
             </p>
           </Tab>
 
           <Tab name="Highly Customizable">
             <p>
-              Shepherd's styles are kept minimal, allowing you to easily customize the look and feel,
-              but still give you enough to drop in and be ready to go quickly. This allows you to
-              have a highly stylized, custom site tour experience to match your brand.
+              Shepherd's styles are kept minimal, allowing you to easily
+              customize the look and feel, but still give you enough to drop in
+              and be ready to go quickly. This allows you to have a highly
+              stylized, custom site tour experience to match your brand.
             </p>
           </Tab>
 
           <Tab name="Framework Ready">
             <p>
-              Shepherd is ready to drop into your application using React, Ember,
-              Angular, Vue.js, ES Modules, or plain Javascript! Integration with any app is
-              a breeze with Shepherd, and your developers will appreciate the breadth of options
-              for quickly spinning it up.
+              Shepherd is ready to drop into your application using React,
+              Ember, Angular, Vue.js, ES Modules, or plain Javascript!
+              Integration with any app is a breeze with Shepherd, and your
+              developers will appreciate the breadth of options for quickly
+              spinning it up.
             </p>
           </Tab>
         </div>
@@ -38,13 +41,13 @@
 </template>
 
 <script>
-  import Tab from '~/components/Tab.vue';
-  import Tabs from '~/components/Tabs.vue';
+import Tab from '~/components/Tab.vue';
+import Tabs from '~/components/Tabs.vue';
 
-  export default {
-    components: {
-      Tab,
-      Tabs
-    }
-  };
+export default {
+  components: {
+    Tab,
+    Tabs
+  }
+};
 </script>

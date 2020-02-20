@@ -8,6 +8,7 @@ module.exports = {
       'acquia-blue': '#31A9E1',
       black: '#000000',
       navy: '#00213B',
+      'navy-light': '#073256',
       'netflix-red': '#E50914',
       gold: '#BBA46F',
       grey: '#5F6976',
@@ -36,10 +37,12 @@ module.exports = {
       full: '100%'
     },
 
-    // height: {
-    //   auto: 'auto',
-    //   px: '1px',
-    // },
+    minHeight: {
+      '0': '0',
+      '80': '20rem',
+      full: '100%',
+      screen: '100vh'
+    },
 
     spacing: {
       px: '1px',
@@ -63,6 +66,9 @@ module.exports = {
       '64': '16rem',
       '72': '18rem',
       '80': '20rem',
+      '88': '22rem',
+      '96': '24rem',
+      '104': '26rem',
       '140': '36rem'
     }
   },
@@ -70,7 +76,7 @@ module.exports = {
   plugins: [
     gradient({
       gradients: {
-        'brokermate': ['#3FB7E6', '#782599']
+        brokermate: ['#3FB7E6', '#782599']
       }
     })
   ],

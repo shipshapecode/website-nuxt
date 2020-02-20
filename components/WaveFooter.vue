@@ -1,135 +1,103 @@
 <template>
   <footer class="wave text-base">
-    <div class="footer-top">
+    <div class="footer-top" data-aos="zoom-in-up">
       <div class="text-center pt-32 lg:pb-32">
         <compass class="inline m-8" />
 
         <h3 class="font-bold p-4 text-5xl text-white">
-          Set a course for success
+          Already convinced?
         </h3>
 
         <p class="p-4 text-gold">
-          Ember.js consulting, development, and training for your project.
+          Let us help you exceed your company and team goals.
         </p>
 
-        <nuxt-link
-          class="btn-gold inline-block m-12"
-          to="/contact/"
-        >
+        <nuxt-link class="btn btn-gold inline-block m-12" to="/contact/">
           Let's talk
         </nuxt-link>
       </div>
     </div>
-    <div class="flex flex-wrap w-full justify-center">
-      <div class="footer-bottom max-w-8xl p-8 w-full">
+    <div class="footer-bottom flex flex-wrap w-full justify-center">
+      <div class="max-w-8xl p-8 w-full">
         <div class="flex justify-center lg:justify-start w-full">
           <logo class="footer-logo h-16 w-16" />
         </div>
 
         <div class="flex flex-wrap justify-center w-full">
-          <nav class="flex flex-wrap justify-center pt-12 pb-12 w-full lg:flex-no-wrap lg:justify-start">
+          <nav
+            class="flex flex-wrap justify-center pt-12 pb-12 w-full lg:flex-no-wrap lg:justify-start"
+          >
             <div class="flex flex-shrink justify-start w-full max-w-lg">
-              <!-- <div class="w-1/2 lg:w-72 p-8 lg:p-4">
+              <div class="w-1/2 lg:w-72 p-8 lg:p-4">
                 <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
                   Services
                 </h4>
 
-                <nuxt-link to="/ember-consulting/" class="block">
-                  Design
+                <nuxt-link to="/services/app-development/" class="block">
+                  App Development
                 </nuxt-link>
 
-                <nuxt-link to="/ember-consulting/" class="block">
-                  Engineering
+                <nuxt-link to="/services/mentoring/" class="block">
+                  Mentoring
                 </nuxt-link>
 
-                <nuxt-link to="/ember-consulting/" class="block">
-                  Staff Augmentation
+                <nuxt-link to="/services/open-source/" class="block">
+                  Open Source
                 </nuxt-link>
-              </div>-->
+              </div>
 
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
                 <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
                   Specialties
                 </h4>
 
-                <nuxt-link
-                  to="/ember-consulting/"
-                  class="block"
-                >
+                <nuxt-link to="/services/app-tours/" class="block">
+                  App Tours
+                </nuxt-link>
+
+                <nuxt-link to="/services/ember-consulting/" class="block">
                   Ember Consulting
                 </nuxt-link>
 
-                <!--
-                <nuxt-link to="/ember-consulting/" class="block">
+                <nuxt-link to="/services/nuxt-consulting/" class="block">
                   Nuxt.js Consulting
                 </nuxt-link>
-                -->
-
-                <nuxt-link
-                  to="/app-tours/"
-                  class="block"
-                >
-                  App Tours
-                </nuxt-link>
-              </div>
-
-              <div class="w-1/2 lg:w-72 p-8 lg:p-4">
-                <div class="w-full">
-                  <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
-                    Company
-                  </h4>
-                </div>
-
-                <div class="w-full">
-                  <nuxt-link to="/work/">
-                    Case Studies
-                  </nuxt-link>
-                </div>
-
-                <div class="w-full">
-                  <nuxt-link to="/open-source/">
-                    Open Source
-                  </nuxt-link>
-                </div>
-
-                <div class="w-full">
-                  <nuxt-link to="/blog/">
-                    Blog
-                  </nuxt-link>
-                </div>
-
-                <!--div class="w-full">
-                  <nuxt-link to="/team/">
-                    Team
-                  </nuxt-link>
-                </div-->
               </div>
             </div>
 
             <div class="flex flex-shrink justify-start w-full max-w-lg">
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
                 <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
+                  Company
+                </h4>
+
+                <nuxt-link to="/about/" class="block">
+                  About
+                </nuxt-link>
+
+                <nuxt-link to="/work/" class="block">
+                  Work
+                </nuxt-link>
+
+                <nuxt-link to="/blog/" class="block">
+                  Blog
+                </nuxt-link>
+              </div>
+
+              <div class="w-1/2 lg:w-72 p-8 lg:p-4">
+                <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
                   Connect
                 </h4>
 
-                <nuxt-link
-                  to="/contact/"
-                  class="block"
-                >
+                <nuxt-link to="/contact/" class="block">
                   Contact
                 </nuxt-link>
 
-                <a
-                  href="https://github.com/shipshapecode"
-                  class="block"
-                >
+                <a href="https://github.com/shipshapecode" class="block">
                   GitHub
                 </a>
 
-                <a
-                  href="https://twitter.com/shipshapecode"
-                  class="block"
-                >
+                <a href="https://twitter.com/shipshapecode" class="block">
                   Twitter
                 </a>
 
@@ -143,9 +111,13 @@
             </div>
           </nav>
 
-          <div class="flex flex-wrap items-center justify-center w-full lg:justify-start">
+          <div
+            class="flex flex-wrap items-center justify-center w-full lg:justify-start"
+          >
             <div class="flex justify-center w-full lg:justify-start">
-              <div class="social-links flex items-center pl-2 pr-2 justify-start">
+              <div
+                class="social-links flex items-center pl-2 pr-2 justify-start"
+              >
                 <a
                   aria-label="GitHub"
                   class="p-2"
@@ -177,7 +149,7 @@
             </div>
 
             <div class="flex flex-wrap p-4">
-              Copyright © 2019 Ship Shape Consulting LLC. All rights reserved.
+              Copyright © 2020 Ship Shape Consulting LLC. All rights reserved.
             </div>
           </div>
         </div>

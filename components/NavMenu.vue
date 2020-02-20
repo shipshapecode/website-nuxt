@@ -1,11 +1,7 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap p-6">
+  <nav class="bg-transparent flex items-center justify-between flex-wrap p-6">
     <div class="flex flex-no-shrink items-center pr-2 pt-2">
-      <nuxt-link
-        to="/"
-        class="logo inline-flex"
-        itemprop="url"
-      >
+      <nuxt-link to="/" class="logo inline-flex" itemprop="url">
         <div
           class="inline-block"
           itemprop="logo"
@@ -19,12 +15,16 @@
             height="50px"
             src="/img/logo.png"
             width="50px"
-          >
-          <meta itemprop="height" content="128">
-          <meta itemprop="width" content="128">
+          />
+          <meta itemprop="height" content="128" />
+          <meta itemprop="width" content="128" />
         </div>
         <div
-          class="font-medium -mt-1 text-navy text-3xl"
+          class="font-medium -mt-1 text-3xl"
+          :class="{
+            'text-navy': this.$route.name !== 'about',
+            'text-white': this.$route.name === 'about'
+          }"
           itemprop="name"
         >
           Ship Shape
@@ -38,7 +38,7 @@
         class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
         @click="toggleNavMenu(true)"
       >
-        <Menu class="hamburger-menu"/>
+        <Menu class="hamburger-menu" />
       </button>
     </div>
 
@@ -50,44 +50,48 @@
             class="cursor-pointer"
             @click="toggleNavMenu(false)"
           >
-            <Close class="h-10 m-2 p-2 w-10"/>
+            <Close class="h-10 m-2 p-2 w-10" />
           </button>
         </div>
 
         <nuxt-link
           class="nav-link"
+          :class="{
+            'nav-link-alt': this.$route.name === 'about'
+          }"
+          to="/services/"
+          @click.native="toggleNavMenu(false)"
+        >
+          Services
+        </nuxt-link>
+
+        <nuxt-link
+          class="nav-link"
+          :class="{
+            'nav-link-alt': this.$route.name === 'about'
+          }"
           to="/work/"
           @click.native="toggleNavMenu(false)"
         >
-          Case Studies
+          Work
         </nuxt-link>
 
         <nuxt-link
           class="nav-link"
-          to="/ember-consulting/"
+          :class="{
+            'nav-link-alt': this.$route.name === 'about'
+          }"
+          to="/about/"
           @click.native="toggleNavMenu(false)"
         >
-          Ember Consulting
+          About
         </nuxt-link>
 
         <nuxt-link
           class="nav-link"
-          to="/open-source/"
-          @click.native="toggleNavMenu(false)"
-        >
-          Open Source
-        </nuxt-link>
-
-        <!--nuxt-link
-          class="nav-link"
-          to="/team/"
-          @click.native="toggleNavMenu(false)"
-        >
-          Team
-        </nuxt-link-->
-
-        <nuxt-link
-          class="nav-link"
+          :class="{
+            'nav-link-alt': this.$route.name === 'about'
+          }"
           to="/blog/"
           @click.native="toggleNavMenu(false)"
         >
@@ -96,6 +100,9 @@
 
         <nuxt-link
           class="nav-link contact-link"
+          :class="{
+            'contact-link-alt': this.$route.name === 'about'
+          }"
           to="/contact/"
           @click.native="toggleNavMenu(false)"
         >
@@ -107,40 +114,40 @@
 </template>
 
 <script>
-  import Close from '~/assets/svgs/close.svg?inline';
-  import Menu from '~/assets/svgs/menu.svg?inline';
+import Close from '~/assets/svgs/close.svg?inline';
+import Menu from '~/assets/svgs/menu.svg?inline';
 
-  export default {
-    components: {
-      Close,
-      Menu
-    },
-    methods: {
-      toggleNavMenu(open) {
-        const mobileNavShown = window.innerWidth < 1024;
-        if (mobileNavShown) {
-          const navLinks = this.$el.querySelector('.nav-links');
+export default {
+  components: {
+    Close,
+    Menu
+  },
+  methods: {
+    toggleNavMenu(open) {
+      const mobileNavShown = window.innerWidth < 1024;
+      if (mobileNavShown) {
+        const navLinks = this.$el.querySelector('.nav-links');
 
-          if (open) {
-            navLinks.classList.remove('hidden');
-            document.body.style.position = 'fixed';
-          } else {
-            navLinks.classList.add('hidden');
-            document.body.style.position = '';
-          }
+        if (open) {
+          navLinks.classList.remove('hidden');
+          document.body.style.position = 'fixed';
+        } else {
+          navLinks.classList.add('hidden');
+          document.body.style.position = '';
         }
       }
     }
-  };
+  }
+};
 </script>
 
 <style lang="scss">
-  .hamburger-menu {
-    height: 36px;
-    width: 36px;
-  }
+.hamburger-menu {
+  height: 36px;
+  width: 36px;
+}
 
-  .logo {
-    word-spacing: -5px;
-  }
+.logo {
+  word-spacing: -5px;
+}
 </style>

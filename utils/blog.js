@@ -20,19 +20,21 @@ export function getBlogData() {
     post.author = authors[post.authorId];
   }
 
-  return Promise.all(fileNames.map(fileName => asyncImport(fileName))).then((posts) => {
-    const sortedPosts = posts.sort((post1, post2) => {
-      if (post1.date > post2.date) {
-        return -1;
-      }
+  return Promise.all(fileNames.map((fileName) => asyncImport(fileName))).then(
+    (posts) => {
+      const sortedPosts = posts.sort((post1, post2) => {
+        if (post1.date > post2.date) {
+          return -1;
+        }
 
-      if (post1.date < post2.date) {
-        return 1;
-      }
+        if (post1.date < post2.date) {
+          return 1;
+        }
 
-      return 0;
-    });
+        return 0;
+      });
 
-    return { posts: sortedPosts };
-  });
+      return { posts: sortedPosts };
+    }
+  );
 }

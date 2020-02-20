@@ -1,41 +1,47 @@
 <template>
-  <div id="contact-form" class="contact-form section flex flex-wrap justify-center">
-    <div class="section-content">
+  <div
+    id="contact-form"
+    class="contact-form section flex flex-wrap justify-center w-full"
+  >
+    <div class="section-content flex flex-wrap justify-center">
       <h1 class="heading">
-        We can help streamline your Ember.js project
+        All Hands on Deck
       </h1>
 
-      <p>
-        Whether you need staff augmentation to increase the velocity on your ambitious project,
-        mentoring for your team, or anything else Ember.js related, we've got you covered.
-      </p>
+      <div class="flex flex-wrap justify-center">
+        <p class="max-w-3xl w-full">
+          We run a tight ship. From training to full-stack development, Ship
+          Shape is invested in your project the moment you reach out to us.
+          Small and large, we want to be a part of your future.
+        </p>
 
-      <div class="flex flex-wrap justify-center items-center">
-        <no-ssr>
-          <ContactForm/>
-        </no-ssr>
+        <div class="flex flex-wrap justify-center items-center w-full">
+          <no-ssr>
+            <ContactForm />
+          </no-ssr>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import ContactForm from '~/components/ContactForm.vue';
-  import { generateMeta } from '~/utils/meta';
+import ContactForm from '~/components/ContactForm.vue';
+import { generateMeta } from '~/utils/meta';
 
-  export default {
-    components: {
-      ContactForm
-    },
+export default {
+  components: {
+    ContactForm
+  },
 
-    head() {
-      const title = 'Contact Us';
-      const description = 'Let\'s create some amazing things together. We do Ember app development, Ember training, sponsored ' +
-        'open source work, and anything and everything Ember. To get started on your Ember training or Ember consulting project, ' +
-        'shoot us an email or fill out the contact form.';
-      const url = 'https://shipshape.io/contact/';
+  head() {
+    const title = 'Contact Us';
+    const description =
+      'Set a course for success with our Ember.js consulting services, ' +
+      'team training, web app development, and more by contacting Ship Shape today.';
+    const url = 'https://shipshape.io/contact/';
 
-      return generateMeta(title, description, url);
-    }
-  };
+    return generateMeta(title, description, url);
+  }
+};
 </script>

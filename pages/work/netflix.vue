@@ -11,16 +11,20 @@
         </h1>
 
         <p>
-          Netflix is the world's leading internet entertainment service with more than 130 million memberships
-          in over 190 countries enjoying TV series, documentaries and feature films across a wide variety of genres
-          and languages. Members can watch as much as they want, anytime, anywhere, on any internet-connected screen.
-          Members can play, pause and resume watching, all without commercials or commitments.
+          Netflix is the world's leading internet entertainment service with
+          more than 130 million memberships in over 190 countries enjoying TV
+          series, documentaries and feature films across a wide variety of
+          genres and languages. Members can watch as much as they want, anytime,
+          anywhere, on any internet-connected screen. Members can play, pause
+          and resume watching, all without commercials or commitments.
         </p>
       </div>
 
-      <div class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center">
+      <div
+        class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center"
+      >
         <div class="w-1/2 lg:w-1/3">
-          <Netflix class="fill-white h-auto w-full"/>
+          <Netflix class="fill-white h-auto w-full" />
         </div>
       </div>
 
@@ -28,52 +32,73 @@
         <h4>Challenge</h4>
 
         <p>
-          Netflix maintains several apps, for their internal teams to use for keeping track of finances across
-          the spectrum. There is currently a big push to standardize all the apps, and convert them to React,
-          but there was still Ember work to be done, in the meantime. Ship Shape was tasked
-          with whipping the Ember apps into shape, increasing code coverage from tests, and developing some
-          long awaited new features, freeing up the internal Netflix teams to work on the rewrite.
+          Netflix maintains several apps, for their internal teams to use for
+          keeping track of finances across the spectrum. There is currently a
+          big push to standardize all the apps, and convert them to React, but
+          there was still Ember work to be done, in the meantime. Ship Shape was
+          tasked with whipping the Ember apps into shape, increasing code
+          coverage from tests, and developing some long awaited new features,
+          freeing up the internal Netflix teams to work on the rewrite.
         </p>
 
         <p>
-          One of these features was the Cost Categories page, in an app that helps break down the costs associated
-          with shows and movies. The app was fully integrated with Ember Data, and mostly used JSON API for the
-          endpoints previously, but the new endpoints were using a different format that did not follow REST or
-          JSON API standards, which meant we needed a very custom Ember Data setup, to support these APIs.
+          One of these features was the Cost Categories page, in an app that
+          helps break down the costs associated with shows and movies. The app
+          was fully integrated with Ember Data, and mostly used JSON API for the
+          endpoints previously, but the new endpoints were using a different
+          format that did not follow REST or JSON API standards, which meant we
+          needed a very custom Ember Data setup, to support these APIs.
         </p>
 
         <h4>Solution</h4>
 
         <p>
-          One of the first issues we had to overcome was displaying a table of default values when a call to get
-          the cost categories returned a 404. With JSON API, this would have returned a 200, with an empty response, but
-          with our API it returned a 404, which would typically put your app into an error state. To get around this,
-          we caught the error, and instead returned the default data we wanted. The details of this approach are outlined
-          in our blog post on
-          <a href="/blog/ember-data-belongs-to-find-or-create/">Creating a Default Record When a belongsTo Request Errors</a>.
+          One of the first issues we had to overcome was displaying a table of
+          default values when a call to get the cost categories returned a 404.
+          With JSON API, this would have returned a 200, with an empty response,
+          but with our API it returned a 404, which would typically put your app
+          into an error state. To get around this, we caught the error, and
+          instead returned the default data we wanted. The details of this
+          approach are outlined in our blog post on
+          <a href="/blog/ember-data-belongs-to-find-or-create/"
+            >Creating a Default Record When a belongsTo Request Errors</a
+          >.
         </p>
 
         <p>
-          Another issue we encountered was it was not possible to setup links to pull in related data automatically,
-          like you typically would with JSON API, so we decided to setup custom serializers that manually added in the links.
-          This allowed us to use typical belongsTo and hasMany relationships and automatically fetch the data we needed.
-          The setup for this is outlined in our blog post on
-          <a href="/blog/ad-hoc-relationships-with-ember-data/">Ad Hoc Relationships with Ember Data</a>.
+          Another issue we encountered was it was not possible to setup links to
+          pull in related data automatically, like you typically would with JSON
+          API, so we decided to setup custom serializers that manually added in
+          the links. This allowed us to use typical belongsTo and hasMany
+          relationships and automatically fetch the data we needed. The setup
+          for this is outlined in our blog post on
+          <a href="/blog/ad-hoc-relationships-with-ember-data/"
+            >Ad Hoc Relationships with Ember Data</a
+          >.
         </p>
 
         <p>
-          In addition to the custom Ember Data work we did, we had a need for a table that would allow us to use
-          very specific components in each cell, and add header rows with the cost category names, with an optional
-          add row functionality, for categories that supported multiple values of the same type. To accomplish this,
-          we used <a href="https://github.com/offirgolan/ember-light-table">ember-light-table</a>, and nested
-          <a href="https://github.com/cibernox/ember-power-select">ember-power-select</a> dropdowns in the cells.
-          This allowed us to set default placeholder values, and disable fields that were not editable.
+          In addition to the custom Ember Data work we did, we had a need for a
+          table that would allow us to use very specific components in each
+          cell, and add header rows with the cost category names, with an
+          optional add row functionality, for categories that supported multiple
+          values of the same type. To accomplish this, we used
+          <a href="https://github.com/offirgolan/ember-light-table"
+            >ember-light-table</a
+          >, and nested
+          <a href="https://github.com/cibernox/ember-power-select"
+            >ember-power-select</a
+          >
+          dropdowns in the cells. This allowed us to set default placeholder
+          values, and disable fields that were not editable.
         </p>
       </div>
 
-      <div class="bg-grey flex flex-wrap h-64 md:h-140 justify-center items-center">
+      <div
+        class="bg-grey flex flex-wrap h-64 md:h-140 justify-center items-center"
+      >
         <div class="p-4 lg:p-12 w-full">
-          <DataGraphic/>
+          <DataGraphic />
         </div>
       </div>
 
@@ -81,10 +106,12 @@
         <h4>Outcome</h4>
 
         <p>
-          The Cost Categories table now allows developers to use Ember Data like any other app, and interact with the models
-          in the way they are used to. The table also allows users to accurately track the cost category values,
-          which both shows the cost values with more granularity than before, and allows for multiple values
-          of the same type, via the add row functionality we developed.
+          The Cost Categories table now allows developers to use Ember Data like
+          any other app, and interact with the models in the way they are used
+          to. The table also allows users to accurately track the cost category
+          values, which both shows the cost values with more granularity than
+          before, and allows for multiple values of the same type, via the add
+          row functionality we developed.
         </p>
       </div>
 
@@ -99,24 +126,25 @@
 </template>
 
 <script>
-  import BottomLinks from '~/components/BottomLinks.vue';
-  import DataGraphic from '~/assets/svgs/data-graphic.svg?inline';
-  import Netflix from '~/assets/svgs/clients/netflix.svg?inline';
-  import { generateMeta } from '~/utils/meta';
+import BottomLinks from '~/components/BottomLinks.vue';
+import DataGraphic from '~/assets/svgs/data-graphic.svg?inline';
+import Netflix from '~/assets/svgs/clients/netflix.svg?inline';
+import { generateMeta } from '~/utils/meta';
 
-  export default {
-    components: {
-      BottomLinks,
-      DataGraphic,
-      Netflix
-    },
+export default {
+  components: {
+    BottomLinks,
+    DataGraphic,
+    Netflix
+  },
 
-    head() {
-      const title = 'Case Study - Netflix';
-      const description = 'Learn how we helped build finance tools for the world\'s number one streaming platform.';
-      const url = 'https://shipshape.io/work/netflix/';
+  head() {
+    const title = 'Case Study - Netflix';
+    const description =
+      "Learn how we helped build finance tools for the world's number one streaming platform.";
+    const url = 'https://shipshape.io/work/netflix/';
 
-      return generateMeta(title, description, url);
-    }
-  };
+    return generateMeta(title, description, url);
+  }
+};
 </script>
