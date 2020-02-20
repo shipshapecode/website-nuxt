@@ -11,7 +11,7 @@
           developers.
         </p>
         <div>
-          <nuxt-link to="/community/" class="btn btn-navy">
+          <nuxt-link to="/contact/" class="btn btn-navy">
             Join our community
           </nuxt-link>
         </div>
@@ -68,7 +68,7 @@ export default {
     const description =
       'We build and support countless open source projects. ' +
       'Discover why Ship Shape loves open source development.';
-    const url = 'https://shipshape.io/open-source/';
+    const url = 'https://shipshape.io/services/open-source/';
 
     return generateMeta(title, description, url);
   }

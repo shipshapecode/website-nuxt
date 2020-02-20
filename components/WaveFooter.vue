@@ -75,10 +75,6 @@
                   About
                 </nuxt-link>
 
-                <nuxt-link to="/community/" class="block">
-                  Community
-                </nuxt-link>
-
                 <nuxt-link to="/work/" class="block">
                   Work
                 </nuxt-link>

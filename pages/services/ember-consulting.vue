@@ -60,20 +60,34 @@
     </div>
 
     <WhyEmber />
+
+    <CommunityInvolvement />
+
+    <RecentBlogPosts :posts="posts" />
   </div>
 </template>
 
 <script>
+import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
 import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import WhyEmber from '~/components/WhyEmber';
+import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import { generateMeta } from '~/utils/meta';
+import { getBlogData } from '~/utils/blog';
 
 export default {
   components: {
+    CommunityInvolvement,
     EmberConsultingIcon,
     HeroBlock,
+    RecentBlogPosts,
     WhyEmber
+  },
+
+  async asyncData() {
+    const { posts } = await getBlogData();
+    return { posts: posts.slice(0, 3) };
   },
 
   head() {
@@ -82,7 +96,7 @@ export default {
       'From startups to Fortune 100 companies, our Ember.js ' +
       'consultants transform ideas into industry-leading software. ' +
       'Learn more about our app development services.';
-    const url = 'https://shipshape.io/ember-consulting/';
+    const url = 'https://shipshape.io/services/ember-consulting/';
 
     return generateMeta(title, description, url);
   }
