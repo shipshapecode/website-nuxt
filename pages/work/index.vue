@@ -3,7 +3,7 @@
     <div class="section flex flex-wrap justify-center">
       <div class="section-content">
         <div class="flex flex-col mb-12 w-full">
-          <h1 class="heading">
+          <h1>
             Client Work
           </h1>
 

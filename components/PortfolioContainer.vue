@@ -33,7 +33,7 @@
 
     <div class="portfolio-container section flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="heading">
+        <h2>
           Ember Addons
         </h2>
 

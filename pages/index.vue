@@ -2,9 +2,10 @@
   <div>
     <HeroBlock class="home">
       <template v-slot:content>
-        <h1 class="heading">
+        <h1>
           Welcome Aboard!
         </h1>
+
         <p>
           We specialize in custom software and app development by leveraging the
           latest in Ember.js, Nuxt and open source. Our passion lies in building
@@ -17,6 +18,7 @@
           </nuxt-link>
         </div>
       </template>
+
       <template v-slot:icon>
         <LandingIcon class="m-auto max-w-2xl" />
       </template>

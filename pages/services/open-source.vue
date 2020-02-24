@@ -2,7 +2,7 @@
   <div>
     <HeroBlock class="open-source">
       <template v-slot:content>
-        <h1 class="heading">
+        <h1>
           Our Open Source Community
         </h1>
         <p>
@@ -26,7 +26,7 @@
 
     <div class="section bg-grey-transparent flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="heading">
+        <h2>
           Sponsored Open Source
         </h2>
 

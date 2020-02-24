@@ -3,7 +3,7 @@
     <div class="section-content">
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap justify-center w-full">
-          <h3 class="heading">
+          <h3>
             Ship Shape Insights
           </h3>
 

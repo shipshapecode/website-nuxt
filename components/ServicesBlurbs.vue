@@ -9,9 +9,9 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h4 class="heading mt-4" itemprop="name">
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
               Ember Consulting
-            </h4>
+            </h2>
 
             <p class="flex-grow">
               Ember.js is Ship Shape’s framework of choice, among the multitude
@@ -34,9 +34,9 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h4 class="heading mt-4" itemprop="name">
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
               App Development
-            </h4>
+            </h2>
 
             <p class="flex-grow">
               Building custom full stack web apps is our speciality. Ship Shape
@@ -60,9 +60,9 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h4 class="heading mt-4" itemprop="name">
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
               Mentoring and Team Training
-            </h4>
+            </h2>
 
             <p class="flex-grow">
               Whether you're a Senior Developer or Junior Developer, Ship Shape
@@ -86,9 +86,9 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h4 class="heading mt-4" itemprop="name">
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
               App Tours
-            </h4>
+            </h2>
 
             <p class="flex-grow">
               We built our own open source library,
@@ -114,9 +114,9 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h4 class="heading mt-4" itemprop="name">
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
               Sponsored Open Source
-            </h4>
+            </h2>
 
             <p class="flex-grow">
               Ship Shape has created several data adapters, add-ons, and
@@ -137,9 +137,9 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h4 class="heading mt-4" itemprop="name">
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
               Nuxt.js Consulting
-            </h4>
+            </h2>
 
             <p class="flex-grow">
               Nuxt.js makes progressive web app development simple, powerful and

@@ -2,7 +2,7 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="ember-consulting">
       <template v-slot:content>
-        <h1 class="heading" itemprop="name">
+        <h1 itemprop="name">
           Ember Consulting
         </h1>
         <p>

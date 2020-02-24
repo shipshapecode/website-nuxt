@@ -14,9 +14,10 @@
           data-aos="fade-up"
         >
           <div class="m-auto max-w-2xl w-full">
-            <h3 class="heading">
+            <h2 class="mb-5 text-4xl">
               Our Services
-            </h3>
+            </h2>
+
             <h3 class="sub-heading">
               What we do
             </h3>
@@ -40,9 +41,10 @@
       >
         <div class="w-full flex lg:pr-12 lg:w-1/2" data-aos="fade-up">
           <div class="m-auto max-w-2xl w-full">
-            <h3 class="heading">
+            <h2 class="mb-5 text-4xl">
               Our Work
-            </h3>
+            </h2>
+
             <h3 class="sub-heading">
               What we've built
             </h3>
@@ -80,9 +82,10 @@
           data-aos="fade-up"
         >
           <div class="m-auto max-w-2xl w-full">
-            <h3 class="heading">
+            <h2 class="mb-5 text-4xl">
               About Ship Shape
-            </h3>
+            </h2>
+
             <h3 class="sub-heading">
               What makes us tick
             </h3>

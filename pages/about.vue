@@ -11,7 +11,7 @@
 
       <template v-slot:icon>
         <div class="m-auto max-w-2xl">
-          <h1 class="heading text-white">
+          <h1 class="text-white">
             About Ship Shape
           </h1>
 
@@ -94,7 +94,7 @@
           </div>
 
           <div class="w-full lg:w-1/2">
-            <h3 class="heading text-navy text-3xl">
+            <h3 class="text-navy text-3xl">
               Robbie Wagner, CEO
             </h3>
 
@@ -159,7 +159,7 @@
           </div>
 
           <div class="w-full lg:w-1/2">
-            <h3 class="heading text-navy text-3xl">
+            <h3 class="text-navy text-3xl">
               Chuck Carpenter, COO
             </h3>
 

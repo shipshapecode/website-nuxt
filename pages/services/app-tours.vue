@@ -2,7 +2,7 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="app-tours">
       <template v-slot:content>
-        <h1 class="heading" itemprop="name">
+        <h1 itemprop="name">
           App Tours with Shepherd.js
         </h1>
         <p>
@@ -26,7 +26,7 @@
       class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent"
     >
       <div class="section-content">
-        <h2 class="heading">
+        <h2>
           Why do I need an app tour?
         </h2>
 

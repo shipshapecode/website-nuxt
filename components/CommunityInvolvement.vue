@@ -2,7 +2,7 @@
   <div class="section flex flex-wrap justify-center bg-grey-transparent">
     <div class="section-content flex flex-wrap justify-center">
       <div class="max-w-4xl pb-24 w-full">
-        <h2 class="heading text-center">
+        <h2 class="text-center">
           Community Involvement
         </h2>
 
@@ -23,7 +23,7 @@
             />
           </div>
 
-          <h3 class="heading">
+          <h3>
             EmberConf 2020
           </h3>
 
@@ -49,7 +49,7 @@
             <EmberConf2019 class="ember-image inline p-12" />
           </div>
 
-          <h3 class="heading">
+          <h3>
             EmberConf 2019
           </h3>
 
@@ -76,7 +76,7 @@
             />
           </div>
 
-          <h3 class="heading">
+          <h3>
             Ember.js NYC
           </h3>
 
@@ -111,7 +111,7 @@
             <EmberCares class="ember-image inline p-4" />
           </div>
 
-          <h3 class="heading">
+          <h3>
             Ember Cares
           </h3>
 
@@ -134,7 +134,7 @@
             <EmberConf class="ember-image inline p-12" />
           </div>
 
-          <h3 class="heading">
+          <h3>
             EmberConf 2018
           </h3>
 
@@ -165,7 +165,7 @@
             />
           </div>
 
-          <h3 class="heading">
+          <h3>
             Ember.JS DC
           </h3>
 

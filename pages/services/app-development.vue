@@ -3,7 +3,7 @@
     <div itemscope itemtype="http://schema.org/Service">
       <HeroBlock class="web-apps">
         <template v-slot:content>
-          <h1 class="heading" itemprop="name">
+          <h1 itemprop="name">
             App Development
           </h1>
           <p>
@@ -26,7 +26,7 @@
       <div class="section bg-navy flex flex-wrap justify-center">
         <div class="section-content" data-aos="fade-up">
           <div class="flex flex-col items-center mb-12 text-center w-full">
-            <h2 class="heading text-5xl text-white">
+            <h2 class="text-5xl text-white">
               Combining the Best of Web And Mobile
             </h2>
 
@@ -94,7 +94,7 @@
               data-aos="fade-up"
             >
               <div class="m-auto max-w-2xl w-full">
-                <h3 class="heading">
+                <h3>
                   PWA Benefits
                 </h3>
 
@@ -126,7 +126,7 @@
     >
       <div class="section-content" data-aos="fade-up">
         <div class="flex flex-col items-center mb-12 text-center w-full">
-          <h2 class="heading text-5xl text-white">
+          <h2 class="text-5xl text-white">
             Cross Platform Desktop Apps
           </h2>
 
