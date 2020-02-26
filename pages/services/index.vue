@@ -18,7 +18,7 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon class="m-auto max-w-2xl" />
+        <ServicesIcon class="m-auto max-w-2xl" />
       </template>
     </HeroBlock>
 
@@ -27,14 +27,14 @@
 </template>
 
 <script>
-import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
+import ServicesIcon from '~/assets/svgs/hero-images/services.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import ServicesBlurbs from '~/components/ServicesBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    EmberConsultingIcon,
+    ServicesIcon,
     HeroBlock,
     ServicesBlurbs
   },

@@ -142,7 +142,7 @@
           <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <TimeIcon class="h-20 inline-block mb-12 w-20" />
+                <SailIcon class="h-20 inline-block mb-12 w-20" />
 
                 <h5 class="text-white">
                   Sail into an App Store
@@ -161,7 +161,7 @@
           <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <PWAIcon class="h-20 inline-block mb-12 w-20" />
+                <NativeAppsIcon class="h-20 inline-block mb-12 w-20" />
 
                 <h5 class="text-white">
                   Ship native apps
@@ -186,7 +186,9 @@
 <script>
 import AppDevelopmentIcon from '~/assets/svgs/hero-images/app-development.svg?inline';
 import AppIcon from '~/assets/svgs/pages/app-development/app.svg?inline';
+import NativeAppsIcon from '~/assets/svgs/pages/app-development/native-apps.svg?inline';
 import PWAIcon from '~/assets/svgs/pages/app-development/pwa.svg?inline';
+import SailIcon from '~/assets/svgs/pages/app-development/sail.svg?inline';
 import TimeIcon from '~/assets/svgs/pages/app-development/time.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
@@ -195,7 +197,9 @@ export default {
   components: {
     AppDevelopmentIcon,
     AppIcon,
+    NativeAppsIcon,
     PWAIcon,
+    SailIcon,
     TimeIcon,
     HeroBlock
   },
