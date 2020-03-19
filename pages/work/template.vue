@@ -15,7 +15,9 @@
         </p>
       </div>
 
-      <div class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center">
+      <div
+        class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center"
+      >
         <div class="w-1/2 lg:w-1/3">
           Logo
         </div>
@@ -48,22 +50,22 @@
 </template>
 
 <script>
-  // import BottomLinks from '~/components/BottomLinks.vue';
-  // import Logo from '~/assets/svgs/clients/logo.svg?inline';
-  // import { generateMeta } from '~/utils/meta';
+// import BottomLinks from '~/components/BottomLinks.vue';
+// import Logo from '~/assets/svgs/clients/logo.svg?inline';
+// import { generateMeta } from '~/utils/meta';
 
-  // export default {
-  //   components: {
-  //     BottomLinks,
-  //     Logo
-  //   },
+// export default {
+//   components: {
+//     BottomLinks,
+//     Logo
+//   },
 
-  //   head() {
-  //     const title = 'Case Study - Company';
-  //     const description = 'Aliquip dolore laboris culpa sunt eiusmod eiusmod irure veniam incididunt.';
-  //     const url = 'https://shipshape.io/work/company/';
+//   head() {
+//     const title = 'Case Study - Company';
+//     const description = 'Aliquip dolore laboris culpa sunt eiusmod eiusmod irure veniam incididunt.';
+//     const url = 'https://shipshape.io/work/company/';
 
-  //     return generateMeta(title, description, url);
-  //   }
-  // };
+//     return generateMeta(title, description, url);
+//   }
+// };
 </script>

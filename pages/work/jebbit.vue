@@ -160,8 +160,8 @@
       <BottomLinks
         next-link="/work/brokermate/"
         next-link-text="Brokermate"
-        previous-link="/work/netflix/"
-        previous-link-text="Netflix"
+        previous-link="/work/acquia/"
+        previous-link-text="Acquia"
       />
     </div>
   </div>
