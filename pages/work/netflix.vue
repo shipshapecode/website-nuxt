@@ -116,8 +116,8 @@
       </div>
 
       <BottomLinks
-        next-link="/work/jebbit/"
-        next-link-text="Jebbit"
+        next-link="/work/acquia/"
+        next-link-text="Acquia"
         previous-link="/work/socialcode/"
         previous-link-text="SocialCode"
       />
