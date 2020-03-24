@@ -44,17 +44,18 @@
           dashboard placed over the customer's site in context as a set of
           seperate iframes that must messaage to one another.
         </p>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Lift Experience Builder Legacy"
-              class="flex"
-              src="/img/work/acquia/central_recommendation_entry_1.jpg"
-            />
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Lift Experience Builder Legacy"
+            class="flex"
+            src="/img/work/acquia/legacy-lift.png"
+          />
         </div>
-
+      </div>
+      <div class="p-4 lg:p-12">
         <p>
           Additionaly, the Lift development team had issues managing data across
           many individual Ember apps that were created in each iframed sandbox,
@@ -72,17 +73,18 @@
           would be a better overall user experience and avoid previous pitfalls
           for messaging across sandboxed mini applications in the browser.
         </p>
-
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Lift Experience Builder Legacy"
-              class="flex"
-              src="/img/work/acquia/central_recommendation_entry_1.jpg"
-            />
-          </div>
+      </div>
+      <div class="bg-acquia-blue flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Lift Experience Builder Legacy"
+            class="flex"
+            src="/img/work/acquia/central_recommendation_entry_1.jpg"
+          />
         </div>
+      </div>
 
+      <div class="p-4 lg:p-12">
         <p>
           This was a completely new ground up application using both a stand
           alone app for the admin and metrics for the client that was no longer
@@ -90,42 +92,43 @@
           single windowed interface on the customer site for basic preview
           functions.
         </p>
-
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Lift Experience Builder Legacy"
-              class="flex"
-              src="/img/work/acquia/central_target_entry_1.jpg"
-            />
-          </div>
+      </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Lift Experience Builder Legacy"
+            class="flex"
+            src="/img/work/acquia/central_target_entry_1.jpg"
+          />
         </div>
+      </div>
 
+      <div class="p-4 lg:p-12">
         <p>
           The result was faster load times and reduced code to load on the
           client's own web pages. Also, with a new application to create complex
           rule creation on what content site visitors would see, the overall
           number of clicks for each step was reduced by an average of half.
         </p>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Lift Experience Builder Legacy"
-              class="flex"
-              src="/img/work/acquia/builder_index_1.jpg"
-            />
-          </div>
+      <div class="bg-acquia-blue flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Lift Experience Builder Legacy"
+            class="flex"
+            src="/img/work/acquia/builder_index_1.jpg"
+          />
         </div>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <img
-              alt="Lift Experience Builder Legacy"
-              class="flex"
-              src="/img/work/acquia/builder_index_5.jpg"
-            />
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+          <img
+            alt="Lift Experience Builder Legacy"
+            class="flex"
+            src="/img/work/acquia/builder_index_5.jpg"
+          />
         </div>
       </div>
 
