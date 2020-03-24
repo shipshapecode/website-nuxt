@@ -122,6 +122,14 @@
         </div>
       </div>
 
+      <div class="p-4 lg:p-12">
+        <p>
+          After loading the site in admin mode, users can create dynamic slots
+          on the page and select content or content algorithms on how to fill
+          those slots.
+        </p>
+      </div>
+
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <img
