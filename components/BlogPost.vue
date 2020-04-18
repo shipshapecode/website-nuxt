@@ -12,16 +12,6 @@
 
         <AuthorRow v-bind="post.author.attributes" :date="post.date" />
 
-        <div class="flex mb-8 mt-2 w-full">
-          <div id="codefund">
-            <!-- fallback content -->
-          </div>
-          <script
-            src="https://app.codefund.io/properties/31/funder.js"
-            async="async"
-          ></script>
-        </div>
-
         <div class="post-content" v-html="post.html" />
 
         <BottomLinks
