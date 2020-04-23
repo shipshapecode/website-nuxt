@@ -28,16 +28,13 @@
           </h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
-            We are beyond excited to be giving a talk at EmberConf 2020, Talking
-            to Your Dog with Ember, where we will explore using the Web Audio
-            API to translate dog barks into something more meaningful.
+            We recorded a talk for virtual EmberConf 2020, Talking to Your Dog
+            with Ember, where we explored using the Web Audio API to translate
+            dog barks into something more meaningful.
           </p>
 
           <p>
-            <a
-              class="learn-more"
-              href="https://emberconf.com/#/schedule/day-2_talking-to-your-dog-with-ember"
-            >
+            <a class="learn-more" href="https://youtu.be/Kw0V9HvMpI4">
               Learn more
               <AngleRight class="h-4 inline mb-1 w-4" />
             </a>
