@@ -4,7 +4,7 @@
       <div class="section-content">
         <div class="flex flex-col mb-12 w-full">
           <h1>
-            Client Work
+            Our Work
           </h1>
 
           <p class="max-w-3xl">

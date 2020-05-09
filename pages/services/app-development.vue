@@ -134,7 +134,8 @@
             In addition to PWAs, which can also be installed on desktop, we have
             created top-notch multi-platform apps leveraging Electron. Electron
             allows you to ship a cross platform desktop app and integrate more
-            closely with native OS features.
+            closely with native OS features. Check out our recent work on
+            <nuxt-link to="/work/swach/">Swach</nuxt-link> to learn more.
           </p>
         </div>
 
