@@ -44,9 +44,9 @@
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <img
-            alt="Lift Experience Builder Legacy"
+            alt="Swach in dark mode showing the palettes screen"
             class="flex"
-            src="/img/work/acquia/legacy-lift.png"
+            src="/img/work/swach/palette-dark.png"
           />
         </div>
       </div>
@@ -69,12 +69,12 @@
           for messaging across sandboxed mini applications in the browser.
         </p>
       </div>
-      <div class="bg-acquia-blue flex justify-center lg:flex-1">
+      <div class="bg-swach-purple flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <img
-            alt="Lift Experience Builder Legacy"
+            alt="Swach in light mode showing the palettes screen"
             class="flex"
-            src="/img/work/acquia/central_recommendation_entry_1.jpg"
+            src="/img/work/swach/palette-light.png"
           />
         </div>
       </div>
@@ -91,9 +91,9 @@
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <img
-            alt="Lift Experience Builder Legacy"
+            alt="The color harmonies tab of Swach, showing a color wheel and color palette."
             class="flex"
-            src="/img/work/acquia/central_target_entry_1.jpg"
+            src="/img/work/swach/kuler.png"
           />
         </div>
       </div>
@@ -156,10 +156,10 @@
       </div>
 
       <BottomLinks
-        next-link="/work/socialcode/"
-        next-link-text="SocialCode"
-        previous-link="/work/jebbit/"
-        previous-link-text="Jebbit"
+        next-link="/work/jebbit/"
+        next-link-text="Jebbit"
+        previous-link="/work/netflix/"
+        previous-link-text="Netflix"
       />
     </div>
   </div>

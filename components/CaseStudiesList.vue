@@ -16,14 +16,13 @@
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="m-auto max-w-2xl w-full lg:m-0">
-        <AcquiaLogo class="h-10 mb-3 w-auto" />
+        <SwachLogo class="h-10 mb-3 w-auto" />
 
         <p class="lg:h-12">
-          Rebuild the personalization platform for a better usability
-          experience.
+          Building a cross platform desktop color management tool
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/acquia/">
+        <nuxt-link class="btn btn-navy mb-12" to="/work/swach/">
           View Case
         </nuxt-link>
       </div>
@@ -45,13 +44,14 @@
 
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="m-auto max-w-2xl w-full lg:m-0">
-        <SwachLogo class="h-10 mb-3 w-auto" />
+        <AcquiaLogo class="h-10 mb-3 w-auto" />
 
         <p class="lg:h-12">
-          Building a cross platform desktop color management tool
+          Rebuild the personalization platform for a better usability
+          experience.
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/swach/">
+        <nuxt-link class="btn btn-navy mb-12" to="/work/acquia/">
           View Case
         </nuxt-link>
       </div>
