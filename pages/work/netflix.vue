@@ -118,8 +118,8 @@
       <BottomLinks
         next-link="/work/acquia/"
         next-link-text="Acquia"
-        previous-link="/work/socialcode/"
-        previous-link-text="SocialCode"
+        previous-link="/work/brokermate/"
+        previous-link-text="Brokermate"
       />
     </div>
   </div>

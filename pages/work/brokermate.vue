@@ -194,10 +194,10 @@
       </div>
 
       <BottomLinks
-        next-link="/work/socialcode/"
-        next-link-text="SocialCode"
-        previous-link="/work/jebbit/"
-        previous-link-text="Jebbit"
+        next-link="/work/netflix/"
+        next-link-text="Netflix"
+        previous-link="/work/socialcode/"
+        previous-link-text="SocialCode"
       />
     </div>
   </div>

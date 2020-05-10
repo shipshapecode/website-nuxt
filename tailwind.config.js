@@ -16,8 +16,17 @@ module.exports = {
       'grey-transparent': 'rgba(236, 243, 246, 50)',
       'jebbit-green': '#7ec0b2',
       red: '#EF898B',
+      'swach-purple': '#0A0038',
       white: '#FFFFFF'
     },
+
+    fill: (theme) => ({
+      white: theme('colors.white')
+    }),
+
+    stroke: (theme) => ({
+      white: theme('colors.white')
+    }),
 
     maxWidth: {
       xxs: '13rem',
