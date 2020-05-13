@@ -127,10 +127,16 @@
         <h4>Outcome</h4>
 
         <p>
-          TODO
+          Users are now able to have a consistent color management experience
+          across all platforms, and Windows and Linux users can now enjoy the
+          same functionality of many existing color tools that were only
+          available for MacOS.
         </p>
+
         <p>
-          TODO
+          By leveraging Electron and Ember.js we were able to create a single
+          codebase to support all platforms, saving a lot of development time
+          building and maintaining multiple codebases.
         </p>
       </div>
 
