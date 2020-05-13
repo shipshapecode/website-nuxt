@@ -118,12 +118,6 @@
       </div>
 
       <div class="p-4 lg:p-12">
-        <p>
-          TODO
-        </p>
-      </div>
-
-      <div class="p-4 lg:p-12">
         <h4>Outcome</h4>
 
         <p>
@@ -137,6 +131,11 @@
           By leveraging Electron and Ember.js we were able to create a single
           codebase to support all platforms, saving a lot of development time
           building and maintaining multiple codebases.
+        </p>
+
+        <p>
+          Swach is <a href="https://swach.io/">free to download</a>, so please
+          try it out and let us know what you think!
         </p>
       </div>
 
