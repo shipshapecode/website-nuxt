@@ -50,23 +50,19 @@
           />
         </div>
       </div>
-      <div class="p-4 lg:p-12">
-        <p>
-          Additionaly, the Lift development team had issues managing data across
-          many individual Ember apps that were created in each iframed sandbox,
-          which were intended to syncronize data changes as the user added or
-          updated configurations.
-        </p>
-      </div>
 
       <div class="p-4 lg:p-12">
         <h4>Solution</h4>
 
         <p>
-          Bringing our experience with building performant applications, we
-          worked with the in house product team to design architecture that
-          would be a better overall user experience and avoid previous pitfalls
-          for messaging across sandboxed mini applications in the browser.
+          Building apps that work across MacOS, Windows, and Linux used to mean
+          learning completely different tech stacks for each app, but now we can
+          use <a href="https://www.electronjs.org/">Electron</a> to build
+          cross-platform apps using JavaScript, HTML and CSS. Drawing on our
+          Ember.js experience, we decided to leverage
+          <a href="https://ember-electron.js.org/">Ember Electron</a>, an Ember
+          addon for building Electron apps to create a seamless experience
+          across all platforms.
         </p>
       </div>
       <div class="bg-swach-purple flex justify-center lg:flex-1">
@@ -81,11 +77,11 @@
 
       <div class="p-4 lg:p-12">
         <p>
-          This was a completely new ground up application using both a stand
-          alone app for the admin and metrics for the client that was no longer
-          encombered by the reduced screen real estate, but also a smaller
-          single windowed interface on the customer site for basic preview
-          functions.
+          Like Contrast and Sip before us, we decided Swach would be best as a
+          menubar app. This is a fairly common practice for MacOS, but less
+          common for Windows and Linux. Bringing this type of app to all
+          platforms allows everyone to enjoy Swach unobtrusively, yet always
+          have it accessible for quick color operations.
         </p>
       </div>
       <div class="bg-grey-light flex justify-center lg:flex-1">
@@ -100,58 +96,41 @@
 
       <div class="p-4 lg:p-12">
         <p>
-          The result was faster load times and reduced code to load on the
-          client's own web pages. Also, with a new application to create complex
-          rule creation on what content site visitors would see, the overall
-          number of clicks for each step was reduced by an average of half.
+          We wanted to ensure that Swach was a one stop shop for everything a
+          designer might need when managing colors for a project. This includes
+          storing individual colors, checking their WCAG contrast scores,
+          organizing them into palettes, and even discovering new color
+          combinations from a base color. Our color harmonies tab was inspired
+          by <a href="https://color.adobe.com/">Adobe Color</a> and allows you
+          to create new palettes by using a base color and calculating
+          analogous, monochromatic, etc color harmonies for it.
         </p>
       </div>
 
-      <div class="bg-acquia-blue flex justify-center lg:flex-1">
+      <div class="bg-swach-purple flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <img
-            alt="Lift Experience Builder Legacy"
+            alt="Swach showing the contrast checker tab comparing colors and calculating the WCAG score."
             class="flex"
-            src="/img/work/acquia/builder_index_1.jpg"
+            src="/img/work/swach/contrast-checker.png"
           />
         </div>
       </div>
 
       <div class="p-4 lg:p-12">
         <p>
-          After loading the site in admin mode, users can create dynamic slots
-          on the page and select content or content algorithms on how to fill
-          those slots.
+          TODO
         </p>
-      </div>
-
-      <div class="bg-grey-light flex justify-center lg:flex-1">
-        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
-            alt="Lift Experience Builder Legacy"
-            class="flex"
-            src="/img/work/acquia/builder_index_5.jpg"
-          />
-        </div>
       </div>
 
       <div class="p-4 lg:p-12">
         <h4>Outcome</h4>
 
         <p>
-          Due to complex onboarding and management steps, Acquia would see a
-          regular amount of non-renewals or cancelations. Since releasing the
-          new application, zero customers who have started on the new version of
-          Lift or upgraded to the new version have canceled.
+          TODO
         </p>
         <p>
-          Customers using the new version of Lift are creating 2.5x more
-          campaigns than customers using the previous application.
-        </p>
-        <p>
-          Users of the latest version of Lift are able to onboard and get value
-          from the product 3x faster than customers who had onboarded into the
-          old version.
+          TODO
         </p>
       </div>
 
