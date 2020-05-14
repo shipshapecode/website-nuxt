@@ -122,9 +122,9 @@
 
         <p>
           Users are now able to have a consistent color management experience
-          across all platforms. Windows and Linux users can now enjoy the
-          same functionality of many existing color tools that were only
-          available for MacOS.
+          across all platforms. Windows and Linux users can now enjoy the same
+          functionality of many existing color tools that were only available
+          for MacOS.
         </p>
 
         <p>
