@@ -103,7 +103,7 @@
           combinations from a base color. Our color harmonies tab was inspired
           by <a href="https://color.adobe.com/">Adobe Color</a> and allows you
           to create new palettes by using a base color and calculating
-          analogous, monochromatic, etc color harmonies for it.
+          analogous, monochromatic, and other color harmonies for it.
         </p>
       </div>
 
