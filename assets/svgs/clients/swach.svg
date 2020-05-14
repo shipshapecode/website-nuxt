@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 48 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Full-logo" transform="translate(-2.000000, -2.000000)">
+            <rect id="Rectangle" stroke="#8D9B9F" stroke-width="0.65" transform="translate(8.230000, 8.229450) rotate(-135.000000) translate(-8.230000, -8.229450) " x="1.61" y="4.05944951" width="13.24" height="8.34" rx="4.17"></rect>
+            <rect id="Rectangle" stroke="#8D9B9F" stroke-width="0.65" transform="translate(11.697140, 8.233411) rotate(-45.000000) translate(-11.697140, -8.233411) " x="5.07713996" y="4.06341054" width="13.24" height="8.34" rx="4.17"></rect>
+            <circle id="Oval" stroke="#8D9B9F" stroke-width="0.65" cx="9.98" cy="9.98" r="1.04"></circle>
+            <text id="Swach" font-family="GTWalsheimMedium, GT Walsheim" font-size="10" font-weight="400" fill="#8D9B9F">
+                <tspan x="20" y="12">Swach</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

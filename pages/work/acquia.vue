@@ -161,10 +161,10 @@
       </div>
 
       <BottomLinks
-        next-link="/work/jebbit/"
-        next-link-text="Jebbit"
-        previous-link="/work/netflix/"
-        previous-link-text="Netflix"
+        next-link="/work/socialcode/"
+        next-link-text="SocialCode"
+        previous-link="/work/jebbit/"
+        previous-link-text="Jebbit"
       />
     </div>
   </div>

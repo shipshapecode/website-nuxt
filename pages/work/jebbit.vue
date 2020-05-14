@@ -158,10 +158,10 @@
       </div>
 
       <BottomLinks
-        next-link="/work/brokermate/"
-        next-link-text="Brokermate"
-        previous-link="/work/acquia/"
-        previous-link-text="Acquia"
+        next-link="/work/acquia/"
+        next-link-text="Acquia"
+        previous-link="/work/swach/"
+        previous-link-text="Swach"
       />
     </div>
   </div>

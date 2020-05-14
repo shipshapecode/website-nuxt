@@ -101,10 +101,10 @@
       </div>
 
       <BottomLinks
-        next-link="/work/netflix/"
-        next-link-text="Netflix"
-        previous-link="/work/brokermate/"
-        previous-link-text="Brokermate"
+        next-link="/work/brokermate/"
+        next-link-text="Brokermate"
+        previous-link="/work/acquia/"
+        previous-link-text="Acquia"
       />
     </div>
   </div>
