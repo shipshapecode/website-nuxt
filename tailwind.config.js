@@ -1,6 +1,7 @@
 const gradient = require('./assets/css/tailwind/plugins/gradient');
 
 module.exports = {
+  purge: false,
   theme: {
     colors: {
       transparent: 'transparent',
