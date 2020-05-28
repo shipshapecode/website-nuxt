@@ -152,7 +152,6 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     '@nuxtjs/tailwindcss',
-    'nuxt-purgecss',
     [
       'nuxt-validate',
       {
