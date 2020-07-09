@@ -3,7 +3,7 @@ authorId: chuckcarpenter
 categories: 
   - miragejs
   - graphql
-date: '2020-07-9'
+date: '2020-07-09'
 slug: miragejs-graphql-tools
 title: Simplify using MirageJS with GraphQL
 ---
