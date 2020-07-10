@@ -8,7 +8,7 @@ slug: miragejs-graphql-tools
 title: Simplify using MirageJS with GraphQL
 ---
 
-Using [Mirage](https://miragejs.com/) can be very handy to allow app developers to build features early and not be blocked by an API that doesn't yet exist or that is still in progress. This way you can have a proof of concept or can work on features that simply need to be put in place for persistance somewhere later on.
+Using [Mirage](https://miragejs.com/) can be very handy to allow app developers to build features early and not be blocked by an API that doesn't exist yet or that is still in progress. This way you can have a proof of concept or can work on features that simply need to be put in place for persistence somewhere later on.
 
 While this works across many different application stacks, it has traditionally been used expecting a REST style API and it's not completely turn-key for some technologies such as GraphQL. A number of folks, including the Mirage core team, have been working on the best workflows to make that an easier experience. While that is underway, this is how we decided to improve our workflow as the code base grows.
 
