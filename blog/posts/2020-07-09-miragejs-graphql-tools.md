@@ -12,7 +12,7 @@ Using [Mirage](https://miragejs.com/) can be very handy to allow app developers 
 
 While this works across many different application stacks, it has traditionally been used expecting a REST style API and it's not completely turn-key for some technologies such as GraphQL. A number of folks, including the Mirage core team, have been working on the best workflows to make that an easier experience, but it is not yet [robustly documented](https://miragejs.com/docs/comparison-with-other-tools/#graphql-query-mocking). While that is underway, this is how we decided to improve our workflow as the code base grows.
 
-Recently, we needed to apply simulation for a Javascript application using GraphQL. During so, we worked on some utilities to streamline the developer experience for updates and maintanence. The examples for dealing with this are for a very basic use case. 
+Recently, we needed to apply simulation for a Javascript application using GraphQL. As part of the implementation, we worked on some utilities to streamline the developer experience for updates and maintenance. The examples for dealing with this are for a very basic use case. 
 
 ```js
 import { createServer } from 'miragejs';
