@@ -165,7 +165,7 @@ We first want to identify all the model names (variable `modelNames`). Also, we'
 });
 ```
 
-Now, to walk through what we're doing here with `modelsReducedFields()` is to take each node and reduce the fields down to other models and if it's a belongs-to or has-many kind of association. You might have notices the call to `_getRootType()`, which is just a recursive function to go through nested objects in the AST and get the deepest node's name. I'm showing it independently in the following:
+Now, what we're doing here with `modelsReducedFields()` is taking each node and reducing the fields down to other models and determining if they are a belongs-to or has-many kind of association. You might have noticed the call to `_getRootType()`, which is just a recursive function to go through nested objects in the AST and get the deepest node's name. I'm showing it independently in the following:
 
 ```js
 const _getRootType = field => (field.type ? _getRootType(field.type) : field);
