@@ -4,6 +4,10 @@ categories:
   - miragejs
   - graphql
 date: '2020-07-09'
+nextSlug: signing-electron-apps-with-github-actionsshepherd-6-smaller-faster-tether
+nextTitle: 'Signing Electron Apps with GitHub Actions'
+previousSlug: ember-data-passing-query-params-to-save
+previousTitle: Ember Data | Passing query params to .save()
 slug: miragejs-graphql-tools
 title: Simplify using MirageJS with GraphQL
 ---
