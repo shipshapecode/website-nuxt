@@ -133,7 +133,7 @@ query ListAllMovies {
 }
 ```
 
-We first want to identify all the model names (variable `modelNames`). Also, you want to reduce the fields you're checking against to only fields that are confirmed to be other object types (variable `modelsReducedFields`). 
+We first want to identify all the model names (variable `modelNames`). Also, we'll want to reduce the fields we're checking against to only fields that are confirmed to be other object types (variable `modelsReducedFields`). 
 
 ```js
   const modelNames = nodeTypes.map(type => type.model);
