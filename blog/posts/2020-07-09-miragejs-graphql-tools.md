@@ -195,4 +195,4 @@ const modelMaps = modelsReducedFields.reduce((modelAccumulator, node) => {
 
 While this may seem like a lot up front for such a small schema, if your schema is larger, or you expect your types to scale, yet still want to use Mirage for simulation or testing coverage, then it's really helpful to get this up front without maintaining those changes over time.
 
-That said, this only automates models and associations. We're still going to need to be explicit with our routes and resolvers to get that data as we add routes and different queries/mutations to our schemas. There are some ways to get those more automated to our build times as well and we'll explore that in a second part to this on working with Mirage and GraphQL. 
+That said, this only automates models and associations. We're still going to need to be explicit with our routes and resolvers to get that data as we add routes and different queries/mutations to our schemas. There are some ways to get those more automated to our build times as well and we'll explore that in a subsequent post on working with Mirage and GraphQL. 
