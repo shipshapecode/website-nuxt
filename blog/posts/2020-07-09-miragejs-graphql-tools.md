@@ -82,7 +82,7 @@ This is how the basic recommended configuration is when working with GraphQl. Th
   }
 ```
 
-The first thing we can do is to automate adding models to our config at build time. This can be done by parsing our schema and some traversing the parsed AST. 
+The first thing we can do is automate adding models to our config at build time. This can be done by parsing our schema and some traversing of the parsed AST. 
 
 ```js
 import { parse } from 'graphql';
