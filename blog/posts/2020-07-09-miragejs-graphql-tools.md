@@ -117,7 +117,7 @@ const modelMaps = nodeTypes.reduce((modelAccumulator, node) => {
 }, {});
 ```
 
-You can then add that do the configuration for Mirage as `models: modelMaps` and you'll get that automatically registered as you add to your schema. This does get more complicated though, when we start to add associations in our objects and need Mirage to see that as a relationship for queries that load all that data. Ideally, the graph can work for a query like so on the UI:
+We can then add that to the configuration for Mirage as `models: modelMaps` and we'll get that automatically registered as we add to our schema. This does get more complicated though, when we start to add associations in our objects and need Mirage to see that as a relationship for queries that load all that data. Ideally, the graph can work for a query like so on the UI:
 
 ```graphql
 query ListAllMovies {
