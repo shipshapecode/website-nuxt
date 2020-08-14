@@ -18,7 +18,10 @@
       </template>
 
       <template v-slot:icon>
-        <ServicesIcon class="m-auto max-w-2xl" />
+        <inline-svg
+          class="m-auto max-w-2xl"
+          src="/svgs/hero-images/services.svg"
+        />
       </template>
     </HeroBlock>
 
@@ -27,14 +30,12 @@
 </template>
 
 <script>
-import ServicesIcon from '~/assets/svgs/hero-images/services.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import ServicesBlurbs from '~/components/ServicesBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    ServicesIcon,
     HeroBlock,
     ServicesBlurbs
   },

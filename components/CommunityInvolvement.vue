@@ -36,14 +36,20 @@
           <p>
             <a class="learn-more" href="https://youtu.be/Kw0V9HvMpI4">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </a>
           </p>
         </div>
 
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberConf2019 class="ember-image inline p-12" />
+            <inline-svg
+              class="ember-image inline p-12"
+              src="/svgs/emberconf/2019.svg"
+            />
           </div>
 
           <h3>
@@ -59,7 +65,10 @@
           <p>
             <a class="learn-more" href="https://youtu.be/u5onNDpt8ks">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </a>
           </p>
         </div>
@@ -96,7 +105,10 @@
           <p>
             <a class="learn-more" href="https://www.meetup.com/EmberJS-NYC/">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </a>
           </p>
         </div>
@@ -105,7 +117,10 @@
       <div class="flex flex-wrap lg:flex-no-wrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberCares class="ember-image inline p-4" />
+            <inline-svg
+              class="ember-image inline p-4"
+              src="/svgs/ember-cares.svg"
+            />
           </div>
 
           <h3>
@@ -121,14 +136,20 @@
           <p>
             <a class="learn-more" href="https://embercares.com/">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </a>
           </p>
         </div>
 
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <EmberConf class="ember-image inline p-12" />
+            <inline-svg
+              class="ember-image inline p-12"
+              src="/svgs/emberconf.svg"
+            />
           </div>
 
           <h3>
@@ -148,7 +169,10 @@
               href="https://2018.emberconf.com/schedule.html#e-improving-ember-app-performance"
             >
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </a>
           </p>
         </div>
@@ -177,7 +201,10 @@
             <p>
               <a class="learn-more" href="https://www.meetup.com/Ember-JS-DC/">
                 Learn more
-                <AngleRight class="h-4 inline mb-1 w-4" />
+                <inline-svg
+                  class="h-4 inline mb-1 w-4"
+                  src="/svgs/angle-right.svg"
+                />
               </a>
             </p>
           </div>
@@ -186,22 +213,6 @@
     </div>
   </div>
 </template>
-
-<script>
-import AngleRight from '~/assets/svgs/angle-right.svg?inline';
-import EmberCares from '~/assets/svgs/ember-cares.svg?inline';
-import EmberConf from '~/assets/svgs/emberconf.svg?inline';
-import EmberConf2019 from '~/assets/svgs/emberconf/2019.svg?inline';
-
-export default {
-  components: {
-    AngleRight,
-    EmberCares,
-    EmberConf,
-    EmberConf2019
-  }
-};
-</script>
 
 <style lang="scss">
 .ember-image {

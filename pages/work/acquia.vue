@@ -28,7 +28,10 @@
         class="bg-grey-transparent flex flex-wrap h-64 md:h-140 justify-center items-center"
       >
         <div class="w-1/2 lg:w-1/3">
-          <Acquia class="'fill-white h-auto w-full'" />
+          <inline-svg
+            class="fill-white h-auto w-full"
+            src="/svgs/clients/acquia-droplet.svg"
+          />
         </div>
       </div>
 
@@ -172,13 +175,11 @@
 
 <script>
 import BottomLinks from '~/components/BottomLinks.vue';
-import Acquia from '~/assets/svgs/clients/acquia-droplet.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    BottomLinks,
-    Acquia
+    BottomLinks
   },
 
   head() {

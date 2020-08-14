@@ -19,7 +19,10 @@
       </template>
 
       <template v-slot:icon>
-        <MentoringIcon class="m-auto max-w-2xl" />
+        <inline-svg
+          class="m-auto max-w-2xl"
+          src="/svgs/hero-images/mentoring.svg"
+        />
       </template>
     </HeroBlock>
 
@@ -28,14 +31,12 @@
 </template>
 
 <script>
-import MentoringIcon from '~/assets/svgs/hero-images/mentoring.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import MentoringBlurbs from '~/components/MentoringBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    MentoringIcon,
     HeroBlock,
     MentoringBlurbs
   },

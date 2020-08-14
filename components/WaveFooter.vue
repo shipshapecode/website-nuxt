@@ -2,7 +2,7 @@
   <footer class="wave text-base">
     <div class="footer-top" data-aos="zoom-in-up">
       <div class="text-center pt-32 lg:pb-32">
-        <compass class="inline m-8" />
+        <inline-svg class="inline m-8" src="/svgs/compass.svg" />
 
         <h3 class="font-bold p-4 text-5xl text-white">
           Already convinced?
@@ -20,7 +20,7 @@
     <div class="footer-bottom flex flex-wrap w-full justify-center">
       <div class="max-w-8xl p-8 w-full">
         <div class="flex justify-center lg:justify-start w-full">
-          <logo class="footer-logo h-16 w-16" />
+          <inline-svg class="footer-logo h-16 w-16" src="/svgs/logo.svg" />
         </div>
 
         <div class="flex flex-wrap justify-center w-full">
@@ -124,7 +124,7 @@
                   href="https://github.com/shipshapecode"
                 >
                   <div class="github-logo">
-                    <github />
+                    <inline-svg src="/svgs/github.svg" />
                   </div>
                 </a>
                 <a
@@ -133,7 +133,7 @@
                   href="https://twitter.com/shipshapecode"
                 >
                   <div class="twitter-logo">
-                    <twitter />
+                    <inline-svg src="/svgs/twitter.svg" />
                   </div>
                 </a>
                 <a
@@ -142,7 +142,7 @@
                   href="https://www.linkedin.com/company/ship-shape/"
                 >
                   <div class="linkedin-logo">
-                    <linkedin />
+                    <inline-svg src="/svgs/linkedin.svg" />
                   </div>
                 </a>
               </div>
@@ -157,24 +157,6 @@
     </div>
   </footer>
 </template>
-
-<script>
-import Compass from '~/assets/svgs/compass.svg?inline';
-import Github from '~/assets/svgs/github.svg?inline';
-import Linkedin from '~/assets/svgs/linkedin.svg?inline';
-import Logo from '~/assets/svgs/logo.svg?inline';
-import Twitter from '~/assets/svgs/twitter.svg?inline';
-
-export default {
-  components: {
-    Compass,
-    Github,
-    Linkedin,
-    Logo,
-    Twitter
-  }
-};
-</script>
 
 <style lang="scss">
 .wave {

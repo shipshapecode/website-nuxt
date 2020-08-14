@@ -6,7 +6,10 @@
           class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
           data-aos="fade-up"
         >
-          <Design class="m-auto max-w-2xl" />
+          <inline-svg
+            class="m-auto max-w-2xl"
+            src="/svgs/illustrations/design.svg"
+          />
         </div>
 
         <div
@@ -30,7 +33,10 @@
 
             <nuxt-link class="learn-more" to="/services/">
               Explore Our Services
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -56,7 +62,10 @@
 
             <nuxt-link class="learn-more" to="/work/">
               See Our Work
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -65,7 +74,10 @@
           class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2"
           data-aos="fade-up"
         >
-          <Build class="m-auto max-w-2xl" />
+          <inline-svg
+            class="m-auto max-w-2xl"
+            src="/svgs/illustrations/build.svg"
+          />
         </div>
       </div>
 
@@ -74,7 +86,10 @@
           class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
           data-aos="fade-up"
         >
-          <Ship class="m-auto max-w-2xl" />
+          <inline-svg
+            class="m-auto max-w-2xl"
+            src="/svgs/illustrations/ship.svg"
+          />
         </div>
 
         <div
@@ -100,7 +115,10 @@
 
             <nuxt-link class="learn-more" to="/about/">
               Learn About Us
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -108,19 +126,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import AngleRight from '~/assets/svgs/angle-right.svg?inline';
-import Build from '~/assets/svgs/illustrations/build.svg?inline';
-import Design from '~/assets/svgs/illustrations/design.svg?inline';
-import Ship from '~/assets/svgs/illustrations/ship.svg?inline';
-
-export default {
-  components: {
-    AngleRight,
-    Build,
-    Design,
-    Ship
-  }
-};
-</script>

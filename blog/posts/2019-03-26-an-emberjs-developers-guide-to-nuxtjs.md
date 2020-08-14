@@ -390,7 +390,7 @@ export default class Blog extends Route {
           target="_blank"
           rel="noopener"
         >
-          <RSS/>
+          <inline-svg src="/svgs/rss.svg"/>
         </a>
       </div>
 
@@ -405,7 +405,6 @@ export default class Blog extends Route {
 
 <script>
   import BlogPostMenu from '~/components/BlogPostMenu.vue';
-  import RSS from '~/assets/svgs/rss.svg?inline';
   import { getBlogData } from '~/utils/blog';
   import { generateMeta } from '~/utils/meta';
 
@@ -413,8 +412,7 @@ export default class Blog extends Route {
     scrollToTop: true,
 
     components: {
-      BlogPostMenu,
-      RSS
+      BlogPostMenu
     },
 
     asyncData() {

@@ -22,7 +22,10 @@
         class="bg-swach-purple flex flex-wrap h-64 md:h-140 justify-center items-center"
       >
         <div class="w-1/2 lg:w-1/3">
-          <SwachWhite class="h-auto w-full" />
+          <inline-svg
+            class="h-auto w-full"
+            src="/svgs/clients/swach-white.svg"
+          />
         </div>
       </div>
 
@@ -151,13 +154,11 @@
 
 <script>
 import BottomLinks from '~/components/BottomLinks.vue';
-import SwachWhite from '~/assets/svgs/clients/swach-white.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    BottomLinks,
-    SwachWhite
+    BottomLinks
   },
 
   head() {

@@ -11,27 +11,42 @@
         <div class="flex flex-wrap items-center pb-8 max-w-6xl w-full lg:pb-16">
           <div class="client-logo">
             <a href="https://www.scoutforpets.com/" aria-label="Scout">
-              <ScoutLogo class="h-full inline w-full max-w-xxs" />
+              <inline-svg
+                class="h-full inline w-full max-w-xxs"
+                src="/svgs/clients/scout.svg"
+              />
             </a>
           </div>
           <div class="client-logo">
             <a href="https://www.greenlight.guru/" aria-label="Greenlight Guru">
-              <GreenlightGuruLogo class="h-full inline w-full max-w-xxs" />
+              <inline-svg
+                class="h-full inline w-full max-w-xxs"
+                src="/svgs/clients/greenlight-guru.svg"
+              />
             </a>
           </div>
           <div class="client-logo">
             <a href="https://www.netflix.com/" aria-label="Netflix">
-              <NetflixLogo class="h-full inline w-full max-w-xxs" />
+              <inline-svg
+                class="h-full inline w-full max-w-xxs"
+                src="/svgs/clients/netflix.svg"
+              />
             </a>
           </div>
           <div class="client-logo">
             <a href="https://marianatek.com/" aria-label="Mariana Tek">
-              <MarianaTekLogo class="h-full inline w-full max-w-xxs" />
+              <inline-svg
+                class="h-full inline w-full max-w-xxs"
+                src="/svgs/clients/mariana-tek-full.svg"
+              />
             </a>
           </div>
           <div class="client-logo">
             <a href="https://www.socialcode.com/" aria-label="SocialCode">
-              <SocialCodeLogo class="h-full inline w-full max-w-xxs" />
+              <inline-svg
+                class="h-full inline w-full max-w-xxs"
+                src="/svgs/clients/socialcode.svg"
+              />
             </a>
           </div>
         </div>
@@ -45,21 +60,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import GreenlightGuruLogo from '~/assets/svgs/clients/greenlight-guru.svg?inline';
-import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
-import NetflixLogo from '~/assets/svgs/clients/netflix.svg?inline';
-import ScoutLogo from '~/assets/svgs/clients/scout.svg?inline';
-import SocialCodeLogo from '~/assets/svgs/clients/socialcode.svg?inline';
-
-export default {
-  components: {
-    GreenlightGuruLogo,
-    MarianaTekLogo,
-    NetflixLogo,
-    ScoutLogo,
-    SocialCodeLogo
-  }
-};
-</script>

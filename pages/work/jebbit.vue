@@ -23,7 +23,10 @@
         class="bg-jebbit-green flex flex-wrap h-64 md:h-140 justify-center items-center"
       >
         <div class="w-1/2">
-          <JebbitLogo class="fill-white h-auto w-full" />
+          <inline-svg
+            class="fill-white h-auto w-full"
+            src="/svgs/clients/jebbit.svg"
+          />
         </div>
       </div>
 
@@ -169,13 +172,11 @@
 
 <script>
 import BottomLinks from '~/components/BottomLinks.vue';
-import JebbitLogo from '~/assets/svgs/clients/jebbit.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    BottomLinks,
-    JebbitLogo
+    BottomLinks
   },
 
   head() {

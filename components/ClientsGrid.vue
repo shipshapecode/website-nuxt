@@ -2,7 +2,10 @@
   <div class="flex flex-wrap">
     <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
       <a href="https://marianatek.com/" aria-label="Mariana Tek">
-        <MarianaTekLogo class="h-8 mb-3 w-auto" />
+        <inline-svg
+          class="h-8 mb-3 w-auto"
+          src="/svgs/clients/mariana-tek-full.svg"
+        />
       </a>
 
       <p>
@@ -17,7 +20,7 @@
 
     <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
       <a href="https://www.scoutforpets.com/" aria-label="Scout">
-        <ScoutLogo class="h-8 mb-3 w-auto" />
+        <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/scout.svg" />
       </a>
       <p>
         We did several months of work with Scout, starting with updating to the
@@ -31,7 +34,10 @@
 
     <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
       <a href="https://www.greenlight.guru/" aria-label="Greenlight Guru">
-        <GreenlightGuruLogo class="h-8 mb-3 w-auto" />
+        <inline-svg
+          class="h-8 mb-3 w-auto"
+          src="/svgs/clients/greenlight-guru.svg"
+        />
       </a>
       <p>
         We first updated the greenlight.guru app to Ember 1.12, fixing
@@ -43,7 +49,7 @@
 
     <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
       <a href="https://www.mentrs.com/" aria-label="Mentrs">
-        <MentrsLogo class="h-8 mb-3 w-auto" />
+        <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/mentrs.svg" />
       </a>
 
       <p>
@@ -58,7 +64,7 @@
 
     <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
       <a href="https://anvyl.com/" aria-label="Anvyl">
-        <AnvylLogo class="h-8 mb-3 w-auto" />
+        <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/anvyl.svg" />
       </a>
       <p>
         We helped Anvyl create a new messaging feature to allow brands and
@@ -73,7 +79,7 @@
 
     <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
       <a href="https://cos.io/" aria-label="COS">
-        <COSLogo class="h-8 mb-3 w-auto" />
+        <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/cos.svg" />
       </a>
       <p>
         We helped The Center for Open Science develop some custom dashboards for
@@ -85,23 +91,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import AnvylLogo from '~/assets/svgs/clients/anvyl.svg?inline';
-import COSLogo from '~/assets/svgs/clients/cos.svg?inline';
-import GreenlightGuruLogo from '~/assets/svgs/clients/greenlight-guru.svg?inline';
-import MarianaTekLogo from '~/assets/svgs/clients/mariana-tek-full.svg?inline';
-import MentrsLogo from '~/assets/svgs/clients/mentrs.svg?inline';
-import ScoutLogo from '~/assets/svgs/clients/scout.svg?inline';
-
-export default {
-  components: {
-    AnvylLogo,
-    COSLogo,
-    GreenlightGuruLogo,
-    MarianaTekLogo,
-    MentrsLogo,
-    ScoutLogo
-  }
-};
-</script>
