@@ -18,7 +18,10 @@
       </template>
 
       <template v-slot:icon>
-        <ShepherdLogo class="shepherd-logo max-w-lg p-12 w-full" />
+        <inline-svg
+          class="shepherd-logo max-w-lg p-12 w-full"
+          src="/svgs/shepherd.svg"
+        />
       </template>
     </HeroBlock>
 
@@ -143,14 +146,12 @@
 </style>
 
 <script>
-import ShepherdLogo from '~/assets/svgs/shepherd.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import WhyShepherd from '~/components/WhyShepherd.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    ShepherdLogo,
     HeroBlock,
     WhyShepherd
   },

@@ -18,7 +18,10 @@
       </template>
 
       <template v-slot:icon>
-        <EmberConsultingIcon class="m-auto max-w-2xl" />
+        <inline-svg
+          class="m-auto max-w-2xl"
+          src="/svgs/hero-images/ember-consulting.svg"
+        />
       </template>
     </HeroBlock>
 
@@ -69,7 +72,6 @@
 
 <script>
 import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
-import EmberConsultingIcon from '~/assets/svgs/hero-images/ember-consulting.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import WhyEmber from '~/components/WhyEmber';
 import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
@@ -79,7 +81,6 @@ import { getBlogData } from '~/utils/blog';
 export default {
   components: {
     CommunityInvolvement,
-    EmberConsultingIcon,
     HeroBlock,
     RecentBlogPosts,
     WhyEmber

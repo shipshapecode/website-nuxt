@@ -6,7 +6,10 @@
       <div class="section-content">
         <div class="flex flex-wrap justify-center">
           <div class="project flex-1" data-aos="flip-up">
-            <ShepherdLogo class="shepherd-logo h-48 -ml-6 p-6 w-48" />
+            <inline-svg
+              class="shepherd-logo h-48 -ml-6 p-6 w-48"
+              src="/svgs/shepherd.svg"
+            />
 
             <h2 class="text-navy">
               Shepherd.js, Designed for Product Tours
@@ -23,7 +26,10 @@
             <p>
               <nuxt-link class="learn-more" to="/services/app-tours/">
                 Learn more
-                <AngleRight class="h-4 inline mb-1 w-4" />
+                <inline-svg
+                  class="h-4 inline mb-1 w-4"
+                  src="/svgs/angle-right.svg"
+                />
               </nuxt-link>
             </p>
           </div>
@@ -77,7 +83,10 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight class="h-4 inline mb-1 w-4" />
+                    <inline-svg
+                      class="h-4 inline mb-1 w-4"
+                      src="/svgs/angle-right.svg"
+                    />
                   </a>
                 </p>
               </div>
@@ -114,7 +123,10 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight class="h-4 inline mb-1 w-4" />
+                    <inline-svg
+                      class="h-4 inline mb-1 w-4"
+                      src="/svgs/angle-right.svg"
+                    />
                   </a>
                 </p>
               </div>
@@ -151,7 +163,10 @@
                     itemprop="codeRepository"
                   >
                     View on GitHub
-                    <AngleRight class="h-4 inline mb-1 w-4" />
+                    <inline-svg
+                      class="h-4 inline mb-1 w-4"
+                      src="/svgs/angle-right.svg"
+                    />
                   </a>
                 </p>
               </div>
@@ -192,15 +207,3 @@
   visibility: hidden !important;
 }
 </style>
-
-<script>
-import AngleRight from '~/assets/svgs/angle-right.svg?inline';
-import ShepherdLogo from '~/assets/svgs/shepherd.svg?inline';
-
-export default {
-  components: {
-    AngleRight,
-    ShepherdLogo
-  }
-};
-</script>

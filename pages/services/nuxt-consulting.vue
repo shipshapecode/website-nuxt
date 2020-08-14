@@ -18,7 +18,10 @@
       </template>
 
       <template v-slot:icon>
-        <NuxtConsultingIcon class="m-auto max-w-2xl" />
+        <inline-svg
+          class="m-auto max-w-2xl"
+          src="/svgs/hero-images/nuxt-consulting.svg"
+        />
       </template>
     </HeroBlock>
 
@@ -31,7 +34,10 @@
         <div class="flex flex-wrap">
           <div class="flex flex-wrap w-full lg:flex-no-wrap">
             <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <ModularIcon class="h-20 inline-block mb-8 w-auto" />
+              <inline-svg
+                class="h-20 inline-block mb-8 w-auto"
+                src="/svgs/pages/nuxt-consulting/modular.svg"
+              />
 
               <h5 class="text-white">
                 Modular
@@ -46,7 +52,10 @@
               </p>
             </div>
             <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <PerformanceIcon class="h-20 inline-block mb-8 w-auto" />
+              <inline-svg
+                class="h-20 inline-block mb-8 w-auto"
+                src="/svgs/pages/nuxt-consulting/performance.svg"
+              />
 
               <h5 class="text-white">
                 Performant
@@ -63,7 +72,10 @@
           </div>
           <div class="flex flex-wrap w-full lg:flex-no-wrap">
             <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <FunIcon class="h-20 inline-block mb-8 w-auto" />
+              <inline-svg
+                class="h-20 inline-block mb-8 w-auto"
+                src="/svgs/pages/nuxt-consulting/fun.svg"
+              />
 
               <h5 class="text-white">
                 Enjoyable
@@ -77,7 +89,10 @@
               </p>
             </div>
             <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <StaticIcon class="h-24 inline-block mb-4 w-24" />
+              <inline-svg
+                class="h-24 inline-block mb-4 w-24"
+                src="/svgs/pages/nuxt-consulting/static.svg"
+              />
 
               <h5 class="text-white">
                 Static / PWA
@@ -98,22 +113,12 @@
 </template>
 
 <script>
-import NuxtConsultingIcon from '~/assets/svgs/hero-images/nuxt-consulting.svg?inline';
-import FunIcon from '~/assets/svgs/pages/nuxt-consulting/fun.svg?inline';
-import ModularIcon from '~/assets/svgs/pages/nuxt-consulting/modular.svg?inline';
-import PerformanceIcon from '~/assets/svgs/pages/nuxt-consulting/performance.svg?inline';
-import StaticIcon from '~/assets/svgs/pages/nuxt-consulting/static.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    HeroBlock,
-    FunIcon,
-    ModularIcon,
-    NuxtConsultingIcon,
-    PerformanceIcon,
-    StaticIcon
+    HeroBlock
   },
 
   head() {

@@ -20,7 +20,10 @@
       </template>
 
       <template v-slot:icon>
-        <LandingIcon class="m-auto max-w-2xl" />
+        <inline-svg
+          class="m-auto max-w-2xl"
+          src="/svgs/hero-images/landing.svg"
+        />
       </template>
     </HeroBlock>
 
@@ -36,7 +39,6 @@
 
 <script>
 import HeroBlock from '~/components/HeroBlock.vue';
-import LandingIcon from '~/assets/svgs/hero-images/landing.svg?inline';
 import ProcessSection from '~/components/ProcessSection.vue';
 import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import TechnologiesSection from '~/components/TechnologiesSection.vue';
@@ -47,7 +49,6 @@ import { generateMeta } from '~/utils/meta';
 export default {
   components: {
     HeroBlock,
-    LandingIcon,
     ProcessSection,
     RecentBlogPosts,
     TechnologiesSection,

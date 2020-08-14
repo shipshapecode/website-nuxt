@@ -22,7 +22,10 @@
 
             <nuxt-link class="learn-more" to="/services/ember-consulting/">
               See How
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -46,7 +49,10 @@
 
             <nuxt-link class="learn-more" to="/services/app-development/">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -74,7 +80,10 @@
 
             <nuxt-link class="learn-more" to="/services/mentoring/">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -100,7 +109,10 @@
 
             <nuxt-link class="learn-more" to="/services/app-tours/">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -125,7 +137,10 @@
 
             <nuxt-link class="learn-more" to="/services/open-source/">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -150,7 +165,10 @@
 
             <nuxt-link class="learn-more" to="/services/nuxt-consulting/">
               Learn more
-              <AngleRight class="h-4 inline mb-1 w-4" />
+              <inline-svg
+                class="h-4 inline mb-1 w-4"
+                src="/svgs/angle-right.svg"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -158,13 +176,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import AngleRight from '~/assets/svgs/angle-right.svg?inline';
-
-export default {
-  components: {
-    AngleRight
-  }
-};
-</script>

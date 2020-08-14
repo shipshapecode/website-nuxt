@@ -19,7 +19,10 @@
         </template>
 
         <template v-slot:icon>
-          <AppDevelopmentIcon class="m-auto max-w-2xl" />
+          <inline-svg
+            class="m-auto max-w-2xl"
+            src="/svgs/hero-images/app-development.svg"
+          />
         </template>
       </HeroBlock>
 
@@ -41,7 +44,10 @@
             <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
               <div class="flex flex-wrap items-center justify-center">
                 <div>
-                  <TimeIcon class="h-20 inline-block mb-12 w-20" />
+                  <inline-svg
+                    class="h-20 inline-block mb-12 w-20"
+                    src="/svgs/pages/app-development/time.svg"
+                  />
 
                   <h5 class="text-white">
                     Save time and money
@@ -62,7 +68,10 @@
             <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
               <div class="flex flex-wrap items-center justify-center">
                 <div>
-                  <PWAIcon class="h-20 inline-block mb-12 w-20" />
+                  <inline-svg
+                    class="h-20 inline-block mb-12 w-20"
+                    src="/svgs/pages/app-development/pwa.svg"
+                  />
 
                   <h5 class="text-white">
                     Who's Using PWA's?
@@ -87,7 +96,10 @@
               class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
               data-aos="fade-up"
             >
-              <AppIcon class="m-auto max-w-2xl" />
+              <inline-svg
+                class="m-auto max-w-2xl"
+                src="/svgs/pages/app-development/app.svg"
+              />
             </div>
             <div
               class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
@@ -143,7 +155,10 @@
           <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <SailIcon class="h-20 inline-block mb-12 w-20" />
+                <inline-svg
+                  class="h-20 inline-block mb-12 w-20"
+                  src="/svgs/pages/app-development/sail.svg"
+                />
 
                 <h5 class="text-white">
                   Sail into an App Store
@@ -162,7 +177,10 @@
           <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <NativeAppsIcon class="h-20 inline-block mb-12 w-20" />
+                <inline-svg
+                  class="h-20 inline-block mb-12 w-20"
+                  src="/svgs/pages/app-development/native-apps.svg"
+                />
 
                 <h5 class="text-white">
                   Ship native apps
@@ -185,23 +203,11 @@
 </template>
 
 <script>
-import AppDevelopmentIcon from '~/assets/svgs/hero-images/app-development.svg?inline';
-import AppIcon from '~/assets/svgs/pages/app-development/app.svg?inline';
-import NativeAppsIcon from '~/assets/svgs/pages/app-development/native-apps.svg?inline';
-import PWAIcon from '~/assets/svgs/pages/app-development/pwa.svg?inline';
-import SailIcon from '~/assets/svgs/pages/app-development/sail.svg?inline';
-import TimeIcon from '~/assets/svgs/pages/app-development/time.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    AppDevelopmentIcon,
-    AppIcon,
-    NativeAppsIcon,
-    PWAIcon,
-    SailIcon,
-    TimeIcon,
     HeroBlock
   },
 

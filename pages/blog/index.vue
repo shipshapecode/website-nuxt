@@ -12,7 +12,7 @@
           target="_blank"
           rel="noopener"
         >
-          <RSS />
+          <inline-svg src="/svgs/rss.svg" />
         </a>
       </div>
 
@@ -28,7 +28,6 @@
 
 <script>
 import BlogPostMenu from '~/components/BlogPostMenu.vue';
-import RSS from '~/assets/svgs/rss.svg?inline';
 import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
@@ -36,8 +35,7 @@ export default {
   scrollToTop: true,
 
   components: {
-    BlogPostMenu,
-    RSS
+    BlogPostMenu
   },
 
   asyncData() {

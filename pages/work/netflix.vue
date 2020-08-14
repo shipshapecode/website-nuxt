@@ -24,7 +24,10 @@
         class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center"
       >
         <div class="w-1/2 lg:w-1/3">
-          <Netflix class="fill-white h-auto w-full" />
+          <inline-svg
+            class="fill-white h-auto w-full"
+            src="/svgs/clients/netflix.svg"
+          />
         </div>
       </div>
 
@@ -98,7 +101,7 @@
         class="bg-grey flex flex-wrap h-64 md:h-140 justify-center items-center"
       >
         <div class="p-4 lg:p-12 w-full">
-          <DataGraphic />
+          <inline-svg src="/svgs/data-graphic.svg" />
         </div>
       </div>
 
@@ -127,15 +130,11 @@
 
 <script>
 import BottomLinks from '~/components/BottomLinks.vue';
-import DataGraphic from '~/assets/svgs/data-graphic.svg?inline';
-import Netflix from '~/assets/svgs/clients/netflix.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    BottomLinks,
-    DataGraphic,
-    Netflix
+    BottomLinks
   },
 
   head() {

@@ -23,7 +23,10 @@
         class="bg-black flex flex-wrap h-64 md:h-140 justify-center items-center"
       >
         <div class="w-1/2">
-          <SocialCodeLogo class="fill-white h-auto w-full" />
+          <inline-svg
+            class="fill-white h-auto w-full"
+            src="/svgs/clients/socialcode.svg"
+          />
         </div>
       </div>
 
@@ -112,13 +115,11 @@
 
 <script>
 import BottomLinks from '~/components/BottomLinks.vue';
-import SocialCodeLogo from '~/assets/svgs/clients/socialcode.svg?inline';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    BottomLinks,
-    SocialCodeLogo
+    BottomLinks
   },
 
   head() {

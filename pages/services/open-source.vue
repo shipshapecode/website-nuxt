@@ -18,7 +18,10 @@
       </template>
 
       <template v-slot:icon>
-        <OpenSourceIcon class="m-auto max-w-2xl" />
+        <inline-svg
+          class="m-auto max-w-2xl"
+          src="/svgs/hero-images/open-source.svg"
+        />
       </template>
     </HeroBlock>
 
@@ -41,7 +44,7 @@
 
         <nuxt-link class="learn-more" to="/contact/">
           Contact us
-          <AngleRight class="h-4 inline mb-1 w-4" />
+          <inline-svg class="h-4 inline mb-1 w-4" src="/svgs/angle-right.svg" />
         </nuxt-link>
       </div>
     </div>
@@ -49,17 +52,13 @@
 </template>
 
 <script>
-import AngleRight from '~/assets/svgs/angle-right.svg?inline';
 import HeroBlock from '~/components/HeroBlock.vue';
-import OpenSourceIcon from '~/assets/svgs/hero-images/open-source.svg?inline';
 import PortfolioContainer from '~/components/PortfolioContainer.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    AngleRight,
     HeroBlock,
-    OpenSourceIcon,
     PortfolioContainer
   },
 

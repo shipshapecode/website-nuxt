@@ -4,18 +4,13 @@
     class="section flex flex-wrap justify-center"
   >
     <div class="section-content text-center">
-      <LostAtSea class="h-auto inline max-w-2xl w-full" />
+      <inline-svg class="h-auto inline max-w-2xl w-full" src="/svgs/404.svg" />
     </div>
   </div>
 </template>
 
 <script>
-import LostAtSea from '~/assets/svgs/404.svg?inline';
-
 export default {
-  components: {
-    LostAtSea
-  },
   props: ['error']
 };
 </script>
