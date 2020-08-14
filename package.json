@@ -54,7 +54,7 @@
     "nodemon": "^2.0.4",
     "percy": "^0.28.0",
     "prettier": "^2.0.5",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^9.0.3",
     "showdown": "^1.9.1",
     "showdown-highlight": "^2.1.5",
     "stylelint": "^13.6.1",
