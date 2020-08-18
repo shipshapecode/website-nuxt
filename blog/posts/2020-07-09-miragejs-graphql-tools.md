@@ -6,8 +6,8 @@ categories:
 date: '2020-07-09'
 nextSlug: signing-electron-apps-with-github-actions
 nextTitle: 'Signing Electron Apps with GitHub Actions'
-previousSlug: ember-data-passing-query-params-to-save
-previousTitle: Ember Data | Passing query params to .save()
+previousSlug: releasing-javascript-libraries-with-release-it
+previousTitle: Releasing JavaScript Libraries with release-it
 slug: miragejs-graphql-tools
 title: Simplify using MirageJS with GraphQL
 ---
