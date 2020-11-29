@@ -129,6 +129,14 @@ export default {
       vertical-align: middle;
       white-space: pre-wrap;
     }
+
+    pre & {
+      padding: 1em;
+    }
+
+    .post-content h2 & {
+      font-size: auto;
+    }
   }
 
   h1,
