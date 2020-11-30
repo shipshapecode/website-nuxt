@@ -114,29 +114,28 @@ export default {
     font-weight: bold;
   }
 
-  code {
-    &[class*='language-'] {
-      font-size: 14px;
-    }
+  code[class*='language-'] {
+    font-size: 14px;
+    padding: 1em;
+  }
 
-    &:not([class*='language-']) {
-      background-color: $grey-transparent;
-      border: none;
-      border-radius: 2px;
-      font-size: 0.8rem;
-      line-height: 1rem;
-      padding: 0.1rem 0.2rem;
-      vertical-align: middle;
-      white-space: pre-wrap;
-    }
+  code:not([class*='language-']) {
+    background-color: $grey-transparent;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 0.1rem 0.2rem;
+    vertical-align: middle;
+    white-space: pre-wrap;
+  }
 
-    pre & {
-      padding: 1em;
-    }
+  h2 code:not([class*='language-']) {
+    font-size: inherit;
+  }
 
-    .post-content h2 & {
-      font-size: auto;
-    }
+  pre code:not([class*='language-']) {
+    padding: 1em;
   }
 
   h1,
