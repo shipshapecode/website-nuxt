@@ -54,50 +54,50 @@ Using a `docker-compose.yml` file is the easier route, as it is the more legible
 
 What is the `docker-compose.yml` file doing? Let's go line by line.
 
-```
+```yml
 version: "3.8"
 ```
 
 The `docker-compose.yml` API has different versions, this is something to be keenly aware of while researching and creating your configuration. It is typically best to use the [latest version](https://docs.docker.com/compose/compose-file/). You should also check what version of Docker Engine you are running.
 
-```
+```yml
 services:
   postgres:
 ```
 
 A typical `docker-compose.yml` in a professional environment will have several services configured to work together. For our purpose we only need the one. The key for your service is arbitrary, you could name it `db` or `banana`, but for organizational purposes it makes most sense to match the key to the Docker image you are relying upon.
 
-```
-    image: postgres:13-alpine
+```yml
+image: postgres:13-alpine
 ```
 
 This is the image tag, the list of available options is available on [Docker Hub](https://hub.docker.com/_/postgres). `postgres` refers to the Docker image you would like to use. `13-alpine` is a tag of the image with `13` referring to the version of Postgres you would like to use and `alpine` denoting a flavor of linux that is stripped down to be as small as possible. You can always specify simply `postgres` or `postgres:latest` if size or version doesn't matter to you.
 
-```
-    restart: always
+```yml
+restart: always
 ```
 
 What it says on the label! [Always restart](https://docs.docker.com/compose/compose-file/#restart) this container when docker engine starts.
 
-```
-    ports:
-      - "5432:5432"
+```yml
+ports:
+  - "5432:5432"
 ```
 
 This forwards the [Docker containers ports](https://docs.docker.com/compose/compose-file/#ports) to your machine's ports. `5432` is PostgreSQL's [default port](https://www.postgresql.org/docs/current/app-postgres.html). You should only need to change this if you have a conflicting process using the same port.
 
-```
-    environment:
-      POSTGRES_USER: prisma
-      POSTGRES_PASSWORD: prisma
-      POSTGRES_DB: tabata
+```yml
+environment:
+  POSTGRES_USER: prisma
+  POSTGRES_PASSWORD: prisma
+  POSTGRES_DB: tabata
 ```
 
 While there are other [environment variables available](https://hub.docker.com/_/postgres) for your PostgreSQL container, this is all you need to get the container running. If the container and database do not yet exist `docker-compose up` will create a database with this name, user, and password.
 
-```
-    volumes:
-      - ./data:/var/lib/postgresql/data\
+```yml
+volumes:
+  - ./data:/var/lib/postgresql/data\
 ```
 
 [Volumes](https://docs.docker.com/compose/compose-file/#volume-configuration-reference) allow your data to persist in-between bringing your container up and down. This tells docker where to store that persisted data and links it to the location within your container.

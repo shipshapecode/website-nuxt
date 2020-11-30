@@ -114,28 +114,30 @@ export default {
     font-weight: bold;
   }
 
-  code[class*='language-'] {
-    font-size: 14px;
-    padding: 1em;
+  code {
+    &[class*='language-'] {
+      font-size: 14px;
+    }
+
+    &:not([class*='language-']) {
+      background-color: $grey-transparent;
+      border: none;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      line-height: 1rem;
+      padding: 0.1rem 0.2rem;
+      vertical-align: middle;
+      white-space: pre-wrap;
+    }
   }
 
-  code:not([class*='language-']) {
-    background-color: $grey-transparent;
-    border: none;
-    border-radius: 2px;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    padding: 0.1rem 0.2rem;
-    vertical-align: middle;
-    white-space: pre-wrap;
-  }
-
-  h2 code:not([class*='language-']) {
-    font-size: inherit;
-  }
-
-  pre code:not([class*='language-']) {
-    padding: 1em;
+  pre {
+    code {
+      &[class*='language-'],
+      &:not([class*='language-']) {
+        padding: 1rem;
+      }
+    }
   }
 
   h1,
@@ -145,6 +147,10 @@ export default {
   h5,
   h6 {
     font-weight: bold;
+
+    code:not([class*='language-']) {
+      font-size: inherit;
+    }
   }
 
   img {
