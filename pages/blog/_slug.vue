@@ -131,6 +131,15 @@ export default {
     }
   }
 
+  pre {
+    code {
+      &[class*='language-'],
+      &:not([class*='language-']) {
+        padding: 1rem;
+      }
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -138,6 +147,10 @@ export default {
   h5,
   h6 {
     font-weight: bold;
+
+    code:not([class*='language-']) {
+      font-size: inherit;
+    }
   }
 
   img {
