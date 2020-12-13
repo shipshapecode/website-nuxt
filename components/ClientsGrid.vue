@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-wrap">
-    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
+  <div class="grid grid-cols-1 col-gap-12 row-gap-8 lg:grid-cols-3">
+    <div>
       <a href="https://marianatek.com/" aria-label="Mariana Tek">
         <inline-svg
           class="h-8 mb-3 w-auto"
@@ -18,7 +18,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+    <div>
       <a href="https://www.scoutforpets.com/" aria-label="Scout">
         <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/scout.svg" />
       </a>
@@ -32,7 +32,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
+    <div>
       <a href="https://www.greenlight.guru/" aria-label="Greenlight Guru">
         <inline-svg
           class="h-8 mb-3 w-auto"
@@ -47,7 +47,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pr-8 lg:w-1/3">
+    <div>
       <a href="https://www.mentrs.com/" aria-label="Mentrs">
         <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/mentrs.svg" />
       </a>
@@ -62,7 +62,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-4 lg:pr-4 lg:w-1/3">
+    <div>
       <a href="https://anvyl.com/" aria-label="Anvyl">
         <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/anvyl.svg" />
       </a>
@@ -77,7 +77,7 @@
       </p>
     </div>
 
-    <div class="pt-4 pb-4 w-full lg:pl-8 lg:w-1/3">
+    <div>
       <a href="https://cos.io/" aria-label="COS">
         <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/cos.svg" />
       </a>
@@ -87,6 +87,20 @@
         These dashboards allowed admins to log in and see lists of the people
         using the system and visualize the traffic based on the department each
         user belonged to.
+      </p>
+    </div>
+
+    <div>
+      <a href="https://musicat.co/rabble" aria-label="Rabble">
+        <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/rabble.svg" />
+      </a>
+      <p>
+        We helped Rabble with updating their MUSICat app from Ember 2.14 to 3.0
+        and beyond. This effort included removing bower in favor of npm,
+        migrating from ic-ajax to ember-ajax, enforcing consistent code quality
+        with ESLint, and other various tweaks. We also served as Ember subject
+        matter experts and helped mentor and level up the team's Ember
+        knowledge.
       </p>
     </div>
   </div>
