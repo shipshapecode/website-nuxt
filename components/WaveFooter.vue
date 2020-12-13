@@ -4,9 +4,7 @@
       <div class="text-center pt-32 lg:pb-32">
         <inline-svg class="inline m-8" src="/svgs/compass.svg" />
 
-        <h3 class="font-bold p-4 text-5xl text-white">
-          Already convinced?
-        </h3>
+        <h3 class="font-bold p-4 text-5xl text-white">Already convinced?</h3>
 
         <p class="p-4 text-gold">
           Let us help you exceed your company and team goals.
@@ -71,17 +69,11 @@
                   Company
                 </h4>
 
-                <nuxt-link to="/about/" class="block">
-                  About
-                </nuxt-link>
+                <nuxt-link to="/about/" class="block"> About </nuxt-link>
 
-                <nuxt-link to="/work/" class="block">
-                  Work
-                </nuxt-link>
+                <nuxt-link to="/work/" class="block"> Work </nuxt-link>
 
-                <nuxt-link to="/blog/" class="block">
-                  Blog
-                </nuxt-link>
+                <nuxt-link to="/blog/" class="block"> Blog </nuxt-link>
               </div>
 
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">
@@ -89,9 +81,7 @@
                   Connect
                 </h4>
 
-                <nuxt-link to="/contact/" class="block">
-                  Contact
-                </nuxt-link>
+                <nuxt-link to="/contact/" class="block"> Contact </nuxt-link>
 
                 <a href="https://github.com/shipshapecode" class="block">
                   GitHub

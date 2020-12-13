@@ -11,9 +11,7 @@
               src="/svgs/shepherd.svg"
             />
 
-            <h2 class="text-navy">
-              Shepherd.js, Designed for Product Tours
-            </h2>
+            <h2 class="text-navy">Shepherd.js, Designed for Product Tours</h2>
 
             <p class="max-w-5xl">
               As a part of our mission to create open source JavaScript
@@ -39,9 +37,7 @@
 
     <div class="portfolio-container section flex flex-wrap justify-center">
       <div class="section-content">
-        <h2>
-          Ember Addons
-        </h2>
+        <h2>Ember Addons</h2>
 
         <p class="max-w-5xl">
           There’s an addon for that. Our addons have been downloaded millions of
@@ -58,9 +54,7 @@
           >
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
-                  ember-shepherd
-                </h3>
+                <h3 class="text-navy">ember-shepherd</h3>
 
                 <h5 class="text-grey font-light">
                   An Ember addon for the site tour library Shepherd
@@ -100,9 +94,7 @@
           >
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
-                  ember-math-helpers
-                </h3>
+                <h3 class="text-navy">ember-math-helpers</h3>
 
                 <h5 class="text-grey font-light">
                   Ember HTMLBars helpers for basic arithmetic
@@ -140,9 +132,7 @@
           >
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
-                  ember-flatpickr
-                </h3>
+                <h3 class="text-navy">ember-flatpickr</h3>
 
                 <h5 class="text-grey font-light">
                   An Ember addon that wraps the Flatpickr date picker

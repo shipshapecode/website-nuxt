@@ -1,10 +1,8 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="nuxt-consulting">
-      <template v-slot:content>
-        <h1 itemprop="name">
-          Nuxt Consulting
-        </h1>
+      <template #content>
+        <h1 itemprop="name">Nuxt Consulting</h1>
         <p>
           Nuxt.js is a higher-level framework that simplifies the development of
           universal or single page Vue apps. With Nuxt.js, Ship Shape's team can
@@ -17,7 +15,7 @@
         </div>
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <inline-svg
           class="m-auto max-w-2xl"
           src="/svgs/hero-images/nuxt-consulting.svg"
@@ -27,9 +25,7 @@
 
     <div class="bg-navy section flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="text-center text-white w-full">
-          Why use Nuxt?
-        </h2>
+        <h2 class="text-center text-white w-full">Why use Nuxt?</h2>
 
         <div class="flex flex-wrap">
           <div class="flex flex-wrap w-full lg:flex-no-wrap">
@@ -39,9 +35,7 @@
                 src="/svgs/pages/nuxt-consulting/modular.svg"
               />
 
-              <h5 class="text-white">
-                Modular
-              </h5>
+              <h5 class="text-white">Modular</h5>
 
               <p>
                 Nuxt is based on a powerful modular architecture. You can choose
@@ -57,9 +51,7 @@
                 src="/svgs/pages/nuxt-consulting/performance.svg"
               />
 
-              <h5 class="text-white">
-                Performant
-              </h5>
+              <h5 class="text-white">Performant</h5>
 
               <p>
                 With Nuxt.js, your application will be optimized out of the box.
@@ -77,9 +69,7 @@
                 src="/svgs/pages/nuxt-consulting/fun.svg"
               />
 
-              <h5 class="text-white">
-                Enjoyable
-              </h5>
+              <h5 class="text-white">Enjoyable</h5>
 
               <p>
                 Nuxt takes developer experience seriously, and is always
@@ -94,9 +84,7 @@
                 src="/svgs/pages/nuxt-consulting/static.svg"
               />
 
-              <h5 class="text-white">
-                Static / PWA
-              </h5>
+              <h5 class="text-white">Static / PWA</h5>
 
               <p>
                 Nuxt.js supports several rendering modes, including server side

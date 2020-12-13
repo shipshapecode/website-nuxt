@@ -3,9 +3,7 @@
     <div class="section flex flex-wrap justify-center">
       <div class="section-content">
         <div class="flex flex-col mb-12 w-full">
-          <h1>
-            Our Work
-          </h1>
+          <h1>Our Work</h1>
 
           <p class="max-w-3xl">
             Unlike large corporations with offshore developers, Ship Shape

@@ -18,11 +18,10 @@ import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  scrollToTop: true,
-
   components: {
     BlogPostMenu
   },
+  scrollToTop: true,
 
   async asyncData({ params }) {
     let author;

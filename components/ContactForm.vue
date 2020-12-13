@@ -103,9 +103,7 @@
               name="radio-button"
               value="Open Source"
             />
-            <label for="radio-1">
-              Open Source
-            </label>
+            <label for="radio-1"> Open Source </label>
           </li>
 
           <li>
@@ -116,9 +114,7 @@
               name="radio-button"
               value="Training"
             />
-            <label for="radio-2">
-              Training
-            </label>
+            <label for="radio-2"> Training </label>
           </li>
 
           <li>
@@ -129,9 +125,7 @@
               name="radio-button"
               value="Development"
             />
-            <label for="radio-3">
-              Development
-            </label>
+            <label for="radio-3"> Development </label>
           </li>
         </ul>
       </div>

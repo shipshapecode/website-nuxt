@@ -2,13 +2,9 @@
   <div class="section flex flex-wrap justify-center">
     <div class="max-w-5xl w-full">
       <div class="p-4 lg:p-12">
-        <div class="text-xs">
-          Case Study
-        </div>
+        <div class="text-xs">Case Study</div>
 
-        <h1 class="text-4xl lg:text-6xl">
-          Brokermate
-        </h1>
+        <h1 class="text-4xl lg:text-6xl">Brokermate</h1>
 
         <p>
           Brokermate is a financial technology platform, that provides all the

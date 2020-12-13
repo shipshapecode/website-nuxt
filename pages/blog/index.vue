@@ -2,9 +2,7 @@
   <div class="blog-posts section flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex items-center">
-        <h1 class="font-semibold">
-          Ship Shape Insights
-        </h1>
+        <h1 class="font-semibold">Ship Shape Insights</h1>
 
         <a
           class="-mt-3 p-12"
@@ -32,11 +30,10 @@ import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  scrollToTop: true,
-
   components: {
     BlogPostMenu
   },
+  scrollToTop: true,
 
   asyncData() {
     return getBlogData();

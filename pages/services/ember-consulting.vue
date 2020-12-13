@@ -1,10 +1,8 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="ember-consulting">
-      <template v-slot:content>
-        <h1 itemprop="name">
-          Ember Consulting
-        </h1>
+      <template #content>
+        <h1 itemprop="name">Ember Consulting</h1>
         <p>
           Ship Shape's ambitious team of experts provide the guidance and
           manpower that helps you build fast and responsive web applications
@@ -17,7 +15,7 @@
         </div>
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <inline-svg
           class="m-auto max-w-2xl"
           src="/svgs/hero-images/ember-consulting.svg"
@@ -29,9 +27,7 @@
       class="section quote bg-grey-transparent flex flex-wrap justify-center"
     >
       <div class="section-content">
-        <div class="font-bold text-5xl">
-          “
-        </div>
+        <div class="font-bold text-5xl">“</div>
 
         <div itemprop="review" itemscope itemtype="http://schema.org/Review">
           <h2
@@ -50,13 +46,9 @@
             itemtype="http://schema.org/Person"
           >
             <span itemprop="name">James Dixon</span>,
-            <span itemprop="jobTitle">
-              Founder
-            </span>
+            <span itemprop="jobTitle"> Founder </span>
             of
-            <a href="https://www.scoutforpets.com/">
-              Scout
-            </a>
+            <a href="https://www.scoutforpets.com/"> Scout </a>
           </p>
         </div>
       </div>

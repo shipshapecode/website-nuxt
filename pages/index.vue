@@ -1,10 +1,8 @@
 <template>
   <div>
     <HeroBlock class="home">
-      <template v-slot:content>
-        <h1>
-          Welcome Aboard!
-        </h1>
+      <template #content>
+        <h1>Welcome Aboard!</h1>
 
         <p>
           We specialize in custom software and app development by leveraging the
@@ -19,7 +17,7 @@
         </div>
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <inline-svg
           class="m-auto max-w-2xl"
           src="/svgs/hero-images/landing.svg"

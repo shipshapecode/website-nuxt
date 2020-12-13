@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroBlock class="about text-white">
-      <template v-slot:content>
+      <template #content>
         <img
           class="mt-8"
           src="/img/about/desk.jpg"
@@ -9,11 +9,9 @@
         />
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <div class="m-auto max-w-2xl">
-          <h1 class="text-white">
-            About Ship Shape
-          </h1>
+          <h1 class="text-white">About Ship Shape</h1>
 
           <p>
             Ship Shape leads the future of full-stack web app development. Our
@@ -43,9 +41,7 @@
             <inline-svg src="/svgs/pages/about/client.svg" />
           </div>
 
-          <h3 class="text-2xl text-white lg:text-4xl">
-            Our Clients
-          </h3>
+          <h3 class="text-2xl text-white lg:text-4xl">Our Clients</h3>
 
           <p class="max-w-lg w-full">
             Ship Shape works with some of the best. We've exceeded client
@@ -60,9 +56,7 @@
             <inline-svg src="/svgs/pages/about/community.svg" />
           </div>
 
-          <h3 class="text-2xl text-white lg:text-4xl">
-            Our Community
-          </h3>
+          <h3 class="text-2xl text-white lg:text-4xl">Our Community</h3>
 
           <p class="max-w-lg w-full">
             Everything we create is a conscious decision to further Ember as a
@@ -75,13 +69,9 @@
     <div class="bg-white section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
         <div class="mb-20 w-full">
-          <h6 class="m-0 text-red text-xs uppercase">
-            Our team
-          </h6>
+          <h6 class="m-0 text-red text-xs uppercase">Our team</h6>
 
-          <h2 class="text-navy text-5xl">
-            Get to know us
-          </h2>
+          <h2 class="text-navy text-5xl">Get to know us</h2>
         </div>
 
         <div class="flex flex-grow flex-wrap">
@@ -94,9 +84,7 @@
           </div>
 
           <div class="w-full lg:w-1/2">
-            <h3 class="text-navy text-3xl">
-              Robbie Wagner, CEO
-            </h3>
+            <h3 class="text-navy text-3xl">Robbie Wagner, CEO</h3>
 
             <ul>
               <li class="max-w-xl">
@@ -159,9 +147,7 @@
           </div>
 
           <div class="w-full lg:w-1/2">
-            <h3 class="text-navy text-3xl">
-              Chuck Carpenter, COO
-            </h3>
+            <h3 class="text-navy text-3xl">Chuck Carpenter, COO</h3>
 
             <ul>
               <li class="max-w-xl">
@@ -192,9 +178,7 @@
                 </p>
               </li>
               <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  Awards or Honors
-                </div>
+                <div class="font-black text-navy text-xl">Awards or Honors</div>
 
                 <p>
                   Webby Award Winner for the National Geographic Magazine’s

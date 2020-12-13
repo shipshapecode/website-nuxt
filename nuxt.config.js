@@ -1,12 +1,12 @@
-const { readdirSync, readFileSync, writeFileSync } = require('fs');
-const { extname, resolve } = require('path');
-const yamlFront = require('yaml-front-matter');
-const walkSync = require('walk-sync');
-const showdown = require('showdown');
-const showdownHighlight = require('showdown-highlight');
+import { readdirSync, readFileSync, writeFileSync } from 'fs';
+import { extname, resolve } from 'path';
+import walkSync from 'walk-sync';
+import showdown from 'showdown';
+import showdownHighlight from 'showdown-highlight';
 const converter = new showdown.Converter({
   extensions: [showdownHighlight]
 });
+const yamlFront = require('yaml-front-matter');
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -63,7 +63,6 @@ const imgSrc = 'http://i.imgur.com/30OI4fv.png';
 const twitterUsername = '@shipshapecode';
 
 export default {
-  mode: 'universal',
   target: 'static',
 
   /*
