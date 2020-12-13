@@ -1,10 +1,8 @@
 <template>
   <div>
     <HeroBlock class="services">
-      <template v-slot:content>
-        <h1>
-          Our Services
-        </h1>
+      <template #content>
+        <h1>Our Services</h1>
         <p>
           We turn ideas into industry-leading products. Our experts proactively
           remedy issues with existing code and build innovations from the ground
@@ -17,7 +15,7 @@
         </div>
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <inline-svg
           class="m-auto max-w-2xl"
           src="/svgs/hero-images/services.svg"

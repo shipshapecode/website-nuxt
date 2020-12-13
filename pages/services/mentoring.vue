@@ -1,10 +1,8 @@
 <template>
   <div>
     <HeroBlock class="services">
-      <template v-slot:content>
-        <h1>
-          Ember & Open Source Mentoring
-        </h1>
+      <template #content>
+        <h1>Ember & Open Source Mentoring</h1>
         <p>
           With Ship Shape's deep experience in Ember.js, product strategy, user
           experience, design, engineering, and project management, our
@@ -18,7 +16,7 @@
         </div>
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <inline-svg
           class="m-auto max-w-2xl"
           src="/svgs/hero-images/mentoring.svg"

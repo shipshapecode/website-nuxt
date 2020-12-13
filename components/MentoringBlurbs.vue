@@ -2,13 +2,9 @@
   <div class="bg-navy section flex flex-wrap justify-center">
     <div class="section-content">
       <div class="text-center">
-        <h6 class="m-0 text-red text-xs uppercase">
-          Get to know us
-        </h6>
+        <h6 class="m-0 text-red text-xs uppercase">Get to know us</h6>
 
-        <h2 class="text-white">
-          How we integrate with your team
-        </h2>
+        <h2 class="text-white">How we integrate with your team</h2>
       </div>
 
       <div class="flex flex-wrap w-full lg:flex-no-wrap">
@@ -82,9 +78,7 @@
               src="/svgs/pages/mentoring/mentor.svg"
             />
 
-            <h3 class="text-white text-xl" itemprop="name">
-              Learn the ropes
-            </h3>
+            <h3 class="text-white text-xl" itemprop="name">Learn the ropes</h3>
 
             <p class="flex flex-grow">
               Ship Shape created one-on-one programs for in-depth team training

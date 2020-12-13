@@ -3,9 +3,7 @@
     <div class="section-content" data-aos="flip-down">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-1/5 text-center lg:text-left">
-          <h3 class="text-4xl lg:text-5xl xl:text-6xl">
-            Technologies we use
-          </h3>
+          <h3 class="text-4xl lg:text-5xl xl:text-6xl">Technologies we use</h3>
         </div>
 
         <div class="flex flex-wrap w-full lg:pl-32 lg:w-4/5 text-grey">

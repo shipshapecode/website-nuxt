@@ -9,11 +9,10 @@ import BlogPost from '~/components/BlogPost.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  scrollToTop: true,
-
   components: {
     BlogPost
   },
+  scrollToTop: true,
 
   async asyncData({ params }) {
     const fileName = fileNames.find((fileName) => {

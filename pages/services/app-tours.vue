@@ -1,10 +1,8 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="app-tours">
-      <template v-slot:content>
-        <h1 itemprop="name">
-          App Tours with Shepherd.js
-        </h1>
+      <template #content>
+        <h1 itemprop="name">App Tours with Shepherd.js</h1>
         <p>
           We leverage <a href="https://shepherdjs.dev/">Shepherd.js</a> to
           create step-by-step application tours and feature introductions to
@@ -17,7 +15,7 @@
         </div>
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <inline-svg
           class="shepherd-logo max-w-lg p-12 w-full"
           src="/svgs/shepherd.svg"
@@ -29,9 +27,7 @@
       class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent"
     >
       <div class="section-content">
-        <h2>
-          Why do I need an app tour?
-        </h2>
+        <h2>Why do I need an app tour?</h2>
 
         <p class="max-w-5xl mb-16">
           We've leveraged the flexibility of these tours to lead users through a
@@ -48,9 +44,7 @@
           <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pr-8">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
-                  New Users
-                </h3>
+                <h3 class="text-navy">New Users</h3>
 
                 <p>
                   Introducing new users to the features of your product can help
@@ -68,9 +62,7 @@
           <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-4 lg:pr-4">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
-                  New Features
-                </h3>
+                <h3 class="text-navy">New Features</h3>
 
                 <p>
                   After spending countless hours refreshing your app flow, you
@@ -88,9 +80,7 @@
           <div class="project pb-2 pt-2 w-full lg:w-1/3 lg:pl-8">
             <div class="flex flex-wrap items-center justify-center">
               <div>
-                <h3 class="text-navy">
-                  Onboarding
-                </h3>
+                <h3 class="text-navy">Onboarding</h3>
 
                 <p>
                   If your product onboarding is a large, multi-step process; it
@@ -114,6 +104,29 @@
     <WhyShepherd />
   </div>
 </template>
+
+<script>
+import HeroBlock from '~/components/HeroBlock.vue';
+import WhyShepherd from '~/components/WhyShepherd.vue';
+import { generateMeta } from '~/utils/meta';
+
+export default {
+  components: {
+    HeroBlock,
+    WhyShepherd
+  },
+
+  head() {
+    const title = 'App Tours with Shepherd.js';
+    const description =
+      'Ship Shape uses Shepherd.js to guide your users through a tour of your app. ' +
+      'Learn why companies like Google trust our app touring services.';
+    const url = 'https://shipshape.io/services/app-tours/';
+
+    return generateMeta(title, description, url);
+  }
+};
+</script>
 
 <style>
 .shepherd-logo .lines,
@@ -144,26 +157,3 @@
   visibility: hidden !important;
 }
 </style>
-
-<script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import WhyShepherd from '~/components/WhyShepherd.vue';
-import { generateMeta } from '~/utils/meta';
-
-export default {
-  components: {
-    HeroBlock,
-    WhyShepherd
-  },
-
-  head() {
-    const title = 'App Tours with Shepherd.js';
-    const description =
-      'Ship Shape uses Shepherd.js to guide your users through a tour of your app. ' +
-      'Learn why companies like Google trust our app touring services.';
-    const url = 'https://shipshape.io/services/app-tours/';
-
-    return generateMeta(title, description, url);
-  }
-};
-</script>

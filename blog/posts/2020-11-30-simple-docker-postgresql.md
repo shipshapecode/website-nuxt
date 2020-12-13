@@ -11,8 +11,6 @@ slug: simple-docker-postgresql
 title: The Simplest Possible Docker Setup For Postgresql
 ---
 
-# The Simplest Possible Docker Setup For Postgresql
-
 Recently I was working through [Xiaoru Li](https://www.xiaoru.li/)’s [excellent tutorial on Next-Auth](https://dev.to/prisma/passwordless-authentication-with-next-js-prisma-and-next-auth-5g8g) and I needed a Postgresql database _quick_. My search got a lot of results that were similar, but different enough for me to lose confidence in any given solution. I spent a little time searching for a simple configuration and this is what I came up with. For those of you in a rush, copy and paste away:
 
 ```yml

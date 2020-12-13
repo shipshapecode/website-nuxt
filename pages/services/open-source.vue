@@ -1,10 +1,8 @@
 <template>
   <div>
     <HeroBlock class="open-source">
-      <template v-slot:content>
-        <h1>
-          Our Open Source Community
-        </h1>
+      <template #content>
+        <h1>Our Open Source Community</h1>
         <p>
           We believe code should be accessible to all. Ship Shape's open source
           projects enable us to play an active role in the day-to-day lives of
@@ -17,7 +15,7 @@
         </div>
       </template>
 
-      <template v-slot:icon>
+      <template #icon>
         <inline-svg
           class="m-auto max-w-2xl"
           src="/svgs/hero-images/open-source.svg"
@@ -29,9 +27,7 @@
 
     <div class="section bg-grey-transparent flex flex-wrap justify-center">
       <div class="section-content">
-        <h2>
-          Sponsored Open Source
-        </h2>
+        <h2>Sponsored Open Source</h2>
 
         <p class="max-w-5xl">
           From addons to custom Ember data adapters, our projects propel our

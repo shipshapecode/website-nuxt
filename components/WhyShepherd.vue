@@ -1,9 +1,7 @@
 <template>
   <div class="section flex flex-wrap justify-center">
     <div class="section-content">
-      <h2>
-        Why use Shepherd?
-      </h2>
+      <h2>Why use Shepherd?</h2>
 
       <Tabs>
         <div class="max-w-3xl">

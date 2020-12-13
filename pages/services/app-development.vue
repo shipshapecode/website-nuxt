@@ -2,10 +2,8 @@
   <div>
     <div itemscope itemtype="http://schema.org/Service">
       <HeroBlock class="web-apps">
-        <template v-slot:content>
-          <h1 itemprop="name">
-            App Development
-          </h1>
+        <template #content>
+          <h1 itemprop="name">App Development</h1>
           <p>
             We've translated our expertise in full-stack engineering and
             front-end to back-end design to expand on the possibilities of
@@ -18,7 +16,7 @@
           </div>
         </template>
 
-        <template v-slot:icon>
+        <template #icon>
           <inline-svg
             class="m-auto max-w-2xl"
             src="/svgs/hero-images/app-development.svg"
@@ -49,9 +47,7 @@
                     src="/svgs/pages/app-development/time.svg"
                   />
 
-                  <h5 class="text-white">
-                    Save time and money
-                  </h5>
+                  <h5 class="text-white">Save time and money</h5>
 
                   <p>
                     PWAs can replace all of the functions of native apps and
@@ -73,9 +69,7 @@
                     src="/svgs/pages/app-development/pwa.svg"
                   />
 
-                  <h5 class="text-white">
-                    Who's Using PWA's?
-                  </h5>
+                  <h5 class="text-white">Who's Using PWA's?</h5>
 
                   <p>
                     The benefits of PWAs caught the attention of several market
@@ -106,9 +100,7 @@
               data-aos="fade-up"
             >
               <div class="m-auto max-w-2xl w-full">
-                <h3>
-                  PWA Benefits
-                </h3>
+                <h3>PWA Benefits</h3>
 
                 <ul class="list-disc ml-6">
                   <li class="m-0">Low development costs</li>
@@ -138,9 +130,7 @@
     >
       <div class="section-content" data-aos="fade-up">
         <div class="flex flex-col items-center mb-12 text-center w-full">
-          <h2 class="text-5xl text-white">
-            Cross Platform Desktop Apps
-          </h2>
+          <h2 class="text-5xl text-white">Cross Platform Desktop Apps</h2>
 
           <p class="max-w-3xl">
             In addition to PWAs, which can also be installed on desktop, we have
@@ -160,9 +150,7 @@
                   src="/svgs/pages/app-development/sail.svg"
                 />
 
-                <h5 class="text-white">
-                  Sail into an App Store
-                </h5>
+                <h5 class="text-white">Sail into an App Store</h5>
 
                 <p>
                   Save time and money. Ship Shape will code to power across many
@@ -182,9 +170,7 @@
                   src="/svgs/pages/app-development/native-apps.svg"
                 />
 
-                <h5 class="text-white">
-                  Ship native apps
-                </h5>
+                <h5 class="text-white">Ship native apps</h5>
 
                 <p>
                   Electron allows your app to use things like native menus and

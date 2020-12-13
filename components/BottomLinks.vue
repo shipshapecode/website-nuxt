@@ -6,9 +6,7 @@
       class="border-r-2 border-grey-transparent border-solid flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-grey-transparent"
       :to="previousLink"
     >
-      <span class="text-navy text-sm lg:text-xl">
-        Previous
-      </span>
+      <span class="text-navy text-sm lg:text-xl"> Previous </span>
 
       <h3 class="text-xl lg:text-4xl">
         {{ previousLinkText }}

@@ -17,13 +17,9 @@
           data-aos="fade-up"
         >
           <div class="m-auto max-w-2xl w-full">
-            <h2 class="mb-5 text-4xl">
-              Our Services
-            </h2>
+            <h2 class="mb-5 text-4xl">Our Services</h2>
 
-            <h3 class="sub-heading">
-              What we do
-            </h3>
+            <h3 class="sub-heading">What we do</h3>
 
             <p>
               Ship Shape's fleet of services ensures the applications we build
@@ -47,13 +43,9 @@
       >
         <div class="w-full flex lg:pr-12 lg:w-1/2" data-aos="fade-up">
           <div class="m-auto max-w-2xl w-full">
-            <h2 class="mb-5 text-4xl">
-              Our Work
-            </h2>
+            <h2 class="mb-5 text-4xl">Our Work</h2>
 
-            <h3 class="sub-heading">
-              What we've built
-            </h3>
+            <h3 class="sub-heading">What we've built</h3>
 
             <p>
               We’re always up for a challenge. Ship Shape creates scalable
@@ -97,13 +89,9 @@
           data-aos="fade-up"
         >
           <div class="m-auto max-w-2xl w-full">
-            <h2 class="mb-5 text-4xl">
-              About Ship Shape
-            </h2>
+            <h2 class="mb-5 text-4xl">About Ship Shape</h2>
 
-            <h3 class="sub-heading">
-              What makes us tick
-            </h3>
+            <h3 class="sub-heading">What makes us tick</h3>
 
             <p>
               Ship Shape rose from the need for more experts in Ember.js.

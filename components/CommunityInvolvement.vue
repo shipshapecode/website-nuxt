@@ -2,9 +2,7 @@
   <div class="section flex flex-wrap justify-center bg-grey-transparent">
     <div class="section-content flex flex-wrap justify-center">
       <div class="max-w-4xl pb-24 w-full">
-        <h2 class="text-center">
-          Community Involvement
-        </h2>
+        <h2 class="text-center">Community Involvement</h2>
 
         <p>
           We believe that every new connection or project is a learning
@@ -23,9 +21,7 @@
             />
           </div>
 
-          <h3>
-            EmberConf 2020
-          </h3>
+          <h3>EmberConf 2020</h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
             We recorded a talk for virtual EmberConf 2020, Talking to Your Dog
@@ -52,9 +48,7 @@
             />
           </div>
 
-          <h3>
-            EmberConf 2019
-          </h3>
+          <h3>EmberConf 2019</h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
             We gave a BonusConf talk at EmberConf 2019, Ember Data - It's Not
@@ -82,9 +76,7 @@
             />
           </div>
 
-          <h3>
-            Ember.js NYC
-          </h3>
+          <h3>Ember.js NYC</h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
             We have given talks at the Ember.JS NYC meetup a couple times, once
@@ -123,9 +115,7 @@
             />
           </div>
 
-          <h3>
-            Ember Cares
-          </h3>
+          <h3>Ember Cares</h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
             We spearheaded the efforts behind Ember Cares in 2017, where we
@@ -152,9 +142,7 @@
             />
           </div>
 
-          <h3>
-            EmberConf 2018
-          </h3>
+          <h3>EmberConf 2018</h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
             We ran the Improving Ember App Performance workshop at EmberConf
@@ -186,9 +174,7 @@
             />
           </div>
 
-          <h3>
-            Ember.JS DC
-          </h3>
+          <h3>Ember.JS DC</h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
             We organize the Ember.JS DC meetup, and we try to spread the love

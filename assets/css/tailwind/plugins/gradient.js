@@ -1,5 +1,5 @@
-module.exports = function({ gradients, variants }) {
-  return function({ addUtilities, e }) {
+module.exports = function ({ gradients, variants }) {
+  return function ({ addUtilities, e }) {
     const utilities = Object.keys(gradients).map((name) => {
       const [start, end] = gradients[name];
 
