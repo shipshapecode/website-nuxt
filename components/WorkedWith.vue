@@ -18,10 +18,10 @@
             </a>
           </div>
           <div class="client-logo">
-            <a href="https://www.greenlight.guru/" aria-label="Greenlight Guru">
+            <a href="https://expel.io/" aria-label="Expel">
               <inline-svg
                 class="h-full inline w-full max-w-xxs"
-                src="/svgs/clients/greenlight-guru.svg"
+                src="/svgs/clients/expel.svg"
               />
             </a>
           </div>

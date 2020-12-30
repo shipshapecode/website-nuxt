@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-wrap" data-aos="fade">
-    <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
+  <div class="gap-x-4 gap-y-12 grid grid-cols-1 lg:grid-cols-2" data-aos="fade">
+    <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/netflix.svg" />
 
@@ -14,7 +14,21 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
+    <div class="w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
+        <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/expel.svg" />
+
+        <p class="lg:h-12">
+          Building a NIST dashboard with custom visualizations.
+        </p>
+
+        <nuxt-link class="btn btn-navy mb-12" to="/work/swach/">
+          View Case
+        </nuxt-link>
+      </div>
+    </div>
+
+    <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/swach.svg" />
 
@@ -28,7 +42,7 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
+    <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/jebbit.svg" />
 
@@ -42,7 +56,7 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
+    <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/acquia.svg" />
 
@@ -57,7 +71,7 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
+    <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <inline-svg
           class="h-10 mb-3 pb-2 pt-2 w-auto"
@@ -75,7 +89,7 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
+    <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <h2 class="h-10 mb-3 w-auto">Brokermate</h2>
 
