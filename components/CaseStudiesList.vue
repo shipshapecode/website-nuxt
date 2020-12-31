@@ -22,7 +22,7 @@
           Building a NIST dashboard with custom visualizations.
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/swach/">
+        <nuxt-link class="btn btn-navy mb-12" to="/work/expel/">
           View Case
         </nuxt-link>
       </div>
