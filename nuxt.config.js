@@ -201,6 +201,12 @@ export default {
           invalid: 'error'
         }
       }
+    ],
+    [
+      'nuxt-lazy-load',
+      {
+        directiveOnly: true
+      }
     ]
   ],
 

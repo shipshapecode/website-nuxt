@@ -20,6 +20,7 @@
     "lodash.truncate": "^4.4.2",
     "nuxt": "^2.14.11",
     "nuxt-font-loader-strategy": "^1.1.2",
+    "nuxt-lazy-load": "^1.2.4",
     "nuxt-validate": "^1.0.1",
     "vue-flash-message": "^0.7.2",
     "vue-inline-svg": "^2.0.0"
