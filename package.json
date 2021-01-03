@@ -16,9 +16,9 @@
   "dependencies": {
     "@nuxtjs/date-fns": "^1.4.3",
     "aos": "^3.0.0-beta.6",
-    "cross-env": "^7.0.2",
+    "cross-env": "^7.0.3",
     "lodash.truncate": "^4.4.2",
-    "nuxt": "^2.14.11",
+    "nuxt": "^2.14.12",
     "nuxt-font-loader-strategy": "^1.1.2",
     "nuxt-lazy-load": "^1.2.4",
     "nuxt-validate": "^1.0.1",
@@ -71,6 +71,6 @@
     "vue-jest": "^3.0.7",
     "walk-sync": "^2.2.0",
     "webp-loader": "^0.6.0",
-    "yaml-front-matter": "^4.1.0"
+    "yaml-front-matter": "^4.1.1"
   }
 }
