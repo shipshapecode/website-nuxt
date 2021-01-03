@@ -122,6 +122,7 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -140,6 +141,10 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/style-resources'
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   postcss: {
     plugins: {
