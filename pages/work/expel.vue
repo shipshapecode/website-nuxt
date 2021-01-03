@@ -48,11 +48,12 @@
         <h4>Solution</h4>
 
         <p>
-          The shining jewel, of this project, was the ability to see at a glance
-          which NIST categories you are doing well in, and which need more work.
-          To create this view, we heavily leveraged
+          The most important feature, of this project, was the ability to see at
+          a glance which NIST categories you are doing well in, and which need
+          more work. To achieve this we created a custom chart and progress bars
+          per category. We heavily leveraged
           <a href="https://www.chartjs.org/">Chart.js</a> and the radar chart
-          type it provides. We pushed it outside of the confines of its typical
+          type it provides, and pushed it outside of the confines of its typical
           API to create an entirely new type of chart.
         </p>
       </div>
@@ -70,7 +71,11 @@
       <div class="p-4 lg:p-12">
         <h4>Outcome</h4>
 
-        <p>TODO</p>
+        <p>
+          Customers can now easily enter and monitor their NIST scores right in
+          the Expel Workbench app, and this has led to (TODO and increase in
+          NIST participation or something?).
+        </p>
       </div>
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
@@ -98,7 +103,11 @@
       </div>
 
       <div class="p-4 lg:p-12">
-        <p>TODO</p>
+        <p>
+          In addition to the NIST work we completed, we also worked heavily on a
+          Phishing Dashboard, and on updating Expel's large Ember app to Ember
+          Octane.
+        </p>
       </div>
 
       <BottomLinks

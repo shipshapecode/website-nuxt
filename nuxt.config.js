@@ -116,7 +116,7 @@ export default {
   plugins: [
     { src: '~/plugins/aos', mode: 'client' },
     { src: '~/plugins/vue-flash-message', mode: 'client' },
-    { src: '~/plugins/vue-inline-svg', mode: 'client' }
+    { src: '~/plugins/vue-inline-svg' }
   ],
   /*
    ** Nuxt.js dev-modules
