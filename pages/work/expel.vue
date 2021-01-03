@@ -47,7 +47,14 @@
       <div class="p-4 lg:p-12">
         <h4>Solution</h4>
 
-        <p>TODO</p>
+        <p>
+          The shining jewel, of this project, was the ability to see at a glance
+          which NIST categories you are doing well in, and which need more work.
+          To create this view, we heavily leveraged
+          <a href="https://www.chartjs.org/">Chart.js</a> and the radar chart
+          type it provides. We pushed it outside of the confines of its typical
+          API to create an entirely new type of chart.
+        </p>
       </div>
 
       <div class="bg-expel-green flex justify-center lg:flex-1">
