@@ -149,6 +149,7 @@ export default {
         }
       }
     ],
+    '@nuxtjs/gtm',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     '@nuxtjs/tailwindcss',
@@ -222,6 +223,10 @@ export default {
   generate: {
     fallback: '404.html',
     routes: [].concat(blogRoutes)
+  },
+
+  gtm: {
+    id: 'GTM-WS2RFK9'
   },
 
   purgeCSS: {
