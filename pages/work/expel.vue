@@ -64,6 +64,15 @@
           type it provides, and pushed it outside of the confines of its typical
           API to create an entirely new type of chart.
         </p>
+
+        <p>
+          This new chart allowed selecting different NIST categories and
+          highlighting them in the radar chart. To achieve this, we had to
+          essentially input data for five separate radar charts, as there was no
+          mechanism to have five distinct areas as part of one radar chart out
+          of the box. This really shows the flexibility of Chart.js to create
+          seemingly endless chart types, only limited by your imagination.
+        </p>
       </div>
 
       <div class="bg-expel-green flex justify-center lg:flex-1">
@@ -77,12 +86,12 @@
       </div>
 
       <div class="p-4 lg:p-12">
-        <h4>Outcome</h4>
-
         <p>
-          Customers can now easily enter and monitor their NIST scores right in
-          the Expel Workbench app, and this has led to (TODO and increase in
-          NIST participation or something?).
+          Another feature extremely important to the success of the NIST
+          dashboard was making a user friendly, step by step wizard to walk
+          users through NIST scoring. It provides scoring guidance and questions
+          to drive discussion, so everyone is on the same page with how to
+          decide on a score for each category.
         </p>
       </div>
 
@@ -97,7 +106,16 @@
       </div>
 
       <div class="p-4 lg:p-12">
-        <p>TODO</p>
+        <h4>Outcome</h4>
+
+        <p>
+          Customers can now easily enter and monitor their NIST scores right in
+          the Expel Workbench app, which helps to streamline the process and
+          keeps it all in one place, eliminating all the manual Excel
+          spreadsheet work. Reimaging old, complex workflows like NIST and
+          adding them into Workbench continues to make Workbench a one stop shop
+          for all things security.
+        </p>
       </div>
 
       <div class="bg-expel-green flex justify-center lg:flex-1">
@@ -114,7 +132,10 @@
         <p>
           In addition to the NIST work we completed, we also worked heavily on a
           Phishing Dashboard, and on updating Expel's large Ember app to Ember
-          Octane.
+          Octane. We assisted with updating Ember components to Glimmer
+          components, using angle bracket component invocations, removing
+          mixins, refactoring away from string based actions, and much, much
+          more.
         </p>
       </div>
 
