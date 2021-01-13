@@ -6,7 +6,15 @@
 
         <h1 class="text-4xl lg:text-6xl">Expel</h1>
 
-        <p>Expel description here</p>
+        <p>
+          Expel is an irreverent crew focused on helping their customers love
+          security, rebelling against the status quo and getting $#*! done. They
+          are quickly becoming a leader in the managed security service provider
+          space and have made MSSP accessible to everyone by focusing on making
+          an easy to use SaaS platform, providing analysts to investigate alerts
+          and monitor your environment, and telling you exactly what to do about
+          problems as they are found.
+        </p>
       </div>
 
       <div
