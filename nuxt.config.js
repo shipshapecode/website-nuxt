@@ -191,7 +191,7 @@ export default {
         ]
       }
     ],
-    '@nuxtjs/date-fns',
+    ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
     '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
