@@ -25,7 +25,7 @@
       </HeroBlock>
 
       <div class="section bg-navy flex flex-wrap justify-center">
-        <div class="section-content" data-aos="fade-up">
+        <div class="section-content">
           <div class="flex flex-col items-center mb-12 text-center w-full">
             <h2 class="text-5xl text-white">
               Combining the Best of Web And Mobile
@@ -86,19 +86,13 @@
       <div class="section flex flex-wrap justify-center">
         <div class="section-content">
           <div class="flex flex-wrap items-center pt-6 pb-6">
-            <div
-              class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
-              data-aos="fade-up"
-            >
+            <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
               <inline-svg
                 class="m-auto max-w-2xl"
                 src="/svgs/pages/app-development/app.svg"
               />
             </div>
-            <div
-              class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
-              data-aos="fade-up"
-            >
+            <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
               <div class="m-auto max-w-2xl w-full">
                 <h3>PWA Benefits</h3>
 
@@ -128,7 +122,7 @@
       itemscope
       itemtype="http://schema.org/Service"
     >
-      <div class="section-content" data-aos="fade-up">
+      <div class="section-content">
         <div class="flex flex-col items-center mb-12 text-center w-full">
           <h2 class="text-5xl text-white">Cross Platform Desktop Apps</h2>
 

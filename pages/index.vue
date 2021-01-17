@@ -43,6 +43,7 @@ import TechnologiesSection from '~/components/TechnologiesSection.vue';
 import WorkedWith from '~/components/WorkedWith.vue';
 import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
+import locomotive from '~/mixins/locomotive.js';
 
 export default {
   components: {
@@ -52,6 +53,7 @@ export default {
     TechnologiesSection,
     WorkedWith
   },
+  mixins: [locomotive],
   async asyncData() {
     const { posts } = await getBlogData();
     return { posts: posts.slice(0, 3) };

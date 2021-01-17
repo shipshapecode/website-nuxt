@@ -1,6 +1,6 @@
 <template>
-  <footer class="wave text-base">
-    <div class="footer-top" data-aos="zoom-in-up">
+  <footer class="wave text-base" data-scroll-section>
+    <div class="footer-top">
       <div class="text-center pt-32 lg:pb-32">
         <inline-svg class="inline m-8" src="/svgs/compass.svg" />
 

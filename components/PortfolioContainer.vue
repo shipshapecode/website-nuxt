@@ -5,7 +5,7 @@
     >
       <div class="section-content">
         <div class="flex flex-wrap justify-center">
-          <div class="project flex-1" data-aos="flip-up">
+          <div class="project flex-1">
             <inline-svg
               class="shepherd-logo h-48 -ml-6 p-6 w-48"
               src="/svgs/shepherd.svg"

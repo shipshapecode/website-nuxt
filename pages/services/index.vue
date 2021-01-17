@@ -37,7 +37,6 @@ export default {
     HeroBlock,
     ServicesBlurbs
   },
-
   head() {
     const title = 'Custom Software Development';
     const description =

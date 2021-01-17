@@ -104,17 +104,16 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    '~/assets/css/main.scss',
-    'aos/dist/aos.css',
-    'highlight.js/styles/github.css'
-  ],
+  css: ['~/assets/css/main.scss', 'highlight.js/styles/github.css'],
 
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/aos', mode: 'client' },
+    {
+      src: '~/plugins/locomotive.js',
+      mode: 'client'
+    },
     { src: '~/plugins/vue-flash-message', mode: 'client' },
     { src: '~/plugins/vue-inline-svg', mode: 'client' }
   ],

@@ -1,6 +1,9 @@
 <template>
-  <div class="section flex flex-wrap justify-center lg:mb-12">
-    <div class="section-content" data-aos="flip-down">
+  <div
+    class="section flex flex-wrap justify-center lg:mb-12"
+    data-scroll-section
+  >
+    <div class="section-content">
       <div class="flex flex-wrap">
         <div class="w-full lg:w-1/5 text-center lg:text-left">
           <h3 class="text-4xl lg:text-5xl xl:text-6xl">Technologies we use</h3>

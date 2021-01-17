@@ -1,5 +1,5 @@
 <template>
-  <div class="section flex flex-wrap justify-center">
+  <div class="section flex flex-wrap justify-center" data-scroll-section>
     <div class="section-content">
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap justify-center w-full">

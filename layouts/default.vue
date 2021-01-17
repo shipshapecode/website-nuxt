@@ -1,5 +1,6 @@
 <template>
   <div
+    id="page-container"
     itemscope
     itemtype="https://schema.org/Organization"
     itemid="shipshapeorg"

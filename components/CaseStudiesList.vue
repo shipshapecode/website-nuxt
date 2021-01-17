@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap" data-aos="fade">
+  <div class="flex flex-wrap">
     <div class="flex flex-wrap pt-12 pb-12 w-full lg:pr-4 lg:w-1/2">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/netflix.svg" />
