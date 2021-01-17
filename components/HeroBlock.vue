@@ -13,7 +13,7 @@
         <div
           class="w-full lg:pr-12 lg:w-1/2 lg:p-12"
           data-scroll
-          data-scroll-speed="2"
+          data-scroll-speed="3"
         >
           <slot name="icon" />
         </div>

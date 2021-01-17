@@ -20,6 +20,12 @@ export default {
           smooth: true /* if false disable overflow: hidden on html, body */
         });
 
+        document.onreadystatechange = () => {
+          if (document.readyState === 'complete') {
+            this.lmS.update();
+          }
+        };
+
         window.addEventListener(
           'resize',
           debounce(this.onLmsResize.bind(this), 100)

@@ -5,7 +5,7 @@
         <div
           class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
           data-scroll
-          data-scroll-speed="2"
+          data-scroll-speed="3"
         >
           <inline-svg
             class="m-auto max-w-2xl"
@@ -71,7 +71,7 @@
         <div
           class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2"
           data-scroll
-          data-scroll-speed="2"
+          data-scroll-speed="3"
         >
           <inline-svg
             class="m-auto max-w-2xl"
@@ -84,7 +84,7 @@
         <div
           class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
           data-scroll
-          data-scroll-speed="2"
+          data-scroll-speed="3"
         >
           <inline-svg
             class="m-auto max-w-2xl"
