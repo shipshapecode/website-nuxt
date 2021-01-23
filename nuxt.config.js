@@ -123,9 +123,22 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    // '@nuxtjs/stylelint-module', // TODO: get stylelint passing
+    // '@nuxtjs/stylelint-module', // TODO: get stylelint passing,
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-84561982-1',
+        debug: {
+          sendHitTask: isProd
+        }
+      }
+    ],
+    '@nuxtjs/gtm',
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/style-resources'
   ],
 
   postcss: {
@@ -139,19 +152,41 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/date-fns',
     [
-      '@nuxtjs/google-analytics',
+      'nuxt-font-loader-strategy',
       {
-        id: 'UA-84561982-1',
-        debug: {
-          sendHitTask: isProd
-        }
+        fonts: [
+          {
+            fileExtensions: ['woff2', 'woff'],
+            fontFamily: 'Pier Sans',
+            fontFaces: [
+              {
+                preload: true,
+                localSrc: ['Pier Sans'],
+                src: '@/assets/fonts/PierSans-Regular',
+                fontWeight: 'normal',
+                fontStyle: 'normal'
+              },
+              {
+                preload: true,
+                localSrc: ['Pier Sans'],
+                src: '@/assets/fonts/PierSans-Bold',
+                fontWeight: 'bold',
+                fontStyle: 'normal'
+              },
+              {
+                preload: true,
+                localSrc: ['Pier Sans'],
+                src: '@/assets/fonts/PierSans-Light',
+                fontWeight: 300,
+                fontStyle: 'normal'
+              }
+            ]
+          }
+        ]
       }
     ],
-    '@nuxtjs/gtm',
-    '@nuxtjs/pwa',
-    '@nuxtjs/style-resources',
+    '@nuxtjs/date-fns',
     '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
@@ -161,8 +196,7 @@ export default {
           invalid: 'error'
         }
       }
-    ],
-    '@nuxtjs/sitemap'
+    ]
   ],
 
   /*
