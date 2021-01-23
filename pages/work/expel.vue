@@ -7,13 +7,14 @@
         <h1 class="text-4xl lg:text-6xl">Expel</h1>
 
         <p>
-          Expel is an irreverent crew focused on helping their customers love
-          security, rebelling against the status quo and getting $#*! done. They
-          are quickly becoming a leader in the managed security service provider
-          space and have made MSSP accessible to everyone by focusing on making
-          an easy to use SaaS platform, providing analysts to investigate alerts
-          and monitor your environment, and telling you exactly what to do about
-          problems as they are found.
+          Expel offers 24x7 security monitoring and response for cloud, hybrid
+          and on-premises environments. The company uses the security signals
+          customers already own so organizations can get more value from their
+          existing security investments. Expel connects to customer tech
+          remotely through APIs, not agents, so its SOC can start monitoring a
+          customer’s environment in a matter of hours, letting their internal
+          teams get back to focusing on the most strategic security priorities
+          that are unique to their business.
         </p>
       </div>
 
@@ -32,13 +33,14 @@
         <h4>Challenge</h4>
 
         <p>
-          Expel had an idea for a new, easier way for clients to enter and track
-          their NIST scores. Typically, everyone had done this in a giant Excel
-          spreadsheet with lots of manual help from folks at Expel. This new
-          system would allow users to enter their scores into a step by step
-          wizard, and explain what each score meant. It also needed to provide
-          informative charts and graphs for a quick glance at your NIST
-          progress.
+          Expel sought to give its customers an easier way to enter and track
+          their National Institute of Standards and Technology (NIST) scores. To
+          date, customers had tracked their progress in an Excel spreadsheet
+          with plenty of manual support from folks at Expel. This new system
+          would allow users to enter their scores into a step-by-step wizard
+          right in Expel Workbench, and explain what each score meant. It would
+          also provide informative charts and graphs for a quick glance at a
+          customer’s NIST progress.
         </p>
       </div>
 
@@ -56,22 +58,23 @@
         <h4>Solution</h4>
 
         <p>
-          The most important feature, of this project, was the ability to see at
-          a glance which NIST categories you are doing well in, and which need
-          more work. To achieve this we created a custom chart and progress bars
-          per category. We heavily leveraged
+          The most important feature for customers would be the ability to see
+          at a glance which NIST categories they’re doing well in, and which
+          require more attention. To achieve this, we created a custom chart and
+          progress bars per category. We heavily leveraged
           <a href="https://www.chartjs.org/">Chart.js</a> and the radar chart
           type it provides, and pushed it outside of the confines of its typical
           API to create an entirely new type of chart.
         </p>
 
         <p>
-          This new chart allowed selecting different NIST categories and
-          highlighting them in the radar chart. To achieve this, we had to
-          essentially input data for five separate radar charts, as there was no
-          mechanism to have five distinct areas as part of one radar chart out
-          of the box. This really shows the flexibility of Chart.js to create
-          seemingly endless chart types, only limited by your imagination.
+          This new chart allowed customers to easily select different NIST
+          categories and highlight them in the radar chart. To achieve this, we
+          had to essentially input data for five separate radar charts, as there
+          was no mechanism to have five distinct areas as part of one radar
+          chart out of the box. This really shows the flexibility of Chart.js to
+          create seemingly endless chart types, only limited by your
+          imagination.
         </p>
       </div>
 
@@ -88,10 +91,10 @@
       <div class="p-4 lg:p-12">
         <p>
           Another feature extremely important to the success of the NIST
-          dashboard was making a user friendly, step by step wizard to walk
-          users through NIST scoring. It provides scoring guidance and questions
-          to drive discussion, so everyone is on the same page with how to
-          decide on a score for each category.
+          dashboard was making a user-friendly, step-by-step wizard to walk
+          users through NIST scoring. The tool provides scoring guidance and
+          questions to drive discussion, so each user receives the same written
+          guidance and support as they decide on a score for each category.
         </p>
       </div>
 
@@ -110,11 +113,12 @@
 
         <p>
           Customers can now easily enter and monitor their NIST scores right in
-          the Expel Workbench app, which helps to streamline the process and
-          keeps it all in one place, eliminating all the manual Excel
-          spreadsheet work. Reimaging old, complex workflows like NIST and
-          adding them into Workbench continues to make Workbench a one stop shop
-          for all things security.
+          Expel Workbench, which helps to streamline the process for customers
+          and tracks their progress in one place, eliminating the need for a
+          CISO and their team to keep track of data entry in multiple Excel
+          spreadsheets. Reimaging old, complex workflows and adding them into
+          Expel Workbench continues to make it a one-stop shop for all things
+          security.
         </p>
       </div>
 
