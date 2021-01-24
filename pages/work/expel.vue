@@ -38,9 +38,9 @@
           date, customers had tracked their progress in an Excel spreadsheet
           with plenty of manual support from folks at Expel. This new system
           would allow users to enter their scores into a step-by-step wizard
-          right in Expel Workbench, and explain what each score meant. It would
-          also provide informative charts and graphs for a quick glance at a
-          customer’s NIST progress.
+          right in Expel Workbench&trade;, and explain what each score meant. It
+          would also provide informative charts and graphs for a quick glance at
+          a customer’s NIST progress.
         </p>
       </div>
 
@@ -113,12 +113,12 @@
 
         <p>
           Customers can now easily enter and monitor their NIST scores right in
-          Expel Workbench, which helps to streamline the process for customers
-          and tracks their progress in one place, eliminating the need for a
-          CISO and their team to keep track of data entry in multiple Excel
-          spreadsheets. Reimaging old, complex workflows and adding them into
-          Expel Workbench continues to make it a one-stop shop for all things
-          security.
+          Expel Workbench&trade;, which helps to streamline the process for
+          customers and tracks their progress in one place, eliminating the need
+          for a CISO and their team to keep track of data entry in multiple
+          Excel spreadsheets. Reimaging old, complex workflows and adding them
+          into Expel Workbench&trade; continues to make it a one-stop shop for
+          all things security.
         </p>
       </div>
 
@@ -134,12 +134,11 @@
 
       <div class="p-4 lg:p-12">
         <p>
-          In addition to the NIST work we completed, we also worked heavily on a
-          Phishing Dashboard, and on updating Expel's large Ember app to Ember
-          Octane. We assisted with updating Ember components to Glimmer
-          components, using angle bracket component invocations, removing
-          mixins, refactoring away from string based actions, and much, much
-          more.
+          In addition to the NIST work we completed, we also worked heavily on
+          updating Expel's large Ember app to Ember Octane. We assisted with
+          updating Ember components to Glimmer components, using angle bracket
+          component invocations, removing mixins, refactoring away from string
+          based actions, and much, much more.
         </p>
       </div>
 
