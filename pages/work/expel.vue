@@ -132,7 +132,7 @@
         </div>
       </div>
 
-      <div class="p-4 lg:p-12">
+      <div class="hidden p-4 lg:p-12">
         <p>
           In addition to the NIST work we completed, we also worked heavily on
           updating Expel's large Ember app to Ember Octane. We assisted with
