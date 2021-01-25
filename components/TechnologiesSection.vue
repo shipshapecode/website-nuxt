@@ -43,10 +43,10 @@
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://sass-lang.com/" aria-label="Sass">
+            <a href="https://www.serverless.com/" aria-label="Serverless">
               <inline-svg
                 class="w-full h-full p-8 max-w-xxs"
-                src="/svgs/technologies/sass.svg"
+                src="/svgs/technologies/serverless.svg"
               />
             </a>
           </div>

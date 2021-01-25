@@ -18,6 +18,7 @@ module.exports = {
 
       'acquia-blue': '#31A9E1',
       black: '#000000',
+      'expel-green': '#07a75c',
       navy: '#00213B',
       'navy-light': '#073256',
       'netflix-red': '#E50914',

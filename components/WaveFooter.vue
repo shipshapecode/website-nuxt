@@ -1,5 +1,5 @@
 <template>
-  <footer class="wave text-base">
+  <footer class="wave text-base" lazy-background="/img/sea.png">
     <div class="footer-top" data-aos="zoom-in-up">
       <div class="text-center pt-32 lg:pb-32">
         <inline-svg class="inline m-8" src="/svgs/compass.svg" />
@@ -150,7 +150,6 @@
 
 <style lang="scss">
 .wave {
-  background: url(/img/sea.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

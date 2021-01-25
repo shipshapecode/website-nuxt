@@ -141,8 +141,8 @@
       <BottomLinks
         next-link="/work/jebbit/"
         next-link-text="Jebbit"
-        previous-link="/work/netflix/"
-        previous-link-text="Netflix"
+        previous-link="/work/expel/"
+        previous-link-text="Expel"
       />
     </div>
   </div>

@@ -116,12 +116,13 @@ export default {
   plugins: [
     { src: '~/plugins/aos', mode: 'client' },
     { src: '~/plugins/vue-flash-message', mode: 'client' },
-    { src: '~/plugins/vue-inline-svg', mode: 'client' }
+    { src: '~/plugins/vue-inline-svg' }
   ],
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -140,6 +141,10 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/style-resources'
   ],
+
+  optimizedImages: {
+    optimizeImages: true
+  },
 
   postcss: {
     plugins: {
@@ -186,7 +191,7 @@ export default {
         ]
       }
     ],
-    '@nuxtjs/date-fns',
+    ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
     '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
@@ -195,6 +200,12 @@ export default {
         classNames: {
           invalid: 'error'
         }
+      }
+    ],
+    [
+      'nuxt-lazy-load',
+      {
+        directiveOnly: true
       }
     ]
   ],

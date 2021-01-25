@@ -21,6 +21,7 @@ module.exports = {
     'space-before-function-paren': 'off',
 
     'vue/html-closing-bracket-spacing': 'off',
-    'vue/html-self-closing': 'off'
+    'vue/html-self-closing': 'off',
+    'vue/no-v-html': 'off'
   }
 };
