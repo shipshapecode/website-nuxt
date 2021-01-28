@@ -218,17 +218,20 @@ export default {
     extractCSS: true,
 
     babel: {
-      presets({ isServer }) {
-        const targets = isServer
-          ? { node: '10' }
-          : {
-              browsers: [
-                'last 2 Chrome versions',
-                'last 2 Firefox versions',
-                'last 2 Safari versions'
-              ]
-            };
-        return [[require.resolve('@nuxt/babel-preset-app'), { targets }]];
+      presets({ envName }) {
+        const envTargets = {
+          client: { browsers: 'last 2 versions, not dead, not IE 11' },
+          server: { node: 'current' }
+        };
+        return [
+          [
+            '@nuxt/babel-preset-app',
+            {
+              corejs: { version: 3 },
+              targets: envTargets[envName]
+            }
+          ]
+        ];
       }
     },
 
