@@ -162,7 +162,7 @@ export default {
       {
         fonts: [
           {
-            fileExtensions: ['woff2', 'woff'],
+            fileExtensions: ['woff2'],
             fontFamily: 'Pier Sans',
             fontFaces: [
               {
