@@ -3,7 +3,7 @@ authorId: rwwagner90
 categories:
   - ember.js
   - javascript
-  - tailwind
+  - tailwindcss
 date: '2021-01-29'
 nextSlug: simple-docker-postgresql
 nextTitle: The Simplest Possible Docker Setup For Postgresql
