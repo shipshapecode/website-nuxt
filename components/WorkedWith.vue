@@ -34,6 +34,14 @@
             </a>
           </div>
           <div class="client-logo">
+            <a href="https://www.sephora.sg/" aria-label="Sephora">
+              <inline-svg
+                class="h-full inline w-full max-w-xxs"
+                src="/svgs/clients/sephora.svg"
+              />
+            </a>
+          </div>
+          <div class="client-logo">
             <a href="https://marianatek.com/" aria-label="Mariana Tek">
               <inline-svg
                 class="h-full inline w-full max-w-xxs"
