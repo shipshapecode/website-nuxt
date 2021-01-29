@@ -18,18 +18,43 @@
       </template>
 
       <template #icon>
-        <inline-svg
-          class="m-auto max-w-2xl"
-          src="/svgs/hero-images/landing.svg"
+        <img
+          class="h-auto m-auto max-w-2xl w-full"
+          :src="require('~/assets/img/hero-images/landing.png?webp')"
         />
       </template>
     </HeroBlock>
 
+    <WorkedWith />
+
+    <div class="section bg-navy flex flex-wrap justify-center" data-aos="fade">
+      <div class="section-content grid grid-cols-1 lg:grid-cols-2">
+        <div>
+          <h2 class="text-white">Select case studies</h2>
+          <nuxt-link to="/work/" class="btn btn-white">
+            See all work
+          </nuxt-link>
+        </div>
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <div class="bg-navy-card-dark rounded">
+            <div class="bg-navy-card-light p-8 rounded-t">Netflix</div>
+            <div class="p-8">
+              <p class="leading-8 font-bold text-white text-2xl">
+                Building finance tools for the world's number one streaming
+                platform.
+              </p>
+            </div>
+          </div>
+          <div class="bg-navy-card-dark rounded">
+            <div class="bg-navy-card-light p-8 rounded-t">Expel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <ProcessSection />
 
     <TechnologiesSection />
-
-    <WorkedWith />
 
     <RecentBlogPosts :posts="posts" />
   </div>

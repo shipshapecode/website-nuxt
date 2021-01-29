@@ -24,13 +24,10 @@
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a
-              href="https://guides.emberjs.com/release/models/"
-              aria-label="Ember Data"
-            >
+            <a href="https://tailwindcss.com/" aria-label="Tailwind CSS">
               <inline-svg
                 class="w-full h-full p-8 max-w-xxs"
-                src="/svgs/technologies/emberdata.svg"
+                src="/svgs/technologies/tailwind.svg"
               />
             </a>
           </div>
@@ -51,10 +48,10 @@
             </a>
           </div>
           <div class="w-1/2 sm:w-1/3 flex justify-center items-center">
-            <a href="https://travis-ci.org/" aria-label="Travis CI">
+            <a href="https://nextjs.org/" aria-label="Next.js">
               <inline-svg
                 class="w-full h-full p-8 max-w-xxs"
-                src="/svgs/technologies/travis.svg"
+                src="/svgs/technologies/next.svg"
               />
             </a>
           </div>

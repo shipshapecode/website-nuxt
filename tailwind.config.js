@@ -20,6 +20,8 @@ module.exports = {
       black: '#000000',
       'expel-green': '#07a75c',
       navy: '#00213B',
+      'navy-card-dark': '#133254',
+      'navy-card-light': '#1B3B5E',
       'navy-light': '#073256',
       'netflix-red': '#E50914',
       gold: '#BBA46F',
