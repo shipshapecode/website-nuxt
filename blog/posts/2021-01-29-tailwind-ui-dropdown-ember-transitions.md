@@ -16,7 +16,7 @@ title: Tailwind UI Dropdowns with Ember
 [Tailwind CSS](https://tailwindcss.com/) has exploded in popularity recently,
 and so has their paid set of UI components, [Tailwind UI](https://tailwindui.com/).
 They have a lot of great components, most of which you can copy and paste into
-your project and they will "just work" but whenever an example requires some
+your project and they will "just work", but whenever an example requires some
 JavaScript, things get a little more complex.
 
 For example, one of the Tailwind UI dropdown component examples is:
