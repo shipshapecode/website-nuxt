@@ -6,9 +6,9 @@
           class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
           data-aos="fade-up"
         >
-          <inline-svg
-            class="m-auto max-w-2xl"
-            src="/svgs/illustrations/design.svg"
+          <img
+            class="h-auto m-auto max-w-2xl w-full"
+            :src="require('~/assets/img/process/design.png?webp')"
           />
         </div>
 
@@ -66,9 +66,9 @@
           class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2"
           data-aos="fade-up"
         >
-          <inline-svg
-            class="m-auto max-w-2xl"
-            src="/svgs/illustrations/build.svg"
+          <img
+            class="h-auto m-auto max-w-2xl w-full"
+            :src="require('~/assets/img/process/build.png?webp')"
           />
         </div>
       </div>
@@ -78,9 +78,9 @@
           class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
           data-aos="fade-up"
         >
-          <inline-svg
-            class="m-auto max-w-2xl"
-            src="/svgs/illustrations/ship.svg"
+          <img
+            class="h-auto m-auto max-w-2xl w-full"
+            :src="require('~/assets/img/process/ship.png?webp')"
           />
         </div>
 
