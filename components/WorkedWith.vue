@@ -1,6 +1,6 @@
 <template>
-  <div class="section flex flex-wrap justify-center" data-aos="fade">
-    <div class="section-content">
+  <div class="flex flex-wrap justify-center pb-16 px-8" data-aos="fade">
+    <div class="section-content bg-grey-transparent p-8">
       <div class="text-center w-full">
         <h3 class="m-0 pb-8 lg:pb-16">
           We've had the pleasure of working with
@@ -8,7 +8,7 @@
       </div>
 
       <div class="flex justify-center">
-        <div class="flex flex-wrap items-center pb-8 max-w-6xl w-full lg:pb-16">
+        <div class="flex flex-wrap items-center max-w-6xl w-full">
           <div class="client-logo">
             <a href="https://www.scoutforpets.com/" aria-label="Scout">
               <inline-svg
@@ -58,12 +58,6 @@
             </a>
           </div>
         </div>
-      </div>
-
-      <div class="text-center w-full">
-        <nuxt-link to="/work/" class="btn btn-navy mb-12">
-          View case studies
-        </nuxt-link>
       </div>
     </div>
   </div>

@@ -20,6 +20,8 @@ module.exports = {
       black: '#000000',
       'expel-green': '#07a75c',
       navy: '#00213B',
+      'navy-card-dark': '#133254',
+      'navy-card-light': '#1B3B5E',
       'navy-light': '#073256',
       'netflix-red': '#E50914',
       gold: '#BBA46F',
@@ -60,6 +62,7 @@ module.exports = {
 
     minHeight: {
       0: '0',
+      24: '6rem',
       80: '20rem',
       full: '100%',
       screen: '100vh'
@@ -90,7 +93,15 @@ module.exports = {
       88: '22rem',
       96: '24rem',
       104: '26rem',
+      112: '28rem',
+      120: '30rem',
       140: '36rem'
+    },
+
+    extend: {
+      inset: {
+        '1/2': '50%'
+      }
     }
   },
   variants: {},

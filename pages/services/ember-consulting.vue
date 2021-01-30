@@ -16,9 +16,9 @@
       </template>
 
       <template #icon>
-        <inline-svg
-          class="m-auto max-w-2xl"
-          src="/svgs/hero-images/ember-consulting.svg"
+        <img
+          class="h-auto m-auto max-w-2xl w-full"
+          :src="require('~/assets/img/hero-images/ember-consulting.png?webp')"
         />
       </template>
     </HeroBlock>

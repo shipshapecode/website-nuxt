@@ -18,18 +18,20 @@
       </template>
 
       <template #icon>
-        <inline-svg
-          class="m-auto max-w-2xl"
-          src="/svgs/hero-images/landing.svg"
+        <img
+          class="h-auto m-auto max-w-2xl w-full"
+          :src="require('~/assets/img/hero-images/landing.png?webp')"
         />
       </template>
     </HeroBlock>
 
+    <WorkedWith />
+
+    <SelectCaseStudies />
+
     <ProcessSection />
 
     <TechnologiesSection />
-
-    <WorkedWith />
 
     <RecentBlogPosts :posts="posts" />
   </div>
@@ -39,6 +41,7 @@
 import HeroBlock from '~/components/HeroBlock.vue';
 import ProcessSection from '~/components/ProcessSection.vue';
 import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
+import SelectCaseStudies from '~/components/SelectCaseStudies.vue';
 import TechnologiesSection from '~/components/TechnologiesSection.vue';
 import WorkedWith from '~/components/WorkedWith.vue';
 import { getBlogData } from '~/utils/blog';
@@ -49,6 +52,7 @@ export default {
     HeroBlock,
     ProcessSection,
     RecentBlogPosts,
+    SelectCaseStudies,
     TechnologiesSection,
     WorkedWith
   },
