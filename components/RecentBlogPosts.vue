@@ -1,9 +1,9 @@
 <template>
-  <div class="section flex flex-wrap justify-center">
+  <div class="section bg-navy flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap justify-center w-full">
-          <h3>Ship Shape Insights</h3>
+          <h3 class="text-white">Ship Shape Insights</h3>
 
           <p class="text-center w-full">
             Let’s get down to the nitty gritty about the latest trends in
@@ -15,9 +15,12 @@
           <div
             v-for="post in posts"
             :key="post.slug"
-            class="bg-grey-transparent flex-grow m-4 p-12 rounded lg:flex-1"
+            class="bg-navy-card-dark flex-grow m-4 p-12 rounded lg:flex-1"
           >
-            <nuxt-link class="font-bold text-xl" :to="`/blog/${post.slug}/`">
+            <nuxt-link
+              class="font-bold text-white text-xl"
+              :to="`/blog/${post.slug}/`"
+            >
               {{ post.linktitle || post.title }}
             </nuxt-link>
 
@@ -28,7 +31,7 @@
         </div>
 
         <div class="text-center w-full">
-          <nuxt-link to="/blog/" class="btn btn-navy mb-12">
+          <nuxt-link to="/blog/" class="btn btn-white mb-12">
             View all posts
           </nuxt-link>
         </div>
