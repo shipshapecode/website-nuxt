@@ -62,6 +62,7 @@ module.exports = {
 
     minHeight: {
       0: '0',
+      24: '6rem',
       80: '20rem',
       full: '100%',
       screen: '100vh'
@@ -93,6 +94,12 @@ module.exports = {
       96: '24rem',
       104: '26rem',
       140: '36rem'
+    },
+
+    extend: {
+      inset: {
+        '1/2': '50%'
+      }
     }
   },
   variants: {},

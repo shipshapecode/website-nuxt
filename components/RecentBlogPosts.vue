@@ -11,21 +11,27 @@
           </p>
         </div>
 
-        <div class="flex flex-wrap justify-center mb-4 w-full">
+        <div
+          class="grid grid-cols-1 gap-2 justify-center mb-4 w-full lg:grid-cols-3"
+        >
           <div
             v-for="post in posts"
             :key="post.slug"
-            class="bg-navy-card-dark flex-grow m-4 p-12 rounded lg:flex-1"
+            class="bg-navy-card-dark flex flex-col m-4 p-8 rounded-md"
           >
+            <div class="text-red">
+              {{ $dateFns.format(post.date) }}
+            </div>
+
             <nuxt-link
-              class="font-bold text-white text-xl"
+              class="block font-bold flex-grow leading-8 min-h-24 my-2 text-white text-2xl hover:text-red"
               :to="`/blog/${post.slug}/`"
             >
               {{ post.linktitle || post.title }}
             </nuxt-link>
 
-            <div class="attribution">
-              By {{ post.author.name }} {{ $dateFns.format(post.date) }}
+            <div class="attribution bottom-0 mb-4 text-red">
+              By {{ post.author.name }}
             </div>
           </div>
         </div>
