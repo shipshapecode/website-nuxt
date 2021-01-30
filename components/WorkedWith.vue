@@ -1,5 +1,5 @@
 <template>
-  <div class="section flex flex-wrap justify-center" data-aos="fade">
+  <div class="flex flex-wrap justify-center pb-16 px-8" data-aos="fade">
     <div class="section-content bg-grey-transparent p-8">
       <div class="text-center w-full">
         <h3 class="m-0 pb-8 lg:pb-16">

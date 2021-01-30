@@ -24,7 +24,7 @@
             </div>
 
             <nuxt-link
-              class="block font-bold flex-grow leading-8 min-h-24 my-2 text-white text-2xl hover:text-red"
+              class="blog-link block font-bold flex-grow leading-8 min-h-24 my-2 text-white text-2xl hover:text-red"
               :to="`/blog/${post.slug}/`"
             >
               {{ post.linktitle || post.title }}
@@ -56,3 +56,18 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.blog-link {
+  color: $white;
+
+  &:active,
+  &:visited {
+    color: $white;
+  }
+
+  &:hover {
+    color: $red;
+  }
+}
+</style>

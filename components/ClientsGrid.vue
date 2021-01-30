@@ -20,7 +20,10 @@
 
     <div>
       <a href="https://www.scoutforpets.com/" aria-label="Scout">
-        <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/scout.svg" />
+        <inline-svg
+          class="h-8 mb-3 w-auto"
+          src="/svgs/clients/scout-white.svg"
+        />
       </a>
       <p>
         We did several months of work with Scout, starting with updating to the

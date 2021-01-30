@@ -27,51 +27,7 @@
 
     <WorkedWith />
 
-    <div class="section bg-navy flex flex-wrap justify-center" data-aos="fade">
-      <div class="section-content">
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-7">
-          <div class="lg:col-span-3">
-            <h2 class="mb-8 text-white">Select case studies</h2>
-            <nuxt-link to="/work/" class="btn btn-white">
-              See all work
-            </nuxt-link>
-          </div>
-          <div class="bg-navy-card-dark rounded lg:col-span-2">
-            <div
-              class="bg-navy-card-light flex p-16 justify-center rounded-t text-center"
-            >
-              <inline-svg
-                class="fill-white h-16 w-auto"
-                src="/svgs/clients/netflix.svg"
-              />
-            </div>
-            <div class="p-8">
-              <p class="text-red">01</p>
-
-              <p class="leading-8 font-bold text-white text-2xl">
-                Building finance tools for the world's number one streaming
-                platform.
-              </p>
-            </div>
-          </div>
-          <div class="bg-navy-card-dark rounded lg:col-span-2">
-            <div class="bg-navy-card-light flex p-16 justify-center rounded-t">
-              <inline-svg
-                class="fill-white h-16 w-auto"
-                src="/svgs/clients/expel.svg"
-              />
-            </div>
-            <div class="p-8">
-              <p class="text-red">02</p>
-
-              <p class="leading-8 font-bold text-white text-2xl">
-                Building a NIST dashboard with custom visualizations.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <SelectCaseStudies />
 
     <ProcessSection />
 
@@ -85,6 +41,7 @@
 import HeroBlock from '~/components/HeroBlock.vue';
 import ProcessSection from '~/components/ProcessSection.vue';
 import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
+import SelectCaseStudies from '~/components/SelectCaseStudies.vue';
 import TechnologiesSection from '~/components/TechnologiesSection.vue';
 import WorkedWith from '~/components/WorkedWith.vue';
 import { getBlogData } from '~/utils/blog';
@@ -95,6 +52,7 @@ export default {
     HeroBlock,
     ProcessSection,
     RecentBlogPosts,
+    SelectCaseStudies,
     TechnologiesSection,
     WorkedWith
   },
