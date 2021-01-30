@@ -16,9 +16,9 @@
       </template>
 
       <template #icon>
-        <inline-svg
-          class="m-auto max-w-2xl"
-          src="/svgs/hero-images/open-source.svg"
+        <img
+          class="h-auto m-auto max-w-2xl w-full"
+          :src="require('~/assets/img/hero-images/open-source.png?webp')"
         />
       </template>
     </HeroBlock>
