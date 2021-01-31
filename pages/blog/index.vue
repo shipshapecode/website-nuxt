@@ -15,8 +15,8 @@
       </div>
 
       <p>
-        Our thoughtful ramblings about Ember.js, JavaScript, life, liberty and
-        the pursuit of happiness.
+        Our thoughtful ramblings about Ember.js, Nuxt.js, JavaScript, life,
+        liberty and the pursuit of happiness.
       </p>
 
       <BlogPostMenu :posts="posts" />

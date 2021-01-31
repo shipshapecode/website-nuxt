@@ -3,11 +3,13 @@
     <div class="section-content">
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap justify-center w-full">
-          <h3 class="text-white">Ship Shape Insights</h3>
+          <h3 class="text-center text-white lg:text-left">
+            Ship Shape Insights
+          </h3>
 
           <p class="text-center w-full">
             Let’s get down to the nitty gritty about the latest trends in
-            Ember.js, JavaScript and more.
+            Ember.js, Nuxt.js, JavaScript and more.
           </p>
         </div>
 

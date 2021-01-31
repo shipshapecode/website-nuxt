@@ -6,7 +6,7 @@
           class="lg:col-span-3 lg:h-full lg:flex lg:flex-col lg:justify-center"
         >
           <div
-            class="font-bold leading-12 leading-snug mb-24 text-5xl text-white lg:max-w-sm w-full"
+            class="font-bold leading-12 leading-snug mb-24 text-4xl text-white lg:max-w-sm w-full xl:text-5xl"
           >
             Select case studies
           </div>

@@ -4,7 +4,9 @@
       <div class="text-center pt-32 lg:pb-32">
         <inline-svg class="inline m-8" src="/svgs/compass.svg" />
 
-        <h3 class="font-bold p-4 text-5xl text-white">Already convinced?</h3>
+        <h3 class="font-bold leading-none p-4 text-5xl text-white">
+          Already convinced?
+        </h3>
 
         <p class="p-4 text-gold">
           Let us help you exceed your company and team goals.

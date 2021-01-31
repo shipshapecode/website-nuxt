@@ -11,7 +11,7 @@
             <div>
               <a href="https://emberjs.com/" aria-label="Ember.js">
                 <inline-svg
-                  class="w-full h-full p-8 max-w-xxs"
+                  class="w-full h-full p-4 max-w-xxs lg:p-8"
                   src="/svgs/technologies/ember.svg"
                 />
               </a>
@@ -19,7 +19,7 @@
             <div>
               <a href="https://www.electronjs.org/" aria-label="Electron">
                 <inline-svg
-                  class="w-full h-full p-8 max-w-xxs"
+                  class="w-full h-full p-4 max-w-xxs lg:p-8"
                   src="/svgs/technologies/electron.svg"
                 />
               </a>
@@ -27,7 +27,7 @@
             <div>
               <a href="https://tailwindcss.com/" aria-label="Tailwind CSS">
                 <inline-svg
-                  class="w-full h-full p-8 max-w-xxs"
+                  class="w-full h-full p-4 max-w-xxs lg:p-8"
                   src="/svgs/technologies/tailwind.svg"
                 />
               </a>
@@ -35,7 +35,7 @@
             <div>
               <a href="https://nuxtjs.org/" aria-label="Nuxt.js">
                 <inline-svg
-                  class="w-full h-full p-8 max-w-xxs"
+                  class="w-full h-full p-4 max-w-xxs lg:p-8"
                   src="/svgs/technologies/nuxt.svg"
                 />
               </a>
@@ -43,7 +43,7 @@
             <div>
               <a href="https://www.serverless.com/" aria-label="Serverless">
                 <inline-svg
-                  class="w-full h-full p-8 max-w-xxs"
+                  class="w-full h-full p-4 max-w-xxs lg:p-8"
                   src="/svgs/technologies/serverless.svg"
                 />
               </a>
@@ -51,7 +51,7 @@
             <div>
               <a href="https://nextjs.org/" aria-label="Next.js">
                 <inline-svg
-                  class="w-full h-full p-8 max-w-xxs"
+                  class="w-full h-full p-4 max-w-xxs lg:p-8"
                   src="/svgs/technologies/next.svg"
                 />
               </a>

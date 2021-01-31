@@ -2,7 +2,7 @@
   <div class="flex flex-wrap justify-center pb-16 px-8" data-aos="fade">
     <div class="section-content bg-grey-transparent p-8">
       <div class="text-center w-full">
-        <h3 class="m-0 pb-8 lg:pb-16">
+        <h3 class="m-0 pb-8 text-3xl lg:pb-16 lg:text-4xl">
           We've had the pleasure of working with
         </h3>
       </div>
