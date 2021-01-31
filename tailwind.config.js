@@ -119,10 +119,13 @@ module.exports = {
   },
   variants: {
     extend: {
-      fontWeight: ['hover', 'focus']
+      cursor: ['disabled'],
+      fontWeight: ['hover', 'focus'],
+      opacity: ['disabled']
     }
   },
   plugins: [
+    require('@tailwindcss/forms'),
     gradient({
       gradients: {
         brokermate: ['#3FB7E6', '#782599']

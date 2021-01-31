@@ -36,7 +36,7 @@
             </p>
 
             <nuxt-link
-              class="absolute bg-white bottom-0 flex h-16 items-center justify-center m-6 right-0 rounded-full duration-150 transition-colors w-16 hover:bg-red"
+              class="absolute bg-white bottom-0 flex h-16 items-center justify-center m-6 right-0 rounded-full transition-colors w-16 hover:bg-red"
               to="/work/netflix/"
             >
               <inline-svg
@@ -61,7 +61,7 @@
             </p>
 
             <nuxt-link
-              class="absolute bg-white bottom-0 flex h-16 items-center justify-center m-6 right-0 rounded-full duration-150 transition-colors w-16 hover:bg-red"
+              class="absolute bg-white bottom-0 flex h-16 items-center justify-center m-6 right-0 rounded-full transition-colors w-16 hover:bg-red"
               to="/work/expel/"
             >
               <inline-svg
