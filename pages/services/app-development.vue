@@ -38,7 +38,7 @@
             </p>
           </div>
 
-          <div class="flex flex-wrap justify-center lg:flex-no-wrap">
+          <div class="flex flex-wrap justify-center lg:flex-nowrap">
             <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
               <div class="flex flex-wrap items-center justify-center">
                 <div>
@@ -141,7 +141,7 @@
           </p>
         </div>
 
-        <div class="flex flex-wrap justify-center lg:flex-no-wrap">
+        <div class="flex flex-wrap justify-center lg:flex-nowrap">
           <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>

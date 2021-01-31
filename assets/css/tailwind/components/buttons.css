@@ -4,7 +4,7 @@
 
 @screen md {
   .btn {
-    @apply pb-4 pl-12 pr-12 pt-4 text-base whitespace-no-wrap;
+    @apply pb-4 pl-12 pr-12 pt-4 text-base whitespace-nowrap;
   }
 }
 

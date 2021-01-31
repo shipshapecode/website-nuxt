@@ -39,7 +39,7 @@
 
       <div class="bg-grey flex flex-wrap justify-center">
         <div
-          class="flex flex-wrap justify-center items-center p-4 lg:p-12 md:flex-no-wrap"
+          class="flex flex-wrap justify-center items-center p-4 lg:p-12 md:flex-nowrap"
         >
           <div class="p-4 lg:p-8">
             <img
@@ -81,7 +81,7 @@
 
       <div class="bg-gradient-brokermate flex flex-wrap justify-center">
         <div
-          class="flex flex-wrap justify-center items-center p-4 lg:p-12 md:flex-no-wrap"
+          class="flex flex-wrap justify-center items-center p-4 lg:p-12 md:flex-nowrap"
         >
           <div class="p-4 lg:p-8">
             <img

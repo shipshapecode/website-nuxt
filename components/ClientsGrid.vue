@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 col-gap-12 row-gap-8 lg:grid-cols-3">
+  <div class="grid grid-cols-1 gap-x-12 gap-y-8 lg:grid-cols-3">
     <div>
       <a href="https://marianatek.com/" aria-label="Mariana Tek">
         <inline-svg

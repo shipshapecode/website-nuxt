@@ -28,7 +28,7 @@
         <h2 class="text-center text-white w-full">Why use Nuxt?</h2>
 
         <div class="flex flex-wrap">
-          <div class="flex flex-wrap w-full lg:flex-no-wrap">
+          <div class="flex flex-wrap w-full lg:flex-nowrap">
             <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
               <inline-svg
                 class="h-20 inline-block mb-8 w-auto"
@@ -62,7 +62,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-wrap w-full lg:flex-no-wrap">
+          <div class="flex flex-wrap w-full lg:flex-nowrap">
             <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
               <inline-svg
                 class="h-20 inline-block mb-8 w-auto"

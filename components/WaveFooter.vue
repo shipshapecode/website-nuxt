@@ -25,7 +25,7 @@
 
         <div class="flex flex-wrap justify-center w-full">
           <nav
-            class="flex flex-wrap justify-center pt-12 pb-12 w-full lg:flex-no-wrap lg:justify-start"
+            class="flex flex-wrap justify-center pt-12 pb-12 w-full lg:flex-nowrap lg:justify-start"
           >
             <div class="flex flex-shrink justify-start w-full max-w-lg">
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">

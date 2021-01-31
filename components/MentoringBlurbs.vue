@@ -7,7 +7,7 @@
         <h2 class="text-white">How we integrate with your team</h2>
       </div>
 
-      <div class="flex flex-wrap w-full lg:flex-no-wrap">
+      <div class="flex flex-wrap w-full lg:flex-nowrap">
         <div
           class="bg-navy-light flex mb-6 p-6 w-full lg:mr-6 lg:p-12 lg:w-1/3"
           itemscope

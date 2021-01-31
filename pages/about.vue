@@ -31,9 +31,7 @@
     </HeroBlock>
 
     <div class="section bg-navy flex justify-center">
-      <div
-        class="section-content flex flex-wrap justify-center lg:flex-no-wrap"
-      >
+      <div class="section-content flex flex-wrap justify-center lg:flex-nowrap">
         <div
           class="bg-navy-light flex flex-col justify-center min-h-80 mt-12 p-6 w-full lg:h-96 lg:mr-12 lg:mt-0 lg:p-24 lg:w-1/2"
         >
