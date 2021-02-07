@@ -4,10 +4,6 @@ categories:
   - ember.js
   - ember-data
 date: '2016-05-22'
-nextSlug: miragejs-graphql-tools
-nextTitle: Simplify using MirageJS with GraphQL
-previousSlug: helpful-resources-for-new-ember-devs
-previousTitle: Helpful Resources for New Ember Devs
 slug: ember-data-passing-query-params-to-save
 title: Ember Data | Passing query params to .save()
 ---

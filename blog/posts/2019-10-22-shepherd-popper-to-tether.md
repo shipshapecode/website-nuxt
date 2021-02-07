@@ -5,10 +5,6 @@ categories:
   - shepherd.js
   - site tour
 date: '2019-10-22'
-nextSlug: exporting-typescript-imports
-nextTitle: 'Exporting Imported TypeScript Types'
-previousSlug: unit-testing-private-non-exported-functions-with-rewire
-previousTitle: Unit Testing Private, Non-exported Functions with Rewire
 slug: shepherd-popper-to-tether
 title: 'There and Back Again - Popper to Tether'
 ---

@@ -3,10 +3,6 @@ authorId: rwwagner90
 categories:
   - ember.js
 date: '2017-04-29'
-nextSlug: ember-in-repo-addons
-nextTitle: Ember In-Repo Addons
-previousSlug: reloading-hasmany-relationships
-previousTitle: Reloading hasMany relationships
 slug: aiming-for-targets-with-ember
 title: Aiming for Targets with Ember
 ---
