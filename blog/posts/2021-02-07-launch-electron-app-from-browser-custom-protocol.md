@@ -9,6 +9,7 @@ title: Launching Electron Apps From the Browser
 ---
 
 Everyone has probably encountered this situation at least a few times in their lifetime:
+
 You're browsing the web and come across a file or link you want to open in an app on your computer.
 Your browser will prompt you to make sure it's okay with a nice message like this:
 
@@ -18,22 +19,18 @@ This is incredibly useful, and allows users to have a seamless workflow of going
 
 ## Electron app -> browser
 
-We have been working tirelessly on new features for [Swach](https://swach.io/), and one of those new features was the
-ability to share palettes with other users and view them online. The sharing aspect was trivial.
-We used Electron's `shell` module which provides an [openExternal](https://www.electronjs.org/docs/api/shell#shellopenexternalurl-options)
+We have been working tirelessly on new features for [Swach](https://swach.io/), and one of those new features was the ability to share palettes with other users and view them online. 
+The sharing aspect was trivial. We used Electron's `shell` module which provides an [openExternal](https://www.electronjs.org/docs/api/shell#shellopenexternalurl-options)
 method that we used to generate a link with query params to pass the palette data to [swach.io](https://swach.io/).
 
 ## Browser -> Electron app
 
-Going the other direction proved much harder, however. Electron does support using custom protocols
-out of the box with [setAsDefaultProtocolClient](https://www.electronjs.org/docs/api/app#appsetasdefaultprotocolclientprotocol-path-args)
-but opening these custom protocol links requires a much different setup for different platforms.
+Going the other direction proved much harder, however. Electron does support using custom protocols out of the box with [setAsDefaultProtocolClient](https://www.electronjs.org/docs/api/app#appsetasdefaultprotocolclientprotocol-path-args) but opening these custom protocol links requires a much different setup for different platforms.
 
 ### macOS
 
-On macOS there is a special [open-url](https://www.electronjs.org/docs/api/app#event-open-url-macos)
-event that is supported, which makes things fairly straightforward. We can set our app as the default
-protocol client, and then use `open-url` to handle importing our data.
+On macOS there is a special [open-url](https://www.electronjs.org/docs/api/app#event-open-url-macos) event that is supported, which makes things fairly straightforward. 
+We can set our app as the default protocol client, and then use `open-url` to handle importing our data.
 
 **Note: You can replace `custom` with whatever you want to name your custom protocol.**
 
@@ -48,8 +45,7 @@ app.on('open-url', function (event, url) {
 });
 ```
 
-We will also need to add these custom protocols to our `plist`. If you are using electron-forge
-or electron-builder, you can add this to your config.
+We will also need to add these custom protocols to our `plist`. If you are using electron-forge or electron-builder, you can add this to your config.
 
 #### electron-forge
 
@@ -82,9 +78,8 @@ packagerConfig: {
 
 ### Windows
 
-On Windows, the `open-url` event is not supported, and instead Electron will try to open a new instance
-of your application. We will have to catch this and focus our existing application instead. We also
-have to modify `setAsDefaultProtocolClient` to support running in dev mode in Windows.
+On Windows, the `open-url` event is not supported, and instead Electron will try to open a new instance of your application. 
+We will have to catch this and focus our existing application instead. We also have to modify `setAsDefaultProtocolClient` to support running in dev mode in Windows.
 
 ```js
 if (isDev && process.platform === 'win32') {
@@ -163,5 +158,4 @@ if (!gotTheLock) {
 }
 ```
 
-For a good example of supporting deep linking / custom protocols on both macOS and Windows,
-check out this [example app](https://github.com/oikonomopo/electron-deep-linking-mac-win).
+For a good example of supporting deep linking / custom protocols on both macOS and Windows, check out this [example app](https://github.com/oikonomopo/electron-deep-linking-mac-win).
