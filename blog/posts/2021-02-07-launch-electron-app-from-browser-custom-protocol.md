@@ -10,11 +10,11 @@ title: Launching Electron Apps From the Browser
 
 Everyone has probably encountered this situation at least a few times in their lifetime:
 You're browsing the web and come across a file or link you want to open in an app on your computer.
-Your browser will propmt you to make sure it's okay with a nice message like this:
+Your browser will prompt you to make sure it's okay with a nice message like this:
 
 ![Popup prompting user to open in app on their computer.](/img/blog/launch-electron-app-from-browser-custom-protocol/open-with.png)
 
-This is incredibly useful, and allows users to have a seemless workflow of going straight to your app.
+This is incredibly useful, and allows users to have a seamless workflow of going straight to your app.
 
 ## Electron app -> browser
 
