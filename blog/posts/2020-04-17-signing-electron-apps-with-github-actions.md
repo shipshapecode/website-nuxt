@@ -2,6 +2,7 @@
 authorId: rwwagner90
 categories: 
   - electron
+  - javascript
 date: '2020-04-17'
 slug: signing-electron-apps-with-github-actions
 title: 'Signing Electron Apps with GitHub Actions'
