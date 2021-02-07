@@ -29,7 +29,7 @@ Going the other direction proved much harder, however. Electron does support usi
 out of the box with [setAsDefaultProtocolClient](https://www.electronjs.org/docs/api/app#appsetasdefaultprotocolclientprotocol-path-args)
 but opening these custom protocol links requires a much different setup for different platforms.
 
-## macOS
+### macOS
 
 On macOS there is a special [open-url](https://www.electronjs.org/docs/api/app#event-open-url-macos)
 event that is supported, which makes things fairly straightforward. We can set our app as the default
@@ -80,7 +80,7 @@ packagerConfig: {
 }
 ```
 
-## Windows
+### Windows
 
 On Windows, the `open-url` event is not supported, and instead Electron will try to open a new instance
 of your application. We will have to catch this and focus our existing application instead. We also
