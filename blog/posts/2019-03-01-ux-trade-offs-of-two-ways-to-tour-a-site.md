@@ -5,10 +5,6 @@ categories:
   - shepherd.js
   - site tour
 date: '2019-03-01'
-nextSlug: converting-a-webpack-build-to-rollup
-nextTitle: Converting a Webpack Build to Rollup
-previousSlug: an-emberjs-developers-guide-to-nuxtjs
-previousTitle: An Ember.js Developer's Guide to Nuxt.js
 slug: ux-trade-offs-of-two-ways-to-tour-a-site
 title: 'Slideshows and Safaris: UX Trade-offs of Two Very Different Ways To Tour a Site'
 ---

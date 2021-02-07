@@ -4,10 +4,6 @@ categories:
   - ember.js
   - testing
 date: '2017-11-29'
-nextSlug: ember-without-jquery
-nextTitle: Removing jQuery from Ember - For Dummies
-previousSlug: testing-ember-addons-in-an-app
-previousTitle: Testing Ember Addons in a Real App Using ember-cli-addon-tests
 slug: using-components-in-ember-mixin-unit-tests
 title: Using Components in Ember Mixin Unit Tests
 ---

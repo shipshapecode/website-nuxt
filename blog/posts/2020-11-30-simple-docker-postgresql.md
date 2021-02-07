@@ -3,10 +3,6 @@ authorId: wcanavan
 categories: 
   - javascript
 date: '2020-11-30'
-nextSlug: releasing-javascript-libraries-with-release-it
-nextTitle: Releasing JavaScript Libraries with release-it
-previousSlug: tailwind-ui-dropdown-ember-transitions
-previousTitle: Tailwind UI Dropdowns with Ember
 slug: simple-docker-postgresql
 title: The Simplest Possible Docker Setup For Postgresql
 ---

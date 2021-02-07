@@ -3,10 +3,6 @@ authorId: rwwagner90
 categories: 
   - javascript
 date: '2020-08-18'
-nextSlug: miragejs-graphql-tools
-nextTitle: 'Simplify using MirageJS with GraphQL'
-previousSlug: simple-docker-postgresql
-previousTitle: The Simplest Possible Docker Setup For Postgresql
 slug: releasing-javascript-libraries-with-release-it
 title: Releasing JavaScript Libraries with release-it
 ---

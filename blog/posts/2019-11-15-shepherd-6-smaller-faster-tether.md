@@ -6,10 +6,6 @@ categories:
   - site tour
   - tether.js
 date: '2019-11-15'
-nextSlug: unit-testing-private-non-exported-functions-with-rewire
-nextTitle: Unit Testing Private, Non-exported Functions with Rewire
-previousSlug: signing-electron-apps-with-github-actions
-previousTitle: 'Signing Electron Apps with GitHub Actions'
 slug: shepherd-6-smaller-faster-tether
 title: 'Shepherd 6.0: One Dependency, Smaller Bundle, and New Look!'
 ---

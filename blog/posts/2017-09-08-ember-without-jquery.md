@@ -5,10 +5,6 @@ categories:
   - ember-data
   - jQuery
 date: '2017-09-08'
-nextSlug: reloading-hasmany-relationships
-nextTitle: Reloading hasMany relationships
-previousSlug: using-components-in-ember-mixin-unit-tests
-previousTitle: Using Components in Ember Mixin Unit Tests
 slug: ember-without-jquery
 title: Removing jQuery from Ember - For Dummies
 ---

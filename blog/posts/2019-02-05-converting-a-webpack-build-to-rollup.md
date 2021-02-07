@@ -7,10 +7,6 @@ categories:
   - site tour
   - webpack
 date: '2019-02-05'
-nextSlug: ember-data-belongs-to-find-or-create
-nextTitle: Creating a Default Record When a belongsTo Request Errors
-previousSlug: ux-trade-offs-of-two-ways-to-tour-a-site
-previousTitle: 'Slideshows and Safaris: UX Trade-offs of Two Very Different Ways To Tour a Site'
 slug: converting-a-webpack-build-to-rollup
 title: Converting a Webpack Build to Rollup
 ---

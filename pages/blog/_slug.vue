@@ -18,18 +18,17 @@ export default {
     const fileName = fileNames.find((fileName) => {
       return fileName.includes(params.slug);
     });
+    const postIndex = fileNames.indexOf(fileName);
+    const previousPostIndex =
+      postIndex === fileNames.length - 1 ? 0 : postIndex + 1;
+    const previousFileName = fileNames[previousPostIndex];
+    const nextPostIndex =
+      postIndex === 0 ? fileNames.length - 1 : postIndex - 1;
+    const nextFileName = fileNames[nextPostIndex];
     const { attributes, html } = await import(`~/blog/posts/${fileName}.md`);
-    const {
-      authorId,
-      categories,
-      date,
-      nextSlug,
-      nextTitle,
-      previousSlug,
-      previousTitle,
-      slug,
-      title
-    } = attributes;
+    const previousPost = await import(`~/blog/posts/${previousFileName}.md`);
+    const nextPost = await import(`~/blog/posts/${nextFileName}.md`);
+    const { authorId, categories, date, slug, title } = attributes;
     const author = await import(`~/blog/authors/${authorId}.md`);
 
     return {
@@ -38,10 +37,10 @@ export default {
         date,
         categories,
         html,
-        nextSlug,
-        nextTitle,
-        previousSlug,
-        previousTitle,
+        nextSlug: nextPost.attributes.slug,
+        nextTitle: nextPost.attributes.title,
+        previousSlug: previousPost.attributes.slug,
+        previousTitle: previousPost.attributes.title,
         slug,
         title
       }

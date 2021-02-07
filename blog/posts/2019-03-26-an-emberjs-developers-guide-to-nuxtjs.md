@@ -5,10 +5,6 @@ categories:
   - nuxt.js
   - vue.js
 date: '2019-03-26'
-nextSlug: ux-trade-offs-of-two-ways-to-tour-a-site
-nextTitle: 'Slideshows and Safaris: UX Trade-offs of Two Very Different Ways To Tour a Site'
-previousSlug: ember-2019
-previousTitle: Ember 2019
 slug: an-emberjs-developers-guide-to-nuxtjs
 title: An Ember.js Developer's Guide to Nuxt.js
 ---
