@@ -25,7 +25,7 @@ method that we used to generate a link with query params to pass the palette dat
 
 ## Browser -> Electron app
 
-Going the other direction proved much harder, however. Electron does support using custom protocols out of the box with [setAsDefaultProtocolClient](https://www.electronjs.org/docs/api/app#appsetasdefaultprotocolclientprotocol-path-args) but opening these custom protocol links requires a much different setup for different platforms.
+Going the other direction proved much harder, however. Electron does support using custom protocols out of the box with [setAsDefaultProtocolClient](https://www.electronjs.org/docs/api/app#appsetasdefaultprotocolclientprotocol-path-args), but opening these custom protocol links requires a much different setup for different platforms.
 
 ### macOS
 
