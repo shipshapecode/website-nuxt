@@ -141,7 +141,7 @@
             </div>
 
             <div class="flex flex-wrap p-4">
-              Copyright © 2020 Ship Shape Consulting LLC. All rights reserved.
+              Copyright © 2021 Ship Shape Consulting LLC. All rights reserved.
             </div>
           </div>
         </div>
