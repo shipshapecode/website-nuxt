@@ -1,5 +1,8 @@
 <template>
-  <div class="gap-x-4 gap-y-12 grid grid-cols-1 lg:grid-cols-2" data-aos="fade">
+  <div
+    class="gap-x-4 gap-y-12 grid grid-cols-1 mb-6 lg:grid-cols-2"
+    data-aos="fade"
+  >
     <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/netflix.svg" />
@@ -9,6 +12,23 @@
         </p>
 
         <nuxt-link class="btn btn-navy mb-12" to="/work/netflix/">
+          View Case
+        </nuxt-link>
+      </div>
+    </div>
+
+    <div class="w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
+        <inline-svg
+          class="h-10 mb-3 pb-2 w-auto"
+          src="/svgs/clients/sephora.svg"
+        />
+
+        <p class="lg:h-12">
+          Modularizing and improving performance for Sephora's Nuxt.js app.
+        </p>
+
+        <nuxt-link class="btn btn-navy mb-12" to="/work/sephora/">
           View Case
         </nuxt-link>
       </div>
