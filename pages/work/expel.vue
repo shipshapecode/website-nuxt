@@ -154,8 +154,8 @@
       <BottomLinks
         next-link="/work/swach/"
         next-link-text="Swach"
-        previous-link="/work/netflix/"
-        previous-link-text="Netflix"
+        previous-link="/work/sephora/"
+        previous-link-text="Sephora"
       />
     </div>
   </div>
