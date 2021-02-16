@@ -28,6 +28,7 @@
           netlify
           @submit.prevent="sendContactRequest"
         >
+          <input type="hidden" name="form-name" value="contact-us-2" />
           <fieldset class="sm:col-span-2">
             <div class="error-message">
               <p v-for="error in errors.all()" :key="error">
