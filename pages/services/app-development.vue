@@ -24,6 +24,8 @@
         </template>
       </HeroBlock>
 
+      <WorkedWith />
+
       <div class="section bg-navy flex flex-wrap justify-center">
         <div class="section-content" data-aos="fade-up">
           <div class="flex flex-col items-center mb-12 text-center w-full">
@@ -190,11 +192,13 @@
 
 <script>
 import HeroBlock from '~/components/HeroBlock.vue';
+import WorkedWith from '~/components/WorkedWith.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    HeroBlock
+    HeroBlock,
+    WorkedWith
   },
 
   head() {

@@ -23,6 +23,8 @@
       </template>
     </HeroBlock>
 
+    <WorkedWith />
+
     <div class="bg-navy section flex flex-wrap justify-center">
       <div class="section-content">
         <h2 class="text-center text-white w-full">Why use Nuxt?</h2>
@@ -102,11 +104,13 @@
 
 <script>
 import HeroBlock from '~/components/HeroBlock.vue';
+import WorkedWith from '~/components/WorkedWith.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
-    HeroBlock
+    HeroBlock,
+    WorkedWith
   },
 
   head() {

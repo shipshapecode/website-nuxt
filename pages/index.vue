@@ -11,8 +11,8 @@
           for the development community.
         </p>
         <div>
-          <nuxt-link to="/work/" class="btn btn-navy">
-            Check out our work
+          <nuxt-link to="/contact/" class="btn btn-navy">
+            Let's build together
           </nuxt-link>
         </div>
       </template>

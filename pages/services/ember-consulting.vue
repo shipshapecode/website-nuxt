@@ -23,6 +23,8 @@
       </template>
     </HeroBlock>
 
+    <WorkedWith />
+
     <div
       class="section quote bg-grey-transparent flex flex-wrap justify-center"
     >
@@ -66,6 +68,7 @@
 import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
 import HeroBlock from '~/components/HeroBlock.vue';
 import WhyEmber from '~/components/WhyEmber';
+import WorkedWith from '~/components/WorkedWith.vue';
 import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import { generateMeta } from '~/utils/meta';
 import { getBlogData } from '~/utils/blog';
@@ -75,7 +78,8 @@ export default {
     CommunityInvolvement,
     HeroBlock,
     RecentBlogPosts,
-    WhyEmber
+    WhyEmber,
+    WorkedWith
   },
 
   async asyncData() {
