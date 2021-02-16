@@ -23,12 +23,12 @@
         </div>
         <form
           class="contact-form mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
-          name="contact-us-2"
+          name="contact-us"
           netlify-honeypot="bot-field"
           netlify
           @submit.prevent="sendContactRequest"
         >
-          <input type="hidden" name="form-name" value="contact-us-2" />
+          <input type="hidden" name="form-name" value="contact-us" />
           <fieldset class="sm:col-span-2">
             <div class="error-message">
               <p v-for="error in errors.all()" :key="error">
@@ -248,7 +248,7 @@ export default {
         return fetch('https://shipshape.io/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: _encode({ 'form-name': 'contact-us-2', ...this.$data })
+          body: _encode({ 'form-name': 'contact-us', ...this.$data })
         })
           .then(_successMessage.bind(this))
           .catch(_errorMessage.bind(this));
