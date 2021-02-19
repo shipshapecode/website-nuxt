@@ -76,6 +76,10 @@
                 <nuxt-link to="/work/" class="block"> Work </nuxt-link>
 
                 <nuxt-link to="/blog/" class="block"> Blog </nuxt-link>
+
+                <nuxt-link to="/whiskey-web-and-whatnot-podcast/" class="block">
+                  Podcast
+                </nuxt-link>
               </div>
 
               <div class="w-1/2 lg:w-72 p-8 lg:p-4">

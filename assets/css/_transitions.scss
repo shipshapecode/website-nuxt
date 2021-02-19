@@ -1,5 +1,5 @@
 .page-enter-active, .page-leave-active {
-  transition: opacity .25s;
+  @apply transition-colors transition-opacity;
 }
 .page-enter, .page-leave-to {
   opacity: 0;
