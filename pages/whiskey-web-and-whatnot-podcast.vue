@@ -24,7 +24,7 @@
 
       <template #icon>
         <img
-          class="h-auto m-auto max-w-2xl py-4 rounded-lg w-full"
+          class="h-auto m-auto max-w-2xl my-4 rounded-lg w-full"
           :src="require('~/assets/img/hero-images/www.png?webp')"
         />
       </template>
