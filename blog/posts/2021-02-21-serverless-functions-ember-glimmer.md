@@ -12,7 +12,7 @@ title: Serverless Functions in Ember and Glimmer
 
 I have recently spent some time looking at [API Routes](https://nextjs.org/docs/api-routes/introduction) in Next.js and I must say that I've been very happy with the value-add and developer experience / ergonomics they provide. 
 
-I really wanted to enjoy that experience in Ember and Glimmer and that is what we're covering in this post.
+I really wanted to leverage that same functionality in Ember and Glimmer, and that is what we'll cover in this post.
 
 ## Table of Contents
 1. [Next API Routes](#nextapiroutes)
