@@ -33,7 +33,7 @@ For those who may not be familiar with Next's API routes, they are essentially n
 
 There are a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that we would typically not want exposed to the public. For instance, if we need to generate presigned AWS s3 urls for the client to post files to.
 
-From a developer efficiency perspective, this could help unblock frontend developers on your team from waiting for backend developers to be available for certain tasks. Since API routes provide, well, an API, you could develop certain server side features alongside your frontend without much loss of context.
+From a developer efficiency perspective, this could help unblock front end developers on the team from waiting for backend developers to be available for certain tasks. Since API routes provide, well, an API, we can develop certain server side features alongside our frontend without much loss of context.
 
 Developing a Next.js API route is a seamless experience. The API routes all live in an `api` directory at your project's root. Spinning up the development server that powers the client side of the Next application will also spin up a server for the api routes, do some proxy magic, and make it feel as if you have one development server.
 
