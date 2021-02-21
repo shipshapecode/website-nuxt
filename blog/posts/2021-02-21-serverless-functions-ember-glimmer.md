@@ -41,7 +41,7 @@ There is essentially zero-configuration involved. Vercel really nailed the devel
 
 Being able to write these functions in such a well-integrated fashion was very exciting, and it left me wondering about achieving a similar experience in the JavaScript framework that I enjoy working with the most, [Ember](https://emberjs.com/). Also, having recently explored [Glimmer](https://glimmerjs.com/), I was curious about whether these functions could be used with Glimmer too. 
 
-After a bit of investigation, I'm happy to report that because of tooling that is already available it is fairly trivial to get essentially the same value-add and developer experience with both Ember and Glimmer, or any other framework you might choose.
+After a bit of investigation, I'm happy to report that, because of tooling that is already available, it is fairly trivial to get essentially the same value-add and developer experience with both Ember and Glimmer, or any other framework you might choose.
 
 Now before we proceed, it is worth pointing out that we are not talking about server-side rendering or static site generation tools in this post. Next provides both of those things, and I mention this because I have found that when I bring up the topic of API routes, many people assume I'm talking about one of those solutions, but I am not here. We may follow up later with posts about server-side rendering and/or static site generation, but that's a topic for another day.
 
