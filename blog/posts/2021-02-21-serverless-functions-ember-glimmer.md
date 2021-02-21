@@ -59,6 +59,7 @@ Netlify Dev has [framework detection](https://github.com/netlify/netlify-dev-plu
 After installing `netlify-cli` globally with `npm install -g netlify-cli`, we'll want to ensure we are authenticated with netlify-cli and that our project is initialized with netlify or [linked to Netlify](https://docs.netlify.com/cli/get-started/#link-and-unlink-sites).
 
 On a new Ember project that I just published to Github I was able to run:
+
 ```js
 netlify init
 ```
