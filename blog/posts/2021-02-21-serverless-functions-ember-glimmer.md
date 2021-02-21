@@ -48,7 +48,7 @@ Now before we proceed, it is worth pointing out that we are not talking about se
 
 ## Netlify Dev
 
-Okay, with that in mind the first solution I explored was [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md). Netlify Dev provides all the features of deploying to Netlify, including serverless functions, and brings them to the local development enviroment as part of [Netlify CLI](https://docs.netlify.com/cli/get-started/#get-started-with-netlify-dev). Essentially, Netlify Dev allows you to write and serve functions locally alongside your client-side code, just like Next's API routes. These functions can be written in node or Golang, but we'll focus on node for now.
+Okay, with that in mind the first solution I explored was [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md). Netlify Dev provides all the features of deploying to Netlify, including serverless functions, and brings them to the local development enviroment as part of [Netlify CLI](https://docs.netlify.com/cli/get-started/#get-started-with-netlify-dev). Essentially, Netlify Dev allows us to write and serve functions locally alongside our client-side code, just like Next's API routes. These functions can be written in node or Golang, but we'll focus on node for now.
 
 ### Netlify functions with Ember
 
