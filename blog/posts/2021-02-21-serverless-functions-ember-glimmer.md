@@ -77,7 +77,7 @@ netlify functions:create hello-world
 
 You may be presented with some options on type of function you want to create using netlify's templates. For now we'll go with the basic function (most likely the first option). This will create a directory and function `.js` file for you at `./functions/hello-world/hello-world.js` with all the boiler plate that is needed for a netlify serverless node function to run.
 
-Now if you spin up the development server you'll notice that Netlify dev will serve our Ember app for us at `localhost:8888`. To do that simply run:
+Now if we spin up the development server we'll notice that Netlify dev will serve our Ember app for us at `localhost:8888`. To do that simply run:
 
 ```js
 netlify dev
