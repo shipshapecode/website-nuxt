@@ -108,7 +108,7 @@ Make a few tweaks, add an `application.js` route that uses fetch to data from th
 
 Deploying to netlify is also super easy, but we won't cover that subject here as there are plenty of resources around it. Suffice it to say that if you deploy your site with Netlify it should JustWork™️ in the same way you just experienced in your local dev environment. Netlify will handle deployment of the serverless functions seamlessly.
 
-As I said, there are a ton of different ways you could use these serverless functions in your project, so use them as you see fit.
+There are a ton of different ways we can use these serverless functions in our project, so use them as you see fit.
 
 ### Netlify functions with Glimmer
 
