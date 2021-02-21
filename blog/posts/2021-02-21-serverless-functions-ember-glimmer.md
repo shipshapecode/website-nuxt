@@ -33,7 +33,7 @@ For those who may not be familiar with Next's API routes, they are essentially n
 
 There are a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that we would typically not want exposed to the public. For instance, if we need to generate presigned AWS s3 urls for the client to post files to.
 
-From a developer efficiency perspective, this could help unblock front end developers on the team from waiting for backend developers to be available for certain tasks. Since API routes provide, well, an API, we can develop certain server side features alongside our frontend without much loss of context.
+From a developer efficiency perspective, this could help unblock frontend developers on the team from waiting for backend developers to be available for certain tasks. Since API routes provide, well, an API, we can develop certain server side features alongside our frontend without much loss of context.
 
 Developing a Next.js API route is a seamless experience. The API routes all live in an `api` directory at our project's root. Spinning up the development server that powers the client side of the Next application will also spin up a server for the api routes, do some proxy magic, and make it feel as if there is one development server.
 
@@ -43,7 +43,7 @@ Being able to write these functions in such a well-integrated fashion was very e
 
 After a bit of investigation, I'm happy to report that, because of tooling that is already available, it is fairly trivial to get essentially the same value-add and developer experience with both Ember and Glimmer, or any other framework you might choose.
 
-Now before we proceed, it is worth pointing out that we are not talking about server-side rendering or static site generation tools in this post. Next does provides both of those things, and we have found there is often some confusion, when we bring up the topic of API routes. Sometimes people assume we are talking about one of those solutions, but we are not here. We may follow up later with posts about server-side rendering and/or static site generation, but that's a topic for another day.
+Now before we proceed, it is worth pointing out that we are not talking about server-side rendering or static site generation tools in this post. Next does provides both of those things, and I have found there is often some confusion, when I bring up the topic of API routes. Sometimes people assume I'm talking about one of those solutions, but that is not what we are talking about here. We may follow up later with posts about server-side rendering and/or static site generation, but that's a topic for another day.
 
 
 ## Netlify Dev
