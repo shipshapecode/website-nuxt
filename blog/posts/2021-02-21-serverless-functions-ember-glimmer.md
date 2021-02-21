@@ -37,7 +37,7 @@ From a developer efficiency perspective, this could help unblock frontend develo
 
 Developing a Next.js API route is a seamless experience. The API routes all live in an `api` directory at your project's root. Spinning up the development server that powers the client side of the Next application will also spin up a server for the api routes, do some proxy magic, and make it feel as if you have one development server.
 
-There is essentially zero-configuration involved. Vercel really nailed the developer experience with these API routes. Deploying to Vercel's platform is, of course, a snap, but you can deploy elsewhere relatively easily too.
+There is essentially zero-configuration involved. Vercel really nailed the developer experience with these API routes. Deploying to Vercel's platform is, of course, a snap, but we can deploy elsewhere relatively easily too.
 
 Being able to write these functions in such a well-integrated fashion was very exciting. And it left me wondering about obtaining a similar experience in the JavaScript framework that I enjoy working with the most, [Ember](https://emberjs.com/). Also having recently explored [Glimmer](https://glimmerjs.com/), I was curious about whether these functions could be used with Glimmer too. 
 
