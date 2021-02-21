@@ -65,7 +65,7 @@ netlify init
 ```
 And netlify-cli walks you through the setup. One thing you might notice is that many of the default options (like the build command and the location of build artifacts to deploy) are preset correctly for Ember, this is the magic of framework detection at work! 
 
-You might also notice that a functions directory was created for us inside of the Ember project at the root. This is where your serverless functions will live. 
+You might also notice that a `functions` directory was created for us inside of the Ember project at the root. This is where our serverless functions will live. 
 
 Be sure to answer yes to the cli's offer to create a `netlify.toml` file, we'll need it in just a bit.
 
