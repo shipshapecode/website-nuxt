@@ -92,6 +92,11 @@ If you now visit `http://localhost:8888/ember-api-routes/hello-world` in your br
 
 Boom, you've got API routes on Ember working locally using Netlify Dev 🔥! 
 
+
+Make a few tweaks, add an `application.js` route that uses fetch to data from the new function at `/ember-api-routes/hello-world`, and you can use it just as you would most any API. Here we're returning the response to the `application.js` route model hook and using it in the `application.hbs` template, passing it down as an argument to Ember's `<WelcomePage />` component to display the message.
+
+![Hello World Serverless Function Ember](/img/blog/serverless-functions-ember-glimmer/ember-hello-world.png)
+
 Deploying to netlify is also super easy, but we won't cover that subject here as there are plenty of resources around it. Suffice it to say that if you deploy your site with Netlify it should JustWork™️ in the same way you just experienced in your local dev environment. Netlify will handle deployment of the serverless functions seamlessly.
 
 As I said, there are a ton of different ways you could use these serverless functions in your project, so use them as you see fit.
@@ -143,6 +148,11 @@ You should be able to visit your Glimmer app at `http://localhost:8888` and see 
 ```
 
 Now you've got Glimmer with API routes running locally!
+
+We can similarly make a few tweaks to load the data using fetch from the default `App.js` Glimmer component and display it in the template:
+
+![Hello World Serverless Function Glimmer](/img/blog/serverless-functions-ember-glimmer/glimmer-hello-world.png)
+
 
 ## Vercel Dev
 
