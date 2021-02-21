@@ -39,7 +39,7 @@ Developing a Next.js API route is a seamless experience. The API routes all live
 
 There is essentially zero-configuration involved. Vercel really nailed the developer experience with these API routes. Deploying to Vercel's platform is, of course, a snap, but we can deploy elsewhere relatively easily too.
 
-Being able to write these functions in such a well-integrated fashion was very exciting. And it left me wondering about obtaining a similar experience in the JavaScript framework that I enjoy working with the most, [Ember](https://emberjs.com/). Also having recently explored [Glimmer](https://glimmerjs.com/), I was curious about whether these functions could be used with Glimmer too. 
+Being able to write these functions in such a well-integrated fashion was very exciting, and it left me wondering about achieving a similar experience in the JavaScript framework that I enjoy working with the most, [Ember](https://emberjs.com/). Also, having recently explored [Glimmer](https://glimmerjs.com/), I was curious about whether these functions could be used with Glimmer too. 
 
 After a bit of investigation, I'm happy to report that because of tooling that is already available it is fairly trivial to get essentially the same value-add and developer experience with both Ember and Glimmer, or any other framework you might choose.
 
