@@ -62,7 +62,7 @@ On a new Ember project that I just published to Github I was able to run:
 ```js
 netlify init
 ```
-And netlify-cli walks you through the setup. One thing you might notice is that many of the default options (like the build command and the location of build artifacts to deploy) are preset correctly for Ember, this is magic of framework detection at work! 
+And netlify-cli walks you through the setup. One thing you might notice is that many of the default options (like the build command and the location of build artifacts to deploy) are preset correctly for Ember, this is the magic of framework detection at work! 
 
 You might also notice that a functions directory was created for us inside of the Ember project at the root. This is where your serverless functions will live. 
 
@@ -102,7 +102,7 @@ Now if we visit `http://localhost:8888/ember-api-routes/hello-world` in our brow
 Boom, we've got API routes on Ember working locally using Netlify Dev 🔥! 
 
 
-Make a few tweaks, add an `application.js` route that uses fetch to data from the new function at `/ember-api-routes/hello-world`, and you can use it just as you would most any API. Here we're returning the response to the `application.js` route model hook and using it in the `application.hbs` template, passing it down as an argument to Ember's `<WelcomePage />` component to display the message.
+Make a few tweaks, add an `application.js` route that uses fetch to get data from the new function at `/ember-api-routes/hello-world`, and you can use it just as you would most any API. Here we're returning the response to the `application.js` route model hook and using it in the `application.hbs` template, passing it down as an argument to Ember's `<WelcomePage />` component to display the message.
 
 ![Hello World Serverless Function Ember](/img/blog/serverless-functions-ember-glimmer/ember-hello-world.png)
 
