@@ -9,21 +9,23 @@ slug: serverless-functions-ember-glimmer
 title: Serverless Functions in Ember and Glimmer
 ---
 
-I recently have spent some time looking at [API Routes](https://nextjs.org/docs/api-routes/introduction) in next.js and have been very happy with the value-add and developer experience / ergonomics they provide. 
+I have recently spent some time looking at [API Routes](https://nextjs.org/docs/api-routes/introduction) in Next.js and I must say that I've been very happy with the value-add and developer experience / ergonomics they provide. 
 
-If you are not familiar with next's API routes, they are essentially node functions that deploy as serverless lambdas. These functions can be used in a lot of different ways: 
+If you are not familiar with Next's API routes, they are essentially node functions that deploy as serverless lambdas. These functions can be used in a lot of different ways: 
 
 - they could provide a place to write a GraphQL endpoint
 - they could serve as a gateway to other API's
 - they could serve as a full-fledged backend that talks to a persistence layer
 
-There a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that you would typically not want exposed to your client, for instance, if you need to generate presigned AWS s3 urls for the client to post files to.
+There a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that you would typically not want exposed to your client. For instance, if you need to generate presigned AWS s3 urls for the client to post files to.
 
-Developing a next.js API route is a seamless experience. The API routes all live in an `api` directory at your project's root. Spinning up the development server that powers the client side of the next application will also spin up a server for the api routes, do some proxy magic, and make it feel as if you have one development server. There is essentially zero-configuration involved. Vercel really nailed the developer experience with these API routes. Deploying to Vercel's platform is, of course, a snap, but you can deploy elsewhere relatively easily too.
+Developing a Next.js API route is a seamless experience. The API routes all live in an `api` directory at your project's root. Spinning up the development server that powers the client side of the Next application will also spin up a server for the api routes, do some proxy magic, and make it feel as if you have one development server.
 
-Being able to write these functions in such a well-integrated fashion was very exciting. And it left me wondering about a similar experience in the JavaScript framework that I enjoy working with the most, [Ember](https://emberjs.com/). Also having recently explored [Glimmer](https://glimmerjs.com/), I was curious about whether these functions could be used with Glimmer too. 
+There is essentially zero-configuration involved. Vercel really nailed the developer experience with these API routes. Deploying to Vercel's platform is, of course, a snap, but you can deploy elsewhere relatively easily too.
 
-After a bit of investigation, I'm happy to report that because of tooling that is already available it is fairly trivial to get essentially the same value and developer experience with both Ember and Glimmer, or any other framework you might choose.
+Being able to write these functions in such a well-integrated fashion was very exciting. And it left me wondering about obtaining a similar experience in the JavaScript framework that I enjoy working with the most, [Ember](https://emberjs.com/). Also having recently explored [Glimmer](https://glimmerjs.com/), I was curious about whether these functions could be used with Glimmer too. 
+
+After a bit of investigation, I'm happy to report that because of tooling that is already available it is fairly trivial to get essentially the same value-add and developer experience with both Ember and Glimmer, or any other framework you might choose.
 
 Now before we proceed, it is worth pointing out that we are not talking about server-side rendering or static site generation tools in this post. Next provides both of those things, and I mention this because I have found that when I bring up the topic of API routes, many people assume I'm talking about one of those solutions, but I am not here. We may follow up later with posts about server-side rendering and/or static site generation, but that's a topic for another day.
 
@@ -37,7 +39,7 @@ Now before we proceed, it is worth pointing out that we are not talking about se
 
 ## Netlify Dev
 
-Okay, with that in mind the first solution I explored was [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md). Netlify Dev provides all the features of deploying to Netlify, including serverless functions, and brings them to the local development enviroment as part of [Netlify CLI](https://docs.netlify.com/cli/get-started/#get-started-with-netlify-dev). Essentially, Netlify Dev allows you to write and serve functions locally alongside your client-side code, just like next's API routes. These functions can be written in node or Golang, but we'll focus on node for now.
+Okay, with that in mind the first solution I explored was [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md). Netlify Dev provides all the features of deploying to Netlify, including serverless functions, and brings them to the local development enviroment as part of [Netlify CLI](https://docs.netlify.com/cli/get-started/#get-started-with-netlify-dev). Essentially, Netlify Dev allows you to write and serve functions locally alongside your client-side code, just like Next's API routes. These functions can be written in node or Golang, but we'll focus on node for now.
 
 ### Netlify functions with Ember
 
@@ -57,7 +59,7 @@ You might also notice that a functions directory was created for us inside of th
 
 Be sure to answer yes to the cli's offer to create a `netlify.toml` file, we'll need it in just a bit.
 
-To create a serverless function it's very easy, all that is necessary is to run the create command and pass it a name of a function:
+To create a serverless function it's very easy, all you need to do is run the create command and pass it a name of a function:
 
 ```js
 netlify functions:create hello-world
@@ -144,7 +146,7 @@ Now you've got Glimmer with API routes running locally!
 
 ## Vercel Dev
 
-What about alternative platforms? Do we have to use Netlify? Thankfully, you can just as easily use Vercel's platform to locally develop your Ember or Glimmer app with [serverless functions](https://vercel.com/docs/serverless-functions/introduction) and deploy it all to Vercel as well. Vercel has a similar [cli](https://vercel.com/docs/cli) and it also offers a [dev](https://vercel.com/docs/cli#commands/dev) command to simulate the Vercel deployment environment locally.
+What about alternative platforms? Do we have to use Netlify? Thankfully, you can just as easily use Vercel's platform to locally develop your Ember or Glimmer app with [serverless functions](https://vercel.com/docs/serverless-functions/introduction) and deploy it all to [Vercel](https://vercel.com) as well. Vercel has a similar [cli](https://vercel.com/docs/cli) and it also offers a [dev](https://vercel.com/docs/cli#commands/dev) command to simulate the Vercel deployment environment locally.
 
 The first step is to ensure you have the Vercel CLI installed globally by running `npm i -g vercel`. 
 
@@ -164,7 +166,7 @@ module.exports = (req, res) => {
 
 If you're familiar with Next.js API routes this syntax will look very similar, aside from the export it is identical to how you would write a Next API route.
 
-That's really it. If you visit `http://localhost:3000/api/hello-world` (after rebooting the dev server) you'll see your API route running alongside Ember! It's also extremely straight forward to deploy an Ember app to [Vercel](https://vercel.com/).
+That's really it. If you visit `http://localhost:3000/api/hello-world` (after rebooting the dev server) you'll see your API route running alongside Ember! It's also extremely straight forward to deploy an Ember app to [Vercel](https://vercel.com/guides/deploying-ember-with-vercel).
 
 ### Vercel functions with Glimmer
 
@@ -185,5 +187,7 @@ Again, the dev server will boot and Glimmer will be served at `http://localhost:
 ## Wrap Up
 
 Obviously, this was just an introduction to the setup of using serverless functions in Ember and Glimmer. We've only scratched the suface of what you can do with serverless functions or what the tradeoffs are of using them. 
+
+In the future we may explore those issues and some more customized options for development and deployment if you don't want to use one of the two platforms discussed here.
 
 Hopefully, this helps you in your exploration of serverless functions with Ember and Glimmer.
