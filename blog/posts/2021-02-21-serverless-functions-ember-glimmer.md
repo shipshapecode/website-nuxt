@@ -3,6 +3,7 @@ authorId: jaredgalanis
 categories:
   - serverless
   - ember
+  - glimmer
   - javascript
 date: '2021-02-20'
 slug: serverless-functions-ember-glimmer
@@ -11,6 +12,19 @@ title: Serverless Functions in Ember and Glimmer
 
 I have recently spent some time looking at [API Routes](https://nextjs.org/docs/api-routes/introduction) in Next.js and I must say that I've been very happy with the value-add and developer experience / ergonomics they provide. 
 
+I really wanted to enjoy that experience in Ember and Glimmer and that is what we're covering in this post.
+
+## Table of Contents
+1. [Next API Routes](#nextapiroutes)
+2. [Netlify Dev](#netlifydev)
+3. [Netlify functions with Ember](#netlifyfunctionswithember)
+4. [Netlify functions with Glimmer](#netlifyfunctionswithglimmer)
+5. [Vercel Dev](#verceldev)
+6. [Vercel functions with Ember](#vercelfunctionswithember)
+7. [Vercel functions with Glimmer](#vercelfunctionswithglimmer)
+
+## Next API Routes
+
 If you are not familiar with Next's API routes, they are essentially node functions that deploy as serverless lambdas. These functions can be used in a lot of different ways: 
 
 - they could provide a place to write a GraphQL endpoint
@@ -18,6 +32,8 @@ If you are not familiar with Next's API routes, they are essentially node functi
 - they could serve as a full-fledged backend that talks to a persistence layer
 
 There a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that you would typically not want exposed to your client. For instance, if you need to generate presigned AWS s3 urls for the client to post files to.
+
+From a developer efficiency perspective, this could help unblock frontend developers on your team from waiting for backend developers to be available for certain tasks. Since API routes provide, well, an API, you could develop certain server side features alongside your frontend without much loss of context.
 
 Developing a Next.js API route is a seamless experience. The API routes all live in an `api` directory at your project's root. Spinning up the development server that powers the client side of the Next application will also spin up a server for the api routes, do some proxy magic, and make it feel as if you have one development server.
 
@@ -29,13 +45,6 @@ After a bit of investigation, I'm happy to report that because of tooling that i
 
 Now before we proceed, it is worth pointing out that we are not talking about server-side rendering or static site generation tools in this post. Next provides both of those things, and I mention this because I have found that when I bring up the topic of API routes, many people assume I'm talking about one of those solutions, but I am not here. We may follow up later with posts about server-side rendering and/or static site generation, but that's a topic for another day.
 
-## Table of Contents
-1. [Netlify Dev](#netlifydev)
-2. [Netlify functions with Ember](#netlifyfunctionswithember)
-3. [Netlify functions with Glimmer](#netlifyfunctionswithglimmer)
-4. [Vercel Dev](#verceldev)
-5. [Vercel functions with Ember](#vercelfunctionswithember)
-5. [Vercel functions with Glimmer](#vercelfunctionswithglimmer)
 
 ## Netlify Dev
 
