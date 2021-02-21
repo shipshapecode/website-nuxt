@@ -27,9 +27,9 @@ I really wanted to leverage that same functionality in Ember and Glimmer, and th
 
 For those who may not be familiar with Next's API routes, they are essentially node functions that deploy as serverless lambdas. These functions can be used in a variety of different ways. They can: 
 
-- they could provide a place to write a GraphQL endpoint
-- they could serve as a gateway to other API's
-- they could serve as a full-fledged backend that talks to a persistence layer
+- Provide a place to write a GraphQL endpoint
+- Serve as a gateway to other API's
+- Serve as a full-fledged backend that talks to a persistence layer
 
 There a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that you would typically not want exposed to your client. For instance, if you need to generate presigned AWS s3 urls for the client to post files to.
 
