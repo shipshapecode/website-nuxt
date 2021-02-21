@@ -25,7 +25,7 @@ I really wanted to leverage that same functionality in Ember and Glimmer, and th
 
 ## Next API Routes
 
-If you are not familiar with Next's API routes, they are essentially node functions that deploy as serverless lambdas. These functions can be used in a lot of different ways: 
+For those who may not be familiar with Next's API routes, they are essentially node functions that deploy as serverless lambdas. These functions can be used in a variety of different ways. They can: 
 
 - they could provide a place to write a GraphQL endpoint
 - they could serve as a gateway to other API's
