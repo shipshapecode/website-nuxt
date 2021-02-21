@@ -31,7 +31,7 @@ For those who may not be familiar with Next's API routes, they are essentially n
 - Serve as a gateway to other API's
 - Serve as a full-fledged backend that talks to a persistence layer
 
-There a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that you would typically not want exposed to your client. For instance, if you need to generate presigned AWS s3 urls for the client to post files to.
+There are a lot of possibilities here. API routes are especially helpful when performing operations that need to access secret environment variables that we would typically not want exposed to the public. For instance, if we need to generate presigned AWS s3 urls for the client to post files to.
 
 From a developer efficiency perspective, this could help unblock frontend developers on your team from waiting for backend developers to be available for certain tasks. Since API routes provide, well, an API, you could develop certain server side features alongside your frontend without much loss of context.
 
