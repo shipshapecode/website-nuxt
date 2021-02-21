@@ -91,7 +91,7 @@ The default path for functions, `/.netlify/functions/`, is a little funky, so we
     status = 200
 ```
 
-If you now visit `http://localhost:8888/ember-api-routes/hello-world` in your browser you should see:
+Now if we visit `http://localhost:8888/ember-api-routes/hello-world` in our browser we should see:
 
 ```js
 {
