@@ -205,7 +205,7 @@ Again, the dev server will boot and Glimmer will be served at `http://localhost:
 
 ## Wrap Up
 
-Obviously, this was just an introduction to the setup of using serverless functions in Ember and Glimmer. We've only scratched the suface of what you can do with serverless functions or what the tradeoffs are of using them. 
+This was only an introduction to the setup of using serverless functions in Ember and Glimmer. We've only scratched the surface of what we can do with serverless functions or what the tradeoffs are of using them. 
 
 In the future we may explore those issues and some more customized options for development and deployment if you don't want to use one of the two platforms discussed here.
 
