@@ -69,7 +69,7 @@ You might also notice that a `functions` directory was created for us inside of 
 
 Be sure to answer yes to the cli's offer to create a `netlify.toml` file, we'll need it in just a bit.
 
-To create a serverless function it's very easy, all you need to do is run the create command and pass it a name of a function:
+To create a serverless function it's very easy, all we need to do is run the create command and pass it a name of a function:
 
 ```js
 netlify functions:create hello-world
