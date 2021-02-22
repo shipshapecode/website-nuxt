@@ -5,7 +5,7 @@ categories:
   - glimmer
   - javascript
   - serverless
-date: '2021-02-21'
+date: '2021-02-22'
 slug: serverless-functions-ember-glimmer
 title: Serverless Functions in Ember and Glimmer
 ---
