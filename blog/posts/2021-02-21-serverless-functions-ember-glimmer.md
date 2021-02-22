@@ -43,7 +43,7 @@ Being able to write these functions in such a well-integrated fashion was very e
 
 After a bit of investigation, I'm happy to report that, because of tooling that is already available, it is fairly trivial to get essentially the same value-add and developer experience with both Ember and Glimmer, or any other framework you might choose.
 
-Now before we proceed, it is worth pointing out that we are not talking about server-side rendering or static site generation tools in this post. Next does provides both of those things, and I have found there is often some confusion, when I bring up the topic of API routes. Sometimes people assume I'm talking about one of those solutions, but that is not what we are talking about here. We may follow up later with posts about server-side rendering and/or static site generation, but that's a topic for another day.
+Now before we proceed, it is worth pointing out that we are not talking about server-side rendering or static site generation tools in this post. Next does provides both of those things, and I have found there is often some confusion, when I bring up the topic of API routes. Sometimes people assume I'm talking about one of those solutions, but that is not what we are talking about here. I may follow up later with posts about server-side rendering and/or static site generation, but that's a topic for another day.
 
 
 ## Netlify Dev
