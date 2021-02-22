@@ -166,7 +166,7 @@ We can similarly make a few tweaks to load the data using fetch from the default
 
 ## Vercel Dev
 
-What about alternative platforms? Do we have to use Netlify? Thankfully, you can just as easily use Vercel's platform to locally develop your Ember or Glimmer app with [serverless functions](https://vercel.com/docs/serverless-functions/introduction) and deploy it all to [Vercel](https://vercel.com) as well. Vercel has a similar [cli](https://vercel.com/docs/cli) and it also offers a [dev](https://vercel.com/docs/cli#commands/dev) command to simulate the Vercel deployment environment locally.
+What about alternative platforms? Do we have to use Netlify? Thankfully, we can just as easily use Vercel's platform to locally develop our Ember or Glimmer app with [serverless functions](https://vercel.com/docs/serverless-functions/introduction) and deploy it all to [Vercel](https://vercel.com) as well. Vercel has a similar [cli](https://vercel.com/docs/cli) and it also offers a [dev](https://vercel.com/docs/cli#commands/dev) command to simulate the Vercel deployment environment locally.
 
 The first step is to ensure we have the Vercel CLI installed globally by running `npm i -g vercel`. 
 
