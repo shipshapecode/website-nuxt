@@ -157,7 +157,7 @@ You should be able to visit your Glimmer app at `http://localhost:8888` and see 
 }
 ```
 
-Now you've got Glimmer with API routes running locally!
+Now we've got Glimmer with API routes running locally!
 
 We can similarly make a few tweaks to load the data using fetch from the default `App.js` Glimmer component and display it in the template:
 
