@@ -8,6 +8,10 @@ module.exports = {
   moduleFileExtensions: ['js', 'vue', 'json'],
   transform: {
     '^.+\\.js$': 'babel-jest',
+    '^.+\\.md?$': 'markdown-loader-jest',
     '.*\\.(vue)$': 'vue-jest'
-  }
+  },
+  transformIgnorePatterns: [
+    '<rootDir>/node_modules/(?!(@nuxtjs/.*\\.(vue|js)$))'
+  ]
 };

@@ -13,8 +13,8 @@ describe('browser', () => {
     }
   });
 
-  test('should render page', async () => {
-    const page = await createPage('/');
+  test('should render Nuxt consulting page', async () => {
+    const page = await createPage('/services/nuxt-consulting/');
     const body = await page.innerHTML('body');
     expect(body).toContain('Works!');
   });
