@@ -35,6 +35,9 @@ jobs:
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn
+      # Generate static site
+      - name: Generate static site
+        run: yarn generate
       # Run Jest
       - name: Run Unit Tests
         run: yarn test  
