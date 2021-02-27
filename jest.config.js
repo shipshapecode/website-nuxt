@@ -1,5 +1,10 @@
 module.exports = {
   preset: '@nuxt/test-utils',
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '<rootDir>/components/**/*.vue',
+    '<rootDir>/pages/**/*.vue'
+  ],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
@@ -8,7 +13,7 @@ module.exports = {
   moduleFileExtensions: ['js', 'vue', 'json'],
   transform: {
     '^.+\\.js$': 'babel-jest',
-    '^.+\\.md?$': 'markdown-loader-jest',
+    '^.+\\.(md|mdx)$': 'jest-transformer-mdx',
     '.*\\.(vue)$': 'vue-jest'
   },
   transformIgnorePatterns: [
