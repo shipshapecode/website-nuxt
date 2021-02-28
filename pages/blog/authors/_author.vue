@@ -14,7 +14,6 @@
 
 <script>
 import BlogPostMenu from '~/components/BlogPostMenu.vue';
-// import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {
@@ -23,28 +22,28 @@ export default {
   },
   scrollToTop: true,
 
-  // async asyncData({ params }) {
-  //   let author;
-  //   const authorId = params.author;
-  //   const { posts } = await getBlogData();
-  //   const filteredPosts = posts.filter((post) => {
-  //     if (post.author.id === authorId) {
-  //       author = post.author;
-  //       return true;
-  //     }
+  async asyncData({ $content, params }) {
+    const authorId = params.author;
 
-  //     return false;
-  //   });
-  //   const numPosts = filteredPosts ? filteredPosts.length : 0;
+    const [author] = await $content('blog/authors')
+      .where({ id: authorId })
+      .fetch();
 
-  //   return {
-  //     author,
-  //     title: `Posts by ${author.name} - Blog`,
-  //     description: `See the ${numPosts} blog posts ${author.name} has written for Ship Shape.`,
-  //     url: `https://shipshape.io/blog/authors/${encodeURIComponent(authorId)}/`,
-  //     posts: filteredPosts
-  //   };
-  // },
+    const posts = await $content('blog/posts')
+      .sortBy('date', 'desc')
+      .where({ authorId })
+      .fetch();
+
+    const numPosts = posts ? posts.length : 0;
+
+    return {
+      author,
+      title: `Posts by ${author.name} - Blog`,
+      description: `See the ${numPosts} blog posts ${author.name} has written for Ship Shape.`,
+      url: `https://shipshape.io/blog/authors/${encodeURIComponent(authorId)}/`,
+      posts
+    };
+  },
 
   head() {
     return generateMeta(this.title, this.description, this.url);
