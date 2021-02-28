@@ -26,7 +26,6 @@
 
 <script>
 import BlogPostMenu from '~/components/BlogPostMenu.vue';
-import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {
@@ -35,8 +34,10 @@ export default {
   },
   scrollToTop: true,
 
-  asyncData() {
-    return getBlogData();
+  async asyncData({ $content }) {
+    const posts = await $content('blog/posts').sortBy('date', 'desc').fetch();
+
+    return { posts };
   },
 
   head() {

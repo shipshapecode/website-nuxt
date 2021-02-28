@@ -4,7 +4,7 @@ export function getBlogData() {
   const authors = {};
 
   async function asyncImport(fileName) {
-    const post = await import(`~/blog/posts/${fileName}.md`);
+    const post = await import(`~/content/blog/posts/${fileName}.md`);
     await getAuthors(post.attributes);
     return post.attributes;
   }
@@ -12,7 +12,7 @@ export function getBlogData() {
   async function getAuthors(post) {
     // If we don't already have a reference to the author, add it to the authors
     if (!authors[post.authorId]) {
-      const author = await import(`~/blog/authors/${post.authorId}.md`);
+      const author = await import(`~/content/blog/authors/${post.authorId}.md`);
 
       authors[post.authorId] = author.attributes;
     }

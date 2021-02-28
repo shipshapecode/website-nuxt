@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import truncate from 'lodash.truncate';
-import fileNames from '~/posts.json';
 import BlogPost from '~/components/BlogPost.vue';
 import { generateMeta } from '~/utils/meta';
 
@@ -14,45 +12,57 @@ export default {
   },
   scrollToTop: true,
 
-  async asyncData({ params }) {
-    const fileName = fileNames.find((fileName) => {
-      return fileName.includes(params.slug);
-    });
-    const postIndex = fileNames.indexOf(fileName);
-    const previousPostIndex =
-      postIndex === fileNames.length - 1 ? 0 : postIndex + 1;
-    const previousFileName = fileNames[previousPostIndex];
-    const nextPostIndex =
-      postIndex === 0 ? fileNames.length - 1 : postIndex - 1;
-    const nextFileName = fileNames[nextPostIndex];
-    const { attributes, html } = await import(`~/blog/posts/${fileName}.md`);
-    const previousPost = await import(`~/blog/posts/${previousFileName}.md`);
-    const nextPost = await import(`~/blog/posts/${nextFileName}.md`);
-    const { authorId, categories, date, slug, title } = attributes;
-    const author = await import(`~/blog/authors/${authorId}.md`);
+  async asyncData({ $content, params }) {
+    const posts = await $content('blog/posts')
+      .where({ slug: params.slug })
+      .fetch();
+    const post = posts[0];
 
-    return {
-      post: {
-        author,
-        date,
-        categories,
-        html,
-        nextSlug: nextPost.attributes.slug,
-        nextTitle: nextPost.attributes.title,
-        previousSlug: previousPost.attributes.slug,
-        previousTitle: previousPost.attributes.title,
-        slug,
-        title
+    if (post) {
+      let [nextPost, previousPost] = await $content('blog/posts')
+        .only(['title', 'slug'])
+        .sortBy('date')
+        .surround(post.path)
+        .fetch();
+
+      if (!previousPost) {
+        const previousPostArr = await $content('blog/posts')
+          .only(['title', 'slug'])
+          .sortBy('date')
+          .limit(1)
+          .fetch();
+
+        if (previousPostArr?.length) {
+          previousPost = previousPostArr[0];
+        }
       }
-    };
+
+      if (!nextPost) {
+        const nextPostArr = await $content('blog/posts')
+          .only(['title', 'slug'])
+          .sortBy('date', 'desc')
+          .limit(1)
+          .fetch();
+
+        if (nextPostArr?.length) {
+          nextPost = nextPostArr[0];
+        }
+      }
+
+      return {
+        post: {
+          ...post,
+          nextSlug: nextPost.slug,
+          nextTitle: nextPost.title,
+          previousSlug: previousPost.slug,
+          previousTitle: previousPost.title
+        }
+      };
+    }
   },
 
   head() {
-    const description = truncate(this.post.html.replace(/(<([^>]+)>)/gi, ''), {
-      length: 260,
-      separator: /,?\.* +/
-    });
-    const { author, date, slug, title } = this.post;
+    const { author, date, description, slug, title } = this.post;
     const url = `https://shipshape.io/blog/${slug}/`;
 
     const headData = generateMeta(title, description, url);
@@ -72,7 +82,7 @@ export default {
     if (this.post.author) {
       headData.meta.push(
         { name: 'twitter:label1', content: 'Written by' },
-        { name: 'twitter:data1', content: author.attributes.name }
+        { name: 'twitter:data1', content: author.name }
       );
     }
 
@@ -113,11 +123,11 @@ export default {
   }
 
   code {
-    &[class*='language-'] {
+    &[class*='hljs'] {
       font-size: 14px;
     }
 
-    &:not([class*='language-']) {
+    &:not([class*='hljs']) {
       background-color: $grey-transparent;
       border: none;
       border-radius: 2px;
@@ -131,8 +141,8 @@ export default {
 
   pre {
     code {
-      &[class*='language-'],
-      &:not([class*='language-']) {
+      &[class*='hljs'],
+      &:not([class*='hljs']) {
         padding: 1rem;
       }
     }
@@ -146,7 +156,7 @@ export default {
   h6 {
     font-weight: bold;
 
-    code:not([class*='language-']) {
+    code:not([class*='hljs']) {
       font-size: inherit;
     }
   }

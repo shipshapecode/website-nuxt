@@ -14,7 +14,7 @@
 
 <script>
 import BlogPostMenu from '~/components/BlogPostMenu.vue';
-import { getBlogData } from '~/utils/blog';
+// import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {
@@ -23,29 +23,29 @@ export default {
   },
   scrollToTop: true,
 
-  async asyncData({ params }) {
-    const { category } = params;
-    const { posts } = await getBlogData();
-    const filteredPosts = posts.filter((post) => {
-      const dasherizedCategories = post.categories.map((category) => {
-        return category.replace(/ /g, '-');
-      });
+  // async asyncData({ params }) {
+  //   const { category } = params;
+  //   const { posts } = await getBlogData();
+  //   const filteredPosts = posts.filter((post) => {
+  //     const dasherizedCategories = post.categories.map((category) => {
+  //       return category.replace(/ /g, '-');
+  //     });
 
-      return dasherizedCategories.includes(category);
-    });
-    const numPosts = filteredPosts ? filteredPosts.length : 0;
+  //     return dasherizedCategories.includes(category);
+  //   });
+  //   const numPosts = filteredPosts ? filteredPosts.length : 0;
 
-    return {
-      category,
-      title: `${category} - Blog Category`,
-      description: `See the ${numPosts} blog posts Ship Shape has written about ${category}.`,
-      url: `https://shipshape.io/blog/categories/${category.replace(
-        / /g,
-        '-'
-      )}/`,
-      posts: filteredPosts
-    };
-  },
+  //   return {
+  //     category,
+  //     title: `${category} - Blog Category`,
+  //     description: `See the ${numPosts} blog posts Ship Shape has written about ${category}.`,
+  //     url: `https://shipshape.io/blog/categories/${category.replace(
+  //       / /g,
+  //       '-'
+  //     )}/`,
+  //     posts: filteredPosts
+  //   };
+  // },
 
   head() {
     return generateMeta(this.title, this.description, this.url);

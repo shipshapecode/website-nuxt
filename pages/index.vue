@@ -44,7 +44,6 @@ import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import SelectCaseStudies from '~/components/SelectCaseStudies.vue';
 import TechnologiesSection from '~/components/TechnologiesSection.vue';
 import WorkedWith from '~/components/WorkedWith.vue';
-import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {
@@ -57,8 +56,8 @@ export default {
     WorkedWith
   },
   async asyncData() {
-    const { posts } = await getBlogData();
-    return { posts: posts.slice(0, 3) };
+    // const { posts } = await getBlogData();
+    // return { posts: posts.slice(0, 3) };
   },
   head() {
     const title = 'App Development & Consulting Agency';
