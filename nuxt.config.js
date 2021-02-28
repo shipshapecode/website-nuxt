@@ -1,11 +1,6 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { extname, resolve } from 'path';
 import walkSync from 'walk-sync';
-import showdown from 'showdown';
-import showdownHighlight from 'showdown-highlight';
-const converter = new showdown.Converter({
-  extensions: [showdownHighlight]
-});
 const yamlFront = require('yaml-front-matter');
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -157,6 +152,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/content',
     [
       'nuxt-font-loader-strategy',
       {
@@ -207,7 +203,7 @@ export default {
       {
         directiveOnly: true
       }
-    ]
+    ],
   ],
 
   /*
@@ -248,17 +244,6 @@ export default {
           exclude: /(node_modules)/
         });
       }
-
-      config.module.rules.push({
-        test: /\.md$/,
-        loader: 'frontmatter-markdown-loader',
-        include: resolve(__dirname, 'blog'),
-        options: {
-          markdown(body) {
-            return converter.makeHtml(body);
-          }
-        }
-      });
     }
   },
 

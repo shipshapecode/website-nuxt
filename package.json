@@ -14,6 +14,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxt/content": "^1.13.1",
     "@nuxtjs/date-fns": "^1.4.3",
     "@tailwindcss/forms": "^0.2.1",
     "aos": "^3.0.0-beta.6",
@@ -58,7 +59,6 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.6.0",
-    "frontmatter-markdown-loader": "^3.6.2",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",
@@ -74,14 +74,11 @@
     "postcss-url": "^10.1.1",
     "prettier": "^2.2.1",
     "sass-loader": "^10.1.1",
-    "showdown": "^1.9.1",
-    "showdown-highlight": "^2.1.6",
     "stylelint": "^13.11.0",
     "stylelint-config-ship-shape": "^0.7.0",
     "tailwindcss": "^2.0.3",
     "vue-jest": "^3.0.7",
     "walk-sync": "^2.2.0",
-    "webp-loader": "^0.6.0",
-    "yaml-front-matter": "^4.1.1"
+    "webp-loader": "^0.6.0"
   }
 }
