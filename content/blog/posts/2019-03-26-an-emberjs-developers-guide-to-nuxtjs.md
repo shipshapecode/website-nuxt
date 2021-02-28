@@ -67,7 +67,7 @@ In Nuxt, you'll define where your application content is inserted with `<Nuxt/>`
 
 ##### Nuxt.js
 
-```vue
+```html
 <!-- layouts/default.vue -->
 
 <template>
@@ -222,7 +222,7 @@ export default class BlogPost extends Component {
 
 ##### Nuxt.js
 
-```vue
+```html
 <!-- components/BlogPost.vue -->
 <template>
   <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -371,7 +371,7 @@ export default class Blog extends Route {
 
 ##### Nuxt.js
 
-```vue
+```html
 <template>
   <div class="blog-posts section flex flex-wrap justify-center">
     <div class="section-content">

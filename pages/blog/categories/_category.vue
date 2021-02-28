@@ -14,7 +14,6 @@
 
 <script>
 import BlogPostMenu from '~/components/BlogPostMenu.vue';
-// import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {

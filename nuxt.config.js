@@ -1,64 +1,14 @@
-import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { extname, resolve } from 'path';
 import highlightjs from 'highlight.js';
+import hljsDefineGraphQL from 'highlightjs-graphql';
 import truncate from 'lodash.truncate';
-
 import showdown from 'showdown';
-import walkSync from 'walk-sync';
-const yamlFront = require('yaml-front-matter');
 
 const converter = new showdown.Converter();
 
+hljsDefineGraphQL(highlightjs);
+// TODO: Get hljs Vue support
+
 const isProd = process.env.NODE_ENV === 'production';
-
-const blogPosts = readdirSync('content/blog/posts/');
-
-const _getBlogPosts = () => {
-  const fileNames = blogPosts.map((post) => {
-    return post.slice(0, -3);
-  });
-
-  const slugs = blogPosts.map((post) => {
-    return post.slice(11, -3);
-  });
-
-  writeFileSync(
-    resolve(__dirname, 'posts.json'),
-    JSON.stringify(fileNames, null, 2)
-  );
-
-  return slugs.map((slug) => `/blog/${slug}`);
-};
-
-function _getAuthorURLs() {
-  return walkSync('content/blog/authors')
-    .map((file) => file.replace(/\.md$/, ''))
-    .map((id) => `/blog/authors/${id}`);
-}
-
-function _getCategoryURLs() {
-  const paths = walkSync('content/blog/posts');
-  const postPaths = paths.filter((path) => extname(path) === '.md');
-  const postsFrontmatter = postPaths.map((path) => {
-    return yamlFront.loadFront(readFileSync(`content/blog/posts/${path}`));
-  });
-
-  let categories = postsFrontmatter
-    .map((post) => post.categories)
-    .reduce((a, b) => a.concat(b), [])
-    .filter((x) => !!x)
-    .map((category) => category.replace(' ', '-'));
-
-  // Get only unique categories
-  categories = [...new Set(categories)];
-
-  return categories.map((category) => `/blog/categories/${category}`);
-}
-
-const authorRoutes = _getAuthorURLs();
-const blogPostRoutes = _getBlogPosts();
-const categoryRoutes = _getCategoryURLs();
-const blogRoutes = [...authorRoutes, ...categoryRoutes, ...blogPostRoutes];
 
 const imgSrc = 'http://i.imgur.com/30OI4fv.png';
 const twitterUsername = '@shipshapecode';
@@ -145,13 +95,6 @@ export default {
 
   optimizedImages: {
     optimizeImages: true
-  },
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
-    }
   },
 
   /*
@@ -250,6 +193,13 @@ export default {
           exclude: /(node_modules)/
         });
       }
+    },
+
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {}
+      }
     }
   },
 
@@ -273,8 +223,7 @@ export default {
   },
 
   generate: {
-    fallback: '404.html',
-    routes: [].concat(blogRoutes)
+    fallback: '404.html'
   },
 
   gtm: {
@@ -289,7 +238,6 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://shipshape.io',
     cacheTime: 1000 * 60 * 15,
-    routes: [].concat(blogRoutes),
     filter({ routes }) {
       return routes.map((route) => {
         route.url = `${route.url}/`;

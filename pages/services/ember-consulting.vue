@@ -81,9 +81,13 @@ export default {
     WorkedWith
   },
 
-  async asyncData() {
-    // const { posts } = await getBlogData();
-    // return { posts: posts.slice(0, 3) };
+  async asyncData({ $content }) {
+    const posts = await $content('blog/posts')
+      .sortBy('date', 'desc')
+      .limit(3)
+      .fetch();
+
+    return { posts };
   },
 
   head() {
