@@ -13,6 +13,30 @@ const isProd = process.env.NODE_ENV === 'production';
 const imgSrc = 'http://i.imgur.com/30OI4fv.png';
 const twitterUsername = '@shipshapecode';
 
+const createSitemapRoutes = async () => {
+  const routes = [];
+  const { $content } = require('@nuxt/content');
+  const authors = await $content('blog/authors').fetch();
+  const posts = await $content('blog/posts').fetch();
+
+  for (const author of authors) {
+    routes.push(`blog/authors/${author.id}`);
+  }
+
+  for (const post of posts) {
+    routes.push(`blog/${post.slug}`);
+
+    for (const category of post.categories) {
+      const categoryRoute = `blog/categories/${category.replace(/ /g, '-')}`;
+      if (!routes.includes(categoryRoute)) {
+        routes.push(categoryRoute);
+      }
+    }
+  }
+
+  return routes;
+};
+
 export default {
   target: 'static',
 
@@ -238,6 +262,7 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://shipshape.io',
     cacheTime: 1000 * 60 * 15,
+    routes: createSitemapRoutes,
     filter({ routes }) {
       return routes.map((route) => {
         route.url = `${route.url}/`;
