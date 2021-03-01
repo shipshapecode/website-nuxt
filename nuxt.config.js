@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import highlightjs from 'highlight.js';
 import hljsDefineGraphQL from 'highlightjs-graphql';
 import truncate from 'lodash.truncate';
@@ -12,6 +14,39 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const imgSrc = 'http://i.imgur.com/30OI4fv.png';
 const twitterUsername = '@shipshapecode';
+
+const constructFeedItem = (post, dir, hostname) => {
+  // note the path used here, we are using a dummy page with an empty layout in order to not send that data along with our other content
+  const filePath = path.join(__dirname, `dist/blog/${post.slug}/index.html`);
+  const content = fs.readFileSync(filePath, { encoding: 'utf8' });
+  const url = `${hostname}/${dir}/${post.slug}`;
+  return {
+    title: post.title,
+    id: url,
+    link: url,
+    description: post.description,
+    content
+  };
+};
+
+const createRSSFeed = async (feed, args) => {
+  const filePath = 'blog/posts';
+  const hostname = isProd ? 'https://shipshape.io' : 'http://localhost:3000';
+  feed.options = {
+    title: 'Ship Shape Insights',
+    description:
+      'Our thoughtful ramblings about Ember.js, Nuxt.js, JavaScript, life, liberty and the pursuit of happiness.',
+    link: `${hostname}/feed.xml`
+  };
+  const { $content } = require('@nuxt/content');
+  const posts = await $content(filePath).fetch();
+
+  for (const post of posts) {
+    const feedItem = await constructFeedItem(post, filePath, hostname);
+    feed.addItem(feedItem);
+  }
+  return feed;
+};
 
 const createSitemapRoutes = async () => {
   const routes = [];
@@ -126,6 +161,7 @@ export default {
    */
   modules: [
     '@nuxt/content',
+    '@nuxtjs/feed',
     [
       'nuxt-font-loader-strategy',
       {
@@ -245,6 +281,15 @@ export default {
     defaultLocale: 'en-US',
     format: 'MM/dd/yyyy'
   },
+
+  feed: [
+    {
+      path: '/feed.xml',
+      create: createRSSFeed,
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2'
+    }
+  ],
 
   generate: {
     fallback: '404.html'
