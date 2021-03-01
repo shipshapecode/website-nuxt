@@ -82,8 +82,6 @@
     "stylelint-config-ship-shape": "^0.7.0",
     "tailwindcss": "^2.0.3",
     "vue-jest": "^3.0.7",
-    "walk-sync": "^2.2.0",
-    "webp-loader": "^0.6.0",
-    "yaml-front-matter": "^4.1.1"
+    "webp-loader": "^0.6.0"
   }
 }
