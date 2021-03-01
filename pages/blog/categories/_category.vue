@@ -14,7 +14,6 @@
 
 <script>
 import BlogPostMenu from '~/components/BlogPostMenu.vue';
-import { getBlogData } from '~/utils/blog';
 import { generateMeta } from '~/utils/meta';
 
 export default {
@@ -23,9 +22,11 @@ export default {
   },
   scrollToTop: true,
 
-  async asyncData({ params }) {
+  async asyncData({ $content, params }) {
     const { category } = params;
-    const { posts } = await getBlogData();
+
+    const posts = await $content('blog/posts').fetch();
+
     const filteredPosts = posts.filter((post) => {
       const dasherizedCategories = post.categories.map((category) => {
         return category.replace(/ /g, '-');

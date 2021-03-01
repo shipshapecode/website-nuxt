@@ -10,9 +10,9 @@
           {{ post.title }}
         </h1>
 
-        <AuthorRow v-bind="post.author.attributes" :date="post.date" />
+        <AuthorRow v-bind="post.author" :date="post.date" />
 
-        <div class="post-content" v-html="post.html" />
+        <NuxtContent class="post-content" :document="post" />
 
         <BottomLinks
           :next-link="`/blog/${post.nextSlug}/`"

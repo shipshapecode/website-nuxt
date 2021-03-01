@@ -71,7 +71,6 @@ import WhyEmber from '~/components/WhyEmber';
 import WorkedWith from '~/components/WorkedWith.vue';
 import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import { generateMeta } from '~/utils/meta';
-import { getBlogData } from '~/utils/blog';
 
 export default {
   components: {
@@ -82,9 +81,13 @@ export default {
     WorkedWith
   },
 
-  async asyncData() {
-    const { posts } = await getBlogData();
-    return { posts: posts.slice(0, 3) };
+  async asyncData({ $content }) {
+    const posts = await $content('blog/posts')
+      .sortBy('date', 'desc')
+      .limit(3)
+      .fetch();
+
+    return { posts };
   },
 
   head() {

@@ -1,66 +1,74 @@
-import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { extname, resolve } from 'path';
-import walkSync from 'walk-sync';
+import fs from 'fs';
+import path from 'path';
+import highlightjs from 'highlight.js';
+import hljsDefineGraphQL from 'highlightjs-graphql';
+import truncate from 'lodash.truncate';
 import showdown from 'showdown';
-import showdownHighlight from 'showdown-highlight';
-const converter = new showdown.Converter({
-  extensions: [showdownHighlight]
-});
-const yamlFront = require('yaml-front-matter');
 
-const isProd = process.env.NODE_ENV === 'production';
+const converter = new showdown.Converter();
 
-const blogPosts = readdirSync('blog/posts/');
-
-const _getBlogPosts = () => {
-  const fileNames = blogPosts.map((post) => {
-    return post.slice(0, -3);
-  });
-
-  const slugs = blogPosts.map((post) => {
-    return post.slice(11, -3);
-  });
-
-  writeFileSync(
-    resolve(__dirname, 'posts.json'),
-    JSON.stringify(fileNames, null, 2)
-  );
-
-  return slugs.map((slug) => `/blog/${slug}`);
-};
-
-function _getAuthorURLs() {
-  return walkSync('blog/authors')
-    .map((file) => file.replace(/\.md$/, ''))
-    .map((id) => `/blog/authors/${id}`);
-}
-
-function _getCategoryURLs() {
-  const paths = walkSync('blog/posts');
-  const postPaths = paths.filter((path) => extname(path) === '.md');
-  const postsFrontmatter = postPaths.map((path) => {
-    return yamlFront.loadFront(readFileSync(`blog/posts/${path}`));
-  });
-
-  let categories = postsFrontmatter
-    .map((post) => post.categories)
-    .reduce((a, b) => a.concat(b), [])
-    .filter((x) => !!x)
-    .map((category) => category.replace(' ', '-'));
-
-  // Get only unique categories
-  categories = [...new Set(categories)];
-
-  return categories.map((category) => `/blog/categories/${category}`);
-}
-
-const authorRoutes = _getAuthorURLs();
-const blogPostRoutes = _getBlogPosts();
-const categoryRoutes = _getCategoryURLs();
-const blogRoutes = [...authorRoutes, ...categoryRoutes, ...blogPostRoutes];
+hljsDefineGraphQL(highlightjs);
+// TODO: Get hljs Vue support
 
 const imgSrc = 'http://i.imgur.com/30OI4fv.png';
 const twitterUsername = '@shipshapecode';
+
+const constructFeedItem = (post, dir, hostname) => {
+  // note the path used here, we are using a dummy page with an empty layout in order to not send that data along with our other content
+  const filePath = path.join(__dirname, `dist/blog/${post.slug}/index.html`);
+  const content = fs.readFileSync(filePath, { encoding: 'utf8' });
+  const url = `${hostname}/${dir}/${post.slug}`;
+  return {
+    title: post.title,
+    id: url,
+    link: url,
+    description: post.description,
+    content
+  };
+};
+
+const createRSSFeed = async (feed, args) => {
+  const filePath = 'blog/posts';
+  const hostname = isProd ? 'https://shipshape.io' : 'http://localhost:3000';
+  feed.options = {
+    title: 'Ship Shape Insights',
+    description:
+      'Our thoughtful ramblings about Ember.js, Nuxt.js, JavaScript, life, liberty and the pursuit of happiness.',
+    link: `${hostname}/feed.xml`
+  };
+  const { $content } = require('@nuxt/content');
+  const posts = await $content(filePath).fetch();
+
+  for (const post of posts) {
+    const feedItem = await constructFeedItem(post, filePath, hostname);
+    feed.addItem(feedItem);
+  }
+  return feed;
+};
+
+const createSitemapRoutes = async () => {
+  const routes = [];
+  const { $content } = require('@nuxt/content');
+  const authors = await $content('blog/authors').fetch();
+  const posts = await $content('blog/posts').fetch();
+
+  for (const author of authors) {
+    routes.push(`blog/authors/${author.id}`);
+  }
+
+  for (const post of posts) {
+    routes.push(`blog/${post.slug}`);
+
+    for (const category of post.categories) {
+      const categoryRoute = `blog/categories/${category.replace(/ /g, '-')}`;
+      if (!routes.includes(categoryRoute)) {
+        routes.push(categoryRoute);
+      }
+    }
+  }
+
+  return routes;
+};
 
 export default {
   target: 'static',
@@ -139,6 +147,8 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/content',
+    '@nuxtjs/feed',
     ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
     '@nuxtjs/tailwindcss',
     [
@@ -197,17 +207,6 @@ export default {
           exclude: /(node_modules)/
         });
       }
-
-      config.module.rules.push({
-        test: /\.md$/,
-        loader: 'frontmatter-markdown-loader',
-        // include: resolve(__dirname, '../../blog'),
-        options: {
-          markdown(body) {
-            return converter.makeHtml(body);
-          }
-        }
-      });
     },
 
     postcss: {
@@ -222,15 +221,36 @@ export default {
     }
   },
 
+  content: {
+    markdown: {
+      highlighter(rawCode, lang) {
+        const highlightedCode = highlightjs.highlight(lang, rawCode).value;
+
+        // We need to create a wrapper, because
+        // the returned code from highlight.js
+        // is only the highlighted code.
+        return `<pre><code class="hljs ${lang}">${highlightedCode}</code></pre>`;
+      }
+    }
+  },
+
   dateFns: {
     locales: ['en-US'],
     defaultLocale: 'en-US',
     format: 'MM/dd/yyyy'
   },
 
+  feed: [
+    {
+      path: '/feed.xml',
+      create: createRSSFeed,
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2'
+    }
+  ],
+
   generate: {
-    fallback: '404.html',
-    routes: [].concat(blogRoutes)
+    fallback: '404.html'
   },
 
   purgeCSS: {
@@ -241,7 +261,7 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://shipshape.io',
     cacheTime: 1000 * 60 * 15,
-    routes: [].concat(blogRoutes),
+    routes: createSitemapRoutes,
     filter({ routes }) {
       return routes.map((route) => {
         route.url = `${route.url}/`;
@@ -252,5 +272,25 @@ export default {
 
   styleResources: {
     scss: ['./assets/css/_variables.scss']
+  },
+
+  hooks: {
+    'content:file:beforeInsert': async (document, database) => {
+      if (document.extension === '.md' && document.dir === '/blog/posts') {
+        const html = converter.makeHtml(document.text);
+        const description = truncate(html.replace(/(<([^>]+)>)/gi, ''), {
+          length: 260,
+          separator: /,?\.* +/
+        });
+
+        document.description = description;
+
+        const author = await database
+          .query(`/blog/authors/${document.authorId}`)
+          .fetch();
+
+        document.author = author;
+      }
+    }
   }
 };
