@@ -86,3 +86,8 @@ sw.*
 # Generated files
 /posts.json
 /static/sitemap.xml
+
+# macOS general files
+.DS_Store
+.AppleDouble
+.LSOverride
