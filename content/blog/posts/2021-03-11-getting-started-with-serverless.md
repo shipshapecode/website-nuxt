@@ -60,7 +60,7 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  introspection: true // this is nice in testing with Graphql playground
+  introspection: true // this is nice in testing with GraphQL playground
 });
 
 export const graphql = server.createHandler();
@@ -171,4 +171,3 @@ Which results in the creation of my stack and deployment of my function with API
 ## In closing
 
 This is just one basic example of how you can use serverless computing to create services and iterate frequently without infrastructure overhead. Learning this technology has given me some of the same pleasures I recall when I was first creating for the web and could see those results in the browser immediately. I look forward to exploring this outlet in future posts and please feel free to reach out to [ahoy@shipshape.io](mailto:ahoy@shipshape.io) with any questions or requests for future discssions around this topic.
-
