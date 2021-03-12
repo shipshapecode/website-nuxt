@@ -11,7 +11,7 @@ title: Getting Started with Serverless
 
 While Ship Shape engineers are deep practioners of JavaScript and are often working on web applications for our clients, we sometimes are also creating services for these applications to service functions for the app or provide the data layer and persistance in the form of an API.
 
-We've used a number of languages for these services, but usually default to our expertise in Javascript and work within the Node.js run-time. This works well and we then integrate into whatever deployment pipeline the client may have in place. Recently, we've started creating these services with a serverless cloud solution, rather than deploy to server infrastructure.
+We've used a number of languages for these services, but usually default to our expertise in JavaScript and work within the Node.js run-time. This works well and we then integrate into whatever deployment pipeline the client may have in place. Recently, we've started creating these services with a serverless cloud solution, rather than deploy to server infrastructure.
 
 Serverless allows abstraction from the infrastructure. You will not have to provision, scale, or maintain servers to execute your applications, databases and/or storage systems. There is no active management, so developers are more empowered to create functions as a service and deploy directly, as well as frequently.
 
