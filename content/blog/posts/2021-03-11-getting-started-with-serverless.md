@@ -122,7 +122,7 @@ offline:
 offline: Enter "rp" to replay the last request
 ```
 
-I use [Graphql Playground](https://github.com/graphql/graphql-playground) for my local query testing. After starting that and entering the URL given to me by `serverless-offline`, I'm able to add my simple "hello" query and get a response.
+I use [GraphQL Playground](https://github.com/graphql/graphql-playground) for my local query testing. After starting that and entering the URL given to me by `serverless-offline`, I'm able to add my simple "hello" query and get a response.
 
 ![Graphql playground](/img/blog/getting-started-with-serverless/graphql-playground.png)
 
