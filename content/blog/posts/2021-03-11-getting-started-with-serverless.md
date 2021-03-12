@@ -57,6 +57,7 @@ const resolvers = {
     hello: () => 'Hello world!',
   }
 };
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
