@@ -68,7 +68,7 @@ export const graphql = server.createHandler();
 
 ## Try this out locally
 
-Now that you have a basic Lambda as your Graphql server, you probably want to try it out before getting it out in the internet. Not that this is a requirement, most free tiers of providers make this a free experiment and so there's not risk to just pushing and testing. That said, a couple of packages also make it simple to test your function locally. 
+Now that you have a basic Lambda as your GraphQL server, you probably want to try it out before getting it out in the internet. Not that this is a requirement, most free tiers of providers make this a free experiment and so there's not risk to just pushing and testing. That said, a couple of packages also make it simple to test your function locally. 
 
 For our basic needs, we'll use the [serverless-offline](https://www.npmjs.com/package/serverless-offline) plugin to emulate AWS Lamdba and API Gateway services on a local server. In this regard we are choosing a vendor in a way, but for our purposes of chosing a path and pushing the code somewhere AWS is the one I'm personally most familiar with and that is the stated provider by default when generating a serverless project.
 
@@ -171,5 +171,4 @@ Which results in the creation of my stack and deployment of my function with API
 ## In closing
 
 This is just one basic example of how you can use serverless computing to create services and iterate frequently without infrastructure overhead. Learning this technology has given me some of the same pleasures I recall when I was first creating for the web and could see those results in the browser immediately. I look forward to exploring this outlet in future posts and please feel free to reach out to [ahoy@shipshape.io](mailto:ahoy@shipshape.io) with any questions or requests for future discssions around this topic.
-
 
