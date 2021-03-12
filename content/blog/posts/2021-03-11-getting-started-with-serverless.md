@@ -41,7 +41,7 @@ For our needs, we'll want to also add a package for Graphql and I'm going to use
 yarn add apollo-server-lambda
 ```
 
-Now let's change our function to create a Graphql server and use it to respond to query requests. For our demonstration, we'll just have it respond to a string for a simple query. 
+Now let's change our function to create a GraphQL server and use it to respond to query requests. For our demonstration, we'll just have it respond to a string for a simple query. 
 
 ```js
 import { ApolloServer, gql } from 'apollo-server-lambda';
@@ -171,6 +171,5 @@ Which results in the creation of my stack and deployment of my function with API
 ## In closing
 
 This is just one basic example of how you can use serverless computing to create services and iterate frequently without infrastructure overhead. Learning this technology has given me some of the same pleasures I recall when I was first creating for the web and could see those results in the browser immediately. I look forward to exploring this outlet in future posts and please feel free to reach out to [ahoy@shipshape.io](mailto:ahoy@shipshape.io) with any questions or requests for future discssions around this topic.
-
 
 
