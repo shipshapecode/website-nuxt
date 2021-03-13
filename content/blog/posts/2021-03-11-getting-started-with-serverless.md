@@ -165,7 +165,7 @@ layers:
   None
 ```
 
-Which results in the creation of my stack and deployment of my function with API Gateway. Armed with the endpoint generated, we can test our new Graphql server. Using the playground again, we can see the result and I'm also showing the schema displayed from the [introspection query](https://graphql.org/learn/introspection/).
+Which results in the creation of my stack and deployment of my function with API Gateway. Armed with the endpoint generated, we can test our new GraphQL server. Using the playground again, we can see the result and I'm also showing the schema displayed from the [introspection query](https://graphql.org/learn/introspection/).
 
 ![GraphQL playground result from AWS](/img/blog/getting-started-with-serverless/graphql-playground2.png)
 
