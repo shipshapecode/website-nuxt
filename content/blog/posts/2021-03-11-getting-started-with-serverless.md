@@ -17,7 +17,7 @@ Serverless allows abstraction from the infrastructure. You will not have to prov
 
 ## What we'll work on today
 
-A common need for teams today in their applications is a GraphQL server as the API for data persistance. While not challenging to setup a basic service for use locally, there tend to often be quite a bit more steps for deployment of these APIs for use in various environments. We'll use the Serverless framework to get us started quickly and give us the ability to deploy to many common cloud providers. 
+A common need for teams today in their applications is a GraphQL server as the API for data persistence. While not challenging to setup a basic service for use locally, there tend to often be quite a bit more steps for deployment of these APIs for use in various environments. We'll use the Serverless framework to get us started quickly and give us the ability to deploy to many common cloud providers. 
 
 ```bash
 npx serverless
