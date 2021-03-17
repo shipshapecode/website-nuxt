@@ -35,7 +35,7 @@ functions:
           method: post
 ```
 
-For our needs, we'll want to also add a package for Graphql and I'm going to use [apollo-server-lambda](https://www.npmjs.com/package/apollo-server-lambda).
+For our needs, we'll want to also add a package for GraphQL and I'm going to use [apollo-server-lambda](https://www.npmjs.com/package/apollo-server-lambda).
 
 ```bash
 yarn add apollo-server-lambda
