@@ -75,7 +75,7 @@ For our basic needs, we'll use the [serverless-offline](https://www.npmjs.com/pa
 
 Also, I like to write in module syntax, so adding [serverless-bundle](https://www.npmjs.com/package/serverless-bundle) to handle basic Webpack configuration for me gives me that flexibility. You can use it for adding Typescript, ESLint, Bable transpiling, and to generate source maps. For this use case though, I'll keep it simple with just our friend JavaScript.
 
-At this point, I need to add serverless locally as a dev dependency to my project as well, after the init used `npx` and does not add it at that time since the project didn't have a `package.json` until I added the first dependency.
+At this point, I need to add the serverless package as a dev dependency to my project. This is because the initialization used `npx` and does not add it to the project. We didn't have a `package.json` file until after we added the first dependency.
 
 ```bash
 yarn add serverless serverless-offline serverless-bundle -D
@@ -171,4 +171,4 @@ Which results in the creation of my stack and deployment of my function with API
 
 ## In closing
 
-This is just one basic example of how you can use serverless computing to create services and iterate frequently without infrastructure overhead. Learning this technology has given me some of the same pleasures I recall when I was first creating for the web and could see those results in the browser immediately. I look forward to exploring this outlet in future posts and please feel free to reach out to [ahoy@shipshape.io](mailto:ahoy@shipshape.io) with any questions or requests for future discssions around this topic.
+This is just one basic example of how you can use serverless computing to create services and iterate frequently without infrastructure overhead. Learning this technology has given me some of the same pleasures I recall when I was first creating for the web and could see those results in the browser immediately. I look forward to exploring this outlet in future posts and please feel free to reach out to [us](https://shipshape.io/contact/) with any questions or requests for future discssions around this topic.
