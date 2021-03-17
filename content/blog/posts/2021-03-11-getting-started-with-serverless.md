@@ -101,7 +101,7 @@ Next, we can test our function by running the offline start command. Note, I'm u
 yarn serverless offline
 ```
 
-and should give you a nice console output of the following:
+and should give us a nice console output of the following:
 
 ```bash
 Serverless: Bundling with Webpack...
