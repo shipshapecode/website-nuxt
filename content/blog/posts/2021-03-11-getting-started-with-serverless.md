@@ -23,7 +23,7 @@ A common need for teams today in their applications is a GraphQL server as the A
 npx serverless
 ```
 
-Follow the prompts and this will give you a basic serverless project with all you need to get started. We can change the `serverless.yml` to define our function and the handler specifically for HTTP requests by adding the following:
+If we follow the prompts, this will give us a basic serverless project with all we need to get started. We can change the `serverless.yml` to define our function and the handler specifically for HTTP requests by adding the following:
 
 ```yaml
 functions:
