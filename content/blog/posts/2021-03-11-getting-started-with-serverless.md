@@ -9,7 +9,7 @@ slug: getting-started-with-serverless
 title: Getting Started with Serverless
 ---
 
-While Ship Shape engineers are deep practioners of JavaScript and are often working on web applications for our clients, we sometimes are also creating services for these applications to service functions for the app or provide the data layer and persistance in the form of an API.
+While Ship Shape engineers are deep practitioners of JavaScript, and are often working on web applications for our clients, we are sometimes also creating services for these applications; to service functions for the app or provide the data layer and persistence in the form of an API.
 
 We've used a number of languages for these services, but usually default to our expertise in JavaScript and work within the Node.js run-time. This works well and we then integrate into whatever deployment pipeline the client may have in place. Recently, we've started creating these services with a serverless cloud solution, rather than deploy to server infrastructure.
 
