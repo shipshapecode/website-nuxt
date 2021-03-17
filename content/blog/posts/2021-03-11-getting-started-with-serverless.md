@@ -71,7 +71,7 @@ export const graphql = server.createHandler();
 
 Now that you have a basic Lambda as your GraphQL server, you probably want to try it out before getting it out on the internet. Not that this is a requirement, most free tiers of providers make this a free experiment, and so there's no risk to pushing and testing. That said, a couple of packages also make it simple to test your function locally. 
 
-For our basic needs, we'll use the [serverless-offline](https://www.npmjs.com/package/serverless-offline) plugin to emulate AWS Lamdba and API Gateway services on a local server. In this regard we are choosing a vendor in a way, but for our purposes of chosing a path and pushing the code somewhere AWS is the one I'm personally most familiar with and that is the stated provider by default when generating a serverless project.
+For our basic needs, we'll use the [serverless-offline](https://www.npmjs.com/package/serverless-offline) plugin to emulate AWS Lamdba and API Gateway services on a local server. In this regard we are choosing a vendor in a way, but for our purposes, of choosing a path and pushing the code somewhere, AWS is the one I'm personally most familiar with, and it is the stated provider by default when generating a serverless project.
 
 Also, I like to write in module syntax, so adding [serverless-bundle](https://www.npmjs.com/package/serverless-bundle) to handle basic Webpack configuration for me gives me that flexibility. You can use it for adding Typescript, ESLint, Bable transpiling, and to generate source maps. For this use case though, I'll keep it simple with just our friend JavaScript.
 
