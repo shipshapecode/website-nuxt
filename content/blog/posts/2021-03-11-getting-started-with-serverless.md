@@ -95,7 +95,7 @@ custom:
     httpPort: 3000
 ```
 
-After, we can test our function by running the offline start command. Note, I'm using `yarn` to prepend my command so that it looks first as local dependenicies for the executable.
+Next, we can test our function by running the offline start command. Note, I'm using `yarn` to prepend my command so that it looks first at local dependencies for the executable.
 
 ```bash
 yarn serverless offline
