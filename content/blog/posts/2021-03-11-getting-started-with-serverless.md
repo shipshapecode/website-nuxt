@@ -171,4 +171,4 @@ Which results in the creation of my stack and deployment of my function with API
 
 ## In closing
 
-This is just one basic example of how you can use serverless computing to create services and iterate frequently without infrastructure overhead. Learning this technology has given me some of the same pleasures I recall when I was first creating for the web and could see those results in the browser immediately. I look forward to exploring this outlet in future posts and please feel free to reach out to [us](https://shipshape.io/contact/) with any questions or requests for future discssions around this topic.
+This is just one basic example of how you can use serverless computing to create services and iterate frequently without infrastructure overhead. Learning this technology has given me some of the same pleasures I recall when I was first creating for the web and could see those results in the browser immediately. I look forward to exploring this outlet in future posts and please feel free to [reach out to us](https://shipshape.io/contact/) with any questions or requests for future discssions around this topic.
