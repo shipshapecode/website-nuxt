@@ -129,7 +129,7 @@ I use [GraphQL Playground](https://github.com/graphql/graphql-playground) for my
 
 ## Put our new service somewhere
 
-Now that we know our function works and returns the expected query value, how do we get that in the cloud for use? Assuming you have AWS setup and your CLI credentials (which we don't cover creating here, but this is a nice article about serverless and getting started on AWS), then we can run the following:
+Now that we know our function works and returns the expected query value, how do we get that in the cloud for use? Assuming you have AWS setup and your CLI credentials (which we don't cover creating here, but [this](https://serverless-stack.com/chapters/create-an-aws-account.html) is a nice article about serverless and getting started on AWS), then we can run the following:
 
 ```bash
 yarn serverless deploy
