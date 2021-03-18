@@ -7,7 +7,7 @@
           Join Ship Shape's CEO Robbie, and COO Chuck as they discuss whiskey,
           web development, and a wide range of whatnot.
         </p>
-        <div class="flex">
+        <div class="flex flex-wrap">
           <a href="https://open.spotify.com/show/19jiuHAqzeKnkleQUpZxDf">
             <inline-svg
               class="h-12 mb-3 mr-3 w-auto"
