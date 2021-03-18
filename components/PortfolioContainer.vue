@@ -25,7 +25,7 @@
               <nuxt-link class="learn-more" to="/services/app-tours/">
                 Learn more
                 <inline-svg
-                  class="h-4 inline mb-1 w-4"
+                  class="h-4 inline w-4"
                   src="/svgs/angle-right.svg"
                 />
               </nuxt-link>
@@ -78,7 +78,7 @@
                   >
                     View on GitHub
                     <inline-svg
-                      class="h-4 inline mb-1 w-4"
+                      class="h-4 inline w-4"
                       src="/svgs/angle-right.svg"
                     />
                   </a>
@@ -116,7 +116,7 @@
                   >
                     View on GitHub
                     <inline-svg
-                      class="h-4 inline mb-1 w-4"
+                      class="h-4 inline w-4"
                       src="/svgs/angle-right.svg"
                     />
                   </a>
@@ -154,7 +154,7 @@
                   >
                     View on GitHub
                     <inline-svg
-                      class="h-4 inline mb-1 w-4"
+                      class="h-4 inline w-4"
                       src="/svgs/angle-right.svg"
                     />
                   </a>

@@ -32,10 +32,7 @@
           <p>
             <a class="learn-more" href="https://youtu.be/Kw0V9HvMpI4">
               Learn more
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </a>
           </p>
         </div>
@@ -59,10 +56,7 @@
           <p>
             <a class="learn-more" href="https://youtu.be/u5onNDpt8ks">
               Learn more
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </a>
           </p>
         </div>
@@ -97,10 +91,7 @@
           <p>
             <a class="learn-more" href="https://www.meetup.com/EmberJS-NYC/">
               Learn more
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </a>
           </p>
         </div>
@@ -126,10 +117,7 @@
           <p>
             <a class="learn-more" href="https://embercares.com/">
               Learn more
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </a>
           </p>
         </div>
@@ -157,10 +145,7 @@
               href="https://2018.emberconf.com/schedule.html#e-improving-ember-app-performance"
             >
               Learn more
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </a>
           </p>
         </div>
@@ -188,7 +173,7 @@
               <a class="learn-more" href="https://www.meetup.com/Ember-JS-DC/">
                 Learn more
                 <inline-svg
-                  class="h-4 inline mb-1 w-4"
+                  class="h-4 inline w-4"
                   src="/svgs/angle-right.svg"
                 />
               </a>

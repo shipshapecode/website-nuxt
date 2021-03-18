@@ -40,7 +40,7 @@
 
         <nuxt-link class="learn-more" to="/contact/">
           Contact us
-          <inline-svg class="h-4 inline mb-1 w-4" src="/svgs/angle-right.svg" />
+          <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
         </nuxt-link>
       </div>
     </div>

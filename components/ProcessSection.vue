@@ -29,10 +29,7 @@
 
             <nuxt-link class="learn-more" to="/services/">
               Explore Our Services
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </nuxt-link>
           </div>
         </div>
@@ -54,10 +51,7 @@
 
             <nuxt-link class="learn-more" to="/work/">
               See Our Work
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </nuxt-link>
           </div>
         </div>
@@ -103,10 +97,7 @@
 
             <nuxt-link class="learn-more" to="/about/">
               Learn About Us
-              <inline-svg
-                class="h-4 inline mb-1 w-4"
-                src="/svgs/angle-right.svg"
-              />
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </nuxt-link>
           </div>
         </div>
