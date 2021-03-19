@@ -29,72 +29,69 @@
       <div class="section-content">
         <h2 class="text-center text-white w-full">Why use Nuxt?</h2>
 
-        <div class="flex flex-wrap">
-          <div class="flex flex-wrap w-full lg:flex-nowrap">
-            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <inline-svg
-                class="h-20 inline-block mb-8 w-auto"
-                src="/svgs/pages/nuxt-consulting/modular.svg"
-              />
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <div class="bg-navy-light p-6 lg:p-12">
+            <inline-svg
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/pages/nuxt-consulting/modular.svg"
+            />
 
-              <h5 class="text-white">Modular</h5>
+            <h5 class="text-white">Modular</h5>
 
-              <p>
-                Nuxt is based on a powerful modular architecture. You can choose
-                from more than 50 modules to make your development faster and
-                easier. You don't have to reinvent the wheel to get PWA
-                benefits, add Google Analytics to your page or generate a
-                sitemap.
-              </p>
-            </div>
-            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <inline-svg
-                class="h-20 inline-block mb-8 w-auto"
-                src="/svgs/pages/nuxt-consulting/performance.svg"
-              />
-
-              <h5 class="text-white">Performant</h5>
-
-              <p>
-                With Nuxt.js, your application will be optimized out of the box.
-                We do our best to build performant applications by utilizing
-                Vue.js and Node.js best practices. To squeeze every unnecessary
-                bit out of your app Nuxt includes a bundle analyzer and lots of
-                opportunities to fine-tune your app.
-              </p>
-            </div>
+            <p>
+              Nuxt is based on a powerful modular architecture. You can choose
+              from more than 50 modules to make your development faster and
+              easier. You don't have to reinvent the wheel to get PWA benefits,
+              add Google Analytics to your page or generate a sitemap.
+            </p>
           </div>
-          <div class="flex flex-wrap w-full lg:flex-nowrap">
-            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <inline-svg
-                class="h-20 inline-block mb-8 w-auto"
-                src="/svgs/pages/nuxt-consulting/fun.svg"
-              />
+          <div class="bg-navy-light p-6 lg:p-12">
+            <inline-svg
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/pages/nuxt-consulting/performance.svg"
+            />
 
-              <h5 class="text-white">Enjoyable</h5>
+            <h5 class="text-white">Performant</h5>
 
-              <p>
-                Nuxt takes developer experience seriously, and is always
-                improving to make using it more enjoyable. Expect appealing
-                solutions, descriptive error messages, powerful defaults and
-                detailed documentation.
-              </p>
-            </div>
-            <div class="bg-navy-light m-3 p-6 w-full lg:p-12 lg:w-1/2">
-              <inline-svg
-                class="h-24 inline-block mb-4 w-24"
-                src="/svgs/pages/nuxt-consulting/static.svg"
-              />
+            <p>
+              With Nuxt.js, your application will be optimized out of the box.
+              We do our best to build performant applications by utilizing
+              Vue.js and Node.js best practices. To squeeze every unnecessary
+              bit out of your app Nuxt includes a bundle analyzer and lots of
+              opportunities to fine-tune your app.
+            </p>
+          </div>
 
-              <h5 class="text-white">Static / PWA</h5>
+          <div class="bg-navy-light p-6 lg:p-12">
+            <inline-svg
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/pages/nuxt-consulting/fun.svg"
+            />
 
-              <p>
-                Nuxt.js supports several rendering modes, including server side
-                rendering or "universal", static or "JAMStack", and classic
-                single page application (SPA) mode to allow for maximum
-                flexibility out of the box.
-              </p>
-            </div>
+            <h5 class="text-white">Enjoyable</h5>
+
+            <p>
+              Nuxt takes developer experience seriously, and is always improving
+              to make using it more enjoyable. Expect appealing solutions,
+              descriptive error messages, powerful defaults and detailed
+              documentation.
+            </p>
+          </div>
+
+          <div class="bg-navy-light p-6 lg:p-12">
+            <inline-svg
+              class="h-24 inline-block mb-4 w-24"
+              src="/svgs/pages/nuxt-consulting/static.svg"
+            />
+
+            <h5 class="text-white">Static / PWA</h5>
+
+            <p>
+              Nuxt.js supports several rendering modes, including server side
+              rendering or "universal", static or "JAMStack", and classic single
+              page application (SPA) mode to allow for maximum flexibility out
+              of the box.
+            </p>
           </div>
         </div>
       </div>

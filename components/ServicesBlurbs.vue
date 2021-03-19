@@ -1,9 +1,9 @@
 <template>
   <div class="section bg-grey-transparent flex flex-wrap justify-center">
     <div class="section-content">
-      <div class="grid grid-cols-1 gap-4 xl:grid-cols-2">
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div
-          class="bg-white flex flex-grow p-8 justify-center lg:h-104 lg:p-12"
+          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -26,7 +26,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow p-8 justify-center lg:h-104 lg:p-12"
+          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -48,7 +48,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow p-8 justify-center lg:h-104 lg:p-12"
+          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -73,7 +73,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow p-8 justify-center lg:h-104 lg:p-12"
+          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -97,7 +97,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow p-8 justify-center lg:h-104 lg:p-12"
+          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
@@ -120,7 +120,7 @@
         </div>
 
         <div
-          class="bg-white flex flex-grow p-8 justify-center lg:h-104 lg:p-12"
+          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
           itemscope
           itemtype="http://schema.org/Service"
