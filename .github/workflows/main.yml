@@ -20,7 +20,7 @@ jobs:
       - name: Volta
         uses: volta-cli/action@v1
         with:
-          node-version: 15.x
+          node-version: 14.x
 
       # Cache dependencies
       - name: Cache Dependencies

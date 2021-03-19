@@ -9,17 +9,16 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">Ember Consulting</h2>
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">App Development</h2>
 
             <p class="flex-grow">
-              Ember.js is Ship Shape’s framework of choice, among the multitude
-              of other JavaScript frameworks out there. With Ember, we can
-              accomplish so much more - faster, with less errors and on a larger
-              scale.
+              Building custom full stack web apps is our speciality. Ship Shape
+              designs, engineers and programs web apps from start-to-finish so
+              that user experience is flawless and reliable for years to come.
             </p>
 
-            <nuxt-link class="learn-more" to="/services/ember-consulting/">
-              See How
+            <nuxt-link class="learn-more" to="/services/app-development/">
+              Learn more
               <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </nuxt-link>
           </div>
@@ -32,16 +31,43 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">App Development</h2>
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
+              Next.js Consulting
+            </h2>
 
             <p class="flex-grow">
-              Building custom full stack web apps is our speciality. Ship Shape
-              designs, engineers and programs web apps from start-to-finish so
-              that user experience is flawless and reliable for years to come.
+              Performance and optimization are at the core of Next.js. The
+              Next.js team has made the hard decisions for you by providing
+              server side rendering, routing, and other automagical features out
+              of the box. Let our Next.js team help you get started with this
+              powerful framework.
             </p>
 
-            <nuxt-link class="learn-more" to="/services/app-development/">
+            <nuxt-link class="learn-more" to="/services/next-consulting/">
               Learn more
+              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
+            </nuxt-link>
+          </div>
+        </div>
+
+        <div
+          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
+          data-aos="fade-up"
+          itemscope
+          itemtype="http://schema.org/Service"
+        >
+          <div class="flex flex-col max-w-2xl w-full">
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">Ember Consulting</h2>
+
+            <p class="flex-grow">
+              Ember.js is Ship Shape’s framework of choice, among the multitude
+              of other JavaScript frameworks out there. With Ember, we can
+              accomplish so much more - faster, with less errors and on a larger
+              scale.
+            </p>
+
+            <nuxt-link class="learn-more" to="/services/ember-consulting/">
+              See How
               <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </nuxt-link>
           </div>
@@ -90,29 +116,6 @@
             </p>
 
             <nuxt-link class="learn-more" to="/services/app-tours/">
-              Learn more
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div
-          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
-          data-aos="fade-up"
-          itemscope
-          itemtype="http://schema.org/Service"
-        >
-          <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
-              Sponsored Open Source
-            </h2>
-
-            <p class="flex-grow">
-              Ship Shape has created several data adapters, add-ons, and
-              libraries to fit into your company’s framework.
-            </p>
-
-            <nuxt-link class="learn-more" to="/services/open-source/">
               Learn more
               <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </nuxt-link>
