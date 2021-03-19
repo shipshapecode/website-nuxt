@@ -55,6 +55,10 @@
                   App Tours
                 </nuxt-link>
 
+                <nuxt-link to="/services/next-consulting/" class="block">
+                  Next.js Consulting
+                </nuxt-link>
+
                 <nuxt-link to="/services/ember-consulting/" class="block">
                   Ember Consulting
                 </nuxt-link>
