@@ -84,5 +84,9 @@
     "tailwindcss": "^2.0.3",
     "vue-jest": "^3.0.7",
     "webp-loader": "^0.6.0"
+  },
+  "volta": {
+    "node": "15.12.0",
+    "yarn": "1.22.10"
   }
 }
