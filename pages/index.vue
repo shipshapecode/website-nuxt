@@ -6,9 +6,9 @@
 
         <p>
           We specialize in custom software and app development by leveraging the
-          latest in Ember.js, Nuxt and open source. Our passion lies in building
-          full stack web apps, mentoring teams and providing impactful solutions
-          for the development community.
+          latest in Next.js, Ember.js, Nuxt and open source. Our passion lies in
+          building full stack web apps, mentoring teams and providing impactful
+          solutions for the development community.
         </p>
         <div>
           <nuxt-link to="/contact/" class="btn btn-navy">
