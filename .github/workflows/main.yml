@@ -16,11 +16,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
-      # Setup Node.js build environment
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      # Setup Node.js via Volta
+      - name: Volta
+        uses: volta-cli/action@v1
         with:
-          node-version: 14.3.0
+          node-version: 15.x
 
       # Cache dependencies
       - name: Cache Dependencies
