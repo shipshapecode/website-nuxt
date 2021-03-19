@@ -7,8 +7,8 @@
           Next.js gives you the best developer experience with all the features
           you need for production: hybrid static & server rendering, TypeScript
           support, smart bundling, route pre-fetching, and more. No config
-          needed. With Next.js, Ship Shape's team can write and build universal
-          apps simply.
+          needed. With Next.js, Ship Shape's team can help you solve your
+          mission critical problems in a fraction of the time.
         </p>
         <div>
           <nuxt-link class="btn btn-navy" to="/contact/">
@@ -40,7 +40,11 @@
 
             <h5 class="text-white">Zero Config</h5>
 
-            <p>TODO</p>
+            <p>
+              Stop spending hours configuring Webpack and be able to be
+              productive immediately. Next.js handles all the complicated build
+              setup for you, so developing features is a simple `yarn dev` away.
+            </p>
           </div>
           <div class="bg-navy-light p-6 lg:p-12">
             <inline-svg
@@ -51,8 +55,9 @@
             <h5 class="text-white">Batteries Included</h5>
 
             <p>
-              TODO: talk about how Next adds image optimization, i18n, code
-              splitting, developer experience stuff like TS etc.
+              Next.js includes image optimization, internationalization (i18n),
+              analytics, code splitting, and everything you need to have the
+              most performant app possible.
             </p>
           </div>
 
@@ -65,8 +70,9 @@
             <h5 class="text-white">Developer Experience</h5>
 
             <p>
-              TODO: talk about how Next supports TS, needs no build config,
-              provides automagic routes from pages, etc
+              TypeScript is a first class citizen in Next.js, and developer
+              experience is a top priority. Next.js provides automatic route
+              creation from `pages`, fast refresh, and API endpoint creation.
             </p>
           </div>
 
@@ -79,8 +85,9 @@
             <h5 class="text-white">Hybrid: SSG and SSR</h5>
 
             <p>
-              TODO: talk about how Next supports both SSG and SSR in the same
-              project and also incremental static generation.
+              Next supports both static site generation (SSG) and server side
+              rendering (SSR) in the same project, so some routes can be static,
+              while others load dynamic data at runtime.
             </p>
           </div>
         </div>

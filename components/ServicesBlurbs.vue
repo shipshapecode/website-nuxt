@@ -36,10 +36,11 @@
             </h2>
 
             <p class="flex-grow">
-              Next.js makes progressive web app development simple, powerful and
-              user friendly. Stay ahead of tech giants and build a solid
-              foundation for your digital future with Ship Shape’s Next
-              consulting team.
+              Performance and optimization are at the core of Next.js. The
+              Next.js team has made the hard decisions for you by providing
+              server side rendering, routing, and other automagical features out
+              of the box. Let our Next.js team help you get started with this
+              powerful framework.
             </p>
 
             <nuxt-link class="learn-more" to="/services/next-consulting/">
