@@ -146,7 +146,6 @@ export default {
         }
       }
     ],
-    '@nuxtjs/gtm',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     '@nuxtjs/style-resources'
@@ -293,10 +292,6 @@ export default {
 
   generate: {
     fallback: '404.html'
-  },
-
-  gtm: {
-    id: 'GTM-WS2RFK9'
   },
 
   purgeCSS: {

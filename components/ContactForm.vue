@@ -219,7 +219,9 @@ function _encode(data) {
 
 function _successMessage() {
   this.flashSuccess("Thanks for contacting us! We'll be in touch shortly.");
-  this.$gtm.push({ event: 'contact-form-submitted' });
+  this.$ga.event({
+    eventLabel: 'contact-form-submitted'
+  });
 }
 
 function _errorMessage() {
