@@ -315,6 +315,10 @@ export default {
     scss: ['./assets/css/_variables.scss']
   },
 
+  tailwindcss: {
+    jit: true
+  },
+
   hooks: {
     'content:file:beforeInsert': async (document, database) => {
       if (document.extension === '.md' && document.dir === '/blog/posts') {
