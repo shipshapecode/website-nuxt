@@ -4,8 +4,8 @@
       <template #content>
         <img
           class="mt-8"
-          src="/img/about/desk.jpg"
           alt="Ship Shape office desk"
+          :src="require('~/assets/img/about/desk.jpg?webp')"
         />
       </template>
 

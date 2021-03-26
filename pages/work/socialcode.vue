@@ -94,7 +94,7 @@
           <img
             alt="SocialCode Audience Intelligence Platform"
             class="flex"
-            src="/img/work/socialcode/aip.png"
+            :src="require('~/assets/img/work/socialcode/aip.png?webp')"
           />
         </div>
       </div>

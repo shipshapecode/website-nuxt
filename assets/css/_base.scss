@@ -58,25 +58,6 @@ h6 {
   }
 }
 
-.cd-form {
-  input[type="submit"] {
-    &:disabled {
-      background-color: $grey;
-      // pointer-events: none;
-
-      /* Button disabled - CSS color class */
-      color: darken($white, 20%);
-      cursor: not-allowed;
-    }
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .cd-form .contact-item {
-    margin: 20px 0;
-  }
-}
-
 .fill-white {
   path {
     fill: $white;

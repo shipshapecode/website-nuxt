@@ -54,7 +54,9 @@
           <img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            src="/img/work/jebbit/jebbit-legacy-builder.png"
+            :src="
+              require('~/assets/img/work/jebbit/jebbit-legacy-builder.png?webp')
+            "
           />
         </div>
       </div>
@@ -97,7 +99,9 @@
           <img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            src="/img/work/jebbit/jebbit-simple-builder.png"
+            :src="
+              require('~/assets/img/work/jebbit/jebbit-simple-builder.png?webp')
+            "
           />
         </div>
       </div>
@@ -126,7 +130,9 @@
           <img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            src="/img/work/jebbit/jebbit-simple-builder_active.png"
+            :src="
+              require('~/assets/img/work/jebbit/jebbit-simple-builder_active.png?webp')
+            "
           />
         </div>
       </div>
@@ -143,7 +149,9 @@
           <img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            src="/img/work/jebbit/jebbit-simple-builder_published.png"
+            :src="
+              require('~/assets/img/work/jebbit/jebbit-simple-builder_published.png?webp')
+            "
           />
         </div>
       </div>

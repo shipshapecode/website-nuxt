@@ -45,7 +45,7 @@
           <img
             alt="Swach in dark mode showing the palettes screen"
             class="flex"
-            src="/img/work/swach/palette-dark.png"
+            :src="require('~/assets/img/work/swach/palette-dark.png?webp')"
           />
         </div>
       </div>
@@ -69,7 +69,7 @@
           <img
             alt="Swach in light mode showing the palettes screen"
             class="flex"
-            src="/img/work/swach/palette-light.png"
+            :src="require('~/assets/img/work/swach/palette-light.png?webp')"
           />
         </div>
       </div>
@@ -88,7 +88,7 @@
           <img
             alt="The color harmonies tab of Swach, showing a color wheel and color palette."
             class="flex"
-            src="/img/work/swach/kuler.png"
+            :src="require('~/assets/img/work/swach/kuler.png?webp')"
           />
         </div>
       </div>
@@ -111,7 +111,7 @@
           <img
             alt="Swach showing the contrast checker tab comparing colors and calculating the WCAG score."
             class="flex"
-            src="/img/work/swach/contrast-checker.png"
+            :src="require('~/assets/img/work/swach/contrast-checker.png?webp')"
           />
         </div>
       </div>

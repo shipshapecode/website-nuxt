@@ -50,7 +50,7 @@
           <img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            src="/img/work/acquia/legacy-lift.png"
+            :src="require('~/assets/img/work/acquia/legacy-lift.png?webp')"
           />
         </div>
       </div>
@@ -78,7 +78,9 @@
           <img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            src="/img/work/acquia/central_recommendation_entry_1.jpg"
+            :src="
+              require('~/assets/img/work/acquia/central_recommendation_entry_1.jpg?webp')
+            "
           />
         </div>
       </div>
@@ -97,7 +99,9 @@
           <img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            src="/img/work/acquia/central_target_entry_1.jpg"
+            :src="
+              require('~/assets/img/work/acquia/central_target_entry_1.jpg?webp')
+            "
           />
         </div>
       </div>
@@ -116,7 +120,7 @@
           <img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            src="/img/work/acquia/builder_index_1.jpg"
+            :src="require('~/assets/img/work/acquia/builder_index_1.jpg?webp')"
           />
         </div>
       </div>
@@ -134,7 +138,7 @@
           <img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            src="/img/work/acquia/builder_index_5.jpg"
+            :src="require('~/assets/img/work/acquia/builder_index_5.jpg?webp')"
           />
         </div>
       </div>

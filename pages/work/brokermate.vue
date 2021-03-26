@@ -22,7 +22,9 @@
           <img
             alt="Brokermate Logo"
             class="h-auto w-full"
-            src="/img/work/brokermate/brokermate-logo.png"
+            :src="
+              require('~/assets/img/work/brokermate/brokermate-logo.png?webp')
+            "
           />
         </div>
       </div>
@@ -45,7 +47,9 @@
             <img
               alt="Brokermate Home page with a few tours completed"
               class="h-auto w-full"
-              src="/img/work/brokermate/brokermate-home.png"
+              :src="
+                require('~/assets/img/work/brokermate/brokermate-home.png?webp')
+              "
             />
           </div>
 
@@ -53,7 +57,9 @@
             <img
               alt="Brokermate Branding Tour first step"
               class="h-auto w-full"
-              src="/img/work/brokermate/bm-branding-step-0.png"
+              :src="
+                require('~/assets/img/work/brokermate/bm-branding-step-0.png?webp')
+              "
             />
           </div>
 
@@ -61,7 +67,9 @@
             <img
               alt="Brokermate Branding Tour first step telling users to open the nav menu"
               class="h-auto w-full"
-              src="/img/work/brokermate/bm-branding-step-1.png"
+              :src="
+                require('~/assets/img/work/brokermate/bm-branding-step-1.png?webp')
+              "
             />
           </div>
         </div>
@@ -87,7 +95,9 @@
             <img
               alt="Brokermate Branding Tour step to lead user to configuration page"
               class="h-auto w-full"
-              src="/img/work/brokermate/bm-branding-step-2.png"
+              :src="
+                require('~/assets/img/work/brokermate/bm-branding-step-2.png?webp')
+              "
             />
           </div>
 
@@ -95,7 +105,9 @@
             <img
               alt="Brokermate Branding Tour step to get user to update information"
               class="h-auto w-full"
-              src="/img/work/brokermate/bm-branding-step-3.png"
+              :src="
+                require('~/assets/img/work/brokermate/bm-branding-step-3.png?webp')
+              "
             />
           </div>
 
@@ -103,7 +115,9 @@
             <img
               alt="Brokermate Branding Tour completed"
               class="h-auto w-full"
-              src="/img/work/brokermate/linux-step-completed.png"
+              :src="
+                require('~/assets/img/work/brokermate/linux-step-completed.png?webp')
+              "
             />
           </div>
         </div>
@@ -135,7 +149,9 @@
             <img
               alt="Brokermate home page with Arabic"
               class="h-auto w-full"
-              src="/img/work/brokermate/bm-start-ar.png"
+              :src="
+                require('~/assets/img/work/brokermate/bm-start-ar.png?webp')
+              "
             />
           </div>
         </div>
@@ -147,7 +163,9 @@
             <img
               alt="Brokermate tour started using the correct language"
               class="h-auto w-full"
-              src="/img/work/brokermate/brokermate-ar-step.png"
+              :src="
+                require('~/assets/img/work/brokermate/brokermate-ar-step.png?webp')
+              "
             />
           </div>
         </div>
@@ -184,7 +202,9 @@
           <img
             alt="Brokermate Tour with a detailed step on desktop"
             class="flex"
-            src="/img/work/brokermate/bm-desktop_step-detailed.png"
+            :src="
+              require('~/assets/img/work/brokermate/bm-desktop_step-detailed.png?webp')
+            "
           />
         </div>
       </div>
