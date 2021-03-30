@@ -60,7 +60,7 @@ const createSitemapRoutes = async () => {
     routes.push(`blog/${post.slug}`);
 
     for (const category of post.categories) {
-      const categoryRoute = `blog/categories/${category.replace(/ /g, '-')}`;
+      const categoryRoute = `blog/categories/${category.replace(/ |\./g, '-')}`;
       if (!routes.includes(categoryRoute)) {
         routes.push(categoryRoute);
       }

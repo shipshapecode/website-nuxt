@@ -25,11 +25,11 @@ export default {
   async asyncData({ $content, params }) {
     const { category } = params;
 
-    const posts = await $content('blog/posts').fetch();
+    const posts = await $content('blog/posts').sortBy('date', 'desc').fetch();
 
     const filteredPosts = posts.filter((post) => {
       const dasherizedCategories = post.categories.map((category) => {
-        return category.replace(/ /g, '-');
+        return category.replace(/ |\./g, '-');
       });
 
       return dasherizedCategories.includes(category);
@@ -41,7 +41,7 @@ export default {
       title: `${category} - Blog Category`,
       description: `See the ${numPosts} blog posts Ship Shape has written about ${category}.`,
       url: `https://shipshape.io/blog/categories/${category.replace(
-        / /g,
+        / |\./g,
         '-'
       )}/`,
       posts: filteredPosts

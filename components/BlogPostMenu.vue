@@ -17,7 +17,7 @@
         <nuxt-link
           v-for="tag in post.categories"
           :key="tag"
-          :to="`/blog/categories/${tag.replace(/ /g, '-')}/`"
+          :to="`/blog/categories/${tag.replace(/ |\./g, '-')}/`"
           class="blog-tag mr-2"
         >
           {{ tag }}
