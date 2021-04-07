@@ -48,6 +48,8 @@ module.exports = {
     },
 
     fill: (theme) => ({
+      navy: theme('colors.navy'),
+      red: theme('colors.red'),
       white: theme('colors.white')
     }),
 

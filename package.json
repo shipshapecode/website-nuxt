@@ -80,7 +80,7 @@
     "showdown": "^1.9.1",
     "stylelint": "^13.12.0",
     "stylelint-config-ship-shape": "^0.7.0",
-    "tailwindcss": "^2.0.4",
+    "tailwindcss": "^2.1.1",
     "vue-jest": "^3.0.7",
     "webp-loader": "^0.6.0"
   },
