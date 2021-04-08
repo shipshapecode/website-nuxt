@@ -159,7 +159,7 @@ export default {
           title: 'CEO',
           imgSrc: '/img/blog/authors/robbie.jpg',
           twitter: 'https://twitter.com/rwwagner90',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/robertwilliamwagner/',
           github: 'https://github.com/rwwagner90'
         },
         {
@@ -167,7 +167,7 @@ export default {
           title: 'COO',
           imgSrc: '/img/blog/authors/chuck.jpg',
           twitter: '',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/chuckcarpenter/',
           github: 'https://github.com/chuckcarpenter'
         },
         {
@@ -175,7 +175,7 @@ export default {
           title: 'Senior Software Engineer',
           imgSrc: '/img/blog/authors/rob.jpg',
           twitter: 'https://twitter.com/r0bc4ry',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/r0bc4ry/',
           github: 'https://github.com/r0bc4ry'
         },
         {
@@ -183,7 +183,7 @@ export default {
           title: 'Senior Software Engineer',
           imgSrc: '/img/blog/authors/jared.jpg',
           twitter: 'https://twitter.com/jaredgalanis',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/jaredgalanis/',
           github: 'https://github.com/jaredgalanis'
         },
         {
@@ -192,7 +192,7 @@ export default {
           imgSrc:
             'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixqx=ELhezQOata&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
           twitter: '',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/kimhanna/',
           github: 'https://github.com/hannakim91'
         }
       ]
