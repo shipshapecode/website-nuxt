@@ -78,9 +78,11 @@
               <div
                 class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
               >
-                <p class="text-xl text-gray-500">
-                  Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum
-                  dolor ultricies donec risus sodales. Tempus quis et.
+                <p class="text-lg text-gray-500">
+                  Ship Shape's team has a diverse skillset and is distributed
+                  across the United States. Despite our differences, we are all
+                  passionate about web development and believe in leaving things
+                  better than we found them.
                 </p>
               </div>
               <ul
@@ -102,7 +104,7 @@
                         <p class="text-indigo-600">{{ employee.title }}</p>
                       </div>
                       <ul class="flex space-x-5">
-                        <li>
+                        <li v-if="employee.twitter">
                           <a :href="employee.twitter" class="twitter-logo">
                             <span class="sr-only">Twitter</span>
                             <inline-svg
