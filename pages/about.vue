@@ -66,140 +66,77 @@
 
     <div class="bg-white section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="mb-20 w-full">
+        <div class="w-full">
           <h6 class="m-0 text-red text-xs uppercase">Our team</h6>
 
           <h2 class="text-navy text-5xl">Get to know us</h2>
         </div>
 
-        <div class="flex flex-grow flex-wrap">
-          <div class="w-full lg:w-1/2">
-            <img
-              class="mb-4"
-              src="/img/blog/authors/robbie.jpg"
-              alt="A picture of Robbie Wagner"
-            />
-          </div>
-
-          <div class="w-full lg:w-1/2">
-            <h3 class="text-navy text-3xl">Robbie Wagner, CEO</h3>
-
-            <ul>
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  Robbie's experience
-                </div>
-                <p>
-                  Started developing in Ember back in 2012 while working for a
-                  startup, Mail Pilot. Specialties: Ember.js, Nuxt.js,
-                  JavaScript
+        <div class="w-full">
+          <div class="py-6">
+            <div class="space-y-12">
+              <div
+                class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
+              >
+                <p class="text-lg text-gray-500">
+                  Ship Shape's team has a diverse skillset and is distributed
+                  across the United States. Despite our differences, we are all
+                  passionate about web development and believe in leaving things
+                  better than we found them.
                 </p>
-              </li>
+              </div>
+              <ul
+                class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+              >
+                <li v-for="employee in team" :key="employee.name">
+                  <div class="space-y-4">
+                    <div class="aspect-w-3 aspect-h-2">
+                      <img
+                        class="filter grayscale object-cover shadow-lg rounded-lg"
+                        :src="employee.imgSrc"
+                        alt=""
+                      />
+                    </div>
 
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  How did you arrive at Ship Shape?
-                </div>
-
-                <p>
-                  I worked at several Ember companies like RSA, and started
-                  working on the side doing Ember consulting. Eventually, I
-                  decided to transition full-time and created Ship Shape.
-                </p>
-              </li>
-
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  What's your involvement in the community?
-                </div>
-
-                <p>
-                  I am active on the Ember Learning Team. I am speaking at
-                  EmberConf in 2020. I’ve also led a sold out workshop at
-                  EmberConf on performance.
-                </p>
-              </li>
-
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  Which projects are you most proud of?
-                </div>
-
-                <p>
-                  I'm proud of the work our guys did on Jebbit and I’m also
-                  proud of the dashboards I have been building for my current
-                  client, Expel!
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="flex flex-grow flex-wrap mt-24 lg:flex-row-reverse">
-          <div class="w-full lg:w-1/2">
-            <img
-              class="mb-4"
-              src="/img/blog/authors/chuck.jpg"
-              alt="A picture of Chuck Carpenter"
-            />
-          </div>
-
-          <div class="w-full lg:w-1/2">
-            <h3 class="text-navy text-3xl">Chuck Carpenter, COO</h3>
-
-            <ul>
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  Chuck's experience
-                </div>
-
-                <p>
-                  Leading teams to deliver high quality, nimble, reliable, and
-                  valuable products in order to create demand and increase their
-                  user base. Sometimes I make stuff in Javascript, Python, and
-                  GraphQL.
-                </p>
-              </li>
-
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  How did you arrive at Ship Shape?
-                </div>
-
-                <p>
-                  At a time when the lines between web development and design
-                  were heavily blurred, I learned to create sites buried in HTML
-                  tables for layout and images cut up in Adobe Photoshop. As
-                  those standards evolved, I’ve built experiences and
-                  applications solving issues from media delivery, marketing
-                  analytics, and entire business process management.
-                </p>
-              </li>
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">Awards or Honors</div>
-
-                <p>
-                  Webby Award Winner for the National Geographic Magazine’s
-                  website and also the Direct Selling Association Innovation in
-                  Technology Award on office system.
-                </p>
-              </li>
-
-              <li class="max-w-xl">
-                <div class="font-black text-navy text-xl">
-                  What projects are you most proud of?
-                </div>
-
-                <p>
-                  Building the completely redesigned Jebbit MVP for their
-                  campaign flow. Jebbit had an extremely complex system for
-                  creating campaigns and after a lot of research with their
-                  customers, an entirely simplified experience has been created
-                  to allow for detailed configuration and true ease to get from
-                  start to live campaign quickly.
-                </p>
-              </li>
-            </ul>
+                    <div class="space-y-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3>{{ employee.name }}</h3>
+                        <p class="text-indigo-600">{{ employee.title }}</p>
+                      </div>
+                      <ul class="flex space-x-5">
+                        <li v-if="employee.twitter">
+                          <a :href="employee.twitter" class="twitter-logo">
+                            <span class="sr-only">Twitter</span>
+                            <inline-svg
+                              aria-hidden="true"
+                              src="/svgs/twitter.svg"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a :href="employee.linkedin" class="linkedin-logo">
+                            <span class="sr-only">LinkedIn</span>
+                            <inline-svg
+                              aria-hidden="true"
+                              src="/svgs/linkedin.svg"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a :href="employee.github" class="github-logo">
+                            <span class="sr-only">GitHub</span>
+                            <inline-svg
+                              aria-hidden="true"
+                              src="/svgs/github.svg"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -216,6 +153,53 @@ export default {
     HeroBlock
   },
 
+  data() {
+    return {
+      team: [
+        {
+          name: 'Robbie Wagner',
+          title: 'CEO',
+          imgSrc: '/img/blog/authors/robbie.jpg',
+          twitter: 'https://twitter.com/rwwagner90',
+          linkedin: 'https://www.linkedin.com/in/robertwilliamwagner/',
+          github: 'https://github.com/rwwagner90'
+        },
+        {
+          name: 'Chuck Carpenter',
+          title: 'COO',
+          imgSrc: '/img/blog/authors/chuck.jpg',
+          twitter: '',
+          linkedin: 'https://www.linkedin.com/in/chuckcarpenter/',
+          github: 'https://github.com/chuckcarpenter'
+        },
+        {
+          name: 'Rob Cary',
+          title: 'Senior Software Engineer',
+          imgSrc: '/img/blog/authors/rob.jpg',
+          twitter: 'https://twitter.com/r0bc4ry',
+          linkedin: 'https://www.linkedin.com/in/r0bc4ry/',
+          github: 'https://github.com/r0bc4ry'
+        },
+        {
+          name: 'Jared Galanis',
+          title: 'Senior Software Engineer',
+          imgSrc: '/img/blog/authors/jared.jpg',
+          twitter: 'https://twitter.com/jaredgalanis',
+          linkedin: 'https://www.linkedin.com/in/jaredgalanis/',
+          github: 'https://github.com/jaredgalanis'
+        },
+        {
+          name: 'Hanna Kim',
+          title: 'Software Engineer',
+          imgSrc: '/img/blog/authors/hanna.jpg',
+          twitter: '',
+          linkedin: 'https://www.linkedin.com/in/kimhanna/',
+          github: 'https://github.com/hannakim91'
+        }
+      ]
+    };
+  },
+
   head() {
     const title = 'About Us';
     const description =
@@ -227,3 +211,45 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.github-logo,
+.linkedin-logo,
+.twitter-logo {
+  svg {
+    path {
+      @apply transition-colors;
+      fill: $navy-light;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $red;
+      }
+    }
+  }
+}
+
+.github-logo {
+  svg {
+    height: 22px;
+    width: 23px;
+  }
+}
+
+.linkedin-logo {
+  svg {
+    height: 20px;
+    width: 19px;
+  }
+}
+
+.twitter-logo {
+  svg {
+    height: 19px;
+    width: 23px;
+  }
+}
+</style>
