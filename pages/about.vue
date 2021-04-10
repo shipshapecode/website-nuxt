@@ -191,8 +191,7 @@ export default {
         {
           name: 'Hanna Kim',
           title: 'Software Engineer',
-          imgSrc:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixqx=ELhezQOata&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+          imgSrc: '/img/blog/authors/hanna.jpg',
           twitter: '',
           linkedin: 'https://www.linkedin.com/in/kimhanna/',
           github: 'https://github.com/hannakim91'
