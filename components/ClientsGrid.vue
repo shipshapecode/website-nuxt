@@ -36,36 +36,6 @@
     </div>
 
     <div>
-      <a href="https://www.greenlight.guru/" aria-label="Greenlight Guru">
-        <inline-svg
-          class="h-8 mb-3 w-auto"
-          src="/svgs/clients/greenlight-guru.svg"
-        />
-      </a>
-      <p>
-        We first updated the greenlight.guru app to Ember 1.12, fixing
-        deprecations as we went. After 1.12 was complete, we undertook the task
-        of migrating a grunt based build to ember-cli. We finally updated the
-        app to Ember 1.13 and fixed all the deprecations.
-      </p>
-    </div>
-
-    <div>
-      <a href="https://www.mentrs.com/" aria-label="Mentrs">
-        <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/mentrs.svg" />
-      </a>
-
-      <p>
-        We worked on the Mentrs MVP from the ground up, starting with running
-        'ember new', and adding all the addons, ESLint plugins, template
-        lintings, and doing all the initial work required to create an Ember
-        app, rooted in the latest Ember standards. Features we implemented
-        included everything from login and sign up, to class creation, and
-        Stripe integration for paying to enroll in classes.
-      </p>
-    </div>
-
-    <div>
       <a href="https://anvyl.com/" aria-label="Anvyl">
         <inline-svg class="h-8 mb-3 w-auto" src="/svgs/clients/anvyl.svg" />
       </a>

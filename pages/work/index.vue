@@ -8,8 +8,7 @@
           <p class="max-w-3xl">
             Unlike large corporations with offshore developers, Ship Shape
             crafts homegrown, bespoke solutions to solve problems. This is how
-            we're making waves for clients nationwide like Netflix and
-            SocialCode.
+            we're making waves for clients nationwide like Netflix and Sephora.
           </p>
         </div>
 

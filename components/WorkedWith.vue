@@ -49,14 +49,6 @@
               />
             </a>
           </div>
-          <div class="client-logo">
-            <a href="https://www.socialcode.com/" aria-label="SocialCode">
-              <inline-svg
-                class="h-full inline w-full max-w-xxs"
-                src="/svgs/clients/socialcode.svg"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </div>

@@ -70,23 +70,5 @@
         </nuxt-link>
       </div>
     </div>
-
-    <div class="w-full">
-      <div class="m-auto max-w-2xl w-full lg:m-0">
-        <inline-svg
-          class="h-10 mb-3 pb-2 pt-2 w-auto"
-          src="/svgs/clients/socialcode.svg"
-        />
-
-        <p class="lg:h-12">
-          Refactoring a suite of apps and addons for clients to manage social
-          media
-        </p>
-
-        <nuxt-link class="btn btn-navy mb-12" to="/work/socialcode/">
-          View Case
-        </nuxt-link>
-      </div>
-    </div>
   </div>
 </template>
