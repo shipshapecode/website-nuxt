@@ -1,5 +1,3 @@
-const gradient = require('./assets/css/tailwind/plugins/gradient');
-
 module.exports = {
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
@@ -128,12 +126,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/forms'),
-    gradient({
-      gradients: {
-        brokermate: ['#3FB7E6', '#782599']
-      }
-    })
+    require('@tailwindcss/forms')
   ],
   corePlugins: {
     container: false

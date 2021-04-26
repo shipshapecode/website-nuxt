@@ -117,8 +117,8 @@
       <BottomLinks
         next-link="/work/swach/"
         next-link-text="Swach"
-        previous-link="/work/brokermate/"
-        previous-link-text="Brokermate"
+        previous-link="/work/acquia/"
+        previous-link-text="Acquia"
       />
     </div>
   </div>

@@ -32,12 +32,7 @@
         <p class="max-w-5xl mb-16">
           We've leveraged the flexibility of these tours to lead users through a
           number of events. Upon the first time logging into an application,
-          tours can be used to validate and ensure a smooth setup process. We
-          used this technique for our
-          <nuxt-link to="/work/brokermate/">
-            project with Brokermate
-          </nuxt-link>
-          to ensure users completed all the required setup steps.
+          tours can be used to validate and ensure a smooth setup process.
         </p>
 
         <div class="flex flex-wrap justify-center">

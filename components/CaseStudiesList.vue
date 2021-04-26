@@ -88,17 +88,5 @@
         </nuxt-link>
       </div>
     </div>
-
-    <div class="w-full">
-      <div class="m-auto max-w-2xl w-full lg:m-0">
-        <h2 class="h-10 mb-3 w-auto">Brokermate</h2>
-
-        <p class="lg:h-12">Creating in depth site tours with Shepherd</p>
-
-        <nuxt-link class="btn btn-navy mb-12" to="/work/brokermate/">
-          View Case
-        </nuxt-link>
-      </div>
-    </div>
   </div>
 </template>
