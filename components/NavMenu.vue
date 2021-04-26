@@ -25,8 +25,8 @@
           <div
             class="font-medium -mt-1 text-3xl"
             :class="{
-              'text-navy': this.$route.name !== 'about',
-              'text-white': this.$route.name === 'about'
+              'text-navy': $route.name !== 'about',
+              'text-white': $route.name === 'about'
             }"
             itemprop="name"
           >
@@ -60,7 +60,7 @@
           <nuxt-link
             class="nav-link"
             :class="{
-              'nav-link-alt': this.$route.name === 'about'
+              'nav-link-alt': $route.name === 'about'
             }"
             to="/services/"
             @click.native="toggleNavMenu(false)"
@@ -71,7 +71,7 @@
           <nuxt-link
             class="nav-link"
             :class="{
-              'nav-link-alt': this.$route.name === 'about'
+              'nav-link-alt': $route.name === 'about'
             }"
             to="/work/"
             @click.native="toggleNavMenu(false)"
@@ -82,7 +82,7 @@
           <nuxt-link
             class="nav-link"
             :class="{
-              'nav-link-alt': this.$route.name === 'about'
+              'nav-link-alt': $route.name === 'about'
             }"
             to="/about/"
             @click.native="toggleNavMenu(false)"
@@ -93,7 +93,7 @@
           <nuxt-link
             class="nav-link"
             :class="{
-              'nav-link-alt': this.$route.name === 'about'
+              'nav-link-alt': $route.name === 'about'
             }"
             to="/blog/"
             @click.native="toggleNavMenu(false)"
@@ -104,7 +104,7 @@
           <nuxt-link
             class="nav-link contact-link"
             :class="{
-              'contact-link-alt': this.$route.name === 'about'
+              'contact-link-alt': $route.name === 'about'
             }"
             to="/contact/"
             @click.native="toggleNavMenu(false)"

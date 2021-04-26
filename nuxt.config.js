@@ -264,13 +264,14 @@ export default {
 
   content: {
     markdown: {
-      highlighter(rawCode, lang) {
-        const highlightedCode = highlightjs.highlight(lang, rawCode).value;
+      highlighter(rawCode, language) {
+        const highlightedCode = highlightjs.highlight(rawCode, { language })
+          .value;
 
         // We need to create a wrapper, because
         // the returned code from highlight.js
         // is only the highlighted code.
-        return `<pre><code class="hljs ${lang}">${highlightedCode}</code></pre>`;
+        return `<pre><code class="hljs ${language}">${highlightedCode}</code></pre>`;
       }
     }
   },
