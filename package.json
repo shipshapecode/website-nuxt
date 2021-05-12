@@ -71,7 +71,7 @@
     "nodemon": "^2.0.7",
     "percy": "^0.28.6",
     "playwright": "^1.10.0",
-    "postcss": "^8.2.8",
+    "postcss": "^8.2.10",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^5.2.0",
     "postcss-url": "^10.1.3",
