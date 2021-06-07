@@ -79,7 +79,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - Ship Shape',
+    titleTemplate: '%s | Ship Shape',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -265,8 +265,9 @@ export default {
   content: {
     markdown: {
       highlighter(rawCode, language) {
-        const highlightedCode = highlightjs.highlight(rawCode, { language })
-          .value;
+        const highlightedCode = highlightjs.highlight(rawCode, {
+          language
+        }).value;
 
         // We need to create a wrapper, because
         // the returned code from highlight.js

@@ -1,7 +1,13 @@
 <template>
   <div>
     <div
-      class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent"
+      class="
+        portfolio-container
+        section
+        flex flex-wrap
+        justify-center
+        bg-grey-transparent
+      "
     >
       <div class="section-content">
         <div class="flex flex-wrap justify-center">

@@ -111,7 +111,7 @@ export default {
   },
 
   head() {
-    const title = 'Nuxt.js Consulting';
+    const title = 'Nuxt.js Software Consultants & Developers';
     const description =
       'As a proven leader in Nuxt development, Ship Shape turns ideas into industry-leading products. ' +
       'Contact us to get started.';

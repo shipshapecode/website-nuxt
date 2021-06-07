@@ -36,7 +36,14 @@
       </div>
 
       <div
-        class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row"
+        class="
+          flex flex-wrap
+          items-center
+          flex-col-reverse
+          pt-6
+          pb-6
+          lg:flex-row
+        "
       >
         <div class="w-full flex lg:pr-12 lg:w-1/2" data-aos="fade-up">
           <div class="m-auto max-w-2xl w-full">

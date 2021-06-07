@@ -21,7 +21,14 @@
       </div>
 
       <div
-        class="bg-grey-transparent flex flex-wrap h-64 md:h-140 justify-center items-center"
+        class="
+          bg-grey-transparent
+          flex flex-wrap
+          h-64
+          md:h-140
+          justify-center
+          items-center
+        "
       >
         <div class="w-1/2 lg:w-1/3">
           <inline-svg
@@ -183,8 +190,8 @@ export default {
   },
 
   head() {
-    const title = 'Case Study - Acquia';
-    const description = `Learn how we improved Acquia's customer retention and app performance!`;
+    const title = 'Acquia Ember.js Enterprise App Development';
+    const description = `See how Ship Shape's enterprise app development team helped Acquia improve the user experience on its Ember.js app and raise renewal rates to nearly 100%.`;
     const url = 'https://shipshape.io/work/acquia/';
 
     return generateMeta(title, description, url);

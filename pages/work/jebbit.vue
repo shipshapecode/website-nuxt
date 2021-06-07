@@ -16,7 +16,14 @@
       </div>
 
       <div
-        class="bg-jebbit-green flex flex-wrap h-64 md:h-140 justify-center items-center"
+        class="
+          bg-jebbit-green
+          flex flex-wrap
+          h-64
+          md:h-140
+          justify-center
+          items-center
+        "
       >
         <div class="w-1/2">
           <inline-svg
@@ -184,9 +191,9 @@ export default {
   },
 
   head() {
-    const title = 'Case Study - Jebbit';
+    const title = 'Jebbit Ember.js Enterprise App Development';
     const description =
-      'Learn how Ship Shape helped Jebbit revamp their campaign builder and improve user experience.';
+      "See how Ship Shape's enterprise app development team helped Jebbit make their Ember.js app faster, easier to use, and future-ready.";
     const url = 'https://shipshape.io/work/jebbit/';
 
     return generateMeta(title, description, url);

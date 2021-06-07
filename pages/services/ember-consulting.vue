@@ -91,11 +91,9 @@ export default {
   },
 
   head() {
-    const title = 'Ember.js Consulting';
+    const title = 'Ember.js Enterprise App Development';
     const description =
-      'From startups to Fortune 100 companies, our Ember.js ' +
-      'consultants transform ideas into industry-leading software. ' +
-      'Learn more about our app development services.';
+      "Learn how Ship Shape's top-tier enterprise app development experts can help your team build fast, reliable Ember.js applications.";
     const url = 'https://shipshape.io/services/ember-consulting/';
 
     return generateMeta(title, description, url);

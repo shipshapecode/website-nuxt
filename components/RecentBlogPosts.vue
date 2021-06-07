@@ -14,7 +14,14 @@
         </div>
 
         <div
-          class="grid grid-cols-1 gap-2 justify-center mb-4 w-full lg:grid-cols-3"
+          class="
+            grid grid-cols-1
+            gap-2
+            justify-center
+            mb-4
+            w-full
+            lg:grid-cols-3
+          "
         >
           <div
             v-for="post in posts"
@@ -26,7 +33,17 @@
             </div>
 
             <nuxt-link
-              class="blog-link block font-bold flex-grow leading-8 min-h-24 my-2 text-white text-2xl hover:text-red"
+              class="
+                blog-link
+                block
+                font-bold
+                flex-grow
+                leading-8
+                min-h-24
+                my-2
+                text-white text-2xl
+                hover:text-red
+              "
               :to="`/blog/${post.slug}/`"
             >
               {{ post.linktitle || post.title }}

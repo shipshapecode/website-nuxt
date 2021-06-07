@@ -111,9 +111,9 @@ export default {
   },
 
   head() {
-    const title = 'Our Work';
+    const title = 'Our Work - Enterprise Custom App Development';
     const description =
-      'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.';
+      "Looking for strategic enterprise app development or custom app development support? Learn how Ship Shape's software developers can help.";
     const url = 'https://shipshape.io/work/';
 
     return generateMeta(title, description, url);

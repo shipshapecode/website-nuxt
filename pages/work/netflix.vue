@@ -17,7 +17,14 @@
       </div>
 
       <div
-        class="bg-netflix-red flex flex-wrap h-64 md:h-140 justify-center items-center"
+        class="
+          bg-netflix-red
+          flex flex-wrap
+          h-64
+          md:h-140
+          justify-center
+          items-center
+        "
       >
         <div class="w-1/2 lg:w-1/3">
           <inline-svg
@@ -134,9 +141,9 @@ export default {
   },
 
   head() {
-    const title = 'Case Study - Netflix';
+    const title = 'Netflix Ember.js Finance Dashboard';
     const description =
-      "Learn how we helped build finance tools for the world's number one streaming platform.";
+      "Netflix Finance had outdated, disjointed Ember.js apps. See how Ship Shape's enterprise app development experts increased efficiency & data granularity.";
     const url = 'https://shipshape.io/work/netflix/';
 
     return generateMeta(title, description, url);

@@ -33,7 +33,16 @@
     <div class="section bg-navy flex justify-center">
       <div class="section-content flex flex-wrap justify-center lg:flex-nowrap">
         <div
-          class="bg-navy-light flex flex-col justify-center min-h-80 mt-12 p-6 w-full lg:h-96 lg:mr-12 lg:mt-0 lg:p-24 lg:w-1/2"
+          class="
+            bg-navy-light
+            flex flex-col
+            justify-center
+            min-h-80
+            mt-12
+            p-6
+            w-full
+            lg:h-96 lg:mr-12 lg:mt-0 lg:p-24 lg:w-1/2
+          "
         >
           <div class="h-24 inline-block mb-8 mt-8 w-24">
             <inline-svg src="/svgs/pages/about/client.svg" />
@@ -48,7 +57,17 @@
         </div>
 
         <div
-          class="bg-navy-light flex flex-col justify-center m-auto min-h-80 mt-12 p-6 w-full lg:h-96 lg:p-24 lg:w-1/2"
+          class="
+            bg-navy-light
+            flex flex-col
+            justify-center
+            m-auto
+            min-h-80
+            mt-12
+            p-6
+            w-full
+            lg:h-96 lg:p-24 lg:w-1/2
+          "
         >
           <div class="h-24 inline-block mb-8 mt-8 w-24">
             <inline-svg src="/svgs/pages/about/community.svg" />
@@ -76,7 +95,13 @@
           <div class="py-6">
             <div class="space-y-12">
               <div
-                class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none"
+                class="
+                  space-y-5
+                  sm:space-y-4
+                  md:max-w-xl
+                  lg:max-w-3xl
+                  xl:max-w-none
+                "
               >
                 <p class="text-lg text-gray-500">
                   Ship Shape's team has a diverse skillset and is distributed
@@ -86,13 +111,23 @@
                 </p>
               </div>
               <ul
-                class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+                class="
+                  space-y-12
+                  sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
+                  lg:grid-cols-3 lg:gap-x-8
+                "
               >
                 <li v-for="employee in team" :key="employee.name">
                   <div class="space-y-4">
                     <div class="aspect-w-3 aspect-h-2">
                       <img
-                        class="filter grayscale object-cover shadow-lg rounded-lg"
+                        class="
+                          filter
+                          grayscale
+                          object-cover
+                          shadow-lg
+                          rounded-lg
+                        "
                         :src="employee.imgSrc"
                         alt=""
                       />
@@ -201,10 +236,9 @@ export default {
   },
 
   head() {
-    const title = 'About Us';
+    const title = 'About Our Software Development Agency';
     const description =
-      'We can help streamline your Ember.js or Nuxt project. Learn how ' +
-      'Ship Shape designs and develops next-level software and app solutions.';
+      'Meet Ship Shape, a full-stack software development agency with senior-level engineers who specialize in JavaScript frameworks, serverless architecture, & more.';
     const url = 'https://shipshape.io/about/';
 
     return generateMeta(title, description, url);

@@ -6,7 +6,15 @@
           class="lg:col-span-3 lg:h-full lg:flex lg:flex-col lg:justify-center"
         >
           <div
-            class="font-bold leading-12 leading-snug mb-24 text-4xl text-white lg:max-w-sm w-full xl:text-5xl"
+            class="
+              font-bold
+              leading-12 leading-snug
+              mb-24
+              text-4xl text-white
+              lg:max-w-sm
+              w-full
+              xl:text-5xl
+            "
           >
             Select case studies
           </div>
@@ -20,7 +28,14 @@
         </div>
         <div class="bg-navy-card-dark relative rounded lg:col-span-2">
           <div
-            class="bg-navy-card-light flex p-16 justify-center rounded-t text-center"
+            class="
+              bg-navy-card-light
+              flex
+              p-16
+              justify-center
+              rounded-t
+              text-center
+            "
           >
             <inline-svg
               class="fill-white h-16 w-auto"
@@ -36,7 +51,21 @@
             </p>
 
             <nuxt-link
-              class="absolute bg-white bottom-0 flex h-16 items-center justify-center m-6 right-0 rounded-full transition-colors w-16 hover:bg-red"
+              class="
+                absolute
+                bg-white
+                bottom-0
+                flex
+                h-16
+                items-center
+                justify-center
+                m-6
+                right-0
+                rounded-full
+                transition-colors
+                w-16
+                hover:bg-red
+              "
               to="/work/netflix/"
             >
               <inline-svg
@@ -61,7 +90,21 @@
             </p>
 
             <nuxt-link
-              class="absolute bg-white bottom-0 flex h-16 items-center justify-center m-6 right-0 rounded-full transition-colors w-16 hover:bg-red"
+              class="
+                absolute
+                bg-white
+                bottom-0
+                flex
+                h-16
+                items-center
+                justify-center
+                m-6
+                right-0
+                rounded-full
+                transition-colors
+                w-16
+                hover:bg-red
+              "
               to="/work/expel/"
             >
               <inline-svg

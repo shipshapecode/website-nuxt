@@ -22,7 +22,13 @@
           </p>
         </div>
         <form
-          class="contact-form mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+          class="
+            contact-form
+            mt-9
+            grid grid-cols-1
+            gap-y-6
+            sm:grid-cols-2 sm:gap-x-8
+          "
           name="contact-us"
           netlify-honeypot="bot-field"
           netlify
@@ -55,7 +61,15 @@
                 type="text"
                 name="name"
                 required
-                class="block w-full shadow-sm sm:text-sm focus:ring-navy-card-light focus:border-navy-card-light border-grey-light rounded-md"
+                class="
+                  block
+                  w-full
+                  shadow-sm
+                  sm:text-sm
+                  focus:ring-navy-card-light focus:border-navy-card-light
+                  border-grey-light
+                  rounded-md
+                "
               />
             </div>
           </div>
@@ -72,7 +86,15 @@
                 name="email"
                 required
                 autocomplete="email"
-                class="block w-full shadow-sm sm:text-sm focus:ring-navy-card-light focus:border-navy-card-light border-grey-light rounded-md"
+                class="
+                  block
+                  w-full
+                  shadow-sm
+                  sm:text-sm
+                  focus:ring-navy-card-light focus:border-navy-card-light
+                  border-grey-light
+                  rounded-md
+                "
               />
             </div>
           </div>
@@ -87,7 +109,15 @@
                 type="text"
                 name="company"
                 autocomplete="organization"
-                class="block w-full shadow-sm sm:text-sm focus:ring-navy-card-light focus:border-navy-card-light border-grey-light rounded-md"
+                class="
+                  block
+                  w-full
+                  shadow-sm
+                  sm:text-sm
+                  focus:ring-navy-card-light focus:border-navy-card-light
+                  border-grey-light
+                  rounded-md
+                "
               />
             </div>
           </div>
@@ -108,7 +138,15 @@
                 name="description"
                 required
                 rows="4"
-                class="block w-full shadow-sm sm:text-sm focus:ring-navy-card-light focus:border-navy-card-light border-grey-light rounded-md"
+                class="
+                  block
+                  w-full
+                  shadow-sm
+                  sm:text-sm
+                  focus:ring-navy-card-light focus:border-navy-card-light
+                  border-grey-light
+                  rounded-md
+                "
               ></textarea>
             </div>
           </div>
@@ -124,7 +162,13 @@
                   name="budget"
                   value="under_25k"
                   type="radio"
-                  class="focus:ring-navy-card-light h-4 w-4 text-navy border-grey-light"
+                  class="
+                    focus:ring-navy-card-light
+                    h-4
+                    w-4
+                    text-navy
+                    border-grey-light
+                  "
                 />
                 <label for="budget_under_25k" class="ml-3">
                   <span class="block text-sm text-navy">Less than $25,000</span>
@@ -137,7 +181,13 @@
                   name="budget"
                   value="25k-50k"
                   type="radio"
-                  class="focus:ring-navy-card-light h-4 w-4 text-navy border-grey-light"
+                  class="
+                    focus:ring-navy-card-light
+                    h-4
+                    w-4
+                    text-navy
+                    border-grey-light
+                  "
                 />
                 <label for="budget_25k-50k" class="ml-3">
                   <span class="block text-sm text-navy">$25,000 – $50,000</span>
@@ -150,7 +200,13 @@
                   name="budget"
                   value="50k-100k"
                   type="radio"
-                  class="focus:ring-navy-card-light h-4 w-4 text-navy border-grey-light"
+                  class="
+                    focus:ring-navy-card-light
+                    h-4
+                    w-4
+                    text-navy
+                    border-grey-light
+                  "
                 />
                 <label for="budget_50k-100k" class="ml-3">
                   <span class="block text-sm text-navy">
@@ -165,7 +221,13 @@
                   name="budget"
                   value="100k-250k"
                   type="radio"
-                  class="focus:ring-navy-card-light h-4 w-4 text-navy border-grey-light"
+                  class="
+                    focus:ring-navy-card-light
+                    h-4
+                    w-4
+                    text-navy
+                    border-grey-light
+                  "
                 />
                 <label for="budget_100k-250k" class="ml-3">
                   <span class="block text-sm text-navy">
@@ -180,7 +242,13 @@
                   name="budget"
                   value="over_250k"
                   type="radio"
-                  class="focus:ring-navy-card-light h-4 w-4 text-navy border-grey-light"
+                  class="
+                    focus:ring-navy-card-light
+                    h-4
+                    w-4
+                    text-navy
+                    border-grey-light
+                  "
                 />
                 <label for="budget_over_250k" class="ml-3">
                   <span class="block text-sm text-navy">$250,000+</span>
@@ -193,7 +261,22 @@
               :disabled="!formValid"
               type="submit"
               value="Send Message"
-              class="btn btn-navy cursor-pointer inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm transition-colors font-medium rounded-md focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+              class="
+                btn btn-navy
+                cursor-pointer
+                inline-flex
+                justify-center
+                py-2
+                px-4
+                border border-transparent
+                shadow-sm
+                text-sm
+                transition-colors
+                font-medium
+                rounded-md
+                focus:outline-none
+                disabled:opacity-50 disabled:cursor-not-allowed
+              "
             />
 
             <flash-message class="flex flex-grow mt-8" />

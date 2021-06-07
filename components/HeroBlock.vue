@@ -2,7 +2,13 @@
   <div class="hero flex flex-wrap justify-center">
     <div class="section-content mb-8">
       <div
-        class="flex flex-wrap items-center flex-col-reverse justify-between lg:flex-row"
+        class="
+          flex flex-wrap
+          items-center
+          flex-col-reverse
+          justify-between
+          lg:flex-row
+        "
       >
         <div class="w-full lg:pr-12 lg:w-1/2" data-aos="fade-up">
           <div class="m-auto max-w-2xl">
