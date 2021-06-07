@@ -108,7 +108,7 @@ export default {
   },
 
   head() {
-    const title = 'Next.js Consulting';
+    const title = 'Next.js Software Consultants & Developers';
     const description =
       'As a proven leader in Next.js development, Ship Shape turns ideas into industry-leading products. ' +
       'Contact us to get started.';

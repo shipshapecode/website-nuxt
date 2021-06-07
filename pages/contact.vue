@@ -23,10 +23,9 @@ export default {
   },
 
   head() {
-    const title = 'Contact Us';
+    const title = 'Contact Our Software Consultants';
     const description =
-      'Set a course for success with our Ember.js consulting services, ' +
-      'team training, web app development, and more by contacting Ship Shape today.';
+      "Want to improve your products and people? Contact Ship Shape's software consultants to chat about custom app development, optimization, and training.";
     const url = 'https://shipshape.io/contact/';
 
     return generateMeta(title, description, url);

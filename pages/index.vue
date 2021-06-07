@@ -64,11 +64,9 @@ export default {
     return { posts };
   },
   head() {
-    const title = 'App Development & Consulting Agency';
+    const title = 'Top-Tier, Full-Stack Software Consultants';
     const description =
-      'Ship Shape is a consulting agency, specializing in app development, ' +
-      'Ember.js and Nuxt. Hire us to deliver high-quality web apps that ' +
-      'work across all devices.';
+      "Ship Shape's app development company offers a top-tier team of on-shore, full-stack software consultants who can't wait to build or improve your product.";
     const url = 'https://shipshape.io/';
 
     return generateMeta(title, description, url);

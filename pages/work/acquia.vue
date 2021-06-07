@@ -21,7 +21,14 @@
       </div>
 
       <div
-        class="bg-grey-transparent flex flex-wrap h-64 md:h-140 justify-center items-center"
+        class="
+          bg-grey-transparent
+          flex flex-wrap
+          h-64
+          md:h-140
+          justify-center
+          items-center
+        "
       >
         <div class="w-1/2 lg:w-1/3">
           <inline-svg

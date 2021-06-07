@@ -1,9 +1,11 @@
-.heading {
-  @apply font-bold text-navy;
-}
+@layer components {
+  .heading {
+    @apply font-bold text-navy;
+  }
 
-.sub-heading {
-  @apply font-light text-grey-light;
+  .sub-heading {
+    @apply font-light text-grey-light;
+  }
 }
 
 h1,

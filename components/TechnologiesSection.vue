@@ -60,7 +60,23 @@
         </div>
 
         <img
-          class="absolute h-auto left-1/2 -mt-40 transform -translate-x-1/2 w-56 xl:bottom-0 xl:left-auto xl:mb-16 xl:mr-16 xl:mt-0 xl:right-0 xl:transform-none xl:w-120"
+          class="
+            absolute
+            h-auto
+            left-1/2
+            -mt-40
+            transform
+            -translate-x-1/2
+            w-56
+            xl:bottom-0
+            xl:left-auto
+            xl:mb-16
+            xl:mr-16
+            xl:mt-0
+            xl:right-0
+            xl:transform-none
+            xl:w-120
+          "
           :src="require('~/assets/img/innertube.png?webp')"
         />
       </div>

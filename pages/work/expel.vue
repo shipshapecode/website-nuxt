@@ -19,7 +19,14 @@
       </div>
 
       <div
-        class="bg-expel-green flex flex-wrap h-64 md:h-140 justify-center items-center"
+        class="
+          bg-expel-green
+          flex flex-wrap
+          h-64
+          md:h-140
+          justify-center
+          items-center
+        "
       >
         <div class="w-1/2">
           <inline-svg
@@ -164,9 +171,9 @@ export default {
   },
 
   head() {
-    const title = 'Case Study - Expel';
+    const title = 'Expel Ember.js Enterprise App Development';
     const description =
-      'Learn how Ship Shape helped Expel build a NIST dashboard with custom visualizations.';
+      "See how Ship Shape's enterprise app development team helped Expel create a new, fast Ember.js app that centralizes NIST score tracking.";
     const url = 'https://shipshape.io/work/expel/';
 
     return generateMeta(title, description, url);

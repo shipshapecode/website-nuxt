@@ -24,7 +24,13 @@
     </HeroBlock>
 
     <div
-      class="portfolio-container section flex flex-wrap justify-center bg-grey-transparent"
+      class="
+        portfolio-container
+        section
+        flex flex-wrap
+        justify-center
+        bg-grey-transparent
+      "
     >
       <div class="section-content">
         <h2>Why do I need an app tour?</h2>

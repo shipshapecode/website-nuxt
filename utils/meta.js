@@ -12,7 +12,7 @@ export function generateMeta(title, description, url) {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: `${title} - Ship Shape`
+        content: `${title} | Ship Shape`
       },
       {
         hid: 'og:url',

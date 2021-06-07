@@ -1,7 +1,16 @@
 <template>
   <nav class="bg-transparent flex justify-center w-full">
     <div
-      class="flex items-center justify-between flex-wrap p-6 max-w-8xl w-full lg:px-0"
+      class="
+        flex
+        items-center
+        justify-between
+        flex-wrap
+        p-6
+        max-w-8xl
+        w-full
+        lg:px-0
+      "
     >
       <div class="flex flex-no-shrink items-center pr-2 pt-2">
         <nuxt-link to="/" class="logo inline-flex" itemprop="url">
