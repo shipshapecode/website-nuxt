@@ -42,9 +42,9 @@ export default {
   },
 
   head() {
-    const title = 'Whiskey Web and Whatnot - Podcast';
+    const title = 'Whiskey, Web, & Whatnot: A Software Engineering Podcast';
     const description =
-      'Join Robbie and Chuck from Ship Shape as they discuss whiskey, web development, and a wide range of whatnot.';
+      'Join Ship Shape CEO Robbie Wagner and COO Chuck Carpenter for this software engineering podcast for developers who love whiskey, web development, and whatnot.';
     const url = 'https://shipshape.io/whiskey-web-and-whatnot-podcast';
 
     return generateMeta(title, description, url);

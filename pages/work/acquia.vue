@@ -190,8 +190,8 @@ export default {
   },
 
   head() {
-    const title = 'Case Study - Acquia';
-    const description = `Learn how we improved Acquia's customer retention and app performance!`;
+    const title = 'Acquia Ember.js Enterprise App Development';
+    const description = `See how Ship Shape's enterprise app development team helped Acquia improve the user experience on its Ember.js app and raise renewal rates to nearly 100%.`;
     const url = 'https://shipshape.io/work/acquia/';
 
     return generateMeta(title, description, url);

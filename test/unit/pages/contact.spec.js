@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 import { setupTest, createPage } from '@nuxt/test-utils';
 
-describe('homepage', () => {
+describe('contact', () => {
   setupTest({
     browser: true,
     configFile: resolve(__dirname, '../pages/fixtures/nuxt.config.js'),
@@ -12,11 +12,9 @@ describe('homepage', () => {
     }
   });
 
-  test('should render content', async () => {
-    const page = await createPage('/');
-    const hero = await page.innerHTML('.hero');
-    expect(hero).toContain(
-      'We specialize in custom software and app development'
-    );
+  test('meta is correct', async () => {
+    const page = await createPage('/contact/');
+    const title = await page.innerHTML('title');
+    expect(title).toContain('Contact Our Software Consultants | Ship Shape');
   });
 });
