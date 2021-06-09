@@ -1,18 +1,12 @@
 <template>
-  <div>
-    <HeroBlock class="home">
+  <div class="relative">
+    <HeroBlock class="bg-white home">
       <template #content>
-        <h1>Welcome Aboard!</h1>
+        <h1>Our software consultants make waves</h1>
 
-        <p>
-          We specialize in custom software and app development by leveraging the
-          latest in Next.js, Ember.js, Nuxt and open source. Our passion lies in
-          building full stack web apps, mentoring teams and providing impactful
-          solutions for the development community.
-        </p>
         <div>
-          <nuxt-link to="/contact/" class="btn btn-navy">
-            Let's build together
+          <nuxt-link to="/contact/" class="btn btn-red">
+            Come on board
           </nuxt-link>
         </div>
       </template>
@@ -23,17 +17,37 @@
           :src="require('~/assets/img/hero-images/landing.png?webp')"
         />
       </template>
+
+      <template #waves>
+        <inline-svg
+          class="
+            absolute
+            bottom-0
+            h-auto
+            transform
+            translate-y-1/2
+            w-full
+            z-0
+            xl:translate-y-2/3
+          "
+          src="/svgs/waves.svg"
+        />
+      </template>
     </HeroBlock>
 
-    <WorkedWith />
+    <div
+      class="bg-gradient-to-b from-ocean-gradient-start to-navy relative z-10"
+    >
+      <WorkedWith />
 
-    <SelectCaseStudies />
+      <SelectCaseStudies />
 
-    <ProcessSection />
+      <ProcessSection />
 
-    <TechnologiesSection />
+      <TechnologiesSection />
 
-    <RecentBlogPosts :posts="posts" />
+      <RecentBlogPosts :posts="posts" />
+    </div>
   </div>
 </template>
 

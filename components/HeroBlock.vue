@@ -1,6 +1,6 @@
 <template>
-  <div class="hero flex flex-wrap justify-center">
-    <div class="section-content mb-8">
+  <div class="hero flex flex-wrap justify-center relative">
+    <div class="section-content mb-8 relative z-10">
       <div
         class="
           flex flex-wrap
@@ -21,5 +21,6 @@
         </div>
       </div>
     </div>
+    <slot name="waves" />
   </div>
 </template>
