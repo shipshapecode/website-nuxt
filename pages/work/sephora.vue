@@ -10,7 +10,14 @@
       </div>
 
       <div
-        class="bg-black flex flex-wrap h-64 md:h-140 justify-center items-center"
+        class="
+          bg-black
+          flex flex-wrap
+          h-64
+          md:h-140
+          justify-center
+          items-center
+        "
       >
         <div class="w-1/2">
           <inline-svg
@@ -31,7 +38,7 @@
           <img
             alt="An overview of NIST scores, broken down by category and visualized in a radar graph."
             class="flex"
-            src="/img/work/expel/nist-overview.png"
+            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
           />
         </div>
       </div>
@@ -49,7 +56,7 @@
           <img
             alt="The protect NIST category is selected and scores are filtered to that category."
             class="flex"
-            src="/img/work/expel/nist-selected.png"
+            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
           />
         </div>
       </div>
@@ -63,7 +70,7 @@
           <img
             alt="The edit mode for scores, showing a simple user interface with scoring criteria for guidance."
             class="flex"
-            src="/img/work/expel/nist-edit-scores.png"
+            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
           />
         </div>
       </div>
@@ -79,7 +86,7 @@
           <img
             alt="Graphs indicating the progress made in various NIST categories."
             class="flex"
-            src="/img/work/expel/nist-progress-graphs.png"
+            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
           />
         </div>
       </div>
