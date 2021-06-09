@@ -3,12 +3,18 @@
     <div class="section flex flex-wrap justify-center">
       <div class="section-content">
         <div class="flex flex-col mb-12 w-full">
-          <h1>Our Work</h1>
+          <h1>
+            Let’s get your enterprise app in
+            <span class="italic">ship shape</span>
+          </h1>
 
           <p class="max-w-3xl">
-            Unlike large corporations with offshore developers, Ship Shape
-            crafts homegrown, bespoke solutions to solve problems. This is how
-            we're making waves for clients nationwide like Netflix and Sephora.
+            Whether you’re charting a new course for engineering success or
+            saving an app that’s capsized, our software developers are here to
+            strengthen your products <span class="italic">and</span> your
+            people. Together, we’ll solve your most complex challenges, reach
+            your destination with ease, and grow your team’s knowledge along the
+            way.
           </p>
         </div>
 

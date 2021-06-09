@@ -5,7 +5,7 @@
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/netflix.svg" />
 
         <p class="lg:h-12">
-          Building finance tools for the world's number one streaming platform.
+          Increased efficiency and data granularity with enhanced finance tools
         </p>
 
         <nuxt-link class="btn btn-navy mb-12" to="/work/netflix/">
@@ -19,7 +19,8 @@
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/expel.svg" />
 
         <p class="lg:h-12">
-          Building a NIST dashboard with custom visualizations.
+          Centralized NIST score tracking and improved performance with a
+          modernized app
         </p>
 
         <nuxt-link class="btn btn-navy mb-12" to="/work/expel/">
@@ -47,7 +48,8 @@
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/jebbit.svg" />
 
         <p class="lg:h-12">
-          Simplifying the way Jebbit customers create their marketing campaigns.
+          Improved the user experience to support all customers and close a
+          major new client
         </p>
 
         <nuxt-link class="btn btn-navy mb-12" to="/work/jebbit/">
@@ -61,8 +63,8 @@
         <inline-svg class="h-10 mb-3 w-auto" src="/svgs/clients/acquia.svg" />
 
         <p class="lg:h-12">
-          Rebuild the personalization platform for a better usability
-          experience.
+          Raised renewal rates to nearly 100% by updating the user experience
+          and fixing data issues
         </p>
 
         <nuxt-link class="btn btn-navy mb-12" to="/work/acquia/">
