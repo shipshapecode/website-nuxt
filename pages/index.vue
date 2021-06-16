@@ -38,9 +38,9 @@
     <div
       class="bg-gradient-to-b from-ocean-gradient-start to-navy relative z-10"
     >
-      <WorkedWith />
+      <WeKnowTheRopes />
 
-      <SelectCaseStudies />
+      <BigNames />
 
       <ProcessSection />
 
@@ -52,22 +52,23 @@
 </template>
 
 <script>
+import BigNames from '~/components/BigNames.vue';
 import HeroBlock from '~/components/HeroBlock.vue';
 import ProcessSection from '~/components/ProcessSection.vue';
 import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
-import SelectCaseStudies from '~/components/SelectCaseStudies.vue';
 import TechnologiesSection from '~/components/TechnologiesSection.vue';
-import WorkedWith from '~/components/WorkedWith.vue';
+import WeKnowTheRopes from '~/components/WeKnowTheRopes.vue';
+
 import { generateMeta } from '~/utils/meta';
 
 export default {
   components: {
+    BigNames,
     HeroBlock,
     ProcessSection,
     RecentBlogPosts,
-    SelectCaseStudies,
     TechnologiesSection,
-    WorkedWith
+    WeKnowTheRopes
   },
   async asyncData({ $content }) {
     const posts = await $content('blog/posts')
