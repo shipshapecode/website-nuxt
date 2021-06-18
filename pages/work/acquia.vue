@@ -181,14 +181,9 @@
 </template>
 
 <script>
-import BottomLinks from '~/components/BottomLinks.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    BottomLinks
-  },
-
   head() {
     const title = 'Acquia Ember.js Enterprise App Development';
     const description = `See how Ship Shape's enterprise app development team helped Acquia improve the user experience on its Ember.js app and raise renewal rates to nearly 100%.`;

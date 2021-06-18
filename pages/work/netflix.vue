@@ -132,14 +132,9 @@
 </template>
 
 <script>
-import BottomLinks from '~/components/BottomLinks.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    BottomLinks
-  },
-
   head() {
     const title = 'Netflix Ember.js Finance Dashboard';
     const description =

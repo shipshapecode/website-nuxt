@@ -100,16 +100,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import WorkedWith from '~/components/WorkedWith.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    WorkedWith
-  },
-
   head() {
     const title = 'Nuxt.js Software Consultants & Developers';
     const description =

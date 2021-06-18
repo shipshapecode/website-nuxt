@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap justify-center py-16 px-8" data-aos="fade">
-    <div class="section-content bg-grey-transparent divide-y-2 p-8 md:p-20">
+    <div class="section-content bg-white divide-y-2 p-8 md:p-20">
       <div class="flex flex-wrap justify-between w-full md:flex-nowrap">
         <div class="max-w-3xl">
           <h3 class="text-3xl lg:text-4xl">

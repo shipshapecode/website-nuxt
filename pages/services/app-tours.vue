@@ -107,16 +107,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import WhyShepherd from '~/components/WhyShepherd.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    WhyShepherd
-  },
-
   head() {
     const title = 'App Tours with Shepherd.js';
     const description =

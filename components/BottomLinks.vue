@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div
     class="
       border-t-2 border-grey-transparent border-solid
@@ -17,23 +17,23 @@
         w-1/2
         hover:bg-grey-transparent
       "
-      :to="previousLink"
+      :to="props.previousLink"
     >
       <span class="text-navy text-sm lg:text-xl"> Previous </span>
 
       <h3 class="text-xl lg:text-4xl">
-        {{ previousLinkText }}
+        {{ props.previousLinkText }}
       </h3>
     </nuxt-link>
 
     <nuxt-link
       class="flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-grey-transparent"
-      :to="nextLink"
+      :to="props.nextLink"
     >
       <span class="text-navy text-sm lg:text-xl">Next Up</span>
 
       <h3 class="text-xl lg:text-4xl">
-        {{ nextLinkText }}
+        {{ props.nextLinkText }}
       </h3>
     </nuxt-link>
   </div>

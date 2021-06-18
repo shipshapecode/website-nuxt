@@ -33,14 +33,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock
-  },
-
   head() {
     const title = 'Whiskey, Web, & Whatnot: A Software Engineering Podcast';
     const description =

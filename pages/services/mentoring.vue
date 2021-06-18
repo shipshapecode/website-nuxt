@@ -29,16 +29,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import MentoringBlurbs from '~/components/MentoringBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    MentoringBlurbs
-  },
-
   head() {
     const title = 'Ember & Open Source Mentoring';
     const description =

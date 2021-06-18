@@ -179,8 +179,8 @@
 
   .footer-logo {
     path {
-      fill: $gold;
-      stroke: $gold;
+      fill: $white;
+      stroke: $white;
       stroke-width: 1.25rem;
     }
   }
@@ -200,14 +200,14 @@
     .social-links {
       svg {
         path {
-          fill: $gold;
+          fill: $white;
           transition-duration: 0.25s;
           transition-property: fill;
         }
 
         &:hover {
           path {
-            fill: $grey-transparent;
+            fill: $grey;
           }
         }
       }

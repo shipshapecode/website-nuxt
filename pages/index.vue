@@ -38,6 +38,8 @@
     <div
       class="bg-gradient-to-b from-ocean-gradient-start to-navy relative z-10"
     >
+      <BuildTheFuture />
+
       <WeKnowTheRopes />
 
       <BigNames />
@@ -52,24 +54,9 @@
 </template>
 
 <script>
-import BigNames from '~/components/BigNames.vue';
-import HeroBlock from '~/components/HeroBlock.vue';
-import ProcessSection from '~/components/ProcessSection.vue';
-import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
-import TechnologiesSection from '~/components/TechnologiesSection.vue';
-import WeKnowTheRopes from '~/components/WeKnowTheRopes.vue';
-
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    BigNames,
-    HeroBlock,
-    ProcessSection,
-    RecentBlogPosts,
-    TechnologiesSection,
-    WeKnowTheRopes
-  },
   async asyncData({ $content }) {
     const posts = await $content('blog/posts')
       .sortBy('date', 'desc')

@@ -10,11 +10,11 @@
             future-forward technology.
           </p>
         </div>
-        <div class="bg-[#1B3B5D] grid grid-cols-2 text-white">
+        <div class="gap-1 grid grid-cols-2 text-white">
           <div
             v-for="technology in technologies"
             :key="technology.label"
-            class="flex items-center justify-center"
+            class="bg-[#1B3B5D] flex items-center justify-center"
           >
             <a :href="technology.href" :aria-label="technology.label">
               <inline-svg

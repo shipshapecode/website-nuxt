@@ -48,16 +48,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import PortfolioContainer from '~/components/PortfolioContainer.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    PortfolioContainer
-  },
-
   head() {
     const title = 'Open Source Software';
     const description =

@@ -180,14 +180,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock
-  },
-
   data() {
     return {
       team: [

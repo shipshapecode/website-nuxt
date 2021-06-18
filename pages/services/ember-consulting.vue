@@ -65,22 +65,9 @@
 </template>
 
 <script>
-import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
-import HeroBlock from '~/components/HeroBlock.vue';
-import WhyEmber from '~/components/WhyEmber';
-import WorkedWith from '~/components/WorkedWith.vue';
-import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    CommunityInvolvement,
-    HeroBlock,
-    RecentBlogPosts,
-    WhyEmber,
-    WorkedWith
-  },
-
   async asyncData({ $content }) {
     const posts = await $content('blog/posts')
       .sortBy('date', 'desc')

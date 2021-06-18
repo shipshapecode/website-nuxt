@@ -191,16 +191,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import WorkedWith from '~/components/WorkedWith.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    WorkedWith
-  },
-
   head() {
     const title = 'App Development Agency';
     const description =

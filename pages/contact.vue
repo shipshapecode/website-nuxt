@@ -14,14 +14,9 @@
 </template>
 
 <script>
-import ContactForm from '~/components/ContactForm.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    ContactForm
-  },
-
   head() {
     const title = 'Contact Our Software Consultants';
     const description =

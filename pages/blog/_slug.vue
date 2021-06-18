@@ -3,13 +3,9 @@
 </template>
 
 <script>
-import BlogPost from '~/components/BlogPost.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    BlogPost
-  },
   scrollToTop: true,
 
   async asyncData({ $content, params }) {

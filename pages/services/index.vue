@@ -28,16 +28,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import ServicesBlurbs from '~/components/ServicesBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    ServicesBlurbs
-  },
-
   head() {
     const title = 'Custom Software Development';
     const description =
