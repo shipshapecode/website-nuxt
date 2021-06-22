@@ -7,17 +7,28 @@
         divide-y-2
         grid grid-cols-1
         p-8
-        md:divide-x-2 md:divide-y-0 md:grid-cols-2 md:p-20
+        md:p-20
+        lg:divide-x-2 lg:divide-y-0 lg:grid-cols-2
       "
     >
-      <div class="flex flex-col p-8 relative text-white md:px-16 md:py-0">
+      <div class="flex flex-col p-8 relative text-white lg:px-16 lg:py-0">
         <inline-svg
           class="h-8 mb-3 self-start w-auto"
           src="/svgs/clients/sephora-white.svg"
         />
 
         <inline-svg
-          class="absolute h-auto mt-12 w-16 top-0 z-0"
+          class="
+            absolute
+            h-auto
+            mt-12
+            w-16
+            top-0
+            transform
+            translate-y-6
+            z-0
+            lg:translate-y-0
+          "
           src="/svgs/quotes.svg"
         />
 
@@ -31,8 +42,8 @@
 
         <div class="flex">
           <img
-            class="border-white h-10 rounded-full w-10"
-            :src="require('~/assets/img/hero-images/app-development.png?webp')"
+            class="border border-white h-10 rounded-full w-10"
+            :src="require('~/assets/img/donald.jpg?webp')"
           />
           <div class="text-grey">
             <h5 class="mb-1 text-grey text-xl">Donald Piret</h5>
@@ -41,14 +52,24 @@
         </div>
       </div>
 
-      <div class="flex flex-col p-8 relative text-white md:px-16 md:py-0">
+      <div class="flex flex-col p-8 relative text-white lg:px-16 lg:py-0">
         <inline-svg
           class="fill-white h-8 mb-3 self-start w-auto"
           src="/svgs/clients/expel.svg"
         />
 
         <inline-svg
-          class="absolute h-auto mt-12 w-16 top-0 z-0"
+          class="
+            absolute
+            h-auto
+            mt-12
+            w-16
+            top-0
+            transform
+            translate-y-6
+            z-0
+            lg:translate-y-0
+          "
           src="/svgs/quotes.svg"
         />
 
@@ -64,8 +85,8 @@
 
         <div class="flex">
           <img
-            class="border-white h-10 rounded-full w-10"
-            :src="require('~/assets/img/hero-images/app-development.png?webp')"
+            class="border border-white h-10 rounded-full w-10"
+            :src="require('~/assets/img/roger.jpg?webp')"
           />
           <div class="text-grey">
             <h5 class="mb-1 text-grey text-xl">Roger Studner</h5>
