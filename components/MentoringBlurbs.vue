@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div class="bg-navy section flex flex-wrap justify-center">
     <div class="section-content">
       <div class="text-center">

@@ -1,22 +1,5 @@
 <template>
-  <footer class="wave text-base" lazy-background="/img/sea.png">
-    <div class="footer-top" data-aos="zoom-in-up">
-      <div class="text-center pt-32 lg:pb-32">
-        <inline-svg class="inline m-8" src="/svgs/compass.svg" />
-
-        <h3 class="font-bold leading-none p-4 text-5xl text-white">
-          Already convinced?
-        </h3>
-
-        <p class="p-4 text-gold">
-          Let us help you exceed your company and team goals.
-        </p>
-
-        <nuxt-link class="btn btn-gold inline-block m-12" to="/contact/">
-          Let's talk
-        </nuxt-link>
-      </div>
-    </div>
+  <footer class="wave text-base">
     <div class="footer-bottom flex flex-wrap w-full justify-center">
       <div class="max-w-8xl p-8 w-full">
         <div class="flex justify-center lg:justify-start w-full">

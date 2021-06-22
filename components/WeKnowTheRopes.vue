@@ -1,7 +1,7 @@
 <template>
   <div class="bg-navy flex flex-wrap justify-center px-8 py-32" data-aos="fade">
     <div class="section-content">
-      <div class="grid grid-cols-1 w-full md:grid-cols-2">
+      <div class="grid grid-cols-1 gap-x-24 w-full lg:grid-cols-2">
         <div>
           <h3 class="text-4xl text-white lg:text-5xl">We know the ropes</h3>
           <p class="text-white">
@@ -10,11 +10,11 @@
             future-forward technology.
           </p>
         </div>
-        <div class="gap-1 grid grid-cols-2 text-white">
+        <div class="gap-1 grid grid-cols-2 auto-rows-fr text-white">
           <div
             v-for="technology in technologies"
             :key="technology.label"
-            class="bg-[#1B3B5D] flex items-center justify-center"
+            class="bg-[#1B3B5D] flex items-center justify-center p-8 md:p-0"
           >
             <a :href="technology.href" :aria-label="technology.label">
               <inline-svg

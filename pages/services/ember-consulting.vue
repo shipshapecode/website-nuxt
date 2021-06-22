@@ -9,7 +9,7 @@
           using Ember.js.
         </p>
         <div>
-          <nuxt-link class="btn btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-red" to="/contact/">
             Start consultation
           </nuxt-link>
         </div>

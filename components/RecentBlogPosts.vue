@@ -1,10 +1,10 @@
 <template>
-  <div class="section bg-navy flex flex-wrap justify-center">
+  <div class="section bg-white flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap justify-center w-full">
-          <h3 class="text-center text-white lg:text-left">
-            Ship Shape Insights
+          <h3 class="text-center text-navy lg:text-left">
+            Ahoy - advice and insights ahead!
           </h3>
 
           <p class="text-center w-full">
@@ -16,7 +16,7 @@
         <div
           class="
             grid grid-cols-1
-            gap-2
+            gap-1
             justify-center
             mb-4
             w-full
@@ -26,7 +26,7 @@
           <div
             v-for="post in posts"
             :key="post.slug"
-            class="bg-navy-card-dark flex flex-col m-4 p-8 rounded-md"
+            class="bg-grey-transparent flex flex-col p-8 rounded-md"
           >
             <div class="text-red">
               {{ $dateFns.format(post.date) }}
@@ -41,7 +41,7 @@
                 leading-8
                 min-h-24
                 my-2
-                text-white text-2xl
+                text-navy text-2xl
                 hover:text-red
               "
               :to="`/blog/${post.slug}/`"
@@ -56,7 +56,7 @@
         </div>
 
         <div class="text-center w-full">
-          <nuxt-link to="/blog/" class="btn btn-white mb-12">
+          <nuxt-link to="/blog/" class="btn btn-red mb-12">
             View all posts
           </nuxt-link>
         </div>
@@ -78,11 +78,11 @@ export default {
 
 <style lang="scss">
 .blog-link {
-  color: $white;
+  color: $navy;
 
   &:active,
   &:visited {
-    color: $white;
+    color: $navy;
   }
 
   &:hover {

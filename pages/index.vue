@@ -44,9 +44,7 @@
 
       <BigNames />
 
-      <ProcessSection />
-
-      <TechnologiesSection />
+      <DoubleQuotes />
 
       <RecentBlogPosts :posts="posts" />
     </div>

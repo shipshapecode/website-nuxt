@@ -1,4 +1,4 @@
-<template>
+<template functional>
   <div class="section flex flex-wrap justify-center">
     <div class="section-content">
       <h2>Why use Ember?</h2>
