@@ -32,14 +32,19 @@
 <script>
 const technologies = [
   {
-    href: 'https://emberjs.com/',
+    href: '/services/ember-consulting/',
     imgSrc: '/svgs/technologies/ember.svg',
     label: 'Ember.js'
   },
   {
-    href: 'https://www.electronjs.org/',
-    imgSrc: '/svgs/technologies/electron.svg',
-    label: 'Electron'
+    href: '/services/nuxt-consulting/',
+    imgSrc: '/svgs/technologies/nuxt.svg',
+    label: 'Nuxt.js'
+  },
+  {
+    href: '/services/next-consulting/',
+    imgSrc: '/svgs/technologies/next.svg',
+    label: 'Next.js'
   },
   {
     href: 'https://tailwindcss.com/',
@@ -47,19 +52,14 @@ const technologies = [
     label: 'Tailwind CSS'
   },
   {
-    href: 'https://nuxtjs.org/',
-    imgSrc: '/svgs/technologies/nuxt.svg',
-    label: 'Nuxt.js'
-  },
-  {
     href: 'https://www.serverless.com/',
     imgSrc: '/svgs/technologies/serverless.svg',
     label: 'Serverless'
   },
   {
-    href: 'https://nextjs.org/',
-    imgSrc: '/svgs/technologies/next.svg',
-    label: 'Next.js'
+    href: 'https://www.electronjs.org/',
+    imgSrc: '/svgs/technologies/electron.svg',
+    label: 'Electron'
   }
 ];
 

@@ -44,6 +44,8 @@
 
       <BigNames />
 
+      <WhyUsGrid />
+
       <DoubleQuotes :testimonials="testimonials" />
 
       <RecentBlogPosts :posts="posts" />

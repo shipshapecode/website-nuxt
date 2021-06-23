@@ -24,8 +24,10 @@
           "
         >
           <div
-            v-for="post in posts"
+            v-for="(post, index) in posts"
             :key="post.slug"
+            data-aos="flip-down"
+            :data-aos-delay="index * 200"
             class="bg-grey-transparent flex flex-col p-8 rounded-md"
           >
             <div class="text-red">
