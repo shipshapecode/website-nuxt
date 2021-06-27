@@ -9,7 +9,7 @@
           developers.
         </p>
         <div>
-          <nuxt-link to="/contact/" class="btn btn-navy">
+          <nuxt-link to="/contact/" class="btn btn-red">
             Join our community
           </nuxt-link>
         </div>

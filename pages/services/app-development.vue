@@ -10,7 +10,7 @@
             progressive web apps.
           </p>
           <div>
-            <nuxt-link class="btn btn-navy" to="/contact/">
+            <nuxt-link class="btn btn-red" to="/contact/">
               Let's build together
             </nuxt-link>
           </div>

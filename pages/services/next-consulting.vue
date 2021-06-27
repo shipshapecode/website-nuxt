@@ -11,7 +11,7 @@
           mission critical problems in a fraction of the time.
         </p>
         <div>
-          <nuxt-link class="btn btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-red" to="/contact/">
             Get started
           </nuxt-link>
         </div>

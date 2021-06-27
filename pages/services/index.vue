@@ -9,7 +9,7 @@
           up.
         </p>
         <div>
-          <nuxt-link class="btn btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-red" to="/contact/">
             Work with us
           </nuxt-link>
         </div>

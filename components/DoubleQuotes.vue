@@ -36,7 +36,7 @@
           src="/svgs/quotes.svg"
         />
 
-        <p class="flex-grow relative p-6 z-10">
+        <p class="flex-grow leading-normal relative p-6 z-10">
           {{ testimonial.quote }}
         </p>
 
