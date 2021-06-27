@@ -2,7 +2,9 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock class="nuxt-consulting">
       <template #content>
-        <h1 itemprop="name">Next.js Consulting</h1>
+        <h1 itemprop="name">
+          Boost performance and easily make the leap from React to Next.js
+        </h1>
         <p>
           Next.js gives you the best developer experience with all the features
           you need for production: hybrid static & server rendering, TypeScript
@@ -12,7 +14,7 @@
         </p>
         <div>
           <nuxt-link class="btn btn-red" to="/contact/">
-            Get started
+            Let’s get started
           </nuxt-link>
         </div>
       </template>

@@ -30,6 +30,7 @@
             :data-aos-delay="index * 200"
             class="bg-grey-transparent flex flex-col p-8 rounded-md"
           >
+            <inline-svg class="h-auto w-10" src="/svgs/fish.svg" />
             <div class="text-red">
               {{ $dateFns.format(post.date) }}
             </div>
