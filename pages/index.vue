@@ -49,6 +49,8 @@
       <DoubleQuotes :testimonials="testimonials" />
 
       <RecentBlogPosts :posts="posts" />
+
+      <NewsletterSignup />
     </div>
   </div>
 </template>
