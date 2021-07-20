@@ -30,8 +30,8 @@
             :data-aos-delay="index * 200"
             class="bg-grey-transparent flex flex-col p-8 rounded-md"
           >
-            <inline-svg class="h-auto w-10" src="/svgs/fish.svg" />
-            <div class="text-red">
+            <div class="flex">
+              <inline-svg class="h-auto mr-4 w-10" src="/svgs/fish.svg" />
               {{ $dateFns.format(post.date) }}
             </div>
 
@@ -52,7 +52,7 @@
               {{ post.linktitle || post.title }}
             </nuxt-link>
 
-            <div class="attribution bottom-0 mb-4 text-red">
+            <div class="attribution bottom-0 mb-4">
               By {{ post.author.name }}
             </div>
           </div>

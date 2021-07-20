@@ -25,7 +25,7 @@ module.exports = {
       'ocean-gradient-start': '#BAD8DB',
       gold: '#BBA46F',
       grey: '#5F6976',
-      'grey-light': '#909BA0',
+      'grey-light': '#647982',
       'grey-transparent': 'rgba(236, 243, 246, 50)',
       'jebbit-green': '#7ec0b2',
       red: '#FF7884',
