@@ -2,15 +2,11 @@
   <div class="section bg-white flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex flex-wrap justify-center">
-        <div class="flex flex-wrap justify-center w-full">
-          <h3 class="text-center text-navy lg:text-left">
-            Ahoy - advice and insights ahead!
-          </h3>
-
-          <p class="text-center w-full">
-            Let’s get down to the nitty gritty about the latest trends in
-            Ember.js, Nuxt.js, JavaScript and more.
-          </p>
+        <div class="flex flex-wrap items-center justify-between mb-8 w-full">
+          <h3 class="m-0 text-navy">Ahoy - advice and insights ahead!</h3>
+          <nuxt-link to="/blog/" class="btn btn-red">
+            See more insights
+          </nuxt-link>
         </div>
 
         <div
@@ -28,7 +24,7 @@
             :key="post.slug"
             data-aos="flip-down"
             :data-aos-delay="index * 200"
-            class="bg-grey-transparent flex flex-col p-8 rounded-md"
+            class="bg-grey-transparent flex flex-col px-8 py-16 rounded-md"
           >
             <div class="flex">
               <inline-svg class="h-auto mr-4 w-10" src="/svgs/fish.svg" />
@@ -56,12 +52,6 @@
               By {{ post.author.name }}
             </div>
           </div>
-        </div>
-
-        <div class="text-center w-full">
-          <nuxt-link to="/blog/" class="btn btn-red mb-12">
-            View all posts
-          </nuxt-link>
         </div>
       </div>
     </div>

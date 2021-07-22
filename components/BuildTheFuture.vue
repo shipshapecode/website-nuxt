@@ -7,16 +7,16 @@
         divide-y-2
         grid grid-cols-1
         p-8
-        md:divide-x-2 md:divide-y-0 md:grid-cols-2 md:p-20
+        lg:divide-x-2 lg:divide-y-0 lg:grid-cols-2 lg:p-20
       "
     >
-      <div class="flex items-center justify-center p-8 md:px-16 md:py-0">
+      <div class="flex items-center justify-center p-8 lg:px-16 lg:py-0">
         <img
-          class="h-auto m-auto w-full"
+          class="h-auto m-auto max-w-md w-full"
           :src="require('~/assets/img/hero-images/app-development.png?webp')"
         />
       </div>
-      <div class="p-8 md:px-16 md:py-0">
+      <div class="p-8 lg:px-16 lg:py-0">
         <h3 class="leading-tight text-4xl lg:text-5xl">
           Let’s build the future together
         </h3>
