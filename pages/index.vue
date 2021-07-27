@@ -4,7 +4,7 @@
       <template #content>
         <h1>Our software consultants make waves</h1>
 
-        <div>
+        <div class="flex justify-center w-full lg:justify-start">
           <nuxt-link to="/contact/" class="btn btn-red">
             Come on board
           </nuxt-link>

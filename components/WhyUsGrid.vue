@@ -2,12 +2,16 @@
   <div class="section bg-white flex flex-wrap justify-center">
     <div class="section-content">
       <div class="gap-6 grid grid-cols-1 lg:grid-cols-3">
-        <div class="flex flex-col h-full justify-between p-20">
+        <div class="flex flex-col h-full justify-between p-5 md:p-20">
           <h2>We’ll get your product in ship shape</h2>
           <img
             class="h-auto m-auto max-w-md w-full"
             :src="require('~/assets/img/innertube.png?webp')"
           />
+
+          <nuxt-link class="btn btn-red mt-10" to="/about/"
+            >Meet Our Crew</nuxt-link
+          >
         </div>
 
         <div

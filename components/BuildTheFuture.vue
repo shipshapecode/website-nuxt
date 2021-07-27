@@ -4,22 +4,20 @@
       class="
         section-content
         bg-white
-        divide-y-2
+        divide-grey-transparent divide-y-2
         grid grid-cols-1
         p-8
-        lg:divide-x-2 lg:divide-y-0 lg:grid-cols-2 lg:p-20
+        lg:divide-x-2 lg:divide-y-0 lg:grid-cols-2 lg:p-10
       "
     >
-      <div class="flex items-center justify-center p-8 lg:px-16 lg:py-0">
+      <div class="flex items-center justify-center p-8 w-full lg:pr-20">
         <img
-          class="h-auto m-auto max-w-md w-full"
+          class="h-auto m-auto max-w-md w-full lg:max-w-full"
           :src="require('~/assets/img/hero-images/app-development.png?webp')"
         />
       </div>
-      <div class="p-8 lg:px-16 lg:py-0">
-        <h3 class="leading-tight text-4xl lg:text-5xl">
-          Let’s build the future together
-        </h3>
+      <div class="flex flex-col justify-center p-8 w-full lg:pl-20">
+        <h2>Let’s build the future together</h2>
 
         <p>
           Ship Shape’s software consultants solve complex software and app

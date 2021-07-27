@@ -1,11 +1,6 @@
 .btn {
-  @apply font-bold inline-block pb-2 pl-4 pr-4 pt-2 rounded text-sm;
-}
-
-@screen md {
-  .btn {
-    @apply pb-4 pl-12 pr-12 pt-4 text-base whitespace-nowrap;
-  }
+  @apply font-bold inline-block px-16 py-5 rounded text-center whitespace-nowrap;
+  font-size: 16px
 }
 
 .btn-gold {

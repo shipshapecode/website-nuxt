@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 gap-x-24 w-full lg:grid-cols-2">
         <div>
           <inline-svg class="h-auto mb-4 w-10" src="/svgs/fish.svg" />
-          <h3 class="text-4xl text-white lg:text-5xl">We know the ropes</h3>
+          <h2 class="text-white">We know the ropes</h2>
           <p class="text-white">
             Ship Shape is a full-stack engineering and app development company
             that specializes in JavaScript frameworks and scalable,

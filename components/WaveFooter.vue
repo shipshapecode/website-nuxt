@@ -23,15 +23,18 @@
                   Services
                 </h4>
 
-                <nuxt-link to="/services/app-development/" class="block">
+                <nuxt-link
+                  to="/services/app-development/"
+                  class="block leading-8"
+                >
                   App Development
                 </nuxt-link>
 
-                <nuxt-link to="/services/mentoring/" class="block">
+                <nuxt-link to="/services/mentoring/" class="block leading-8">
                   Mentoring
                 </nuxt-link>
 
-                <nuxt-link to="/services/open-source/" class="block">
+                <nuxt-link to="/services/open-source/" class="block leading-8">
                   Open Source
                 </nuxt-link>
               </div>
@@ -41,19 +44,28 @@
                   Specialties
                 </h4>
 
-                <nuxt-link to="/services/app-tours/" class="block">
+                <nuxt-link to="/services/app-tours/" class="block leading-8">
                   App Tours
                 </nuxt-link>
 
-                <nuxt-link to="/services/next-consulting/" class="block">
+                <nuxt-link
+                  to="/services/next-consulting/"
+                  class="block leading-8"
+                >
                   Next.js Consulting
                 </nuxt-link>
 
-                <nuxt-link to="/services/ember-consulting/" class="block">
+                <nuxt-link
+                  to="/services/ember-consulting/"
+                  class="block leading-8"
+                >
                   Ember Consulting
                 </nuxt-link>
 
-                <nuxt-link to="/services/nuxt-consulting/" class="block">
+                <nuxt-link
+                  to="/services/nuxt-consulting/"
+                  class="block leading-8"
+                >
                   Nuxt.js Consulting
                 </nuxt-link>
               </div>
@@ -65,11 +77,17 @@
                   Company
                 </h4>
 
-                <nuxt-link to="/about/" class="block"> About </nuxt-link>
+                <nuxt-link to="/about/" class="block leading-8">
+                  About
+                </nuxt-link>
 
-                <nuxt-link to="/work/" class="block"> Work </nuxt-link>
+                <nuxt-link to="/work/" class="block leading-8">
+                  Work
+                </nuxt-link>
 
-                <nuxt-link to="/blog/" class="block"> Blog </nuxt-link>
+                <nuxt-link to="/blog/" class="block leading-8">
+                  Blog
+                </nuxt-link>
 
                 <nuxt-link to="/whiskey-web-and-whatnot-podcast/" class="block">
                   Podcast
@@ -81,19 +99,27 @@
                   Connect
                 </h4>
 
-                <nuxt-link to="/contact/" class="block"> Contact </nuxt-link>
+                <nuxt-link to="/contact/" class="block leading-8">
+                  Contact
+                </nuxt-link>
 
-                <a href="https://github.com/shipshapecode" class="block">
+                <a
+                  href="https://github.com/shipshapecode"
+                  class="block leading-8"
+                >
                   GitHub
                 </a>
 
-                <a href="https://twitter.com/shipshapecode" class="block">
+                <a
+                  href="https://twitter.com/shipshapecode"
+                  class="block leading-8"
+                >
                   Twitter
                 </a>
 
                 <a
                   href="https://www.linkedin.com/company/ship-shape/"
-                  class="block"
+                  class="block leading-8"
                 >
                   LinkedIn
                 </a>

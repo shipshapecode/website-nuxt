@@ -23,8 +23,6 @@
       </template>
     </HeroBlock>
 
-    <WorkedWith />
-
     <div class="bg-navy section flex flex-wrap justify-center">
       <div class="section-content">
         <h2 class="text-center text-white w-full">Why use Nuxt?</h2>

@@ -23,8 +23,6 @@
       </template>
     </HeroBlock>
 
-    <WorkedWith />
-
     <div
       class="section quote bg-grey-transparent flex flex-wrap justify-center"
     >

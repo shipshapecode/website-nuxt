@@ -32,7 +32,7 @@
             <meta itemprop="width" content="128" />
           </div>
           <div
-            class="font-medium -mt-1 text-3xl"
+            class="font-medium text-3xl"
             :class="{
               'text-navy': $route.name !== 'about',
               'text-white': $route.name === 'about'

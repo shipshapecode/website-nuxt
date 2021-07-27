@@ -4,7 +4,7 @@
       class="
         section-content
         bg-navy
-        divide-y-2
+        divide-grey divide-y-2
         grid grid-cols-1
         p-8
         md:p-20
@@ -36,13 +36,13 @@
           src="/svgs/quotes.svg"
         />
 
-        <p class="flex-grow leading-normal relative p-6 z-10">
+        <p class="flex-grow relative p-8 z-10">
           {{ testimonial.quote }}
         </p>
 
         <div class="flex px-6">
           <img
-            class="border border-white h-10 mr-4 rounded-full w-10"
+            class="border-2 border-white h-16 mr-4 rounded-full w-16"
             :src="require(`~/assets/img/${testimonial.imgSrc}.jpg?webp`)"
           />
           <div class="text-grey">
