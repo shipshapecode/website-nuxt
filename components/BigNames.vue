@@ -11,7 +11,7 @@
     >
       <div class="flex flex-wrap justify-between w-full lg:flex-nowrap">
         <div class="max-w-3xl">
-          <h3 class="text-3xl lg:text-4xl">
+          <h3>
             Trusted software consultants for today’s big names and tomorrow’s
             leaders
           </h3>

@@ -50,7 +50,7 @@
 
       <RecentBlogPosts :posts="posts" />
 
-      <NewsletterSignup />
+      <!-- <NewsletterSignup /> -->
     </div>
   </div>
 </template>

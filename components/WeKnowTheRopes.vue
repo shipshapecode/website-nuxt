@@ -15,11 +15,11 @@
           <div
             v-for="technology in technologies"
             :key="technology.label"
-            class="bg-[#1B3B5D] flex items-center justify-center p-8 md:p-0"
+            class="bg-[#1B3B5D] flex items-center justify-center"
           >
             <a :href="technology.href" :aria-label="technology.label">
               <inline-svg
-                class="w-full h-full p-4 max-w-xxs lg:p-8"
+                class="w-full h-full max-w-xxs px-6 py-3 lg:py-8"
                 :src="technology.imgSrc"
               />
             </a>
