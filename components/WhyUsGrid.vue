@@ -1,32 +1,49 @@
 <template functional>
-  <div class="section bg-white flex flex-wrap justify-center">
-    <div class="section-content">
-      <div class="gap-6 grid grid-cols-1 lg:grid-cols-3">
-        <div class="flex flex-col h-full justify-between">
-          <h2 class="text-4xl lg:text-5xl">
-            We’ll get your product in ship shape
-          </h2>
-          <img
-            class="h-auto m-auto max-w-md w-full"
-            :src="require('~/assets/img/innertube.png?webp')"
-          />
+  <div class="section flex flex-wrap justify-center bg-white">
+    <div class="section-content relative pb-96 lg:pb-0">
+      <div class="grid gap-x-40 grid-cols-1 lg:grid-cols-3">
+        <div class="flex flex-col justify-between h-full">
+          <div>
+            <h2 class="text-4xl lg:text-5xl">
+              We’ll get your product in ship shape
+            </h2>
 
-          <nuxt-link class="btn btn-red mt-10" to="/about/"
-            >Meet Our Crew</nuxt-link
+            <p class="mt-2">
+              Our engineers provide first-class expertise and service. We are:
+            </p>
+          </div>
+
+          <div
+            class="
+              absolute
+              bottom-0
+              text-center
+              w-full
+              lg:bottom-auto lg:mb-24 lg:relative
+            "
           >
+            <img
+              class="m-auto w-full max-w-xxs h-auto"
+              :src="require('~/assets/img/innertube.png?webp')"
+            />
+
+            <nuxt-link class="btn btn-red inline-block mt-10" to="/about/">
+              Meet Our Crew
+            </nuxt-link>
+          </div>
         </div>
 
         <div
           class="
-            bg-grey-transparent
             grid grid-cols-1
             p-10
+            bg-grey-transparent
             lg:col-span-2 lg:grid-cols-2
           "
         >
           <div class="relative p-4 lg:p-10">
             <inline-svg
-              class="absolute h-5 -ml-8 mt-2 w-5"
+              class="absolute -ml-8 mt-2 w-5 h-5"
               src="/svgs/check.svg"
             />
 
@@ -38,7 +55,7 @@
           </div>
           <div class="relative p-4 lg:p-10">
             <inline-svg
-              class="absolute h-5 -ml-8 mt-2 w-5"
+              class="absolute -ml-8 mt-2 w-5 h-5"
               src="/svgs/check.svg"
             />
 
@@ -51,7 +68,7 @@
           </div>
           <div class="relative p-4 lg:p-10">
             <inline-svg
-              class="absolute h-5 -ml-8 mt-2 w-5"
+              class="absolute -ml-8 mt-2 w-5 h-5"
               src="/svgs/check.svg"
             />
 
@@ -64,7 +81,7 @@
           </div>
           <div class="relative p-4 lg:p-10">
             <inline-svg
-              class="absolute h-5 -ml-8 mt-2 w-5"
+              class="absolute -ml-8 mt-2 w-5 h-5"
               src="/svgs/check.svg"
             />
 
@@ -77,7 +94,7 @@
           </div>
           <div class="relative p-4 lg:p-10">
             <inline-svg
-              class="absolute h-5 -ml-8 mt-2 w-5"
+              class="absolute -ml-8 mt-2 w-5 h-5"
               src="/svgs/check.svg"
             />
 
@@ -91,7 +108,7 @@
           </div>
           <div class="relative p-4 lg:p-10">
             <inline-svg
-              class="absolute h-5 -ml-8 mt-2 w-5"
+              class="absolute -ml-8 mt-2 w-5 h-5"
               src="/svgs/check.svg"
             />
 

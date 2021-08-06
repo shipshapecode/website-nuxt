@@ -6,15 +6,14 @@
         bg-navy
         divide-grey divide-y-2
         grid grid-cols-1
-        p-8
-        md:p-20
-        lg:divide-x-2 lg:divide-y-0 lg:grid-cols-2
+        p-4
+        xl:divide-x-2 xl:divide-y-0 xl:grid-cols-2 xl:p-20
       "
     >
       <div
         v-for="testimonial in testimonials"
         :key="testimonial.name"
-        class="flex flex-col p-4 relative text-white lg:px-16 lg:py-0"
+        class="flex flex-col p-4 relative text-white xl:px-16 xl:py-0"
       >
         <inline-svg
           class="h-8 max-w-full mb-3 self-start w-auto"
@@ -31,16 +30,16 @@
             transform
             translate-y-6
             z-0
-            lg:translate-y-0
+            xl:translate-y-0
           "
           src="/svgs/quotes.svg"
         />
 
-        <p class="flex-grow relative z-10 lg:p-8">
+        <p class="flex-grow relative z-10 xl:p-8">
           {{ testimonial.quote }}
         </p>
 
-        <div class="flex px-6">
+        <div class="flex xl:px-6">
           <img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
             :src="require(`~/assets/img/${testimonial.imgSrc}.jpg?webp`)"

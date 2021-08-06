@@ -6,24 +6,38 @@
         bg-white
         divide-grey-transparent divide-y-2
         p-8
-        md:p-20
+        pb-32
+        relative
+        lg:p-20
       "
     >
       <div class="flex flex-wrap justify-between w-full lg:flex-nowrap">
         <div class="flex-grow max-w-4xl w-full">
-          <h3 class="leading-snug text-3xl lg:text-4xl">
+          <h3 class="leading-tight text-3xl lg:text-4xl">
             Trusted software consultants for today’s big names and tomorrow’s
             leaders
           </h3>
+
           <p>
             Companies around the world hire Ship Shape’s talented engineers to
             solve their toughest software and app development challenges.
           </p>
         </div>
         <div
-          class="flex justify-center self-start w-full lg:justify-end lg:w-auto"
+          class="
+            absolute
+            bottom-0
+            flex
+            justify-center
+            self-start
+            w-full
+            lg:bottom-auto lg:relative lg:justify-end lg:w-auto
+          "
         >
-          <nuxt-link to="/contact/" class="btn btn-red mb-10 w-full lg:w-auto">
+          <nuxt-link
+            to="/contact/"
+            class="btn btn-red mb-10 mr-16 w-full lg:mr-0 lg:w-auto"
+          >
             Dive deeper
           </nuxt-link>
         </div>

@@ -2,9 +2,9 @@
   <div class="relative">
     <HeroBlock class="bg-white home">
       <template #content>
-        <h1>Our software consultants make waves</h1>
+        <h1 class="leading-none">Our software consultants make waves</h1>
 
-        <div class="flex justify-center w-full lg:justify-start">
+        <div class="flex justify-center mt-1 w-full lg:justify-start">
           <nuxt-link to="/contact/" class="btn btn-red w-full lg:w-auto">
             Come on board
           </nuxt-link>
