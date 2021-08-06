@@ -14,10 +14,10 @@
       <div
         v-for="testimonial in testimonials"
         :key="testimonial.name"
-        class="flex flex-col p-8 relative text-white lg:px-16 lg:py-0"
+        class="flex flex-col p-4 relative text-white lg:px-16 lg:py-0"
       >
         <inline-svg
-          class="h-8 mb-3 self-start w-auto"
+          class="h-8 max-w-full mb-3 self-start w-auto"
           :src="testimonial.svgSrc"
         />
 
@@ -36,7 +36,7 @@
           src="/svgs/quotes.svg"
         />
 
-        <p class="flex-grow relative p-8 z-10">
+        <p class="flex-grow relative z-10 lg:p-8">
           {{ testimonial.quote }}
         </p>
 

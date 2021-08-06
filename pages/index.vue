@@ -5,7 +5,7 @@
         <h1>Our software consultants make waves</h1>
 
         <div class="flex justify-center w-full lg:justify-start">
-          <nuxt-link to="/contact/" class="btn btn-red">
+          <nuxt-link to="/contact/" class="btn btn-red w-full lg:w-auto">
             Come on board
           </nuxt-link>
         </div>

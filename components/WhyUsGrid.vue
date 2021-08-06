@@ -2,8 +2,10 @@
   <div class="section bg-white flex flex-wrap justify-center">
     <div class="section-content">
       <div class="gap-6 grid grid-cols-1 lg:grid-cols-3">
-        <div class="flex flex-col h-full justify-between p-5 md:p-20">
-          <h2>We’ll get your product in ship shape</h2>
+        <div class="flex flex-col h-full justify-between">
+          <h2 class="text-4xl lg:text-5xl">
+            We’ll get your product in ship shape
+          </h2>
           <img
             class="h-auto m-auto max-w-md w-full"
             :src="require('~/assets/img/innertube.png?webp')"
@@ -22,7 +24,7 @@
             lg:col-span-2 lg:grid-cols-2
           "
         >
-          <div class="relative p-10">
+          <div class="relative p-4 lg:p-10">
             <inline-svg
               class="absolute h-5 -ml-8 mt-2 w-5"
               src="/svgs/check.svg"
@@ -34,7 +36,7 @@
               everything tech, including frontend and backend system design.
             </p>
           </div>
-          <div class="relative p-10">
+          <div class="relative p-4 lg:p-10">
             <inline-svg
               class="absolute h-5 -ml-8 mt-2 w-5"
               src="/svgs/check.svg"
@@ -47,7 +49,7 @@
               emerging technologies.
             </p>
           </div>
-          <div class="relative p-10">
+          <div class="relative p-4 lg:p-10">
             <inline-svg
               class="absolute h-5 -ml-8 mt-2 w-5"
               src="/svgs/check.svg"
@@ -60,7 +62,7 @@
               your team on track with the latest trends and best practices.
             </p>
           </div>
-          <div class="relative p-10">
+          <div class="relative p-4 lg:p-10">
             <inline-svg
               class="absolute h-5 -ml-8 mt-2 w-5"
               src="/svgs/check.svg"
@@ -73,7 +75,7 @@
               providing expert engineering and upskilling your team.
             </p>
           </div>
-          <div class="relative p-10">
+          <div class="relative p-4 lg:p-10">
             <inline-svg
               class="absolute h-5 -ml-8 mt-2 w-5"
               src="/svgs/check.svg"
@@ -87,7 +89,7 @@
               work delivered.
             </p>
           </div>
-          <div class="relative p-10">
+          <div class="relative p-4 lg:p-10">
             <inline-svg
               class="absolute h-5 -ml-8 mt-2 w-5"
               src="/svgs/check.svg"

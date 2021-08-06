@@ -10,8 +10,8 @@
       "
     >
       <div class="flex flex-wrap justify-between w-full lg:flex-nowrap">
-        <div class="max-w-3xl">
-          <h3>
+        <div class="flex-grow max-w-4xl w-full">
+          <h3 class="leading-snug text-3xl lg:text-4xl">
             Trusted software consultants for today’s big names and tomorrow’s
             leaders
           </h3>
@@ -20,8 +20,10 @@
             solve their toughest software and app development challenges.
           </p>
         </div>
-        <div class="flex justify-center self-start w-full lg:justify-end">
-          <nuxt-link to="/contact/" class="btn btn-red mb-10">
+        <div
+          class="flex justify-center self-start w-full lg:justify-end lg:w-auto"
+        >
+          <nuxt-link to="/contact/" class="btn btn-red mb-10 w-full lg:w-auto">
             Dive deeper
           </nuxt-link>
         </div>
@@ -30,37 +32,53 @@
       <div
         class="grid grid-cols-2 gap-x-20 gap-y-10 py-12 w-full lg:grid-cols-6"
       >
-        <a href="https://www.scoutforpets.com/" aria-label="Scout">
+        <a
+          class="text-center"
+          href="https://www.scoutforpets.com/"
+          aria-label="Scout"
+        >
           <inline-svg
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/scout.svg"
           />
         </a>
-        <nuxt-link to="/work/expel" aria-label="Expel">
+        <nuxt-link class="text-center" to="/work/expel" aria-label="Expel">
           <inline-svg
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/expel.svg"
           />
         </nuxt-link>
-        <nuxt-link to="/work/netflix/" aria-label="Netflix">
+        <nuxt-link class="text-center" to="/work/netflix/" aria-label="Netflix">
           <inline-svg
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/netflix.svg"
           />
         </nuxt-link>
-        <a href="https://www.sephora.sg/" aria-label="Sephora">
+        <a
+          class="text-center"
+          href="https://www.sephora.sg/"
+          aria-label="Sephora"
+        >
           <inline-svg
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/sephora.svg"
           />
         </a>
-        <a href="https://www.whitepages.com/" aria-label="Whitepages">
+        <a
+          class="text-center"
+          href="https://www.whitepages.com/"
+          aria-label="Whitepages"
+        >
           <inline-svg
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/whitepages.svg"
           />
         </a>
-        <a href="https://marianatek.com/" aria-label="Mariana Tek">
+        <a
+          class="text-center"
+          href="https://marianatek.com/"
+          aria-label="Mariana Tek"
+        >
           <inline-svg
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/mariana-tek-full.svg"

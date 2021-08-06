@@ -4,7 +4,10 @@
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap items-center justify-between mb-8 w-full">
           <h3 class="m-0 text-navy">Ahoy - advice and insights ahead!</h3>
-          <nuxt-link to="/blog/" class="btn btn-red">
+          <nuxt-link
+            to="/blog/"
+            class="btn btn-red mt-4 w-full lg:mt-0 lg:w-auto"
+          >
             See more insights
           </nuxt-link>
         </div>
