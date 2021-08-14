@@ -33,8 +33,10 @@ jobs:
 
       # Install project dependencies
       - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn
+      # Install playwright dependencies
+      - name: Install operating system dependencies
+        run: npx playwright install-deps  
       # Generate static site
       - name: Generate static site
         run: yarn generate
