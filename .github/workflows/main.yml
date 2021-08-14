@@ -41,5 +41,5 @@ jobs:
       # Run Jest
       - name: Run Unit Tests
         run: yarn test  
-      # - name: Percy
-      #   run: npx percy snapshot dist/
+      - name: Percy
+        run: npx percy snapshot dist/
