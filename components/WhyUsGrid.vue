@@ -22,9 +22,10 @@
               lg:bottom-auto lg:mb-24 lg:relative
             "
           >
-            <img
+            <nuxt-img
               class="m-auto w-full max-w-xxs h-auto"
-              :src="require('~/assets/img/innertube.png?webp')"
+              format="webp"
+              src="/img/innertube.png"
             />
 
             <nuxt-link class="btn btn-red inline-block mt-10" to="/about/">

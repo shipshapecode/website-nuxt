@@ -2,10 +2,11 @@
   <div>
     <HeroBlock class="about text-white">
       <template #content>
-        <img
+        <nuxt-img
           class="mt-8"
           alt="Ship Shape office desk"
-          :src="require('~/assets/img/about/desk.jpg?webp')"
+          format="webp"
+          src="/img/about/desk.jpg"
         />
       </template>
 
@@ -120,7 +121,7 @@
                 <li v-for="employee in team" :key="employee.name">
                   <div class="space-y-4">
                     <div class="aspect-w-3 aspect-h-2">
-                      <img
+                      <nuxt-img
                         class="
                           filter
                           grayscale
@@ -128,6 +129,7 @@
                           shadow-lg
                           rounded-lg
                         "
+                        format="webp"
                         :src="employee.imgSrc"
                         alt=""
                       />

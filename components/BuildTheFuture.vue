@@ -2,11 +2,10 @@
   <div class="bg-blue-light flex flex-wrap justify-center py-16 px-8">
     <div class="section-content gap-x-48 grid grid-cols-1 lg:grid-cols-2">
       <div class="flex items-center justify-center w-full" data-aos="fade">
-        <img
+        <nuxt-img
           class="h-auto m-auto max-w-md w-full lg:max-w-full"
-          :src="
-            require('~/assets/img/hero-images/app-development-alt.png?webp')
-          "
+          format="webp"
+          src="/img/hero-images/app-development-alt.png"
         />
       </div>
       <div class="flex flex-col justify-center w-full">

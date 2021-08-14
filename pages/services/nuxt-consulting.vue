@@ -16,9 +16,10 @@
       </template>
 
       <template #icon>
-        <img
+        <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
-          :src="require('~/assets/img/hero-images/nuxt-consulting.png?webp')"
+          format="webp"
+          src="/img/hero-images/nuxt-consulting.png"
         />
       </template>
     </HeroBlock>

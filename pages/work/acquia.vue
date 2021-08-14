@@ -54,10 +54,11 @@
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            :src="require('~/assets/img/work/acquia/legacy-lift.png?webp')"
+            format="webp"
+            src="/img/work/acquia/legacy-lift.png"
           />
         </div>
       </div>
@@ -82,12 +83,11 @@
       </div>
       <div class="bg-acquia-blue flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            :src="
-              require('~/assets/img/work/acquia/central_recommendation_entry_1.jpg?webp')
-            "
+            format="webp"
+            src="/img/work/acquia/central_recommendation_entry_1.jpg"
           />
         </div>
       </div>
@@ -103,12 +103,11 @@
       </div>
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            :src="
-              require('~/assets/img/work/acquia/central_target_entry_1.jpg?webp')
-            "
+            format="webp"
+            src="/img/work/acquia/central_target_entry_1.jpg"
           />
         </div>
       </div>
@@ -124,10 +123,11 @@
 
       <div class="bg-acquia-blue flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            :src="require('~/assets/img/work/acquia/builder_index_1.jpg?webp')"
+            format="webp"
+            src="/img/work/acquia/builder_index_1.jpg"
           />
         </div>
       </div>
@@ -142,10 +142,11 @@
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Lift Experience Builder Legacy"
             class="flex"
-            :src="require('~/assets/img/work/acquia/builder_index_5.jpg?webp')"
+            format="webp"
+            src="/img/work/acquia/builder_index_5.jpg"
           />
         </div>
       </div>

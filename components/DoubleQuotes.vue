@@ -41,9 +41,10 @@
         </p>
 
         <div class="flex xl:px-6">
-          <img
+          <nuxt-img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
-            :src="require(`~/assets/img/${testimonial.imgSrc}.jpg?webp`)"
+            format="webp"
+            :src="`/img/${testimonial.imgSrc}.jpg`"
           />
           <div class="text-white">
             <h5 class="mb-1 text-white text-xl">{{ testimonial.name }}</h5>

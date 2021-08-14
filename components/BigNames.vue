@@ -50,19 +50,19 @@
           href="https://www.scoutforpets.com/"
           aria-label="Scout"
         >
-          <inline-svg
+          <nuxt-img
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/scout.svg"
           />
         </a>
         <nuxt-link class="text-center" to="/work/expel" aria-label="Expel">
-          <inline-svg
+          <nuxt-img
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/expel.svg"
           />
         </nuxt-link>
         <nuxt-link class="text-center" to="/work/netflix/" aria-label="Netflix">
-          <inline-svg
+          <nuxt-img
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/netflix.svg"
           />
@@ -72,7 +72,7 @@
           href="https://www.sephora.sg/"
           aria-label="Sephora"
         >
-          <inline-svg
+          <nuxt-img
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/sephora.svg"
           />
@@ -82,7 +82,7 @@
           href="https://www.whitepages.com/"
           aria-label="Whitepages"
         >
-          <inline-svg
+          <nuxt-img
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/whitepages.svg"
           />
@@ -92,7 +92,7 @@
           href="https://marianatek.com/"
           aria-label="Mariana Tek"
         >
-          <inline-svg
+          <nuxt-img
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/mariana-tek-full.svg"
           />

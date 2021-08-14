@@ -7,8 +7,9 @@
       itemtype="http://schema.org/Person"
     >
       <div class="w-12">
-        <img
+        <nuxt-img
           class="h-auto rounded-full w-full"
+          format="webp"
           :src="`${image}`"
           alt="Author image"
           itemprop="image"

@@ -14,8 +14,9 @@
       <div class="flex flex-wrap lg:flex-nowrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <img
+            <nuxt-img
               class="ember-image inline p-8"
+              format="webp"
               src="/img/emberconf-2020.png"
               alt="EmberConf 2020 Ship Shape Sticker"
             />
@@ -63,8 +64,9 @@
 
         <div class="w-full lg:w-1/3">
           <div class="text-center w-full">
-            <img
+            <nuxt-img
               class="ember-image inline p-8"
+              format="webp"
               src="/img/ember-nyc.png"
               alt="Ember.JS NYC Tomster"
             />
@@ -152,8 +154,9 @@
 
         <div class="w-full lg:w-1/3">
           <div class="text-center w-full">
-            <img
+            <nuxt-img
               class="ember-image inline p-8"
+              format="webp"
               src="/img/ember-dc.png"
               alt="Ember.JS DC Tomster in front of the White House"
             />

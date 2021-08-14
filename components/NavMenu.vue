@@ -21,10 +21,11 @@
             itemtype="https://schema.org/ImageObject"
             itemid="shipshapelogo"
           >
-            <img
+            <nuxt-img
               alt="Ship Shape Logo"
               itemprop="url"
               height="50px"
+              format="webp"
               src="/img/logo.png"
               width="50px"
             />
