@@ -12,9 +12,10 @@
       </template>
 
       <template #icon>
-        <img
+        <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
-          :src="require('~/assets/img/hero-images/landing.png?webp')"
+          format="webp"
+          src="/img/hero-images/landing.png"
         />
       </template>
     </HeroBlock>
