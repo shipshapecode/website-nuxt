@@ -36,3 +36,5 @@ jobs:
         run: yarn test  
       - name: Percy
         run: npx percy snapshot dist/
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
