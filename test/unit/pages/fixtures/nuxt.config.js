@@ -150,7 +150,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxt/content',
     '@nuxtjs/feed',
     ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
     '@nuxtjs/tailwindcss',
@@ -168,7 +167,8 @@ export default {
       {
         directiveOnly: true
       }
-    ]
+    ],
+    '@nuxt/content'
   ],
 
   /*

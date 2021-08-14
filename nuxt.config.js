@@ -162,7 +162,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxt/content',
     '@nuxtjs/feed',
     [
       'nuxt-font-loader-strategy',
@@ -214,7 +213,8 @@ export default {
       {
         directiveOnly: true
       }
-    ]
+    ],
+    '@nuxt/content'
   ],
 
   /*
