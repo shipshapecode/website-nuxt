@@ -170,7 +170,7 @@
               </div>
             </div>
 
-            <div class="flex flex-wrap p-4">
+            <div class="flex flex-wrap p-4 text-white">
               Copyright © 2021 Ship Shape Consulting LLC. All rights reserved.
             </div>
           </div>
@@ -182,41 +182,36 @@
 
 <style lang="scss">
 .wave {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @apply bg-navy pt-16;
 
   .footer-logo {
     path {
-      fill: $white;
-      stroke: $white;
+      fill: var(--white);
+      stroke: var(--white);
       stroke-width: 1.25rem;
     }
   }
 
   .footer-bottom {
-    background: #142636;
-
     a {
-      color: $grey;
-      font-weight: bold;
+      @apply font-bold text-white;
 
       &:hover {
-        color: $grey-transparent;
+        @apply text-red-light;
       }
     }
 
     .social-links {
       svg {
         path {
-          fill: $white;
+          fill: var(--white);
           transition-duration: 0.25s;
           transition-property: fill;
         }
 
         &:hover {
           path {
-            fill: $grey;
+            fill: var(--red-light);
           }
         }
       }

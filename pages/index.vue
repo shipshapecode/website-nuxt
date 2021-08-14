@@ -1,10 +1,10 @@
 <template>
   <div class="relative">
-    <HeroBlock class="bg-white home">
+    <HeroBlock class="bg-blue-light home">
       <template #content>
         <h1 class="leading-none">Our software consultants make waves</h1>
 
-        <div class="flex justify-center mt-1 w-full lg:justify-start">
+        <div class="flex justify-center mt-12 w-full lg:justify-start">
           <nuxt-link to="/contact/" class="btn btn-red w-full lg:w-auto">
             Come on board
           </nuxt-link>
@@ -17,27 +17,9 @@
           :src="require('~/assets/img/hero-images/landing.png?webp')"
         />
       </template>
-
-      <template #waves>
-        <inline-svg
-          class="
-            absolute
-            bottom-0
-            h-auto
-            transform
-            translate-y-1/2
-            w-full
-            z-0
-            xl:translate-y-2/3
-          "
-          src="/svgs/waves.svg"
-        />
-      </template>
     </HeroBlock>
 
-    <div
-      class="bg-gradient-to-b from-ocean-gradient-start to-navy relative z-10"
-    >
+    <div class="relative z-10">
       <BuildTheFuture />
 
       <WeKnowTheRopes />

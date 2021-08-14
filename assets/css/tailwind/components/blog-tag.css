@@ -1,5 +1,5 @@
 .blog-tag {
-  @apply bg-grey-transparent inline-block leading-loose my-2 px-4 rounded text-grey-light;
+  @apply bg-blue-light inline-block leading-loose my-2 px-4 rounded text-grey-light;
 }
 
 .blog-tag:active,

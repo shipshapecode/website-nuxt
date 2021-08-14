@@ -1,14 +1,13 @@
 <template>
-  <div class="flex flex-wrap justify-center py-16 px-8" data-aos="fade">
+  <div class="bg-white flex flex-wrap justify-center py-16">
     <div
       class="
         section-content
-        bg-white
-        divide-grey-transparent divide-y-2
+        divide-blue-light divide-y-2
         p-8
         pb-32
         relative
-        lg:p-20
+        lg:pt-32
       "
     >
       <div class="flex flex-wrap justify-between w-full lg:flex-nowrap">

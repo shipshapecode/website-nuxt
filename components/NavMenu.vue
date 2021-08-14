@@ -112,9 +112,6 @@
 
           <nuxt-link
             class="nav-link contact-link"
-            :class="{
-              'contact-link-alt': $route.name === 'about'
-            }"
             to="/contact/"
             @click.native="toggleNavMenu(false)"
           >

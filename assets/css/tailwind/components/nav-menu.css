@@ -10,7 +10,7 @@
 
 .contact-link,
 .nav-link {
-  @apply block font-bold p-4 text-base text-grey;
+  @apply block font-bold p-4 text-base text-navy;
 }
 
 @screen lg {
@@ -21,20 +21,20 @@
 
 .nav-link:active,
 .nav-link:visited {
-  @apply text-grey;
+  @apply text-navy;
 }
 
 .nav-link:hover {
-  @apply text-navy;
+  @apply text-red-light;
 }
 
 @screen lg {
   .contact-link {
-    @apply bg-navy -mt-12 inset-auto pt-16 static text-white w-auto;
+    @apply bg-red -mt-12 inset-auto pt-16 rounded-b static text-white w-auto;
   }
 
   .contact-link:hover {
-    @apply text-gold;
+    @apply bg-red-light text-white;
   }
 
   .contact-link:active,
@@ -52,19 +52,6 @@
   }
 
   .nav-link-alt:hover {
-    @apply text-gold;
-  }
-
-  .contact-link-alt {
-    @apply bg-white -mt-12 inset-auto pt-16 static text-navy w-auto;
-  }
-
-  .contact-link-alt:active,
-  .contact-link-alt:visited {
-    @apply text-navy;
-  }
-
-  .contact-link-alt:hover {
-    @apply text-gold;
+    @apply text-red-light;
   }
 }

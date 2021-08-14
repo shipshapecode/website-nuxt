@@ -21,6 +21,5 @@
         </div>
       </div>
     </div>
-    <slot name="waves" />
   </div>
 </template>

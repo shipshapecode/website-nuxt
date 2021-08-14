@@ -23,9 +23,7 @@
       </template>
     </HeroBlock>
 
-    <div
-      class="section quote bg-grey-transparent flex flex-wrap justify-center"
-    >
+    <div class="section quote bg-blue-light flex flex-wrap justify-center">
       <div class="section-content">
         <div class="font-bold text-5xl">“</div>
 

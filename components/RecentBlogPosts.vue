@@ -1,5 +1,5 @@
 <template>
-  <div class="section bg-white flex flex-wrap justify-center">
+  <div class="waves section bg-blue-light flex flex-wrap justify-center">
     <div class="section-content">
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap items-center justify-between mb-8 w-full">
@@ -27,7 +27,7 @@
             :key="post.slug"
             data-aos="flip-down"
             :data-aos-delay="index * 200"
-            class="bg-grey-transparent flex flex-col px-8 py-16 rounded-md"
+            class="bg-white flex flex-col px-8 py-16 rounded"
           >
             <div class="flex">
               <inline-svg class="h-auto mr-4 w-10" src="/svgs/fish.svg" />
@@ -74,15 +74,15 @@ export default {
 
 <style lang="scss">
 .blog-link {
-  color: $navy;
+  @apply text-navy;
 
   &:active,
   &:visited {
-    color: $navy;
+    @apply text-navy;
   }
 
   &:hover {
-    color: $red;
+    @apply text-red;
   }
 }
 </style>

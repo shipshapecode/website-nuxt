@@ -1,7 +1,7 @@
 <template functional>
   <div
     class="
-      border-t-2 border-grey-transparent border-solid
+      border-t-2 border-blue-light border-solid
       flex flex-wrap
       mt-24
       w-full
@@ -9,13 +9,13 @@
   >
     <nuxt-link
       class="
-        border-r-2 border-grey-transparent border-solid
+        border-r-2 border-blue-light border-solid
         flex-1
         font-bold
         p-4
         lg:p-12
         w-1/2
-        hover:bg-grey-transparent
+        hover:bg-blue-light
       "
       :to="props.previousLink"
     >
@@ -27,7 +27,7 @@
     </nuxt-link>
 
     <nuxt-link
-      class="flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-grey-transparent"
+      class="flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-blue-light"
       :to="props.nextLink"
     >
       <span class="text-navy text-sm lg:text-xl">Next Up</span>

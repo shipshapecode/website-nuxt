@@ -22,7 +22,7 @@
 
       <div
         class="
-          bg-grey-transparent
+          bg-blue-light
           flex flex-wrap
           h-64
           md:h-140

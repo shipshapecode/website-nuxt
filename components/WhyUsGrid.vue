@@ -37,7 +37,8 @@
           class="
             grid grid-cols-1
             p-10
-            bg-grey-transparent
+            bg-blue-light
+            rounded
             lg:col-span-2 lg:grid-cols-2
           "
         >

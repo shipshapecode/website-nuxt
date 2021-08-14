@@ -1,11 +1,17 @@
 // Shevy
 
 $shevy: (
-  base-font-scale: (3.5, 2.5, 2, 1.5, 1.25, 1),
+  base-font-scale: (
+    3.5,
+    2.5,
+    2,
+    1.5,
+    1.25,
+    1
+  ),
   base-font-size: 18px,
   base-line-height: 1.667,
-  proximity: true
-  // proximity-factor: 0.5
+  proximity: true // proximity-factor: 0.5
 );
 
 @include headings;
@@ -21,24 +27,22 @@ $shevy: (
 }
 
 a {
-  color: $red;
-  text-decoration: none;
+  @apply text-red no-underline;
   transition-duration: 0.25s;
   transition-property: background-color, color, fill;
 
   &:active,
   &:visited {
-    color: $red;
+    @apply text-red;
   }
-  
+
   &:hover {
-    color: $navy;
+    @apply text-navy;
   }
 }
 
 body {
-  background-color: $white;
-  color: $grey-light;
+  @apply bg-white text-grey-light;
   font-family: 'Pier Sans', sans-serif;
   font-weight: lighter;
 }
@@ -60,7 +64,7 @@ h6 {
 
 .fill-white {
   path {
-    fill: $white;
+    fill: var(--white);
   }
 }
 
@@ -69,11 +73,10 @@ h6 {
 }
 
 .learn-more {
-  color: $navy;
-  font-weight: bold;
+  @apply font-bold text-navy;
 
   svg {
-    fill: $navy;
+    fill: var(--navy);
     margin-left: 0.25rem;
     transition-duration: 0.25s;
     transition-property: margin-left;
@@ -81,15 +84,14 @@ h6 {
 
   &:active,
   &:visited {
-    color: $navy;
+    @apply text-navy;
   }
 
   &:hover {
-    color: $red;
-    cursor: pointer;
+    @apply cursor-pointer text-red;
 
     svg {
-      fill: $red;
+      fill: var(--red);
       margin-left: 0.75rem;
     }
   }
@@ -101,4 +103,27 @@ h6 {
 
 .section-content {
   @apply max-w-8xl w-full;
+}
+
+.waves {
+  position: relative;
+
+  &::after {
+    background-image: url(/svgs/waves.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 2560px;
+    bottom: -95px;
+    content: '';
+    height: 160px;
+    position: absolute;
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 2560px) {
+    &::after {
+      background-size: 101vw;
+      height: 300px;
+    }
+  }
 }

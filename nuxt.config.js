@@ -148,6 +148,7 @@ export default {
         }
       }
     ],
+    '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     '@nuxtjs/style-resources'

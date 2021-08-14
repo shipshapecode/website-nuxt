@@ -1,14 +1,20 @@
 <template>
   <div
-    class="bg-navy flex flex-wrap justify-center px-8 py-16 lg:py-32"
-    data-aos="fade"
+    class="
+      waves
+      bg-blue-light
+      flex flex-wrap
+      justify-center
+      px-8
+      py-16
+      lg:py-32
+    "
   >
     <div class="section-content">
       <div class="grid grid-cols-1 gap-x-48 w-full lg:grid-cols-2">
-        <div>
-          <inline-svg class="h-auto mb-6 w-10" src="/svgs/fish.svg" />
-          <h2 class="text-4xl lg:text-5xl text-white">We know the ropes</h2>
-          <p class="text-white">
+        <div class="flex flex-col justify-center">
+          <h2 class="text-4xl lg:text-5xl">We know the ropes</h2>
+          <p>
             Ship Shape is a full-stack engineering and app development company
             that specializes in JavaScript frameworks and scalable,
             future-forward technology.
@@ -18,10 +24,10 @@
           <div
             v-for="technology in technologies"
             :key="technology.label"
-            class="bg-[#1B3B5D] flex items-center justify-center"
+            class="bg-navy flex items-center justify-center rounded"
           >
             <a :href="technology.href" :aria-label="technology.label">
-              <inline-svg
+              <nuxt-img
                 class="w-full h-full max-w-xxs px-6 py-3"
                 :src="technology.imgSrc"
               />

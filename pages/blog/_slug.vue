@@ -124,7 +124,7 @@ export default {
     }
 
     &:not([class*='hljs']) {
-      background-color: $grey-transparent;
+      background-color: var(--blue-light);
       border: none;
       border-radius: 2px;
       font-size: 0.8rem;
@@ -178,14 +178,14 @@ export default {
 }
 
 a {
-  color: $red;
+  @apply text-red;
 
   &:visited {
-    color: $red;
+    @apply text-red;
   }
 
   &:hover {
-    color: $navy;
+    @apply text-navy;
   }
 }
 </style>

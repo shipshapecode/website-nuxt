@@ -25,7 +25,7 @@
 
     <PortfolioContainer />
 
-    <div class="section bg-grey-transparent flex flex-wrap justify-center">
+    <div class="section bg-blue-light flex flex-wrap justify-center">
       <div class="section-content">
         <h2>Sponsored Open Source</h2>
 

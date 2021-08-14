@@ -1,5 +1,5 @@
 <template>
-  <div class="section bg-grey-transparent flex flex-wrap justify-center">
+  <div class="section bg-blue-light flex flex-wrap justify-center">
     <div class="section-content">
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div

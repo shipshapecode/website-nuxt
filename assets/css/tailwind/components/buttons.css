@@ -3,10 +3,6 @@
   font-size: 16px
 }
 
-.btn-gold {
-  @apply bg-gold text-white;
-}
-
 .btn-navy {
   @apply bg-navy text-white;
 }
@@ -24,21 +20,21 @@
   @apply text-navy;
 }
 
-.btn-gold:active,
 .btn-navy:active,
 .btn-red:active {
   @apply text-white;
 }
 
-.btn-gold:visited,
 .btn-navy:visited,
 .btn-red:visited {
   @apply text-white;
 }
 
-.btn-gold:hover,
 .btn-navy:hover,
-.btn-red:hover,
 .btn-white:hover {
-  @apply bg-grey-transparent text-navy;
+  @apply bg-blue-light text-navy;
+}
+
+.btn-red:hover {
+  @apply bg-red-light text-white;
 }

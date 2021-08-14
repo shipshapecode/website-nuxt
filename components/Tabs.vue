@@ -47,8 +47,7 @@ export default {
   transition-property: background-color, box-shadow, color, fill;
 
   nav {
-    background: $transparent;
-    text-align: left;
+    @apply bg-transparent text-left;
 
     ul {
       justify-content: start;
@@ -62,30 +61,27 @@ export default {
         margin-bottom: 0;
 
         a {
-          align-items: center;
-          box-shadow: inset 0 -2px $grey-transparent;
-          color: $grey-light;
+          @apply flex items-center text-grey-light whitespace-nowrap w-full;
+          box-shadow: inset 0 -2px var(--blue-light);
           display: flex;
           flex: 1 0 auto;
           font-size: 22px;
           font-weight: bold;
           letter-spacing: 1px;
           padding: 10px 20px 10px 10px;
-          white-space: nowrap;
-          width: 100%;
 
           &:hover {
-            box-shadow: inset 0 -2px $navy;
-            color: $navy;
+            @apply text-navy;
+            box-shadow: inset 0 -2px var(--navy);
           }
         }
 
         &.tab-current {
-          background: $transparent;
+          @apply bg-transparent;
 
           a {
-            box-shadow: inset 0 -2px $navy;
-            color: $navy;
+            @apply text-navy;
+            box-shadow: inset 0 -2px var(--navy);
           }
         }
       }
@@ -98,7 +94,7 @@ export default {
     text-align: left;
 
     p {
-      color: $grey-light;
+      color: var(--grey-light);
       font-size: 18px;
       font-weight: lighter;
       line-height: 2;

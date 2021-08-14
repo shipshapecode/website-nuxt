@@ -1,14 +1,19 @@
-$inherit: inherit;
-$transparent: transparent;
+:root {
+  --inherit: inherit;
+  --transparent: transparent;
 
-$black: #000000;
-$gold: #BBA46F;
-$grey: #5F6976;
-$grey-light: #647982;
-$grey-transparent: rgba(236, 243, 246, 50);
-$navy: #00213B;
-$navy-light: #073256;
-$red: #EF898B;
-$white: #FFFFFF;
-// client specific branding colors
-$jebbit: #7ec0b2;
+  --black: #000000;
+  --blue-light: #f3fafb;
+  --grey: #5f6976;
+  --grey-light: #647982;
+  --navy: #1b3b5d;
+  --navy-light: #073256;
+  --red: #ed6a5e;
+  --red-light: #f9ada0;
+  --white: #ffffff;
+  // client specific branding colors
+  --acquia: #31a9e1;
+  --expel: #07a75c;
+  --jebbit: #7ec0b2;
+  --swach: #0a0038;
+}

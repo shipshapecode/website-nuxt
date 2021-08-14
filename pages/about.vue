@@ -248,14 +248,14 @@ export default {
   svg {
     path {
       @apply transition-colors;
-      fill: $navy-light;
+      fill: var(--navy-light);
     }
   }
 
   &:hover {
     svg {
       path {
-        fill: $red;
+        fill: var(--red);
       }
     }
   }

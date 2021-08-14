@@ -29,7 +29,7 @@
         section
         flex flex-wrap
         justify-center
-        bg-grey-transparent
+        bg-blue-light
       "
     >
       <div class="section-content">
