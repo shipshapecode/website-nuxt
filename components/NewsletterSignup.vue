@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="section bg-white flex flex-wrap justify-center">
     <div class="section-content">
       <div class="grid grid-cols-2">

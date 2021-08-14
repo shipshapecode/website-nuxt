@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="hero flex flex-wrap justify-center relative">
     <div class="section-content mb-8 relative z-10">
       <div

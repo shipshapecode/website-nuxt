@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="section flex flex-wrap justify-center bg-blue-light">
     <div class="section-content flex flex-wrap justify-center">
       <div class="max-w-4xl pb-24 w-full">

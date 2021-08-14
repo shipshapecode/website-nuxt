@@ -1,4 +1,4 @@
-<template functional>
+<template>
   <div class="section flex flex-wrap justify-center">
     <div class="section-content">
       <h2>Why use Shepherd?</h2>
