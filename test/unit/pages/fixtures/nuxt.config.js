@@ -137,6 +137,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module', // TODO: get stylelint passing,
+    '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources'
   ],
