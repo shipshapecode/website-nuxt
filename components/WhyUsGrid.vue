@@ -2,7 +2,7 @@
   <div class="section flex flex-wrap justify-center bg-white">
     <div class="section-content relative pb-96 lg:pb-0">
       <div class="grid gap-x-40 grid-cols-1 lg:grid-cols-3">
-        <div class="flex flex-col justify-between h-full" data-aos="slide-up">
+        <div class="flex flex-col justify-between h-full" data-aos="fade">
           <div>
             <h2 class="text-4xl lg:text-5xl">
               We’ll get your product in ship shape
