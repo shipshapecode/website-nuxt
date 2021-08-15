@@ -36,7 +36,7 @@
                 Our Open Source Contributions
               </h3>
 
-              <p class="flex flex-grow">
+              <p class="flex flex-grow text-white">
                 Sharing is caring. Ship Shape maintains custom Ember addons
                 while contributing to countless projects throughout the open
                 source community.
@@ -60,7 +60,7 @@
                 Ship Shape's JavaScript Libraries
               </h3>
 
-              <p class="flex flex-grow">
+              <p class="flex flex-grow text-white">
                 At Ship Shape, we’re passionate about all things JavaScript and
                 UI related. We create open source libraries for all to use, like
                 Shepherd.js, so that everyone has an opportunity to build and
@@ -85,7 +85,7 @@
                 Ship Shape's Ember Addons
               </h3>
 
-              <p class="flex flex-grow">
+              <p class="flex flex-grow text-white">
                 Fortune 100 companies use our Ember addons. In fact, Ship
                 Shape's Ember addons have been downloaded millions of times by
                 developers of all backgrounds.

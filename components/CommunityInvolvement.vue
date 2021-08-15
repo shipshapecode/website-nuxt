@@ -40,7 +40,7 @@
 
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <inline-svg
+            <nuxt-img
               class="ember-image inline p-12"
               src="/svgs/emberconf/2019.svg"
             />
@@ -102,7 +102,7 @@
       <div class="flex flex-wrap lg:flex-nowrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <inline-svg
+            <nuxt-img
               class="ember-image inline p-4"
               src="/svgs/ember-cares.svg"
             />
@@ -126,7 +126,7 @@
 
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <inline-svg
+            <nuxt-img
               class="ember-image inline p-12"
               src="/svgs/emberconf.svg"
             />

@@ -3,10 +3,6 @@
   font-size: 16px
 }
 
-.btn-navy {
-  @apply bg-navy text-white;
-}
-
 .btn-red {
   @apply bg-red text-white;
 }
@@ -20,17 +16,14 @@
   @apply text-navy;
 }
 
-.btn-navy:active,
 .btn-red:active {
   @apply text-white;
 }
 
-.btn-navy:visited,
 .btn-red:visited {
   @apply text-white;
 }
 
-.btn-navy:hover,
 .btn-white:hover {
   @apply bg-blue-light text-navy;
 }

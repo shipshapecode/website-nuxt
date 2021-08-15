@@ -263,7 +263,7 @@
               type="submit"
               value="Send Message"
               class="
-                btn btn-navy
+                btn btn-red
                 cursor-pointer
                 inline-flex
                 justify-center

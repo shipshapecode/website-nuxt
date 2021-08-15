@@ -25,10 +25,10 @@
         </template>
       </HeroBlock>
 
-      <div class="section bg-navy flex flex-wrap justify-center">
+      <div class="section bg-blue-light flex flex-wrap justify-center">
         <div class="section-content" data-aos="fade-up">
           <div class="flex flex-col items-center mb-12 text-center w-full">
-            <h2 class="text-5xl text-white">
+            <h2 class="text-5xl text-navy">
               Combining the Best of Web And Mobile
             </h2>
 
@@ -40,7 +40,7 @@
           </div>
 
           <div class="flex flex-wrap justify-center lg:flex-nowrap">
-            <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
+            <div class="bg-navy mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
               <div class="flex flex-wrap items-center justify-center">
                 <div>
                   <inline-svg
@@ -50,7 +50,7 @@
 
                   <h5 class="text-white">Save time and money</h5>
 
-                  <p>
+                  <p class="text-white">
                     PWAs can replace all of the functions of native apps and
                     websites at once. Not only are they easy to maintain across
                     multiple mobile platforms, they are less expensive upfront
@@ -62,7 +62,7 @@
               </div>
             </div>
 
-            <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
+            <div class="bg-navy mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
               <div class="flex flex-wrap items-center justify-center">
                 <div>
                   <inline-svg
@@ -72,7 +72,7 @@
 
                   <h5 class="text-white">Who's Using PWA's?</h5>
 
-                  <p>
+                  <p class="text-white">
                     The benefits of PWAs caught the attention of several market
                     players including Twitter, AliExpress, Alibaba, The
                     Washington Post, Home Depot, Forbes and more.
@@ -125,13 +125,13 @@
     </div>
 
     <div
-      class="section bg-navy flex flex-wrap justify-center"
+      class="section bg-blue-light flex flex-wrap justify-center"
       itemscope
       itemtype="http://schema.org/Service"
     >
       <div class="section-content" data-aos="fade-up">
         <div class="flex flex-col items-center mb-12 text-center w-full">
-          <h2 class="text-5xl text-white">Cross Platform Desktop Apps</h2>
+          <h2 class="text-5xl text-navy">Cross Platform Desktop Apps</h2>
 
           <p class="max-w-3xl">
             In addition to PWAs, which can also be installed on desktop, we have
@@ -143,7 +143,7 @@
         </div>
 
         <div class="flex flex-wrap justify-center lg:flex-nowrap">
-          <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
+          <div class="bg-navy mb-8 p-8 w-full lg:w-1/2 lg:mr-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <inline-svg
@@ -153,7 +153,7 @@
 
                 <h5 class="text-white">Sail into an App Store</h5>
 
-                <p>
+                <p class="text-white">
                   Save time and money. Ship Shape will code to power across many
                   platforms, then deploy on macOS, Windows and Linux, in
                   addition to landing you in macOS and Windows app stores to
@@ -163,7 +163,7 @@
             </div>
           </div>
 
-          <div class="bg-navy-light mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
+          <div class="bg-navy mb-8 p-8 w-full lg:w-1/2 lg:ml-4 lg:p-12">
             <div class="flex flex-wrap items-center justify-center">
               <div>
                 <inline-svg
@@ -173,7 +173,7 @@
 
                 <h5 class="text-white">Ship native apps</h5>
 
-                <p>
+                <p class="text-white">
                   Electron allows your app to use things like native menus and
                   notifications and native installers. It also enables automatic
                   updates and provides a more seamless inegration with macOS,

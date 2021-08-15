@@ -8,7 +8,7 @@
           Increased efficiency and data granularity with enhanced finance tools
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/netflix/">
+        <nuxt-link class="btn btn-red mb-12" to="/work/netflix/">
           View Case
         </nuxt-link>
       </div>
@@ -23,7 +23,7 @@
           modernized app
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/expel/">
+        <nuxt-link class="btn btn-red mb-12" to="/work/expel/">
           View Case
         </nuxt-link>
       </div>
@@ -37,7 +37,7 @@
           Building a cross platform desktop color management tool
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/swach/">
+        <nuxt-link class="btn btn-red mb-12" to="/work/swach/">
           View Case
         </nuxt-link>
       </div>
@@ -52,7 +52,7 @@
           major new client
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/jebbit/">
+        <nuxt-link class="btn btn-red mb-12" to="/work/jebbit/">
           View Case
         </nuxt-link>
       </div>
@@ -67,7 +67,7 @@
           and fixing data issues
         </p>
 
-        <nuxt-link class="btn btn-navy mb-12" to="/work/acquia/">
+        <nuxt-link class="btn btn-red mb-12" to="/work/acquia/">
           View Case
         </nuxt-link>
       </div>

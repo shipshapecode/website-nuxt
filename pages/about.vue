@@ -23,7 +23,7 @@
           </p>
 
           <div>
-            <nuxt-link class="btn btn-white" to="/contact/">
+            <nuxt-link class="btn btn-red" to="/contact/">
               Let's build together
             </nuxt-link>
           </div>
@@ -51,7 +51,7 @@
 
           <h3 class="text-2xl text-white lg:text-4xl">Our Clients</h3>
 
-          <p class="max-w-lg w-full">
+          <p class="max-w-lg text-white w-full">
             Ship Shape works with some of the best. We've exceeded client
             expectations and can't wait to help you with your next project.
           </p>
@@ -76,7 +76,7 @@
 
           <h3 class="text-2xl text-white lg:text-4xl">Our Community</h3>
 
-          <p class="max-w-lg w-full">
+          <p class="max-w-lg text-white w-full">
             Everything we create is a conscious decision to further Ember as a
             framework and as a community.
           </p>
