@@ -1,7 +1,10 @@
 <template>
   <div class="bg-blue-light flex flex-wrap justify-center py-16 px-8">
-    <div class="section-content gap-x-24 grid grid-cols-1 lg:grid-cols-2">
-      <div class="flex items-center justify-center w-full" data-aos="fade">
+    <div
+      class="section-content gap-x-24 grid grid-cols-1 lg:grid-cols-2"
+      data-aos="fade-left"
+    >
+      <div class="flex items-center justify-center w-full">
         <nuxt-img
           class="h-auto max-w-xl mx-auto w-full lg:ml-0"
           format="webp"

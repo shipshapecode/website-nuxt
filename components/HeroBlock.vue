@@ -4,14 +4,14 @@
       <div class="grid grid-cols-1 grid-flow-row lg:grid-cols-5">
         <div
           class="pb-8 pt-2 lg:col-span-3 lg:order-2 lg:pl-24 lg:py-12"
-          data-aos="fade-up"
+          data-aos="fade"
         >
           <slot name="icon" />
         </div>
 
         <div
           class="flex flex-col justify-center lg:col-span-2 lg:order-1"
-          data-aos="fade-up"
+          data-aos="fade"
         >
           <slot name="content" />
         </div>

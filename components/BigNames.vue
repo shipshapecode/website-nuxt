@@ -2,6 +2,7 @@
   <div class="bg-white flex flex-wrap justify-center pb-8 pt-16">
     <div
       class="section-content divide-blue-light divide-y-2 p-8 relative lg:pt-40"
+      data-aos="zoom-in-up"
     >
       <div class="flex flex-wrap justify-between w-full lg:flex-nowrap">
         <div class="flex-grow max-w-4xl w-full">
