@@ -1,14 +1,7 @@
 <template>
-  <div class="bg-white flex flex-wrap justify-center py-16">
+  <div class="bg-white flex flex-wrap justify-center pb-8 pt-16">
     <div
-      class="
-        section-content
-        divide-blue-light divide-y-2
-        p-8
-        pb-32
-        relative
-        lg:pt-32
-      "
+      class="section-content divide-blue-light divide-y-2 p-8 relative lg:pt-40"
     >
       <div class="flex flex-wrap justify-between w-full lg:flex-nowrap">
         <div class="flex-grow max-w-4xl w-full">
@@ -28,14 +21,15 @@
             bottom-0
             flex
             justify-center
+            -mb-8
             self-start
             w-full
-            lg:bottom-auto lg:relative lg:justify-end lg:w-auto
+            lg:bottom-auto lg:mb-0 lg:relative lg:justify-end lg:w-auto
           "
         >
           <nuxt-link
             to="/contact/"
-            class="btn btn-red mb-10 mr-16 w-full lg:mr-0 lg:w-auto"
+            class="btn btn-red mr-16 w-full lg:mb-10 lg:mr-0 lg:w-auto"
           >
             Dive deeper
           </nuxt-link>

@@ -257,7 +257,7 @@ export default {
   &:hover {
     svg {
       path {
-        fill: var(--red);
+        fill: var(--red-light);
       }
     }
   }

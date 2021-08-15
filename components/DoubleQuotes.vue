@@ -1,14 +1,19 @@
 <template>
-  <div class="flex flex-wrap justify-center py-16 px-8" data-aos="fade">
+  <div
+    class="bg-white flex flex-wrap justify-center px-8 lg:py-16"
+    data-aos="fade"
+  >
     <div
       class="
         section-content
         bg-navy
-        divide-grey divide-y-2
         grid grid-cols-1
+        gap-y-10
+        mb-16
         p-4
         rounded
-        xl:divide-x-2 xl:divide-y-0 xl:grid-cols-2 xl:p-20
+        lg:mb-20
+        xl:grid-cols-2 xl:py-20
       "
     >
       <div
@@ -25,13 +30,13 @@
           class="
             absolute
             h-auto
-            mt-12
-            w-16
+            mt-8
             top-0
             transform
             translate-y-6
+            w-8
             z-0
-            xl:translate-y-0
+            xl:mt-12 xl:w-16 xl:translate-y-0
           "
           src="/svgs/quotes.svg"
         />
@@ -40,7 +45,7 @@
           {{ testimonial.quote }}
         </p>
 
-        <div class="flex xl:px-6">
+        <div class="flex items-end xl:px-6">
           <nuxt-img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
             format="webp"
@@ -48,7 +53,7 @@
           />
           <div class="text-white">
             <h5 class="mb-1 text-white text-xl">{{ testimonial.name }}</h5>
-            <p>{{ testimonial.title }}</p>
+            <p class="m-0">{{ testimonial.title }}</p>
           </div>
         </div>
       </div>

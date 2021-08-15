@@ -4,7 +4,7 @@
       <template #content>
         <h1 class="leading-none">Our software consultants make waves</h1>
 
-        <div class="flex justify-center mt-12 w-full lg:justify-start">
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
           <nuxt-link to="/contact/" class="btn btn-red w-full lg:w-auto">
             Come on board
           </nuxt-link>
@@ -13,7 +13,7 @@
 
       <template #icon>
         <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full"
+          class="h-auto max-w-3xl w-full"
           format="webp"
           src="/img/hero-images/landing.png"
         />

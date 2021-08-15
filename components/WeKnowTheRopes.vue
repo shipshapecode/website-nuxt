@@ -7,11 +7,11 @@
       justify-center
       px-8
       py-16
-      lg:py-32
+      lg:py-20 lg:pb-32
     "
   >
     <div class="section-content">
-      <div class="grid grid-cols-1 gap-x-48 w-full lg:grid-cols-2">
+      <div class="grid grid-cols-1 gap-x-24 w-full lg:grid-cols-2">
         <div class="flex flex-col justify-center">
           <h2 class="text-4xl lg:text-5xl">We know the ropes</h2>
           <p>

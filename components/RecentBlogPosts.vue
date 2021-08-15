@@ -1,8 +1,8 @@
 <template>
   <div class="waves section bg-blue-light flex flex-wrap justify-center">
-    <div class="section-content">
+    <div class="section-content lg:mb-8 lg:mt-16">
       <div class="flex flex-wrap justify-center">
-        <div class="flex flex-wrap items-center justify-between mb-8 w-full">
+        <div class="flex flex-wrap items-center justify-between mb-16 w-full">
           <h3 class="m-0 text-navy">Ahoy - advice and insights ahead!</h3>
           <nuxt-link
             to="/blog/"
