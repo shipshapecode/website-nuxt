@@ -227,6 +227,14 @@ export default {
           twitter: '',
           linkedin: 'https://www.linkedin.com/in/kimhanna/',
           github: 'https://github.com/hannakim91'
+        },
+        {
+          name: 'Jessica Justice',
+          title: 'Software Engineer',
+          imgSrc: '/img/blog/authors/jessica.jpg',
+          twitter: '',
+          linkedin: 'https://www.linkedin.com/in/jessica-justice2/',
+          github: 'https://github.com/m1073496'
         }
       ]
     };
