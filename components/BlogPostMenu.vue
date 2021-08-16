@@ -3,12 +3,7 @@
     <div
       v-for="post in posts"
       :key="post.slug"
-      class="
-        blog-post
-        border-b-2 border-grey-transparent border-solid
-        pt-2
-        pb-2
-      "
+      class="blog-post border-b-2 border-blue-light border-solid py-3"
     >
       <nuxt-link class="title" :to="`/blog/${post.slug}/`">
         {{ post.linktitle || post.title }}
@@ -53,7 +48,7 @@ export default {
   }
 
   .title {
-    color: $navy;
+    @apply text-navy;
     font-size: 2rem;
   }
 }

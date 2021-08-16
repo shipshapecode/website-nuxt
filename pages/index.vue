@@ -1,67 +1,81 @@
 <template>
-  <div>
-    <HeroBlock class="home">
+  <div class="relative">
+    <HeroBlock class="bg-blue-light home">
       <template #content>
-        <h1>Welcome Aboard!</h1>
+        <h1 class="leading-none">Our software consultants make waves</h1>
 
-        <p>
-          We specialize in custom software and app development by leveraging the
-          latest in Next.js, Ember.js, Nuxt and open source. Our passion lies in
-          building full stack web apps, mentoring teams and providing impactful
-          solutions for the development community.
-        </p>
-        <div>
-          <nuxt-link to="/contact/" class="btn btn-navy">
-            Let's build together
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
+          <nuxt-link to="/contact/" class="btn btn-red w-full lg:w-auto">
+            Come on board
           </nuxt-link>
         </div>
       </template>
 
       <template #icon>
-        <img
-          class="h-auto m-auto max-w-2xl w-full"
-          :src="require('~/assets/img/hero-images/landing.png?webp')"
+        <nuxt-img
+          class="h-auto max-w-3xl w-full"
+          format="webp"
+          src="/img/hero-images/landing.png"
         />
       </template>
     </HeroBlock>
 
-    <WorkedWith />
+    <div class="relative z-10">
+      <BuildTheFuture />
 
-    <SelectCaseStudies />
+      <WeKnowTheRopes />
 
-    <ProcessSection />
+      <BigNames />
 
-    <TechnologiesSection />
+      <WhyUsGrid />
 
-    <RecentBlogPosts :posts="posts" />
+      <DoubleQuotes :testimonials="testimonials" />
+
+      <RecentBlogPosts :posts="posts" />
+
+      <!-- <NewsletterSignup /> -->
+    </div>
   </div>
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import ProcessSection from '~/components/ProcessSection.vue';
-import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
-import SelectCaseStudies from '~/components/SelectCaseStudies.vue';
-import TechnologiesSection from '~/components/TechnologiesSection.vue';
-import WorkedWith from '~/components/WorkedWith.vue';
 import { generateMeta } from '~/utils/meta';
 
-export default {
-  components: {
-    HeroBlock,
-    ProcessSection,
-    RecentBlogPosts,
-    SelectCaseStudies,
-    TechnologiesSection,
-    WorkedWith
+const testimonials = [
+  {
+    name: 'Donald Piret',
+    title: 'Director of Engineering at Sephora',
+    imgSrc: 'donald',
+    svgSrc: '/svgs/clients/sephora-white.svg',
+    quote: `Ship Shape delivered beyond our expectations. They pointed out things
+          we had never even thought of or knew about. Our team learned a huge
+          amount of new information and new tricks, and we still have them on
+          retainer for very specific questions. Plus, Ship Shape is the
+          friendliest team of engineers I've worked with.`
   },
+  {
+    name: 'Roger Studner',
+    title: 'Chief Architect at Expel',
+    imgSrc: 'roger',
+    svgSrc: '/svgs/clients/expel-white.svg',
+    quote: `Ship Shape was a great aid to us because they were the voice of Ember
+          best practices to keep our code base current, and they were able to
+          deliver on critical features on our roadmap that we did not have the
+          bandwidth to complete on time. I would absolutely recommend Ship Shape
+          to any other business that is looking for an incredibly skilled
+          partner to work closely with their teams to produce and deliver the
+          highest value.`
+  }
+];
+
+export default {
   async asyncData({ $content }) {
     const posts = await $content('blog/posts')
       .sortBy('date', 'desc')
       .limit(3)
       .fetch();
 
-    return { posts };
+    return { posts, testimonials };
   },
   head() {
     const title = 'Top-Tier, Full-Stack Software Consultants';

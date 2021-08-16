@@ -137,6 +137,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module', // TODO: get stylelint passing,
+    '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources'
   ],
@@ -149,7 +150,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxt/content',
     '@nuxtjs/feed',
     ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
     '@nuxtjs/tailwindcss',
@@ -167,7 +167,8 @@ export default {
       {
         directiveOnly: true
       }
-    ]
+    ],
+    '@nuxt/content'
   ],
 
   /*

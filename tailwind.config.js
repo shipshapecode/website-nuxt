@@ -12,24 +12,24 @@ module.exports = {
   },
   theme: {
     colors: {
-      transparent: 'transparent',
+      transparent: 'var(--transparent)',
 
-      'acquia-blue': '#31A9E1',
-      black: '#000000',
-      'expel-green': '#07a75c',
-      navy: '#00213B',
+      'acquia-blue': 'var(--acquia)',
+      black: 'var(--black)',
+      'blue-light': 'var(--blue-light)',
+      'expel-green': 'var(--expel)',
+      navy: 'var(--navy)',
       'navy-card-dark': '#133254',
       'navy-card-light': '#1B3B5E',
       'navy-light': '#073256',
       'netflix-red': '#E50914',
-      gold: '#BBA46F',
-      grey: '#5F6976',
-      'grey-light': '#909BA0',
-      'grey-transparent': 'rgba(236, 243, 246, 50)',
-      'jebbit-green': '#7ec0b2',
-      red: '#EF898B',
-      'swach-purple': '#0A0038',
-      white: '#FFFFFF'
+      grey: 'var(--grey)',
+      'grey-light': 'var(--grey-light)',
+      'jebbit-green': 'var(--jebbit)',
+      red: 'var(--red)',
+      'red-light': 'var(--red-light)',
+      'swach-purple': 'var(--swach)',
+      white: 'var(--white)'
     },
 
     fontSize: {

@@ -25,13 +25,9 @@
 </template>
 
 <script>
-import BlogPostMenu from '~/components/BlogPostMenu.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    BlogPostMenu
-  },
   scrollToTop: true,
 
   async asyncData({ $content }) {

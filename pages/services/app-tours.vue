@@ -9,7 +9,7 @@
           help new users get up to speed quickly with your web app.
         </p>
         <div>
-          <nuxt-link class="btn btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-red" to="/contact/">
             Let's build together
           </nuxt-link>
         </div>
@@ -29,7 +29,7 @@
         section
         flex flex-wrap
         justify-center
-        bg-grey-transparent
+        bg-blue-light
       "
     >
       <div class="section-content">
@@ -107,16 +107,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import WhyShepherd from '~/components/WhyShepherd.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    WhyShepherd
-  },
-
   head() {
     const title = 'App Tours with Shepherd.js';
     const description =

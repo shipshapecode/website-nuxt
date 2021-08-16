@@ -75,6 +75,8 @@ const createSitemapRoutes = async () => {
 export default {
   target: 'static',
 
+  components: true,
+
   /*
    ** Headers of the page
    */
@@ -146,6 +148,7 @@ export default {
         }
       }
     ],
+    '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
     '@nuxtjs/style-resources'
@@ -159,7 +162,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxt/content',
     '@nuxtjs/feed',
     [
       'nuxt-font-loader-strategy',
@@ -211,7 +213,8 @@ export default {
       {
         directiveOnly: true
       }
-    ]
+    ],
+    '@nuxt/content'
   ],
 
   /*

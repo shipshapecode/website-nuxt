@@ -12,11 +12,11 @@ describe('homepage', () => {
     }
   });
 
-  test('should render content', async () => {
+  test('meta is correct', async () => {
     const page = await createPage('/');
-    const hero = await page.innerHTML('.hero');
-    expect(hero).toContain(
-      'We specialize in custom software and app development'
+    const title = await page.innerHTML('title');
+    expect(title).toContain(
+      'Top-Tier, Full-Stack Software Consultants | Ship Shape'
     );
   });
 });

@@ -1,26 +1,9 @@
 <template>
-  <footer class="wave text-base" lazy-background="/img/sea.png">
-    <div class="footer-top" data-aos="zoom-in-up">
-      <div class="text-center pt-32 lg:pb-32">
-        <inline-svg class="inline m-8" src="/svgs/compass.svg" />
-
-        <h3 class="font-bold leading-none p-4 text-5xl text-white">
-          Already convinced?
-        </h3>
-
-        <p class="p-4 text-gold">
-          Let us help you exceed your company and team goals.
-        </p>
-
-        <nuxt-link class="btn btn-gold inline-block m-12" to="/contact/">
-          Let's talk
-        </nuxt-link>
-      </div>
-    </div>
+  <footer class="wave text-base">
     <div class="footer-bottom flex flex-wrap w-full justify-center">
       <div class="max-w-8xl p-8 w-full">
         <div class="flex justify-center lg:justify-start w-full">
-          <inline-svg class="footer-logo h-16 w-16" src="/svgs/logo.svg" />
+          <inline-svg class="footer-logo h-20 w-20" src="/svgs/logo.svg" />
         </div>
 
         <div class="flex flex-wrap justify-center w-full">
@@ -40,15 +23,18 @@
                   Services
                 </h4>
 
-                <nuxt-link to="/services/app-development/" class="block">
+                <nuxt-link
+                  to="/services/app-development/"
+                  class="block leading-8"
+                >
                   App Development
                 </nuxt-link>
 
-                <nuxt-link to="/services/mentoring/" class="block">
+                <nuxt-link to="/services/mentoring/" class="block leading-8">
                   Mentoring
                 </nuxt-link>
 
-                <nuxt-link to="/services/open-source/" class="block">
+                <nuxt-link to="/services/open-source/" class="block leading-8">
                   Open Source
                 </nuxt-link>
               </div>
@@ -58,19 +44,28 @@
                   Specialties
                 </h4>
 
-                <nuxt-link to="/services/app-tours/" class="block">
+                <nuxt-link to="/services/app-tours/" class="block leading-8">
                   App Tours
                 </nuxt-link>
 
-                <nuxt-link to="/services/next-consulting/" class="block">
+                <nuxt-link
+                  to="/services/next-consulting/"
+                  class="block leading-8"
+                >
                   Next.js Consulting
                 </nuxt-link>
 
-                <nuxt-link to="/services/ember-consulting/" class="block">
+                <nuxt-link
+                  to="/services/ember-consulting/"
+                  class="block leading-8"
+                >
                   Ember Consulting
                 </nuxt-link>
 
-                <nuxt-link to="/services/nuxt-consulting/" class="block">
+                <nuxt-link
+                  to="/services/nuxt-consulting/"
+                  class="block leading-8"
+                >
                   Nuxt.js Consulting
                 </nuxt-link>
               </div>
@@ -82,11 +77,17 @@
                   Company
                 </h4>
 
-                <nuxt-link to="/about/" class="block"> About </nuxt-link>
+                <nuxt-link to="/about/" class="block leading-8">
+                  About
+                </nuxt-link>
 
-                <nuxt-link to="/work/" class="block"> Work </nuxt-link>
+                <nuxt-link to="/work/" class="block leading-8">
+                  Work
+                </nuxt-link>
 
-                <nuxt-link to="/blog/" class="block"> Blog </nuxt-link>
+                <nuxt-link to="/blog/" class="block leading-8">
+                  Blog
+                </nuxt-link>
 
                 <nuxt-link to="/whiskey-web-and-whatnot-podcast/" class="block">
                   Podcast
@@ -98,19 +99,27 @@
                   Connect
                 </h4>
 
-                <nuxt-link to="/contact/" class="block"> Contact </nuxt-link>
+                <nuxt-link to="/contact/" class="block leading-8">
+                  Contact
+                </nuxt-link>
 
-                <a href="https://github.com/shipshapecode" class="block">
+                <a
+                  href="https://github.com/shipshapecode"
+                  class="block leading-8"
+                >
                   GitHub
                 </a>
 
-                <a href="https://twitter.com/shipshapecode" class="block">
+                <a
+                  href="https://twitter.com/shipshapecode"
+                  class="block leading-8"
+                >
                   Twitter
                 </a>
 
                 <a
                   href="https://www.linkedin.com/company/ship-shape/"
-                  class="block"
+                  class="block leading-8"
                 >
                   LinkedIn
                 </a>
@@ -161,7 +170,7 @@
               </div>
             </div>
 
-            <div class="flex flex-wrap p-4">
+            <div class="flex flex-wrap p-4 text-white">
               Copyright © 2021 Ship Shape Consulting LLC. All rights reserved.
             </div>
           </div>
@@ -173,41 +182,36 @@
 
 <style lang="scss">
 .wave {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @apply bg-navy pt-24;
 
   .footer-logo {
     path {
-      fill: $gold;
-      stroke: $gold;
+      fill: var(--white);
+      stroke: var(--white);
       stroke-width: 1.25rem;
     }
   }
 
   .footer-bottom {
-    background: #142636;
-
     a {
-      color: $grey;
-      font-weight: bold;
+      @apply font-bold text-white;
 
       &:hover {
-        color: $grey-transparent;
+        @apply text-red-light;
       }
     }
 
     .social-links {
       svg {
         path {
-          fill: $gold;
+          fill: var(--white);
           transition-duration: 0.25s;
           transition-property: fill;
         }
 
         &:hover {
           path {
-            fill: $grey-transparent;
+            fill: var(--red-light);
           }
         }
       }

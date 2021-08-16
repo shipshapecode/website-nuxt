@@ -23,9 +23,10 @@
       </template>
 
       <template #icon>
-        <img
+        <nuxt-img
           class="h-auto m-auto max-w-2xl my-4 rounded-lg w-full"
-          :src="require('~/assets/img/hero-images/www.png?webp')"
+          format="webp"
+          src="/img/hero-images/www.png"
         />
       </template>
     </HeroBlock>
@@ -33,14 +34,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock
-  },
-
   head() {
     const title = 'Whiskey, Web, & Whatnot: A Software Engineering Podcast';
     const description =

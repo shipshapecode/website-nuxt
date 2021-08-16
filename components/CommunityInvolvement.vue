@@ -1,5 +1,5 @@
 <template>
-  <div class="section flex flex-wrap justify-center bg-grey-transparent">
+  <div class="section flex flex-wrap justify-center bg-blue-light">
     <div class="section-content flex flex-wrap justify-center">
       <div class="max-w-4xl pb-24 w-full">
         <h2 class="text-center">Community Involvement</h2>
@@ -14,8 +14,9 @@
       <div class="flex flex-wrap lg:flex-nowrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <img
+            <nuxt-img
               class="ember-image inline p-8"
+              format="webp"
               src="/img/emberconf-2020.png"
               alt="EmberConf 2020 Ship Shape Sticker"
             />
@@ -39,7 +40,7 @@
 
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <inline-svg
+            <nuxt-img
               class="ember-image inline p-12"
               src="/svgs/emberconf/2019.svg"
             />
@@ -63,8 +64,9 @@
 
         <div class="w-full lg:w-1/3">
           <div class="text-center w-full">
-            <img
+            <nuxt-img
               class="ember-image inline p-8"
+              format="webp"
               src="/img/ember-nyc.png"
               alt="Ember.JS NYC Tomster"
             />
@@ -100,7 +102,7 @@
       <div class="flex flex-wrap lg:flex-nowrap">
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <inline-svg
+            <nuxt-img
               class="ember-image inline p-4"
               src="/svgs/ember-cares.svg"
             />
@@ -124,7 +126,7 @@
 
         <div class="w-full lg:mr-12 lg:w-1/3">
           <div class="text-center w-full">
-            <inline-svg
+            <nuxt-img
               class="ember-image inline p-12"
               src="/svgs/emberconf.svg"
             />
@@ -152,8 +154,9 @@
 
         <div class="w-full lg:w-1/3">
           <div class="text-center w-full">
-            <img
+            <nuxt-img
               class="ember-image inline p-8"
+              format="webp"
               src="/img/ember-dc.png"
               alt="Ember.JS DC Tomster in front of the White House"
             />

@@ -49,10 +49,11 @@
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Swach in dark mode showing the palettes screen"
             class="flex"
-            :src="require('~/assets/img/work/swach/palette-dark.png?webp')"
+            format="webp"
+            src="/img/work/swach/palette-dark.png"
           />
         </div>
       </div>
@@ -73,10 +74,11 @@
       </div>
       <div class="bg-swach-purple flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Swach in light mode showing the palettes screen"
             class="flex"
-            :src="require('~/assets/img/work/swach/palette-light.png?webp')"
+            format="webp"
+            src="/img/work/swach/palette-light.png"
           />
         </div>
       </div>
@@ -92,10 +94,11 @@
       </div>
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="The color harmonies tab of Swach, showing a color wheel and color palette."
             class="flex"
-            :src="require('~/assets/img/work/swach/kuler.png?webp')"
+            format="webp"
+            src="/img/work/swach/kuler.png"
           />
         </div>
       </div>
@@ -115,10 +118,11 @@
 
       <div class="bg-swach-purple flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Swach showing the contrast checker tab comparing colors and calculating the WCAG score."
             class="flex"
-            :src="require('~/assets/img/work/swach/contrast-checker.png?webp')"
+            format="webp"
+            src="/img/work/swach/contrast-checker.png"
           />
         </div>
       </div>
@@ -156,14 +160,9 @@
 </template>
 
 <script>
-import BottomLinks from '~/components/BottomLinks.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    BottomLinks
-  },
-
   head() {
     const title = 'Case Study - Swach';
     const description = `Learn how we made Swach into a robust cross platform desktop app for MacOS, Windows, and Linux.`;

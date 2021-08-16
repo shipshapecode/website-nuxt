@@ -1,19 +1,10 @@
 .btn {
-  @apply font-bold inline-block pb-2 pl-4 pr-4 pt-2 rounded text-sm;
+  @apply font-bold inline-block px-16 py-5 rounded text-center whitespace-nowrap;
+  font-size: 16px
 }
 
-@screen md {
-  .btn {
-    @apply pb-4 pl-12 pr-12 pt-4 text-base whitespace-nowrap;
-  }
-}
-
-.btn-gold {
-  @apply bg-gold text-white;
-}
-
-.btn-navy {
-  @apply bg-navy text-white;
+.btn-red {
+  @apply bg-red text-white;
 }
 
 .btn-white {
@@ -25,18 +16,18 @@
   @apply text-navy;
 }
 
-.btn-gold:active,
-.btn-navy:active {
+.btn-red:active {
   @apply text-white;
 }
 
-.btn-gold:visited,
-.btn-navy:visited {
+.btn-red:visited {
   @apply text-white;
 }
 
-.btn-gold:hover,
-.btn-navy:hover,
 .btn-white:hover {
-  @apply bg-grey-transparent text-navy;
+  @apply bg-blue-light text-navy;
+}
+
+.btn-red:hover {
+  @apply bg-red-light text-white;
 }
