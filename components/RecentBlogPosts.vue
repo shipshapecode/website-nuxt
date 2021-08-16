@@ -29,7 +29,7 @@
             :data-aos-delay="index * 200"
             class="bg-white flex flex-col px-8 py-16 rounded"
           >
-            <div class="flex">
+            <div class="flex mb-4">
               <inline-svg class="h-auto mr-4 w-10" src="/svgs/fish.svg" />
               {{ $dateFns.format(post.date) }}
             </div>

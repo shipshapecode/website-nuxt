@@ -3,7 +3,7 @@
     <div class="footer-bottom flex flex-wrap w-full justify-center">
       <div class="max-w-8xl p-8 w-full">
         <div class="flex justify-center lg:justify-start w-full">
-          <inline-svg class="footer-logo h-16 w-16" src="/svgs/logo.svg" />
+          <inline-svg class="footer-logo h-20 w-20" src="/svgs/logo.svg" />
         </div>
 
         <div class="flex flex-wrap justify-center w-full">
@@ -182,7 +182,7 @@
 
 <style lang="scss">
 .wave {
-  @apply bg-navy pt-16;
+  @apply bg-navy pt-24;
 
   .footer-logo {
     path {

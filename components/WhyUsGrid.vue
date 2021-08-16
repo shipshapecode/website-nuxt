@@ -1,14 +1,19 @@
 <template>
   <div class="section flex flex-wrap justify-center bg-white">
-    <div class="section-content relative pb-96 lg:pb-0">
+    <div
+      class="section-content relative mb-10 pb-96 pt-8 lg:mb-0 lg:pb-0 lg:pt-0"
+    >
       <div class="grid gap-x-40 grid-cols-1 lg:grid-cols-3">
-        <div class="flex flex-col justify-between h-full" data-aos="fade">
+        <div
+          class="flex flex-col justify-between h-full lg:py-20"
+          data-aos="fade"
+        >
           <div>
             <h2 class="text-4xl lg:text-5xl">
               We’ll get your product in ship shape
             </h2>
 
-            <p class="mt-2">
+            <p class="my-8">
               Our engineers provide first-class expertise and service. We are:
             </p>
           </div>
@@ -19,7 +24,7 @@
               bottom-0
               text-center
               w-full
-              lg:bottom-auto lg:mb-24 lg:relative
+              lg:bottom-auto lg:relative
             "
           >
             <nuxt-img
@@ -29,7 +34,7 @@
             />
 
             <nuxt-link
-              class="btn btn-red inline-block mt-10 w-full lg:w-auto"
+              class="btn btn-red inline-block mt-6 w-full lg:w-auto"
               to="/about/"
             >
               Meet Our Crew
@@ -40,10 +45,12 @@
         <div
           class="
             grid grid-cols-1
+            gap-x-12
             p-10
             bg-blue-light
             rounded
             lg:col-span-2 lg:grid-cols-2
+            xl:px-16
           "
         >
           <div
@@ -54,11 +61,11 @@
             :data-aos-delay="index * 200"
           >
             <inline-svg
-              class="absolute -ml-8 mt-2 w-5 h-5"
+              class="absolute -ml-8 mt-2 w-4 h-4"
               src="/svgs/check.svg"
             />
 
-            <h4>{{ trait.title }}</h4>
+            <h5>{{ trait.title }}</h5>
             <p>
               {{ trait.description }}
             </p>

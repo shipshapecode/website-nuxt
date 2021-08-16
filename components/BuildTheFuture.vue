@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-blue-light flex flex-wrap justify-center py-16 px-8">
+  <div class="bg-blue-light flex flex-wrap justify-center px-8 py-10 lg:py-16">
     <div
-      class="section-content gap-x-24 grid grid-cols-1 lg:grid-cols-2"
+      class="section-content gap-x-24 gap-y-12 grid grid-cols-1 lg:grid-cols-2"
       data-aos="fade-left"
     >
       <div class="flex items-center justify-center w-full">
         <nuxt-img
-          class="h-auto max-w-xl mx-auto w-full lg:ml-0"
+          class="h-auto max-w-xl mt-8 mx-auto w-full lg:ml-0 lg:mt-0"
           format="webp"
           src="/img/hero-images/app-development-alt.png"
         />

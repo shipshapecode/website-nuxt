@@ -30,22 +30,22 @@
           class="
             absolute
             h-auto
-            mt-8
+            mt-[2.75rem]
             top-0
             transform
             translate-y-6
-            w-8
+            w-10
             z-0
             xl:mt-12 xl:w-16 xl:translate-y-0
           "
           src="/svgs/quotes.svg"
         />
 
-        <p class="flex-grow relative z-10 xl:p-8">
+        <p class="flex-grow p-4 relative z-10 xl:p-8">
           {{ testimonial.quote }}
         </p>
 
-        <div class="flex items-end xl:px-6">
+        <div class="flex items-center px-4 xl:px-6">
           <nuxt-img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
             format="webp"

@@ -1,8 +1,8 @@
 <template>
   <div class="bg-white flex flex-wrap justify-center pb-8 pt-16">
     <div
-      class="section-content divide-blue-light divide-y-2 p-8 relative lg:pt-40"
-      data-aos="zoom-in-up"
+      class="section-content divide-[#D8E3E8] divide-y p-8 relative lg:pt-40"
+      data-aos="fade"
     >
       <div class="flex flex-wrap justify-between w-full lg:flex-nowrap">
         <div class="flex-grow max-w-4xl w-full">
@@ -11,7 +11,7 @@
             leaders
           </h3>
 
-          <p>
+          <p class="pb-6">
             Companies around the world hire Ship Shape’s talented engineers to
             solve their toughest software and app development challenges.
           </p>
