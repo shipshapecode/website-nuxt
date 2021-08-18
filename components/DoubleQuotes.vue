@@ -49,6 +49,7 @@
           <nuxt-img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
             format="webp"
+            :alt="'Headshot of ' + testimonial.name"
             :src="`/img/${testimonial.imgSrc}.jpg`"
           />
           <div class="text-white">

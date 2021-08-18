@@ -32,7 +32,9 @@
             <a :href="technology.href" :aria-label="technology.label">
               <nuxt-img
                 class="w-full h-full max-w-xxs px-6 py-3"
+                loading="lazy"
                 :src="technology.imgSrc"
+                :alt="technology.label + ' logo in white on a navy background.'"
               />
             </a>
           </div>

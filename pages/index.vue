@@ -15,6 +15,7 @@
         <nuxt-img
           class="h-auto max-w-3xl w-full"
           format="webp"
+          loading="lazy"
           src="/img/hero-images/landing.png"
         />
       </template>
