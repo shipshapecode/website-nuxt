@@ -28,6 +28,7 @@
             "
           >
             <nuxt-img
+              alt="Ship Shape octopus mascot in an innertube"
               class="m-auto w-full max-w-xxs h-auto"
               format="webp"
               src="/img/innertube.png"

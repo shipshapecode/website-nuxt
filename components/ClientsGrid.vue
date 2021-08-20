@@ -3,6 +3,7 @@
     <div>
       <a href="https://marianatek.com/" aria-label="Mariana Tek">
         <nuxt-img
+          alt="Mariana Tek logo"
           class="h-8 mb-3 w-auto"
           src="/svgs/clients/mariana-tek-full.svg"
         />
@@ -21,7 +22,11 @@
 
     <div>
       <a href="https://www.scoutforpets.com/" aria-label="Scout">
-        <nuxt-img class="h-8 mb-3 w-auto" src="/svgs/clients/scout-white.svg" />
+        <nuxt-img
+          alt="Scout logo"
+          class="h-8 mb-3 w-auto"
+          src="/svgs/clients/scout-white.svg"
+        />
       </a>
       <p>
         Our partnership with the enterprise app development team from Scout
@@ -51,7 +56,11 @@
 
     <div>
       <a href="https://cos.io/" aria-label="COS">
-        <nuxt-img class="h-8 mb-3 w-auto" src="/svgs/clients/cos.svg" />
+        <nuxt-img
+          alt="Center for Open Science logo"
+          class="h-8 mb-3 w-auto"
+          src="/svgs/clients/cos.svg"
+        />
       </a>
       <p>
         As a non-profit, it’s critical for the Center for Open Science (COS) to
@@ -63,7 +72,11 @@
 
     <div>
       <a href="https://musicat.co/rabble" aria-label="Rabble">
-        <nuxt-img class="h-8 mb-3 w-auto" src="/svgs/clients/rabble.svg" />
+        <nuxt-img
+          alt="Rabble logo"
+          class="h-8 mb-3 w-auto"
+          src="/svgs/clients/rabble.svg"
+        />
       </a>
       <p>
         We partnered with the Rabble team to bring their open-source MUSICat

@@ -13,6 +13,7 @@
 
       <template #icon>
         <nuxt-img
+          alt="Ship Shape octopus mascot, with a pencil in its tentacle, is working hard on Ember, Next.js and Nuxt apps."
           class="h-auto max-w-3xl w-full"
           format="webp"
           loading="lazy"

@@ -46,18 +46,21 @@
           aria-label="Scout"
         >
           <nuxt-img
+            alt="Scout logo"
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/scout.svg"
           />
         </a>
         <nuxt-link class="text-center" to="/work/expel" aria-label="Expel">
           <nuxt-img
+            alt="Expel logo"
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/expel.svg"
           />
         </nuxt-link>
         <nuxt-link class="text-center" to="/work/netflix/" aria-label="Netflix">
           <nuxt-img
+            alt="Netflix logo"
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/netflix.svg"
           />
@@ -68,6 +71,7 @@
           aria-label="Sephora"
         >
           <nuxt-img
+            alt="Sephora logo"
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/sephora.svg"
           />
@@ -78,6 +82,7 @@
           aria-label="Whitepages"
         >
           <nuxt-img
+            alt="Whitepages logo"
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/whitepages.svg"
           />
@@ -88,6 +93,7 @@
           aria-label="Mariana Tek"
         >
           <nuxt-img
+            alt="Mariana Tek logo"
             class="h-full inline w-full max-w-xxs"
             src="/svgs/clients/mariana-tek-full.svg"
           />
