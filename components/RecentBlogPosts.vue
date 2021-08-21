@@ -31,7 +31,7 @@
           >
             <div class="flex mb-4">
               <inline-svg class="h-auto mr-4 w-10" src="/svgs/fish.svg" />
-              {{ $dateFns.format(post.date) }}
+              {{ formatDate(post.date) }}
             </div>
 
             <nuxt-link
@@ -62,12 +62,17 @@
 </template>
 
 <script>
+import { formatDate } from '~/utils/date';
+
 export default {
   props: {
     posts: {
       type: Array,
       default: () => []
     }
+  },
+  methods: {
+    formatDate
   }
 };
 </script>

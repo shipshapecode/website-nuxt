@@ -197,7 +197,6 @@ export default {
         ]
       }
     ],
-    ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
     '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
@@ -278,12 +277,6 @@ export default {
         return `<pre><code class="hljs ${language}">${highlightedCode}</code></pre>`;
       }
     }
-  },
-
-  dateFns: {
-    locales: ['en-US'],
-    defaultLocale: 'en-US',
-    format: 'MM/dd/yyyy'
   },
 
   feed: [

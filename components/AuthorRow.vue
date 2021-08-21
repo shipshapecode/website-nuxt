@@ -30,7 +30,7 @@
     <div class="flex items-center pb-8">
       <div class="pl-2 pb-2">
         <time :datetime="date" itemprop="datePublished dateModified">
-          {{ $dateFns.format(date) }}
+          {{ formatDate(date) }}
         </time>
       </div>
     </div>
@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import { formatDate } from '~/utils/date';
+
 export default {
   props: {
     date: {
@@ -56,6 +58,9 @@ export default {
       type: String,
       default: ''
     }
+  },
+  methods: {
+    formatDate
   }
 };
 </script>

@@ -10,7 +10,7 @@
       </nuxt-link>
 
       <div class="attribution">
-        By {{ post.author.name }} {{ $dateFns.format(post.date) }}
+        By {{ post.author.name }} {{ formatDate(post.date) }}
       </div>
 
       <div class="tags pb-4 pt-4">
@@ -28,12 +28,17 @@
 </template>
 
 <script>
+import { formatDate } from '~/utils/date';
+
 export default {
   props: {
     posts: {
       type: Array,
       default: () => []
     }
+  },
+  methods: {
+    formatDate
   }
 };
 </script>
