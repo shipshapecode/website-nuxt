@@ -23,11 +23,12 @@
           >
             <nuxt-img
               alt="Ship Shape Logo"
+              class="h-[50px] w-auto"
               itemprop="url"
-              height="50px"
+              height="100px"
               format="webp"
               src="/img/logo.png"
-              width="50px"
+              width="100px"
             />
             <meta itemprop="height" content="128" />
             <meta itemprop="width" content="128" />
