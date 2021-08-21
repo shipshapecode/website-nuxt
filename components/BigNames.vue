@@ -48,6 +48,7 @@
           <nuxt-img
             alt="Scout logo"
             class="h-full inline w-full max-w-xxs"
+            loading="lazy"
             src="/svgs/clients/scout.svg"
           />
         </a>
@@ -55,6 +56,7 @@
           <nuxt-img
             alt="Expel logo"
             class="h-full inline w-full max-w-xxs"
+            loading="lazy"
             src="/svgs/clients/expel.svg"
           />
         </nuxt-link>
@@ -62,6 +64,7 @@
           <nuxt-img
             alt="Netflix logo"
             class="h-full inline w-full max-w-xxs"
+            loading="lazy"
             src="/svgs/clients/netflix.svg"
           />
         </nuxt-link>
@@ -73,6 +76,7 @@
           <nuxt-img
             alt="Sephora logo"
             class="h-full inline w-full max-w-xxs"
+            loading="lazy"
             src="/svgs/clients/sephora.svg"
           />
         </a>
@@ -84,6 +88,7 @@
           <nuxt-img
             alt="Whitepages logo"
             class="h-full inline w-full max-w-xxs"
+            loading="lazy"
             src="/svgs/clients/whitepages.svg"
           />
         </a>
@@ -95,6 +100,7 @@
           <nuxt-img
             alt="Mariana Tek logo"
             class="h-full inline w-full max-w-xxs"
+            loading="lazy"
             src="/svgs/clients/mariana-tek-full.svg"
           />
         </a>
