@@ -132,14 +132,14 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module', // TODO: get stylelint passing,
     '@nuxt/image',
     '@nuxtjs/pwa',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/tailwindcss'
   ],
 
   optimizedImages: {
@@ -151,7 +151,6 @@ export default {
    */
   modules: [
     '@nuxtjs/feed',
-    '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
       {
@@ -159,12 +158,6 @@ export default {
         classNames: {
           invalid: 'error'
         }
-      }
-    ],
-    [
-      'nuxt-lazy-load',
-      {
-        directiveOnly: true
       }
     ],
     '@nuxt/content'

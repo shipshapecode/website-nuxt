@@ -134,7 +134,6 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -151,7 +150,8 @@ export default {
     '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/tailwindcss'
   ],
 
   optimizedImages: {
@@ -197,7 +197,6 @@ export default {
         ]
       }
     ],
-    '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
       {
@@ -205,12 +204,6 @@ export default {
         classNames: {
           invalid: 'error'
         }
-      }
-    ],
-    [
-      'nuxt-lazy-load',
-      {
-        directiveOnly: true
       }
     ],
     '@nuxt/content'
