@@ -1,5 +1,12 @@
 <template>
-  <nav class="bg-transparent flex justify-center w-full">
+  <nav
+    v-font="[
+      $getFont('Pier Sans', 'normal'),
+      $getFont('Pier Sans', 700),
+      $getFont('Pier Sans', 300)
+    ]"
+    class="bg-transparent flex justify-center w-full"
+  >
     <div
       class="
         flex
