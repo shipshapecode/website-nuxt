@@ -91,3 +91,5 @@ sw.*
 .DS_Store
 .AppleDouble
 .LSOverride
+# Layer0 generated build directory
+.layer0

@@ -134,6 +134,7 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    ['@layer0/nuxt/module', { layer0SourceMaps: true }],
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
