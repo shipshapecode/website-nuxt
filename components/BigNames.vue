@@ -48,24 +48,30 @@
           <nuxt-img
             alt="Scout logo"
             class="h-full inline w-full max-w-xxs"
+            height="44"
             loading="lazy"
             src="/svgs/clients/scout.svg"
+            width="138"
           />
         </a>
         <nuxt-link class="text-center" to="/work/expel" aria-label="Expel">
           <nuxt-img
             alt="Expel logo"
             class="h-full inline w-full max-w-xxs"
+            height="88"
             loading="lazy"
             src="/svgs/clients/expel.svg"
+            width="275"
           />
         </nuxt-link>
         <nuxt-link class="text-center" to="/work/netflix/" aria-label="Netflix">
           <nuxt-img
             alt="Netflix logo"
             class="h-full inline w-full max-w-xxs"
+            height="37"
             loading="lazy"
             src="/svgs/clients/netflix.svg"
+            width="136"
           />
         </nuxt-link>
         <a
@@ -76,8 +82,10 @@
           <nuxt-img
             alt="Sephora logo"
             class="h-full inline w-full max-w-xxs"
+            height="39"
             loading="lazy"
             src="/svgs/clients/sephora.svg"
+            width="300"
           />
         </a>
         <a
@@ -88,8 +96,10 @@
           <nuxt-img
             alt="Whitepages logo"
             class="h-full inline w-full max-w-xxs"
+            height="32"
             loading="lazy"
             src="/svgs/clients/whitepages.svg"
+            width="122"
           />
         </a>
         <a
@@ -100,8 +110,10 @@
           <nuxt-img
             alt="Mariana Tek logo"
             class="h-full inline w-full max-w-xxs"
+            height="42"
             loading="lazy"
             src="/svgs/clients/mariana-tek-full.svg"
+            width="225"
           />
         </a>
       </div>

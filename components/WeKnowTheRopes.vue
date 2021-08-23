@@ -33,8 +33,10 @@
               <nuxt-img
                 class="w-full h-full max-w-xxs px-6 py-3"
                 loading="lazy"
-                :src="technology.imgSrc"
                 :alt="technology.label + ' logo in white on a navy background.'"
+                :height="technology.height"
+                :src="technology.imgSrc"
+                :width="technology.width"
               />
             </a>
           </div>
@@ -47,34 +49,46 @@
 <script>
 const technologies = [
   {
+    height: '125',
     href: '/services/ember-consulting/',
     imgSrc: '/svgs/technologies/ember.svg',
-    label: 'Ember.js'
+    label: 'Ember.js',
+    width: '300'
   },
   {
+    height: '78',
     href: '/services/nuxt-consulting/',
     imgSrc: '/svgs/technologies/nuxt.svg',
-    label: 'Nuxt.js'
+    label: 'Nuxt.js',
+    width: '414'
   },
   {
+    height: '124',
     href: '/services/next-consulting/',
     imgSrc: '/svgs/technologies/next.svg',
-    label: 'Next.js'
+    label: 'Next.js',
+    width: '207'
   },
   {
+    height: '38',
     href: 'https://tailwindcss.com/',
     imgSrc: '/svgs/technologies/tailwind.svg',
-    label: 'Tailwind CSS'
+    label: 'Tailwind CSS',
+    width: '300'
   },
   {
+    height: '31',
     href: 'https://www.serverless.com/',
     imgSrc: '/svgs/technologies/serverless.svg',
-    label: 'Serverless'
+    label: 'Serverless',
+    width: '204'
   },
   {
+    height: '46',
     href: 'https://www.electronjs.org/',
     imgSrc: '/svgs/technologies/electron.svg',
-    label: 'Electron'
+    label: 'Electron',
+    width: '300'
   }
 ];
 
