@@ -10,16 +10,17 @@
           long term.
         </p>
         <div>
-          <nuxt-link class="btn btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-red" to="/contact/">
             Work with us
           </nuxt-link>
         </div>
       </template>
 
       <template #icon>
-        <img
+        <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
-          :src="require('~/assets/img/hero-images/mentoring.png?webp')"
+          format="webp"
+          src="/img/hero-images/mentoring.png"
         />
       </template>
     </HeroBlock>
@@ -29,16 +30,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import MentoringBlurbs from '~/components/MentoringBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    MentoringBlurbs
-  },
-
   head() {
     const title = 'Ember & Open Source Mentoring';
     const description =

@@ -132,13 +132,14 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module', // TODO: get stylelint passing,
+    '@nuxt/image',
     '@nuxtjs/pwa',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/tailwindcss'
   ],
 
   optimizedImages: {
@@ -149,10 +150,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxt/content',
     '@nuxtjs/feed',
-    ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
-    '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
       {
@@ -162,12 +160,7 @@ export default {
         }
       }
     ],
-    [
-      'nuxt-lazy-load',
-      {
-        directiveOnly: true
-      }
-    ]
+    '@nuxt/content'
   ],
 
   /*
@@ -236,12 +229,6 @@ export default {
         return `<pre><code class="hljs ${language}">${highlightedCode}</code></pre>`;
       }
     }
-  },
-
-  dateFns: {
-    locales: ['en-US'],
-    defaultLocale: 'en-US',
-    format: 'MM/dd/yyyy'
   },
 
   feed: [

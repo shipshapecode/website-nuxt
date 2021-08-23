@@ -21,18 +21,20 @@
             itemtype="https://schema.org/ImageObject"
             itemid="shipshapelogo"
           >
-            <img
+            <nuxt-img
               alt="Ship Shape Logo"
+              class="h-[50px] w-auto"
               itemprop="url"
-              height="50px"
+              height="100px"
+              format="webp"
               src="/img/logo.png"
-              width="50px"
+              width="100px"
             />
             <meta itemprop="height" content="128" />
             <meta itemprop="width" content="128" />
           </div>
           <div
-            class="font-medium -mt-1 text-3xl"
+            class="font-medium text-3xl"
             :class="{
               'text-navy': $route.name !== 'about',
               'text-white': $route.name === 'about'
@@ -112,9 +114,6 @@
 
           <nuxt-link
             class="nav-link contact-link"
-            :class="{
-              'contact-link-alt': $route.name === 'about'
-            }"
             to="/contact/"
             @click.native="toggleNavMenu(false)"
           >

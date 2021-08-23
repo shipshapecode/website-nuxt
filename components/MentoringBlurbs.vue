@@ -24,7 +24,7 @@
               The Ship Shape Retainer Model
             </h3>
 
-            <p class="flex flex-grow">
+            <p class="flex flex-grow text-white">
               We want to remain available for you throughout your projects. Our
               retainer ensures your company has Ship Shape’s full attention for
               a couple of hours per week. Our on-demand retainer model includes
@@ -53,7 +53,7 @@
               Staff Augmentation
             </h3>
 
-            <p class="flex flex-grow">
+            <p class="flex flex-grow text-white">
               Consider us a part of your team, serving as added support and
               on-demand Ember.js experts. Ship Shape joins you in the race to
               complete your project milestones, boost your current workflow or
@@ -80,7 +80,7 @@
 
             <h3 class="text-white text-xl" itemprop="name">Learn the ropes</h3>
 
-            <p class="flex flex-grow">
+            <p class="flex flex-grow text-white">
               Ship Shape created one-on-one programs for in-depth team training
               and mentoring. We help your company refine your skills in the
               latest in Javascript, code writing and Ember.js. development.

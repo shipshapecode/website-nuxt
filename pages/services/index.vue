@@ -9,16 +9,17 @@
           up.
         </p>
         <div>
-          <nuxt-link class="btn btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-red" to="/contact/">
             Work with us
           </nuxt-link>
         </div>
       </template>
 
       <template #icon>
-        <img
+        <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
-          :src="require('~/assets/img/hero-images/services.png?webp')"
+          format="webp"
+          src="/img/hero-images/services.png"
         />
       </template>
     </HeroBlock>
@@ -28,16 +29,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
-import ServicesBlurbs from '~/components/ServicesBlurbs.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock,
-    ServicesBlurbs
-  },
-
   head() {
     const title = 'Custom Software Development';
     const description =

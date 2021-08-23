@@ -58,12 +58,11 @@
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            :src="
-              require('~/assets/img/work/jebbit/jebbit-legacy-builder.png?webp')
-            "
+            format="webp"
+            src="/img/work/jebbit/jebbit-legacy-builder.png"
           />
         </div>
       </div>
@@ -103,12 +102,11 @@
 
       <div class="bg-jebbit-green flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            :src="
-              require('~/assets/img/work/jebbit/jebbit-simple-builder.png?webp')
-            "
+            format="webp"
+            src="/img/work/jebbit/jebbit-simple-builder.png"
           />
         </div>
       </div>
@@ -134,12 +132,11 @@
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            :src="
-              require('~/assets/img/work/jebbit/jebbit-simple-builder_active.png?webp')
-            "
+            format="webp"
+            src="/img/work/jebbit/jebbit-simple-builder_active.png"
           />
         </div>
       </div>
@@ -153,12 +150,11 @@
 
       <div class="bg-jebbit-green flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
+          <nuxt-img
             alt="Jebbit Experience Builder Legacy"
             class="flex"
-            :src="
-              require('~/assets/img/work/jebbit/jebbit-simple-builder_published.png?webp')
-            "
+            format="webp"
+            src="/img/work/jebbit/jebbit-simple-builder_published.png"
           />
         </div>
       </div>
@@ -182,14 +178,9 @@
 </template>
 
 <script>
-import BottomLinks from '~/components/BottomLinks.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    BottomLinks
-  },
-
   head() {
     const title = 'Jebbit Ember.js Enterprise App Development';
     const description =

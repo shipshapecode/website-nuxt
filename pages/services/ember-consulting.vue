@@ -9,25 +9,22 @@
           using Ember.js.
         </p>
         <div>
-          <nuxt-link class="btn btn-navy" to="/contact/">
+          <nuxt-link class="btn btn-red" to="/contact/">
             Start consultation
           </nuxt-link>
         </div>
       </template>
 
       <template #icon>
-        <img
+        <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
-          :src="require('~/assets/img/hero-images/ember-consulting.png?webp')"
+          format="webp"
+          src="/img/hero-images/ember-consulting.png"
         />
       </template>
     </HeroBlock>
 
-    <WorkedWith />
-
-    <div
-      class="section quote bg-grey-transparent flex flex-wrap justify-center"
-    >
+    <div class="section quote bg-blue-light flex flex-wrap justify-center">
       <div class="section-content">
         <div class="font-bold text-5xl">“</div>
 
@@ -65,22 +62,9 @@
 </template>
 
 <script>
-import CommunityInvolvement from '~/components/CommunityInvolvement.vue';
-import HeroBlock from '~/components/HeroBlock.vue';
-import WhyEmber from '~/components/WhyEmber';
-import WorkedWith from '~/components/WorkedWith.vue';
-import RecentBlogPosts from '~/components/RecentBlogPosts.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    CommunityInvolvement,
-    HeroBlock,
-    RecentBlogPosts,
-    WhyEmber,
-    WorkedWith
-  },
-
   async asyncData({ $content }) {
     const posts = await $content('blog/posts')
       .sortBy('date', 'desc')

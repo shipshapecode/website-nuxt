@@ -3,12 +3,18 @@
     <div class="section flex flex-wrap justify-center">
       <div class="section-content">
         <div class="flex flex-col mb-12 w-full">
-          <h1>Our Work</h1>
+          <h1>
+            Let’s get your enterprise app in
+            <span class="italic">ship shape</span>
+          </h1>
 
           <p class="max-w-3xl">
-            Unlike large corporations with offshore developers, Ship Shape
-            crafts homegrown, bespoke solutions to solve problems. This is how
-            we're making waves for clients nationwide like Netflix and Sephora.
+            Whether you’re charting a new course for engineering success or
+            saving an app that’s capsized, our software developers are here to
+            strengthen your products <span class="italic">and</span> your
+            people. Together, we’ll solve your most complex challenges, reach
+            your destination with ease, and grow your team’s knowledge along the
+            way.
           </p>
         </div>
 
@@ -30,7 +36,7 @@
                 Our Open Source Contributions
               </h3>
 
-              <p class="flex flex-grow">
+              <p class="flex flex-grow text-white">
                 Sharing is caring. Ship Shape maintains custom Ember addons
                 while contributing to countless projects throughout the open
                 source community.
@@ -54,7 +60,7 @@
                 Ship Shape's JavaScript Libraries
               </h3>
 
-              <p class="flex flex-grow">
+              <p class="flex flex-grow text-white">
                 At Ship Shape, we’re passionate about all things JavaScript and
                 UI related. We create open source libraries for all to use, like
                 Shepherd.js, so that everyone has an opportunity to build and
@@ -79,7 +85,7 @@
                 Ship Shape's Ember Addons
               </h3>
 
-              <p class="flex flex-grow">
+              <p class="flex flex-grow text-white">
                 Fortune 100 companies use our Ember addons. In fact, Ship
                 Shape's Ember addons have been downloaded millions of times by
                 developers of all backgrounds.
@@ -100,16 +106,9 @@
 </template>
 
 <script>
-import CaseStudiesList from '~/components/CaseStudiesList.vue';
-import ClientsGrid from '~/components/ClientsGrid.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    CaseStudiesList,
-    ClientsGrid
-  },
-
   head() {
     const title = 'Our Work - Enterprise Custom App Development';
     const description =

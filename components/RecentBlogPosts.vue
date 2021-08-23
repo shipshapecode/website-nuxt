@@ -1,22 +1,21 @@
 <template>
-  <div class="section bg-navy flex flex-wrap justify-center">
-    <div class="section-content">
+  <div class="waves section bg-blue-light flex flex-wrap justify-center">
+    <div class="section-content lg:mb-8 lg:mt-16">
       <div class="flex flex-wrap justify-center">
-        <div class="flex flex-wrap justify-center w-full">
-          <h3 class="text-center text-white lg:text-left">
-            Ship Shape Insights
-          </h3>
-
-          <p class="text-center w-full">
-            Let’s get down to the nitty gritty about the latest trends in
-            Ember.js, Nuxt.js, JavaScript and more.
-          </p>
+        <div class="flex flex-wrap items-center justify-between mb-16 w-full">
+          <h3 class="m-0 text-navy">Ahoy - advice and insights ahead!</h3>
+          <nuxt-link
+            to="/blog/"
+            class="btn btn-red mt-4 w-full lg:mt-0 lg:w-auto"
+          >
+            See more insights
+          </nuxt-link>
         </div>
 
         <div
           class="
             grid grid-cols-1
-            gap-2
+            gap-1
             justify-center
             mb-4
             w-full
@@ -24,12 +23,15 @@
           "
         >
           <div
-            v-for="post in posts"
+            v-for="(post, index) in posts"
             :key="post.slug"
-            class="bg-navy-card-dark flex flex-col m-4 p-8 rounded-md"
+            data-aos="flip-down"
+            :data-aos-delay="index * 200"
+            class="bg-white flex flex-col px-8 py-16 rounded"
           >
-            <div class="text-red">
-              {{ $dateFns.format(post.date) }}
+            <div class="flex mb-4">
+              <inline-svg class="h-auto mr-4 w-10" src="/svgs/fish.svg" />
+              {{ formatDate(post.date) }}
             </div>
 
             <nuxt-link
@@ -41,7 +43,7 @@
                 leading-8
                 min-h-24
                 my-2
-                text-white text-2xl
+                text-navy text-2xl
                 hover:text-red
               "
               :to="`/blog/${post.slug}/`"
@@ -49,16 +51,10 @@
               {{ post.linktitle || post.title }}
             </nuxt-link>
 
-            <div class="attribution bottom-0 mb-4 text-red">
+            <div class="attribution bottom-0 mb-4">
               By {{ post.author.name }}
             </div>
           </div>
-        </div>
-
-        <div class="text-center w-full">
-          <nuxt-link to="/blog/" class="btn btn-white mb-12">
-            View all posts
-          </nuxt-link>
         </div>
       </div>
     </div>
@@ -66,27 +62,32 @@
 </template>
 
 <script>
+import { formatDate } from '~/utils/date';
+
 export default {
   props: {
     posts: {
       type: Array,
       default: () => []
     }
+  },
+  methods: {
+    formatDate
   }
 };
 </script>
 
 <style lang="scss">
 .blog-link {
-  color: $white;
+  @apply text-navy;
 
   &:active,
   &:visited {
-    color: $white;
+    @apply text-navy;
   }
 
   &:hover {
-    color: $red;
+    @apply text-red;
   }
 }
 </style>

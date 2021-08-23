@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches:
-      - master
+      - main
   pull_request: {}
 
 jobs:
@@ -22,24 +22,19 @@ jobs:
         with:
           node-version: 14.x
 
-      # Cache dependencies
-      - name: Cache Dependencies
-        uses: actions/cache@v2
-        id: cache
-        with:
-          path: |
-            **/node_modules
-          key: yarn-${{ hashFiles('**/package.json', 'yarn.lock') }}
-
       # Install project dependencies
       - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn
+      # Install playwright dependencies
+      - name: Install operating system dependencies
+        run: npx playwright install-deps  
       # Generate static site
       - name: Generate static site
         run: yarn generate
       # Run Jest
       - name: Run Unit Tests
         run: yarn test  
-      # - name: Percy
-      #   run: npx percy snapshot dist/
+      - name: Percy
+        run: npx percy snapshot dist/
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}

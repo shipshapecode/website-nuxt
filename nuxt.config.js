@@ -75,6 +75,8 @@ const createSitemapRoutes = async () => {
 export default {
   target: 'static',
 
+  components: true,
+
   /*
    ** Headers of the page
    */
@@ -132,7 +134,6 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    '@aceforth/nuxt-optimized-images',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -146,9 +147,11 @@ export default {
         }
       }
     ],
+    '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/tailwindcss'
   ],
 
   optimizedImages: {
@@ -159,7 +162,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxt/content',
     '@nuxtjs/feed',
     [
       'nuxt-font-loader-strategy',
@@ -195,8 +197,6 @@ export default {
         ]
       }
     ],
-    ['@nuxtjs/date-fns', { methods: ['format', 'parseISO'] }],
-    '@nuxtjs/tailwindcss',
     [
       'nuxt-validate',
       {
@@ -206,12 +206,7 @@ export default {
         }
       }
     ],
-    [
-      'nuxt-lazy-load',
-      {
-        directiveOnly: true
-      }
-    ]
+    '@nuxt/content'
   ],
 
   /*
@@ -277,12 +272,6 @@ export default {
     }
   },
 
-  dateFns: {
-    locales: ['en-US'],
-    defaultLocale: 'en-US',
-    format: 'MM/dd/yyyy'
-  },
-
   feed: [
     {
       path: '/feed.xml',
@@ -315,10 +304,6 @@ export default {
 
   styleResources: {
     scss: ['./assets/css/_variables.scss']
-  },
-
-  tailwindcss: {
-    jit: true
   },
 
   hooks: {

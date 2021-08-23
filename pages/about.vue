@@ -2,10 +2,11 @@
   <div>
     <HeroBlock class="about text-white">
       <template #content>
-        <img
+        <nuxt-img
           class="mt-8"
           alt="Ship Shape office desk"
-          :src="require('~/assets/img/about/desk.jpg?webp')"
+          format="webp"
+          src="/img/about/desk.jpg"
         />
       </template>
 
@@ -22,7 +23,7 @@
           </p>
 
           <div>
-            <nuxt-link class="btn btn-white" to="/contact/">
+            <nuxt-link class="btn btn-red" to="/contact/">
               Let's build together
             </nuxt-link>
           </div>
@@ -50,7 +51,7 @@
 
           <h3 class="text-2xl text-white lg:text-4xl">Our Clients</h3>
 
-          <p class="max-w-lg w-full">
+          <p class="max-w-lg text-white w-full">
             Ship Shape works with some of the best. We've exceeded client
             expectations and can't wait to help you with your next project.
           </p>
@@ -75,7 +76,7 @@
 
           <h3 class="text-2xl text-white lg:text-4xl">Our Community</h3>
 
-          <p class="max-w-lg w-full">
+          <p class="max-w-lg text-white w-full">
             Everything we create is a conscious decision to further Ember as a
             framework and as a community.
           </p>
@@ -120,7 +121,7 @@
                 <li v-for="employee in team" :key="employee.name">
                   <div class="space-y-4">
                     <div class="aspect-w-3 aspect-h-2">
-                      <img
+                      <nuxt-img
                         class="
                           filter
                           grayscale
@@ -128,6 +129,7 @@
                           shadow-lg
                           rounded-lg
                         "
+                        format="webp"
                         :src="employee.imgSrc"
                         alt=""
                       />
@@ -180,14 +182,9 @@
 </template>
 
 <script>
-import HeroBlock from '~/components/HeroBlock.vue';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  components: {
-    HeroBlock
-  },
-
   data() {
     return {
       team: [
@@ -230,6 +227,14 @@ export default {
           twitter: '',
           linkedin: 'https://www.linkedin.com/in/kimhanna/',
           github: 'https://github.com/hannakim91'
+        },
+        {
+          name: 'Jessica Justice',
+          title: 'Software Engineer',
+          imgSrc: '/img/blog/authors/jessica.jpg',
+          twitter: '',
+          linkedin: 'https://www.linkedin.com/in/jessica-justice2/',
+          github: 'https://github.com/m1073496'
         }
       ]
     };
@@ -253,14 +258,14 @@ export default {
   svg {
     path {
       @apply transition-colors;
-      fill: $navy-light;
+      fill: var(--navy-light);
     }
   }
 
   &:hover {
     svg {
       path {
-        fill: $red;
+        fill: var(--red-light);
       }
     }
   }
