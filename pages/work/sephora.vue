@@ -35,10 +35,11 @@
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
-            alt="An overview of NIST scores, broken down by category and visualized in a radar graph."
+          <nuxt-img
+            alt="TODO"
             class="flex"
-            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
+            format="webp"
+            src="/img/work/expel/nist-overview.png"
           />
         </div>
       </div>
@@ -53,10 +54,11 @@
 
       <div class="bg-expel-green flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
-            alt="The protect NIST category is selected and scores are filtered to that category."
+          <nuxt-img
+            alt="TODO"
             class="flex"
-            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
+            format="webp"
+            src="/img/work/expel/nist-overview.png"
           />
         </div>
       </div>
@@ -67,10 +69,11 @@
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
-            alt="The edit mode for scores, showing a simple user interface with scoring criteria for guidance."
+          <nuxt-img
+            alt="TODO"
             class="flex"
-            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
+            format="webp"
+            src="/img/work/expel/nist-overview.png"
           />
         </div>
       </div>
@@ -83,10 +86,11 @@
 
       <div class="bg-expel-green flex justify-center lg:flex-1">
         <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-          <img
-            alt="Graphs indicating the progress made in various NIST categories."
+          <nuxt-img
+            alt="TODO"
             class="flex"
-            :src="require('~/assets/img/work/expel/nist-overview.png?webp')"
+            format="webp"
+            src="/img/work/expel/nist-overview.png"
           />
         </div>
       </div>
