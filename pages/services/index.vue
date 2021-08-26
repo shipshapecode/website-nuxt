@@ -32,6 +32,11 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock'),
+    ServicesBlurbs: () => import('@/components/ServicesBlurbs')
+  },
+
   head() {
     const title = 'Custom Software Development';
     const description =

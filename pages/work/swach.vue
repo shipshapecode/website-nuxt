@@ -163,6 +163,10 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    BottomLinks: () => import('@/components/BottomLinks')
+  },
+
   head() {
     const title = 'Case Study - Swach';
     const description = `Learn how we made Swach into a robust cross platform desktop app for MacOS, Windows, and Linux.`;

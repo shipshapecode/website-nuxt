@@ -193,6 +193,9 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock')
+  },
   head() {
     const title = 'App Development Agency';
     const description =

@@ -167,6 +167,10 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    BottomLinks: () => import('@/components/BottomLinks')
+  },
+
   head() {
     const title = 'Expel Ember.js Enterprise App Development';
     const description =

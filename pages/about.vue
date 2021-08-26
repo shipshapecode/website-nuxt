@@ -185,6 +185,9 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock')
+  },
   data() {
     return {
       team: [

@@ -18,6 +18,10 @@ import { generateMeta } from '~/utils/meta';
 export default {
   scrollToTop: true,
 
+  speedkitComponents: {
+    BlogPostMenu: () => import('@/components/BlogPostMenu')
+  },
+
   async asyncData({ $content, params }) {
     const { category } = params;
 

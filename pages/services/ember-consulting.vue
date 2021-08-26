@@ -65,6 +65,13 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    CommunityInvolvement: () => import('@/components/CommunityInvolvement'),
+    HeroBlock: () => import('@/components/HeroBlock'),
+    RecentBlogPosts: () => import('@/components/RecentBlogPosts'),
+    WhyEmber: () => import('@/components/WhyEmber')
+  },
+
   async asyncData({ $content }) {
     const posts = await $content('blog/posts')
       .sortBy('date', 'desc')

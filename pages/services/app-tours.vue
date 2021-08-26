@@ -110,6 +110,11 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock'),
+    WhyShepherd: () => import('@/components/WhyShepherd')
+  },
+
   head() {
     const title = 'App Tours with Shepherd.js';
     const description =

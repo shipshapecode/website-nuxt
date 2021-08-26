@@ -26,13 +26,10 @@
 </template>
 
 <script>
-import AuthorRow from '~/components/AuthorRow.vue';
-import BottomLinks from '~/components/BottomLinks.vue';
-
 export default {
-  components: {
-    AuthorRow,
-    BottomLinks
+  speedkitComponents: {
+    AuthorRow: () => import('@/components/AuthorRow'),
+    BottomLinks: () => import('@/components/BottomLinks')
   },
 
   props: {

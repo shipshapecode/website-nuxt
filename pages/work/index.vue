@@ -109,6 +109,10 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    CaseStudiesList: () => import('@/components/CaseStudiesList'),
+    ClientsGrid: () => import('@/components/ClientsGrid')
+  },
   head() {
     const title = 'Our Work - Enterprise Custom App Development';
     const description =

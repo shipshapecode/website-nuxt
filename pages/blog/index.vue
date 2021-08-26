@@ -30,6 +30,10 @@ import { generateMeta } from '~/utils/meta';
 export default {
   scrollToTop: true,
 
+  speedkitComponents: {
+    BlogPostMenu: () => import('@/components/BlogPostMenu')
+  },
+
   async asyncData({ $content }) {
     const posts = await $content('blog/posts').sortBy('date', 'desc').fetch();
 

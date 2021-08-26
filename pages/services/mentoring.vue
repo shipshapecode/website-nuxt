@@ -33,6 +33,11 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock'),
+    MentoringBlurbs: () => import('@/components/MentoringBlurbs')
+  },
+
   head() {
     const title = 'Ember & Open Source Mentoring';
     const description =
