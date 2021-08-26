@@ -52,6 +52,11 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock'),
+    PortfolioContainer: () => import('@/components/PortfolioContainer')
+  },
+
   head() {
     const title = 'Open Source Software';
     const description =

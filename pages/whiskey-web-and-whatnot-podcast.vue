@@ -9,7 +9,7 @@
         </p>
         <div class="flex flex-wrap">
           <a href="https://open.spotify.com/show/19jiuHAqzeKnkleQUpZxDf">
-            <inline-svg
+            <nuxt-img
               class="h-12 mb-3 mr-3 w-auto"
               src="/svgs/spotify-podcasts.svg"
             />
@@ -17,7 +17,7 @@
           <a
             href="https://podcasts.apple.com/us/podcast/whiskey-web-and-whatnot/id1552776603?uo=4"
           >
-            <inline-svg class="h-12 w-auto" src="/svgs/apple-podcasts.svg" />
+            <nuxt-img class="h-12 w-auto" src="/svgs/apple-podcasts.svg" />
           </a>
         </div>
       </template>
@@ -37,6 +37,10 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock')
+  },
+
   head() {
     const title = 'Whiskey, Web, & Whatnot: A Software Engineering Podcast';
     const description =

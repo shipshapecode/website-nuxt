@@ -101,6 +101,9 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock')
+  },
   head() {
     const title = 'Next.js Software Consultants & Developers';
     const description =

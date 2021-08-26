@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <HeroBlock class="bg-blue-light home">
+    <HeroBlock class="bg-blue-light home" :critical="true">
       <template #content>
         <h1 class="leading-none">Our software consultants make waves</h1>
 
@@ -85,6 +85,15 @@ export default {
     const url = 'https://shipshape.io/';
 
     return generateMeta(title, description, url);
+  },
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock'),
+    BuildTheFuture: () => import('@/components/BuildTheFuture'),
+    WeKnowTheRopes: () => import('@/components/WeKnowTheRopes'),
+    BigNames: () => import('@/components/BigNames'),
+    WhyUsGrid: () => import('@/components/WhyUsGrid'),
+    DoubleQuotes: () => import('@/components/DoubleQuotes'),
+    RecentBlogPosts: () => import('@/components/RecentBlogPosts')
   }
 };
 </script>

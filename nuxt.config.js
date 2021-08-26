@@ -75,7 +75,7 @@ const createSitemapRoutes = async () => {
 export default {
   target: 'static',
 
-  components: true,
+  components: false,
 
   /*
    ** Headers of the page
@@ -134,6 +134,7 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@nuxtjs/tailwindcss',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -150,8 +151,7 @@ export default {
     '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/style-resources'
   ],
 
   optimizedImages: {
@@ -162,7 +162,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/feed',
     [
       'nuxt-font-loader-strategy',
       {
@@ -197,6 +196,7 @@ export default {
         ]
       }
     ],
+    '@nuxtjs/feed',
     [
       'nuxt-validate',
       {
@@ -206,7 +206,8 @@ export default {
         }
       }
     ],
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-speedkit'
   ],
 
   /*
@@ -251,7 +252,6 @@ export default {
 
     postcss: {
       plugins: {
-        tailwindcss: {},
         autoprefixer: {}
       }
     }
@@ -302,8 +302,33 @@ export default {
     }
   },
 
+  speedkit: {
+    detection: {
+      performance: true,
+      browserSupport: true
+    },
+    performanceMetrics: {
+      device: {
+        hardwareConcurrency: { min: 2, max: 48 },
+        deviceMemory: { min: 2 }
+      },
+      timing: {
+        fcp: 800,
+        dcl: 1200
+      },
+      lighthouseDetectionByUserAgent: false
+    },
+
+    componentAutoImport: false,
+    componentPrefix: undefined
+  },
+
   styleResources: {
     scss: ['./assets/css/_variables.scss']
+  },
+
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.scss'
   },
 
   hooks: {

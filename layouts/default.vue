@@ -10,7 +10,7 @@
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC" />
 
-    <NavMenu />
+    <NavMenu :critical="true" />
 
     <main>
       <Nuxt />
@@ -21,13 +21,10 @@
 </template>
 
 <script>
-import NavMenu from '~/components/NavMenu.vue';
-import WaveFooter from '~/components/WaveFooter.vue';
-
 export default {
-  components: {
-    NavMenu,
-    WaveFooter
+  speedkitComponents: {
+    NavMenu: () => import('@/components/NavMenu'),
+    WaveFooter: () => import('@/components/WaveFooter')
   }
 };
 </script>

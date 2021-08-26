@@ -102,6 +102,10 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
+  speedkitComponents: {
+    HeroBlock: () => import('@/components/HeroBlock')
+  },
+
   head() {
     const title = 'Nuxt.js Software Consultants & Developers';
     const description =
