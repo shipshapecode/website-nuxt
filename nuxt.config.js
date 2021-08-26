@@ -162,7 +162,40 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    'nuxt-speedkit',
+    [
+      'nuxt-font-loader-strategy',
+      {
+        fonts: [
+          {
+            fileExtensions: ['woff2'],
+            fontFamily: 'Pier Sans',
+            fontFaces: [
+              {
+                preload: true,
+                localSrc: ['Pier Sans'],
+                src: '@/assets/fonts/PierSans-Regular',
+                fontWeight: 'normal',
+                fontStyle: 'normal'
+              },
+              {
+                preload: true,
+                localSrc: ['Pier Sans'],
+                src: '@/assets/fonts/PierSans-Bold',
+                fontWeight: 'bold',
+                fontStyle: 'normal'
+              },
+              {
+                preload: true,
+                localSrc: ['Pier Sans'],
+                src: '@/assets/fonts/PierSans-Light',
+                fontWeight: 300,
+                fontStyle: 'normal'
+              }
+            ]
+          }
+        ]
+      }
+    ],
     '@nuxtjs/feed',
     [
       'nuxt-validate',
@@ -173,7 +206,8 @@ export default {
         }
       }
     ],
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-speedkit'
   ],
 
   /*
@@ -285,36 +319,6 @@ export default {
       },
       lighthouseDetectionByUserAgent: false
     },
-    fonts: [
-      {
-        family: 'Pier Sans',
-        locals: ['Pier Sans'],
-        fallback: ['Helvetica', 'sans-serif'],
-        variances: [
-          {
-            style: 'normal',
-            weight: 'normal',
-            sources: [
-              { src: '@/assets/fonts/PierSans-Regular.woff2', type: 'woff2' }
-            ]
-          },
-          {
-            style: 'normal',
-            weight: 700,
-            sources: [
-              { src: '@/assets/fonts/PierSans-Bold.woff2', type: 'woff2' }
-            ]
-          },
-          {
-            style: 'normal',
-            weight: 300,
-            sources: [
-              { src: '@/assets/fonts/PierSans-Light.woff2', type: 'woff2' }
-            ]
-          }
-        ]
-      }
-    ],
 
     componentAutoImport: false,
     componentPrefix: undefined
