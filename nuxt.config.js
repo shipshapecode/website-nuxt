@@ -134,6 +134,7 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@nuxtjs/tailwindcss',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -150,8 +151,7 @@ export default {
     '@nuxt/image',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/style-resources'
   ],
 
   optimizedImages: {
@@ -252,7 +252,6 @@ export default {
 
     postcss: {
       plugins: {
-        tailwindcss: {},
         autoprefixer: {}
       }
     }
@@ -326,6 +325,10 @@ export default {
 
   styleResources: {
     scss: ['./assets/css/_variables.scss']
+  },
+
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.scss'
   },
 
   hooks: {
