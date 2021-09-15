@@ -149,6 +149,7 @@
                 sm:text-sm
                 rounded-md
               "
+              v-model="budget"
             >
               <option value="25k-50k">$25,000 – $50,000</option>
               <option value="50k-100k">$50,000 – $100,000</option>
@@ -186,9 +187,7 @@
             </div>
           </div>
 
-          <div data-netlify-recaptcha="true"></div>
-
-          <div class="text-right">
+          <div class="text-right lg:col-span-2">
             <input
               :disabled="!formValid"
               type="submit"
@@ -246,7 +245,7 @@ export default {
       description: '',
       email: '',
       name: '',
-      budget: 'under_25k'
+      budget: '25k-50k'
     };
   },
   computed: {
@@ -256,13 +255,27 @@ export default {
       });
     }
   },
+  beforeDestroy() {
+    this.$recaptcha.destroy();
+  },
+  async mounted() {
+    try {
+      await this.$recaptcha.init();
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error(e);
+    }
+  },
   methods: {
-    sendContactRequest() {
+    async sendContactRequest() {
       if (this.formValid) {
+        const token = await this.$recaptcha.execute('submit');
+
+        const data = { 'g-recaptcha-response': token, ...this.$data };
         return fetch('https://shipshape.io/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: _encode({ 'form-name': 'contact-us', ...this.$data })
+          body: _encode({ 'form-name': 'contact-us', ...data })
         })
           .then(_successMessage.bind(this))
           .catch(_errorMessage.bind(this));
