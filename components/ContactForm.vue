@@ -19,9 +19,9 @@
         <form
           class="
             contact-form
-            mt-9
             grid grid-cols-1
             gap-y-6
+            -mt-6
             lg:grid-cols-2 lg:gap-x-6
           "
           data-netlify-recaptcha="true"
