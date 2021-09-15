@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full">
-    <div class="pt-12 pb-96 sm:pt-16 lg:grid lg:grid-cols-2 lg:gap-x-64">
+    <div class="pt-12 lg:grid lg:grid-cols-2 lg:gap-x-64 lg:pb-64">
       <div class="w-full">
         <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
           Get your product in <span class="italic">ship shape</span> with
@@ -135,6 +135,7 @@
             </label>
             <select
               id="budget"
+              v-model="budget"
               name="budget"
               class="
                 mt-1
@@ -149,7 +150,6 @@
                 sm:text-sm
                 rounded-md
               "
-              v-model="budget"
             >
               <option value="25k-50k">$25,000 – $50,000</option>
               <option value="50k-100k">$50,000 – $100,000</option>
@@ -187,7 +187,7 @@
             </div>
           </div>
 
-          <div class="text-right lg:col-span-2">
+          <div>
             <input
               :disabled="!formValid"
               type="submit"
