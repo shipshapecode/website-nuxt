@@ -6,7 +6,13 @@
   <body {{ BODY_ATTRS }}>
     {{ APP }}
 
-    <form name="contact-us" netlify netlify-honeypot="bot-field" hidden>
+    <form
+      name="contact-us"
+      data-netlify-recaptcha="true"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
       <input type="text" name="name" />
       <input type="text" name="email" />
       <input type="text" name="company" />

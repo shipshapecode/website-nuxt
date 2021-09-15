@@ -24,6 +24,7 @@
             gap-y-6
             lg:grid-cols-2 lg:gap-x-6
           "
+          data-netlify-recaptcha="true"
           name="contact-us"
           netlify-honeypot="bot-field"
           netlify
@@ -185,7 +186,9 @@
             </div>
           </div>
 
-          <div class="text-right lg:col-span-2">
+          <div data-netlify-recaptcha="true"></div>
+
+          <div class="text-right">
             <input
               :disabled="!formValid"
               type="submit"
