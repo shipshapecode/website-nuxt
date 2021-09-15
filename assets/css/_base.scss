@@ -41,7 +41,8 @@ a {
   }
 }
 
-html, body {
+html,
+body {
   @apply m-0 p-0 overflow-x-hidden w-full;
 }
 
@@ -109,11 +110,34 @@ h6 {
   @apply max-w-8xl w-full;
 }
 
+.blob {
+  position: relative;
+
+  &::before {
+    background-image: url(/svgs/contact-blob.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 2072px;
+    top: -250px;
+    content: '';
+    height: 1200px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  // @media only screen and (min-width: 2560px) {
+  //   &::after {
+  //     background-size: 101vw;
+  //     height: 300px;
+  //   }
+  // }
+}
+
 .waves {
   position: relative;
 
   &::after {
-    background-image: url(/svgs/waves.svg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 2560px;
@@ -129,5 +153,17 @@ h6 {
       background-size: 101vw;
       height: 300px;
     }
+  }
+}
+
+.blue-waves {
+  &::after {
+    background-image: url(/svgs/waves.svg);
+  }
+}
+
+.white-waves {
+  &::after {
+    background-image: url(/svgs/white-waves.svg);
   }
 }
