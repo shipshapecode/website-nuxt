@@ -187,28 +187,33 @@
             </div>
           </div>
 
-          <div>
-            <input
-              :disabled="!formValid"
-              type="submit"
-              value="Send Message"
-              class="
-                btn btn-red
-                cursor-pointer
-                inline-flex
-                justify-center
-                border border-transparent
-                transition-colors
-                font-medium
-                rounded-md
-                focus:outline-none
-                disabled:opacity-50 disabled:cursor-not-allowed
-              "
-            />
+          <input
+            :disabled="!formValid"
+            type="submit"
+            value="Send Message"
+            class="
+              btn btn-red
+              cursor-pointer
+              inline-flex
+              justify-center
+              border border-transparent
+              transition-colors
+              font-medium
+              rounded-md
+              focus:outline-none
+              disabled:opacity-50 disabled:cursor-not-allowed
+            "
+          />
 
-            <flash-message class="flex flex-grow mt-8" />
+          <div class="text-xs">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a>
+            and
+            <a href="https://policies.google.com/terms">Terms of Service</a>
+            apply.
           </div>
         </form>
+        <flash-message class="flex flex-grow mt-8" />
       </div>
     </div>
   </div>
