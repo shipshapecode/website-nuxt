@@ -1,7 +1,16 @@
 <template>
   <div
     id="contact-form"
-    class="contact-form section flex flex-wrap justify-center w-full"
+    class="
+      blob
+      contact-form
+      section
+      waves
+      white-waves
+      flex flex-wrap
+      justify-center
+      w-full
+    "
   >
     <div class="section-content flex flex-wrap justify-center">
       <div class="flex flex-wrap justify-center items-center w-full">

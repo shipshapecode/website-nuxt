@@ -2,6 +2,7 @@
   <div
     class="
       waves
+      blue-waves
       bg-blue-light
       flex flex-wrap
       justify-center

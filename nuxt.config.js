@@ -197,6 +197,7 @@ export default {
       }
     ],
     '@nuxtjs/feed',
+    '@nuxtjs/recaptcha',
     [
       'nuxt-validate',
       {
@@ -287,6 +288,13 @@ export default {
 
   purgeCSS: {
     whitelistPatterns: [/^hljs/, /^page-/]
+  },
+
+  recaptcha: {
+    hideBadge: true,
+    siteKey: '6Ldno2wcAAAAADWLBo2GEShPwKoukXtd_O4z0TFU',
+    size: 'invisible',
+    version: 3
   },
 
   sitemap: {
