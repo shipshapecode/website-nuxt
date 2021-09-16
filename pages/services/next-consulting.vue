@@ -1,8 +1,12 @@
 <template>
-  <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="next-consulting waves next-waves">
+  <div
+    class="bg-navy text-white"
+    itemscope
+    itemtype="http://schema.org/Service"
+  >
+    <HeroBlock class="nuxt-consulting">
       <template #content>
-        <h1 itemprop="name" class="leading-tight text-5xl">
+        <h1 class="text-white" itemprop="name">
           Boost performance and easily make the leap from React to Next.js
         </h1>
         <div>
@@ -23,11 +27,11 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-navy flex flex-wrap justify-center">
+    <div class="section flex flex-wrap justify-center">
       <div class="section-content">
-        <div class="grid grid-cols-1 gap-20 mb-32 lg:gap-32 lg:grid-cols-2">
-          <div class="text-white" data-aos="fade-up">
-            <h2 class="mb-10 text-3xl text-white">All about Next.js</h2>
+        <div class="grid grid-cols-1 gap-x-32 lg:grid-cols-5">
+          <div class="lg:col-span-3">
+            <h2 class="text-2xl text-white">All about Next.js</h2>
 
             <p>
               Whether you’re dipping your toes into the app development waters
@@ -47,90 +51,20 @@
 
           <div
             class="
-              bg-blue-light
+              bg-white
               flex
               items-center
-              p-12
-              rounded-md
-              text-navy
-              lg:mt-16
+              p-16
+              text-navy-card-light
+              lg:col-span-2
             "
-            data-aos="fade-up"
-            data-aos-delay="200"
           >
-            <p class="mb-0">
+            <p>
               Teams who have worked in generic React apps can easily make the
               leap into Next.js. If you’re wondering “What is Next.js, and can
               my team transition?” Ship Shape’s experienced developers not only
               consult and develop in Next.js, but also train and mentor teams to
               maintain and improve their code over time.
-            </p>
-          </div>
-        </div>
-
-        <h5 class="text-white" data-aos="fade">
-          Some of our favorite Next.js features include:
-        </h5>
-
-        <div
-          class="
-            divide-grey-light divide-y
-            grid grid-cols-1
-            my-20
-            text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
-          "
-        >
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
-            <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/icons/image.svg"
-            />
-
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Automatic image resizing and one-off, on-the-fly image generation
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/mentor.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Out-of-the-box internationalization features
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/chart.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Amazingly high performance
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="600"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/pwa.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Zero config! Developing features is a simple “yarn dev” away
             </p>
           </div>
         </div>
