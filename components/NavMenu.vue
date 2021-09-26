@@ -9,7 +9,7 @@
         p-6
         max-w-8xl
         w-full
-        z-10
+        z-20
         lg:px-0
       "
     >
