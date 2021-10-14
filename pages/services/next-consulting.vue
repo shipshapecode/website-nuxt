@@ -1,12 +1,8 @@
 <template>
-  <div
-    class="bg-navy text-white"
-    itemscope
-    itemtype="http://schema.org/Service"
-  >
-    <HeroBlock class="nuxt-consulting">
+  <div itemscope itemtype="http://schema.org/Service">
+    <HeroBlock class="next-consulting">
       <template #content>
-        <h1 class="text-white" itemprop="name">
+        <h1 itemprop="name">
           Boost performance and easily make the leap from React to Next.js
         </h1>
         <div>
