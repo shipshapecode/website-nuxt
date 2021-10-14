@@ -64,6 +64,8 @@
         </div>
       </div>
     </div>
+
+    <div class="section waves white-waves flex flex-wrap justify-center"></div>
   </div>
 </template>
 
