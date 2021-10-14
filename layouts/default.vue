@@ -4,8 +4,7 @@
     itemtype="https://schema.org/Organization"
     itemid="shipshapeorg"
     :class="{
-      'bg-navy':
-        $route.name === 'about' || $route.name === 'services-next-consulting',
+      'bg-navy': $route.name === 'about',
       'bg-blue-light': $route.name === 'index'
     }"
   >
