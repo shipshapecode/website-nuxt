@@ -67,72 +67,7 @@
       </div>
     </div>
 
-    <div
-      class="section flex flex-wrap justify-center !pt-40"
-      data-aos="fade-down"
-    >
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-      >
-        <div>
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="772"
-            src="/img/hero-images/mentoring.png"
-            width="1312"
-          />
-        </div>
-        <div>
-          <h3>We’ll never leave you high and dry</h3>
-          <p>
-            Ship Shape is committed to leaving every engineering team we work
-            with better than we found it. Not only do we build robust, reliable
-            software, but we also train your staff along the way to understand,
-            maintain, and improve your product after our engagement ends.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <SingleQuote :testimonial="testimonial" />
-
-    <div class="section flex flex-wrap justify-center">
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-      >
-        <div class="lg:order-last" data-aos="fade-up">
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="1034"
-            src="/img/hero-images/ember-consulting.png"
-            width="1312"
-          />
-        </div>
-        <div>
-          <h3 data-aos="fade-left">We ❤️ the Next.js Community</h3>
-          <p data-aos="fade">
-            We’re a team of makers who are passionate about improving software
-            products and the people who create them.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <WaveMoreLinks />
+    <div class="section waves white-waves flex flex-wrap justify-center"></div>
   </div>
 </template>
 
