@@ -72,24 +72,45 @@
 
         <div
           class="
-            divide-x divide-grey-light
+            divide-grey-light divide-y
             grid grid-cols-1
+            my-12
             text-white
-            lg:grid-cols-4
+            lg:divide-x lg:divide-y-0 lg:grid-cols-4
           "
         >
-          <div class="flex justify-center px-16">
+          <div class="px-16 text-center">
+            <nuxt-img
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/icons/image.svg"
+            />
+
             <p>
               Automatic image resizing and one-off, on-the-fly image generation
             </p>
           </div>
-          <div class="flex justify-center px-16">
+
+          <div class="px-16 text-center">
+            <nuxt-img
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/icons/mentor.svg"
+            />
             <p>Out-of-the-box internationalization features</p>
           </div>
-          <div class="flex justify-center px-16">
+
+          <div class="px-16 text-center">
+            <nuxt-img
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/icons/chart.svg"
+            />
             <p>Amazingly high performance</p>
           </div>
-          <div class="flex justify-center px-16">
+
+          <div class="px-16 text-center">
+            <nuxt-img
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/icons/pwa.svg"
+            />
             <p>Zero config! Developing features is a simple “yarn dev” away</p>
           </div>
         </div>
