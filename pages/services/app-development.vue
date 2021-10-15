@@ -45,7 +45,7 @@
                 <div>
                   <inline-svg
                     class="h-20 inline-block mb-12 w-20"
-                    src="/svgs/pages/app-development/time.svg"
+                    src="/svgs/icons/time.svg"
                   />
 
                   <h5 class="text-white">Save time and money</h5>
@@ -67,7 +67,7 @@
                 <div>
                   <inline-svg
                     class="h-20 inline-block mb-12 w-20"
-                    src="/svgs/pages/app-development/pwa.svg"
+                    src="/svgs/icons/pwa.svg"
                   />
 
                   <h5 class="text-white">Who's Using PWA's?</h5>
@@ -91,10 +91,7 @@
               class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
               data-aos="fade-up"
             >
-              <inline-svg
-                class="m-auto max-w-2xl"
-                src="/svgs/pages/app-development/app.svg"
-              />
+              <inline-svg class="m-auto max-w-2xl" src="/svgs/icons/app.svg" />
             </div>
             <div
               class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
@@ -148,7 +145,7 @@
               <div>
                 <inline-svg
                   class="h-20 inline-block mb-12 w-20"
-                  src="/svgs/pages/app-development/sail.svg"
+                  src="/svgs/icons/sail.svg"
                 />
 
                 <h5 class="text-white">Sail into an App Store</h5>
@@ -168,7 +165,7 @@
               <div>
                 <inline-svg
                   class="h-20 inline-block mb-12 w-20"
-                  src="/svgs/pages/app-development/native-apps.svg"
+                  src="/svgs/icons/native-apps.svg"
                 />
 
                 <h5 class="text-white">Ship native apps</h5>

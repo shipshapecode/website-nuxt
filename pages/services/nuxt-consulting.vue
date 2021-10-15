@@ -32,7 +32,7 @@
           <div class="bg-navy p-6 lg:p-12">
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/pages/nuxt-consulting/modular.svg"
+              src="/svgs/icons/modular.svg"
             />
 
             <h5 class="text-white">Modular</h5>
@@ -47,7 +47,7 @@
           <div class="bg-navy p-6 lg:p-12">
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/pages/nuxt-consulting/performance.svg"
+              src="/svgs/icons/chart.svg"
             />
 
             <h5 class="text-white">Performant</h5>
@@ -64,7 +64,7 @@
           <div class="bg-navy p-6 lg:p-12">
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/pages/nuxt-consulting/fun.svg"
+              src="/svgs/icons/fun.svg"
             />
 
             <h5 class="text-white">Enjoyable</h5>
@@ -80,7 +80,7 @@
           <div class="bg-navy p-6 lg:p-12">
             <nuxt-img
               class="h-24 inline-block mb-4 w-24"
-              src="/svgs/pages/nuxt-consulting/static.svg"
+              src="/svgs/icons/static.svg"
             />
 
             <h5 class="text-white">Static / PWA</h5>

@@ -17,7 +17,7 @@
           <div class="flex flex-col w-full">
             <inline-svg
               class="h-20 inline-block mb-12 w-20"
-              src="/svgs/pages/mentoring/retainer.svg"
+              src="/svgs/icons/retainer.svg"
             />
 
             <h3 class="text-white text-xl" itemprop="name">
@@ -46,7 +46,7 @@
           <div class="flex flex-col w-full">
             <inline-svg
               class="h-20 inline-block mb-12 w-20"
-              src="/svgs/pages/mentoring/staff.svg"
+              src="/svgs/icons/staff.svg"
             />
 
             <h3 class="text-white text-xl" itemprop="name">
@@ -75,7 +75,7 @@
           <div class="flex flex-col w-full">
             <inline-svg
               class="h-20 inline-block mb-12 w-20"
-              src="/svgs/pages/mentoring/mentor.svg"
+              src="/svgs/icons/mentor.svg"
             />
 
             <h3 class="text-white text-xl" itemprop="name">Learn the ropes</h3>
