@@ -23,11 +23,11 @@
       </template>
     </HeroBlock>
 
-    <div class="section flex flex-wrap justify-center">
+    <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
         <div class="grid grid-cols-1 gap-x-32 lg:grid-cols-5">
-          <div class="lg:col-span-3">
-            <h2 class="text-2xl text-white">All about Next.js</h2>
+          <div class="text-white lg:col-span-3">
+            <h2 class="mb-10 text-3xl text-white">All about Next.js</h2>
 
             <p>
               Whether you’re dipping your toes into the app development waters
@@ -47,11 +47,12 @@
 
           <div
             class="
-              bg-white
+              bg-blue-light
               flex
               items-center
-              p-16
-              text-navy-card-light
+              p-12
+              rounded-md
+              text-navy
               lg:col-span-2
             "
           >
@@ -62,6 +63,34 @@
               consult and develop in Next.js, but also train and mentor teams to
               maintain and improve their code over time.
             </p>
+          </div>
+        </div>
+
+        <h5 class="text-white">
+          Some of our favorite Next.js features include:
+        </h5>
+
+        <div
+          class="
+            divide-x divide-grey-light
+            grid grid-cols-1
+            text-white
+            lg:grid-cols-4
+          "
+        >
+          <div class="flex justify-center px-16">
+            <p>
+              Automatic image resizing and one-off, on-the-fly image generation
+            </p>
+          </div>
+          <div class="flex justify-center px-16">
+            <p>Out-of-the-box internationalization features</p>
+          </div>
+          <div class="flex justify-center px-16">
+            <p>Amazingly high performance</p>
+          </div>
+          <div class="flex justify-center px-16">
+            <p>Zero config! Developing features is a simple “yarn dev” away</p>
           </div>
         </div>
       </div>
