@@ -47,7 +47,7 @@
                 <div>
                   <inline-svg
                     class="h-20 inline-block mb-12 w-20"
-                    src="/svgs/icons/time.svg"
+                    src="/svgs/icons/speed.svg"
                   />
 
                   <h5 class="text-white">Save time and money</h5>
@@ -93,7 +93,10 @@
               class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
               data-aos="fade-up"
             >
-              <inline-svg class="m-auto max-w-2xl" src="/svgs/icons/app.svg" />
+              <nuxt-img
+                class="m-auto max-w-2xl"
+                src="/svgs/pages/app-development/app.svg"
+              />
             </div>
             <div
               class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2"
