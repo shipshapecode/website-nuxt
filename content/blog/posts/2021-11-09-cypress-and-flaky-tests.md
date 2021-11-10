@@ -10,7 +10,7 @@ slug: cypress-and-flaky-tests
 title: 'Cypress and Flaky Tests: How to Handle Timeout Errors'
 ---
 
-Cypress is an automated end-to-end testing framework with over three million weekly [open-source downloads](https://www.npmjs.com/package/cypress) at the time of this writing. It’s steady popularity isn’t without reason; the perks of using Cypress include, among other things, a snapshot visualization tool, automatic reloads after any change in your tests, and the ability to control network requests and responses without ever hitting your server.
+Cypress is an automated end-to-end testing framework with over three million weekly [open-source downloads](https://www.npmjs.com/package/cypress) at the time of this writing. Its steady popularity isn’t without reason; the perks of using Cypress include, among other things, a snapshot visualization tool, automatic reloads after any change in your tests, and the ability to control network requests and responses without ever hitting your server.
 
 I’ve enjoyed [the benefits Cypress offers](https://www.cypress.io/features/) after incorporating this tool on a number of projects, but like any new technology, there are certain learning curves to overcome. One learning opportunity I faced recently involved a locally passing test suite that also produced failing Cypress tests on CI. This issue sent me down a Stack Overflow rabbit hole, but I’ve since emerged with some newfound wisdom.
 
