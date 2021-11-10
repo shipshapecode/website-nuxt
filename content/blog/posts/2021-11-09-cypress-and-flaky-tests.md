@@ -45,7 +45,7 @@ cy.get('[data-cy=submit-button]', { timeout: 7000 }).click();
 cy.get('[data-cy=input-box]', { timeout: 5000 }).should('not.have.value');
 ```
 
-`The example above displays three cypress.get() commands with individual timeout specifications for each. Since Cypress sets timeouts in milliseconds, Cypress would wait 10 seconds, 7 seconds, and 5 second before looking for each associated element and executing the subsequent commands and assertions, respectively.`
+`The example above displays three cypress.get() commands with individual timeout specifications for each. Since Cypress sets timeouts in milliseconds, Cypress would wait 10 seconds, 7 seconds, and 5 second before looking for each associated element and executing the subsequent commands and assertions in this example, respectively.`
 
 Developers may also choose to enable test retries in their global configurations. This will prompt Cypress to retry failed tests as many times as the developer specifies.
 
@@ -101,13 +101,13 @@ At the same time, breaking out chunks of related tests into their own independen
 
 The last option on this list involves using the `cy.wait()` command to [manually specify how many seconds Cypress should wait](https://docs.cypress.io/api/commands/wait#Time) at a given point in your test file. This solution is simple, but not totally reliable, so you should consider it as a sort of last resort or quick fix; while you may be able to pause Cypress long enough to avoid a timeout error, this outcome isn’t always guaranteed, especially if your application grows to introduce new features and behaviors later on. At the same time, implementing an arbitrary wait command may also end up being [totally unnecessary](https://docs.cypress.io/guides/references/best-practices#Unnecessary-Waiting). You may inadvertently pause to wait on an operation to complete that has already completed, for example.
 
-Using `cy.wait()` to specify an arbitrary number of seconds for Cypress to wait may still be useful in some contexts. If your application is relatively small, or if your spec files and tests are sufficiently isolated, the risk of implementing an unnecessary or unreliable wait command may be small enough to justify their use. However, you may want to exhaust other alternatives before turning to this solution, as too many of these commands can bloat your test suite run time and may actually point to a deeper issue involved in your test suite or web application.
-
 ```js
 cy.wait(10000);
 ```
 
 `The above command requires Cypress to wait 10 seconds before moving on to the subsequent code in a spec file.`
+
+Using `cy.wait()` to specify an arbitrary number of seconds for Cypress to wait may still be useful in some contexts. If your application is relatively small, or if your spec files and tests are sufficiently isolated, the risk of implementing an unnecessary or unreliable wait command may be small enough to justify their use. However, you may want to exhaust other alternatives before turning to this solution, as too many of these commands can bloat your test suite run time and may actually point to a deeper issue involved in your test suite or web application.
 
 ## Key Takeaways
 
