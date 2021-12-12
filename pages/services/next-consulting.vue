@@ -115,7 +115,34 @@
       </div>
     </div>
 
-    <div class="section waves white-waves flex flex-wrap justify-center"></div>
+    <div class="section flex flex-wrap justify-center">
+      <div
+        class="
+          section-content
+          gap-24
+          grid grid-cols-1
+          items-center
+          lg:grid-cols-2
+        "
+      >
+        <div>
+          <h3>We ❤️ the Next.js Community</h3>
+          <p>
+            We’re a team of makers who are passionate about improving software
+            products and the people who create them.
+          </p>
+        </div>
+        <div>
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            src="/img/hero-images/ember-consulting.png"
+          />
+        </div>
+      </div>
+    </div>
+
+    <WaveMoreLinks />
   </div>
 </template>
 
@@ -124,7 +151,8 @@ import { generateMeta } from '~/utils/meta';
 
 export default {
   speedkitComponents: {
-    HeroBlock: () => import('@/components/HeroBlock')
+    HeroBlock: () => import('@/components/HeroBlock'),
+    WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   head() {
     const title = 'Next.js Software Consultants & Developers';
