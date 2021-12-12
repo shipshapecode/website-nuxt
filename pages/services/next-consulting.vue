@@ -126,18 +126,49 @@
         "
       >
         <div>
-          <h3>We ❤️ the Next.js Community</h3>
-          <p>
-            We’re a team of makers who are passionate about improving software
-            products and the people who create them.
-          </p>
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            src="/img/hero-images/mentoring.png"
+          />
         </div>
         <div>
+          <h3>We’ll never leave you high and dry</h3>
+          <p>
+            Ship Shape is committed to leaving every engineering team we work
+            with better than we found it. Not only do we build robust, reliable
+            software, but we also train your staff along the way to understand,
+            maintain, and improve your product after our engagement ends.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <SingleQuote :testimonial="testimonial" />
+
+    <div class="section flex flex-wrap justify-center">
+      <div
+        class="
+          section-content
+          gap-24
+          grid grid-cols-1
+          items-center
+          lg:grid-cols-2
+        "
+      >
+        <div class="lg:order-last">
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
             src="/img/hero-images/ember-consulting.png"
           />
+        </div>
+        <div>
+          <h3>We ❤️ the Next.js Community</h3>
+          <p>
+            We’re a team of makers who are passionate about improving software
+            products and the people who create them.
+          </p>
         </div>
       </div>
     </div>
@@ -149,10 +180,26 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 
+const testimonial = {
+  name: 'Donald Piret',
+  title: 'Director of Engineering at Sephora',
+  imgSrc: 'donald',
+  svgSrc: '/svgs/clients/sephora-white.svg',
+  quote: `Ship Shape delivered beyond our expectations. They pointed out things
+          we had never even thought of or knew about. Our team learned a huge
+          amount of new information and new tricks, and we still have them on
+          retainer for very specific questions. Plus, Ship Shape is the
+          friendliest team of engineers I've worked with.`
+};
+
 export default {
   speedkitComponents: {
     HeroBlock: () => import('@/components/HeroBlock'),
+    SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
+  },
+  data() {
+    return { testimonial };
   },
   head() {
     const title = 'Next.js Software Consultants & Developers';
