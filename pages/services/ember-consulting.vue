@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="ember-consulting">
+    <HeroBlock hero-classes="ember-consulting">
       <template #content>
         <h1 itemprop="name">Ember Consulting</h1>
         <p>

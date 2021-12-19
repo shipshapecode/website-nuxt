@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="services">
+    <HeroBlock hero-classes="services">
       <template #content>
         <h1>Our Services</h1>
         <p>

@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="nuxt-consulting">
+    <HeroBlock hero-classes="nuxt-consulting">
       <template #content>
         <h1 itemprop="name">Nuxt Consulting</h1>
         <p>

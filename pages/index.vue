@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <HeroBlock class="bg-blue-light home" :critical="true">
+    <HeroBlock hero-classes="home bg-blue-light" :critical="true">
       <template #content>
         <h1 class="leading-none">Our software consultants make waves</h1>
 

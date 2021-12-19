@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="app-tours">
+    <HeroBlock hero-classes="app-tours">
       <template #content>
         <h1 itemprop="name">App Tours with Shepherd.js</h1>
         <p>

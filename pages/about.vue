@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="about text-white">
+    <HeroBlock hero-classes="about text-white">
       <template #content>
         <nuxt-img
           class="mt-8"

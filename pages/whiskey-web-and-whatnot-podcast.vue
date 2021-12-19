@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="app-tours">
+    <HeroBlock hero-classes="podcast">
       <template #content>
         <h1 itemprop="name">Whiskey Web and Whatnot</h1>
         <p>

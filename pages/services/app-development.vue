@@ -1,7 +1,7 @@
 <template>
   <div>
     <div itemscope itemtype="http://schema.org/Service">
-      <HeroBlock class="web-apps">
+      <HeroBlock hero-classes="web-apps">
         <template #content>
           <h1 itemprop="name">App Development</h1>
           <p>

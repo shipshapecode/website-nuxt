@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="next-consulting waves next-waves">
+    <HeroBlock hero-classes="next-consulting waves next-waves">
       <template #content>
         <h1 itemprop="name">
           Boost performance and easily make the leap from React to Next.js
@@ -212,16 +212,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.github-logo,
-.linkedin-logo,
-.twitter-logo {
-  svg {
-    path {
-      @apply transition-colors;
-      fill: var(--navy-light);
-    }
-  }
-}
-</style>

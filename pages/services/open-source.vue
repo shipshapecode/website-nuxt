@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="open-source">
+    <HeroBlock hero-classes="open-source">
       <template #content>
         <h1>Our Open Source Community</h1>
         <p>
