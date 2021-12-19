@@ -162,6 +162,15 @@ h6 {
   }
 }
 
+.next-waves {
+  &::after {
+    background-image: url(/svgs/next-waves.svg);
+    background-size: 2050px;
+    bottom: -80px;
+    height: 185px;
+  }
+}
+
 .white-waves {
   &::after {
     background-image: url(/svgs/white-waves.svg);

@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="next-consulting">
+    <HeroBlock class="next-consulting waves next-waves">
       <template #content>
         <h1 itemprop="name">
           Boost performance and easily make the leap from React to Next.js
@@ -23,7 +23,7 @@
 
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
-        <div class="grid grid-cols-1 gap-x-32 lg:grid-cols-5">
+        <div class="grid grid-cols-1 gap-x-32 mb-24 lg:grid-cols-5">
           <div class="text-white lg:col-span-3">
             <h2 class="mb-10 text-3xl text-white">All about Next.js</h2>
 
@@ -160,7 +160,7 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            src="/img/hero-images/ember-consulting.png"
+            src="/img/laptop.png"
           />
         </div>
         <div>
@@ -212,3 +212,16 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.github-logo,
+.linkedin-logo,
+.twitter-logo {
+  svg {
+    path {
+      @apply transition-colors;
+      fill: var(--navy-light);
+    }
+  }
+}
+</style>
