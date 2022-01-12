@@ -2,7 +2,7 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock hero-classes="next-consulting waves next-waves">
       <template #content>
-        <h1 itemprop="name">
+        <h1 itemprop="name" class="leading-tight text-5xl">
           Boost performance and easily make the leap from React to Next.js
         </h1>
         <div>
@@ -51,6 +51,7 @@
               flex
               items-center
               p-12
+              mt-16
               rounded-md
               text-navy
               lg:col-span-2
@@ -79,39 +80,43 @@
             lg:divide-x lg:divide-y-0 lg:grid-cols-4
           "
         >
-          <div class="px-16 text-center">
+          <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block my-8 w-auto"
               src="/svgs/icons/image.svg"
             />
 
-            <p>
+            <p class="text-center lg:w-40">
               Automatic image resizing and one-off, on-the-fly image generation
             </p>
           </div>
 
-          <div class="px-16 text-center">
+          <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block my-8 w-auto"
               src="/svgs/icons/mentor.svg"
             />
-            <p>Out-of-the-box internationalization features</p>
+            <p class="text-center lg:w-40">
+              Out-of-the-box internationalization features
+            </p>
           </div>
 
-          <div class="px-16 text-center">
+          <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block my-8 w-auto"
               src="/svgs/icons/chart.svg"
             />
-            <p>Amazingly high performance</p>
+            <p class="text-center lg:w-40">Amazingly high performance</p>
           </div>
 
-          <div class="px-16 text-center">
+          <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block my-8 w-auto"
               src="/svgs/icons/pwa.svg"
             />
-            <p>Zero config! Developing features is a simple “yarn dev” away</p>
+            <p class="text-center lg:w-40">
+              Zero config! Developing features is a simple “yarn dev” away
+            </p>
           </div>
         </div>
       </div>
@@ -183,15 +188,17 @@
 import { generateMeta } from '~/utils/meta';
 
 const testimonial = {
-  name: 'Donald Piret',
-  title: 'Director of Engineering at Sephora',
-  imgSrc: 'donald',
-  svgSrc: '/svgs/clients/sephora-white.svg',
-  quote: `Ship Shape delivered beyond our expectations. They pointed out things
-          we had never even thought of or knew about. Our team learned a huge
-          amount of new information and new tricks, and we still have them on
-          retainer for very specific questions. Plus, Ship Shape is the
-          friendliest team of engineers I've worked with.`
+  name: 'Harley Sugarman',
+  title: 'Founder, CEO at Enigma',
+  imgSrc: 'harley',
+  svgSrc: '/svgs/clients/enigma.svg',
+  quote: `I loved working with Ship Shape. 
+          They helped our small team build a product from the ground up 
+          and were strong partners every step of the way. Their domain expertise 
+          in Next.js and React helped lay the foundation for a scalable codebase, 
+          and they were great at ensuring we adhered to engineering best practices. 
+          Every member of the team was a pleasure to work with and (best of all) 
+          we ended up launching our MVP on schedule!`
 };
 
 export default {

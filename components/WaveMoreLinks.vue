@@ -5,7 +5,7 @@
         class="bg-blue-light block font-bold px-8 py-12 text-navy"
         href="https://github.com/shipshapecode"
       >
-        More open source work
+        <h3 class="text-xl lg:text-2xl">More open source work</h3>
         <inline-svg
           class="fill-current h-4 mt-4 w-auto"
           src="/svgs/arrow.svg"
@@ -15,7 +15,7 @@
         class="bg-blue-light block font-bold px-8 py-12 text-navy"
         href="https://github.com/shipshapecode"
       >
-        More community contributions
+        <h3 class="text-xl lg:text-2xl">More community contributions</h3>
         <inline-svg
           class="fill-current h-4 mt-4 w-auto"
           src="/svgs/arrow.svg"
