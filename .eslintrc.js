@@ -21,6 +21,7 @@ module.exports = {
 
     'vue/html-closing-bracket-spacing': 'off',
     'vue/html-self-closing': 'off',
+    'vue/multi-word-component-names': 'off',
     'vue/no-v-html': 'off'
   }
 };
