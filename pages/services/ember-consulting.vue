@@ -19,7 +19,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
+          height="529"
           src="/img/hero-images/ember-consulting.png"
+          width="672"
         />
       </template>
     </HeroBlock>

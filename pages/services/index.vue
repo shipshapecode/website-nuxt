@@ -18,8 +18,10 @@
       <template #icon>
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
+          height="510"
           format="webp"
           src="/img/hero-images/services.png"
+          width="672"
         />
       </template>
     </HeroBlock>

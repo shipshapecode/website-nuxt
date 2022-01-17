@@ -20,7 +20,9 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
+            height="495"
             src="/img/hero-images/app-development.png"
+            width="672"
           />
         </template>
       </HeroBlock>

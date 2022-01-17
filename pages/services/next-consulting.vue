@@ -16,7 +16,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
+          height="515"
           src="/img/hero-images/next-consulting.png"
+          width="672"
         />
       </template>
     </HeroBlock>
@@ -135,7 +137,9 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
+            height="386"
             src="/img/hero-images/mentoring.png"
+            width="656"
           />
         </div>
         <div>
@@ -166,7 +170,9 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
+            height="517"
             src="/img/hero-images/ember-consulting.png"
+            width="656"
           />
         </div>
         <div>
