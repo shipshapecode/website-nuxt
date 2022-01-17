@@ -16,17 +16,15 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
-          height="539"
           src="/img/hero-images/next-consulting.png"
-          width="672"
         />
       </template>
     </HeroBlock>
 
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
-        <div class="grid grid-cols-1 gap-x-32 mb-24 lg:grid-cols-5">
-          <div class="text-white lg:col-span-3">
+        <div class="grid grid-cols-1 gap-20 mb-32 lg:gap-32 lg:grid-cols-2">
+          <div class="text-white">
             <h2 class="mb-10 text-3xl text-white">All about Next.js</h2>
 
             <p>
@@ -51,13 +49,12 @@
               flex
               items-center
               p-12
-              mt-16
               rounded-md
               text-navy
-              lg:col-span-2
+              lg:mt-16
             "
           >
-            <p>
+            <p class="mb-0">
               Teams who have worked in generic React apps can easily make the
               leap into Next.js. If you’re wondering “What is Next.js, and can
               my team transition?” Ship Shape’s experienced developers not only
@@ -75,46 +72,48 @@
           class="
             divide-grey-light divide-y
             grid grid-cols-1
-            my-12
+            my-20
             text-white
             lg:divide-x lg:divide-y-0 lg:grid-cols-4
           "
         >
           <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block my-8 w-auto"
+              class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/image.svg"
             />
 
-            <p class="text-center lg:w-40">
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
               Automatic image resizing and one-off, on-the-fly image generation
             </p>
           </div>
 
           <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block my-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/mentor.svg"
             />
-            <p class="text-center lg:w-40">
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
               Out-of-the-box internationalization features
             </p>
           </div>
 
           <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block my-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/chart.svg"
             />
-            <p class="text-center lg:w-40">Amazingly high performance</p>
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
+              Amazingly high performance
+            </p>
           </div>
 
           <div class="flex flex-col items-center px-16">
             <nuxt-img
-              class="h-20 inline-block my-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/pwa.svg"
             />
-            <p class="text-center lg:w-40">
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
               Zero config! Developing features is a simple “yarn dev” away
             </p>
           </div>
@@ -126,10 +125,10 @@
       <div
         class="
           section-content
-          gap-24
+          gap-20
           grid grid-cols-1
           items-center
-          lg:grid-cols-2
+          lg:gap-32 lg:grid-cols-2
         "
       >
         <div>
@@ -157,17 +156,17 @@
       <div
         class="
           section-content
-          gap-24
+          gap-20
           grid grid-cols-1
           items-center
-          lg:grid-cols-2
+          lg:gap-32 lg:grid-cols-2
         "
       >
         <div class="lg:order-last">
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            src="/img/laptop.png"
+            src="/img/hero-images/ember-consulting.png"
           />
         </div>
         <div>
