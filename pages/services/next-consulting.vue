@@ -26,7 +26,7 @@
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
         <div class="grid grid-cols-1 gap-20 mb-32 lg:gap-32 lg:grid-cols-2">
-          <div class="text-white">
+          <div class="text-white" data-aos="fade-up">
             <h2 class="mb-10 text-3xl text-white">All about Next.js</h2>
 
             <p>
@@ -55,6 +55,8 @@
               text-navy
               lg:mt-16
             "
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <p class="mb-0">
               Teams who have worked in generic React apps can easily make the
@@ -66,7 +68,7 @@
           </div>
         </div>
 
-        <h5 class="text-white">
+        <h5 class="text-white" data-aos="fade">
           Some of our favorite Next.js features include:
         </h5>
 
@@ -79,7 +81,7 @@
             lg:divide-x lg:divide-y-0 lg:grid-cols-4
           "
         >
-          <div class="flex flex-col items-center px-16">
+          <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/image.svg"
@@ -90,7 +92,11 @@
             </p>
           </div>
 
-          <div class="flex flex-col items-center px-16">
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="200"
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/mentor.svg"
@@ -100,7 +106,11 @@
             </p>
           </div>
 
-          <div class="flex flex-col items-center px-16">
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="400"
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/chart.svg"
@@ -110,7 +120,11 @@
             </p>
           </div>
 
-          <div class="flex flex-col items-center px-16">
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="600"
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/pwa.svg"
