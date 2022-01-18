@@ -137,7 +137,7 @@
       </div>
     </div>
 
-    <div class="section flex flex-wrap justify-center">
+    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
       <div
         class="
           section-content
@@ -180,7 +180,7 @@
           lg:gap-32 lg:grid-cols-2
         "
       >
-        <div class="lg:order-last">
+        <div class="lg:order-last" data-aos="fade-up">
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
@@ -190,8 +190,8 @@
           />
         </div>
         <div>
-          <h3>We ❤️ the Next.js Community</h3>
-          <p>
+          <h3 data-aos="fade-left">We ❤️ the Next.js Community</h3>
+          <p data-aos="fade">
             We’re a team of makers who are passionate about improving software
             products and the people who create them.
           </p>
