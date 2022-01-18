@@ -165,9 +165,17 @@ h6 {
 .next-waves {
   &::after {
     background-image: url(/svgs/next-waves.svg);
-    background-size: 2050px;
-    bottom: -90px;
+    background-size: 100vw;
+    bottom: -20px;
     height: 165px;
+  }
+
+  @media only screen and (min-width: 2050px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -90px;
+      height: 300px;
+    }
   }
 }
 
