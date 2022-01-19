@@ -132,7 +132,6 @@
     </div>
     <div
       class="
-        bg-white
         grid
         gap-8-x
         p-8
@@ -157,11 +156,16 @@
       <SingleQuote :testimonial="testimonial" />
     </div>
     <div
-      class="bg-white pb-20 mx-8 md:mx-20 grid grid-col-3 grid-flow-col gap-x-8"
+      class="grid mx-8 place-self-center lg:grid-flow-col lg:mx-20 lg:gap-x-8"
     >
-      <div class="section-content row-span-2 place-self-center">
-        <h2 class="text-navy text-3xl">We ❤️ the Nuxt.js Community</h2>
-        <h3 class="text-xl">Proud Nuxt.js partners</h3>
+      <nuxt-img
+        class="col-span-2 lg:order-last"
+        format="webp"
+        src="/img/hero-images/ember-consulting.png"
+      />
+      <div>
+        <h2 class="text-navy pt-4">We ❤️ the Nuxt.js Community</h2>
+        <h3 class="text-2xl">Proud Nuxt.js partners</h3>
         <p>
           Ship Shape proudly
           <a href="https://nuxtjs.org/">sponsors Nuxt.js</a> to support its
@@ -170,11 +174,6 @@
           stay up-to-date with the Nuxt team and give back to the community.
         </p>
       </div>
-      <nuxt-img
-        class="col-span-2"
-        format="webp"
-        src="/img/hero-images/ember-consulting.png"
-      />
     </div>
     <WaveMoreLinks />
   </div>
