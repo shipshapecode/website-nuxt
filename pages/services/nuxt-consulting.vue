@@ -130,10 +130,21 @@
         </div>
       </div>
     </div>
-    <div class="bg-white p-20 grid grid-col-3 grid-row-3 grid-flow-col gap-x-8">
+    <div
+      class="
+        bg-white
+        grid
+        gap-8-x
+        p-8
+        md:p-20
+        lg:grid-col-3 lg:grid-row-3 lg:grid-flow-col
+      "
+    >
       <nuxt-img format="webp" src="/img/hero-images/mentoring.png" />
-      <div class="section-content row-span-2 place-self-center">
-        <h2 class="text-navy text-3xl">Your first mate's in rough waters</h2>
+      <div class="row-span-2 place-self-center">
+        <h2 class="text-navy text-3xl pt-4">
+          Your first mate's in rough waters
+        </h2>
         <p>
           Ship Shape is committed to leaving every engineering team we work with
           better than we found it. Not only do we build robust, reliable
@@ -142,10 +153,12 @@
         </p>
       </div>
     </div>
-    <div class="mx-12">
+    <div class="md:mx-12">
       <SingleQuote :testimonial="testimonial" />
     </div>
-    <div class="bg-white pb-20 mx-20 grid grid-col-3 grid-flow-col gap-x-8">
+    <div
+      class="bg-white pb-20 mx-8 md:mx-20 grid grid-col-3 grid-flow-col gap-x-8"
+    >
       <div class="section-content row-span-2 place-self-center">
         <h2 class="text-navy text-3xl">We ❤️ the Nuxt.js Community</h2>
         <h3 class="text-xl">Proud Nuxt.js partners</h3>
