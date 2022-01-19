@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="services">
+    <HeroBlock hero-classes="services">
       <template #content>
         <h1>Ember & Open Source Mentoring</h1>
         <p>
@@ -20,7 +20,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
+          height="790"
           src="/img/hero-images/mentoring.png"
+          width="1344"
         />
       </template>
     </HeroBlock>

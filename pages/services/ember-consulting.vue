@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="ember-consulting">
+    <HeroBlock hero-classes="ember-consulting">
       <template #content>
         <h1 itemprop="name">Ember Consulting</h1>
         <p>
@@ -19,7 +19,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
+          height="858"
           src="/img/hero-images/ember-consulting.png"
+          width="1089"
         />
       </template>
     </HeroBlock>

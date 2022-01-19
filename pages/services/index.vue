@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="services">
+    <HeroBlock hero-classes="services">
       <template #content>
         <h1>Our Services</h1>
         <p>
@@ -18,8 +18,10 @@
       <template #icon>
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
+          height="1020"
           format="webp"
           src="/img/hero-images/services.png"
+          width="1344"
         />
       </template>
     </HeroBlock>

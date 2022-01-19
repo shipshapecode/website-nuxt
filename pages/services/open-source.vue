@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="open-source">
+    <HeroBlock hero-classes="open-source">
       <template #content>
         <h1>Our Open Source Community</h1>
         <p>
@@ -19,7 +19,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
+          height="942"
           src="/img/hero-images/open-source.png"
+          width="1344"
         />
       </template>
     </HeroBlock>

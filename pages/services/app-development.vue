@@ -1,7 +1,7 @@
 <template>
   <div>
     <div itemscope itemtype="http://schema.org/Service">
-      <HeroBlock class="web-apps">
+      <HeroBlock hero-classes="web-apps">
         <template #content>
           <h1 itemprop="name">App Development</h1>
           <p>
@@ -20,7 +20,9 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
+            height="990"
             src="/img/hero-images/app-development.png"
+            width="1344"
           />
         </template>
       </HeroBlock>
@@ -45,7 +47,7 @@
                 <div>
                   <inline-svg
                     class="h-20 inline-block mb-12 w-20"
-                    src="/svgs/pages/app-development/time.svg"
+                    src="/svgs/icons/speed.svg"
                   />
 
                   <h5 class="text-white">Save time and money</h5>
@@ -67,7 +69,7 @@
                 <div>
                   <inline-svg
                     class="h-20 inline-block mb-12 w-20"
-                    src="/svgs/pages/app-development/pwa.svg"
+                    src="/svgs/icons/pwa.svg"
                   />
 
                   <h5 class="text-white">Who's Using PWA's?</h5>
@@ -91,7 +93,7 @@
               class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2"
               data-aos="fade-up"
             >
-              <inline-svg
+              <nuxt-img
                 class="m-auto max-w-2xl"
                 src="/svgs/pages/app-development/app.svg"
               />
@@ -148,7 +150,7 @@
               <div>
                 <inline-svg
                   class="h-20 inline-block mb-12 w-20"
-                  src="/svgs/pages/app-development/sail.svg"
+                  src="/svgs/icons/sail.svg"
                 />
 
                 <h5 class="text-white">Sail into an App Store</h5>
@@ -168,7 +170,7 @@
               <div>
                 <inline-svg
                   class="h-20 inline-block mb-12 w-20"
-                  src="/svgs/pages/app-development/native-apps.svg"
+                  src="/svgs/icons/native-apps.svg"
                 />
 
                 <h5 class="text-white">Ship native apps</h5>

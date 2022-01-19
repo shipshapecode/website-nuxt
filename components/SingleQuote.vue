@@ -3,24 +3,8 @@
     class="bg-white flex flex-wrap justify-center px-8 lg:py-16"
     data-aos="fade"
   >
-    <div
-      class="
-        section-content
-        bg-navy
-        grid grid-cols-1
-        gap-y-10
-        mb-16
-        p-4
-        rounded
-        lg:mb-20
-        xl:grid-cols-2 xl:py-20
-      "
-    >
-      <div
-        v-for="testimonial in testimonials"
-        :key="testimonial.name"
-        class="flex flex-col p-4 relative text-white xl:px-16 xl:py-0"
-      >
+    <div class="section-content bg-navy mb-16 p-4 rounded lg:mb-20 xl:py-20">
+      <div class="flex flex-col p-4 relative text-white xl:px-16 xl:py-0">
         <inline-svg
           class="h-8 max-w-full mb-3 self-start w-auto"
           :src="testimonial.svgSrc"
@@ -68,9 +52,9 @@
 <script>
 export default {
   props: {
-    testimonials: {
-      type: Array,
-      default: () => []
+    testimonial: {
+      type: Object,
+      default: () => {}
     }
   }
 };

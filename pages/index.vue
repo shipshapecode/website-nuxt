@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <HeroBlock class="bg-blue-light home" :critical="true">
+    <HeroBlock hero-classes="home bg-blue-light" :critical="true">
       <template #content>
         <h1 class="leading-none">Our software consultants make waves</h1>
 
@@ -16,7 +16,9 @@
           alt="Ship Shape octopus mascot, with a pencil in its tentacle, is working hard on Ember, Next.js and Nuxt apps."
           class="h-auto max-w-3xl w-full"
           format="webp"
+          height="1250"
           src="/img/hero-images/landing.png"
+          width="1536"
         />
       </template>
     </HeroBlock>

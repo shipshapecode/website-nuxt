@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock class="app-tours">
+    <HeroBlock hero-classes="podcast">
       <template #content>
         <h1 itemprop="name">Whiskey Web and Whatnot</h1>
         <p>
@@ -26,7 +26,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl my-4 rounded-lg w-full"
           format="webp"
+          height="1344"
           src="/img/hero-images/www.png"
+          width="1344"
         />
       </template>
     </HeroBlock>

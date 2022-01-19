@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock class="about text-white">
+    <HeroBlock hero-classes="about text-white">
       <template #content>
         <nuxt-img
           class="mt-8"
@@ -46,7 +46,7 @@
           "
         >
           <div class="h-24 inline-block mb-8 mt-8 w-24">
-            <inline-svg src="/svgs/pages/about/client.svg" />
+            <inline-svg src="/svgs/icons/client.svg" />
           </div>
 
           <h3 class="text-2xl text-white lg:text-4xl">Our Clients</h3>
@@ -71,7 +71,7 @@
           "
         >
           <div class="h-24 inline-block mb-8 mt-8 w-24">
-            <inline-svg src="/svgs/pages/about/community.svg" />
+            <inline-svg src="/svgs/icons/community.svg" />
           </div>
 
           <h3 class="text-2xl text-white lg:text-4xl">Our Community</h3>

@@ -19,8 +19,6 @@ jobs:
       # Setup Node.js via Volta
       - name: Volta
         uses: volta-cli/action@v1
-        with:
-          node-version: 14.x
 
       # Install project dependencies
       - name: Install Dependencies
