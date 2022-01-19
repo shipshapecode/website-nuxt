@@ -1,65 +1,93 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="nuxt-consulting">
-      <template #content>
-        <div class="pl-16">
-          <h1 itemprop="name" class="text-4xl leading-10">
-            Create a Nuxt.js app that's universal — without all the hassle
-          </h1>
-          <div>
-            <nuxt-link class="btn btn-red" to="/contact/">
-              Let's get started
-            </nuxt-link>
+    <div class="waves white-waves">
+      <HeroBlock class="nuxt-consulting">
+        <template #content>
+          <div class="md:pl-16">
+            <h1 itemprop="name" class="text-4xl leading-10">
+              Create a Nuxt.js app that's universal — without all the hassle
+            </h1>
+            <div>
+              <nuxt-link class="btn btn-red" to="/contact/">
+                Let's get started
+              </nuxt-link>
+            </div>
           </div>
-        </div>
-      </template>
+        </template>
 
-      <template #icon>
-        <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full"
-          format="webp"
-          height="834"
-          src="/img/hero-images/nuxt-consulting.png"
-          width="1344"
-        />
-      </template>
-    </HeroBlock>
-    <!-- blue waves style -->
-    <div class="bg-navy section flex flex-wrap justify-center">
-      <div class="section-content px-16">
-        <h2 class="text-white w-full text-3xl">All about Nuxt.js</h2>
-        <div class="grid grid-cols-7 gap-20 pt-8 pb-32">
-          <div class="grid bg-blue-light rounded col-span-3 text-navy">
-            <p class="place-self-center w-4/5 mb-0">
-              Nuxt.js is an open-source framework used to build Vue.js web
-              applications. It’s a performant system that makes creating
-              universal apps easier because of its reduced routing complexixty,
-              giving you SEO benefits right out of the box.
-            </p>
-          </div>
-          <div class="col-span-4">
-            <p class="text-white mb-0">
-              At Ship Shape, we love Nuxt.js because it’s still an opinionated
-              framework (though not quite as opinionated as Ember.js), and it
-              has features that strip out unused code to make your app fast and
-              lightweight. You’ll enjoy its approachable syntax, easy-to-read
-              read templates, and more.
-              <br />
-              <br />
-              Whether you're building a brand new web app or elevating an
-              existing experience with the latest best practices, our
-              first-class engineers can refine or create a Nuxt.js app while
-              training your team in the process.
-            </p>
-          </div>
+        <template #icon>
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            src="/img/hero-images/nuxt-consulting.png"
+          />
+        </template>
+      </HeroBlock>
+    </div>
+    <div class="bg-navy py-32 flex flex-wrap justify-center">
+      <div class="section-content px-8 md:px-24">
+        <h2 class="text-white text-4xl">All about Nuxt.js</h2>
+        <div
+          class="
+            grid
+            space-y-12
+            pt-8
+            pb-16
+            lg:pt-0 lg:grid-cols-7 lg:gap-20 lg:space-y-0
+          "
+        >
+          <p
+            class="
+              grid
+              mb-0
+              p-4
+              bg-blue-light
+              text-navy
+              rounded
+              place-self-center
+              sm:p-8
+              lg:col-span-3
+            "
+          >
+            Nuxt.js is an open-source framework used to build Vue.js web
+            applications. It’s a performant system that makes creating universal
+            apps easier because of its reduced routing complexixty, giving you
+            SEO benefits right out of the box.
+          </p>
+          <p class="text-white lg:col-span-4 lg:content-center">
+            At Ship Shape, we love Nuxt.js because it’s still an opinionated
+            framework (though not quite as opinionated as Ember.js), and it has
+            features that strip out unused code to make your app fast and
+            lightweight. You’ll enjoy its approachable syntax, easy-to-read read
+            templates, and more.
+            <br />
+            <br />
+            Whether you're building a brand new web app or elevating an existing
+            experience with the latest best practices, our first-class engineers
+            can refine or create a Nuxt.js app while training your team in the
+            process.
+          </p>
         </div>
-        <h3 class="text-white text-xl">
+        <h3 class="text-white text-xl mb-8">
           Nuxt works well for apps big and small thanks to its:
         </h3>
         <div
-          class="grid grid-cols-3 divide-grey-light divide-x text-center my-20"
+          class="
+            grid
+            text-center
+            divide-grey-light divide-y
+            lg:grid-cols-3 lg:divide-x lg:divide-y-0
+          "
         >
-          <div class="bg-navy flex flex-col justify-items-center px-16">
+          <div
+            class="
+              bg-navy
+              flex flex-col
+              justify-items-center
+              p-8
+              lg:px-16 lg:pb-0
+            "
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/modular.svg"
@@ -69,7 +97,15 @@
             </p>
           </div>
 
-          <div class="bg-navy flex flex-col justify-items-center px-16">
+          <div
+            class="
+              bg-navy
+              flex flex-col
+              justify-items-center
+              py-12
+              lg:px-16 lg:pb-0
+            "
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/native-apps.svg"
@@ -79,7 +115,9 @@
             </p>
           </div>
 
-          <div class="bg-navy flex flex-col justify-items-center px-16">
+          <div
+            class="bg-navy flex flex-col justify-items-center pt-12 lg:px-16"
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/static.svg"
