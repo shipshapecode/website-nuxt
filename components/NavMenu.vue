@@ -26,10 +26,10 @@
               alt="Ship Shape Logo"
               class="h-[50px] w-auto"
               itemprop="url"
-              height="100px"
+              height="200"
               format="webp"
               src="/img/logo.png"
-              width="100px"
+              width="200"
             />
             <meta itemprop="height" content="128" />
             <meta itemprop="width" content="128" />

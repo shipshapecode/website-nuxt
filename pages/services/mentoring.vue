@@ -20,9 +20,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
-          height="395"
+          height="790"
           src="/img/hero-images/mentoring.png"
-          width="672"
+          width="1344"
         />
       </template>
     </HeroBlock>

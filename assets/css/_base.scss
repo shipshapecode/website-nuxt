@@ -98,6 +98,9 @@ h6 {
     svg {
       fill: var(--red);
       margin-left: 0.75rem;
+      > * {
+        fill: var(--red);
+      }
     }
   }
 }
@@ -118,9 +121,9 @@ h6 {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 2072px;
-    top: -250px;
+    top: -275px;
     content: '';
-    height: 1200px;
+    height: 1250px;
     position: absolute;
     width: 100%;
     z-index: 0;
@@ -132,6 +135,21 @@ h6 {
   //     width: 500vw;
   //   }
   // }
+
+  @media only screen and (min-width: 2065px) {
+    &::before {
+      background-size: 101vw;
+      height: 1400px;
+      top: -400px;
+    }
+  }
+
+  @media only screen and (min-width: 2300px) {
+    &::before {
+      height: calc(1400px + ((100vw - 2300px) * 0.75));
+      top: calc(-400px - ((100vw - 2300px) * 0.75));
+    }
+  }
 }
 
 .waves {
@@ -151,7 +169,7 @@ h6 {
   @media only screen and (min-width: 2560px) {
     &::after {
       background-size: 101vw;
-      height: 300px;
+      height: 200px;
     }
   }
 }

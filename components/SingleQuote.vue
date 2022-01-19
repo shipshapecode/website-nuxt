@@ -33,9 +33,9 @@
           <nuxt-img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
             format="webp"
-            height="128px"
+            height="256"
             loading="lazy"
-            width="128px"
+            width="256"
             :alt="'Headshot of ' + testimonial.name"
             :src="`/img/${testimonial.imgSrc}.jpg`"
           />

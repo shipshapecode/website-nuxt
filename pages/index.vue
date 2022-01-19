@@ -16,9 +16,9 @@
           alt="Ship Shape octopus mascot, with a pencil in its tentacle, is working hard on Ember, Next.js and Nuxt apps."
           class="h-auto max-w-3xl w-full"
           format="webp"
-          height="625"
+          height="1250"
           src="/img/hero-images/landing.png"
-          width="768"
+          width="1536"
         />
       </template>
     </HeroBlock>

@@ -26,9 +26,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl my-4 rounded-lg w-full"
           format="webp"
-          height="672"
+          height="1344"
           src="/img/hero-images/www.png"
-          width="672"
+          width="1344"
         />
       </template>
     </HeroBlock>

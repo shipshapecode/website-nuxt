@@ -17,7 +17,9 @@
             <nuxt-img
               class="ember-image inline p-8"
               format="webp"
+              height="272"
               src="/img/emberconf-2020.png"
+              width="290"
               alt="EmberConf 2020 Ship Shape Sticker"
             />
           </div>
@@ -67,7 +69,9 @@
             <nuxt-img
               class="ember-image inline p-8"
               format="webp"
+              height="272"
               src="/img/ember-nyc.png"
+              width="156"
               alt="Ember.JS NYC Tomster"
             />
           </div>
@@ -157,7 +161,9 @@
             <nuxt-img
               class="ember-image inline p-8"
               format="webp"
+              height="272"
               src="/img/ember-dc.png"
+              width="556"
               alt="Ember.JS DC Tomster in front of the White House"
             />
           </div>

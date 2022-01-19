@@ -6,7 +6,7 @@
           Boost performance and easily make the leap from React to Next.js
         </h1>
         <div>
-          <nuxt-link class="btn btn-red" to="/contact/">
+          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let’s get started
           </nuxt-link>
         </div>
@@ -16,9 +16,9 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
-          height="515"
+          height="1030"
           src="/img/hero-images/next-consulting.png"
-          width="672"
+          width="1344"
         />
       </template>
     </HeroBlock>
@@ -137,7 +137,10 @@
       </div>
     </div>
 
-    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
+    <div
+      class="section flex flex-wrap justify-center !pt-40"
+      data-aos="fade-down"
+    >
       <div
         class="
           section-content
@@ -151,9 +154,9 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            height="386"
+            height="772"
             src="/img/hero-images/mentoring.png"
-            width="656"
+            width="1312"
           />
         </div>
         <div>
@@ -184,9 +187,9 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            height="517"
+            height="1034"
             src="/img/hero-images/ember-consulting.png"
-            width="656"
+            width="1312"
           />
         </div>
         <div>
