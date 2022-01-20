@@ -35,7 +35,7 @@ greeting === hello
 
 While primitives can’t change value without changing reference, objects can change value and **still hold onto its identity**. So two seemingly similar objects are actually two entirely distinct entities to JS.
 
-![The boxes, aka objects, may look the same but are considered unique](/Users/hannakim/Documents/ship-shape/website-nuxt/static/img/blog/cookie-boxes.jpeg)
+![The boxes, aka objects, may look the same but are considered unique](/img/blog/cookie-boxes.jpeg)
 
 You can think of an object as a box and its properties as anything you put inside the box. You might put 10 chocolate chip cookies into each box, but they’re still distinct boxes from one another.
 
