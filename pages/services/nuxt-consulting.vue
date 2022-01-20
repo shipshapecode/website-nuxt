@@ -3,12 +3,12 @@
     <div class="waves white-waves">
       <HeroBlock class="nuxt-consulting">
         <template #content>
-          <div class="md:pl-16">
+          <div class="sm:px-16 lg:pr-0">
             <h1 itemprop="name" class="text-4xl leading-10">
               Create a Nuxt.js app that's universal — without all the hassle
             </h1>
             <div>
-              <nuxt-link class="btn btn-red" to="/contact/">
+              <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
                 Let's get started
               </nuxt-link>
             </div>
