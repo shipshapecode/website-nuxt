@@ -156,7 +156,7 @@
       <SingleQuote :testimonial="testimonial" />
     </div>
     <div
-      class="grid mx-8 place-self-center lg:grid-flow-col lg:mx-20 lg:gap-x-8"
+      class="grid mx-8 place-self-center lg:grid-flow-col md:mx-20 lg:gap-x-8"
     >
       <nuxt-img
         class="col-span-2 lg:order-last"
@@ -175,7 +175,7 @@
         </p>
       </div>
     </div>
-    <WaveMoreLinks />
+    <WaveMoreLinks class="md:px-20" />
   </div>
 </template>
 
