@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <div class="waves white-waves">
+    <div class="waves white-waves sm:pb-20 lg:pb-8">
       <HeroBlock class="nuxt-consulting">
         <template #content>
           <div class="sm:px-16 lg:pr-0">
@@ -75,8 +75,8 @@
           class="
             grid
             text-center
-            divide-grey-light divide-y
-            lg:grid-cols-3 lg:divide-x lg:divide-y-0
+            divide-grey-light divide-y-2
+            lg:grid-cols-3 lg:divide-x-2 lg:divide-y-0
           "
         >
           <div
@@ -84,7 +84,7 @@
               bg-navy
               flex flex-col
               justify-items-center
-              p-8
+              py-8
               lg:px-16 lg:pb-0
             "
           >
@@ -135,7 +135,7 @@
         grid
         gap-8-x
         p-8
-        md:p-20
+        md:px-24 md:pt-32
         lg:grid-col-3 lg:grid-row-3 lg:grid-flow-col
       "
     >
@@ -156,7 +156,14 @@
       <SingleQuote :testimonial="testimonial" />
     </div>
     <div
-      class="grid mx-8 place-self-center lg:grid-flow-col md:mx-20 lg:gap-x-8"
+      class="
+        grid
+        mx-8
+        gap-y-4
+        place-self-center
+        sm:m-12
+        lg:grid-flow-col lg:mx-20 lg:mb-20 lg:gap-x-8
+      "
     >
       <nuxt-img
         class="col-span-2 lg:order-last"
