@@ -40,6 +40,24 @@
     <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <nuxt-img
+          alt="Sephora logo"
+          class="h-10 mb-3 w-auto"
+          src="/svgs/clients/sephora.svg"
+        />
+
+        <p class="lg:h-12">
+          Modularizing and improving performance for Sephora's Nuxt.js app.
+        </p>
+
+        <nuxt-link class="btn btn-red mb-12" to="/work/sephora/">
+          View Case
+        </nuxt-link>
+      </div>
+    </div>
+
+    <div class="w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
+        <nuxt-img
           alt="Swach logo"
           class="h-10 mb-3 w-auto"
           src="/svgs/clients/swach.svg"
