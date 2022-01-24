@@ -161,8 +161,8 @@
         mx-8
         gap-y-4
         place-self-center
-        sm:m-12
-        lg:grid-flow-col lg:mx-20 lg:mb-20 lg:gap-x-8
+        sm:mx-12 sm:mt-8
+        lg:grid-flow-col lg:mx-20 lg:mb-12 lg:gap-x-20
       "
     >
       <nuxt-img
@@ -170,7 +170,7 @@
         format="webp"
         src="/img/hero-images/ember-consulting.png"
       />
-      <div>
+      <div class="place-self-center">
         <h2 class="text-navy pt-4">We ❤️ the Nuxt.js Community</h2>
         <h3 class="text-2xl">Proud Nuxt.js partners</h3>
         <p>
