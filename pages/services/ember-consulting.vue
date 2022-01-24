@@ -157,9 +157,7 @@
     <div class="md:mx-12">
       <SingleQuote :testimonial="testimonial" />
     </div>
-    <div
-      class="flex flex-col mx-8 gap-y-4 sm:m-12 lg:mx-20 lg:mb-20 lg:gap-x-8"
-    >
+    <div class="flex flex-col mx-8 gap-y-4 sm:mx-12 lg:mx-20 lg:gap-x-8">
       <h2 class="text-navy pt-4">We ❤️ the Ember.js Community</h2>
       <div class="grid lg:grid-cols-3 lg:gap-x-16 xl:gap-x-24">
         <div class="w-full">
