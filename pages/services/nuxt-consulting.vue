@@ -68,7 +68,7 @@
             process.
           </p>
         </div>
-        <h3 class="text-white text-xl mb-8">
+        <h3 class="text-white text-xl mb-8 leading-snug md:mb-16">
           Nuxt works well for apps big and small thanks to its:
         </h3>
         <div
