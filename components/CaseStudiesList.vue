@@ -3,6 +3,25 @@
     <div class="w-full">
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <nuxt-img
+          alt="Enigma logo"
+          class="h-10 mb-3 w-auto"
+          src="/svgs/clients/enigma_logo_text_red.svg"
+        />
+
+        <p class="lg:h-12">
+          Built MVP application that was successfully launched and established
+          among initial client base
+        </p>
+
+        <nuxt-link class="btn btn-red mb-12" to="/work/enigma/">
+          View Case
+        </nuxt-link>
+      </div>
+    </div>
+
+    <div class="w-full">
+      <div class="m-auto max-w-2xl w-full lg:m-0">
+        <nuxt-img
           alt="Netflix logo"
           class="h-10 mb-3 w-auto"
           src="/svgs/clients/netflix.svg"
