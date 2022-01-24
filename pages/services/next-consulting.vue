@@ -209,7 +209,7 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 
-const testimonial = {
+export const testimonial = {
   name: 'Harley Sugarman',
   title: 'Founder, CEO at Enigma',
   imgSrc: 'harley',

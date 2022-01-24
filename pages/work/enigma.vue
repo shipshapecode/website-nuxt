@@ -99,7 +99,7 @@
         </ul>
       </div>
 
-      <div class="p-4 lg:p-12">
+      <div class="p-4 lg:pb-0 lg:p-12">
         <h4>Outcome</h4>
 
         <p>
@@ -110,16 +110,7 @@
           production-ready product off the ground. The client also had this to
           say about their experience:
         </p>
-        <p>
-          “I loved working with Ship Shape. They helped our small team build a
-          product from the ground up and were strong partners every step of the
-          way. Their domain expertise in Next.js and React helped lay the
-          foundation for a scalable codebase, and they were great at ensuring we
-          adhered to engineering best practices. Every member of the team was a
-          pleasure to work with and (best of all) we ended up launching our MVP
-          on schedule!”
-        </p>
-        <p>-Harley Sugarman Founder, CEO at Enigma</p>
+        <SingleQuote :testimonial="testimonial" />
       </div>
 
       <BottomLinks
@@ -134,12 +125,16 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
+import { testimonial } from '~/pages/services/next-consulting';
 
 export default {
   speedkitComponents: {
-    BottomLinks: () => import('@/components/BottomLinks')
+    BottomLinks: () => import('@/components/BottomLinks'),
+    SingleQuote: () => import('@/components/SingleQuote')
   },
-
+  data() {
+    return { testimonial };
+  },
   head() {
     const title = 'Netflix Ember.js Finance Dashboard';
     const description =
