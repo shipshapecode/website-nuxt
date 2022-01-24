@@ -33,7 +33,7 @@ greeting === hello
 // Returns false
 ```
 
-While primitives can’t change value without changing reference, objects can change value and **still hold onto its identity**. So two seemingly similar objects are actually two entirely distinct entities to JS.
+While primitives can’t change value without changing reference, objects can change value and **still hold onto its identity**, so two seemingly similar objects are actually two entirely distinct entities to JS.
 
 ![The boxes, aka objects, may look the same but are considered unique](/img/blog/cookie-boxes.jpeg)
 
