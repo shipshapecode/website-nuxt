@@ -95,10 +95,9 @@
         <h3>Key Application Features</h3>
 
         <p>
-          In order to successfully launch this application, the Enigma and Ship
-          Shape development teams focused on implementing the key features that
-          are central to making Enigma the unique web application that it is.
-          These features included the following crucial workflows:
+          In order to successfully launch this unique cybersecurity assessment
+          tool, the Enigma and Ship Shape development teams focused on
+          implementing the following key features and workflows:
         </p>
 
         <ul class="ml-16">
