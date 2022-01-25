@@ -3,7 +3,7 @@
     <div class="waves white-waves sm:pb-20 lg:pb-8">
       <HeroBlock class="nuxt-consulting">
         <template #content>
-          <div class="sm:px-16 lg:pr-0">
+          <div>
             <h1 itemprop="name" class="text-5xl leading-tight">
               Create a Nuxt.js app that's universal — without all the hassle
             </h1>
@@ -25,15 +25,15 @@
       </HeroBlock>
     </div>
     <div class="bg-navy pt-32 pb-20 flex flex-wrap justify-center">
-      <div class="section-content px-8 md:px-24">
-        <h2 class="text-white text-4xl">All about Nuxt.js</h2>
+      <div class="section-content px-8">
+        <h2 class="text-white text-3xl">All about Nuxt.js</h2>
         <div
           class="
             grid
             space-y-12
             pt-10
             pb-32
-            lg:pt-0 lg:grid-cols-7 lg:gap-20 lg:space-y-0
+            lg:pt-4 lg:grid-cols-7 lg:gap-20 lg:space-y-0
           "
         >
           <p
@@ -46,7 +46,7 @@
               rounded
               place-self-center
               sm:p-8
-              lg:col-span-3
+              lg:col-span-3 lg:p-12
             "
           >
             Nuxt.js is an open-source framework used to build Vue.js web
@@ -54,7 +54,7 @@
             apps easier because of its reduced routing complexixty, giving you
             SEO benefits right out of the box.
           </p>
-          <p class="text-white text-xl lg:col-span-4 lg:content-center">
+          <p class="text-white text-xl lg:col-span-4 lg:content-center lg:p-8">
             At Ship Shape, we love Nuxt.js because it’s still an opinionated
             framework (though not quite as opinionated as Ember.js), and it has
             features that strip out unused code to make your app fast and
@@ -150,7 +150,13 @@
         lg:grid-col-3 lg:grid-row-3 lg:grid-flow-col
       "
     >
-      <nuxt-img format="webp" src="/img/hero-images/mentoring.png" />
+      <nuxt-img
+        class="h-auto m-auto max-w-2xl w-full"
+        format="webp"
+        src="/img/hero-images/mentoring.png"
+        height="772"
+        width="1312"
+      />
       <div class="row-span-2 place-self-center">
         <h2 class="text-navy text-4xl pt-4 md:pt-8">
           Your first mate's in rough waters
@@ -163,24 +169,16 @@
         </p>
       </div>
     </div>
-    <div class="md:mx-12">
-      <SingleQuote :testimonial="testimonial" />
-    </div>
+    <SingleQuote :testimonial="testimonial" />
     <div
-      class="
-        grid
-        mx-8
-        gap-y-4
-        place-self-center
-        sm:mx-12 sm:mt-8
-        md:mx-24
-        lg:grid-flow-col lg:mx-20 lg:mb-12 lg:gap-x-20
-      "
+      class="mx-8 gap-20 grid grid-cols-1 items-center lg:gap-32 lg:grid-cols-2"
     >
       <nuxt-img
-        class="col-span-2 lg:order-last"
+        class="h-auto m-auto max-w-2xl w-full lg:order-last"
         format="webp"
         src="/img/hero-images/ember-consulting.png"
+        height="1034"
+        width="1312"
       />
       <div class="place-self-center">
         <h2 class="text-navy pt-4">We ❤️ the Nuxt.js Community</h2>
