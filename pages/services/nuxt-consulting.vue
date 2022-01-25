@@ -68,7 +68,7 @@
             process.
           </p>
         </div>
-        <h3 class="text-white text-2xl mb-8 leading-snug md:mb-16">
+        <h3 class="text-white text-2xl mb-8 leading-snug lg:mb-16">
           Nuxt works well for apps big and small thanks to its:
         </h3>
         <div
@@ -86,6 +86,7 @@
               flex flex-col
               justify-items-center
               p-8
+              md:py-12
               lg:px-16 lg:pb-0
             "
           >
@@ -104,6 +105,7 @@
               flex flex-col
               justify-items-center
               p-8
+              md:py-12
               lg:px-16 lg:pb-0
             "
           >
@@ -116,7 +118,16 @@
             </p>
           </div>
 
-          <div class="bg-navy flex flex-col justify-items-center p-8 lg:px-16">
+          <div
+            class="
+              bg-navy
+              flex flex-col
+              justify-items-center
+              p-8
+              md:py-12
+              lg:px-16
+            "
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/static.svg"
@@ -141,7 +152,7 @@
     >
       <nuxt-img format="webp" src="/img/hero-images/mentoring.png" />
       <div class="row-span-2 place-self-center">
-        <h2 class="text-navy text-4xl pt-4">
+        <h2 class="text-navy text-4xl pt-4 md:pt-8">
           Your first mate's in rough waters
         </h2>
         <p class="text-lg">
@@ -162,6 +173,7 @@
         gap-y-4
         place-self-center
         sm:mx-12 sm:mt-8
+        md:mx-24
         lg:grid-flow-col lg:mx-20 lg:mb-12 lg:gap-x-20
       "
     >
