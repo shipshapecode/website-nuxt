@@ -17,7 +17,7 @@
         <p>
           Once a candidate has completed an assessment through the Enigma
           platform, employers can review their responses and overall performance
-          and then use these findings to better evaluate the candidate’s overall
+          and then use these findings to better evaluate the candidate’s
           application.
         </p>
       </div>
