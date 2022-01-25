@@ -1,3 +1,5 @@
+@use "sass:math";
+
 ///
 /// Output the headings (h1, h2...) with the calculated settings
 /// @access public
@@ -35,7 +37,7 @@
       }
 
       @if $font-unit-ems-bool {
-        $line-height: line-height-spacing($increment, $settings) / $font-size;
+        $line-height: math.div(line-height-spacing($increment, $settings), $font-size);
       }
       @else {
         $line-height: line-height-spacing($increment, $settings);
@@ -45,7 +47,7 @@
     // Margin Bottom Calculation
     @if $margin-bottom-bool {
       @if $font-unit-ems-bool {
-        $margin-bottom: $base-spacing / $font-size * $base-unit-multiplier;
+        $margin-bottom: math.div($base-spacing, $font-size) * $base-unit-multiplier;
       }
       @else {
         $margin-bottom: $base-spacing;
@@ -101,7 +103,7 @@
   // Margin Bottom
   @if $margin-bottom-bool {
     @if $font-unit-ems-bool {
-      $margin-bottom: $base-spacing / $base-font-size * $base-unit-multiplier;
+      $margin-bottom: math.div($base-spacing, $base-font-size) * $base-unit-multiplier;
     }
     @else {
       $margin-bottom: $base-spacing;
