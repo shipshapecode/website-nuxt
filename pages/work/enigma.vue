@@ -11,11 +11,33 @@
           and potential employers during the interviewing process. Through this
           web application, employers can create and assign technical assessments
           to candidates to ascertain their level of competency with key
-          cybersecurity concepts and industry best practices. Once a candidate
-          has completed an assessment through the Enigma platform, employers can
-          review their responses and overall performance and then use these
-          findings to better evaluate the candidate’s overall application.
+          cybersecurity concepts and industry best practices.
         </p>
+
+        <p>
+          Once a candidate has completed an assessment through the Enigma
+          platform, employers can review their responses and overall performance
+          and then use these findings to better evaluate the candidate’s overall
+          application.
+        </p>
+      </div>
+
+      <div
+        class="
+          bg-black
+          flex flex-wrap
+          h-64
+          md:h-140
+          justify-center
+          items-center
+        "
+      >
+        <div class="w-1/2 lg:w-1/3">
+          <inline-svg
+            class="fill-white h-auto w-full"
+            src="/svgs/clients/enigma.svg"
+          />
+        </div>
       </div>
 
       <div class="p-4 lg:p-12">
@@ -27,10 +49,11 @@
           that would create a production-ready product. Enigma already had
           customers signed up and ready to start utilizing the application for
           their recruiting needs, but still had a substantial roadmap of
-          features in need of implementation, including the full assessment
-          workflow and administration-related tasks. Ship Shape’s challenge was
-          to implement the crucial features necessary to launch Enigma and meet
-          customers’ various requests.
+          features in need of implementation. Ship Shape’s challenge was to
+          implement essential features, including the full assessment workflow
+          and corresponding administrative tasks, in order to launch Enigma. We
+          continued to help build out the application based on customers’
+          feedback about their additional needs.
         </p>
 
         <h2>Solution</h2>
@@ -43,8 +66,8 @@
           times on the client side of this application. The server-side
           rendering capabilities of Next.js allows the Enigma application to
           retrieve web pages and any corresponding data in one go, eliminating
-          the need for multiple network requests and subsequent delays in data
-          population.
+          the need for multiple network requests and preventing subsequent
+          delays in data population.
         </p>
 
         <h3>Shepherd Tour</h3>
@@ -53,9 +76,9 @@
           The Ship Shape team also had the opportunity to integrate one of our
           own open-source projects,
           <a href="https://shepherdjs.dev/docs/">Shepherd</a>, into the Enigma
-          platform. The Shepherd library offers a way to guide Enigma users
-          through a tour of the application, highlighting the key features users
-          should familiarize themselves with in order to use the app at its full
+          platform. The Shepherd library provides a way to guide users through a
+          tour of a web application, highlighting the key features users should
+          familiarize themselves with in order to use the app at its full
           potential.
         </p>
 
@@ -81,20 +104,20 @@
         <ul class="ml-16">
           <li class="list-disc">
             Authentication processes that allow candidates and employers to
-            access their respective accounts
+            securely access their respective accounts
           </li>
           <li class="list-disc">
-            A candidate’s ability to work through various assessments assigned
-            by potential employers
+            A candidate’s ability to work through assessments assigned by
+            potential employers
           </li>
           <li class="list-disc">
             An employer’s ability to create, view, assign, archive, and delete
             assessments and candidate assessment attempts
           </li>
           <li class="list-disc">
-            An optional package that would allow employers to assign, and
-            candidates to take, a supplemental personality evaluation that would
-            accompany their overall job application
+            An optional package that would allow employers to assign a
+            supplemental personality evaluation that would accompany a
+            candidate's overall job application
           </li>
         </ul>
       </div>
@@ -104,9 +127,9 @@
 
         <p>
           Ship Shape’s main priority was to successfully build and launch a
-          feature rich application, according to the client’s schedule, and
-          we’re happy to report that we met this target. The Ship Shape crew had
-          a great experience working with the Enigma team to get a
+          feature rich application according to the client’s schedule, and we’re
+          happy to report that we met this target! The Ship Shape crew had a
+          great experience working with the Enigma team to get a
           production-ready product off the ground. The client also had this to
           say about their experience:
         </p>

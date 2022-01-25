@@ -4,13 +4,13 @@
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <nuxt-img
           alt="Enigma logo"
-          class="h-10 mb-3 w-auto"
-          src="/svgs/clients/enigma_logo_text_red.svg"
+          class="h-10 mb-3 w-auto bg-black"
+          src="/svgs/clients/enigma.svg"
         />
 
         <p class="lg:h-12">
           Built MVP application that was successfully launched and established
-          among initial client base
+          for immediate use among initial client base
         </p>
 
         <nuxt-link class="btn btn-red mb-12" to="/work/enigma/">
