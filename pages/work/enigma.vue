@@ -56,6 +56,18 @@
           feedback about their additional needs.
         </p>
 
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <nuxt-img
+              alt="Enigma Login"
+              class="flex"
+              format="webp"
+              src="/img/work/enigma/enigma-login.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:p-12">
         <h2>Solution</h2>
 
         <h3>Next.js</h3>
@@ -81,6 +93,17 @@
           familiarize themselves with in order to use the app at its full
           potential.
         </p>
+
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <nuxt-img
+              alt="Enigma Login"
+              class="flex"
+              format="webp"
+              src="/img/work/enigma/enigma-hirer-assessment-tour.png"
+            />
+          </div>
+        </div>
 
         <h3>Cypress Testing</h3>
 
@@ -119,11 +142,32 @@
             candidate's overall job application
           </li>
         </ul>
+
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <nuxt-img
+              alt="Enigma Login"
+              class="flex"
+              format="webp"
+              src="/img/work/enigma/enigma-hirer-assessment-detail.png"
+            />
+          </div>
+        </div>
       </div>
 
       <div class="p-4 lg:pb-0 lg:p-12">
-        <h4>Outcome</h4>
+        <h2>Outcome</h2>
 
+        <div class="bg-grey-light flex justify-center lg:flex-1">
+          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+            <nuxt-img
+              alt="Enigma Login"
+              class="flex"
+              format="webp"
+              src="/img/work/enigma/enigma-hirer-results.png"
+            />
+          </div>
+        </div>
         <p>
           Ship Shape’s main priority was to successfully build and launch a
           feature rich application according to the client’s schedule, and we’re
