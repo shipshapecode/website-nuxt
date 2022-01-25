@@ -4,7 +4,7 @@
       <div class="m-auto max-w-2xl w-full lg:m-0">
         <nuxt-img
           alt="Enigma logo"
-          class="h-10 mb-3 w-auto bg-black"
+          class="h-10 mb-3 w-auto"
           src="/svgs/clients/enigma.svg"
         />
 

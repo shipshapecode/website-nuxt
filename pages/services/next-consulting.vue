@@ -213,7 +213,7 @@ export const testimonial = {
   name: 'Harley Sugarman',
   title: 'Founder, CEO at Enigma',
   imgSrc: 'harley',
-  svgSrc: '/svgs/clients/enigma.svg',
+  svgSrc: '/svgs/clients/enigma-white.svg',
   quote: `I loved working with Ship Shape. 
           They helped our small team build a product from the ground up 
           and were strong partners every step of the way. Their domain expertise 
