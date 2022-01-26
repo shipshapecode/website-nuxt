@@ -1,31 +1,31 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <div class="waves white-waves sm:pb-20 lg:pb-8">
-      <HeroBlock class="nuxt-consulting">
-        <template #content>
-          <div>
-            <h1 itemprop="name" class="text-5xl leading-tight">
-              Create a Nuxt.js app that's universal — without all the hassle
-            </h1>
-            <div>
-              <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
-                Let's get started
-              </nuxt-link>
-            </div>
-          </div>
-        </template>
+    <HeroBlock hero-classes="nuxt-consulting waves next-waves">
+      <template #content>
+        <h1 itemprop="name" class="leading-tight text-5xl">
+          Create a Nuxt.js app that's universal — without all the hassle
+        </h1>
 
-        <template #icon>
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            src="/img/hero-images/nuxt-consulting.png"
-          />
-        </template>
-      </HeroBlock>
-    </div>
-    <div class="bg-navy pt-32 pb-20 flex flex-wrap justify-center">
-      <div class="section-content px-8">
+        <div>
+          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
+            Let's get started
+          </nuxt-link>
+        </div>
+      </template>
+
+      <template #icon>
+        <nuxt-img
+          class="h-auto m-auto max-w-2xl w-full"
+          format="webp"
+          height="834"
+          src="/img/hero-images/nuxt-consulting.png"
+          width="1344"
+        />
+      </template>
+    </HeroBlock>
+
+    <div class="section bg-navy flex flex-wrap justify-center">
+      <div class="section-content">
         <h2 class="text-white text-3xl">All about Nuxt.js</h2>
         <div
           class="
@@ -42,7 +42,7 @@
               mb-0
               p-6
               bg-blue-light
-              text-navy text-xl
+              text-navy
               rounded
               place-self-center
               sm:p-8
@@ -54,7 +54,7 @@
             apps easier because of its reduced routing complexixty, giving you
             SEO benefits right out of the box.
           </p>
-          <p class="text-white text-xl lg:col-span-4 lg:content-center lg:p-8">
+          <p class="text-white lg:col-span-4 lg:content-center lg:p-8">
             At Ship Shape, we love Nuxt.js because it’s still an opinionated
             framework (though not quite as opinionated as Ember.js), and it has
             features that strip out unused code to make your app fast and
@@ -68,71 +68,49 @@
             process.
           </p>
         </div>
-        <h3 class="text-white text-2xl mb-8 leading-snug lg:mb-16">
+
+        <h5 class="text-white" data-aos="fade">
           Nuxt works well for apps big and small thanks to its:
-        </h3>
+        </h5>
+
         <div
           class="
-            grid
-            text-center
-            font-medium
-            divide-grey-light divide-y-2
-            lg:grid-cols-3 lg:divide-x-2 lg:divide-y-0
+            divide-grey-light divide-y
+            grid grid-cols-1
+            my-20
+            text-white
+            lg:divide-x lg:divide-y-0 lg:grid-cols-3
           "
         >
-          <div
-            class="
-              bg-navy
-              flex flex-col
-              justify-items-center
-              p-8
-              md:py-12
-              lg:px-16 lg:pb-0
-            "
-          >
+          <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
-              class="h-20 inline-block mb-8"
+              class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/modular.svg"
             />
-            <p class="text-white text-xl">
+
+            <p class="mb-12 text-center lg:m-0 lg:w-64">
               Modular architecture, which speeds up development
             </p>
           </div>
 
-          <div
-            class="
-              bg-navy
-              flex flex-col
-              justify-items-center
-              p-8
-              md:py-12
-              lg:px-16 lg:pb-0
-            "
-          >
+          <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/native-apps.svg"
             />
-            <p class="text-white text-xl">
+
+            <p class="mb-12 text-center lg:m-0 lg:w-64">
               Server-side rendered (SSR) to deliver HTML, rather than JavaScript
             </p>
           </div>
 
-          <div
-            class="
-              bg-navy
-              flex flex-col
-              justify-items-center
-              p-8
-              md:py-12
-              lg:px-16
-            "
-          >
+          <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/static.svg"
             />
-            <p class="text-white text-xl">
+
+            <p class="mb-12 text-center lg:m-0 lg:w-64">
               Static Site Generation to net SEO benefits without needing a
               server
             </p>
@@ -140,59 +118,77 @@
         </div>
       </div>
     </div>
+
     <div
-      class="
-        grid
-        gap-8-x
-        px-8
-        py-24
-        md:px-24 md:pt-32
-        lg:grid-col-3 lg:grid-row-3 lg:grid-flow-col
-      "
+      class="section flex flex-wrap justify-center !pt-40"
+      data-aos="fade-down"
     >
-      <nuxt-img
-        class="h-auto m-auto max-w-2xl w-full"
-        format="webp"
-        src="/img/hero-images/mentoring.png"
-        height="772"
-        width="1312"
-      />
-      <div class="row-span-2 place-self-center">
-        <h2 class="text-navy text-4xl pt-4 md:pt-8">
-          Your first mate's in rough waters
-        </h2>
-        <p class="text-lg">
-          Ship Shape is committed to leaving every engineering team we work with
-          better than we found it. Not only do we build robust, reliable
-          software, but we also train your staff along the way to understand,
-          maintain, and improve your product after our engagement ends.
-        </p>
+      <div
+        class="
+          section-content
+          gap-20
+          grid grid-cols-1
+          items-center
+          lg:gap-32 lg:grid-cols-2
+        "
+      >
+        <div>
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            src="/img/hero-images/mentoring.png"
+            height="772"
+            width="1312"
+          />
+        </div>
+        <div>
+          <h3>Your first mate's in rough waters</h3>
+          <p>
+            Ship Shape is committed to leaving every engineering team we work
+            with better than we found it. Not only do we build robust, reliable
+            software, but we also train your staff along the way to understand,
+            maintain, and improve your product after our engagement ends.
+          </p>
+        </div>
       </div>
     </div>
+
     <SingleQuote :testimonial="testimonial" />
-    <div
-      class="mx-8 gap-20 grid grid-cols-1 items-center lg:gap-32 lg:grid-cols-2"
-    >
-      <nuxt-img
-        class="h-auto m-auto max-w-2xl w-full lg:order-last"
-        format="webp"
-        src="/img/hero-images/ember-consulting.png"
-        height="1034"
-        width="1312"
-      />
-      <div class="place-self-center">
-        <h2 class="text-navy pt-4">We ❤️ the Nuxt.js Community</h2>
-        <h3 class="text-2xl">Proud Nuxt.js partners</h3>
-        <p class="text-xl">
-          Ship Shape proudly
-          <a href="https://nuxtjs.org/">sponsors Nuxt.js</a> to support its
-          talented team and dynamic framework. Our partnership is one of the
-          main reasons we’re always ready to create Nuxt.js apps: because we
-          stay up-to-date with the Nuxt team and give back to the community.
-        </p>
+
+    <div class="section flex flex-wrap justify-center">
+      <div
+        class="
+          section-content
+          gap-20
+          grid grid-cols-1
+          items-center
+          lg:gap-32 lg:grid-cols-2
+        "
+      >
+        <div class="lg:order-last" data-aos="fade-up">
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            src="/img/hero-images/ember-consulting.png"
+            height="1034"
+            width="1312"
+          />
+        </div>
+        <div>
+          <h3 data-aos="fade-left">We ❤️ the Nuxt.js Community</h3>
+          <h4 class="text-2xl">Proud Nuxt.js partners</h4>
+          <p>
+            Ship Shape proudly
+            <a href="https://nuxtjs.org/">sponsors Nuxt.js</a> to support its
+            talented team and dynamic framework. Our partnership is one of the
+            main reasons we’re always ready to create Nuxt.js apps: because we
+            stay up-to-date with the Nuxt team and give back to the community.
+          </p>
+        </div>
       </div>
     </div>
-    <WaveMoreLinks class="md:px-20" />
+
+    <WaveMoreLinks />
   </div>
 </template>
 
