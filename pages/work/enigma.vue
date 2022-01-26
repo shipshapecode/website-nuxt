@@ -7,8 +7,8 @@
         <h1 class="text-4xl lg:text-6xl">Enigma</h1>
 
         <p>
-          Enigma is a platform designed to connect cybersecurity professionals
-          and potential employers during the interviewing process. Through this
+          Enigma is a platform designed to help cybersecurity teams make faster
+          hiring decisions and find stronger, more diverse talent. Through this
           web application, employers can create and assign technical assessments
           to candidates to ascertain their level of competency with key
           cybersecurity concepts and industry best practices.
