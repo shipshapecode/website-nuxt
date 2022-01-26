@@ -105,7 +105,7 @@
           </div>
         </div>
 
-        <h3>Cypress Testing</h3>
+        <h3 class="pt-6">Cypress Testing</h3>
 
         <p>
           The development team also incorporated
@@ -168,7 +168,7 @@
             />
           </div>
         </div>
-        <p>
+        <p class="pt-6">
           Ship Shape’s main priority was to successfully build and launch a
           feature rich application according to the client’s schedule, and we’re
           happy to report that we met this target! The Ship Shape crew had a
