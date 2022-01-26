@@ -6,7 +6,7 @@
     <div class="section-content bg-navy mb-16 p-4 rounded lg:mb-20 xl:py-20">
       <div class="flex flex-col p-4 relative text-white xl:px-16 xl:py-0">
         <inline-svg
-          class="h-8 max-w-full mb-3 self-start w-auto fill-white"
+          class="h-8 max-w-full mb-3 self-start w-auto"
           :src="testimonial.svgSrc"
         />
 
@@ -33,9 +33,9 @@
           <nuxt-img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
             format="webp"
-            height="128px"
+            height="256"
             loading="lazy"
-            width="128px"
+            width="256"
             :alt="'Headshot of ' + testimonial.name"
             :src="`/img/${testimonial.imgSrc}.jpg`"
           />
