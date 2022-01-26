@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <HeroBlock hero-classes="services">
+  <div itemscope itemtype="http://schema.org/Service">
+    <HeroBlock hero-classes="services bg-blue-light waves blue-light-waves">
       <template #content>
-        <h1>Our Services</h1>
-        <p>
-          We turn ideas into industry-leading products. Our experts proactively
-          remedy issues with existing code and build innovations from the ground
-          up.
-        </p>
+        <h1 itemprop="name" class="leading-tight text-5xl">
+          Software consultants who build it right the first time, every time
+        </h1>
         <div>
-          <nuxt-link class="btn btn-red" to="/contact/">
+          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Work with us
           </nuxt-link>
         </div>

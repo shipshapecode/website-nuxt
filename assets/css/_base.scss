@@ -236,3 +236,9 @@ h6 {
     background-image: url(/svgs/waves/white-waves.svg);
   }
 }
+
+.blue-light-waves {
+  &::after {
+    background-image: url(/svgs/blue-light-waves.svg);
+  }
+}
