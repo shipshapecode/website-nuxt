@@ -1,12 +1,12 @@
 <template>
   <div class="section flex flex-wrap justify-center">
-    <div class="section-content flex flex-wrap justify-center">
-      <div class="max-w-4xl pb-24 w-full">
+    <div class="section-content flex flex-wrap">
+      <div class="max-w-4xl pb-24 w-full" data-aos="fade-up">
         <h2>We ❤️ the Ember.js Community</h2>
       </div>
 
       <div class="flex flex-wrap lg:flex-nowrap">
-        <div class="w-full lg:mr-12 lg:w-1/3">
+        <div class="w-full lg:mr-12 lg:w-1/3" data-aos="flip-down">
           <div class="text-center w-full">
             <nuxt-img
               class="ember-image inline p-8"
@@ -30,7 +30,11 @@
           </p>
         </div>
 
-        <div class="w-full lg:mr-12 lg:w-1/3">
+        <div
+          class="w-full lg:mr-12 lg:w-1/3"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div class="text-center w-full">
             <nuxt-img
               class="ember-image inline p-12"
@@ -49,7 +53,7 @@
           </p>
         </div>
 
-        <div class="w-full lg:w-1/3">
+        <div class="w-full lg:w-1/3" data-aos="fade-up" data-aos-delay="400">
           <div class="text-center w-full">
             <nuxt-img
               class="ember-image inline p-8"

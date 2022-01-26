@@ -27,7 +27,9 @@
 
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="text-white text-3xl pt-20">All about Ember.js</h2>
+        <h2 class="text-white text-3xl pt-20" data-aos="fade-up">
+          All about Ember.js
+        </h2>
         <div
           class="
             grid
@@ -36,6 +38,8 @@
             pb-32
             lg:pt-4 lg:grid-cols-7 lg:gap-20 lg:space-y-0
           "
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <p
             class="
@@ -67,9 +71,9 @@
           </p>
         </div>
         <!-- fix spacing between this and icons; second breakpoint - 2 & 2 for sm or md -->
-        <h3 class="text-white text-xl mb-8 leading-snug md:mb-16">
+        <h5 class="text-white" data-aos="fade">
           Ember is great for large companies because of its:
-        </h3>
+        </h5>
         <div
           class="
             grid
@@ -86,6 +90,7 @@
               py-8
               lg:px-16 lg:pb-0
             "
+            data-aos="flip-down"
           >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
@@ -102,6 +107,8 @@
               py-12
               lg:px-16 lg:pb-0
             "
+            data-aos="flip-down"
+            data-aos-delay="200"
           >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
@@ -112,6 +119,8 @@
 
           <div
             class="bg-navy flex flex-col justify-items-center pt-12 lg:px-16"
+            data-aos="flip-down"
+            data-aos-delay="400"
           >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
@@ -122,6 +131,8 @@
 
           <div
             class="bg-navy flex flex-col justify-items-center pt-12 lg:px-16"
+            data-aos="flip-down"
+            data-aos-delay="600"
           >
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
