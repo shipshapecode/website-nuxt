@@ -63,13 +63,24 @@
           "
         >
           <p>
-            Our software engineers specialize in Ember.js, Nuxt.js, Next.js, and
-            emerging technologies like serverless frameworks and cloud-native
-            applications. We combine our high IQ in these technologies with a
-            high EQ to ensure your experience with us is just as good as the
-            final product. Plus, we upskill your team as we work together so
-            they can sustain and improve your products long after our engagement
-            ends.
+            Our software engineers specialize in
+            <a href="http://localhost:3000/services/cloud-native-consulting/"
+              >Ember.js</a
+            >,
+            <a href="http://localhost:3000/services/nuxt-consulting/">Nuxt.js</a
+            >,
+            <a href="http://localhost:3000/services/next-consulting/">Next.js</a
+            >, and emerging technologies like
+            <a href="http://localhost:3000/services/serverless-consulting/"
+              >serverless frameworks</a
+            >
+            and
+            <a href="http://localhost:3000/services/cloud-native-consulting/"
+              >cloud native applications</a
+            >. We combine our high IQ in these technologies with a high EQ to
+            ensure your experience with us is just as good as the final product.
+            Plus, we upskill your team as we work together so they can sustain
+            and improve your products long after our engagement ends.
           </p>
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
