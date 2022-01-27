@@ -20,7 +20,8 @@ let hello = 'hello'
 greeting === hello
 
 // Returns true
-// These 2 variables hold the same primitive data as values. If a variable is reassigned, it would take on a different value.
+// These 2 variables hold the same primitive data as values. 
+// If a variable is reassigned, it would take on a different value.
 ```
 
 Objects are non-primitive data and have a value as well as an identity. When an object is assigned to a variable, that variable acts as a reference point to the object's identity. Each object is unique, even if their properties might be identical.
