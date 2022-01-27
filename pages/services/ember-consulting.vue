@@ -1,29 +1,27 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <div class="waves white-waves sm:pb-20 lg:pb-8">
-      <HeroBlock class="ember-consulting">
-        <template #content>
-          <h1 itemprop="name" class="text-5xl leading-tight">
-            Build fast, reliable apps with expert Ember.js development,
-            consulting, and training
-          </h1>
-          <div>
-            <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
-              Let's get started
-            </nuxt-link>
-          </div>
-        </template>
-        <template #icon>
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            src="/img/hero-images/ember-consulting.png"
-            height="1030"
-            width="1344"
-          />
-        </template>
-      </HeroBlock>
-    </div>
+    <HeroBlock hero-classes="ember-consulting waves white-waves">
+      <template #content>
+        <h1 itemprop="name" class="text-5xl leading-tight">
+          Build fast, reliable apps with expert Ember.js development,
+          consulting, and training
+        </h1>
+        <div>
+          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
+            Let's get started
+          </nuxt-link>
+        </div>
+      </template>
+      <template #icon>
+        <nuxt-img
+          class="h-auto m-auto max-w-2xl w-full"
+          format="webp"
+          src="/img/hero-images/ember-consulting.png"
+          height="1030"
+          width="1344"
+        />
+      </template>
+    </HeroBlock>
 
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
