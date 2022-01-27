@@ -24,7 +24,7 @@
 
       <div
         class="
-          bg-black
+          bg-enigma-blue
           flex flex-wrap
           h-64
           md:h-140
@@ -32,7 +32,7 @@
           items-center
         "
       >
-        <div class="w-1/2 lg:w-1/3">
+        <div class="bg-enigma-blue w-1/2 lg:w-1/3">
           <inline-svg
             class="fill-white h-auto w-full"
             src="/svgs/clients/enigma.svg"
@@ -55,18 +55,19 @@
           continued to help build out the application based on customers’
           feedback about their additional needs.
         </p>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <nuxt-img
-              alt="Enigma Login"
-              class="flex"
-              format="webp"
-              src="/img/work/enigma/enigma-login.png"
-            />
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="p-4 lg:p-12">
+          <nuxt-img
+            alt="Enigma Login"
+            class="flex"
+            format="webp"
+            src="/img/work/enigma/enigma-login.png"
+          />
         </div>
       </div>
+
       <div class="p-4 lg:p-12">
         <h2>Solution</h2>
 
@@ -93,18 +94,20 @@
           familiarize themselves with in order to use the app at its full
           potential.
         </p>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <nuxt-img
-              alt="Enigma Login"
-              class="flex"
-              format="webp"
-              src="/img/work/enigma/enigma-hirer-assessment-tour.png"
-            />
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="p-4 lg:p-12">
+          <nuxt-img
+            alt="Enigma Login"
+            class="flex"
+            format="webp"
+            src="/img/work/enigma/enigma-hirer-assessment-tour.png"
+          />
         </div>
+      </div>
 
+      <div class="p-4 lg:p-12">
         <h3 class="pt-6">Cypress Testing</h3>
 
         <p>
@@ -142,32 +145,34 @@
             candidate's overall job application
           </li>
         </ul>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <nuxt-img
-              alt="Enigma Login"
-              class="flex"
-              format="webp"
-              src="/img/work/enigma/enigma-hirer-assessment-detail.png"
-            />
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="p-4 lg:p-12">
+          <nuxt-img
+            alt="Enigma Login"
+            class="flex"
+            format="webp"
+            src="/img/work/enigma/enigma-hirer-assessment-detail.png"
+          />
         </div>
       </div>
 
       <div class="p-4 lg:pb-0 lg:p-12">
         <h2>Outcome</h2>
+      </div>
 
-        <div class="bg-grey-light flex justify-center lg:flex-1">
-          <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-            <nuxt-img
-              alt="Enigma Login"
-              class="flex"
-              format="webp"
-              src="/img/work/enigma/enigma-hirer-results.png"
-            />
-          </div>
+      <div class="bg-grey-light flex justify-center lg:flex-1">
+        <div class="p-4 lg:p-12">
+          <nuxt-img
+            alt="Enigma Login"
+            class="flex"
+            format="webp"
+            src="/img/work/enigma/enigma-hirer-results.png"
+          />
         </div>
+      </div>
+      <div class="p-4 lg:p-12">
         <p class="pt-6">
           Ship Shape’s main priority was to successfully build and launch a
           feature rich application according to the client’s schedule, and we’re
@@ -176,8 +181,9 @@
           production-ready product off the ground. The client also had this to
           say about their experience:
         </p>
-        <SingleQuote :testimonial="testimonial" />
       </div>
+
+      <SingleQuote :testimonial="testimonial" />
 
       <BottomLinks
         next-link="/work/netflix/"
