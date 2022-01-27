@@ -3,7 +3,7 @@ authorId: hannakim
 categories:
   - javascript
   - react
-date: '2022-01-13'
+date: '2022-01-27'
 slug: react-objects-and-state
 title: 'Handling Objects in React Component State'
 ---
