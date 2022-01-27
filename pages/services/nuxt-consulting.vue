@@ -1,6 +1,8 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="nuxt-consulting waves next-waves">
+    <HeroBlock
+      hero-classes="nuxt-consulting waves nuxt-waves !pb-48 2xl:!pb-56"
+    >
       <template #content>
         <h1 itemprop="name" class="leading-tight text-5xl">
           Create a Nuxt.js app that's universal — without all the hassle
@@ -25,7 +27,7 @@
     </HeroBlock>
 
     <div class="section bg-navy flex flex-wrap justify-center">
-      <div class="section-content">
+      <div class="section-content" data-aos="fade-up">
         <h2 class="text-white text-3xl">All about Nuxt.js</h2>
         <div
           class="
@@ -33,28 +35,29 @@
             space-y-12
             pt-10
             pb-32
-            lg:pt-4 lg:grid-cols-7 lg:gap-20 lg:space-y-0
+            lg:pt-4 lg:grid-cols-8 lg:gap-20 lg:space-y-0
           "
         >
-          <p
+          <div
             class="
-              grid
-              mb-0
-              p-6
               bg-blue-light
+              flex
+              items-center
+              p-12
+              rounded-md
               text-navy
-              rounded
-              place-self-center
-              sm:p-8
-              lg:col-span-3 lg:p-12
+              lg:col-span-3
             "
           >
-            Nuxt.js is an open-source framework used to build Vue.js web
-            applications. It’s a performant system that makes creating universal
-            apps easier because of its reduced routing complexixty, giving you
-            SEO benefits right out of the box.
-          </p>
-          <p class="text-white lg:col-span-4 lg:content-center lg:p-8">
+            <p class="mb-0">
+              Nuxt.js is an open-source framework used to build Vue.js web
+              applications. It’s a performant system that makes creating
+              universal apps easier because of its reduced routing complexixty,
+              giving you SEO benefits right out of the box.
+            </p>
+          </div>
+
+          <p class="text-white lg:col-span-5 lg:content-center lg:p-8">
             At Ship Shape, we love Nuxt.js because it’s still an opinionated
             framework (though not quite as opinionated as Ember.js), and it has
             features that strip out unused code to make your app fast and
@@ -93,7 +96,11 @@
             </p>
           </div>
 
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="200"
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/native-apps.svg"
@@ -104,7 +111,11 @@
             </p>
           </div>
 
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="400"
+          >
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/static.svg"
@@ -175,14 +186,17 @@
           />
         </div>
         <div>
-          <h3 data-aos="fade-left">We ❤️ the Nuxt.js Community</h3>
-          <h4 class="text-2xl">Proud Nuxt.js partners</h4>
-          <p>
+          <h3 data-aos="fade-up">We ❤️ the Nuxt.js Community</h3>
+          <h4 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h4>
+          <p data-aos="fade-up">
             Ship Shape proudly
-            <a href="https://nuxtjs.org/">sponsors Nuxt.js</a> to support its
-            talented team and dynamic framework. Our partnership is one of the
-            main reasons we’re always ready to create Nuxt.js apps: because we
-            stay up-to-date with the Nuxt team and give back to the community.
+            <a href="https://nuxtjs.org/partners/ship-shape"
+              >sponsors Nuxt.js</a
+            >
+            to support its talented team and dynamic framework. Our partnership
+            is one of the main reasons we’re always ready to create Nuxt.js
+            apps: because we stay up-to-date with the Nuxt team and give back to
+            the community.
           </p>
         </div>
       </div>
@@ -195,11 +209,15 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 const testimonial = {
-  name: 'Namey Nameson',
-  title: 'Founder, CEO at Client',
-  imgSrc: 'roger',
-  svgSrc: '/svgs/clients/netflix.svg',
-  quote: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+  name: 'Donald Piret',
+  title: 'Director of Engineering at Sephora',
+  imgSrc: 'donald',
+  svgSrc: '/svgs/clients/sephora-white.svg',
+  quote: `Ship Shape delivered beyond our expectations. They pointed out things
+          we had never even thought of or knew about. Our team learned a huge
+          amount of new information and new tricks, and we still have them on
+          retainer for very specific questions. Plus, Ship Shape is the
+          friendliest team of engineers I've worked with.`
 };
 
 export default {

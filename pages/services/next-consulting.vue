@@ -1,6 +1,8 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="next-consulting waves next-waves">
+    <HeroBlock
+      hero-classes="next-consulting waves next-waves !pb-20 2xl:!pb-48"
+    >
       <template #content>
         <h1 itemprop="name" class="leading-tight text-5xl">
           Boost performance and easily make the leap from React to Next.js
