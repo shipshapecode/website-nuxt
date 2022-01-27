@@ -58,10 +58,12 @@
           </p>
           <p class="text-white lg:col-span-4 lg:content-center lg:p-8">
             At Ship Shape, we like Tailwind CSS so much that we even use it on
-            our own products and passion projects, such as our robust color
-            management app called Swach. In addition to building Tailwind UIs,
-            we also love training other teams on it to help sharpen their skills
-            too.
+            our own products and passion projects, such as our
+            <a href="https://swach.io/"
+              >robust color management app called Swach.</a
+            >
+            In addition to building Tailwind UIs, we also love training other
+            teams on it to help sharpen their skills too.
           </p>
         </div>
 
