@@ -1,6 +1,36 @@
 <template>
-  <div class="section bg-blue-light flex flex-wrap justify-center">
+  <div
+    class="section bg-blue-light flex flex-wrap justify-center"
+    data-aos="fade-down"
+  >
     <div class="section-content">
+      <div
+        class="
+          section-content
+          gap-20
+          grid grid-cols-1
+          py-8
+          items-center
+          lg:gap-32 lg:grid-cols-2 lg:py-16
+        "
+      >
+        <div class="lg:order-last" data-aos="fade-up">
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            height="1034"
+            src="/img/hero-images/ember-consulting.png"
+            width="1312"
+          />
+        </div>
+        <div>
+          <h3 data-aos="fade-left">Our fleet of specialties</h3>
+          <p data-aos="fade">
+            Our senior-level software consultants ensure your applications are
+            optimized for today and ready for the future.
+          </p>
+        </div>
+      </div>
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div
           class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
@@ -9,18 +39,26 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">App Development</h2>
-
+            <inline-svg
+              class="h-auto w-20 nested-svg pb-6 lg:w-32 lg:pb-12"
+              src="/svgs/technologies/ember.svg"
+              aria-labelledby="ember"
+            />
             <p class="flex-grow">
-              Building custom full stack web apps is our speciality. Ship Shape
-              designs, engineers and programs web apps from start-to-finish so
-              that user experience is flawless and reliable for years to come.
+              One of the best frameworks for fast, reliable builds, especially
+              complex apps and dashboards. Ember’s opinionated structure lends
+              well to efficiency and organization.
             </p>
-
-            <nuxt-link class="learn-more" to="/services/app-development/">
-              Learn more
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
+            <div class="flex flex-col lg:flex-row lg:justify-around">
+              <nuxt-link class="learn-more" to="/services/ember-consulting/">
+                Learn more
+                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+              </nuxt-link>
+              <nuxt-link class="learn-more" to="/services/ember-consulting/">
+                See it in action
+                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+              </nuxt-link>
+            </div>
           </div>
         </div>
 
@@ -57,17 +95,16 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">Ember Consulting</h2>
+            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">App Development</h2>
 
             <p class="flex-grow">
-              Ember.js is Ship Shape’s framework of choice, among the multitude
-              of other JavaScript frameworks out there. With Ember, we can
-              accomplish so much more - faster, with less errors and on a larger
-              scale.
+              Building custom full stack web apps is our speciality. Ship Shape
+              designs, engineers and programs web apps from start-to-finish so
+              that user experience is flawless and reliable for years to come.
             </p>
 
-            <nuxt-link class="learn-more" to="/services/ember-consulting/">
-              See How
+            <nuxt-link class="learn-more" to="/services/app-development/">
+              Learn more
               <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
             </nuxt-link>
           </div>
@@ -151,3 +188,9 @@
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.nested-svg g {
+  fill: #1b3b5d;
+}
+</style>

@@ -78,11 +78,11 @@ h6 {
 }
 
 .learn-more {
-  @apply font-bold text-navy;
+  @apply font-medium text-navy;
 
   svg {
     fill: var(--navy);
-    margin-left: 0.25rem;
+    margin-left: 0.75rem;
     transition-duration: 0.25s;
     transition-property: margin-left;
   }
