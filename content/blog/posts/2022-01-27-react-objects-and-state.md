@@ -70,13 +70,13 @@ You have several options to properly update data stored as objects in React stat
 ### Create and Pass a New Object
 
 ```js
- // Instead try:
-   const input = {}
-   input.name = e.target.value
-   setUser(input)
+// Instead try:
+const input = {}
+input.name = e.target.value
+setUser(input)
 
- // Or:
-   setUser({ name: e.target.value })
+// Or:
+setUser({ name: e.target.value })
 ```
 
 Both these solutions create a brand new object that is being passed to replace the current state, instead of directly mutating the existing state. Directly manipulating `user.name` does not work because it does not trigger a re-render.
