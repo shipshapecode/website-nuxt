@@ -23,6 +23,88 @@
       </template>
     </HeroBlock>
 
+    <div class="section bg-white flex flex-wrap !pt-32" data-aos="fade-down">
+      <h3 class="py-12">High impact, low ego</h3>
+      <div class="divide-grey-light divide-y-2">
+        <div
+          class="
+            section-content
+            justify-center
+            grid grid-cols-1
+            gap-8
+            items-center
+            pb-12
+            lg:gap-32 lg:grid-cols-2 lg:pb-20
+          "
+        >
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            height="772"
+            src="/img/hero-images/mentoring.png"
+            width="1312"
+          />
+          <p>
+            Sailing the open seas to a new destination requires a sturdy vessel
+            and a competent crew. Ship Shape’s app development company is full
+            of top-tier engineers who tackle your toughest technical challenges
+            every step of the way.
+          </p>
+        </div>
+        <div
+          class="
+            section-content
+            justify-center
+            grid grid-cols-1
+            gap-8
+            items-center
+            py-16
+            lg:gap-32 lg:grid-cols-2 lg:py-24
+          "
+        >
+          <p>
+            Our software engineers specialize in Ember.js, Nuxt.js, Next.js, and
+            emerging technologies like serverless frameworks and cloud-native
+            applications. We combine our high IQ in these technologies with a
+            high EQ to ensure your experience with us is just as good as the
+            final product. Plus, we upskill your team as we work together so
+            they can sustain and improve your products long after our engagement
+            ends.
+          </p>
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            height="740"
+            src="/img/hero-images/mentoring.png"
+            width="1224"
+          />
+        </div>
+        <div
+          class="
+            section-content
+            justify-center
+            grid grid-cols-1
+            gap-8
+            items-center
+            py-16
+            lg:gap-32 lg:grid-cols-2 lg-py-24
+          "
+        >
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            height="950"
+            src="/img/hero-images/open-source.png"
+            width="1312"
+          />
+          <p>
+            From the future of fintech, to cybersecurity, and more, we help a
+            wide variety of industries level-up their products and their people.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <ServicesBlurbs />
   </div>
 </template>
