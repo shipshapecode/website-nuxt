@@ -197,6 +197,23 @@ h6 {
   }
 }
 
+.nuxt-waves {
+  &::after {
+    background-image: url(/svgs/nuxt-waves.svg);
+    background-size: 2050px;
+    bottom: -20px;
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 2050px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -20px;
+      height: 300px;
+    }
+  }
+}
+
 .white-waves {
   &::after {
     background-image: url(/svgs/white-waves.svg);
