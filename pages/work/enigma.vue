@@ -58,9 +58,9 @@
       </div>
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
-        <div class="p-4 lg:p-12">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <nuxt-img
-            alt="Enigma Login"
+            alt="The Enigma login page"
             class="flex"
             format="webp"
             src="/img/work/enigma/enigma-login.png"
@@ -96,10 +96,10 @@
         </p>
       </div>
 
-      <div class="bg-grey-light flex justify-center lg:flex-1">
-        <div class="p-4 lg:p-12">
+      <div class="bg-enigma-blue flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <nuxt-img
-            alt="Enigma Login"
+            alt="An implementation of a Shepherd tour for the Enigma hirer dashboard"
             class="flex"
             format="webp"
             src="/img/work/enigma/enigma-hirer-assessment-tour.png"
@@ -148,9 +148,9 @@
       </div>
 
       <div class="bg-grey-light flex justify-center lg:flex-1">
-        <div class="p-4 lg:p-12">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <nuxt-img
-            alt="Enigma Login"
+            alt="A detailed overview of a cybersecurity assessment"
             class="flex"
             format="webp"
             src="/img/work/enigma/enigma-hirer-assessment-detail.png"
@@ -162,10 +162,10 @@
         <h2>Outcome</h2>
       </div>
 
-      <div class="bg-grey-light flex justify-center lg:flex-1">
-        <div class="p-4 lg:p-12">
+      <div class="bg-enigma-blue flex justify-center lg:flex-1">
+        <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
           <nuxt-img
-            alt="Enigma Login"
+            alt="A detailed overview of all candidate assessment results"
             class="flex"
             format="webp"
             src="/img/work/enigma/enigma-hirer-results.png"
