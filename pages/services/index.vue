@@ -25,7 +25,7 @@
 
     <div class="section bg-white flex flex-wrap !pt-32" data-aos="fade-down">
       <h3 class="py-12">High impact, low ego</h3>
-      <div class="divide-grey-light divide-y-2">
+      <div class="divide-[#D8E3E8] divide-y-2">
         <div
           class="
             section-content
@@ -122,10 +122,23 @@
 
     <!-- maybe this should be all one component? -->
     <div
-      class="section bg-white divide-y-2 divide-grey-light"
+      class="
+        section
+        flex flex-wrap
+        justify-center
+        bg-white
+        divide-y-2 divide-[#D8E3E8]
+      "
       data-aos="fade-down"
     >
-      <div class="flex flex-col pb-24 lg:flex-row">
+      <div
+        class="
+          section-content
+          flex flex-col
+          pb-24
+          lg:flex-row lg:place-content-between lg:items-center
+        "
+      >
         <h3>Check out the latest insights</h3>
         <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
           Read on
