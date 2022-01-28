@@ -62,6 +62,13 @@
             lg:gap-32 lg:grid-cols-2 lg:py-24
           "
         >
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full lg:order-last"
+            format="webp"
+            height="740"
+            src="/img/hero-images/mentoring.png"
+            width="1224"
+          />
           <p>
             Our software engineers specialize in
             <a href="http://localhost:3000/services/cloud-native-consulting/"
@@ -82,13 +89,6 @@
             Plus, we upskill your team as we work together so they can sustain
             and improve your products long after our engagement ends.
           </p>
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="740"
-            src="/img/hero-images/mentoring.png"
-            width="1224"
-          />
         </div>
         <div
           class="

@@ -24,7 +24,7 @@
           />
         </div>
         <div>
-          <h3 data-aos="fade-left">Our fleet of specialties</h3>
+          <h3 data-aos="fade-right">Our fleet of specialties</h3>
           <p data-aos="fade">
             Our senior-level software consultants ensure your applications are
             optimized for today and ready for the future.
