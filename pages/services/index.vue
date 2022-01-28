@@ -239,6 +239,32 @@
         </div>
       </div>
     </div>
+    <HeroBlock hero-classes="services bg-blue-light waves blue-light-waves">
+      <template #content>
+        <h2 itemprop="name" class="leading-tight text-5xl">
+          Ready to set sail?
+        </h2>
+        <div>
+          <p>
+            Reach out to tell us more about your goals and chat about how our
+            app development company can help you get there.
+          </p>
+          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
+            Contact us
+          </nuxt-link>
+        </div>
+      </template>
+
+      <template #icon>
+        <nuxt-img
+          class="h-auto m-auto max-w-2xl w-full"
+          height="1020"
+          format="webp"
+          src="/img/hero-images/services.png"
+          width="1344"
+        />
+      </template>
+    </HeroBlock>
   </div>
 </template>
 
