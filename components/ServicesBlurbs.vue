@@ -42,7 +42,7 @@
             <inline-svg
               class="h-auto w-20 nested-svg pb-6 lg:w-32 lg:pb-12"
               src="/svgs/technologies/ember.svg"
-              aria-labelledby="ember"
+              aria-labelledby="title"
             />
             <p class="flex-grow">
               One of the best frameworks for fast, reliable builds, especially
@@ -72,7 +72,7 @@
             <inline-svg
               class="h-auto w-24 nested-svg pb-6 lg:w-40 lg:pt-5 lg:pb-12"
               src="/svgs/technologies/nuxt.svg"
-              aria-labelledby="nuxt"
+              aria-label="nuxt"
             />
             <p class="flex-grow">
               A performant framework used to create flexible, universal Vue.js
@@ -102,7 +102,7 @@
             <inline-svg
               class="h-auto w-20 nested-svg pb-6 lg:w-32 lg:pb-12"
               src="/svgs/technologies/next.svg"
-              aria-labelledby="next"
+              aria-label="next"
             />
             <p class="flex-grow">
               A nimble React framework for production with lots of magic built
@@ -132,7 +132,7 @@
             <inline-svg
               class="h-auto w-36 nested-svg pb-8 lg:w-52 lg:pt-5 lg:pb-20"
               src="/svgs/technologies/tailwind.svg"
-              aria-labelledby="tailwind"
+              aria-label="tailwind"
             />
             <p class="flex-grow">
               Match mocks from designers with ease, and automagically remove all
@@ -161,7 +161,7 @@
             <inline-svg
               class="h-auto w-36 nested-svg pb-8 lg:w-52 lg:pt-5 lg:pb-20"
               src="/svgs/technologies/serverless.svg"
-              aria-labelledby="serverless"
+              aria-label="serverless"
             />
             <p class="flex-grow">
               Only pay for the computing you need, scale quickly, and reduce
@@ -196,7 +196,7 @@
             <inline-svg
               class="h-auto w-36 nested-svg pb-8 lg:w-52 lg:pt-5 lg:pb-20"
               src="/svgs/technologies/tailwind.svg"
-              aria-labelledby="cloud native"
+              aria-label="cloud native"
             />
             <p class="flex-grow">
               Say goodbye to being locked into vendors, and deliver well-tested,
