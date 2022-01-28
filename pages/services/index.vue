@@ -127,40 +127,49 @@
     >
       <div class="flex flex-col pb-24 lg:flex-row">
         <h3>Check out the latest insights</h3>
-        <div>
-          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/blog/">
-            Read on
-          </nuxt-link>
-        </div>
+        <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
+          Read on
+        </nuxt-link>
       </div>
       <div>
         <div>
           <h3 class="py-12">Latest Podcast</h3>
           <div
+            :key="post.slug"
             class="
               section-content
               justify-center
-              grid grid-cols-1
-              gap-8
               items-center
+              grid grid-cols-1
               pb-12
-              lg:gap-32 lg:grid-cols-2 lg:pb-20
+              lg:gap-12 lg:grid-cols-9
             "
           >
             <nuxt-img
-              class="h-auto m-auto max-w-2xl w-full"
+              class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
               format="webp"
               height="500"
               src="/img/hero-images/www.png"
               width="500"
             />
-            <p>
-              Sailing the open seas to a new destination requires a sturdy
-              vessel and a competent crew. Ship Shape’s app development company
-              is full of top-tier engineers who tackle your toughest technical
-              challenges every step of the way.
-            </p>
-            <nuxt-link class="learn-more" to="/services/serverless-consulting/">
+            <div class="lg:col-span-5">
+              <h4 class="lg:text-xl lg:mb-4">
+                {{ post.linktitle || post.title }}
+              </h4>
+              <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
+                {{ formatDateWithDots(post.date) }}
+              </h5>
+              <p>
+                {{ post.description }}
+              </p>
+            </div>
+            <nuxt-link
+              class="
+                learn-more
+                lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+              "
+              :to="`/blog/${post.slug}/`"
+            >
               Dive Deeper
               <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
             </nuxt-link>
