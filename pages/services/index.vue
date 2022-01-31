@@ -43,8 +43,8 @@
             <nuxt-img
               class="h-auto m-auto max-w-2xl w-full"
               format="webp"
-              height="772"
-              src="/img/hero-images/mentoring.png"
+              height="1034"
+              src="/img/services/design.png"
               width="1312"
             />
             <p>
@@ -67,9 +67,9 @@
             <nuxt-img
               class="h-auto m-auto max-w-2xl w-full lg:order-last"
               format="webp"
-              height="740"
-              src="/img/hero-images/mentoring.png"
-              width="1224"
+              height="1034"
+              src="/img/services/build.png"
+              width="1312"
             />
             <p>
               Our software engineers specialize in
@@ -258,10 +258,10 @@
       <template #icon>
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
-          height="1020"
+          height="1034"
           format="webp"
-          src="/img/hero-images/services.png"
-          width="1344"
+          src="/img/hero-images/ember-consulting.png"
+          width="1312"
         />
       </template>
     </HeroBlock>

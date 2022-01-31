@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="section bg-blue-light flex flex-wrap justify-center"
-    data-aos="fade-down"
-  >
+  <div class="section bg-blue-light flex flex-wrap justify-center">
     <div class="section-content">
       <div
         class="
@@ -18,8 +15,8 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            height="1034"
-            src="/img/hero-images/ember-consulting.png"
+            height="814"
+            src="/img/services/specialties.png"
             width="1312"
           />
         </div>
