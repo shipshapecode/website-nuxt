@@ -19,6 +19,7 @@
           format="webp"
           src="/img/hero-images/services.png"
           width="1344"
+          alt=""
         />
       </template>
     </HeroBlock>
@@ -46,6 +47,7 @@
               height="1034"
               src="/img/services/design.png"
               width="1312"
+              alt=""
             />
             <p>
               Sailing the open seas to a new destination requires a sturdy
@@ -70,6 +72,7 @@
               height="1034"
               src="/img/services/build.png"
               width="1312"
+              alt=""
             />
             <p>
               Our software engineers specialize in
@@ -111,6 +114,7 @@
               height="950"
               src="/img/hero-images/open-source.png"
               width="1312"
+              alt=""
             />
             <p>
               From the future of fintech, to cybersecurity, and more, we help a
@@ -170,6 +174,7 @@
               height="500"
               src="/img/hero-images/www.png"
               width="500"
+              alt=""
             />
             <div class="lg:col-span-5">
               <h4 class="lg:text-xl lg:mb-4">
@@ -213,6 +218,7 @@
               height="500"
               src="/img/about/desk.jpg"
               width="500"
+              alt=""
             />
             <div class="lg:col-span-5">
               <h4 class="lg:text-xl lg:mb-4">
@@ -262,6 +268,7 @@
           format="webp"
           src="/img/hero-images/ember-consulting.png"
           width="1312"
+          alt=""
         />
       </template>
     </HeroBlock>
