@@ -1,5 +1,5 @@
 <template>
-  <div itemscope itemtype="http://schema.org/Service">
+  <div>
     <HeroBlock hero-classes="services bg-blue-light waves blue-light-waves">
       <template #content>
         <h1 itemprop="name" class="leading-tight text-5xl">
