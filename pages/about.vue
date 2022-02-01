@@ -40,22 +40,24 @@
     </div>
 
     <div class="section bg-white">
-      <h2>Fun facts about us</h2>
-      <ul>
-        <li>We consistently contribute to the open-source community.</li>
-        <li>We run a climate-positive shop.</li>
-        <li>
-          We started a podcast for developers to share our love for whiskey, web
-          development, and whatnot.
-        </li>
-        <li>We have team members in 8+ locations across North America.</li>
-      </ul>
-      <nuxt-img
-        class="mt-8"
-        alt="Ship Shape office desk"
-        format="webp"
-        src="/img/about/desk.jpg"
-      />
+      <div class="section-content">
+        <h2>Fun facts about us</h2>
+        <ul class="navy-bullets">
+          <li>We consistently contribute to the open-source community.</li>
+          <li>We run a climate-positive shop.</li>
+          <li>
+            We started a podcast for developers to share our love for whiskey,
+            web development, and whatnot.
+          </li>
+          <li>We have team members in 8+ locations across North America.</li>
+        </ul>
+        <nuxt-img
+          class="mt-8"
+          alt="Ship Shape office desk"
+          format="webp"
+          src="/img/about/desk.jpg"
+        />
+      </div>
     </div>
 
     <div class="bg-blue-light section flex justify-center">
@@ -149,6 +151,113 @@
             </div>
           </div>
         </div>
+        <!-- create a LatestInsights component since this is being used in 2 pages now  -->
+        <div
+          class="section flex flex-wrap justify-center bg-white"
+          data-aos="fade-down"
+        >
+          <div
+            class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]"
+          >
+            <div
+              class="
+                pb-24
+                lg:flex lg:flex-row lg:place-content-between lg:items-center
+              "
+            >
+              <h3>Check out the latest insights</h3>
+              <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
+                Read on
+              </nuxt-link>
+            </div>
+            <div>
+              <div>
+                <h3 class="py-12">Latest Podcast</h3>
+                <div
+                  :key="post.slug"
+                  class="
+                    items-center
+                    grid grid-cols-1
+                    pb-12
+                    lg:gap-12 lg:grid-cols-9
+                  "
+                >
+                  <nuxt-img
+                    class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+                    format="webp"
+                    height="500"
+                    src="/img/hero-images/www.png"
+                    width="500"
+                    alt=""
+                  />
+                  <div class="lg:col-span-5">
+                    <h4 class="lg:text-xl lg:mb-4">
+                      {{ post.linktitle || post.title }}
+                    </h4>
+                    <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
+                      {{ formatDateWithDots(post.date) }}
+                    </h5>
+                    <p>
+                      {{ post.description }}
+                    </p>
+                  </div>
+                  <nuxt-link
+                    class="
+                      learn-more
+                      lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+                    "
+                    :to="`/blog/${post.slug}/`"
+                  >
+                    Dive Deeper
+                    <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+                  </nuxt-link>
+                </div>
+              </div>
+              <div>
+                <h3 class="py-12">Latest Blog Post</h3>
+                <div
+                  :key="post.slug"
+                  class="
+                    items-center
+                    grid grid-cols-1
+                    pb-12
+                    lg:gap-12 lg:grid-cols-9
+                  "
+                >
+                  <nuxt-img
+                    class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+                    format="webp"
+                    height="500"
+                    src="/img/about/desk.jpg"
+                    width="500"
+                    alt=""
+                  />
+                  <div class="lg:col-span-5">
+                    <h4 class="lg:text-xl lg:mb-4">
+                      {{ post.linktitle || post.title }}
+                    </h4>
+                    <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
+                      {{ formatDateWithDots(post.date) }}
+                    </h5>
+                    <p>
+                      {{ post.description }}
+                    </p>
+                  </div>
+                  <nuxt-link
+                    class="
+                      learn-more
+                      lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+                    "
+                    :to="`/blog/${post.slug}/`"
+                  >
+                    Dive Deeper
+                    <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+                  </nuxt-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -208,12 +317,23 @@
 </template>
 
 <script>
+import { formatDateWithDots } from '~/utils/date';
 import { generateMeta } from '~/utils/meta';
 
 export default {
   speedkitComponents: {
     HeroBlock: () => import('@/components/HeroBlock')
   },
+
+  async asyncData({ $content }) {
+    const content = await $content('blog/posts')
+      .sortBy('date', 'desc')
+      .limit(1)
+      .fetch();
+    const post = content[0];
+    return { post };
+  },
+
   data() {
     return {
       team: [
@@ -280,6 +400,10 @@ export default {
     const url = 'https://shipshape.io/about/';
 
     return generateMeta(title, description, url);
+  },
+
+  methods: {
+    formatDateWithDots
   }
 };
 </script>
@@ -323,5 +447,28 @@ export default {
     height: 19px;
     width: 23px;
   }
+}
+
+.navy-bullets {
+  list-style: outside;
+  margin-left: 1.5rem;
+  li::marker {
+    color: #1b3b5d;
+    vertical-align: middle;
+    font-size: 1.5rem;
+  }
+
+  // li {
+  //   display: flex;
+  //   align-self: end;
+  // }
+
+  // li::before {
+  //   content: '\2022';
+  //   color: navy;
+  //   display: inline-block;
+  //   width: 1em;
+  //   margin-left: -1rem;
+  // }
 }
 </style>
