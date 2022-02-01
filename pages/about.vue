@@ -1,35 +1,156 @@
 <template>
   <div>
-    <HeroBlock hero-classes="about text-white">
+    <HeroBlock hero-classes="about bg-blue-light">
       <template #content>
         <nuxt-img
           class="mt-8"
-          alt="Ship Shape office desk"
+          alt="Ship Shape employee group photo"
           format="webp"
-          src="/img/about/desk.jpg"
+          src="/img/about/group-oct-2021.jpeg"
         />
       </template>
 
       <template #icon>
         <div class="m-auto max-w-2xl">
-          <h1 class="text-white">About Ship Shape</h1>
-
-          <p>
-            Ship Shape leads the future of full-stack web app development. Our
-            clients work with us because we are a one-stop boutique firm with
-            over 25+ years combined experience - from full-stack engineering, to
-            front-end to back-end design and more. When you bring your idea to
-            us, it's smooth sailing.
-          </p>
-
-          <div>
-            <nuxt-link class="btn btn-red" to="/contact/">
-              Let's build together
-            </nuxt-link>
-          </div>
+          <h1 class="text-navy">
+            Meet the crew on board our full-stack software development agency
+          </h1>
         </div>
       </template>
     </HeroBlock>
+
+    <div class="section bg-white">
+      <h2>Ship Shape /ˈSHipˌSHāp / adj. “To be in first-class order”</h2>
+      <p>
+        Our name describes exactly what our full-stack software development
+        agency does: creates first-class products with first-class talent.
+        <br />
+        <br />
+        Whether we’re crafting a greenfield solution with new technologies or
+        elevating an existing experience with the latest best practices, we love
+        collaborating with teams to solve old problems in new ways and help each
+        other grow in the process.
+      </p>
+      <nuxt-img
+        class="mt-8"
+        alt="Ship Shape office desk"
+        format="webp"
+        src="/img/about/desk.jpg"
+      />
+    </div>
+
+    <div class="section bg-white">
+      <h2>Fun facts about us</h2>
+      <ul>
+        <li>We consistently contribute to the open-source community.</li>
+        <li>We run a climate-positive shop.</li>
+        <li>
+          We started a podcast for developers to share our love for whiskey, web
+          development, and whatnot.
+        </li>
+        <li>We have team members in 8+ locations across North America.</li>
+      </ul>
+      <nuxt-img
+        class="mt-8"
+        alt="Ship Shape office desk"
+        format="webp"
+        src="/img/about/desk.jpg"
+      />
+    </div>
+
+    <div class="bg-blue-light section flex justify-center">
+      <div class="section-content flex flex-wrap justify-center">
+        <div class="w-full">
+          <h2 class="text-navy text-5xl">Get to know the crew</h2>
+        </div>
+
+        <div class="w-full">
+          <div class="py-6">
+            <div class="space-y-12">
+              <div
+                class="
+                  space-y-5
+                  sm:space-y-4
+                  md:max-w-xl
+                  lg:max-w-3xl
+                  xl:max-w-none
+                "
+              >
+                <p class="text-lg text-gray-500">
+                  Our clients can confirm: Ship Shape’s software development
+                  agency is made of the best developers in the business. We
+                  blend of IQ + EQ, ensuring you get talented engineers who are
+                  easy to work with and blend seamlessly with your team.
+                </p>
+              </div>
+              <ul
+                class="
+                  space-y-12
+                  sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
+                  lg:grid-cols-3 lg:gap-x-8
+                "
+              >
+                <li v-for="employee in team" :key="employee.name">
+                  <div class="space-y-4">
+                    <div class="aspect-w-3 aspect-h-2">
+                      <nuxt-img
+                        class="
+                          filter
+                          grayscale
+                          object-cover
+                          shadow-lg
+                          rounded-lg
+                        "
+                        format="webp"
+                        :src="employee.imgSrc"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="space-y-2">
+                      <div class="text-lg leading-6 font-medium space-y-1">
+                        <h3>{{ employee.name }}</h3>
+                        <p class="text-indigo-600">{{ employee.title }}</p>
+                        <p>{{ employee.blurb ? employee.blurb : null }}</p>
+                      </div>
+                      <ul class="flex space-x-5">
+                        <li v-if="employee.twitter">
+                          <a :href="employee.twitter" class="twitter-logo">
+                            <span class="sr-only">Twitter</span>
+                            <inline-svg
+                              aria-hidden="true"
+                              src="/svgs/twitter.svg"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a :href="employee.linkedin" class="linkedin-logo">
+                            <span class="sr-only">LinkedIn</span>
+                            <inline-svg
+                              aria-hidden="true"
+                              src="/svgs/linkedin.svg"
+                            />
+                          </a>
+                        </li>
+                        <li>
+                          <a :href="employee.github" class="github-logo">
+                            <span class="sr-only">GitHub</span>
+                            <inline-svg
+                              aria-hidden="true"
+                              src="/svgs/github.svg"
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="section bg-navy flex justify-center">
       <div class="section-content flex flex-wrap justify-center lg:flex-nowrap">
@@ -83,101 +204,6 @@
         </div>
       </div>
     </div>
-
-    <div class="bg-white section flex justify-center">
-      <div class="section-content flex flex-wrap justify-center">
-        <div class="w-full">
-          <h6 class="m-0 text-red text-xs uppercase">Our team</h6>
-
-          <h2 class="text-navy text-5xl">Get to know us</h2>
-        </div>
-
-        <div class="w-full">
-          <div class="py-6">
-            <div class="space-y-12">
-              <div
-                class="
-                  space-y-5
-                  sm:space-y-4
-                  md:max-w-xl
-                  lg:max-w-3xl
-                  xl:max-w-none
-                "
-              >
-                <p class="text-lg text-gray-500">
-                  Ship Shape's team has a diverse skillset and is distributed
-                  across the United States. Despite our differences, we are all
-                  passionate about web development and believe in leaving things
-                  better than we found them.
-                </p>
-              </div>
-              <ul
-                class="
-                  space-y-12
-                  sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
-                  lg:grid-cols-3 lg:gap-x-8
-                "
-              >
-                <li v-for="employee in team" :key="employee.name">
-                  <div class="space-y-4">
-                    <div class="aspect-w-3 aspect-h-2">
-                      <nuxt-img
-                        class="
-                          filter
-                          grayscale
-                          object-cover
-                          shadow-lg
-                          rounded-lg
-                        "
-                        format="webp"
-                        :src="employee.imgSrc"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="space-y-2">
-                      <div class="text-lg leading-6 font-medium space-y-1">
-                        <h3>{{ employee.name }}</h3>
-                        <p class="text-indigo-600">{{ employee.title }}</p>
-                      </div>
-                      <ul class="flex space-x-5">
-                        <li v-if="employee.twitter">
-                          <a :href="employee.twitter" class="twitter-logo">
-                            <span class="sr-only">Twitter</span>
-                            <inline-svg
-                              aria-hidden="true"
-                              src="/svgs/twitter.svg"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a :href="employee.linkedin" class="linkedin-logo">
-                            <span class="sr-only">LinkedIn</span>
-                            <inline-svg
-                              aria-hidden="true"
-                              src="/svgs/linkedin.svg"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a :href="employee.github" class="github-logo">
-                            <span class="sr-only">GitHub</span>
-                            <inline-svg
-                              aria-hidden="true"
-                              src="/svgs/github.svg"
-                            />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -197,7 +223,9 @@ export default {
           imgSrc: '/img/blog/authors/robbie.jpg',
           twitter: 'https://twitter.com/rwwagner90',
           linkedin: 'https://www.linkedin.com/in/robertwilliamwagner/',
-          github: 'https://github.com/rwwagner90'
+          github: 'https://github.com/rwwagner90',
+          blurb:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
         },
         {
           name: 'Chuck Carpenter',
@@ -205,7 +233,9 @@ export default {
           imgSrc: '/img/blog/authors/chuck.jpg',
           twitter: '',
           linkedin: 'https://www.linkedin.com/in/chuckcarpenter/',
-          github: 'https://github.com/chuckcarpenter'
+          github: 'https://github.com/chuckcarpenter',
+          blurb:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
         },
         {
           name: 'Rob Cary',
