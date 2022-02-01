@@ -77,7 +77,7 @@
           The development team made use of
           <a href="/https://nextjs.org/">Next.js</a> to prioritize quick loading
           times on the client side of this application. The server-side
-          rendering capabilities of Next.js allows the Enigma application to
+          rendering capabilities of Next.js allow the Enigma application to
           retrieve web pages and any corresponding data in one go, eliminating
           the need for multiple network requests and preventing subsequent
           delays in data population.
@@ -87,11 +87,11 @@
 
         <p>
           The Ship Shape team also had the opportunity to integrate one of our
-          own open-source projects,
+          own open source projects,
           <a href="https://shepherdjs.dev/docs/">Shepherd</a>, into the Enigma
           platform. The Shepherd library provides a way to guide users through a
           tour of a web application, highlighting the key features users should
-          familiarize themselves with in order to use the app at its full
+          familiarize themselves with, in order to use the app at its full
           potential.
         </p>
       </div>
