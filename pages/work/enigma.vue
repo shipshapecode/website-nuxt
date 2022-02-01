@@ -208,9 +208,9 @@ export default {
     return { testimonial };
   },
   head() {
-    const title = 'Netflix Ember.js Finance Dashboard';
+    const title = 'Enigma Next.js Assesment Platform';
     const description =
-      "Netflix Finance had outdated, disjointed Ember.js apps. See how Ship Shape's enterprise app development experts increased efficiency & data granularity.";
+      "The Enigma assessment application was in need of Next.js development help. See how Ship Shape's enterprise app development experts created a production-ready Next.js application.";
     const url = 'https://shipshape.io/work/enigma/';
 
     return generateMeta(title, description, url);
