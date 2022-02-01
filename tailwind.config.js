@@ -20,6 +20,7 @@ module.exports = {
       'navy-card-light': '#1B3B5E',
       'navy-light': '#073256',
       'netflix-red': '#E50914',
+      'enigma-blue': '#1B1D36',
       grey: 'var(--grey)',
       'grey-light': 'var(--grey-light)',
       'jebbit-green': 'var(--jebbit)',
