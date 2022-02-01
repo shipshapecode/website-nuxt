@@ -4,8 +4,10 @@
     itemtype="https://schema.org/Organization"
     itemid="shipshapeorg"
     :class="{
-      'bg-navy': $route.name === 'about',
-      'bg-blue-light': $route.name === 'index'
+      'bg-blue-light':
+        $route.name === 'index' ||
+        $route.name === 'services' ||
+        $route.name === 'about'
     }"
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC" />
