@@ -18,38 +18,56 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-white">
-      <h2>Ship Shape /ˈSHipˌSHāp / adj. “To be in first-class order”</h2>
-      <p>
-        Our name describes exactly what our full-stack software development
-        agency does: creates first-class products with first-class talent.
-        <br />
-        <br />
-        Whether we’re crafting a greenfield solution with new technologies or
-        elevating an existing experience with the latest best practices, we love
-        collaborating with teams to solve old problems in new ways and help each
-        other grow in the process.
-      </p>
-      <nuxt-img
-        class="mt-8"
-        alt="Ship Shape office desk"
-        format="webp"
-        src="/img/about/desk.jpg"
-      />
+    <div class="section bg-white flex flex-wrap justify-center">
+      <div class="section-content">
+        <h2 class="py-6 lg:flex lg:justify-center lg:py-12">
+          Ship Shape /ˈSHipˌSHāp / adj. “To be in first-class order”
+        </h2>
+        <div
+          class="gap-20 grid grid-cols-1 items-center lg:gap-32 lg:grid-cols-2"
+        >
+          <p class="lg:order-last">
+            Our name describes exactly what our full-stack software development
+            agency does: creates first-class products with first-class talent.
+            <br />
+            <br />
+            Whether we’re crafting a greenfield solution with new technologies
+            or elevating an existing experience with the latest best practices,
+            we love collaborating with teams to solve old problems in new ways
+            and help each other grow in the process.
+          </p>
+          <nuxt-img
+            class="mt-8"
+            alt="Ship Shape office desk"
+            format="webp"
+            src="/img/about/desk.jpg"
+          />
+        </div>
+      </div>
     </div>
 
-    <div class="section bg-white">
-      <div class="section-content">
-        <h2>Fun facts about us</h2>
-        <ul class="navy-bullets">
-          <li>We consistently contribute to the open-source community.</li>
-          <li>We run a climate-positive shop.</li>
-          <li>
-            We started a podcast for developers to share our love for whiskey,
-            web development, and whatnot.
-          </li>
-          <li>We have team members in 8+ locations across North America.</li>
-        </ul>
+    <div class="section bg-white flex flex-wrap justify-center">
+      <div
+        class="
+          section-content
+          gap-20
+          grid grid-cols-1
+          items-center
+          lg:gap-32 lg:grid-cols-2
+        "
+      >
+        <div>
+          <h3>Fun facts about us</h3>
+          <ul class="navy-bullets">
+            <li>We consistently contribute to the open-source community.</li>
+            <li>We run a climate-positive shop.</li>
+            <li>
+              We started a podcast for developers to share our love for whiskey,
+              web development, and whatnot.
+            </li>
+            <li>We have team members in 8+ locations across North America.</li>
+          </ul>
+        </div>
         <nuxt-img
           class="mt-8"
           alt="Ship Shape office desk"
