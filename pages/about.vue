@@ -113,13 +113,14 @@
                         <h3 class="mb-3">{{ employee.name }}</h3>
                         <h4 class="text-indigo-600">{{ employee.title }}</h4>
                       </div>
-                      <ul class="flex space-x-5">
-                        <li v-if="employee.twitter">
-                          <a :href="employee.twitter" class="twitter-logo">
-                            <span class="sr-only">Twitter</span>
+                      <p>{{ employee.blurb ? employee.blurb : null }}</p>
+                      <ul class="flex space-x-8">
+                        <li>
+                          <a :href="employee.github" class="github-logo">
+                            <span class="sr-only">GitHub</span>
                             <inline-svg
                               aria-hidden="true"
-                              src="/svgs/twitter.svg"
+                              src="/svgs/github.svg"
                             />
                           </a>
                         </li>
@@ -132,12 +133,12 @@
                             />
                           </a>
                         </li>
-                        <li>
-                          <a :href="employee.github" class="github-logo">
-                            <span class="sr-only">GitHub</span>
+                        <li v-if="employee.twitter">
+                          <a :href="employee.twitter" class="twitter-logo">
+                            <span class="sr-only">Twitter</span>
                             <inline-svg
                               aria-hidden="true"
-                              src="/svgs/github.svg"
+                              src="/svgs/twitter.svg"
                             />
                           </a>
                         </li>
