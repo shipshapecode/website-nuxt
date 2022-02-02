@@ -64,14 +64,14 @@
       <div class="section-content flex flex-wrap justify-center">
         <div>
           <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
+            class="h-auto m-auto max-w-2xl w-full pb-12"
             format="webp"
             height="772"
             src="/img/hero-images/mentoring.png"
             width="1312"
           />
         </div>
-        <div>
+        <div class="pb-20">
           <h2>Get to know the crew</h2>
           <p>
             Our clients can confirm: Ship Shape’s software development agency is
@@ -82,17 +82,17 @@
         </div>
 
         <div class="w-full">
-          <div class="py-6">
+          <div class="pb-24">
             <div class="space-y-12">
               <ul
                 class="
-                  space-y-12
+                  space-y-24
                   sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
                   lg:grid-cols-3 lg:gap-x-8
                 "
               >
                 <li v-for="employee in team" :key="employee.name">
-                  <div class="space-y-4">
+                  <div class="space-y-8">
                     <div class="aspect-w-3 aspect-h-3">
                       <nuxt-img
                         class="
@@ -108,11 +108,10 @@
                       />
                     </div>
 
-                    <div class="space-y-2">
+                    <div class="space-y-8">
                       <div class="text-lg leading-6 font-medium space-y-1">
-                        <h3>{{ employee.name }}</h3>
-                        <p class="text-indigo-600">{{ employee.title }}</p>
-                        <p>{{ employee.blurb ? employee.blurb : null }}</p>
+                        <h3 class="mb-3">{{ employee.name }}</h3>
+                        <h4 class="text-indigo-600">{{ employee.title }}</h4>
                       </div>
                       <ul class="flex space-x-5">
                         <li v-if="employee.twitter">
@@ -515,23 +514,15 @@ export default {
 .navy-bullets {
   list-style: outside;
   margin-left: 1.5rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
   li::marker {
     color: #1b3b5d;
     vertical-align: middle;
     font-size: 1.5rem;
   }
-
-  // li {
-  //   display: flex;
-  //   align-self: end;
-  // }
-
-  // li::before {
-  //   content: '\2022';
-  //   color: navy;
-  //   display: inline-block;
-  //   width: 1em;
-  //   margin-left: -1rem;
-  // }
 }
 </style>
