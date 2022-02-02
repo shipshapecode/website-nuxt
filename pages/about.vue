@@ -62,29 +62,28 @@
 
     <div class="bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="w-full">
-          <h2 class="text-navy text-5xl">Get to know the crew</h2>
+        <div>
+          <nuxt-img
+            class="h-auto m-auto max-w-2xl w-full"
+            format="webp"
+            height="772"
+            src="/img/hero-images/mentoring.png"
+            width="1312"
+          />
+        </div>
+        <div>
+          <h2>Get to know the crew</h2>
+          <p>
+            Our clients can confirm: Ship Shape’s software development agency is
+            made of the best developers in the business. We blend of IQ + EQ,
+            ensuring you get talented engineers who are easy to work with and
+            blend seamlessly with your team.
+          </p>
         </div>
 
         <div class="w-full">
           <div class="py-6">
             <div class="space-y-12">
-              <div
-                class="
-                  space-y-5
-                  sm:space-y-4
-                  md:max-w-xl
-                  lg:max-w-3xl
-                  xl:max-w-none
-                "
-              >
-                <p class="text-lg text-gray-500">
-                  Our clients can confirm: Ship Shape’s software development
-                  agency is made of the best developers in the business. We
-                  blend of IQ + EQ, ensuring you get talented engineers who are
-                  easy to work with and blend seamlessly with your team.
-                </p>
-              </div>
               <ul
                 class="
                   space-y-12
@@ -94,7 +93,7 @@
               >
                 <li v-for="employee in team" :key="employee.name">
                   <div class="space-y-4">
-                    <div class="aspect-w-3 aspect-h-2">
+                    <div class="aspect-w-3 aspect-h-3">
                       <nuxt-img
                         class="
                           filter
@@ -152,109 +151,113 @@
           </div>
         </div>
         <!-- create a LatestInsights component since this is being used in 2 pages now  -->
+      </div>
+    </div>
+    <div
+      class="section flex flex-wrap justify-center bg-white"
+      data-aos="fade-down"
+    >
+      <div class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]">
         <div
-          class="section flex flex-wrap justify-center bg-white"
-          data-aos="fade-down"
+          class="
+            pb-24
+            lg:flex lg:flex-row lg:place-content-between lg:items-center
+          "
         >
-          <div
-            class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]"
-          >
+          <div>
+            <h3>Tap into our knowledge base</h3>
+            <p>
+              Check out the latest insights from across our app development
+              company.
+            </p>
+          </div>
+          <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
+            Get more insights
+          </nuxt-link>
+        </div>
+        <div>
+          <div>
+            <h3 class="py-12">Latest Podcast</h3>
             <div
+              :key="post.slug"
               class="
-                pb-24
-                lg:flex lg:flex-row lg:place-content-between lg:items-center
+                items-center
+                grid grid-cols-1
+                pb-12
+                lg:gap-12 lg:grid-cols-9
               "
             >
-              <h3>Check out the latest insights</h3>
-              <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
-                Read on
+              <nuxt-img
+                class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+                format="webp"
+                height="500"
+                src="/img/hero-images/www.png"
+                width="500"
+                alt=""
+              />
+              <div class="lg:col-span-5">
+                <h4 class="lg:text-xl lg:mb-4">
+                  {{ post.linktitle || post.title }}
+                </h4>
+                <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
+                  {{ formatDateWithDots(post.date) }}
+                </h5>
+                <p>
+                  {{ post.description }}
+                </p>
+              </div>
+              <nuxt-link
+                class="
+                  learn-more
+                  lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+                "
+                :to="`/blog/${post.slug}/`"
+              >
+                Dive Deeper
+                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
               </nuxt-link>
             </div>
-            <div>
-              <div>
-                <h3 class="py-12">Latest Podcast</h3>
-                <div
-                  :key="post.slug"
-                  class="
-                    items-center
-                    grid grid-cols-1
-                    pb-12
-                    lg:gap-12 lg:grid-cols-9
-                  "
-                >
-                  <nuxt-img
-                    class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
-                    format="webp"
-                    height="500"
-                    src="/img/hero-images/www.png"
-                    width="500"
-                    alt=""
-                  />
-                  <div class="lg:col-span-5">
-                    <h4 class="lg:text-xl lg:mb-4">
-                      {{ post.linktitle || post.title }}
-                    </h4>
-                    <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
-                      {{ formatDateWithDots(post.date) }}
-                    </h5>
-                    <p>
-                      {{ post.description }}
-                    </p>
-                  </div>
-                  <nuxt-link
-                    class="
-                      learn-more
-                      lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
-                    "
-                    :to="`/blog/${post.slug}/`"
-                  >
-                    Dive Deeper
-                    <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                  </nuxt-link>
-                </div>
+          </div>
+          <div>
+            <h3 class="py-12">Latest Blog Post</h3>
+            <div
+              :key="post.slug"
+              class="
+                items-center
+                grid grid-cols-1
+                pb-12
+                lg:gap-12 lg:grid-cols-9
+              "
+            >
+              <nuxt-img
+                class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+                format="webp"
+                height="500"
+                src="/img/about/desk.jpg"
+                width="500"
+                alt=""
+              />
+              <div class="lg:col-span-5">
+                <h4 class="lg:text-xl lg:mb-4">
+                  {{ post.linktitle || post.title }}
+                </h4>
+                <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
+                  {{ formatDateWithDots(post.date) }}
+                </h5>
+                <p>
+                  {{ post.description }}
+                </p>
               </div>
-              <div>
-                <h3 class="py-12">Latest Blog Post</h3>
-                <div
-                  :key="post.slug"
-                  class="
-                    items-center
-                    grid grid-cols-1
-                    pb-12
-                    lg:gap-12 lg:grid-cols-9
-                  "
-                >
-                  <nuxt-img
-                    class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
-                    format="webp"
-                    height="500"
-                    src="/img/about/desk.jpg"
-                    width="500"
-                    alt=""
-                  />
-                  <div class="lg:col-span-5">
-                    <h4 class="lg:text-xl lg:mb-4">
-                      {{ post.linktitle || post.title }}
-                    </h4>
-                    <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
-                      {{ formatDateWithDots(post.date) }}
-                    </h5>
-                    <p>
-                      {{ post.description }}
-                    </p>
-                  </div>
-                  <nuxt-link
-                    class="
-                      learn-more
-                      lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
-                    "
-                    :to="`/blog/${post.slug}/`"
-                  >
-                    Dive Deeper
-                    <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                  </nuxt-link>
-                </div>
-              </div>
+              <nuxt-link
+                class="
+                  learn-more
+                  lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+                "
+                :to="`/blog/${post.slug}/`"
+              >
+                Dive Deeper
+                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -265,54 +268,113 @@
       <div class="section-content flex flex-wrap justify-center lg:flex-nowrap">
         <div
           class="
-            bg-navy-light
-            flex flex-col
-            justify-center
-            min-h-80
-            mt-12
-            p-6
-            w-full
-            lg:h-96 lg:mr-12 lg:mt-0 lg:p-24 lg:w-1/2
+            pb-24
+            lg:flex lg:flex-row lg:place-content-between lg:items-center
           "
         >
-          <div class="h-24 inline-block mb-8 mt-8 w-24">
-            <inline-svg src="/svgs/icons/client.svg" />
+          <div class="text-white">
+            <h2 class="text-white">Giving back</h2>
+            <p>
+              The people within our app development company do this work for
+              passion, not just a paycheck. Here’s how we’re contributing to the
+              community and pushing the software space forward.
+            </p>
           </div>
-
-          <h3 class="text-2xl text-white lg:text-4xl">Our Clients</h3>
-
-          <p class="max-w-lg text-white w-full">
-            Ship Shape works with some of the best. We've exceeded client
-            expectations and can't wait to help you with your next project.
-          </p>
+          <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
+            Get more contributions
+          </nuxt-link>
         </div>
-
         <div
           class="
-            bg-navy-light
-            flex flex-col
-            justify-center
-            m-auto
-            min-h-80
-            mt-12
-            p-6
-            w-full
-            lg:h-96 lg:p-24 lg:w-1/2
+            divide-grey-light divide-y
+            grid grid-cols-1
+            my-20
+            text-white
+            lg:divide-x lg:divide-y-0 lg:grid-cols-4
           "
         >
-          <div class="h-24 inline-block mb-8 mt-8 w-24">
-            <inline-svg src="/svgs/icons/community.svg" />
+          <div class="flex flex-col items-center px-16" data-aos="flip-down">
+            <nuxt-img
+              class="h-20 inline-block mb-8 w-auto"
+              src="/svgs/icons/client.svg"
+            />
+
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
+              Strategic Nuxt.js partners
+            </p>
           </div>
 
-          <h3 class="text-2xl text-white lg:text-4xl">Our Community</h3>
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="200"
+          >
+            <nuxt-img
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
+              src="/svgs/icons/staff.svg"
+            />
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
+              Active GitHub contributors
+            </p>
+          </div>
 
-          <p class="max-w-lg text-white w-full">
-            Everything we create is a conscious decision to further Ember as a
-            framework and as a community.
-          </p>
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="400"
+          >
+            <nuxt-img
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
+              src="/svgs/icons/fun.svg"
+            />
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
+              Local tech meetup hosts
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center px-16"
+            data-aos="flip-down"
+            data-aos-delay="600"
+          >
+            <nuxt-img
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
+              src="/svgs/icons/pwa.svg"
+            />
+            <p class="mb-12 text-center lg:m-0 lg:w-40">
+              Whiskey, Web & Whatnot podcasters
+            </p>
+          </div>
         </div>
       </div>
     </div>
+    <HeroBlock hero-classes="services bg-blue-light waves blue-light-waves">
+      <template #content>
+        <h2 itemprop="name" class="leading-tight text-5xl">
+          Want to chart your course to software success?
+        </h2>
+        <div>
+          <p>
+            Reach out to tell us more about your goals and chat about how our
+            app development company can help you get there.
+          </p>
+          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
+            Contact us
+          </nuxt-link>
+        </div>
+      </template>
+
+      <template #icon>
+        <nuxt-img
+          class="h-auto m-auto max-w-2xl w-full"
+          height="1034"
+          format="webp"
+          src="/img/hero-images/ember-consulting.png"
+          width="1312"
+          alt=""
+        />
+      </template>
+    </HeroBlock>
   </div>
 </template>
 
