@@ -235,7 +235,7 @@
         </div>
       </div>
     </div>
-    <HeroBlock hero-classes="services bg-blue-light waves blue-light-waves">
+    <HeroBlock hero-classes="waves blue-waves bg-blue-light">
       <template #content>
         <h2 itemprop="name" class="leading-tight text-5xl">
           Ready to set sail?
