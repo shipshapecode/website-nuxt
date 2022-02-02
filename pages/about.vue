@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div class="bg-blue-light section flex justify-center">
+    <div class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
         <div>
           <nuxt-img
@@ -82,77 +82,70 @@
         </div>
 
         <div class="w-full">
-          <div class="pb-24">
-            <div class="space-y-12">
-              <ul
-                class="
-                  space-y-24
-                  sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
-                  lg:grid-cols-3 lg:gap-x-8
-                "
-              >
-                <li v-for="employee in team" :key="employee.name">
-                  <div class="space-y-8">
-                    <div class="aspect-w-3 aspect-h-3">
-                      <nuxt-img
-                        class="
-                          filter
-                          grayscale
-                          object-cover
-                          shadow-lg
-                          rounded-lg
-                        "
-                        format="webp"
-                        :src="employee.imgSrc"
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="space-y-8">
-                      <div class="text-lg leading-6 font-medium space-y-1">
-                        <h3 class="mb-3">{{ employee.name }}</h3>
-                        <h4 class="text-indigo-600">{{ employee.title }}</h4>
-                      </div>
-                      <p>{{ employee.blurb ? employee.blurb : null }}</p>
-                      <ul class="flex space-x-8">
-                        <li>
-                          <a :href="employee.github" class="github-logo">
-                            <span class="sr-only">GitHub</span>
-                            <inline-svg
-                              aria-hidden="true"
-                              src="/svgs/github.svg"
-                            />
-                          </a>
-                        </li>
-                        <li>
-                          <a :href="employee.linkedin" class="linkedin-logo">
-                            <span class="sr-only">LinkedIn</span>
-                            <inline-svg
-                              aria-hidden="true"
-                              src="/svgs/linkedin.svg"
-                            />
-                          </a>
-                        </li>
-                        <li v-if="employee.twitter">
-                          <a :href="employee.twitter" class="twitter-logo">
-                            <span class="sr-only">Twitter</span>
-                            <inline-svg
-                              aria-hidden="true"
-                              src="/svgs/twitter.svg"
-                            />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+          <div class="space-y-12">
+            <ul
+              class="
+                space-y-24
+                sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
+                lg:grid-cols-3 lg:gap-x-8
+              "
+            >
+              <li v-for="employee in team" :key="employee.name">
+                <div class="space-y-8">
+                  <div class="aspect-w-3 aspect-h-3">
+                    <nuxt-img
+                      class="filter grayscale object-cover shadow-lg rounded-lg"
+                      format="webp"
+                      :src="employee.imgSrc"
+                      alt=""
+                    />
                   </div>
-                </li>
-              </ul>
-            </div>
+
+                  <div class="space-y-8">
+                    <div class="text-lg leading-6 font-medium space-y-1">
+                      <h3 class="mb-3">{{ employee.name }}</h3>
+                      <h4 class="text-indigo-600">{{ employee.title }}</h4>
+                    </div>
+                    <p>{{ employee.blurb ? employee.blurb : null }}</p>
+                    <ul class="flex space-x-8">
+                      <li>
+                        <a :href="employee.github" class="github-logo">
+                          <span class="sr-only">GitHub</span>
+                          <inline-svg
+                            aria-hidden="true"
+                            src="/svgs/github.svg"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a :href="employee.linkedin" class="linkedin-logo">
+                          <span class="sr-only">LinkedIn</span>
+                          <inline-svg
+                            aria-hidden="true"
+                            src="/svgs/linkedin.svg"
+                          />
+                        </a>
+                      </li>
+                      <li v-if="employee.twitter">
+                        <a :href="employee.twitter" class="twitter-logo">
+                          <span class="sr-only">Twitter</span>
+                          <inline-svg
+                            aria-hidden="true"
+                            src="/svgs/twitter.svg"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- create a LatestInsights component since this is being used in 2 pages now  -->
       </div>
     </div>
+
     <div
       class="section flex flex-wrap justify-center bg-white"
       data-aos="fade-down"
@@ -160,12 +153,12 @@
       <div class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]">
         <div
           class="
-            pb-24
+            py-24
             lg:flex lg:flex-row lg:place-content-between lg:items-center
           "
         >
           <div>
-            <h3>Tap into our knowledge base</h3>
+            <h2>Tap into our knowledge base</h2>
             <p>
               Check out the latest insights from across our app development
               company.
@@ -356,8 +349,8 @@
         </h2>
         <div>
           <p>
-            Reach out to tell us more about your goals and chat about how our
-            app development company can help you get there.
+            Reach out to tell us more about your goals and chat about how we can
+            help you get there.
           </p>
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Contact us
@@ -367,7 +360,7 @@
 
       <template #icon>
         <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full"
+          class="h-auto m-auto max-w-2xl w-full pt-20"
           height="1034"
           format="webp"
           src="/img/hero-images/ember-consulting.png"
