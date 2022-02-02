@@ -34,12 +34,9 @@
             <meta itemprop="height" content="128" />
             <meta itemprop="width" content="128" />
           </div>
+
           <div
-            class="font-medium leading-[unset] text-3xl"
-            :class="{
-              'text-navy': $route.name !== 'about',
-              'text-white': $route.name === 'about'
-            }"
+            class="font-medium leading-[unset] text-3xl text-navy"
             itemprop="name"
           >
             Ship Shape
