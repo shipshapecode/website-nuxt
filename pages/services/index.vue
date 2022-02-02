@@ -151,7 +151,7 @@
           <div>
             <h3 class="py-12">Latest Podcast</h3>
             <div
-              :key="post.slug"
+              :key="latestPodcastEpisode.title"
               class="
                 items-center
                 grid grid-cols-1
@@ -169,31 +169,31 @@
               />
               <div class="lg:col-span-5">
                 <h4 class="lg:text-xl lg:mb-4">
-                  {{ post.linktitle || post.title }}
+                  {{ latestPodcastEpisode.title }}
                 </h4>
                 <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
-                  {{ formatDateWithDots(post.date) }}
+                  {{ formatDateWithDots(latestPodcastEpisode.pubDate) }}
                 </h5>
                 <p>
-                  {{ post.description }}
+                  {{ latestPodcastEpisode.description }}
                 </p>
               </div>
-              <nuxt-link
+              <a
                 class="
                   learn-more
                   lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
                 "
-                :to="`/blog/${post.slug}/`"
+                href="https://www.whiskeywebandwhatnot.fm/"
               >
                 Dive Deeper
                 <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-              </nuxt-link>
+              </a>
             </div>
           </div>
           <div>
             <h3 class="py-12">Latest Blog Post</h3>
             <div
-              :key="post.slug"
+              :key="latestBlogPost.slug"
               class="
                 items-center
                 grid grid-cols-1
@@ -211,13 +211,13 @@
               />
               <div class="lg:col-span-5">
                 <h4 class="lg:text-xl lg:mb-4">
-                  {{ post.linktitle || post.title }}
+                  {{ latestBlogPost.linktitle || latestBlogPost.title }}
                 </h4>
                 <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
-                  {{ formatDateWithDots(post.date) }}
+                  {{ formatDateWithDots(latestBlogPost.date) }}
                 </h5>
                 <p>
-                  {{ post.description }}
+                  {{ latestBlogPost.description }}
                 </p>
               </div>
               <nuxt-link
@@ -225,7 +225,7 @@
                   learn-more
                   lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
                 "
-                :to="`/blog/${post.slug}/`"
+                :to="`/blog/${latestBlogPost.slug}/`"
               >
                 Dive Deeper
                 <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
@@ -266,6 +266,7 @@
 </template>
 
 <script>
+import truncate from 'lodash.truncate';
 import { formatDateWithDots } from '~/utils/date';
 import { generateMeta } from '~/utils/meta';
 
@@ -273,7 +274,7 @@ const testimonial = {
   name: 'Harley Sugarman',
   title: 'Founder, CEO at Enigma',
   imgSrc: 'harley',
-  svgSrc: '/svgs/clients/enigma.svg',
+  svgSrc: '/svgs/clients/enigma-white.svg',
   quote: `I loved working with Ship Shape.
           They helped our small team build a product from the ground up
           and were strong partners every step of the way. Their domain expertise
@@ -291,14 +292,30 @@ export default {
   },
 
   async asyncData({ $content }) {
+    const response = await fetch(
+      'https://player.megaphone.fm/playlist/PODRYL5396410253/'
+    );
+    const podcastData = await response.json();
+    const latestPodcastEpisode = podcastData?.episodes[0];
+
+    const description = truncate(
+      latestPodcastEpisode?.summary?.replace(/(<([^>]+)>)/gi, ''),
+      {
+        length: 260,
+        separator: /,?\.* +/
+      }
+    );
+
+    latestPodcastEpisode.description = description;
+
     const content = await $content('blog/posts')
       .sortBy('date', 'desc')
       .limit(1)
       .fetch();
 
-    const post = content[0];
+    const latestBlogPost = content[0];
 
-    return { post };
+    return { latestPodcastEpisode, latestBlogPost };
   },
 
   data() {

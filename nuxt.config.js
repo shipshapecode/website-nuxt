@@ -35,7 +35,7 @@ const createRSSFeed = async (feed, args) => {
   feed.options = {
     title: 'Ship Shape Insights',
     description:
-      'Our thoughtful ramblings about Ember.js, Nuxt.js, JavaScript, life, liberty and the pursuit of happiness.',
+      'Our thoughtful ramblings about Ember.js, Next.js, Nuxt.js, JavaScript, life, liberty and the pursuit of happiness.',
     link: `${hostname}/feed.xml`
   };
   const { $content } = require('@nuxt/content');
