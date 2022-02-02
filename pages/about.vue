@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroBlock hero-classes="about bg-blue-light">
-      <template #content>
+      <template #icon>
         <nuxt-img
           class="mt-8"
           alt="Ship Shape employee group photo"
@@ -9,8 +9,7 @@
           src="/img/about/group-oct-2021.jpeg"
         />
       </template>
-
-      <template #icon>
+      <template #content>
         <div class="m-auto max-w-2xl">
           <h1 class="text-navy">
             Meet the crew on board our full-stack software development agency
