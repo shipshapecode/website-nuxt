@@ -138,7 +138,7 @@
                   <div class="space-y-8">
                     <div class="text-lg leading-6 font-medium space-y-1">
                       <h3 class="mb-3">{{ employee.name }}</h3>
-                      <h4 class="text-navy">{{ employee.title }}</h4>
+                      <h4 class="text-indigo-600">{{ employee.title }}</h4>
                     </div>
                     <p>{{ employee.blurb ? employee.blurb : null }}</p>
                     <ul class="flex space-x-8">
