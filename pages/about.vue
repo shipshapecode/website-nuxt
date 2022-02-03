@@ -242,7 +242,10 @@
               company.
             </p>
           </div>
-          <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
+          <nuxt-link
+            class="flex place-content-center btn btn-red w-full lg:w-1/5"
+            to="/blog/"
+          >
             Get more insights
           </nuxt-link>
         </div>
