@@ -338,14 +338,9 @@
       </div>
     </div>
 
-    <div class="section bg-navy flex justify-center">
-      <div class="section-content flex flex-wrap justify-center lg:flex-nowrap">
-        <div
-          class="
-            pb-24
-            lg:flex lg:flex-row lg:place-content-between lg:items-center
-          "
-        >
+    <div class="section bg-navy flex justify-center lg:py-40">
+      <div class="section-content flex flex-col justify-center">
+        <div class="pb-24 lg:flex lg:flex-row lg:items-center lg:gap-x-32">
           <div class="text-white">
             <h2 class="text-white">Giving back</h2>
             <p>
@@ -354,7 +349,10 @@
               community and pushing the software space forward.
             </p>
           </div>
-          <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
+          <nuxt-link
+            class="flex place-content-center btn btn-red w-full lg:w-1/5"
+            to="/blog/"
+          >
             Get more contributions
           </nuxt-link>
         </div>
