@@ -35,7 +35,7 @@ To build upon React, Next.js also offers additional features that help developer
 
 ### Pre-Rendering Options
 
-On an initial load, web applications built with React will render a page's static elements on the client side. Then, the network requests necessary for fetching any relevant data for that page will fire and any returned data will populate the page where appropriate.
+On an initial load, web applications built with React will render a page's static elements on the client side. Then, the network requests necessary for fetching any relevant data for that page will fire. Any returned data will populate the page where appropriate.
 
 Depending on the number of network requests and the bulk of the data returned, this process can result in either a brief, or potentially sizable, loading time for the end user. To accomodate long loading times, developers often opt to include a helpful component to be displayed on the UI that indicates to the user that the page isn't frozen, just loading.
 
@@ -99,10 +99,10 @@ The pre-rendering options outlined above come with another distinct advantage: S
 
 ### File-Based Routing
 
-Another helpful addition Next.js offers is that of file-based page routing. The file tree of a Next.js repository is organized such that pages can easily be created under the built-in `pages` directory. Any file with a `.js`, `.jsx`, `.ts`, or `.tsx` extension located in the pages directory is automatically made availabe as a route.
+Another helpful addition Next.js offers is that of file-based page [routing](https://nextjs.org/docs/routing/introduction). The file tree of a Next.js repository is organized so that pages can easily be created under the built-in `pages` directory. Any file with a `.js`, `.jsx`, `.ts`, or `.tsx` extension located in the pages directory is automatically made availabe as a route.
 
 - Any file named `index` is recognized by Next.js to indicate the root of the pages directory, or a sub-directory if located in a sub-folder nested within the pages directory.
-- Next.js allows for both static and dynamic routes. Static routes are explicitly defined by developers, while dynamic routes are defined using brackets and act as placeholders for a dynamic URL segment.
+- Next.js allows for both static and dynamic routes. Static routes are explicitly defined by developers, while a dynamic route is defined using brackets, the content of which acts as a placeholder for a dynamic URL segment.
 
 <img width="970" alt="Screen Shot 2022-02-02 at 10 47 56 PM" src="https://user-images.githubusercontent.com/73088654/152288317-7641a935-fda4-470f-a088-31f4c4513c50.png">
 
@@ -131,8 +131,8 @@ The following considerations can help you determine whether Next.js is right for
 ## Key Takeaways
 
 - Next.js is a JavaScript framework that builds upon the React library to produce production ready applications.
-- Pre-rendering is a built-in feature of Next.js that allows developers to cut out loading times experienced by users, while also boosting SEO efforts by rendering pages already populated by relevant data.
-- File-based routing is another built-in feature of Next.js that removes the need for importing a router library and instead offers automatic routing that is based on static, dynamic, and nested routes within the pages directory of the file tree. This organizational feature of Next.js is simple and easy for developers to understand.
+- Pre-rendering is a built-in feature of Next.js that allows developers to cut back on significant loading times experienced by users, while also boosting SEO efforts by rendering pages already populated by relevant data.
+- File-based routing removes the need for importing a router library and explicitly defining routes within a codebase; Next.js will automatically recognize files as either static, dynamic, or nested routes when located in the pages directory of the file tree. This organizational feature of Next.js is simple and easy for developers to understand.
 - You should consider using Next.js to build your next web application if you comfortable using React, want to cut back on loading times experienced by users, want to boost your SEO, and would like to get your application into production quickly.
 
 ## Conclusion
