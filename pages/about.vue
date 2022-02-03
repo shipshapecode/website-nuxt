@@ -63,11 +63,17 @@
         <div>
           <h3>Fun facts about us</h3>
           <ul class="navy-bullets">
-            <li>We consistently contribute to the open-source community.</li>
+            <li>
+              We consistently contribute to the
+              <nuxt-link to="/open-source">open-source community</nuxt-link>.
+            </li>
             <li>We run a climate-positive shop.</li>
             <li>
-              We started a podcast for developers to share our love for whiskey,
-              web development, and whatnot.
+              We started a
+              <a href="https://www.whiskeywebandwhatnot.fm/"
+                >podcast for developers</a
+              >
+              to share our love for whiskey, web development, and whatnot.
             </li>
             <li>We have team members in 8+ locations across North America.</li>
           </ul>
