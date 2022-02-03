@@ -68,9 +68,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/services/"
             @click.native="toggleNavMenu(false)"
           >
@@ -79,9 +76,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/work/"
             @click.native="toggleNavMenu(false)"
           >
@@ -90,9 +84,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/about/"
             @click.native="toggleNavMenu(false)"
           >
@@ -101,9 +92,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/blog/"
             @click.native="toggleNavMenu(false)"
           >
