@@ -20,11 +20,13 @@
 
     <div class="section bg-white flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="py-6 lg:flex lg:justify-center lg:py-12">
+        <h2 class="py-6 lg:flex lg:justify-center lg:py-12" data-aos="fade-up">
           Ship Shape /ˈSHipˌSHāp / adj. “To be in first-class order”
         </h2>
         <div
           class="gap-20 grid grid-cols-1 items-center lg:gap-32 lg:grid-cols-2"
+          data-aos="fade-left"
+          data-aos-delay="200"
         >
           <p class="lg:order-last">
             Our name describes exactly what our full-stack software development
@@ -55,6 +57,8 @@
           items-center
           lg:gap-32 lg:grid-cols-2
         "
+        data-aos="fade-right"
+        data-aos-delay="400"
       >
         <div>
           <h3>Fun facts about us</h3>
@@ -79,7 +83,7 @@
 
     <div class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div class="lg:flex lg:py-20">
+        <div class="lg:flex lg:py-20" data-aos="fade-down">
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full pb-12 lg:order-last"
             format="webp"
@@ -105,6 +109,7 @@
               <li v-for="(employee, index) in mgmt" :key="employee.name">
                 <div
                   class="space-y-8 lg:flex lg:items-center lg:gap-x-24 lg:pb-28"
+                  data-aos="flip-up"
                 >
                   <div :class="{ 'lg:order-last': index % 2 !== 0 }">
                     <nuxt-img
@@ -167,7 +172,10 @@
               "
             >
               <li v-for="employee in team" :key="employee.name">
-                <div class="space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-12">
+                <div
+                  class="space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-12"
+                  data-aos="flip-up"
+                >
                   <div class="aspect-w-3 aspect-h-3">
                     <nuxt-img
                       class="filter grayscale object-cover shadow-lg rounded-lg"
@@ -224,16 +232,14 @@
       </div>
     </div>
 
-    <div
-      class="section flex flex-wrap justify-center bg-white"
-      data-aos="fade-down"
-    >
+    <div class="section flex flex-wrap justify-center bg-white">
       <div class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]">
         <div
           class="
             py-24
             lg:flex lg:flex-row lg:place-content-between lg:items-center
           "
+          data-aos="fade-down"
         >
           <div>
             <h2>Tap into our knowledge base</h2>
@@ -250,7 +256,7 @@
           </nuxt-link>
         </div>
         <div>
-          <div>
+          <div data-aos="fade-left">
             <h3 class="py-12">Latest Podcast</h3>
             <div
               :key="post.slug"
@@ -292,7 +298,7 @@
               </nuxt-link>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             <h3 class="py-12">Latest Blog Post</h3>
             <div
               :key="post.slug"
@@ -340,7 +346,10 @@
 
     <div class="section bg-navy flex justify-center lg:py-40">
       <div class="section-content flex flex-col justify-center">
-        <div class="pb-24 lg:flex lg:flex-row lg:items-center lg:gap-x-32">
+        <div
+          class="pb-24 lg:flex lg:flex-row lg:items-center lg:gap-x-32"
+          data-aos="fade-down"
+        >
           <div class="text-white">
             <h2 class="text-white">Giving back</h2>
             <p>
@@ -421,7 +430,10 @@
       </div>
     </div>
 
-    <HeroBlock hero-classes="waves blue-waves bg-blue-light">
+    <HeroBlock
+      hero-classes="waves blue-waves bg-blue-light"
+      data-aos="fade-down"
+    >
       <template #content>
         <h2 itemprop="name" class="leading-tight text-5xl">
           Want to chart your course to software success?
