@@ -39,8 +39,8 @@
             and help each other grow in the process.
           </p>
           <nuxt-img
+            alt=""
             class="mt-8"
-            alt="Ship Shape office desk"
             format="webp"
             src="/img/about/desk.jpg"
           />
@@ -72,12 +72,7 @@
             <li>We have team members in 8+ locations across North America.</li>
           </ul>
         </div>
-        <nuxt-img
-          class="mt-8"
-          alt="Ship Shape office desk"
-          format="webp"
-          src="/img/about/desk.jpg"
-        />
+        <nuxt-img alt="" class="mt-8" format="webp" src="/img/about/desk.jpg" />
       </div>
     </div>
 
@@ -376,6 +371,7 @@
         >
           <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/client.svg"
             />
@@ -391,6 +387,7 @@
             data-aos-delay="200"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/staff.svg"
             />
@@ -405,6 +402,7 @@
             data-aos-delay="400"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/fun.svg"
             />
@@ -419,6 +417,7 @@
             data-aos-delay="600"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/pwa.svg"
             />
