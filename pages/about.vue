@@ -79,37 +79,34 @@
 
     <div class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <div>
+        <div class="lg:flex lg:py-20">
           <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full pb-12"
+            class="h-auto m-auto max-w-2xl w-full pb-12 lg:order-last"
             format="webp"
             height="772"
             src="/img/hero-images/mentoring.png"
             width="1312"
           />
-        </div>
-        <div class="pb-20">
-          <h2>Get to know the crew</h2>
-          <p>
-            Our clients can confirm: Ship Shape’s software development agency is
-            made of the best developers in the business. We blend of IQ + EQ,
-            ensuring you get talented engineers who are easy to work with and
-            blend seamlessly with your team.
-          </p>
+          <div class="pb-20 lg:self-center">
+            <h2>Get to know the crew</h2>
+            <p>
+              Our clients can confirm: Ship Shape’s software development agency
+              is made of the best developers in the business. We blend of IQ +
+              EQ, ensuring you get talented engineers who are easy to work with
+              and blend seamlessly with your team.
+            </p>
+          </div>
         </div>
 
         <div class="w-full">
           <div class="space-y-12">
-            <ul
-              class="
-                space-y-24
-                sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
-                lg:grid-cols-3 lg:gap-x-8
-              "
-            >
-              <li v-for="employee in team" :key="employee.name">
-                <div class="space-y-8">
-                  <div class="aspect-w-3 aspect-h-3">
+            <!-- two lists - employee and mgmt -->
+            <ul>
+              <li v-for="(employee, index) in mgmt" :key="employee.name">
+                <div
+                  class="space-y-8 lg:flex lg:items-center lg:gap-x-24 lg:pb-28"
+                >
+                  <div :class="{ 'lg:order-last': index % 2 !== 0 }">
                     <nuxt-img
                       class="filter grayscale object-cover shadow-lg rounded-lg"
                       format="webp"
@@ -122,6 +119,70 @@
                     <div class="text-lg leading-6 font-medium space-y-1">
                       <h3 class="mb-3">{{ employee.name }}</h3>
                       <h4 class="text-indigo-600">{{ employee.title }}</h4>
+                    </div>
+                    <p>{{ employee.blurb ? employee.blurb : null }}</p>
+                    <ul class="flex space-x-8">
+                      <li>
+                        <a :href="employee.github" class="github-logo">
+                          <span class="sr-only">GitHub</span>
+                          <inline-svg
+                            aria-hidden="true"
+                            src="/svgs/github.svg"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a :href="employee.linkedin" class="linkedin-logo">
+                          <span class="sr-only">LinkedIn</span>
+                          <inline-svg
+                            aria-hidden="true"
+                            src="/svgs/linkedin.svg"
+                          />
+                        </a>
+                      </li>
+                      <li v-if="employee.twitter">
+                        <a :href="employee.twitter" class="twitter-logo">
+                          <span class="sr-only">Twitter</span>
+                          <inline-svg
+                            aria-hidden="true"
+                            src="/svgs/twitter.svg"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul
+              class="
+                space-y-24
+                lg:space-y-0
+                lg:grid
+                lg:grid-cols-2
+                lg:gap-x-16
+                lg:gap-y-28
+                lg:pb-24
+              "
+            >
+              <li v-for="employee in team" :key="employee.name">
+                <div class="space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-12">
+                  <div class="aspect-w-3 aspect-h-3">
+                    <nuxt-img
+                      class="filter grayscale object-cover shadow-lg rounded-lg"
+                      format="webp"
+                      :src="employee.imgSrc"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="space-y-8 self-center">
+                    <div class="text-lg leading-6 font-medium space-y-1">
+                      <h3 class="mb-3">{{ employee.name }}</h3>
+                      <h4 class="text-grey font-medium text-2xl">
+                        {{ employee.title }}
+                      </h4>
                     </div>
                     <p>{{ employee.blurb ? employee.blurb : null }}</p>
                     <ul class="flex space-x-8">
@@ -409,7 +470,7 @@ export default {
 
   data() {
     return {
-      team: [
+      mgmt: [
         {
           name: 'Robbie Wagner',
           title: 'CEO',
@@ -429,7 +490,9 @@ export default {
           github: 'https://github.com/chuckcarpenter',
           blurb:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
-        },
+        }
+      ],
+      team: [
         {
           name: 'Rob Cary',
           title: 'Senior Software Engineer',
