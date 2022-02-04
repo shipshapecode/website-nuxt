@@ -57,9 +57,10 @@
             work organized.
           </p>
           <p class="text-white lg:col-span-4 lg:content-center">
-            For these reasons, we often recommend it for enterprise app
-            development, in-depth apps and dashboards, responsive web
-            applications, and other projects for large firms.
+            For these reasons, we often recommend it for
+            <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
+            in-depth apps and dashboards, responsive web applications, and other
+            projects for large firms.
             <br />
             <br />
             If your team is working on an Ember.js app or considering a
