@@ -170,7 +170,7 @@
           />
         </div>
         <div>
-          <h3>Your co-pilots in the storm</h3>
+          <h2>Your co-pilots in the storm</h2>
           <p>
             Ship Shape is committed to leaving every engineering team we work
             with better than we found it. Not only do we build robust, reliable
@@ -204,7 +204,7 @@
           />
         </div>
         <div>
-          <h3 data-aos="fade-left">We ❤️ the Developer Community</h3>
+          <h2 data-aos="fade-left">We ❤️ the Developer Community</h2>
           <p data-aos="fade">
             We’re a team of makers who are passionate about improving software
             products and the people who create them.

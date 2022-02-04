@@ -15,10 +15,11 @@
 
       <template #icon>
         <nuxt-img
+          alt=""
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
           height="1030"
-          src="/img/hero-images/app-development-alt.png"
+          src="/img/hero-images/cloud-native-consulting.png"
           width="1344"
         />
       </template>
@@ -28,7 +29,7 @@
       <div class="section-content">
         <div class="grid grid-cols-1 gap-20 mb-32 lg:gap-32 lg:grid-cols-2">
           <div class="text-white" data-aos="fade-up">
-            <h2 class="mb-10 text-3xl text-white">
+            <h2 class="mb-10 text-4xl text-white">
               All about cloud-native applications
             </h2>
 
@@ -67,10 +68,10 @@
           </div>
         </div>
 
-        <h5 class="text-white" data-aos="fade">
+        <h3 class="text-white text-2xl" data-aos="fade">
           Ship Shape’s engineering staff prefers using a cloud-native approach
           because of its:
-        </h5>
+        </h3>
 
         <div
           class="
@@ -83,6 +84,7 @@
         >
           <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/retainer.svg"
             />
@@ -98,6 +100,7 @@
             data-aos-delay="200"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/speed.svg"
             />
@@ -112,6 +115,7 @@
             data-aos-delay="400"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/chart.svg"
             />
@@ -126,6 +130,7 @@
             data-aos-delay="600"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/chart.svg"
             />
@@ -150,6 +155,7 @@
       >
         <div>
           <nuxt-img
+            alt=""
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
             height="772"
@@ -158,7 +164,7 @@
           />
         </div>
         <div>
-          <h3>Your co-pilots in the storm</h3>
+          <h2>Your co-pilots in the storm</h2>
           <p>
             Ship Shape is committed to leaving every engineering team we work
             with better than we found it. Not only do we build robust, reliable
@@ -183,6 +189,7 @@
       >
         <div class="lg:order-last" data-aos="fade-up">
           <nuxt-img
+            alt=""
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
             height="1034"
@@ -191,7 +198,7 @@
           />
         </div>
         <div>
-          <h3 data-aos="fade-left">We ❤️ the Developer Community</h3>
+          <h2 data-aos="fade-left">We ❤️ the Developer Community</h2>
           <p data-aos="fade">
             We’re a team of makers who are passionate about improving software
             products and the people who create them.
