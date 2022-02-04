@@ -17,8 +17,9 @@
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
           height="1030"
-          src="/img/hero-images/app-development-alt.png"
+          src="/img/hero-images/serverless-consluting.png"
           width="1344"
+          alt=""
         />
       </template>
     </HeroBlock>
