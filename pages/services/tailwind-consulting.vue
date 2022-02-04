@@ -26,7 +26,7 @@
 
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="text-white text-3xl" data-aos="fade-up">
+        <h2 class="text-white text-4xl" data-aos="fade-up">
           All about Tailwind CSS
         </h2>
         <div
@@ -68,9 +68,9 @@
           </p>
         </div>
 
-        <h5 class="text-white" data-aos="fade">
+        <h3 class="text-white text-2xl" data-aos="fade">
           Ship Shape’s experienced engineers love Tailwind CSS because:
-        </h5>
+        </h3>
 
         <div
           class="
@@ -85,6 +85,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/image.svg"
+              alt=""
             />
 
             <p class="mb-12 text-center lg:m-0 lg:w-40">
@@ -100,6 +101,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/time.svg"
+              alt=""
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
               It automatically removes all unused CSS when building for
@@ -115,6 +117,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/modular.svg"
+              alt=""
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
               Its usability is quite nimble compared to similar frameworks (like
@@ -130,6 +133,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/pwa.svg"
+              alt=""
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
               Prototyping is super fast with Tailwind UI components.
@@ -159,10 +163,11 @@
             height="772"
             src="/img/hero-images/mentoring.png"
             width="1312"
+            alt=""
           />
         </div>
         <div>
-          <h3>Your co-pilots in the storm</h3>
+          <h2>Your co-pilots in the storm</h2>
           <p>
             Ship Shape is committed to leaving every engineering team we work
             with better than we found it. Not only do we build robust, reliable
@@ -192,10 +197,11 @@
             height="1034"
             src="/img/hero-images/ember-consulting.png"
             width="1312"
+            alt=""
           />
         </div>
         <div>
-          <h3 data-aos="fade-left">We ❤️ the Developer Community</h3>
+          <h2 data-aos="fade-left">We ❤️ the Developer Community</h2>
           <p data-aos="fade">
             We’re a team of makers who are passionate about improving software
             products and the people who create them.
