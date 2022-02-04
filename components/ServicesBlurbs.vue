@@ -192,7 +192,7 @@
           <div class="flex flex-col max-w-2xl w-full">
             <inline-svg
               class="h-auto w-36 nested-svg pb-8 lg:w-52 lg:pt-5 lg:pb-20"
-              src="/svgs/technologies/tailwind.svg"
+              src="/svgs/technologies/cncf.svg"
               aria-label="Cloud Native logo"
             />
             <p class="flex-grow">
