@@ -117,7 +117,7 @@
             <nuxt-img
               alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/chart.svg"
+              src="/svgs/icons/secure.svg"
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
               Tested, safe, and secure deployment

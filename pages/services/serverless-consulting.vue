@@ -106,7 +106,7 @@
             <nuxt-img
               alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/time.svg"
+              src="/svgs/icons/pay-less.svg"
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
               Only pay for the computing power you use
@@ -121,7 +121,7 @@
             <nuxt-img
               alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/modular.svg"
+              src="/svgs/icons/cloud-hard-drive.svg"
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
               Eliminate the need to manage physical hardware
@@ -136,7 +136,7 @@
             <nuxt-img
               alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/sail.svg"
+              src="/svgs/icons/add-hard-drives.svg"
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
               Control power and speed as needed
