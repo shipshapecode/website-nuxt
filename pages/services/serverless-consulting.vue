@@ -17,7 +17,7 @@
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
           height="1030"
-          src="/img/hero-images/serverless-consluting.png"
+          src="/img/hero-images/serverless-consulting.png"
           width="1344"
           alt=""
         />
@@ -26,7 +26,7 @@
 
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="text-white text-3xl" data-aos="fade-up">
+        <h2 class="text-white text-4xl" data-aos="fade-up">
           All about Serverless
         </h2>
         <div
@@ -74,7 +74,9 @@
           </p>
         </div>
 
-        <h5 class="text-white" data-aos="fade">This means your company can:</h5>
+        <h3 class="text-white text-2xl" data-aos="fade">
+          This means your company can:
+        </h3>
 
         <div
           class="
@@ -102,6 +104,7 @@
             data-aos-delay="200"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/time.svg"
             />
@@ -116,6 +119,7 @@
             data-aos-delay="400"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/modular.svg"
             />
@@ -130,6 +134,7 @@
             data-aos-delay="600"
           >
             <nuxt-img
+              alt=""
               class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/sail.svg"
             />
@@ -156,6 +161,7 @@
       >
         <div>
           <nuxt-img
+            alt=""
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
             height="772"
@@ -194,6 +200,7 @@
             height="1034"
             src="/img/hero-images/ember-consulting.png"
             width="1312"
+            alt=""
           />
         </div>
         <div>
