@@ -26,7 +26,7 @@
 
     <div class="section bg-navy flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="text-white text-3xl pt-20" data-aos="fade-up">
+        <h2 class="text-white text-4xl pt-20" data-aos="fade-up">
           All about Ember.js
         </h2>
         <div
@@ -70,10 +70,9 @@
             consulting to development to team training.
           </p>
         </div>
-        <!-- fix spacing between this and icons; second breakpoint - 2 & 2 for sm or md -->
-        <h5 class="text-white" data-aos="fade">
+        <h3 class="text-white text-2xl" data-aos="fade">
           Ember is great for large companies because of its:
-        </h5>
+        </h3>
         <div
           class="
             grid
@@ -172,7 +171,7 @@
           />
         </div>
         <div>
-          <h3>We’ll never leave you high and dry</h3>
+          <h2>We’ll never leave you high and dry</h2>
           <p>
             Ship Shape is committed to leaving every engineering team we work
             with better than we found it. Not only do we build robust, reliable
