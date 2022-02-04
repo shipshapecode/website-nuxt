@@ -24,12 +24,9 @@
       </template>
     </HeroBlock>
 
-    <div
-      class="section bg-white flex flex-wrap justify-center !pt-32"
-      data-aos="fade-down"
-    >
+    <div class="section bg-white flex flex-wrap justify-center !pt-32">
       <div>
-        <h3 class="py-12">High impact, low ego</h3>
+        <h3 class="py-12" data-aos="fade-left">High impact, low ego</h3>
         <div class="divide-[#D8E3E8] divide-y-2">
           <div
             class="
@@ -40,6 +37,7 @@
               pb-12
               lg:gap-32 lg:grid-cols-2 lg:pb-20
             "
+            data-aos="fade-left"
           >
             <nuxt-img
               class="h-auto m-auto max-w-2xl w-full"
@@ -65,6 +63,8 @@
               py-16
               lg:gap-32 lg:grid-cols-2 lg:py-24
             "
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <nuxt-img
               class="h-auto m-auto max-w-2xl w-full lg:order-last"
@@ -103,6 +103,8 @@
               py-16
               lg:gap-32 lg:grid-cols-2 lg-py-24
             "
+            data-aos="fade-left"
+            data-aos-delay="400"
           >
             <nuxt-img
               class="h-auto m-auto max-w-2xl w-full"
@@ -113,9 +115,10 @@
               alt=""
             />
             <p>
-              From the future of fintech, to cybersecurity, and more, we help a
-              wide variety of industries level-up their products and their
-              people.
+              From the future of fintech, to
+              <nuxt-link to="/work/enigma">cybersecurity</nuxt-link>, and more,
+              we help a wide variety of industries level-up their products and
+              their people.
             </p>
           </div>
         </div>
