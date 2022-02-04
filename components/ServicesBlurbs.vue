@@ -18,6 +18,7 @@
             height="814"
             src="/img/services/specialties.png"
             width="1312"
+            alt=""
           />
         </div>
         <div>
@@ -51,7 +52,7 @@
                 Learn more
                 <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
               </nuxt-link>
-              <nuxt-link class="learn-more" to="/services/ember-consulting/">
+              <nuxt-link class="learn-more" to="/work/netflix/">
                 See it in action
                 <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
               </nuxt-link>
@@ -111,7 +112,7 @@
                 Learn more
                 <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
               </nuxt-link>
-              <nuxt-link class="learn-more" to="/services/next-consulting/">
+              <nuxt-link class="learn-more" to="/work/enigma/">
                 See it in action
                 <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
               </nuxt-link>
