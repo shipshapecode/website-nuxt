@@ -19,6 +19,7 @@
           src="/img/hero-images/ember-consulting.png"
           height="1030"
           width="1344"
+          alt=""
         />
       </template>
     </HeroBlock>
@@ -94,6 +95,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/modular.svg"
+              alt=""
             />
             <p class="text-white">Clear Organization</p>
           </div>
@@ -112,6 +114,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/chart.svg"
+              alt=""
             />
             <p class="text-white">Scalable UI architecture</p>
           </div>
@@ -124,6 +127,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/retainer.svg"
+              alt=""
             />
             <p class="text-white">Simple updates</p>
           </div>
@@ -136,6 +140,7 @@
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/sail.svg"
+              alt=""
             />
             <p class="text-white">Commitment to stability</p>
           </div>
@@ -163,6 +168,7 @@
             height="772"
             src="/img/hero-images/mentoring.png"
             width="1312"
+            alt=""
           />
         </div>
         <div>
