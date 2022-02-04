@@ -2,10 +2,10 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock hero-classes="next-consulting waves next-waves">
       <template #content>
-        <h1 itemprop="name" class="leading-tight text-5xl">
-          Start with the basics and scale quickly with serverless frameworks
-        </h1>
-        <div>
+        <div class="pb-24 lg:pb-0">
+          <h1 itemprop="name" class="leading-tight text-5xl">
+            Start with the basics and scale quickly with serverless frameworks
+          </h1>
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let’s get started
           </nuxt-link>
@@ -14,7 +14,7 @@
 
       <template #icon>
         <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full"
+          class="h-auto m-auto max-w-2xl w-full lg:pb-32"
           format="webp"
           height="1030"
           src="/img/hero-images/serverless-consulting.png"
