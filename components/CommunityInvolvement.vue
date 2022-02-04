@@ -14,7 +14,6 @@
               height="272"
               src="/img/emberconf-2020.png"
               width="290"
-              alt="EmberConf 2020 Ship Shape Sticker"
             />
           </div>
 
@@ -61,11 +60,10 @@
               height="272"
               src="/img/ember-nyc.png"
               width="156"
-              alt="Ember.JS NYC Tomster"
             />
           </div>
 
-          <h3>Ember.js NYC</h3>
+          <h3 class="text-2xl">Ember.js NYC</h3>
 
           <p class="h-auto lg:h-64 xl:h-48">
             The Ember.js NYC Meetup has hosted Ship Shape many times. Check out
