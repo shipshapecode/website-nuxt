@@ -91,6 +91,7 @@
             height="772"
             src="/img/hero-images/mentoring.png"
             width="1312"
+            alt=""
           />
           <div class="pb-20 lg:self-center">
             <h2>Get to know the crew</h2>
