@@ -17,19 +17,21 @@ In some instances, React is sufficient for building out the frontend of a succes
 
 ## How Is Next.js Different From React?
 
+Next.js builds upon React, but is different in the following ways:
+
 - React is a JavaScript library, while Next.js is considered a [React framework for production](https://nextjs.org/)
-- React is useful for building out a web application's frontend, while Next.js offers some full stack capabilities
-- React renders UI components on the client side of the application, while Next.js offers server-side rendering capabilities
-- React alone does not offer built-in page routing (although the [React Router package](https://reactrouter.com/) is available as a dependency), while Next.js features built-in file-based routing
 - As a framework, Next.js has a strict organizational structure that developers must follow, while React alone does not
+- With React, page routing requires importing a dependency, like [React Router](https://reactrouter.com/), and defining routes within your codebase, while Next.js features built-in file-based routing
+- React is useful for building out a web application's frontend, while Next.js offers some full stack capabilities, like [authentication](https://nextjs.org/docs/authentication) processes or building [API routes](https://nextjs.org/docs/api-routes/introduction), for example
+- React renders UI components on the client side of the application, while Next.js offers pre-rendering capabilities
 
 ## How Does Next.js Build Upon React?
 
-Next.js retains the following features and capabilities offered by React:
+Next.js is similar to React insofar as both promote:
 
-- Makes building reusable components relatively quick and easy
-- Only updates elements on the DOM after a relevant piece of state has been manipulated
-- Uses [JSX](https://reactjs.org/docs/introducing-jsx.html), a syntax that blends elements of JavaScript and HTML
+- Encapsulated, reusable components that make building UIs relatively quick and easy
+- Targeted updates to the DOM that only occur after a relevant piece of state has been manipulated
+- The use of [JSX](https://reactjs.org/docs/introducing-jsx.html), a syntax that blends elements of JavaScript and HTML
 
 To build upon React, Next.js also offers additional features that help developers push their React applications into production faster. Below is an overview of some of those essential features that set Next.js apart from React.
 
@@ -37,7 +39,7 @@ To build upon React, Next.js also offers additional features that help developer
 
 On an initial load, web applications built with React will render a page's static elements on the client side. Then, the network requests necessary for fetching any relevant data for that page will fire. Any returned data will populate the page where appropriate.
 
-Depending on the number of network requests and the bulk of the data returned, this process can result in either a brief, or potentially sizable, loading time for the end user. To accomodate long loading times, developers often opt to include a helpful component to be displayed on the UI that indicates to the user that the page isn't frozen, just loading.
+Depending on the number of network requests and the bulk of data required for hydrating a given page, this process can sometimes result in a sizable loading time for the end user. To accomodate long loading times, developers often opt to include a helpful component to be displayed on the UI that indicates to the user that the page isn't frozen, just loading.
 
 Next.js, on the other hand, offers server-side rendering as an option for eliminating the delay that occurs between page render and data population. To do this, Next.js will pre-render a page's static elements, then fetch and populate that page with data, before sending the fully generated page to the client. There are two options for pre-rendering pages with Next.js: static page generation and server-side rendering.
 
@@ -109,15 +111,6 @@ Another helpful addition Next.js offers is that of file-based page [routing](htt
 `The file tree above displays a dynamic nested route with a single nested index page, and a static nested route with nested dynamic and static pages.`
 
 The built-in file based page routing offered by Next.js eliminates the need to import a routing library typically required when working with a React application. At the same time, the file-based page structure is great for developer experience as it is intuitive, and eliminates the need for explicitly defining routes within the code itself.
-
-<!-- Not sure if I want to include this next section, this blog is already pretty long -->
-<!-- ### Full Stack Options
-
-- Easily incorporate backend code with Node.js in the same project
-- Getting / storing data
-- Adding authentication
-- No stand-alone api project necessary
-- Built in authentication for Nextjs -> library needed for React -->
 
 ## Should I Use Next.js on My Next Web Application?
 
