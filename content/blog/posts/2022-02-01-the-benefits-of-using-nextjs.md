@@ -126,7 +126,7 @@ The following considerations can help you determine whether Next.js is right for
 - Next.js is a JavaScript framework that builds upon the React library to produce production ready applications.
 - Pre-rendering is a built-in feature of Next.js that allows developers to cut back on significant loading times experienced by users, while also boosting SEO efforts by rendering pages already populated by relevant data.
 - File-based routing removes the need for importing a router library and explicitly defining routes within a codebase; Next.js will automatically recognize files as either static, dynamic, or nested routes when located in the pages directory of the file tree. This organizational feature of Next.js is simple and easy for developers to understand.
-- You should consider using Next.js to build your next web application if you comfortable using React, want to cut back on loading times experienced by users, want to boost your SEO, and would like to get your application into production quickly.
+- You should consider using Next.js to build your next web application if you are comfortable using React, want to cut back on loading times experienced by users, want to boost your SEO, and would like to get your application into production quickly.
 
 ## Conclusion
 
