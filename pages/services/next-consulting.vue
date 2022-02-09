@@ -143,6 +143,44 @@
       class="section flex flex-wrap justify-center !pt-40"
       data-aos="fade-down"
     >
+      <div class="section-content pb-32">
+        <h2 class="pb-8">Next.js in action</h2>
+        <div
+          class="
+            bg-blue-light
+            rounded-b-lg
+            lg:grid lg:grid-cols-3 lg:rounded-l-lg
+          "
+        >
+          <nuxt-img
+            class="
+              rounded-t-lg
+              mb-4
+              lg:order-last
+              lg:mb-0
+              lg:rounded-t-none
+              lg:rounded-r-lg
+              lg:col-span-2
+            "
+            src="/img/work/enigma/enigma-hirer-dashboard.png"
+            alt="Enigma hirer dashboard with a pop-up notification introducing the page"
+          />
+          <div class="p-8 lg:p-12">
+            <inline-svg
+              class="h-8 max-w-full mb-8 self-start w-auto logo-red"
+              src="/svgs/clients/enigma.svg"
+            />
+            <p class="mb-16">
+              Enigma is a platform designed to help cybersecurity teams make
+              faster hiring decisions and find...
+            </p>
+            <nuxt-link class="learn-more" to="/services/ember-consulting/">
+              Dive deeper
+              <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
       <div
         class="
           section-content
@@ -245,3 +283,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.logo-red path {
+  fill: #ed6a5e;
+}
+</style>
