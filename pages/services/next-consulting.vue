@@ -29,7 +29,7 @@
       <div class="section-content">
         <div class="grid grid-cols-1 gap-20 mb-32 lg:gap-32 lg:grid-cols-2">
           <div class="text-white" data-aos="fade-up">
-            <h2 class="mb-10 text-3xl text-white">All about Next.js</h2>
+            <h2 class="mb-10 text-4xl text-white">All about Next.js</h2>
 
             <p>
               Whether you’re dipping your toes into the app development waters
@@ -70,9 +70,9 @@
           </div>
         </div>
 
-        <h5 class="text-white" data-aos="fade">
+        <h2 class="text-white text-3xl" data-aos="fade">
           Some of our favorite Next.js features include:
-        </h5>
+        </h2>
 
         <div
           class="
@@ -162,7 +162,7 @@
           />
         </div>
         <div>
-          <h3>We’ll never leave you high and dry</h3>
+          <h2>We’ll never leave you high and dry</h2>
           <p>
             Ship Shape is committed to leaving every engineering team we work
             with better than we found it. Not only do we build robust, reliable
@@ -195,7 +195,7 @@
           />
         </div>
         <div>
-          <h3 data-aos="fade-left">We ❤️ the Next.js Community</h3>
+          <h2 data-aos="fade-left">We ❤️ the Next.js Community</h2>
           <p data-aos="fade">
             We’re a team of makers who are passionate about improving software
             products and the people who create them.
