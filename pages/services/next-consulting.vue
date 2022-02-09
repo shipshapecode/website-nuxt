@@ -143,7 +143,7 @@
       class="section flex flex-wrap justify-center !pt-40"
       data-aos="fade-down"
     >
-      <div class="section-content pb-32">
+      <div class="section-content">
         <h2 class="pb-8">Next.js in action</h2>
         <div
           class="
@@ -181,6 +181,11 @@
           </div>
         </div>
       </div>
+    </div>
+    <div
+      class="section flex flex-wrap justify-center !pt-40"
+      data-aos="fade-down"
+    >
       <div
         class="
           section-content
