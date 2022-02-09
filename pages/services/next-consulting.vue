@@ -175,7 +175,7 @@
               Enigma is a platform designed to help cybersecurity teams make
               faster hiring decisions and find...
             </p>
-            <nuxt-link class="learn-more" to="/services/ember-consulting/">
+            <nuxt-link class="learn-more" to="/work/enigma/">
               Dive deeper
               <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
             </nuxt-link>
