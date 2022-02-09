@@ -194,11 +194,11 @@
 import { generateMeta } from '~/utils/meta';
 
 const testimonial = {
-  name: 'Namey Nameson',
-  title: 'Founder, CEO at Client',
+  name: 'Roger Studner',
+  title: 'Chief Architect at Expel',
   imgSrc: 'roger',
-  svgSrc: '/svgs/clients/netflix.svg',
-  quote: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`
+  svgSrc: '/svgs/clients/expel-white.svg',
+  quote: `Ship Shape was a great aid to us because they were the voice of Ember best practices to keep our code base current, and they were able to deliver on critical features on our roadmap that we did not have the bandwidth to complete on time. I would absolutely recommend Ship Shape to any other business that is looking for an incredibly skilled partner to work closely with their teams to produce and deliver the highest value.`
 };
 
 export default {
