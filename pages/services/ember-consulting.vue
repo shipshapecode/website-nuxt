@@ -151,6 +151,95 @@
       class="section flex flex-wrap justify-center !pt-40"
       data-aos="fade-down"
     >
+      <div class="section-content">
+        <h2 class="pb-8">Ember.js in action</h2>
+        <div
+          class="space-y-24 lg:grid lg:grid-flow-col lg:space-y-0 lg:space-x-6"
+        >
+          <div
+            class="bg-blue-light rounded-b-lg grid grid-rows-2"
+            data-aos="flip-down"
+          >
+            <nuxt-img
+              class="object-cover w-full h-full rounded-t-lg mb-4 row-span-1"
+              src="/img/work/expel/nist-overview.png"
+              alt="An overview of NIST scores, broken down by category and visualized in a radar graph."
+            />
+            <div class="p-8 lg:p-12">
+              <inline-svg
+                class="h-8 max-w-full mb-8 self-start w-auto logo-red"
+                src="/svgs/clients/expel.svg"
+              />
+              <p class="mb-16">
+                Expel offers 24x7 security monitoring and response for cloud,
+                hybrid and on-premises environments...
+              </p>
+              <nuxt-link class="learn-more" to="/work/expel/">
+                Dive deeper
+                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+              </nuxt-link>
+            </div>
+          </div>
+
+          <div
+            class="bg-blue-light rounded-b-lg grid grid-rows-2"
+            data-aos="flip-down"
+            data-aos-delay="200"
+          >
+            <inline-svg
+              class="bg-grey-light object-cover w-full h-full rounded-t-lg mb-4"
+              src="/svgs/data-graphic.svg"
+            />
+
+            <div class="p-8 lg:p-12">
+              <inline-svg
+                class="h-8 max-w-full mb-8 self-start w-auto logo-red"
+                src="/svgs/clients/netflix.svg"
+              />
+              <p class="mb-16">
+                Netflix is the world's leading internet entertainment service
+                with more than 130 million memberships in over 190 countries...
+              </p>
+              <nuxt-link class="learn-more" to="/work/netflix/">
+                Dive deeper
+                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+              </nuxt-link>
+            </div>
+          </div>
+
+          <div
+            class="bg-blue-light rounded-b-lg grid grid-rows-2"
+            data-aos="flip-down"
+            data-aos-delay="400"
+          >
+            <nuxt-img
+              class="object-cover w-full h-full rounded-t-lg mb-4 row-span-1"
+              src="/img/work/jebbit/jebbit-case-study-screenshot.png"
+              alt="Jebbit Experience Builder Legacy"
+            />
+            <div class="p-8 lg:p-12">
+              <inline-svg
+                class="h-8 max-w-full mb-8 self-start w-auto logo-red"
+                src="/svgs/clients/jebbit.svg"
+              />
+              <p class="mb-16">
+                Jebbit is an enterprise software platform that enables a future
+                of total data transparency between brands and...
+              </p>
+              <nuxt-link class="learn-more" to="/work/jebbit/">
+                Dive deeper
+                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+              </nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section flex flex-wrap justify-center !pt-40"
+      data-aos="fade-down"
+    >
       <div
         class="
           section-content
@@ -228,5 +317,9 @@ export default {
 .ember-image {
   height: 250px;
   width: auto;
+}
+
+.logo-red path {
+  fill: #ed6a5e;
 }
 </style>
