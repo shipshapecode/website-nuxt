@@ -151,6 +151,7 @@
             rounded-b-lg
             lg:grid lg:grid-cols-3 lg:rounded-l-lg
           "
+          data-aos="flip-down"
         >
           <nuxt-img
             class="
