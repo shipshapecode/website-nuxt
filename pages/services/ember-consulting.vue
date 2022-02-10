@@ -140,7 +140,7 @@
       data-aos="fade-down"
     >
       <div class="section-content">
-        <h2 class="pb-8">Ember.js in action</h2>
+        <h2 class="pb-8 text-4xl">Ember.js in action</h2>
         <div
           class="space-y-24 lg:grid lg:grid-flow-col lg:space-y-0 lg:space-x-6"
         >
@@ -248,7 +248,7 @@
           />
         </div>
         <div>
-          <h2>We’ll never leave you high and dry</h2>
+          <h3>We’ll never leave you high and dry</h3>
           <p>
             Ship Shape is committed to leaving every engineering team we work
             with better than we found it. Not only do we build robust, reliable

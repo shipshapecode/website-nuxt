@@ -2,7 +2,7 @@
   <div class="section flex flex-wrap justify-center">
     <div class="section-content flex flex-wrap">
       <div class="max-w-4xl pb-24 w-full" data-aos="fade-up">
-        <h2>We ❤️ the Ember.js Community</h2>
+        <h3>We ❤️ the Ember.js Community</h3>
       </div>
 
       <div class="flex flex-wrap lg:flex-nowrap">
