@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="ember-consulting waves white-waves">
+    <HeroBlock hero-classes="ember-consulting waves ember-waves !pb-20">
       <template #content>
         <h1 itemprop="name" class="text-5xl leading-tight">
           Build fast, reliable apps with expert Ember.js development,
@@ -16,8 +16,8 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
+          height="1058"
           src="/img/hero-images/ember-consulting.png"
-          height="1030"
           width="1344"
           alt=""
         />
@@ -75,73 +75,61 @@
         </h3>
         <div
           class="
-            grid
-            text-center
-            divide-grey-light divide-y-2
-            lg:grid-cols-4 lg:divide-x-2 lg:divide-y-0
+            divide-grey-light divide-y
+            grid grid-cols-1
+            my-20
+            text-white
+            lg:divide-x lg:divide-y-0 lg:grid-cols-4
           "
         >
-          <div
-            class="
-              bg-navy
-              flex flex-col
-              justify-items-center
-              py-8
-              lg:px-16 lg:pb-0
-            "
-            data-aos="flip-down"
-          >
+          <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
               class="h-20 inline-block mb-8 w-auto"
               src="/svgs/icons/modular.svg"
               alt=""
             />
-            <p class="text-white">Clear Organization</p>
+            <p class="mb-12 text-center w-24 lg:m-0">Clear Organization</p>
           </div>
 
           <div
-            class="
-              bg-navy
-              flex flex-col
-              justify-items-center
-              py-12
-              lg:px-16 lg:pb-0
-            "
+            class="flex flex-col items-center px-16"
             data-aos="flip-down"
             data-aos-delay="200"
           >
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/chart.svg"
               alt=""
             />
-            <p class="text-white">Scalable UI architecture</p>
+            <p class="mb-12 text-center w-24 lg:m-0">
+              Scalable UI architecture
+            </p>
           </div>
 
           <div
-            class="bg-navy flex flex-col justify-items-center pt-12 lg:px-16"
+            class="flex flex-col items-center px-16"
             data-aos="flip-down"
             data-aos-delay="400"
           >
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/retainer.svg"
               alt=""
             />
-            <p class="text-white">Simple updates</p>
+            <p class="mb-12 text-center w-24 lg:m-0">Simple updates</p>
           </div>
 
           <div
-            class="bg-navy flex flex-col justify-items-center pt-12 lg:px-16"
+            class="flex flex-col items-center px-16"
             data-aos="flip-down"
             data-aos-delay="600"
           >
             <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
+              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
               src="/svgs/icons/sail.svg"
               alt=""
             />
-            <p class="text-white">Commitment to stability</p>
+            <p class="mb-12 text-center w-24 lg:m-0">Commitment to stability</p>
           </div>
         </div>
       </div>
@@ -167,7 +155,7 @@
             />
             <div class="p-8 lg:p-12">
               <inline-svg
-                class="h-8 max-w-full mb-8 self-start w-auto logo-red"
+                class="logo-red h-8 max-w-full mb-8 self-start w-auto"
                 src="/svgs/clients/expel.svg"
               />
               <p class="mb-16">
@@ -193,7 +181,7 @@
 
             <div class="p-8 lg:p-12">
               <inline-svg
-                class="h-8 max-w-full mb-8 self-start w-auto logo-red"
+                class="logo-red h-8 max-w-full mb-8 self-start w-auto"
                 src="/svgs/clients/netflix.svg"
               />
               <p class="mb-16">
@@ -219,7 +207,7 @@
             />
             <div class="p-8 lg:p-12">
               <inline-svg
-                class="h-8 max-w-full mb-8 self-start w-auto logo-red"
+                class="logo-red h-8 max-w-full mb-8 self-start w-auto"
                 src="/svgs/clients/jebbit.svg"
               />
               <p class="mb-16">

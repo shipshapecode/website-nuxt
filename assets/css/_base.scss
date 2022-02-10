@@ -176,13 +176,30 @@ h6 {
 
 .blue-waves {
   &::after {
-    background-image: url(/svgs/waves.svg);
+    background-image: url(/svgs/waves/waves.svg);
+  }
+}
+
+.ember-waves {
+  &::after {
+    background-image: url(/svgs/waves/ember-waves.svg);
+    background-size: 100vw;
+    bottom: -5px;
+    height: 165px;
+  }
+
+  @media only screen and (min-width: 2050px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -50px;
+      height: 300px;
+    }
   }
 }
 
 .next-waves {
   &::after {
-    background-image: url(/svgs/next-waves.svg);
+    background-image: url(/svgs/waves/next-waves.svg);
     background-size: 100vw;
     bottom: -20px;
     height: 165px;
@@ -199,7 +216,7 @@ h6 {
 
 .nuxt-waves {
   &::after {
-    background-image: url(/svgs/nuxt-waves.svg);
+    background-image: url(/svgs/waves/nuxt-waves.svg);
     background-size: 2050px;
     bottom: -20px;
     height: 200px;
@@ -216,6 +233,6 @@ h6 {
 
 .white-waves {
   &::after {
-    background-image: url(/svgs/white-waves.svg);
+    background-image: url(/svgs/waves/white-waves.svg);
   }
 }
