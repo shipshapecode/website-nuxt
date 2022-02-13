@@ -76,7 +76,7 @@
             />
             <p>
               Our software engineers specialize in
-              <nuxt-link to="/services/services/ember-consulting/"
+              <nuxt-link to="/services//ember-consulting/"
                 >Ember.js</nuxt-link
               >, <nuxt-link to="/services/nuxt-consulting/">Nuxt.js</nuxt-link>,
               <nuxt-link to="/services/next-consulting/">Next.js</nuxt-link>,
