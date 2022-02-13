@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="ember-consulting waves ember-waves !pb-20">
+    <HeroBlock hero-classes="ember-consulting waves ember-waves !pb-48 !pt-20">
       <template #content>
         <h1 itemprop="name" class="text-5xl leading-tight">
           Build fast, reliable apps with expert Ember.js development,
@@ -25,8 +25,8 @@
     </HeroBlock>
 
     <div class="section bg-navy flex flex-wrap justify-center">
-      <div class="section-content">
-        <h2 class="text-white text-4xl pt-20" data-aos="fade-up">
+      <div class="section-content" data-aos="fade-up">
+        <h2 class="text-white text-3xl" data-aos="fade-up">
           All about Ember.js
         </h2>
         <div
@@ -35,29 +35,28 @@
             space-y-12
             pt-10
             pb-32
-            lg:pt-4 lg:grid-cols-7 lg:gap-20 lg:space-y-0
+            lg:pt-4 lg:grid-cols-8 lg:gap-20 lg:space-y-0
           "
-          data-aos="fade-up"
-          data-aos-delay="200"
         >
-          <p
+          <div
             class="
-              grid
-              mb-0
-              p-4
               bg-blue-light
+              flex
+              items-center
+              p-12
+              rounded-md
               text-navy
-              rounded
-              place-self-center
-              sm:p-8
               lg:col-span-3
             "
           >
-            Ember.js is an open-source JavaScript web framework. We love its
-            strong opinions, which help engineers work faster and keep their
-            work organized.
-          </p>
-          <p class="text-white lg:col-span-4 lg:content-center">
+            <p class="mb-0">
+              Ember.js is an open source JavaScript web framework. We love its
+              strong opinions, which help engineers work faster and keep their
+              work organized.
+            </p>
+          </div>
+
+          <p class="text-white lg:col-span-5 lg:content-center lg:p-8">
             For these reasons, we often recommend it for
             <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
             in-depth apps and dashboards, responsive web applications, and other
@@ -135,99 +134,154 @@
       </div>
     </div>
 
-    <div
-      class="section flex flex-wrap justify-center !pt-40"
-      data-aos="fade-down"
-    >
+    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
       <div class="section-content">
         <h2 class="pb-8 text-4xl">Ember.js in action</h2>
-        <div
-          class="space-y-24 lg:grid lg:grid-flow-col lg:space-y-0 lg:space-x-6"
-        >
+        <div>
           <div
-            class="bg-blue-light rounded-b-lg grid grid-rows-2"
-            data-aos="flip-down"
+            class="
+              space-y-24
+              lg:grid lg:grid-flow-col lg:space-y-0 lg:space-x-6
+            "
           >
-            <nuxt-img
-              class="object-cover w-full h-full rounded-t-lg mb-4 row-span-1"
-              src="/img/work/expel/nist-overview.png"
-              alt="An overview of NIST scores, broken down by category and visualized in a radar graph."
-            />
-            <div class="p-8 lg:p-12">
-              <inline-svg
-                class="logo-red h-8 max-w-full mb-8 self-start w-auto"
-                src="/svgs/clients/expel.svg"
-              />
-              <p class="mb-16">
-                Expel offers 24x7 security monitoring and response for cloud,
-                hybrid and on-premises environments...
-              </p>
-              <nuxt-link class="learn-more" to="/work/expel/">
-                Dive deeper
-                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-              </nuxt-link>
+            <div class="bg-blue-light rounded-b-lg" data-aos="flip-down">
+              <div
+                class="
+                  bg-red
+                  flex
+                  justify-center
+                  pt-8
+                  px-8
+                  relative
+                  rounded-t-lg
+                  lg:pt-12 lg:px-12
+                "
+              >
+                <div class="bg-white h-48 rounded-t-lg w-full">
+                  <nuxt-img
+                    class="
+                      object-cover object-top
+                      h-full
+                      max-w-full
+                      rounded-t-lg
+                      w-full
+                    "
+                    src="/img/work/expel/nist-overview.png"
+                    alt="An overview of NIST scores, broken down by category and visualized in a radar graph."
+                  />
+                </div>
+              </div>
+
+              <div class="p-8 relative lg:p-12">
+                <inline-svg
+                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
+                  src="/svgs/clients/expel.svg"
+                />
+                <p class="mb-16">
+                  Expel offers 24x7 security monitoring and response for cloud,
+                  hybrid and on-premises environments...
+                </p>
+                <nuxt-link class="learn-more" to="/work/expel/">
+                  Dive deeper
+                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+                </nuxt-link>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="bg-blue-light rounded-b-lg grid grid-rows-2"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <inline-svg
-              class="bg-grey-light object-cover w-full h-full rounded-t-lg mb-4"
-              src="/svgs/data-graphic.svg"
-            />
+            <div
+              class="bg-blue-light relative rounded-b-lg"
+              data-aos="flip-down"
+              data-aos-delay="200"
+            >
+              <div
+                class="
+                  bg-red
+                  flex
+                  justify-center
+                  pt-8
+                  px-8
+                  relative
+                  rounded-t-lg
+                  lg:pt-12 lg:px-12
+                "
+              >
+                <div class="bg-white h-48 rounded-t-lg w-full">
+                  <nuxt-img
+                    class="object-top h-full max-w-full rounded-t-lg w-full"
+                    src="/svgs/data-graphic.svg"
+                  />
+                </div>
+              </div>
 
-            <div class="p-8 lg:p-12">
-              <inline-svg
-                class="logo-red h-8 max-w-full mb-8 self-start w-auto"
-                src="/svgs/clients/netflix.svg"
-              />
-              <p class="mb-16">
-                Netflix is the world's leading internet entertainment service
-                with more than 130 million memberships in over 190 countries...
-              </p>
-              <nuxt-link class="learn-more" to="/work/netflix/">
-                Dive deeper
-                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-              </nuxt-link>
+              <div class="relative p-8 lg:p-12">
+                <inline-svg
+                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
+                  src="/svgs/clients/netflix.svg"
+                />
+                <p class="mb-16">
+                  Netflix is the world's leading internet entertainment service
+                  with more than 130 million memberships in over 190
+                  countries...
+                </p>
+                <nuxt-link class="learn-more" to="/work/netflix/">
+                  Dive deeper
+                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+                </nuxt-link>
+              </div>
             </div>
-          </div>
 
-          <div
-            class="bg-blue-light rounded-b-lg grid grid-rows-2"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              class="object-cover w-full h-full rounded-t-lg mb-4 row-span-1"
-              src="/img/work/jebbit/jebbit-case-study-screenshot.png"
-              alt="Jebbit Experience Builder Legacy"
-            />
-            <div class="p-8 lg:p-12">
-              <inline-svg
-                class="logo-red h-8 max-w-full mb-8 self-start w-auto"
-                src="/svgs/clients/jebbit.svg"
-              />
-              <p class="mb-16">
-                Jebbit is an enterprise software platform that enables a future
-                of total data transparency between brands and...
-              </p>
-              <nuxt-link class="learn-more" to="/work/jebbit/">
-                Dive deeper
-                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-              </nuxt-link>
+            <div
+              class="bg-blue-light relative rounded-b-lg"
+              data-aos="flip-down"
+              data-aos-delay="400"
+            >
+              <div
+                class="
+                  bg-red
+                  flex
+                  justify-center
+                  pt-8
+                  px-8
+                  relative
+                  rounded-t-lg
+                  lg:pt-12 lg:px-12
+                "
+              >
+                <div class="bg-jebbit-green h-48 rounded-t-lg w-full">
+                  <nuxt-img
+                    class="
+                      object-cover object-top
+                      h-full
+                      max-w-full
+                      rounded-t-lg
+                      w-full
+                    "
+                    src="/img/work/jebbit/jebbit-case-study-screenshot.png"
+                    alt="Jebbit Experience Builder Legacy"
+                  />
+                </div>
+              </div>
+              <div class="p-8 relative lg:p-12">
+                <inline-svg
+                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
+                  src="/svgs/clients/jebbit.svg"
+                />
+                <p class="mb-16">
+                  Jebbit is an enterprise software platform that enables a
+                  future of total data transparency between brands and...
+                </p>
+                <nuxt-link class="learn-more" to="/work/jebbit/">
+                  Dive deeper
+                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+                </nuxt-link>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div
-      class="section flex flex-wrap justify-center !pt-40"
-      data-aos="fade-down"
-    >
+    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
       <div
         class="
           section-content
@@ -307,7 +361,7 @@ export default {
   width: auto;
 }
 
-.logo-red path {
-  fill: #ed6a5e;
+.logo-navy path {
+  fill: var(--navy);
 }
 </style>

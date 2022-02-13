@@ -72,9 +72,9 @@
           </p>
         </div>
 
-        <h5 class="text-white" data-aos="fade">
+        <h3 class="text-white text-2xl" data-aos="fade">
           Nuxt works well for apps big and small thanks to its:
-        </h5>
+        </h3>
 
         <div
           class="
