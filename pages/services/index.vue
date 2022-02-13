@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroBlock hero-classes="services bg-blue-light waves blue-light-waves">
+    <HeroBlock hero-classes="services waves blue-waves bg-blue-light !pb-20">
       <template #content>
         <h1 itemprop="name" class="leading-tight text-5xl">
           Software consultants who build it right the first time, every time
@@ -76,9 +76,8 @@
             />
             <p>
               Our software engineers specialize in
-              <nuxt-link to="/services//ember-consulting/"
-                >Ember.js</nuxt-link
-              >, <nuxt-link to="/services/nuxt-consulting/">Nuxt.js</nuxt-link>,
+              <nuxt-link to="/services/ember-consulting/">Ember.js</nuxt-link>,
+              <nuxt-link to="/services/nuxt-consulting/">Nuxt.js</nuxt-link>,
               <nuxt-link to="/services/next-consulting/">Next.js</nuxt-link>,
               and emerging technologies like
               <nuxt-link to="/services/serverless-consulting/"
