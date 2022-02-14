@@ -523,7 +523,7 @@ export default {
           name: 'Chuck Carpenter',
           title: 'COO',
           imgSrc: '/img/blog/authors/chuck.jpg',
-          twitter: '',
+          twitter: 'https://twitter.com/charleswthe3rd',
           linkedin: 'https://www.linkedin.com/in/chuckcarpenter/',
           github: 'https://github.com/chuckcarpenter',
           blurb:
