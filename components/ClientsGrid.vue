@@ -79,7 +79,7 @@
         />
       </a>
       <p>
-        We partnered with the Rabble team to bring their open-source MUSICat
+        We partnered with the Rabble team to bring their open source MUSICat
         platform up to date. Our work included removing bower in favor of npm,
         migrating from ic-ajax to ember-ajax, enforcing consistent code quality
         with ESLint, and other improvements. Our software developers also served
