@@ -6,7 +6,7 @@
           class="mt-8"
           alt="Ship Shape employee group photo"
           format="webp"
-          src="/img/about/group-oct-2021.jpeg"
+          src="/img/about/group.png"
         />
       </template>
       <template #content>
