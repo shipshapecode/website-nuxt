@@ -45,7 +45,9 @@
             alt=""
             class="mt-8"
             format="webp"
-            src="/img/about/desk.jpg"
+            height="500px"
+            src="/img/about/ship-shape-sign.png"
+            width="500px"
           />
         </div>
       </div>
