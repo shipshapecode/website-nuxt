@@ -10,8 +10,8 @@
         />
       </template>
       <template #content>
-        <div class="m-auto max-w-2xl">
-          <h1 class="text-navy">
+        <div class="m-auto max-w-lg">
+          <h1 class="leading-tight text-5xl text-navy">
             Meet the crew on board our full-stack software development agency
           </h1>
         </div>
@@ -20,7 +20,10 @@
 
     <div class="section bg-white flex flex-wrap justify-center">
       <div class="section-content">
-        <h2 class="py-6 lg:flex lg:justify-center lg:py-12" data-aos="fade-up">
+        <h2
+          class="py-6 text-4xl lg:flex lg:justify-center lg:py-12"
+          data-aos="fade-up"
+        >
           Ship Shape /ˈSHipˌSHāp / adj. “To be in first-class order”
         </h2>
         <div
@@ -125,7 +128,7 @@
                   <div class="space-y-8">
                     <div class="text-lg leading-6 font-medium space-y-1">
                       <h3 class="mb-3">{{ employee.name }}</h3>
-                      <h4 class="text-indigo-600">{{ employee.title }}</h4>
+                      <h4 class="text-navy">{{ employee.title }}</h4>
                     </div>
                     <p>{{ employee.blurb ? employee.blurb : null }}</p>
                     <ul class="flex space-x-8">
@@ -436,10 +439,7 @@
       </div>
     </div>
 
-    <HeroBlock
-      hero-classes="waves blue-waves bg-blue-light"
-      data-aos="fade-down"
-    >
+    <HeroBlock hero-classes="waves blue-waves bg-blue-light" data-aos="fade">
       <template #content>
         <h2 itemprop="name" class="leading-tight text-5xl">
           Want to chart your course to software success?
