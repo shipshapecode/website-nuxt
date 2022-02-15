@@ -1,0 +1,46 @@
+<template>
+  <div>
+    <div
+      class="
+        divide-grey-light divide-y
+        grid grid-cols-1
+        my-20
+        text-white
+        lg:divide-x lg:divide-y-0 lg:grid-cols-4
+      "
+    >
+      <!-- should cards be separate component? -->
+      <div
+        v-for="(benefit, index) in benefits"
+        :key="index + 1"
+        class="flex flex-col items-center px-16"
+        data-aos="flip-down"
+        :data-aos-delay="200 * index"
+      >
+        <nuxt-img
+          :class="
+            index < 0
+              ? 'h-20 inline-block mb-8 w-auto'
+              : 'h-20 inline-block mb-8 mt-12 w-auto lg:mt-0'
+          "
+          :src="benefit.imgSrc"
+        />
+
+        <p class="mb-12 text-center lg:m-0 lg:w-40">
+          {{ benefit.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    benefits: {
+      type: Array,
+      required: true
+    }
+  }
+};
+</script>
