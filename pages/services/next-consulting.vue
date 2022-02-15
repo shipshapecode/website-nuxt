@@ -25,119 +25,10 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-navy flex flex-wrap justify-center">
-      <div class="section-content">
-        <div class="grid grid-cols-1 gap-20 mb-32 lg:gap-32 lg:grid-cols-2">
-          <div class="text-white" data-aos="fade-up">
-            <h2 class="mb-10 text-4xl text-white">All about Next.js</h2>
-
-            <p>
-              Whether you’re dipping your toes into the app development waters
-              and wondering, “What is Next.js?” or you already know the ropes
-              and are exploring this open-source React framework, you’ve come to
-              the right place.
-            </p>
-
-            <p>
-              At Ship Shape, our veteran engineers recommend Next.js because
-              it’s one of the most performant frameworks. With server-side
-              rendering (SSR) and routing, TypeScript support, smart bundling,
-              route pre-fetching, and more, it’s a great choice for
-              production-ready web apps.
-            </p>
-          </div>
-
-          <div
-            class="
-              bg-blue-light
-              flex
-              items-center
-              p-12
-              rounded-md
-              text-navy
-              lg:mt-16
-            "
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <p class="mb-0">
-              Teams who have worked in generic React apps can easily make the
-              leap into Next.js. If you’re wondering “What is Next.js, and can
-              my team transition?” Ship Shape’s experienced developers not only
-              consult and develop in Next.js, but also train and mentor teams to
-              maintain and improve their code over time.
-            </p>
-          </div>
-        </div>
-
-        <h2 class="text-white text-3xl" data-aos="fade">
-          Some of our favorite Next.js features include:
-        </h2>
-
-        <div
-          class="
-            divide-grey-light divide-y
-            grid grid-cols-1
-            my-20
-            text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
-          "
-        >
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
-            <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/icons/image.svg"
-            />
-
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Automatic image resizing and one-off, on-the-fly image generation
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/mentor.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Out-of-the-box internationalization features
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/chart.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Amazingly high performance
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="600"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/pwa.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Zero config! Developing features is a simple “yarn dev” away
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <AllAboutSpecialty
+      :text="specialtyDetails.text"
+      :benefits="specialtyDetails.benefits"
+    />
 
     <div
       class="section flex flex-wrap justify-center !pt-40"
@@ -255,28 +146,59 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 
+const specialtyDetails = {
+  text: {
+    h2: 'All about Next.js',
+    h3: 'Some of our favorite Next.js features include:',
+    boxedText:
+      'Teams who have worked in generic React apps can easily make the leap into Next.js. If you’re wondering “What is Next.js, and can my team transition?” Ship Shape’s experienced developers not only consult and develop in Next.js, but also train and mentor teams to maintain and improve their code over time.',
+    unboxedText: `Whether you’re dipping your toes into the app development waters and wondering, “What is Next.js?” or you already know the ropes and are exploring this open-source React framework, you’ve come to the right place. \n \n At Ship Shape, our veteran engineers recommend Next.js because it’s one of the most performant frameworks. With server-side rendering (SSR) and routing, TypeScript support, smart bundling, route pre-fetching, and more, it’s a great choice for production-ready web apps.'`
+  },
+  benefits: [
+    {
+      imgSrc: '/svgs/icons/image.svg',
+      description: 'Out-of-the-box internationalization features'
+    },
+    {
+      imgSrc: '/svgs/icons/mentor.svg',
+      description:
+        'Automatic image resizing and one-off, on-the-fly image generation'
+    },
+    {
+      imgSrc: '/svgs/icons/chart.svg',
+      description: 'Amazingly high performance'
+    },
+    {
+      imgSrc: '/svgs/icons/pwa.svg',
+      description:
+        'Zero config! Developing features is a simple “yarn dev” away'
+    }
+  ]
+};
+
 export const testimonial = {
   name: 'Harley Sugarman',
   title: 'Founder, CEO at Enigma',
   imgSrc: 'harley',
   svgSrc: '/svgs/clients/enigma-white.svg',
-  quote: `I loved working with Ship Shape. 
-          They helped our small team build a product from the ground up 
-          and were strong partners every step of the way. Their domain expertise 
-          in Next.js and React helped lay the foundation for a scalable codebase, 
-          and they were great at ensuring we adhered to engineering best practices. 
-          Every member of the team was a pleasure to work with and (best of all) 
+  quote: `I loved working with Ship Shape.
+          They helped our small team build a product from the ground up
+          and were strong partners every step of the way. Their domain expertise
+          in Next.js and React helped lay the foundation for a scalable codebase,
+          and they were great at ensuring we adhered to engineering best practices.
+          Every member of the team was a pleasure to work with and (best of all)
           we ended up launching our MVP on schedule!`
 };
 
 export default {
   speedkitComponents: {
+    AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
     HeroBlock: () => import('@/components/HeroBlock'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { testimonial };
+    return { specialtyDetails, testimonial };
   },
   head() {
     const title = 'Next.js Software Consultants & Developers';
