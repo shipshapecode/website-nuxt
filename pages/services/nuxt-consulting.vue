@@ -148,7 +148,7 @@
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
             src="/img/hero-images/mentoring.png"
-            height="772"
+            height="792"
             width="1312"
           />
         </div>
@@ -181,7 +181,7 @@
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
             src="/img/hero-images/ember-consulting.png"
-            height="1034"
+            height="1040"
             width="1312"
           />
         </div>

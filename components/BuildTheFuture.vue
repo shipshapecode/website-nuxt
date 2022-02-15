@@ -9,9 +9,9 @@
           alt="A desktop and mobile app mockup being worked on by a tentacle."
           class="h-auto max-w-xl mt-8 mx-auto w-full lg:ml-0 lg:mt-0"
           format="webp"
-          height="848"
+          height="834"
           loading="lazy"
-          src="/img/hero-images/app-development-alt.png"
+          src="/img/hero-images/app-development.png"
           width="1152"
         />
       </div>

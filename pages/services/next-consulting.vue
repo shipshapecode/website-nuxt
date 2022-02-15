@@ -18,7 +18,7 @@
         <nuxt-img
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
-          height="1030"
+          height="1000"
           src="/img/hero-images/next-consulting.png"
           width="1344"
         />
@@ -156,7 +156,7 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            height="772"
+            height="792"
             src="/img/hero-images/mentoring.png"
             width="1312"
           />
@@ -189,7 +189,7 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            height="1034"
+            height="1040"
             src="/img/hero-images/ember-consulting.png"
             width="1312"
           />

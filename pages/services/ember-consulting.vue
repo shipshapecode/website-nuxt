@@ -295,7 +295,7 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            height="772"
+            height="792"
             src="/img/hero-images/mentoring.png"
             width="1312"
             alt=""

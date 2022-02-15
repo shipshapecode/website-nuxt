@@ -20,7 +20,7 @@
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full"
             format="webp"
-            height="990"
+            height="972"
             src="/img/hero-images/app-development.png"
             width="1344"
           />
