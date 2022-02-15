@@ -31,23 +31,27 @@
           data-aos="fade-left"
           data-aos-delay="200"
         >
-          <p class="lg:order-last">
-            Our name describes exactly what our full-stack software development
-            agency does: creates first-class products with first-class talent.
-            <br />
-            <br />
-            Whether we’re crafting a greenfield solution with new technologies
-            or elevating an existing experience with the latest best practices,
-            we love collaborating with teams to solve old problems in new ways
-            and help each other grow in the process.
-          </p>
+          <div class="lg:order-last">
+            <p>
+              Our name describes exactly what our full-stack software
+              development agency does: creates first-class products with
+              first-class talent.
+            </p>
+
+            <p>
+              Whether we’re crafting a greenfield solution with new technologies
+              or elevating an existing experience with the latest best
+              practices, we love collaborating with teams to solve old problems
+              in new ways and help each other grow in the process.
+            </p>
+          </div>
+
           <nuxt-img
             alt=""
-            class="mt-8"
             format="webp"
-            height="500px"
+            height="1278px"
             src="/img/about/ship-shape-sign.png"
-            width="500px"
+            width="1278px"
           />
         </div>
       </div>
@@ -72,7 +76,11 @@
               We consistently contribute to the
               <nuxt-link to="/open-source">open-source community</nuxt-link>.
             </li>
-            <li>We run a climate-positive shop.</li>
+            <li>
+              We run a
+              <a href="https://ecologi.com/ship-shape">climate positive</a>
+              shop.
+            </li>
             <li>
               We started a
               <a href="https://www.whiskeywebandwhatnot.fm/"
