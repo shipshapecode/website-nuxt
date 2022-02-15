@@ -24,115 +24,26 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-navy flex flex-wrap justify-center">
-      <div class="section-content" data-aos="fade-up">
-        <h2 class="text-white text-3xl" data-aos="fade-up">
-          All about Ember.js
-        </h2>
-        <div
-          class="
-            grid
-            space-y-12
-            pt-10
-            pb-32
-            lg:pt-4 lg:grid-cols-8 lg:gap-20 lg:space-y-0
-          "
-        >
-          <div
-            class="
-              bg-blue-light
-              flex
-              items-center
-              p-12
-              rounded-md
-              text-navy
-              lg:col-span-3
-            "
-          >
-            <p class="mb-0">
-              Ember.js is an open source JavaScript web framework. We love its
-              strong opinions, which help engineers work faster and keep their
-              work organized.
-            </p>
-          </div>
-
-          <p class="text-white lg:col-span-5 lg:content-center lg:p-8">
-            For these reasons, we often recommend it for
-            <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
-            in-depth apps and dashboards, responsive web applications, and other
-            projects for large firms.
-            <br />
-            <br />
-            If your team is working on an Ember.js app or considering a
-            greenfield project where this framework could be a good fit, turn to
-            our top-tier Ember experts for a full range of support, from
-            consulting to development to team training.
-          </p>
-        </div>
-        <h3 class="text-white text-2xl" data-aos="fade">
-          Ember is great for large companies because of its:
-        </h3>
-        <div
-          class="
-            divide-grey-light divide-y
-            grid grid-cols-1
-            my-20
-            text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
-          "
-        >
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
-            <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/icons/modular.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">Clear Organization</p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/chart.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">
-              Scalable UI architecture
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/retainer.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">Simple updates</p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="600"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/sail.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">Commitment to stability</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <AllAboutSpecialty
+      :text="specialtyDetails.text"
+      :benefits="specialtyDetails.benefits"
+      :flip-paragraphs="true"
+    >
+      <template #unboxed-text>
+        <p class="text-white">
+          For these reasons, we often recommend it for
+          <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
+          in-depth apps and dashboards, responsive web applications, and other
+          projects for large firms.
+          <br />
+          <br />
+          If your team is working on an Ember.js app or considering a greenfield
+          project where this framework could be a good fit, turn to our top-tier
+          Ember experts for a full range of support, from consulting to
+          development to team training.
+        </p>
+      </template>
+    </AllAboutSpecialty>
 
     <div class="section flex flex-wrap justify-center" data-aos="fade-down">
       <div class="section-content">
@@ -324,6 +235,25 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 
+const specialtyDetails = {
+  text: {
+    h2: 'All about Ember.js',
+    h3: 'Ember is great for large companies because of its:',
+    boxedText:
+      'Ember.js is an open-source JavaScript web framework. We love its strong opinions, which help engineers work faster and keep their work organized. ',
+    unboxedText: ''
+  },
+  benefits: [
+    { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
+    {
+      imgSrc: '/svgs/icons/chart.svg',
+      description: 'Scalable UI architecture'
+    },
+    { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
+    { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
+  ]
+};
+
 const testimonial = {
   name: 'Roger Studner',
   title: 'Chief Architect at Expel',
@@ -334,6 +264,7 @@ const testimonial = {
 
 export default {
   speedkitComponents: {
+    AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
     CommunityInvolvement: () => import('@/components/CommunityInvolvement'),
     HeroBlock: () => import('@/components/HeroBlock'),
     SingleQuote: () => import('@/components/SingleQuote'),
@@ -341,7 +272,7 @@ export default {
   },
 
   data() {
-    return { testimonial };
+    return { testimonial, specialtyDetails };
   },
 
   head() {
