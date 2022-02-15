@@ -24,124 +24,23 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-navy flex flex-wrap justify-center">
-      <div class="section-content">
-        <h2 class="text-white text-4xl" data-aos="fade-up">
-          All about Tailwind CSS
-        </h2>
-        <div
-          class="
-            grid
-            space-y-12
-            pt-10
-            pb-32
-            lg:pt-4 lg:grid-cols-7 lg:gap-20 lg:space-y-0
-          "
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <p
-            class="
-              grid
-              mb-0
-              p-6
-              bg-blue-light
-              text-navy
-              rounded
-              place-self-center
-              sm:p-8
-              lg:col-span-3 lg:p-12
-            "
+    <AllAboutSpecialty
+      :text="specialtyDetails.text"
+      :benefits="specialtyDetails.benefits"
+      :flip-paragraphs="true"
+    >
+      <template #unboxed-text>
+        <p class="text-white lg:pt-8">
+          At Ship Shape, we like Tailwind CSS so much that we even use it on our
+          own products and passion projects, such as our
+          <a href="https://swach.io/"
+            >robust color management app called Swach.</a
           >
-            Much faster than with most CSS frameworks, Tailwind CSS provides
-            almost all the tools you need to build a site without writing any
-            custom styles.
-          </p>
-          <p class="text-white lg:col-span-4 lg:content-center lg:p-8">
-            At Ship Shape, we like Tailwind CSS so much that we even use it on
-            our own products and passion projects, such as our
-            <a href="https://swach.io/"
-              >robust color management app called Swach.</a
-            >
-            In addition to building Tailwind UIs, we also love training other
-            teams on it to help sharpen their skills too.
-          </p>
-        </div>
-
-        <h3 class="text-white text-2xl" data-aos="fade">
-          Ship Shape’s experienced engineers love Tailwind CSS because:
-        </h3>
-
-        <div
-          class="
-            divide-grey-light divide-y
-            grid grid-cols-1
-            my-20
-            text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
-          "
-        >
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
-            <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/icons/image.svg"
-              alt=""
-            />
-
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              It matches mocks and designs with ease.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/time.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              It automatically removes all unused CSS when building for
-              production, which improves speed.
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/modular.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Its usability is quite nimble compared to similar frameworks (like
-              Bootstrap).
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="600"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/pwa.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Prototyping is super fast with Tailwind UI components.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+          In addition to building Tailwind UIs, we also love training other
+          teams on it to help sharpen their skills too.
+        </p>
+      </template>
+    </AllAboutSpecialty>
 
     <div
       class="section flex flex-wrap justify-center !pt-40"
@@ -217,28 +116,59 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 
+const specialtyDetails = {
+  text: {
+    h2: 'All about Tailwind CSS',
+    h3: 'Ship Shape’s experienced engineers love Tailwind CSS because:',
+    boxedText:
+      'Much faster than with most CSS frameworks, Tailwind CSS provides almost all the tools you need to build a site without writing any custom styles.',
+    unboxedText: ''
+  },
+  benefits: [
+    {
+      imgSrc: '/svgs/icons/image.svg',
+      description: 'It matches mocks and designs with ease.'
+    },
+    {
+      imgSrc: '/svgs/icons/time.svg',
+      description:
+        'It automatically removes all unused CSS when building for production, which improves speed.'
+    },
+    {
+      imgSrc: '/svgs/icons/modular.svg',
+      description:
+        'Its usability is quite nimble compared to similar frameworks (like Bootstrap).'
+    },
+    {
+      imgSrc: '/svgs/icons/pwa.svg',
+      description: 'Prototyping is super fast with Tailwind UI components.'
+    }
+  ]
+};
+
 const testimonial = {
   name: 'Harley Sugarman',
   title: 'Founder, CEO at Enigma',
   imgSrc: 'harley',
   svgSrc: '/svgs/clients/enigma.svg',
-  quote: `I loved working with Ship Shape. 
-          They helped our small team build a product from the ground up 
-          and were strong partners every step of the way. Their domain expertise 
-          in Next.js and React helped lay the foundation for a scalable codebase, 
-          and they were great at ensuring we adhered to engineering best practices. 
-          Every member of the team was a pleasure to work with and (best of all) 
+  quote: `I loved working with Ship Shape.
+          They helped our small team build a product from the ground up
+          and were strong partners every step of the way. Their domain expertise
+          in Next.js and React helped lay the foundation for a scalable codebase,
+          and they were great at ensuring we adhered to engineering best practices.
+          Every member of the team was a pleasure to work with and (best of all)
           we ended up launching our MVP on schedule!`
 };
 
 export default {
   speedkitComponents: {
+    AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
     HeroBlock: () => import('@/components/HeroBlock'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { testimonial };
+    return { testimonial, specialtyDetails };
   },
   head() {
     const title = 'Next.js Software Consultants & Developers';
