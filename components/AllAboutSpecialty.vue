@@ -5,10 +5,11 @@
       <div class="grid grid-cols-1 gap-20 mb-32 lg:gap-32 lg:grid-cols-2">
         <div class="text-white" data-aos="fade-up">
           <h2 class="mb-10 text-4xl text-white">{{ text.h2 }}</h2>
-
-          <p class="whitespace-pre-line">
-            {{ text.unboxedText }}
-          </p>
+          <slot name="unboxed-text">
+            <p class="whitespace-pre-line">
+              {{ text.unboxedText }}
+            </p>
+          </slot>
         </div>
 
         <div
@@ -24,9 +25,11 @@
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <p class="mb-0">
-            {{ text.boxedText }}
-          </p>
+          <slot name="boxed-text">
+            <p class="mb-0">
+              {{ text.boxedText }}
+            </p>
+          </slot>
         </div>
       </div>
 
