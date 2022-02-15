@@ -1,13 +1,17 @@
 <template>
   <div>
     <div
-      class="
-        divide-grey-light divide-y
-        grid grid-cols-1
-        my-20
-        text-white
-        lg:divide-x lg:divide-y-0 lg:grid-cols-4
-      "
+      :class="`
+      divide-grey-light
+      divide-y
+      grid
+      grid-cols-1
+      my-20
+      text-white
+      lg:divide-x
+      lg:divide-y-0
+      lg:grid-cols-${benefits.length}
+      `"
     >
       <!-- should cards be separate component? -->
       <div
