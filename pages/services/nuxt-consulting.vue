@@ -172,41 +172,19 @@
 
     <SingleQuote :testimonial="testimonial" />
 
-    <div class="section flex flex-wrap justify-center">
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-      >
-        <div class="lg:order-last" data-aos="fade-up">
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            src="/img/hero-images/ember-consulting.png"
-            height="1040"
-            width="1312"
-          />
-        </div>
-        <div>
-          <h3 data-aos="fade-up">We ❤️ the Nuxt.js Community</h3>
-          <h4 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h4>
-          <p data-aos="fade-up">
-            Ship Shape proudly
-            <a href="https://nuxtjs.org/partners/ship-shape"
-              >sponsors Nuxt.js</a
-            >
-            to support its talented team and dynamic framework. Our partnership
-            is one of the main reasons we’re always ready to create Nuxt.js
-            apps: because we stay up-to-date with the Nuxt team and give back to
-            the community.
-          </p>
-        </div>
-      </div>
-    </div>
+    <DeveloperCommunity community-name="Nuxt.js">
+      <template #content>
+        <h4 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h4>
+        <p data-aos="fade-up">
+          Ship Shape proudly
+          <a href="https://nuxtjs.org/partners/ship-shape">sponsors Nuxt.js</a>
+          to support its talented team and dynamic framework. Our partnership is
+          one of the main reasons we’re always ready to create Nuxt.js apps:
+          because we stay up-to-date with the Nuxt team and give back to the
+          community.
+        </p>
+      </template>
+    </DeveloperCommunity>
 
     <WaveMoreLinks />
   </div>
@@ -223,6 +201,7 @@ import {
 export default {
   speedkitComponents: {
     AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
+    DeveloperCommunity: () => import('@/components/DeveloperCommunity'),
     HeroBlock: () => import('@/components/HeroBlock'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
