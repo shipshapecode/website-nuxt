@@ -24,127 +24,11 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-navy flex flex-wrap justify-center">
-      <div class="section-content">
-        <h2 class="text-white text-4xl" data-aos="fade-up">
-          All about Serverless
-        </h2>
-        <div
-          class="
-            grid
-            space-y-12
-            pt-10
-            pb-32
-            lg:pt-4 lg:grid-cols-7 lg:gap-20 lg:space-y-0
-          "
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          <p
-            class="
-              grid
-              mb-0
-              p-6
-              bg-blue-light
-              text-navy
-              rounded
-              place-self-center
-              sm:p-8
-              lg:col-span-3 lg:p-12
-            "
-          >
-            Why pay for computing power you aren’t using? With serverless
-            frameworks, high server costs are a thing of the past.
-            <br />
-            <br />
-            What is serverless? It’s a model that offloads server management to
-            a third party, only charges you for actual usage, and makes it easy
-            to auto-scale as demand increases.
-          </p>
-          <p class="text-white lg:col-span-4 lg:content-center lg:p-8">
-            Smaller APIs, graph QL servers, front-end applications,
-            microservices, and similar types of software work well within
-            serverless frameworks.
-            <br />
-            <br />
-            Working on something like this? Ship Shape’s first-rate software
-            engineers know all the ins and outs. Whether you’re wondering, “What
-            is serverless, and can it help my team?” or you’ve gotten started
-            but need help taking it to the next level, we’ve got you covered.
-          </p>
-        </div>
-
-        <h3 class="text-white text-2xl" data-aos="fade">
-          This means your company can:
-        </h3>
-
-        <div
-          class="
-            divide-grey-light divide-y
-            grid grid-cols-1
-            my-20
-            text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
-          "
-        >
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
-            <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/icons/speed.svg"
-            />
-
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Quickly spin up more servers when traffic spikes
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/pay-less.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Only pay for the computing power you use
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/cloud-hard-drive.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Eliminate the need to manage physical hardware
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="600"
-          >
-            <nuxt-img
-              alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/add-hard-drives.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Control power and speed as needed
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <AllAboutSpecialty
+      :text="specialtyDetails.text"
+      :benefits="specialtyDetails.benefits"
+      :flip-paragraphs="true"
+    />
 
     <div
       class="section flex flex-wrap justify-center !pt-40"
@@ -220,6 +104,26 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 
+const specialtyDetails = {
+  text: {
+    h2: 'All about Serverless',
+    h3: 'This means your company can:',
+    boxedText:
+      'Why pay for computing power you aren’t using? With serverless frameworks, high server costs are a thing of the past. \n \n What is serverless? It’s a model that offloads server management to a third party, only charges you for actual usage, and makes it easy to auto-scale as demand increases.',
+    unboxedText:
+      'Smaller APIs, graph QL servers, front-end applications, microservices, and similar types of software work well within serverless frameworks. \n \n Working on something like this? Ship Shape’s first-rate software engineers know all the ins and outs. Whether you’re wondering, “What is serverless, and can it help my team?” or you’ve gotten started but need help taking it to the next level, we’ve got you covered.'
+  },
+  benefits: [
+    { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
+    {
+      imgSrc: '/svgs/icons/chart.svg',
+      description: 'Scalable UI architecture'
+    },
+    { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
+    { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
+  ]
+};
+
 const testimonial = {
   name: 'Harley Sugarman',
   title: 'Founder, CEO at Enigma',
@@ -236,12 +140,13 @@ const testimonial = {
 
 export default {
   speedkitComponents: {
+    AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
     HeroBlock: () => import('@/components/HeroBlock'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { testimonial };
+    return { testimonial, specialtyDetails };
   },
   head() {
     const title = 'Next.js Software Consultants & Developers';
