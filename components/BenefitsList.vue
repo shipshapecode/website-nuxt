@@ -22,11 +22,8 @@
         :data-aos-delay="200 * index"
       >
         <nuxt-img
-          :class="
-            index < 0
-              ? 'h-20 inline-block mb-8 w-auto'
-              : 'h-20 inline-block mb-8 mt-12 w-auto lg:mt-0'
-          "
+          class="h-20 inline-block mb-8 w-auto"
+          :class="index > 0 ? 'mt-12  lg:mt-0' : null"
           :src="benefit.imgSrc"
         />
 

@@ -12,17 +12,34 @@
           pb-28
           lg:pt-4 lg:grid-cols-2 lg:gap-32 lg:space-y-0
         "
+        :class="flipParagraphs ? 'lg:grid-cols-8' : null"
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <div :class="flipParagraphs ? 'order-last pt-12 lg:pt-0' : ''">
+        <div
+          :class="
+            flipParagraphs ? 'lg:col-span-5 order-last pt-12 lg:pt-0' : ''
+          "
+        >
           <slot name="unboxed-text">
             <p class="text-white whitespace-pre-line lg:content-center">
               {{ text.unboxedText }}
             </p>
           </slot>
         </div>
-        <div class="bg-blue-light flex items-center p-12 rounded-md text-navy">
+        <div
+          class="
+            bg-blue-light
+            whitespace-pre-line
+            flex
+            items-center
+            p-12
+            pt-4
+            rounded-md
+            text-navy
+          "
+          :class="flipParagraphs ? 'lg:col-span-3' : null"
+        >
           <slot name="boxed-text">
             <p class="mb-0">
               {{ text.boxedText }}
