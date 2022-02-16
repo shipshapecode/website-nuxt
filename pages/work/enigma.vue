@@ -197,7 +197,7 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
-import { testimonial } from '~/pages/services/next-consulting';
+import { testimonial } from '~/content/specialties/next.js';
 
 export default {
   speedkitComponents: {
