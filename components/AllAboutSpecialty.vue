@@ -18,11 +18,19 @@
       >
         <div
           :class="
-            flipParagraphs ? 'lg:col-span-5 order-last pt-12 lg:pt-0' : ''
+            flipParagraphs
+              ? 'lg:grid lg:col-span-5 order-last pt-12 lg:pt-0'
+              : 'grid'
           "
         >
           <slot name="unboxed-text">
-            <p class="text-white whitespace-pre-line lg:content-center">
+            <p
+              class="
+                text-white
+                whitespace-pre-line
+                lg:content-center lg:place-self-center
+              "
+            >
               {{ text.unboxedText }}
             </p>
           </slot>

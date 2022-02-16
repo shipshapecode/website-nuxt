@@ -30,7 +30,7 @@
       :flip-paragraphs="true"
     >
       <template #unboxed-text>
-        <p class="text-white">
+        <p class="text-white lg:content-center lg:place-self-center">
           For these reasons, we often recommend it for
           <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
           in-depth apps and dashboards, responsive web applications, and other

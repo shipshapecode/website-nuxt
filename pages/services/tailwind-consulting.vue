@@ -30,7 +30,7 @@
       :flip-paragraphs="true"
     >
       <template #unboxed-text>
-        <p class="text-white lg:pt-8">
+        <p class="text-white lg:content-center lg:place-self-center">
           At Ship Shape, we like Tailwind CSS so much that we even use it on our
           own products and passion projects, such as our
           <a href="https://swach.io/"
