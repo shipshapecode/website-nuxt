@@ -174,7 +174,7 @@
 
     <DeveloperCommunity community-name="Nuxt.js">
       <template #content>
-        <h4 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h4>
+        <h3 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h3>
         <p data-aos="fade-up">
           Ship Shape proudly
           <a href="https://nuxtjs.org/partners/ship-shape">sponsors Nuxt.js</a>
