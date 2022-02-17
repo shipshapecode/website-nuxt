@@ -42,8 +42,7 @@ export default {
   head() {
     const title = 'Custom Software Development';
     const description =
-      'Ship Shape specializes in custom software and app development services. ' +
-      'Learn how we turn ideas into world-class products.';
+      'Ship Shape’s software consultants are top-tier engineers who tackle tough tech challenges in Ember.js, Next.js, Nuxt.js, Tailwind CSS, cloud-native, & more.';
     const url = 'https://shipshape.io/services/';
 
     return generateMeta(title, description, url);
