@@ -40,7 +40,7 @@
             :src="`/img/${testimonial.imgSrc}.jpg`"
           />
           <div class="text-white">
-            <h5 class="mb-1 text-white text-xl">{{ testimonial.name }}</h5>
+            <h2 class="mb-1 text-white text-xl">{{ testimonial.name }}</h2>
             <p class="m-0">{{ testimonial.title }}</p>
           </div>
         </div>

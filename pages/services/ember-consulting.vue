@@ -120,6 +120,7 @@
                   <nuxt-img
                     class="object-top h-full max-w-full rounded-t-lg w-full"
                     src="/svgs/data-graphic.svg"
+                    alt=""
                   />
                 </div>
               </div>
@@ -128,6 +129,7 @@
                 <inline-svg
                   class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
                   src="/svgs/clients/netflix.svg"
+                  alt=""
                 />
                 <p class="mb-16">
                   Netflix is the world's leading internet entertainment service

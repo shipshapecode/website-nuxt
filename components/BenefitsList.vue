@@ -25,6 +25,7 @@
           class="h-20 inline-block mb-8 w-auto"
           :class="index > 0 ? 'mt-12  lg:mt-0' : null"
           :src="benefit.imgSrc"
+          alt=""
         />
 
         <p class="mb-12 text-center lg:m-0 lg:w-40">
