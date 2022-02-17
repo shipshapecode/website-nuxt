@@ -19,7 +19,7 @@
         <div
           :class="
             flipParagraphs
-              ? 'lg:grid xl-span-5 order-last pt-12 lg:pt-0'
+              ? 'lg:grid xl:col-span-5 order-last pt-12 lg:pt-0'
               : 'grid'
           "
         >
