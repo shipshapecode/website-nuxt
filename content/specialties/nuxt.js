@@ -6,10 +6,9 @@ export const community = {
 };
 
 export const head = {
-  title: 'Nuxt.js Software Consultants & Developers',
+  title: 'Nuxt.js Software Consultants & Developers | Ship Shape',
   description:
-    'As a proven leader in Nuxt development, Ship Shape turns ideas into industry-leading products. ' +
-    'Contact us to get started.',
+    "Working to improve or create a Nuxt app? Ship Shape's first-class engineers build fast, lightweight Nuxt.js applications while training your team too.",
   url: 'https://shipshape.io/services/nuxt-consulting/'
 };
 

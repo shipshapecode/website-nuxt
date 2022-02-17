@@ -1,5 +1,5 @@
 export const head = {
-  title: 'Ember.js Enterprise App Development',
+  title: 'Ember.js Enterprise App Development | Ship Shape',
   description:
     "Learn how Ship Shape's top-tier enterprise app development experts can help your team build fast, reliable Ember.js applications.",
   url: 'https://shipshape.io/services/ember-consulting/'

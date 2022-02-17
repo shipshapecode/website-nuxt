@@ -7,10 +7,9 @@ export const community = {
 };
 
 export const head = {
-  title: 'Cloud Native Software Consultants & Developers',
+  title: 'Cloud-Native Applications | Ship Shape',
   description:
-    'As a proven leader in Cloud Native development, Ship Shape turns ideas into industry-leading products. ' +
-    'Contact us to get started.',
+    "See how Ship Shape's software engineers can help your team leverage the cloud-native applications methodology to deliver value to customers even faster.",
   url: 'https://shipshape.io/services/cloud-native-consulting/'
 };
 

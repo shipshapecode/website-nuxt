@@ -7,10 +7,9 @@ export const community = {
 };
 
 export const head = {
-  title: 'Serverless Software Consultants & Developers',
+  title: 'Serverless Framework Solutions | Ship Shape',
   description:
-    'As a proven leader in serverless development, Ship Shape turns ideas into industry-leading products. ' +
-    'Contact us to get started.',
+    "Turn to Ship Shape's serverless framework experts to better understand what is serverless, and save time and resources on your next app build.",
   url: 'https://shipshape.io/services/serverless-consulting/'
 };
 

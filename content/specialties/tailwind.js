@@ -7,10 +7,9 @@ export const community = {
 };
 
 export const head = {
-  title: 'Tailwind CSS Software Consultants & Developers',
+  title: 'Tailwind CSS & Tailwind UI Experts | Ship Shape',
   description:
-    'As a proven leader in Tailwind CSS development, Ship Shape turns ideas into industry-leading products. ' +
-    'Contact us to get started.',
+    "Tailwind CSS makes it easy to build a site without using any custom CSS. Learn how Ship Shape's team of Tailwind UI experts can help tailor your app quickly. ",
   url: 'https://shipshape.io/services/tailwind-consulting/'
 };
 
