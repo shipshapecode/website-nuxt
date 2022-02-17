@@ -30,44 +30,16 @@
       :flip-paragraphs="true"
     />
 
-    <div
-      class="section flex flex-wrap justify-center !pt-40"
-      data-aos="fade-down"
-    >
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-      >
-        <div>
-          <nuxt-img
-            alt=""
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="772"
-            src="/img/hero-images/mentoring.png"
-            width="1312"
-          />
-        </div>
-        <div>
-          <h2>Your co-pilots in the storm</h2>
-          <p>
-            Ship Shape is committed to leaving every engineering team we work
-            with better than we found it. Not only do we build robust, reliable
-            software, but we also train your staff along the way to understand,
-            maintain, and improve your product after our engagement ends.
-          </p>
-        </div>
-      </div>
-    </div>
+    <HeroBlockVariation
+      data-aos="fade-up"
+      hero-classes="mt-20"
+      :content="marketing"
+      :is-flipped="true"
+    />
 
     <SingleQuote :testimonial="testimonial" />
 
-    <DeveloperCommunity />
+    <HeroBlockVariation data-aos="fade-up" :content="community" />
 
     <WaveMoreLinks />
   </div>
@@ -76,7 +48,9 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 import {
+  community,
   head,
+  marketing,
   specialtyDetails,
   testimonial
 } from '~/content/specialties/serverless.js';
@@ -84,13 +58,13 @@ import {
 export default {
   speedkitComponents: {
     AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
-    DeveloperCommunity: () => import('@/components/DeveloperCommunity'),
     HeroBlock: () => import('@/components/HeroBlock'),
+    HeroBlockVariation: () => import('@/components/HeroBlockVariation'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { head, testimonial, specialtyDetails };
+    return { community, head, marketing, testimonial, specialtyDetails };
   },
   head() {
     const { title, description, url } = head;

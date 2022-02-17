@@ -5,6 +5,14 @@ export const head = {
   url: 'https://shipshape.io/services/ember-consulting/'
 };
 
+export const marketing = {
+  imgSrc: '/img/hero-images/mentoring.png',
+  imgHeight: '772',
+  h2: 'We’ll never leave you high and dry',
+  paragraph:
+    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
+};
+
 export const specialtyDetails = {
   text: {
     h2: 'All about Ember.js',

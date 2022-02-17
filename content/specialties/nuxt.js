@@ -1,9 +1,24 @@
+export const community = {
+  imgSrc: '/img/hero-images/ember-consulting.png',
+  imgHeight: '1034',
+  h2: 'We ❤️ the Nuxt.js Community',
+  p: ''
+};
+
 export const head = {
   title: 'Nuxt.js Software Consultants & Developers',
   description:
     'As a proven leader in Nuxt development, Ship Shape turns ideas into industry-leading products. ' +
     'Contact us to get started.',
   url: 'https://shipshape.io/services/nuxt-consulting/'
+};
+
+export const marketing = {
+  imgSrc: '/img/hero-images/mentoring.png',
+  imgHeight: '772',
+  h2: "Your first mate's in rough waters",
+  paragraph:
+    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
 };
 
 export const specialtyDetails = {

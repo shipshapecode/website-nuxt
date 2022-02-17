@@ -192,37 +192,12 @@
       </div>
     </div>
 
-    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-      >
-        <div>
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="792"
-            src="/img/hero-images/mentoring.png"
-            width="1312"
-            alt=""
-          />
-        </div>
-        <div>
-          <h3>We’ll never leave you high and dry</h3>
-          <p>
-            Ship Shape is committed to leaving every engineering team we work
-            with better than we found it. Not only do we build robust, reliable
-            software, but we also train your staff along the way to understand,
-            maintain, and improve your product after our engagement ends.
-          </p>
-        </div>
-      </div>
-    </div>
+    <HeroBlockVariation
+      data-aos="fade-up"
+      hero-classes="mt-20"
+      :content="marketing"
+      :is-flipped="true"
+    />
 
     <SingleQuote :testimonial="testimonial" />
 
@@ -237,6 +212,7 @@ import { generateMeta } from '~/utils/meta';
 import {
   head,
   specialtyDetails,
+  marketing,
   testimonial
 } from '~/content/specialties/ember.js';
 
@@ -245,12 +221,13 @@ export default {
     AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
     CommunityInvolvement: () => import('@/components/CommunityInvolvement'),
     HeroBlock: () => import('@/components/HeroBlock'),
+    HeroBlockVariation: () => import('@/components/HeroBlockVariation'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
 
   data() {
-    return { head, testimonial, specialtyDetails };
+    return { head, marketing, testimonial, specialtyDetails };
   },
 
   head() {

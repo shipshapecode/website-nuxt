@@ -30,87 +30,16 @@
       :benefits="specialtyDetails.benefits"
     />
 
-    <div
-      class="section flex flex-wrap justify-center !pt-40"
-      data-aos="fade-down"
-    >
-      <div class="section-content">
-        <h2 class="pb-8">Next.js in action</h2>
-        <div
-          class="
-            bg-blue-light
-            rounded-b-lg
-            lg:grid lg:grid-cols-3 lg:rounded-l-lg
-          "
-          data-aos="flip-down"
-        >
-          <nuxt-img
-            class="
-              rounded-t-lg
-              mb-4
-              lg:order-last
-              lg:mb-0
-              lg:rounded-t-none
-              lg:rounded-r-lg
-              lg:col-span-2
-            "
-            src="/img/work/enigma/enigma-hirer-dashboard.png"
-            alt="Enigma hirer dashboard with a pop-up notification introducing the page"
-          />
-          <div class="p-8 lg:p-12">
-            <inline-svg
-              class="h-8 max-w-full mb-8 self-start w-auto logo-red"
-              src="/svgs/clients/enigma.svg"
-            />
-            <p class="mb-16">
-              Enigma is a platform designed to help cybersecurity teams make
-              faster hiring decisions and find...
-            </p>
-            <nuxt-link class="learn-more" to="/work/enigma/">
-              Dive deeper
-              <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="section flex flex-wrap justify-center !pt-40"
-      data-aos="fade-down"
-    >
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-      >
-        <div>
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="792"
-            src="/img/hero-images/mentoring.png"
-            width="1312"
-          />
-        </div>
-        <div>
-          <h2>We’ll never leave you high and dry</h2>
-          <p>
-            Ship Shape is committed to leaving every engineering team we work
-            with better than we found it. Not only do we build robust, reliable
-            software, but we also train your staff along the way to understand,
-            maintain, and improve your product after our engagement ends.
-          </p>
-        </div>
-      </div>
-    </div>
+    <HeroBlockVariation
+      data-aos="fade-up"
+      hero-classes="mt-20"
+      :content="marketing"
+      :is-flipped="true"
+    />
 
     <SingleQuote :testimonial="testimonial" />
 
-    <DeveloperCommunity community-name="Next.js" />
+    <HeroBlockVariation :content="community" />
 
     <WaveMoreLinks />
   </div>
@@ -119,7 +48,9 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 import {
+  community,
   head,
+  marketing,
   specialtyDetails,
   testimonial
 } from '~/content/specialties/next.js';
@@ -127,13 +58,13 @@ import {
 export default {
   speedkitComponents: {
     AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
-    DeveloperCommunity: () => import('@/components/DeveloperCommunity'),
     HeroBlock: () => import('@/components/HeroBlock'),
+    HeroBlockVariation: () => import('@/components/HeroBlockVariation'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { head, specialtyDetails, testimonial };
+    return { community, head, marketing, specialtyDetails, testimonial };
   },
   head() {
     const { title, description, url } = head;
