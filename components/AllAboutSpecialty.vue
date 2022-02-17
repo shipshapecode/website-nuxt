@@ -19,7 +19,7 @@
         <div
           :class="
             flipParagraphs
-              ? 'lg:grid lg:col-span-5 order-last pt-12 lg:pt-0'
+              ? 'lg:grid xl-span-5 order-last pt-12 lg:pt-0'
               : 'grid'
           "
         >
@@ -46,7 +46,7 @@
             rounded-md
             text-navy
           "
-          :class="flipParagraphs ? 'lg:col-span-3' : null"
+          :class="flipParagraphs ? 'xl:col-span-3' : null"
         >
           <slot name="boxed-text">
             <p class="mb-0">
