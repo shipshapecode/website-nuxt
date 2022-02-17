@@ -33,6 +33,9 @@ module.exports = {
         red: theme('colors.red'),
         white: theme('colors.white')
       }),
+      height: {
+        case: '113.5%'
+      },
       inset: {
         '1/2': '50%'
       },
