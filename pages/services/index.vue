@@ -40,7 +40,8 @@ export default {
   },
 
   head() {
-    const title = 'Custom Software Development';
+    const title =
+      'Ember.js, Next.js & Nuxt.js Software Consultant | Ship Shape';
     const description =
       'Ship Shape’s software consultants are top-tier engineers who tackle tough tech challenges in Ember.js, Next.js, Nuxt.js, Tailwind CSS, cloud-native, & more.';
     const url = 'https://shipshape.io/services/';
