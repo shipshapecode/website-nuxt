@@ -12,14 +12,14 @@
           pb-28
           lg:pt-4 lg:grid-cols-2 lg:gap-32 lg:space-y-0
         "
-        :class="flipParagraphs ? 'lg:grid-cols-8' : null"
+        :class="flipParagraphs ? 'xl:grid-cols-8' : null"
         data-aos="fade-up"
         data-aos-delay="200"
       >
         <div
           :class="
             flipParagraphs
-              ? 'lg:grid xl:col-span-5 order-last pt-12 lg:pt-0'
+              ? 'xl:grid xl:col-span-5 order-last pt-12 xl:pt-0'
               : 'grid'
           "
         >
