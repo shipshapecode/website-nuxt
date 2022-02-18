@@ -7,7 +7,7 @@ export const community = {
 };
 
 export const head = {
-  title: 'Next.js Software Consultants & Developers | Ship Shape',
+  title: 'Next.js Software Consultants & Developers',
   description:
     'Wondering,"What is Next js?" or optimizing your Next application? See how Ship Shape\'s Next.js specialists can help build a universal app without the hassle.',
   url: 'https://shipshape.io/services/next-consulting/'

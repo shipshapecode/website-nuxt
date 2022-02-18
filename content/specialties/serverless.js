@@ -7,7 +7,7 @@ export const community = {
 };
 
 export const head = {
-  title: 'Serverless Framework Solutions | Ship Shape',
+  title: 'Serverless Framework Solutions',
   description:
     "Turn to Ship Shape's serverless framework experts to better understand what is serverless, and save time and resources on your next app build.",
   url: 'https://shipshape.io/services/serverless-consulting/'

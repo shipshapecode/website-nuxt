@@ -7,7 +7,7 @@ export const community = {
 };
 
 export const head = {
-  title: 'Cloud-Native Applications | Ship Shape',
+  title: 'Cloud-Native Applications',
   description:
     "See how Ship Shape's software engineers can help your team leverage the cloud-native applications methodology to deliver value to customers even faster.",
   url: 'https://shipshape.io/services/cloud-native-consulting/'

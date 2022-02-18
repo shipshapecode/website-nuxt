@@ -7,7 +7,7 @@ export const community = {
 };
 
 export const head = {
-  title: 'Tailwind CSS & Tailwind UI Experts | Ship Shape',
+  title: 'Tailwind CSS & Tailwind UI Experts',
   description:
     "Tailwind CSS makes it easy to build a site without using any custom CSS. Learn how Ship Shape's team of Tailwind UI experts can help tailor your app quickly. ",
   url: 'https://shipshape.io/services/tailwind-consulting/'
