@@ -37,7 +37,7 @@
       :is-flipped="true"
     />
 
-    <SingleQuote :testimonial="testimonial" />
+    <!-- <SingleQuote :testimonial="testimonial" /> -->
 
     <HeroBlockVariation data-aos="fade-up" :content="community" />
 
