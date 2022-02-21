@@ -4,7 +4,7 @@
     data-aos="fade"
   >
     <div class="section-content bg-navy mb-10 p-4 rounded lg:mb-20 xl:py-20">
-      <div class="flex flex-col p-4 relative text-white xl:px-16 xl:py-0">
+      <figure class="flex flex-col p-4 relative text-white xl:px-16 xl:py-0">
         <inline-svg
           class="h-8 max-w-full mb-3 self-start w-auto"
           :src="testimonial.svgSrc"
@@ -25,11 +25,11 @@
           src="/svgs/quotes.svg"
         />
 
-        <p class="flex-grow p-4 relative z-10 xl:p-8">
+        <blockquote class="flex-grow p-4 relative z-10 xl:p-8">
           {{ testimonial.quote }}
-        </p>
+        </blockquote>
 
-        <div class="flex items-center px-4 xl:px-6">
+        <figcaption class="flex items-center px-4 xl:px-6">
           <nuxt-img
             class="border-2 border-white h-16 mr-4 rounded-full w-16"
             format="webp"
@@ -40,11 +40,11 @@
             :src="`/img/${testimonial.imgSrc}.jpg`"
           />
           <div class="text-white">
-            <h2 class="mb-1 text-white text-xl">{{ testimonial.name }}</h2>
+            <p class="mb-0 font-bold text-xl">{{ testimonial.name }}</p>
             <p class="m-0">{{ testimonial.title }}</p>
           </div>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </template>
