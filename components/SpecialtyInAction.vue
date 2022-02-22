@@ -81,7 +81,14 @@
         >
           <div class="bg-white h-56 rounded-t-lg w-full">
             <nuxt-img
-              class="object-cover h-full max-w-full w-full rounded-t-lg mb-0"
+              class="
+                object-cover object-top
+                h-full
+                max-w-full
+                w-full
+                rounded-t-lg
+                mb-0
+              "
               :src="caseStudies[0].imgSrc"
               :alt="caseStudies[0].imgAlt"
             />
