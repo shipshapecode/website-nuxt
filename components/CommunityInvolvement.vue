@@ -1,12 +1,13 @@
 <template>
-  <div class="section flex flex-wrap justify-center">
+  <section class="section flex flex-wrap justify-center">
     <div class="section-content">
-      <h3>We ❤️ the Ember.js Community</h3>
+      <h2>We ❤️ the Ember.js Community</h2>
 
       <div class="grid grid-cols-1 gap-x-36 gap-y-4 lg:grid-cols-3">
-        <div class="w-full" data-aos="flip-down">
+        <article class="w-full" data-aos="flip-down">
           <div class="text-center w-full">
             <nuxt-img
+              alt=""
               class="ember-image inline p-8"
               format="webp"
               height="272"
@@ -25,11 +26,12 @@
             with Ember using the Web Audio API to translate dog barks into
             something more meaningful.
           </p>
-        </div>
+        </article>
 
-        <div class="w-full" data-aos="flip-down" data-aos-delay="200">
+        <article class="w-full" data-aos="flip-down" data-aos-delay="200">
           <div class="text-center w-full">
             <nuxt-img
+              alt=""
               class="ember-image inline p-8"
               src="/svgs/emberconf/2019.svg"
             />
@@ -44,11 +46,12 @@
             >, our BonusConf talk at EmberConf 2019, and learn about several
             approaches to using Ember Data with non-standard APIs.
           </p>
-        </div>
+        </article>
 
-        <div class="w-full" data-aos="flip-down" data-aos-delay="400">
+        <article class="w-full" data-aos="flip-down" data-aos-delay="400">
           <div class="text-center w-full">
             <nuxt-img
+              alt=""
               class="ember-image inline p-8"
               format="webp"
               height="272"
@@ -66,10 +69,10 @@
               >this presentation</a
             >, an abridged version of our EmberConf 2018 performance workshop.
           </p>
-        </div>
+        </article>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss">

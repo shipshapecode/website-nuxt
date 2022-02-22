@@ -1,11 +1,10 @@
-// change divs into semantic html where appropriate
 <template>
-  <div class="section bg-navy flex flex-wrap justify-center">
+  <section class="section bg-navy flex flex-wrap justify-center">
     <div class="section-content">
       <h2 class="text-white text-4xl" data-aos="fade-up">
         {{ text.h2 }}
       </h2>
-      <div
+      <section
         class="
           grid
           space-y-12
@@ -54,14 +53,16 @@
             </p>
           </slot>
         </div>
-      </div>
+      </section>
 
-      <h3 class="text-white text-2xl" data-aos="fade">
-        {{ text.h3 }}
-      </h3>
-      <BenefitsList :benefits="benefits" />
+      <section>
+        <h3 class="text-white text-2xl" data-aos="fade">
+          {{ text.h3 }}
+        </h3>
+        <BenefitsList :benefits="benefits" />
+      </section>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -85,16 +86,3 @@ export default {
   }
 };
 </script>
-
-<!-- 
-    props to pass from specialty page
-      - text
-        - h2
-        - paragraph1 (box)
-        - paragraph2 (white on navy)
-        - h3
-      - benefitCardDetails
-        - imgSrc
-        - description
-      - flipParagraphs: T or F
-   -->

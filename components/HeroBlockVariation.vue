@@ -1,5 +1,5 @@
 <template>
-  <div class="section flex flex-wrap justify-center" :class="heroClasses">
+  <section class="section flex flex-wrap justify-center" :class="heroClasses">
     <div
       class="
         section-content
@@ -17,8 +17,8 @@
         <slot name="content">
           <p data-aos="fade">
             {{ content.paragraph }}
-          </p></slot
-        >
+          </p>
+        </slot>
       </div>
       <div data-aos="fade-up">
         <nuxt-img
@@ -31,7 +31,7 @@
         />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
