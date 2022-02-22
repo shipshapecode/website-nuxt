@@ -65,7 +65,7 @@ import {
   marketing,
   specialtyDetails,
   testimonial
-} from '~/content/specialties/serverless.js';
+} from '~/content/specialties/tailwind.js';
 
 export default {
   speedkitComponents: {
