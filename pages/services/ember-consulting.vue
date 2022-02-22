@@ -2,10 +2,12 @@
   <div itemscope itemtype="http://schema.org/Service">
     <HeroBlock hero-classes="ember-consulting waves ember-waves !pb-48 !pt-20">
       <template #content>
-        <h1 itemprop="name" class="text-5xl leading-tight">
-          Build fast, reliable apps with expert Ember.js development,
-          consulting, and training
-        </h1>
+        <header>
+          <h1 itemprop="name" class="text-5xl leading-tight">
+            Build fast, reliable apps with expert Ember.js development,
+            consulting, and training
+          </h1>
+        </header>
         <div>
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let's get started
@@ -45,154 +47,7 @@
       </template>
     </AllAboutSpecialty>
 
-    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
-      <div class="section-content">
-        <h2 class="pb-8 text-4xl">Ember.js in action</h2>
-        <div>
-          <div
-            class="
-              space-y-24
-              lg:grid lg:grid-flow-col lg:space-y-0 lg:space-x-6
-            "
-          >
-            <div class="bg-blue-light rounded-b-lg" data-aos="flip-down">
-              <div
-                class="
-                  bg-red
-                  flex
-                  justify-center
-                  pt-8
-                  px-8
-                  relative
-                  rounded-t-lg
-                  lg:pt-12 lg:px-12
-                "
-              >
-                <div class="bg-white h-48 rounded-t-lg w-full">
-                  <nuxt-img
-                    class="
-                      object-cover object-top
-                      h-full
-                      max-w-full
-                      rounded-t-lg
-                      w-full
-                    "
-                    src="/img/work/expel/nist-overview.png"
-                    alt="An overview of NIST scores, broken down by category and visualized in a radar graph."
-                  />
-                </div>
-              </div>
-
-              <div class="p-8 relative lg:p-12">
-                <inline-svg
-                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
-                  src="/svgs/clients/expel.svg"
-                />
-                <p class="mb-16">
-                  Expel offers 24x7 security monitoring and response for cloud,
-                  hybrid and on-premises environments...
-                </p>
-                <nuxt-link class="learn-more" to="/work/expel/">
-                  Dive deeper
-                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                </nuxt-link>
-              </div>
-            </div>
-
-            <div
-              class="bg-blue-light relative rounded-b-lg"
-              data-aos="flip-down"
-              data-aos-delay="200"
-            >
-              <div
-                class="
-                  bg-red
-                  flex
-                  justify-center
-                  pt-8
-                  px-8
-                  relative
-                  rounded-t-lg
-                  lg:pt-12 lg:px-12
-                "
-              >
-                <div class="bg-white h-48 rounded-t-lg w-full">
-                  <nuxt-img
-                    class="object-top h-full max-w-full rounded-t-lg w-full"
-                    src="/svgs/data-graphic.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="relative p-8 lg:p-12">
-                <inline-svg
-                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
-                  src="/svgs/clients/netflix.svg"
-                  alt=""
-                />
-                <p class="mb-16">
-                  Netflix is the world's leading internet entertainment service
-                  with more than 130 million memberships in over 190
-                  countries...
-                </p>
-                <nuxt-link class="learn-more" to="/work/netflix/">
-                  Dive deeper
-                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                </nuxt-link>
-              </div>
-            </div>
-
-            <div
-              class="bg-blue-light relative rounded-b-lg"
-              data-aos="flip-down"
-              data-aos-delay="400"
-            >
-              <div
-                class="
-                  bg-red
-                  flex
-                  justify-center
-                  pt-8
-                  px-8
-                  relative
-                  rounded-t-lg
-                  lg:pt-12 lg:px-12
-                "
-              >
-                <div class="bg-jebbit-green h-48 rounded-t-lg w-full">
-                  <nuxt-img
-                    class="
-                      object-cover object-top
-                      h-full
-                      max-w-full
-                      rounded-t-lg
-                      w-full
-                    "
-                    src="/img/work/jebbit/jebbit-case-study-screenshot.png"
-                    alt="Jebbit Experience Builder Legacy"
-                  />
-                </div>
-              </div>
-              <div class="p-8 relative lg:p-12">
-                <inline-svg
-                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
-                  src="/svgs/clients/jebbit.svg"
-                />
-                <p class="mb-16">
-                  Jebbit is an enterprise software platform that enables a
-                  future of total data transparency between brands and...
-                </p>
-                <nuxt-link class="learn-more" to="/work/jebbit/">
-                  Dive deeper
-                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                </nuxt-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <SpecialtyInAction :case-studies="caseStudies" specialty="Ember.js" />
 
     <HeroBlockVariation
       data-aos="fade-up"
@@ -212,15 +67,17 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 import {
+  caseStudies,
   head,
-  specialtyDetails,
   marketing,
+  specialtyDetails,
   testimonial
 } from '~/content/specialties/ember.js';
 
 export default {
   speedkitComponents: {
     AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
+    SpecialtyInAction: () => import('@/components/SpecialtyInAction'),
     CommunityInvolvement: () => import('@/components/CommunityInvolvement'),
     HeroBlock: () => import('@/components/HeroBlock'),
     HeroBlockVariation: () => import('@/components/HeroBlockVariation'),
@@ -229,7 +86,7 @@ export default {
   },
 
   data() {
-    return { head, marketing, testimonial, specialtyDetails };
+    return { caseStudies, head, marketing, testimonial, specialtyDetails };
   },
 
   head() {

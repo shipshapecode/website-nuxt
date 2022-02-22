@@ -1,3 +1,25 @@
+export const caseStudies = [
+  {
+    imgAlt:
+      'An overview of NIST scores, broken down by category and visualized in a radar graph.',
+    imgSrc: '/img/work/expel/nist-overview.png',
+    logoSrc: '/svgs/clients/expel.svg',
+    text: 'Expel offers 24x7 security monitoring and response for cloud, hybrid and on-premises environments...'
+  },
+  {
+    imgAlt: '',
+    imgSrc: '/svgs/data-graphic.svg',
+    logoSrc: '/svgs/clients/netflix.svg',
+    text: "Netflix is the world's leading internet entertainment service with more than 130 million memberships..."
+  },
+  {
+    imgAlt: 'Jebbit Experience Builder Legacy',
+    imgSrc: '/img/work/jebbit/jebbit-case-study-screenshot.png',
+    logoSrc: '/svgs/clients/jebbit.svg',
+    text: 'Jebbit is an enterprise software platform that enables a future of total data transparency...'
+  }
+];
+
 export const head = {
   title: 'Ember.js Enterprise App Development',
   description:
