@@ -70,24 +70,18 @@
             bg-red
             flex
             justify-center
+            items-end
             pt-12
             px-8
             relative
             rounded-t-lg
-            lg:pt-24 lg:px-12 lg:order-last lg:rounded-t-none lg:rounded-r-lg
+            lg:order-last lg:rounded-t-lg
+            xl:pt-24 xl:px-12
           "
         >
-          <div class="bg-white h-48 rounded-t-lg w-full">
+          <div class="bg-white h-56 rounded-t-lg w-full">
             <nuxt-img
-              class="
-                object-cover
-                h-full
-                max-w-full
-                w-full
-                rounded-t-lg
-                mb-0
-                lg:h-case
-              "
+              class="object-cover h-full max-w-full w-full rounded-t-lg mb-0"
               :src="caseStudies[0].imgSrc"
               :alt="caseStudies[0].imgAlt"
             />
