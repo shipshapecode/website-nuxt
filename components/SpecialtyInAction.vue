@@ -3,6 +3,7 @@
     <div class="section-content">
       <h2 class="pb-8 text-4xl">{{ specialty }} in action</h2>
       <div
+        v-if="caseStudies.length > 1"
         class="space-y-24 lg:grid lg:grid-flow-col lg:space-y-0 lg:space-x-6"
       >
         <article
@@ -54,6 +55,60 @@
           </div>
         </article>
       </div>
+
+      <article
+        v-else
+        class="
+          bg-blue-light
+          rounded-b-lg
+          lg:grid lg:grid-cols-2 lg:rounded-l-lg lg:gap-x-12
+        "
+        data-aos="flip-down"
+      >
+        <div
+          class="
+            bg-red
+            flex
+            justify-center
+            pt-12
+            px-8
+            relative
+            rounded-t-lg
+            lg:pt-24 lg:px-12 lg:order-last lg:rounded-t-none lg:rounded-r-lg
+          "
+        >
+          <div class="bg-white h-48 rounded-t-lg w-full">
+            <nuxt-img
+              class="
+                object-cover
+                h-full
+                max-w-full
+                w-full
+                rounded-t-lg
+                mb-0
+                lg:h-case
+              "
+              :src="caseStudies[0].imgSrc"
+              :alt="caseStudies[0].imgAlt"
+            />
+          </div>
+        </div>
+        <div class="p-8 lg:p-12">
+          <h3>
+            <inline-svg
+              class="h-8 max-w-full mb-8 self-start w-auto logo-navy"
+              :src="caseStudies[0].logoSrc"
+            />
+          </h3>
+          <p class="mb-16">
+            {{ caseStudies[0].text }}
+          </p>
+          <nuxt-link class="learn-more" to="/work/enigma/">
+            Dive deeper
+            <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+          </nuxt-link>
+        </div>
+      </article>
     </div>
   </section>
 </template>

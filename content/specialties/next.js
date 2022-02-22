@@ -1,3 +1,13 @@
+export const caseStudies = [
+  {
+    imgAlt:
+      'Enigma hirer dashboard with a pop-up notification introducing the page',
+    imgSrc: '/img/work/enigma/enigma-hirer-dashboard.png',
+    logoSrc: '/svgs/clients/enigma.svg',
+    text: 'Enigma is a platform designed to help cybersecurity teams make faster hiring decisions and find...'
+  }
+];
+
 export const community = {
   imgSrc: '/img/hero-images/ember-consulting.png',
   imgHeight: '1034',
