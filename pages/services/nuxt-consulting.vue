@@ -1,5 +1,5 @@
 <template>
-  <div itemscope itemtype="http://schema.org/Service">
+  <article itemscope itemtype="http://schema.org/Service">
     <HeroBlock
       hero-classes="nuxt-consulting waves nuxt-waves !pb-48 2xl:!pb-56"
     >
@@ -56,7 +56,7 @@
     </HeroBlockVariation>
 
     <WaveMoreLinks />
-  </div>
+  </article>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div itemscope itemtype="http://schema.org/Service">
+  <article itemscope itemtype="http://schema.org/Service">
     <HeroBlock hero-classes="ember-consulting waves ember-waves !pb-48 !pt-20">
       <template #content>
         <header>
@@ -61,7 +61,7 @@
     <CommunityInvolvement />
 
     <WaveMoreLinks class="md:px-20" />
-  </div>
+  </article>
 </template>
 
 <script>

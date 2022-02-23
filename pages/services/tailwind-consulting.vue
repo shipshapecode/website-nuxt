@@ -1,5 +1,5 @@
 <template>
-  <div itemscope itemtype="http://schema.org/Service">
+  <article itemscope itemtype="http://schema.org/Service">
     <HeroBlock hero-classes="next-consulting waves tailwind-waves p-32">
       <template #content>
         <div class="pb-24 xl:pb-0">
@@ -54,7 +54,7 @@
     <HeroBlockVariation data-aos="fade-up" :content="community" />
 
     <WaveMoreLinks />
-  </div>
+  </article>
 </template>
 
 <script>
