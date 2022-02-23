@@ -208,8 +208,15 @@ h6 {
   @media only screen and (min-width: 2050px) {
     &::after {
       background-size: 101vw;
-      bottom: -90px;
+      bottom: -70px;
       height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 3800px) {
+    &::after {
+      bottom: -80px;
+      height: 450px;
     }
   }
 }
@@ -227,6 +234,88 @@ h6 {
       background-size: 101vw;
       bottom: -20px;
       height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 3800px) {
+    &::after {
+      height: 330px;
+    }
+  }
+}
+
+.tailwind-waves {
+  padding-bottom: 8rem;
+
+  &::after {
+    background-image: url(/svgs/waves/tailwind-waves.svg);
+    background-size: 2050px;
+    bottom: -20px;
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 2050px) {
+    &::after {
+      background-size: 101vw;
+      height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 3800px) {
+    &::after {
+      bottom: -80px;
+      height: 550px;
+    }
+  }
+}
+
+.cloud-native-waves {
+  padding-bottom: 8rem;
+
+  &::after {
+    background-image: url(/svgs/waves/cloud-native-waves.svg);
+    background-size: 1910px;
+    bottom: -20px;
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 2050px) {
+    &::after {
+      background-size: 101vw;
+      height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 3800px) {
+    &::after {
+      bottom: -80px;
+      height: 550px;
+    }
+  }
+}
+
+.serverless-waves {
+  padding-bottom: 8rem;
+
+  &::after {
+    background-image: url(/svgs/waves/serverless-waves.svg);
+    background-size: 1910px;
+    bottom: -20px;
+    height: 250px;
+  }
+
+  @media only screen and (min-width: 2050px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -50px;
+      height: 350px;
+    }
+  }
+
+  @media only screen and (min-width: 3800px) {
+    &::after {
+      bottom: -80px;
+      height: 550px;
     }
   }
 }

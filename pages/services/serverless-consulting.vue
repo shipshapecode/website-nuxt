@@ -1,6 +1,6 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="next-consulting waves next-waves">
+    <HeroBlock hero-classes="next-consulting waves serverless-waves">
       <template #content>
         <div class="pb-24 lg:pb-0">
           <h1 itemprop="name" class="leading-tight text-5xl">

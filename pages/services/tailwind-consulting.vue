@@ -1,8 +1,8 @@
 <template>
   <div itemscope itemtype="http://schema.org/Service">
-    <HeroBlock hero-classes="next-consulting waves next-waves">
+    <HeroBlock hero-classes="next-consulting waves tailwind-waves p-32">
       <template #content>
-        <div class="pb-24 lg:pb-0">
+        <div class="pb-24 xl:pb-0">
           <h1 itemprop="name" class="leading-tight text-5xl">
             Customize your app quickly with the help of our Tailwind CSS experts
           </h1>
