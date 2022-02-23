@@ -16,7 +16,15 @@
           <div class="p-8 relative order-last lg:p-12">
             <h3>
               <inline-svg
-                class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
+                class="
+                  logo-navy
+                  h-8
+                  max-w-full
+                  mb-8
+                  self-start
+                  w-auto
+                  pointer-events-none
+                "
                 :src="study.logoSrc"
               />
             </h3>
@@ -97,7 +105,15 @@
         <div class="p-8 lg:p-12">
           <h3>
             <inline-svg
-              class="h-8 max-w-full mb-8 self-start w-auto logo-navy"
+              class="
+                h-8
+                max-w-full
+                mb-8
+                self-start
+                w-auto
+                logo-navy
+                pointer-events-none
+              "
               :src="caseStudies[0].logoSrc"
             />
           </h3>
