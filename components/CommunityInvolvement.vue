@@ -1,7 +1,7 @@
 <template>
   <section class="section flex flex-wrap justify-center">
     <div class="section-content">
-      <h2>We ❤️ the Ember.js Community</h2>
+      <h2 class="text-4xl">We ❤️ the Ember.js Community</h2>
 
       <div class="grid grid-cols-1 gap-x-36 gap-y-4 lg:grid-cols-3">
         <article class="w-full" data-aos="flip-down">
