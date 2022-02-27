@@ -3,22 +3,23 @@
     <HeroBlock hero-classes="about bg-blue-light">
       <template #icon>
         <nuxt-img
-          class="mt-8"
+          class="mt-8 rounded-md"
           alt="Ship Shape employee group photo"
           format="webp"
+          loading="lazy"
           src="/img/about/group.png"
         />
       </template>
       <template #content>
         <div class="m-auto max-w-lg">
-          <h1 class="leading-tight text-5xl text-navy">
+          <h1 class="text-5xl leading-tight text-navy">
             Meet the crew on board our full-stack software development agency
           </h1>
         </div>
       </template>
     </HeroBlock>
 
-    <div class="section bg-white flex flex-wrap justify-center">
+    <div class="section flex flex-wrap justify-center bg-white">
       <div class="section-content">
         <h2
           class="py-6 text-4xl lg:flex lg:justify-center lg:py-12"
@@ -27,7 +28,7 @@
           Ship Shape /ˈSHipˌSHāp / adj. “To be in first-class order”
         </h2>
         <div
-          class="gap-20 grid grid-cols-1 items-center lg:gap-32 lg:grid-cols-2"
+          class="grid grid-cols-1 items-center gap-20 lg:grid-cols-2 lg:gap-32"
           data-aos="fade-left"
           data-aos-delay="200"
         >
@@ -50,6 +51,7 @@
             alt=""
             format="webp"
             height="1278px"
+            loading="lazy"
             src="/img/about/ship-shape-sign.png"
             width="1278px"
           />
@@ -57,49 +59,66 @@
       </div>
     </div>
 
-    <div class="section bg-white flex flex-wrap justify-center">
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-        data-aos="fade-right"
-        data-aos-delay="400"
-      >
-        <div>
-          <h3>Fun facts about us</h3>
-          <ul class="navy-bullets">
-            <li>
-              We consistently contribute to the
-              <nuxt-link to="/open-source">open-source community</nuxt-link>.
-            </li>
-            <li>
-              We run a
-              <a href="https://ecologi.com/ship-shape">climate positive</a>
-              shop.
-            </li>
-            <li>
-              We started a
-              <a href="https://www.whiskeywebandwhatnot.fm/"
-                >podcast for developers</a
-              >
-              to share our love for whiskey, web development, and whatnot.
-            </li>
-            <li>We have team members in 8+ locations across North America.</li>
-          </ul>
+    <div class="section flex flex-wrap justify-center bg-white">
+      <div class="section-content" data-aos="fade-right" data-aos-delay="400">
+        <h3 class="text-5xl">Fun facts about us</h3>
+
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+          <div class="bg-blue-light p-5 rounded-md lg:p-12">
+            <nuxt-img
+              class="h-auto m-auto my-4 rounded-lg w-32 lg:w-44"
+              format="webp"
+              height="336"
+              src="/img/hero-images/www.png"
+              width="336"
+            />
+
+            We started a
+            <a href="https://www.whiskeywebandwhatnot.fm/"
+              >podcast for developers</a
+            >
+            to share our love for whiskey, web development, and whatnot.
+          </div>
+          <div class="bg-blue-light p-5 rounded-md lg:p-12">
+            <a
+              href="https://ecologi.com/ship-shape?r=60427b02d9eb6b001d969215"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View our Ecologi profile"
+              class="mx-auto block w-48 lg:w-64"
+            >
+              <img
+                alt="We offset our carbon footprint via Ecologi"
+                src="https://api.ecologi.com/badges/cpw/60427b02d9eb6b001d969215?black=true&landscape=true"
+                class="w-48 lg:w-64"
+              />
+            </a>
+
+            We run a
+            <a href="https://ecologi.com/ship-shape">climate positive</a>
+            shop.
+          </div>
+          <div class="bg-blue-light p-5 rounded-md lg:p-12">
+            <nuxt-img
+              class="h-auto m-auto max-w-2xl my-4 rounded-lg w-36 lg:w-48"
+              format="webp"
+              height="322"
+              src="/img/about/octocat.png"
+              width="386"
+            />
+
+            We consistently contribute to the
+            <nuxt-link to="/open-source">open-source community</nuxt-link>.
+          </div>
         </div>
-        <nuxt-img alt="" class="mt-8" format="webp" src="/img/about/desk.jpg" />
       </div>
     </div>
 
-    <div class="waves blue-waves bg-blue-light section flex justify-center">
+    <div class="waves blue-waves section flex justify-center bg-blue-light">
       <div class="section-content flex flex-wrap justify-center">
         <div class="lg:flex lg:py-20" data-aos="fade-down">
           <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full pb-12 lg:order-last"
+            class="m-auto h-auto w-full max-w-2xl pb-12 lg:order-last"
             format="webp"
             height="772"
             src="/img/hero-images/mentoring.png"
@@ -128,7 +147,7 @@
                 >
                   <div :class="{ 'lg:order-last': index % 2 !== 0 }">
                     <nuxt-img
-                      class="filter grayscale object-cover shadow-lg rounded-lg"
+                      class="rounded-lg object-cover shadow-lg grayscale filter"
                       format="webp"
                       :src="employee.imgSrc"
                       alt=""
@@ -136,7 +155,7 @@
                   </div>
 
                   <div class="space-y-8">
-                    <div class="text-lg leading-6 font-medium space-y-1">
+                    <div class="space-y-1 text-lg font-medium leading-6">
                       <h3 class="mb-3">{{ employee.name }}</h3>
                       <h4 class="text-navy">{{ employee.title }}</h4>
                     </div>
@@ -178,11 +197,11 @@
             <ul
               class="
                 space-y-24
-                lg:space-y-0
                 lg:grid
                 lg:grid-cols-2
                 lg:gap-x-16
                 lg:gap-y-28
+                lg:space-y-0
                 lg:pb-24
               "
             >
@@ -193,7 +212,7 @@
                 >
                   <div class="aspect-w-3 aspect-h-3">
                     <nuxt-img
-                      class="filter grayscale object-cover shadow-lg rounded-lg"
+                      class="rounded-lg object-cover shadow-lg grayscale filter"
                       format="webp"
                       :src="employee.imgSrc"
                       alt=""
@@ -201,9 +220,9 @@
                   </div>
 
                   <div class="space-y-8 self-center">
-                    <div class="text-lg leading-6 font-medium space-y-1">
+                    <div class="space-y-1 text-lg font-medium leading-6">
                       <h3 class="mb-3">{{ employee.name }}</h3>
-                      <h4 class="text-grey font-medium text-2xl">
+                      <h4 class="text-2xl font-medium text-grey">
                         {{ employee.title }}
                       </h4>
                     </div>
@@ -264,7 +283,7 @@
             </p>
           </div>
           <nuxt-link
-            class="flex place-content-center btn btn-red w-full lg:w-1/5"
+            class="btn btn-red flex w-full place-content-center lg:w-1/5"
             to="/blog/"
           >
             Get more insights
@@ -276,14 +295,14 @@
             <div
               :key="latestPodcastEpisode.title"
               class="
-                items-center
                 grid grid-cols-1
+                items-center
                 pb-12
-                lg:gap-12 lg:grid-cols-9
+                lg:grid-cols-9 lg:gap-12
               "
             >
               <nuxt-img
-                class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+                class="m-auto h-auto w-full max-w-md pb-10 lg:col-span-2"
                 format="webp"
                 height="500"
                 src="/img/hero-images/www.png"
@@ -291,10 +310,10 @@
                 alt=""
               />
               <div class="lg:col-span-5">
-                <h4 class="lg:text-xl lg:mb-4">
+                <h4 class="lg:mb-4 lg:text-xl">
                   {{ latestPodcastEpisode.title }}
                 </h4>
-                <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
+                <h5 class="font-light text-grey-light lg:mb-4 lg:text-lg">
                   {{ formatDateWithDots(latestPodcastEpisode.pubDate) }}
                 </h5>
                 <p>
@@ -304,12 +323,12 @@
               <a
                 class="
                   learn-more
-                  lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+                  lg:col-span-2 lg:self-end lg:justify-self-end lg:pb-16
                 "
                 href="https://www.whiskeywebandwhatnot.fm/"
               >
                 Dive Deeper
-                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+                <inline-svg class="inline h-4 w-6" src="/svgs/arrow.svg" />
               </a>
             </div>
           </div>
@@ -318,14 +337,14 @@
             <div
               :key="latestBlogPost.slug"
               class="
-                items-center
                 grid grid-cols-1
+                items-center
                 pb-12
-                lg:gap-12 lg:grid-cols-9
+                lg:grid-cols-9 lg:gap-12
               "
             >
               <nuxt-img
-                class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+                class="m-auto h-auto w-full max-w-md pb-10 lg:col-span-2"
                 format="webp"
                 height="500"
                 src="/img/about/desk.jpg"
@@ -333,10 +352,10 @@
                 alt=""
               />
               <div class="lg:col-span-5">
-                <h4 class="lg:text-xl lg:mb-4">
+                <h4 class="lg:mb-4 lg:text-xl">
                   {{ latestBlogPost.linktitle || latestBlogPost.title }}
                 </h4>
-                <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
+                <h5 class="font-light text-grey-light lg:mb-4 lg:text-lg">
                   {{ formatDateWithDots(latestBlogPost.date) }}
                 </h5>
                 <p>
@@ -346,12 +365,12 @@
               <nuxt-link
                 class="
                   learn-more
-                  lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+                  lg:col-span-2 lg:self-end lg:justify-self-end lg:pb-16
                 "
                 :to="`/blog/${latestBlogPost.slug}/`"
               >
                 Dive Deeper
-                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+                <inline-svg class="inline h-4 w-6" src="/svgs/arrow.svg" />
               </nuxt-link>
             </div>
           </div>
@@ -359,7 +378,7 @@
       </div>
     </div>
 
-    <div class="section bg-navy flex justify-center lg:py-40">
+    <div class="section flex justify-center bg-navy lg:py-40">
       <div class="section-content flex flex-col justify-center">
         <div
           class="pb-24 lg:flex lg:flex-row lg:items-center lg:gap-x-32"
@@ -374,7 +393,7 @@
             </p>
           </div>
           <nuxt-link
-            class="flex place-content-center btn btn-red w-full lg:w-1/5"
+            class="btn btn-red flex w-full place-content-center lg:w-1/5"
             to="/blog/"
           >
             Get more contributions
@@ -382,17 +401,17 @@
         </div>
         <div
           class="
-            divide-grey-light divide-y
-            grid grid-cols-1
             my-20
+            grid grid-cols-1
+            divide-y divide-grey-light
             text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
+            lg:grid-cols-4 lg:divide-x lg:divide-y-0
           "
         >
           <div class="flex flex-col items-center px-16" data-aos="flip-down">
             <nuxt-img
               alt=""
-              class="h-20 inline-block mb-8 w-auto"
+              class="mb-8 inline-block h-20 w-auto"
               src="/svgs/icons/client.svg"
             />
 
@@ -408,7 +427,7 @@
           >
             <nuxt-img
               alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
+              class="mb-8 mt-12 inline-block h-20 w-auto lg:mt-0"
               src="/svgs/icons/staff.svg"
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
@@ -423,7 +442,7 @@
           >
             <nuxt-img
               alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
+              class="mb-8 mt-12 inline-block h-20 w-auto lg:mt-0"
               src="/svgs/icons/fun.svg"
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
@@ -438,7 +457,7 @@
           >
             <nuxt-img
               alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
+              class="mb-8 mt-12 inline-block h-20 w-auto lg:mt-0"
               src="/svgs/icons/pwa.svg"
             />
             <p class="mb-12 text-center lg:m-0 lg:w-40">
@@ -451,7 +470,7 @@
 
     <HeroBlock hero-classes="waves blue-waves bg-blue-light" data-aos="fade">
       <template #content>
-        <h2 itemprop="name" class="leading-tight text-5xl">
+        <h2 itemprop="name" class="text-5xl leading-tight">
           Want to chart your course to software success?
         </h2>
         <div>
@@ -467,7 +486,7 @@
 
       <template #icon>
         <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full pt-20"
+          class="m-auto h-auto w-full max-w-2xl pt-20"
           height="1034"
           format="webp"
           src="/img/hero-images/ember-consulting.png"
@@ -630,21 +649,6 @@ export default {
   svg {
     height: 19px;
     width: 23px;
-  }
-}
-
-.navy-bullets {
-  list-style: outside;
-  margin-left: 1.5rem;
-
-  li {
-    margin-bottom: 0.5rem;
-  }
-
-  li::marker {
-    color: #1b3b5d;
-    vertical-align: middle;
-    font-size: 1.5rem;
   }
 }
 </style>

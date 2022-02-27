@@ -4,7 +4,7 @@
       <template #content>
         <h1 class="leading-none">Our software consultants make waves</h1>
 
-        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
+        <div class="mt-3 flex w-full justify-center lg:mt-8 lg:justify-start">
           <nuxt-link to="/contact/" class="btn btn-red w-full lg:w-auto">
             Come on board
           </nuxt-link>
@@ -14,7 +14,7 @@
       <template #icon>
         <nuxt-img
           alt="Ship Shape octopus mascot, with a pencil in its tentacle, is working hard on Ember, Next.js and Nuxt apps."
-          class="h-auto max-w-3xl w-full"
+          class="h-auto w-full max-w-3xl"
           format="webp"
           height="1250"
           src="/img/hero-images/landing.png"
