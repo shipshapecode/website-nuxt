@@ -49,7 +49,7 @@
 
     <SpecialtyInAction :case-studies="caseStudies" specialty="Ember.js" />
 
-    <HeroBlockVariation
+    <TwoColumnSection
       data-aos="fade-up"
       hero-classes="mt-20"
       :content="marketing"
@@ -80,7 +80,7 @@ export default {
     SpecialtyInAction: () => import('@/components/SpecialtyInAction'),
     CommunityInvolvement: () => import('@/components/CommunityInvolvement'),
     HeroBlock: () => import('@/components/HeroBlock'),
-    HeroBlockVariation: () => import('@/components/HeroBlockVariation'),
+    TwoColumnSection: () => import('@/components/TwoColumnSection'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },

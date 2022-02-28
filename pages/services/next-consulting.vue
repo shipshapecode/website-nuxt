@@ -33,7 +33,7 @@
 
     <SpecialtyInAction specialty="Next.js" :case-studies="caseStudies" />
 
-    <HeroBlockVariation
+    <TwoColumnSection
       data-aos="fade-up"
       hero-classes="mt-20"
       :content="marketing"
@@ -42,7 +42,7 @@
 
     <SingleQuote :testimonial="testimonial" />
 
-    <HeroBlockVariation :content="community" />
+    <TwoColumnSection :content="community" />
 
     <WaveMoreLinks />
   </article>
@@ -64,7 +64,7 @@ export default {
     AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
     SpecialtyInAction: () => import('@/components/SpecialtyInAction'),
     HeroBlock: () => import('@/components/HeroBlock'),
-    HeroBlockVariation: () => import('@/components/HeroBlockVariation'),
+    TwoColumnSection: () => import('@/components/TwoColumnSection'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },

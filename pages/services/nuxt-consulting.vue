@@ -32,7 +32,7 @@
       :flip-paragraphs="true"
     />
 
-    <HeroBlockVariation
+    <TwoColumnSection
       data-aos="fade-up"
       hero-classes="mt-20"
       :content="marketing"
@@ -41,7 +41,7 @@
 
     <SingleQuote :testimonial="testimonial" />
 
-    <HeroBlockVariation data-aos="fade-up" :content="community">
+    <TwoColumnSection data-aos="fade-up" :content="community">
       <template #content>
         <h3 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h3>
         <p data-aos="fade-up">
@@ -53,7 +53,7 @@
           community.
         </p>
       </template>
-    </HeroBlockVariation>
+    </TwoColumnSection>
 
     <WaveMoreLinks />
   </article>
@@ -73,7 +73,7 @@ export default {
   speedkitComponents: {
     AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
     HeroBlock: () => import('@/components/HeroBlock'),
-    HeroBlockVariation: () => import('@/components/HeroBlockVariation'),
+    TwoColumnSection: () => import('@/components/TwoColumnSection'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
