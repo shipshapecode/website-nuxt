@@ -32,18 +32,21 @@
       :flip-paragraphs="true"
     >
       <template #unboxed-text>
-        <p class="text-white lg:content-center lg:place-self-center">
-          For these reasons, we often recommend it for
-          <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
-          in-depth apps and dashboards, responsive web applications, and other
-          projects for large firms.
-          <br />
-          <br />
-          If your team is working on an Ember.js app or considering a greenfield
-          project where this framework could be a good fit, turn to our top-tier
-          Ember experts for a full range of support, from consulting to
-          development to team training.
-        </p>
+        For these reasons, we often recommend it for
+        <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
+        in-depth apps and dashboards, responsive web applications, and other
+        projects for large firms.
+        <br />
+        <br />
+        If your team is working on an Ember.js app or considering a greenfield
+        project where this framework could be a good fit, turn to our top-tier
+        Ember experts for a full range of support, from consulting to
+        development to team training.
+      </template>
+      <template #boxed-text>
+        Ember.js is an open-source JavaScript web framework. We love its strong
+        opinions, which help engineers work faster and keep their work
+        organized.
       </template>
     </AllAboutSpecialty>
 

@@ -38,10 +38,7 @@ export const marketing = {
 export const specialtyDetails = {
   text: {
     h2: 'All about Ember.js',
-    h3: 'Ember is great for large companies because of its:',
-    boxedText:
-      'Ember.js is an open-source JavaScript web framework. We love its strong opinions, which help engineers work faster and keep their work organized. ',
-    unboxedText: ''
+    h3: 'Ember is great for large companies because of its:'
   },
   benefits: [
     { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },

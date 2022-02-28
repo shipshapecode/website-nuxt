@@ -24,11 +24,7 @@ export const marketing = {
 export const specialtyDetails = {
   text: {
     h2: 'All about Serverless',
-    h3: 'This means your company can:',
-    boxedText:
-      'What is serverless? It’s a model that offloads server management to a third party, only charges you for actual usage, and makes it easy to auto-scale as demand increases. \n \n Why pay for computing power you aren’t using? With serverless frameworks, high server costs are a thing of the past.',
-    unboxedText:
-      'Smaller APIs, graph QL servers, front-end applications, microservices, and similar types of software work well within serverless frameworks. \n \n Working on something like this? Ship Shape’s first-rate software engineers know all the ins and outs. Whether you’re wondering, “What is serverless, and can it help my team?” or you’ve gotten started but need help taking it to the next level, we’ve got you covered.'
+    h3: 'This means your company can:'
   },
   benefits: [
     { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },

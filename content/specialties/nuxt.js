@@ -23,10 +23,7 @@ export const marketing = {
 export const specialtyDetails = {
   text: {
     h2: 'All about Nuxt.js',
-    h3: 'Nuxt works well for apps big and small thanks to its:',
-    boxedText:
-      'Nuxt.js is an open-source framework used to build Vue.js web applications. It’s a performant system that makes creating universal apps easier because of its reduced routing complexity, giving you SEO benefits right out of the box.',
-    unboxedText: `At Ship Shape, we love Nuxt.js because it’s still an opinionated framework (though not quite as opinionated as Ember.js), and it has features that strip out unused code to make your app fast and lightweight. You’ll enjoy its approachable syntax, easy-to-read read templates, and more. \n \n Whether you're building a brand new web app or elevating an existing experience with the latest best practices, our first-class engineers can refine or create a Nuxt.js app while training your team in the process.`
+    h3: 'Nuxt works well for apps big and small thanks to its:'
   },
   benefits: [
     {

@@ -24,10 +24,7 @@ export const marketing = {
 export const specialtyDetails = {
   text: {
     h2: 'All about Tailwind CSS',
-    h3: 'Ship Shape’s experienced engineers love Tailwind CSS because:',
-    boxedText:
-      'Much faster than with most CSS frameworks, Tailwind CSS provides almost all the tools you need to build a site without writing any custom styles.',
-    unboxedText: ''
+    h3: 'Ship Shape’s experienced engineers love Tailwind CSS because:'
   },
   benefits: [
     {

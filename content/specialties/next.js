@@ -34,10 +34,7 @@ export const marketing = {
 export const specialtyDetails = {
   text: {
     h2: 'All about Next.js',
-    h3: 'Some of our favorite Next.js features include:',
-    boxedText:
-      'Teams who have worked in generic React apps can easily make the leap into Next.js. If you’re wondering “What is Next.js, and can my team transition?” Ship Shape’s experienced developers not only consult and develop in Next.js, but also train and mentor teams to maintain and improve their code over time.',
-    unboxedText: `Whether you’re dipping your toes into the app development waters and wondering, “What is Next.js?” or you already know the ropes and are exploring this open-source React framework, you’ve come to the right place. \n \n At Ship Shape, our veteran engineers recommend Next.js because it’s one of the most performant frameworks. With server-side rendering (SSR) and routing, TypeScript support, smart bundling, route pre-fetching, and more, it’s a great choice for production-ready web apps.'`
+    h3: 'Some of our favorite Next.js features include:'
   },
   benefits: [
     {

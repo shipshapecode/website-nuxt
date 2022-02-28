@@ -28,7 +28,28 @@
       :text="specialtyDetails.text"
       :benefits="specialtyDetails.benefits"
       :flip-paragraphs="true"
-    />
+    >
+      <template #unboxed-text>
+        Smaller APIs, graph QL servers, front-end applications, microservices,
+        and similar types of software work well within serverless frameworks.
+        <br />
+        <br />
+        Working on something like this? Ship Shape’s first-rate software
+        engineers know all the ins and outs. Whether you’re wondering, “What is
+        serverless, and can it help my team?” or you’ve gotten started but need
+        help taking it to the next level, we’ve got you covered.' port, from
+        consulting to development to team training
+      </template>
+      <template #boxed-text>
+        What is serverless? It’s a model that offloads server management to a
+        third party, only charges you for actual usage, and makes it easy to
+        auto-scale as demand increases.
+        <br />
+        <br />
+        Why pay for computing power you aren’t using? With serverless
+        frameworks, high server costs are a thing of the past.
+      </template>
+    </AllAboutSpecialty>
 
     <TwoColumnSection
       data-aos="fade-up"

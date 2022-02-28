@@ -28,7 +28,24 @@
     <AllAboutSpecialty
       :text="specialtyDetails.text"
       :benefits="specialtyDetails.benefits"
-    />
+    >
+      <template #unboxed-text>
+        Cloud-native development is a methodology for building and running
+        scalable applications in modern, dynamic environments. This
+        platform-agnostic approach gives you flexibility so you don’t have to
+        work with one vendor (such as AWS or Azure) and provides engineering
+        teams with tools to set up a clear, effective software delivery pipeline
+        so they can deliver battle-tested, secure solutions faster.
+      </template>
+      <template #boxed-text>
+        If you’re working on developing cloud-native applications or would like
+        to explore the value they could bring to your team and customers, look
+        no further. Our cloud-native specialists can help you build efficient
+        and effective products today, lay a solid foundation for the future, and
+        upskill your team so they can continue making positive progress long
+        after our engagement ends.
+      </template>
+    </AllAboutSpecialty>
 
     <TwoColumnSection
       data-aos="fade-up"

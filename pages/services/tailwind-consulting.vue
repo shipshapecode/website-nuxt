@@ -30,15 +30,18 @@
       :flip-paragraphs="true"
     >
       <template #unboxed-text>
-        <p class="text-white lg:content-center lg:place-self-center">
-          At Ship Shape, we like Tailwind CSS so much that we even use it on our
-          own products and passion projects, such as our
-          <a href="https://swach.io/"
-            >robust color management app called Swach.</a
-          >
-          In addition to building Tailwind UIs, we also love training other
-          teams on it to help sharpen their skills too.
-        </p>
+        At Ship Shape, we like Tailwind CSS so much that we even use it on our
+        own products and passion projects, such as our
+        <a href="https://swach.io/"
+          >robust color management app called Swach.</a
+        >
+        In addition to building Tailwind UIs, we also love training other teams
+        on it to help sharpen their skills too.
+      </template>
+      <template #boxed-text>
+        Much faster than with most CSS frameworks, Tailwind CSS provides almost
+        all the tools you need to build a site without writing any custom
+        styles.
       </template>
     </AllAboutSpecialty>
 

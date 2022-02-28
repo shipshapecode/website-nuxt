@@ -22,36 +22,17 @@
               : 'grid'
           "
         >
-          <slot name="unboxed-text">
-            <p
-              class="
-                text-white
-                whitespace-pre-line
-                lg:content-center lg:place-self-center
-              "
-            >
-              {{ text.unboxedText }}
-            </p>
-          </slot>
+          <p class="text-white mb-0 lg:content-center lg:place-self-center">
+            <slot name="unboxed-text" />
+          </p>
         </div>
         <div
-          class="
-            bg-blue-light
-            whitespace-pre-line
-            flex
-            items-center
-            p-12
-            pt-4
-            rounded-md
-            text-navy
-          "
+          class="bg-blue-light flex items-center p-12 rounded-md text-navy"
           :class="flipParagraphs ? 'xl:col-span-3' : null"
         >
-          <slot name="boxed-text">
-            <p class="mb-0">
-              {{ text.boxedText }}
-            </p>
-          </slot>
+          <p class="mb-0">
+            <slot name="boxed-text" />
+          </p>
         </div>
       </section>
 
