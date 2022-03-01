@@ -76,13 +76,6 @@ export const community = {
     'We’re a team of makers who are passionate about improving software products and the people who create them.'
 };
 
-export const head = {
-  title: 'Serverless Framework Solutions',
-  description:
-    "Turn to Ship Shape's serverless framework experts to better understand what is serverless, and save time and resources on your next app build.",
-  url: 'https://shipshape.io/services/serverless-consulting/'
-};
-
 export const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
@@ -116,10 +109,13 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, head, marketing, specialtyDetails };
+    return { community, marketing, specialtyDetails };
   },
   head() {
-    const { title, description, url } = head;
+    const title = 'Serverless Framework Solutions';
+    const description =
+      "Turn to Ship Shape's serverless framework experts to better understand what is serverless, and save time and resources on your next app build.";
+    const url = 'https://shipshape.io/services/serverless-consulting/';
 
     return generateMeta(title, description, url);
   }

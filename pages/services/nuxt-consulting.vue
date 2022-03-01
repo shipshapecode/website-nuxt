@@ -89,13 +89,6 @@ const community = {
   p: ''
 };
 
-const head = {
-  title: 'Nuxt.js Software Consultants & Developers',
-  description:
-    "Working to improve or create a Nuxt app? Ship Shape's first-class engineers build fast, lightweight Nuxt.js applications while training your team too.",
-  url: 'https://shipshape.io/services/nuxt-consulting/'
-};
-
 const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
@@ -136,10 +129,13 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, head, marketing, testimonial, specialtyDetails };
+    return { community, marketing, testimonial, specialtyDetails };
   },
   head() {
-    const { title, description, url } = head;
+    const title = 'Nuxt.js Software Consultants & Developers';
+    const description =
+      "Working to improve or create a Nuxt app? Ship Shape's first-class engineers build fast, lightweight Nuxt.js applications while training your team too.";
+    const url = 'https://shipshape.io/services/nuxt-consulting/';
 
     return generateMeta(title, description, url);
   }

@@ -90,13 +90,6 @@ const community = {
     'We’re a team of makers who are passionate about improving software products and the people who create them.'
 };
 
-const head = {
-  title: 'Next.js Software Consultants & Developers',
-  description:
-    'Wondering,"What is Next js?" or optimizing your Next application? See how Ship Shape\'s Next.js specialists can help build a universal app without the hassle.',
-  url: 'https://shipshape.io/services/next-consulting/'
-};
-
 const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
@@ -145,14 +138,17 @@ export default {
     return {
       caseStudies,
       community,
-      head,
       marketing,
       specialtyDetails,
       testimonial
     };
   },
   head() {
-    const { title, description, url } = head;
+    const title = 'Next.js Software Consultants & Developers';
+    const description =
+      'Wondering,"What is Next js?" or optimizing your Next application? See how Ship Shape\'s Next.js specialists can help build a universal app without the hassle.';
+    const url = 'https://shipshape.io/services/next-consulting/';
+
     return generateMeta(title, description, url);
   }
 };

@@ -73,13 +73,6 @@ export const community = {
     'We’re a team of makers who are passionate about improving software products and the people who create them.'
 };
 
-export const head = {
-  title: 'Cloud-Native Applications',
-  description:
-    "See how Ship Shape's software engineers can help your team leverage the cloud-native applications methodology to deliver value to customers even faster.",
-  url: 'https://shipshape.io/services/cloud-native-consulting/'
-};
-
 export const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
@@ -122,10 +115,13 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, head, marketing, specialtyDetails };
+    return { community, marketing, specialtyDetails };
   },
   head() {
-    const { title, description, url } = head;
+    const title = 'Cloud-Native Applications';
+    const description =
+      "See how Ship Shape's software engineers can help your team leverage the cloud-native applications methodology to deliver value to customers even faster.";
+    const url = 'https://shipshape.io/services/cloud-native-consulting/';
     return generateMeta(title, description, url);
   }
 };

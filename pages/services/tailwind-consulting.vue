@@ -70,13 +70,6 @@ export const community = {
     'We’re a team of makers who are passionate about improving software products and the people who create them.'
 };
 
-export const head = {
-  title: 'Tailwind CSS & Tailwind UI Experts',
-  description:
-    "Tailwind CSS makes it easy to build a site without using any custom CSS. Learn how Ship Shape's team of Tailwind UI experts can help tailor your app quickly. ",
-  url: 'https://shipshape.io/services/tailwind-consulting/'
-};
-
 export const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
@@ -121,10 +114,13 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, head, marketing, specialtyDetails };
+    return { community, marketing, specialtyDetails };
   },
   head() {
-    const { title, description, url } = head;
+    const title = 'Tailwind CSS & Tailwind UI Experts';
+    const description =
+      "Tailwind CSS makes it easy to build a site without using any custom CSS. Learn how Ship Shape's team of Tailwind UI experts can help tailor your app quickly. ";
+    const url = 'https://shipshape.io/services/tailwind-consulting/';
 
     return generateMeta(title, description, url);
   }

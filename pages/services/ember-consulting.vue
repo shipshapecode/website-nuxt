@@ -93,13 +93,6 @@ const caseStudies = [
   }
 ];
 
-const head = {
-  title: 'Ember.js Enterprise App Development',
-  description:
-    "Learn how Ship Shape's top-tier enterprise app development experts can help your team build fast, reliable Ember.js applications.",
-  url: 'https://shipshape.io/services/ember-consulting/'
-};
-
 const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
@@ -135,10 +128,13 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { caseStudies, head, marketing, testimonial, specialtyDetails };
+    return { caseStudies, marketing, testimonial, specialtyDetails };
   },
   head() {
-    const { title, description, url } = head;
+    const title = 'Ember.js Enterprise App Development';
+    const description =
+      "Learn how Ship Shape's top-tier enterprise app development experts can help your team build fast, reliable Ember.js applications.";
+    const url = 'https://shipshape.io/services/ember-consulting/';
 
     return generateMeta(title, description, url);
   }
