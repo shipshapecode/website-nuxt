@@ -9,7 +9,15 @@
         <article
           v-for="(study, index) in caseStudies"
           :key="index + 1"
-          class="bg-blue-light rounded-b-lg flex flex-col animate-card"
+          class="
+            bg-blue-light
+            rounded-b-lg
+            flex flex-col
+            relative
+            top-0
+            ease-in
+            hover:top-[-20px]
+          "
           data-aos="flip-down"
           :data-aos-delay="200 * index"
         >
@@ -145,14 +153,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.animate-card {
-  position: relative;
-  top: 0;
-  transition: top ease 0.5s;
-}
-.animate-card:hover {
-  top: -20px;
-}
-</style>
