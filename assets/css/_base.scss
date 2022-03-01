@@ -172,17 +172,28 @@ h6 {
       height: 200px;
     }
   }
-
-  @media only screen and (min-width: 3008px) {
-    &::after {
-      bottom: -150px;
-    }
-  }
 }
 
 .blue-waves {
   &::after {
     background-image: url(/svgs/waves/waves.svg);
+  }
+}
+
+.cloud-native-waves {
+  &::after {
+    background-image: url(/svgs/waves/cloud-native-waves.svg);
+    background-size: 100vw;
+    bottom: -20px;
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 1910px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -70px;
+      height: 320px;
+    }
   }
 }
 
@@ -249,9 +260,24 @@ h6 {
   }
 }
 
-.tailwind-waves {
-  padding-bottom: 8rem;
+.serverless-waves {
+  &::after {
+    background-image: url(/svgs/waves/serverless-waves.svg);
+    background-size: 1910px;
+    bottom: -20px;
+    height: 250px;
+  }
 
+  @media only screen and (min-width: 1910px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -50px;
+      height: 350px;
+    }
+  }
+}
+
+.tailwind-waves {
   &::after {
     background-image: url(/svgs/waves/tailwind-waves.svg);
     background-size: 2050px;
@@ -263,64 +289,6 @@ h6 {
     &::after {
       background-size: 101vw;
       height: 300px;
-    }
-  }
-
-  @media only screen and (min-width: 3008px) {
-    &::after {
-      bottom: -80px;
-      height: 550px;
-    }
-  }
-}
-
-.cloud-native-waves {
-  padding-bottom: 8rem;
-
-  &::after {
-    background-image: url(/svgs/waves/cloud-native-waves.svg);
-    background-size: 1910px;
-    bottom: -20px;
-    height: 200px;
-  }
-
-  @media only screen and (min-width: 2050px) {
-    &::after {
-      background-size: 101vw;
-      height: 300px;
-    }
-  }
-
-  @media only screen and (min-width: 3008px) {
-    &::after {
-      bottom: -80px;
-      height: 550px;
-    }
-  }
-}
-
-.serverless-waves {
-  padding-bottom: 8rem;
-
-  &::after {
-    background-image: url(/svgs/waves/serverless-waves.svg);
-    background-size: 1910px;
-    bottom: -20px;
-    height: 250px;
-  }
-
-  @media only screen and (min-width: 2050px) {
-    &::after {
-      background-size: 101vw;
-      bottom: -50px;
-      height: 350px;
-    }
-  }
-
-  @media only screen and (min-width: 3008px) {
-    &::after {
-      bottom: -80px;
-      height: 550px;
     }
   }
 }
