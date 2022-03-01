@@ -15,7 +15,7 @@
         </h2>
 
         <slot name="content">
-          <p data-aos="fade">
+          <p data-aos="fade-left">
             {{ content.paragraph }}
           </p>
         </slot>
