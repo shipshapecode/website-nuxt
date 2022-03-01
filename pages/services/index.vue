@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <article>
     <HeroBlock hero-classes="services waves blue-waves bg-blue-light !pb-20">
       <template #content>
         <h1 itemprop="name" class="leading-tight text-5xl">
@@ -24,9 +24,10 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-white flex flex-wrap justify-center !pt-32">
+    <section class="section bg-white flex flex-wrap justify-center !pt-32">
       <div>
         <h3 class="py-12" data-aos="fade-left">High impact, low ego</h3>
+        <!-- replace these divs with TwoColumnSection -->
         <div class="divide-[#D8E3E8] divide-y-2">
           <div
             class="
@@ -122,117 +123,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <ServicesBlurbs />
 
     <SingleQuote :testimonial="testimonial" />
 
-    <!-- maybe this should be all one component? -->
-    <div
-      class="section flex flex-wrap justify-center bg-white"
-      data-aos="fade-down"
-    >
-      <div class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]">
-        <div
-          class="
-            pb-24
-            lg:flex lg:flex-row lg:place-content-between lg:items-center
-          "
-        >
-          <h3>Check out the latest insights</h3>
-          <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
-            Read on
-          </nuxt-link>
-        </div>
-        <div>
-          <div>
-            <h3 class="py-12">Latest Podcast</h3>
-            <div
-              :key="latestPodcastEpisode.title"
-              class="
-                items-center
-                grid grid-cols-1
-                pb-12
-                lg:gap-12 lg:grid-cols-9
-              "
-            >
-              <nuxt-img
-                class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
-                format="webp"
-                height="500"
-                src="/img/hero-images/www.png"
-                width="500"
-                alt=""
-              />
-              <div class="lg:col-span-5">
-                <h4 class="lg:text-xl lg:mb-4">
-                  {{ latestPodcastEpisode.title }}
-                </h4>
-                <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
-                  {{ formatDateWithDots(latestPodcastEpisode.pubDate) }}
-                </h5>
-                <p>
-                  {{ latestPodcastEpisode.description }}
-                </p>
-              </div>
-              <a
-                class="
-                  learn-more
-                  lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
-                "
-                href="https://www.whiskeywebandwhatnot.fm/"
-              >
-                Dive Deeper
-                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3 class="py-12">Latest Blog Post</h3>
-            <div
-              :key="latestBlogPost.slug"
-              class="
-                items-center
-                grid grid-cols-1
-                pb-12
-                lg:gap-12 lg:grid-cols-9
-              "
-            >
-              <nuxt-img
-                class="h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
-                format="webp"
-                height="500"
-                src="/img/about/desk.jpg"
-                width="500"
-                alt=""
-              />
-              <div class="lg:col-span-5">
-                <h4 class="lg:text-xl lg:mb-4">
-                  {{ latestBlogPost.linktitle || latestBlogPost.title }}
-                </h4>
-                <h5 class="font-light text-grey-light lg:text-lg lg:mb-4">
-                  {{ formatDateWithDots(latestBlogPost.date) }}
-                </h5>
-                <p>
-                  {{ latestBlogPost.description }}
-                </p>
-              </div>
-              <nuxt-link
-                class="
-                  learn-more
-                  lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
-                "
-                :to="`/blog/${latestBlogPost.slug}/`"
-              >
-                Dive Deeper
-                <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-              </nuxt-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <LatestInsights
+      :latest-blog-post="latestBlogPost"
+      :latest-podcast-episode="latestPodcastEpisode"
+    />
+
     <HeroBlock hero-classes="waves blue-waves bg-blue-light">
       <template #content>
         <h2 itemprop="name" class="leading-tight text-5xl">
@@ -260,12 +161,11 @@
         />
       </template>
     </HeroBlock>
-  </div>
+  </article>
 </template>
 
 <script>
 import truncate from 'lodash.truncate';
-import { formatDateWithDots } from '~/utils/date';
 import { generateMeta } from '~/utils/meta';
 
 const testimonial = {
@@ -285,6 +185,7 @@ const testimonial = {
 export default {
   speedkitComponents: {
     HeroBlock: () => import('@/components/HeroBlock'),
+    LatestInsights: () => import('@/components/LatestInsights'),
     ServicesBlurbs: () => import('@/components/ServicesBlurbs'),
     SingleQuote: () => import('@/components/SingleQuote')
   },
@@ -328,10 +229,6 @@ export default {
     const url = 'https://shipshape.io/services/';
 
     return generateMeta(title, description, url);
-  },
-
-  methods: {
-    formatDateWithDots
   }
 };
 </script>

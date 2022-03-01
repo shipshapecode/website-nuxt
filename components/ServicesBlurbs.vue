@@ -1,5 +1,5 @@
 <template>
-  <div class="section bg-blue-light flex flex-wrap justify-center">
+  <section class="section bg-blue-light flex flex-wrap justify-center">
     <div class="section-content">
       <div
         class="
@@ -40,7 +40,7 @@
             <inline-svg
               class="h-auto w-20 nested-svg pb-6 lg:w-32 lg:pb-12"
               src="/svgs/technologies/ember.svg"
-              aria-label="Ember logo"
+              aria-label="Ember"
             />
             <p class="flex-grow">
               One of the best frameworks for fast, reliable builds, especially
@@ -70,7 +70,7 @@
             <inline-svg
               class="h-auto w-24 nested-svg pb-6 lg:w-40 lg:pt-5 lg:pb-12"
               src="/svgs/technologies/nuxt.svg"
-              aria-label="Nuxt logo"
+              aria-label="Nuxt"
             />
             <p class="flex-grow">
               A performant framework used to create flexible, universal Vue.js
@@ -100,7 +100,7 @@
             <inline-svg
               class="h-auto w-20 nested-svg pb-6 lg:w-32 lg:pb-12"
               src="/svgs/technologies/next.svg"
-              aria-label="Next logo"
+              aria-label="Next"
             />
             <p class="flex-grow">
               A nimble React framework for production with lots of magic built
@@ -130,7 +130,7 @@
             <inline-svg
               class="h-auto w-36 nested-svg pb-8 lg:w-52 lg:pt-5 lg:pb-20"
               src="/svgs/technologies/tailwind.svg"
-              aria-label="Tailwind logo"
+              aria-label="Tailwind"
             />
             <p class="flex-grow">
               Match mocks from designers with ease, and automagically remove all
@@ -159,7 +159,7 @@
             <inline-svg
               class="h-auto w-36 nested-svg pb-8 lg:w-52 lg:pt-5 lg:pb-20"
               src="/svgs/technologies/serverless.svg"
-              aria-label="Serverless logo"
+              aria-label="Serverless"
             />
             <p class="flex-grow">
               Only pay for the computing you need, scale quickly, and reduce
@@ -194,7 +194,7 @@
             <inline-svg
               class="h-auto w-36 nested-svg pb-8 lg:w-52 lg:pt-5 lg:pb-20"
               src="/svgs/technologies/cncf.svg"
-              aria-label="Cloud Native logo"
+              aria-label="Cloud Native"
             />
             <p class="flex-grow">
               Say goodbye to being locked into vendors, and deliver well-tested,
@@ -220,7 +220,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss">
