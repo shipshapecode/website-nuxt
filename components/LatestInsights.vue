@@ -1,10 +1,10 @@
 <template>
-  <div
+  <section
     class="section flex flex-wrap justify-center bg-white"
     data-aos="fade-down"
   >
     <div class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]">
-      <div
+      <header
         class="
           pb-24
           lg:flex lg:flex-row lg:place-content-between lg:items-center
@@ -14,7 +14,7 @@
         <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
           Read on
         </nuxt-link>
-      </div>
+      </header>
       <div>
         <MediaCard
           media-type="podcast"
@@ -24,7 +24,7 @@
         <MediaCard :details="latestBlogPost" />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
