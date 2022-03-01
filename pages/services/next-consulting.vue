@@ -26,10 +26,9 @@
       </template>
     </HeroBlock>
 
-    <AllAboutSpecialty
-      :text="specialtyDetails.text"
-      :benefits="specialtyDetails.benefits"
-    >
+    <AllAboutSpecialty :benefits="specialtyBenefits">
+      <template #h2>All about Next.js</template>
+      <template #h3>Some of our favorite Next.js features include:</template>
       <template #unboxed-text>
         Whether you’re dipping your toes into the app development waters and
         wondering, “What is Next.js?” or you already know the ropes and are
@@ -98,32 +97,25 @@ const marketing = {
     'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
 };
 
-const specialtyDetails = {
-  text: {
-    h2: 'All about Next.js',
-    h3: 'Some of our favorite Next.js features include:'
+const specialtyBenefits = [
+  {
+    imgSrc: '/svgs/icons/image.svg',
+    description: 'Out-of-the-box internationalization features'
   },
-  benefits: [
-    {
-      imgSrc: '/svgs/icons/image.svg',
-      description: 'Out-of-the-box internationalization features'
-    },
-    {
-      imgSrc: '/svgs/icons/mentor.svg',
-      description:
-        'Automatic image resizing and one-off, on-the-fly image generation'
-    },
-    {
-      imgSrc: '/svgs/icons/chart.svg',
-      description: 'Amazingly high performance'
-    },
-    {
-      imgSrc: '/svgs/icons/pwa.svg',
-      description:
-        'Zero config! Developing features is a simple “yarn dev” away'
-    }
-  ]
-};
+  {
+    imgSrc: '/svgs/icons/mentor.svg',
+    description:
+      'Automatic image resizing and one-off, on-the-fly image generation'
+  },
+  {
+    imgSrc: '/svgs/icons/chart.svg',
+    description: 'Amazingly high performance'
+  },
+  {
+    imgSrc: '/svgs/icons/pwa.svg',
+    description: 'Zero config! Developing features is a simple “yarn dev” away'
+  }
+];
 
 export default {
   speedkitComponents: {
@@ -139,7 +131,7 @@ export default {
       caseStudies,
       community,
       marketing,
-      specialtyDetails,
+      specialtyBenefits,
       testimonial
     };
   },

@@ -26,11 +26,11 @@
       </template>
     </HeroBlock>
 
-    <AllAboutSpecialty
-      :text="specialtyDetails.text"
-      :benefits="specialtyDetails.benefits"
-      :flip-paragraphs="true"
-    >
+    <AllAboutSpecialty :benefits="specialtyBenefits" :flip-paragraphs="true">
+      <template #h2>All about Nuxt.js</template>
+      <template #h3
+        >Nuxt works well for apps big and small thanks to its:</template
+      >
       <template #unboxed-text>
         At Ship Shape, we love Nuxt.js because it’s still an opinionated
         framework (though not quite as opinionated as Ember.js), and it has
@@ -97,28 +97,22 @@ const marketing = {
     'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
 };
 
-const specialtyDetails = {
-  text: {
-    h2: 'All about Nuxt.js',
-    h3: 'Nuxt works well for apps big and small thanks to its:'
+const specialtyBenefits = [
+  {
+    imgSrc: '/svgs/icons/modular.svg',
+    description: 'Modular architecture, which speeds up development'
   },
-  benefits: [
-    {
-      imgSrc: '/svgs/icons/modular.svg',
-      description: 'Modular architecture, which speeds up development'
-    },
-    {
-      imgSrc: '/svgs/icons/native-apps.svg',
-      description:
-        'Server-side rendered (SSR) to deliver HTML, rather than JavaScript'
-    },
-    {
-      imgSrc: '/svgs/icons/static.svg',
-      description:
-        'Static Site Generation to net SEO benefits without needing a server'
-    }
-  ]
-};
+  {
+    imgSrc: '/svgs/icons/native-apps.svg',
+    description:
+      'Server-side rendered (SSR) to deliver HTML, rather than JavaScript'
+  },
+  {
+    imgSrc: '/svgs/icons/static.svg',
+    description:
+      'Static Site Generation to net SEO benefits without needing a server'
+  }
+];
 
 export default {
   speedkitComponents: {
@@ -129,7 +123,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, marketing, testimonial, specialtyDetails };
+    return { community, marketing, testimonial, specialtyBenefits };
   },
   head() {
     const title = 'Nuxt.js Software Consultants & Developers';

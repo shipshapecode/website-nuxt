@@ -26,11 +26,12 @@
       </template>
     </HeroBlock>
 
-    <AllAboutSpecialty
-      :text="specialtyDetails.text"
-      :benefits="specialtyDetails.benefits"
-      :flip-paragraphs="true"
-    >
+    <AllAboutSpecialty :benefits="specialtyBenefits" :flip-paragraphs="true">
+      <template #h2> All about Ember.js </template>
+      <template #h3>
+        Ember is great for large companies because of its:
+      </template>
+
       <template #unboxed-text>
         For these reasons, we often recommend it for
         <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
@@ -101,21 +102,15 @@ const marketing = {
     'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
 };
 
-const specialtyDetails = {
-  text: {
-    h2: 'All about Ember.js',
-    h3: 'Ember is great for large companies because of its:'
+const specialtyBenefits = [
+  { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
+  {
+    imgSrc: '/svgs/icons/chart.svg',
+    description: 'Scalable UI architecture'
   },
-  benefits: [
-    { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
-    {
-      imgSrc: '/svgs/icons/chart.svg',
-      description: 'Scalable UI architecture'
-    },
-    { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
-    { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
-  ]
-};
+  { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
+  { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
+];
 
 export default {
   speedkitComponents: {
@@ -128,7 +123,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { caseStudies, marketing, testimonial, specialtyDetails };
+    return { caseStudies, marketing, testimonial, specialtyBenefits };
   },
   head() {
     const title = 'Ember.js Enterprise App Development';

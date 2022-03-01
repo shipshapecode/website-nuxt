@@ -2,7 +2,7 @@
   <section class="section bg-navy flex flex-wrap justify-center">
     <div class="section-content">
       <h2 class="text-white text-4xl" data-aos="fade-up">
-        {{ text.h2 }}
+        <slot name="h2" />
       </h2>
       <section
         class="
@@ -38,7 +38,7 @@
 
       <section>
         <h3 class="text-white text-2xl" data-aos="fade">
-          {{ text.h3 }}
+          <slot name="h3" />
         </h3>
         <BenefitsList :benefits="benefits" />
       </section>
@@ -52,10 +52,6 @@ export default {
     BenefitsList: () => import('@/components/BenefitsList')
   },
   props: {
-    text: {
-      type: Object,
-      required: true
-    },
     benefits: {
       type: Array,
       required: true

@@ -24,11 +24,9 @@
       </template>
     </HeroBlock>
 
-    <AllAboutSpecialty
-      :text="specialtyDetails.text"
-      :benefits="specialtyDetails.benefits"
-      :flip-paragraphs="true"
-    >
+    <AllAboutSpecialty :benefits="specialtyBenefits" :flip-paragraphs="true">
+      <template #h2>All about Serverless</template>
+      <template #h3>This means your company can:</template>
       <template #unboxed-text>
         Smaller APIs, graph QL servers, front-end applications, microservices,
         and similar types of software work well within serverless frameworks.
@@ -68,7 +66,7 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
-export const community = {
+const community = {
   imgSrc: '/img/hero-images/ember-consulting.png',
   imgHeight: '1034',
   h2: 'We ❤️ the Developer Community',
@@ -76,7 +74,7 @@ export const community = {
     'We’re a team of makers who are passionate about improving software products and the people who create them.'
 };
 
-export const marketing = {
+const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
   h2: 'Your co-pilots in the storm',
@@ -84,21 +82,15 @@ export const marketing = {
     'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
 };
 
-export const specialtyDetails = {
-  text: {
-    h2: 'All about Serverless',
-    h3: 'This means your company can:'
+const specialtyBenefits = [
+  { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
+  {
+    imgSrc: '/svgs/icons/chart.svg',
+    description: 'Scalable UI architecture'
   },
-  benefits: [
-    { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
-    {
-      imgSrc: '/svgs/icons/chart.svg',
-      description: 'Scalable UI architecture'
-    },
-    { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
-    { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
-  ]
-};
+  { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
+  { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
+];
 
 export default {
   speedkitComponents: {
@@ -109,7 +101,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, marketing, specialtyDetails };
+    return { community, marketing, specialtyBenefits };
   },
   head() {
     const title = 'Serverless Framework Solutions';

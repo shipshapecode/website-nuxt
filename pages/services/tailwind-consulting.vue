@@ -24,11 +24,11 @@
       </template>
     </HeroBlock>
 
-    <AllAboutSpecialty
-      :text="specialtyDetails.text"
-      :benefits="specialtyDetails.benefits"
-      :flip-paragraphs="true"
-    >
+    <AllAboutSpecialty :benefits="specialtyBenefits" :flip-paragraphs="true">
+      <template #h2>All about Tailwind CSS</template>
+      <template #h3>
+        Ship Shape’s experienced engineers love Tailwind CSS because:
+      </template>
       <template #unboxed-text>
         At Ship Shape, we like Tailwind CSS so much that we even use it on our
         own products and passion projects, such as our
@@ -62,7 +62,8 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
-export const community = {
+
+const community = {
   imgSrc: '/img/hero-images/ember-consulting.png',
   imgHeight: '1034',
   h2: 'We ❤️ the Developer Community',
@@ -70,7 +71,7 @@ export const community = {
     'We’re a team of makers who are passionate about improving software products and the people who create them.'
 };
 
-export const marketing = {
+const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
   h2: 'Your co-pilots in the storm',
@@ -78,32 +79,26 @@ export const marketing = {
     'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
 };
 
-export const specialtyDetails = {
-  text: {
-    h2: 'All about Tailwind CSS',
-    h3: 'Ship Shape’s experienced engineers love Tailwind CSS because:'
+const specialtyBenefits = [
+  {
+    imgSrc: '/svgs/icons/image.svg',
+    description: 'It matches mocks and designs with ease.'
   },
-  benefits: [
-    {
-      imgSrc: '/svgs/icons/image.svg',
-      description: 'It matches mocks and designs with ease.'
-    },
-    {
-      imgSrc: '/svgs/icons/time.svg',
-      description:
-        'It automatically removes all unused CSS when building for production, which improves speed.'
-    },
-    {
-      imgSrc: '/svgs/icons/modular.svg',
-      description:
-        'Its usability is quite nimble compared to similar frameworks (like Bootstrap).'
-    },
-    {
-      imgSrc: '/svgs/icons/pwa.svg',
-      description: 'Prototyping is super fast with Tailwind UI components.'
-    }
-  ]
-};
+  {
+    imgSrc: '/svgs/icons/time.svg',
+    description:
+      'It automatically removes all unused CSS when building for production, which improves speed.'
+  },
+  {
+    imgSrc: '/svgs/icons/modular.svg',
+    description:
+      'Its usability is quite nimble compared to similar frameworks (like Bootstrap).'
+  },
+  {
+    imgSrc: '/svgs/icons/pwa.svg',
+    description: 'Prototyping is super fast with Tailwind UI components.'
+  }
+];
 
 export default {
   speedkitComponents: {
@@ -114,7 +109,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, marketing, specialtyDetails };
+    return { community, marketing, specialtyBenefits };
   },
   head() {
     const title = 'Tailwind CSS & Tailwind UI Experts';

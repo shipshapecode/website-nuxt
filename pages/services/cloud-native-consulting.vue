@@ -25,10 +25,12 @@
       </template>
     </HeroBlock>
 
-    <AllAboutSpecialty
-      :text="specialtyDetails.text"
-      :benefits="specialtyDetails.benefits"
-    >
+    <AllAboutSpecialty :benefits="specialtyBenefits">
+      <template #h2>All about Cloud Native</template>
+      <template #h3
+        >Ship Shape’s engineering staff prefers using a cloud-native approach
+        because of its:</template
+      >
       <template #unboxed-text>
         Cloud-native development is a methodology for building and running
         scalable applications in modern, dynamic environments. This
@@ -65,7 +67,7 @@
 <script>
 import { generateMeta } from '~/utils/meta';
 
-export const community = {
+const community = {
   imgSrc: '/img/hero-images/ember-consulting.png',
   imgHeight: '1034',
   h2: 'We ❤️ the Developer Community',
@@ -73,7 +75,7 @@ export const community = {
     'We’re a team of makers who are passionate about improving software products and the people who create them.'
 };
 
-export const marketing = {
+const marketing = {
   imgSrc: '/img/hero-images/mentoring.png',
   imgHeight: '772',
   h2: 'We’ll never leave you high and dry',
@@ -81,30 +83,24 @@ export const marketing = {
     'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
 };
 
-export const specialtyDetails = {
-  text: {
-    h2: 'All about Cloud Native',
-    h3: 'Ship Shape’s engineering staff prefers using a cloud-native approach because of its:'
+const specialtyBenefits = [
+  {
+    imgSrc: '/svgs/icons/retainer.svg',
+    description: 'Fast, transparent software delivery cycle'
   },
-  benefits: [
-    {
-      imgSrc: '/svgs/icons/retainer.svg',
-      description: 'Fast, transparent software delivery cycle'
-    },
-    {
-      imgSrc: '/svgs/icons/speed.svg',
-      description: 'Ability to deliver value to customers even faster'
-    },
-    {
-      imgSrc: '/svgs/icons/secure.svg',
-      description: 'Tested, safe, and secure deployment'
-    },
-    {
-      imgSrc: '/svgs/icons/chart.svg',
-      description: 'Rapid scalability'
-    }
-  ]
-};
+  {
+    imgSrc: '/svgs/icons/speed.svg',
+    description: 'Ability to deliver value to customers even faster'
+  },
+  {
+    imgSrc: '/svgs/icons/secure.svg',
+    description: 'Tested, safe, and secure deployment'
+  },
+  {
+    imgSrc: '/svgs/icons/chart.svg',
+    description: 'Rapid scalability'
+  }
+];
 
 export default {
   speedkitComponents: {
@@ -115,7 +111,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, marketing, specialtyDetails };
+    return { community, marketing, specialtyBenefits };
   },
   head() {
     const title = 'Cloud-Native Applications';
