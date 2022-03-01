@@ -80,13 +80,52 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
-import {
-  community,
-  head,
-  marketing,
-  specialtyDetails,
-  testimonial
-} from '~/content/specialties/nuxt.js';
+import { sephoraTestimonial as testimonial } from '~/content/testimonials/index.js';
+
+const community = {
+  imgSrc: '/img/hero-images/ember-consulting.png',
+  imgHeight: '1034',
+  h2: 'We ❤️ the Nuxt.js Community',
+  p: ''
+};
+
+const head = {
+  title: 'Nuxt.js Software Consultants & Developers',
+  description:
+    "Working to improve or create a Nuxt app? Ship Shape's first-class engineers build fast, lightweight Nuxt.js applications while training your team too.",
+  url: 'https://shipshape.io/services/nuxt-consulting/'
+};
+
+const marketing = {
+  imgSrc: '/img/hero-images/mentoring.png',
+  imgHeight: '772',
+  h2: "Your first mate's in rough waters",
+  paragraph:
+    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
+};
+
+const specialtyDetails = {
+  text: {
+    h2: 'All about Nuxt.js',
+    h3: 'Nuxt works well for apps big and small thanks to its:'
+  },
+  benefits: [
+    {
+      imgSrc: '/svgs/icons/modular.svg',
+      description: 'Modular architecture, which speeds up development'
+    },
+    {
+      imgSrc: '/svgs/icons/native-apps.svg',
+      description:
+        'Server-side rendered (SSR) to deliver HTML, rather than JavaScript'
+    },
+    {
+      imgSrc: '/svgs/icons/static.svg',
+      description:
+        'Static Site Generation to net SEO benefits without needing a server'
+    }
+  ]
+};
 
 export default {
   speedkitComponents: {

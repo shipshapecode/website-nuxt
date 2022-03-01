@@ -64,13 +64,54 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
-import {
-  community,
-  head,
-  marketing,
-  specialtyDetails,
-  testimonial
-} from '~/content/specialties/cloud-native.js';
+
+export const community = {
+  imgSrc: '/img/hero-images/ember-consulting.png',
+  imgHeight: '1034',
+  h2: 'We ❤️ the Developer Community',
+  paragraph:
+    'We’re a team of makers who are passionate about improving software products and the people who create them.'
+};
+
+export const head = {
+  title: 'Cloud-Native Applications',
+  description:
+    "See how Ship Shape's software engineers can help your team leverage the cloud-native applications methodology to deliver value to customers even faster.",
+  url: 'https://shipshape.io/services/cloud-native-consulting/'
+};
+
+export const marketing = {
+  imgSrc: '/img/hero-images/mentoring.png',
+  imgHeight: '772',
+  h2: 'We’ll never leave you high and dry',
+  paragraph:
+    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
+};
+
+export const specialtyDetails = {
+  text: {
+    h2: 'All about Cloud Native',
+    h3: 'Ship Shape’s engineering staff prefers using a cloud-native approach because of its:'
+  },
+  benefits: [
+    {
+      imgSrc: '/svgs/icons/retainer.svg',
+      description: 'Fast, transparent software delivery cycle'
+    },
+    {
+      imgSrc: '/svgs/icons/speed.svg',
+      description: 'Ability to deliver value to customers even faster'
+    },
+    {
+      imgSrc: '/svgs/icons/secure.svg',
+      description: 'Tested, safe, and secure deployment'
+    },
+    {
+      imgSrc: '/svgs/icons/chart.svg',
+      description: 'Rapid scalability'
+    }
+  ]
+};
 
 export default {
   speedkitComponents: {
@@ -81,7 +122,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, head, marketing, testimonial, specialtyDetails };
+    return { community, head, marketing, specialtyDetails };
   },
   head() {
     const { title, description, url } = head;

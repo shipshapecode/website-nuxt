@@ -68,13 +68,44 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
-import {
-  community,
-  head,
-  marketing,
-  specialtyDetails,
-  testimonial
-} from '~/content/specialties/serverless.js';
+export const community = {
+  imgSrc: '/img/hero-images/ember-consulting.png',
+  imgHeight: '1034',
+  h2: 'We ❤️ the Developer Community',
+  paragraph:
+    'We’re a team of makers who are passionate about improving software products and the people who create them.'
+};
+
+export const head = {
+  title: 'Serverless Framework Solutions',
+  description:
+    "Turn to Ship Shape's serverless framework experts to better understand what is serverless, and save time and resources on your next app build.",
+  url: 'https://shipshape.io/services/serverless-consulting/'
+};
+
+export const marketing = {
+  imgSrc: '/img/hero-images/mentoring.png',
+  imgHeight: '772',
+  h2: 'Your co-pilots in the storm',
+  paragraph:
+    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
+};
+
+export const specialtyDetails = {
+  text: {
+    h2: 'All about Serverless',
+    h3: 'This means your company can:'
+  },
+  benefits: [
+    { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
+    {
+      imgSrc: '/svgs/icons/chart.svg',
+      description: 'Scalable UI architecture'
+    },
+    { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
+    { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
+  ]
+};
 
 export default {
   speedkitComponents: {
@@ -85,7 +116,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, head, marketing, testimonial, specialtyDetails };
+    return { community, head, marketing, specialtyDetails };
   },
   head() {
     const { title, description, url } = head;

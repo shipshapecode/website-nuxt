@@ -62,13 +62,55 @@
 
 <script>
 import { generateMeta } from '~/utils/meta';
-import {
-  community,
-  head,
-  marketing,
-  specialtyDetails,
-  testimonial
-} from '~/content/specialties/tailwind.js';
+export const community = {
+  imgSrc: '/img/hero-images/ember-consulting.png',
+  imgHeight: '1034',
+  h2: 'We ❤️ the Developer Community',
+  paragraph:
+    'We’re a team of makers who are passionate about improving software products and the people who create them.'
+};
+
+export const head = {
+  title: 'Tailwind CSS & Tailwind UI Experts',
+  description:
+    "Tailwind CSS makes it easy to build a site without using any custom CSS. Learn how Ship Shape's team of Tailwind UI experts can help tailor your app quickly. ",
+  url: 'https://shipshape.io/services/tailwind-consulting/'
+};
+
+export const marketing = {
+  imgSrc: '/img/hero-images/mentoring.png',
+  imgHeight: '772',
+  h2: 'Your co-pilots in the storm',
+  paragraph:
+    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
+};
+
+export const specialtyDetails = {
+  text: {
+    h2: 'All about Tailwind CSS',
+    h3: 'Ship Shape’s experienced engineers love Tailwind CSS because:'
+  },
+  benefits: [
+    {
+      imgSrc: '/svgs/icons/image.svg',
+      description: 'It matches mocks and designs with ease.'
+    },
+    {
+      imgSrc: '/svgs/icons/time.svg',
+      description:
+        'It automatically removes all unused CSS when building for production, which improves speed.'
+    },
+    {
+      imgSrc: '/svgs/icons/modular.svg',
+      description:
+        'Its usability is quite nimble compared to similar frameworks (like Bootstrap).'
+    },
+    {
+      imgSrc: '/svgs/icons/pwa.svg',
+      description: 'Prototyping is super fast with Tailwind UI components.'
+    }
+  ]
+};
 
 export default {
   speedkitComponents: {
@@ -79,7 +121,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, head, marketing, testimonial, specialtyDetails };
+    return { community, head, marketing, specialtyDetails };
   },
   head() {
     const { title, description, url } = head;
