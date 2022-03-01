@@ -54,13 +54,22 @@
     <TwoColumnSection
       data-aos="fade-up"
       hero-classes="mt-20"
-      :content="marketing"
+      :image="marketing"
       :is-flipped="true"
-    />
+    >
+      <template #header>Your first mate's in rough waters</template>
+      <template #content>
+        Ship Shape is committed to leaving every engineering team we work with
+        better than we found it. Not only do we build robust, reliable software,
+        but we also train your staff along the way to understand, maintain, and
+        improve your product after our engagement ends.
+      </template>
+    </TwoColumnSection>
 
     <SingleQuote :testimonial="testimonial" />
 
-    <TwoColumnSection data-aos="fade-up" :content="community">
+    <TwoColumnSection data-aos="fade-up" :image="community">
+      <template #header> We ❤️ the Nuxt.js Community </template>
       <template #content>
         <h3 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h3>
         <p data-aos="fade-up">
@@ -83,18 +92,13 @@ import { generateMeta } from '~/utils/meta';
 import { sephoraTestimonial as testimonial } from '~/content/testimonials/index.js';
 
 const community = {
-  imgSrc: '/img/hero-images/ember-consulting.png',
-  imgHeight: '1034',
-  h2: 'We ❤️ the Nuxt.js Community',
-  p: ''
+  src: '/img/hero-images/ember-consulting.png',
+  height: '1034'
 };
 
 const marketing = {
-  imgSrc: '/img/hero-images/mentoring.png',
-  imgHeight: '772',
-  h2: "Your first mate's in rough waters",
-  paragraph:
-    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
+  src: '/img/hero-images/mentoring.png',
+  height: '772'
 };
 
 const specialtyBenefits = [

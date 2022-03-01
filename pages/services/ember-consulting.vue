@@ -56,9 +56,17 @@
     <TwoColumnSection
       data-aos="fade-up"
       hero-classes="mt-20"
-      :content="marketing"
+      :image="marketing"
       :is-flipped="true"
-    />
+    >
+      <template #header>We’ll never leave you high and dry</template>
+      <template #content
+        >Ship Shape is committed to leaving every engineering team we work with
+        better than we found it. Not only do we build robust, reliable software,
+        but we also train your staff along the way to understand, maintain, and
+        improve your product after our engagement ends.
+      </template>
+    </TwoColumnSection>
 
     <SingleQuote :testimonial="testimonial" />
 
@@ -95,11 +103,8 @@ const caseStudies = [
 ];
 
 const marketing = {
-  imgSrc: '/img/hero-images/mentoring.png',
-  imgHeight: '772',
-  h2: 'We’ll never leave you high and dry',
-  paragraph:
-    'Ship Shape is committed to leaving every engineering team we work with better than we found it. Not only do we build robust, reliable software, but we also train your staff along the way to understand, maintain, and improve your product after our engagement ends.'
+  src: '/img/hero-images/mentoring.png',
+  height: '772'
 };
 
 const specialtyBenefits = [

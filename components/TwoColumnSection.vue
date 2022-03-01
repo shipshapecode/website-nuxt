@@ -11,22 +11,19 @@
     >
       <div :class="isFlipped ? 'lg:order-last' : 'null'">
         <h2 class="text-4xl" data-aos="fade-left">
-          {{ content.h2 }}
+          <slot name="header" />
         </h2>
-
-        <slot name="content">
-          <p data-aos="fade-left">
-            {{ content.paragraph }}
-          </p>
-        </slot>
+        <div data-aos="fade-left">
+          <slot name="content" />
+        </div>
       </div>
       <div data-aos="fade-up">
         <nuxt-img
           alt=""
           class="h-auto m-auto max-w-2xl w-full"
           format="webp"
-          :height="content.imgHeight"
-          :src="content.imgSrc"
+          :height="image.height"
+          :src="image.src"
           width="1312"
         />
       </div>
@@ -41,7 +38,7 @@ export default {
       type: String,
       default: ''
     },
-    content: {
+    image: {
       type: Object,
       default: () => {}
     },
