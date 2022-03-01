@@ -2,7 +2,7 @@
   <article>
     <HeroBlock hero-classes="services waves blue-waves bg-blue-light !pb-20">
       <template #content>
-        <h1 itemprop="name" class="leading-tight text-5xl">
+        <h1 itemprop="name" class="leading-tight text-5xl lg:text-6xl">
           Software consultants who build it right the first time, every time
         </h1>
         <div>
@@ -26,7 +26,9 @@
 
     <section class="section bg-white flex flex-wrap justify-center !pt-32">
       <div>
-        <h3 class="py-12" data-aos="fade-left">High impact, low ego</h3>
+        <h2 class="py-12 text-4xl lg:text-5xl" data-aos="fade-left">
+          High impact, low ego
+        </h2>
         <!-- replace these divs with TwoColumnSection -->
         <div class="divide-[#D8E3E8] divide-y-2">
           <div
@@ -136,7 +138,7 @@
 
     <HeroBlock hero-classes="waves blue-waves bg-blue-light">
       <template #content>
-        <h2 itemprop="name" class="leading-tight text-5xl">
+        <h2 itemprop="name" class="leading-tight text-4xl lg:text-5xl">
           Ready to set sail?
         </h2>
         <div>

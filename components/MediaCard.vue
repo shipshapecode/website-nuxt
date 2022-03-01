@@ -5,7 +5,7 @@
       class="items-center grid grid-cols-1 pb-12 lg:gap-12 lg:grid-cols-9"
     >
       <div class="lg:col-span-5">
-        <h4 class="lg:text-xl lg:mb-4">
+        <h4 class="text-xl lg:mb-4">
           {{ details.title }}
         </h4>
         <p>

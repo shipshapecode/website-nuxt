@@ -22,7 +22,9 @@
           />
         </div>
         <div>
-          <h3 data-aos="fade-right">Our fleet of specialties</h3>
+          <h2 class="text-4xl lg:text-5xl" data-aos="fade-right">
+            Our fleet of specialties
+          </h2>
           <p data-aos="fade">
             Our senior-level software consultants ensure your applications are
             optimized for today and ready for the future.
@@ -30,6 +32,7 @@
         </div>
       </div>
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <!-- separate these into cards- turn svgs into headers -->
         <div
           class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
