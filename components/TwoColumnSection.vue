@@ -14,14 +14,15 @@
       "
     >
       <div
+        class="order-last"
         :class="{
-          'lg:order-last': isFlipped
+          'lg:order-none': !isFlipped
         }"
       >
-        <h2 class="text-4xl" data-aos="fade-left">
+        <h2 class="text-4xl" :data-aos="isFlipped ? 'fade-left' : 'fade-right'">
           <slot name="header" />
         </h2>
-        <div data-aos="fade-left">
+        <div :data-aos="isFlipped ? 'fade-left' : 'fade-right'">
           <slot name="content" />
         </div>
       </div>
