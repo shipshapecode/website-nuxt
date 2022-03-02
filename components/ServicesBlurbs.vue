@@ -12,9 +12,26 @@
         </template>
       </TwoColumnSection>
 
-      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <!-- separate these into cards- turn svgs into headers -->
-        <div
+        <ServiceCard
+          learn-more-link="/services/ember-consulting/"
+          case-study-link="/work/netflix/"
+        >
+          <template #header>
+            <inline-svg
+              class="h-auto w-20 nested-svg pb-6 lg:w-32 lg:pb-12"
+              src="/svgs/technologies/ember.svg"
+            />
+          </template>
+          <template #description>
+            One of the best frameworks for fast, reliable builds, especially
+            complex apps and dashboards. Ember’s opinionated structure lends
+            well to efficiency and organization.
+          </template>
+        </ServiceCard>
+
+        <!-- <div
           class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
           data-aos="fade-up"
           itemscope
@@ -42,7 +59,7 @@
               </nuxt-link>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div
           class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
@@ -203,7 +220,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   </section>
 </template>
@@ -213,6 +230,7 @@ const headerImage = { src: '/img/services/specialties.png', height: '814' };
 
 export default {
   speedkitComponents: {
+    ServiceCard: () => import('@/components/ServiceCard'),
     TwoColumnSection: () => import('@/components/TwoColumnSection')
   },
   data() {
