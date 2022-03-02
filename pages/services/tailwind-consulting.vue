@@ -96,7 +96,7 @@ const specialtyBenefits = [
     description: 'It matches mocks and designs with ease.'
   },
   {
-    imgSrc: '/svgs/icons/time.svg',
+    imgSrc: '/svgs/icons/speed.svg',
     description:
       'It automatically removes all unused CSS when building for production, which improves speed.'
   },
