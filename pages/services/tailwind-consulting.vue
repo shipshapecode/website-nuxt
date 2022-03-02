@@ -35,9 +35,9 @@
       <template #unboxed-text>
         At Ship Shape, we like Tailwind CSS so much that we even use it on our
         own products and passion projects, such as our
-        <a href="https://swach.io/"
-          >robust color management app called Swach.</a
-        >
+        <a class="hover:brightness-125 hover:text-red" href="https://swach.io/">
+          robust color management app called Swach.
+        </a>
         In addition to building Tailwind UIs, we also love training other teams
         on it to help sharpen their skills too.
       </template>

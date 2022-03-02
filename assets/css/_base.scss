@@ -27,9 +27,7 @@ $shevy: (
 }
 
 a {
-  @apply text-red no-underline;
-  transition-duration: 0.25s;
-  transition-property: background-color, color, fill;
+  @apply duration-200 text-red transition-all no-underline;
 
   &:active,
   &:visited {

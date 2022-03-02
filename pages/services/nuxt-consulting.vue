@@ -32,16 +32,20 @@
         >Nuxt works well for apps big and small thanks to its:</template
       >
       <template #unboxed-text>
-        At Ship Shape, we love Nuxt.js because it’s still an opinionated
-        framework (though not quite as opinionated as Ember.js), and it has
-        features that strip out unused code to make your app fast and
-        lightweight. You’ll enjoy its approachable syntax, easy-to-read read
-        templates, and more.
-        <br />
-        <br />
-        Whether you're building a brand new web app or elevating an existing
-        experience with the latest best practices, our first-class engineers can
-        refine or create a Nuxt.js app while training your team in the process.
+        <p>
+          At Ship Shape, we love Nuxt.js because it’s still an opinionated
+          framework (though not quite as opinionated as Ember.js), and it has
+          features that strip out unused code to make your app fast and
+          lightweight. You’ll enjoy its approachable syntax, easy-to-read read
+          templates, and more.
+        </p>
+
+        <p>
+          Whether you're building a brand new web app or elevating an existing
+          experience with the latest best practices, our first-class engineers
+          can refine or create a Nuxt.js app while training your team in the
+          process.
+        </p>
       </template>
       <template #boxed-text>
         Nuxt.js is an open-source framework used to build Vue.js web
