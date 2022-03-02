@@ -27,9 +27,7 @@ $shevy: (
 }
 
 a {
-  @apply text-red no-underline;
-  transition-duration: 0.25s;
-  transition-property: background-color, color, fill;
+  @apply duration-200 text-red transition-all no-underline;
 
   &:active,
   &:visited {
@@ -180,6 +178,23 @@ h6 {
   }
 }
 
+.cloud-native-waves {
+  &::after {
+    background-image: url(/svgs/waves/cloud-native-waves.svg);
+    background-size: 100vw;
+    bottom: -20px;
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 1910px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -70px;
+      height: 320px;
+    }
+  }
+}
+
 .ember-waves {
   &::after {
     background-image: url(/svgs/waves/ember-waves.svg);
@@ -208,8 +223,15 @@ h6 {
   @media only screen and (min-width: 2050px) {
     &::after {
       background-size: 101vw;
-      bottom: -90px;
+      bottom: -70px;
       height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 3008px) {
+    &::after {
+      bottom: -80px;
+      height: 450px;
     }
   }
 }
@@ -225,7 +247,45 @@ h6 {
   @media only screen and (min-width: 2050px) {
     &::after {
       background-size: 101vw;
-      bottom: -20px;
+      height: 300px;
+    }
+  }
+
+  @media only screen and (min-width: 3008px) {
+    &::after {
+      height: 330px;
+    }
+  }
+}
+
+.serverless-waves {
+  &::after {
+    background-image: url(/svgs/waves/serverless-waves.svg);
+    background-size: 1910px;
+    bottom: -20px;
+    height: 250px;
+  }
+
+  @media only screen and (min-width: 1910px) {
+    &::after {
+      background-size: 101vw;
+      bottom: -50px;
+      height: 350px;
+    }
+  }
+}
+
+.tailwind-waves {
+  &::after {
+    background-image: url(/svgs/waves/tailwind-waves.svg);
+    background-size: 2050px;
+    bottom: -20px;
+    height: 200px;
+  }
+
+  @media only screen and (min-width: 2050px) {
+    &::after {
+      background-size: 101vw;
       height: 300px;
     }
   }
