@@ -2,13 +2,12 @@
   <article itemscope itemtype="http://schema.org/Service">
     <HeroBlock hero-classes="ember-consulting waves ember-waves !pb-48 !pt-20">
       <template #content>
-        <header>
-          <h1 itemprop="name" class="text-5xl leading-tight">
-            Build fast, reliable apps with expert Ember.js development,
-            consulting, and training
-          </h1>
-        </header>
-        <div>
+        <h1 itemprop="name" class="text-5xl leading-tight">
+          Build fast, reliable apps with expert Ember.js development,
+          consulting, and training
+        </h1>
+
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let's get started
           </nuxt-link>

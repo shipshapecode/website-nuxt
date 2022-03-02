@@ -1,14 +1,15 @@
 <template>
   <article itemscope itemtype="http://schema.org/Service">
     <HeroBlock
-      hero-classes="next-consulting waves cloud-native-waves !pb-48 !pt-20"
+      hero-classes="next-consulting waves cloud-native-waves !pb-20 !pt-20 lg:!pb-52"
     >
       <template #content>
-        <div class="pb-24 lg:pb-0">
-          <h1 itemprop="name" class="leading-tight text-5xl">
-            Launch and scale faster and more securely with cloud-native
-            applications
-          </h1>
+        <h1 itemprop="name" class="leading-tight text-5xl">
+          Launch and scale faster and more securely with cloud-native
+          applications
+        </h1>
+
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let’s get started
           </nuxt-link>
@@ -18,9 +19,9 @@
       <template #icon>
         <nuxt-img
           alt=""
-          class="h-auto m-auto max-w-2xl w-full lg:pb-32"
+          class="h-auto m-auto max-w-2xl w-full"
           format="webp"
-          height="1030"
+          height="1124"
           src="/img/hero-images/cloud-native-consulting.png"
           width="1344"
         />

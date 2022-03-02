@@ -8,7 +8,7 @@
           Create a Nuxt.js app that's universal — without all the hassle
         </h1>
 
-        <div>
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let's get started
           </nuxt-link>

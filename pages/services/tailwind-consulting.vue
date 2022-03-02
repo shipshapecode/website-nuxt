@@ -1,13 +1,14 @@
 <template>
   <article itemscope itemtype="http://schema.org/Service">
     <HeroBlock
-      hero-classes="next-consulting waves tailwind-waves !pb-48 !pt-20"
+      hero-classes="next-consulting waves tailwind-waves !pb-48 !pt-20 lg:!pb-52"
     >
       <template #content>
-        <div class="pb-24 xl:pb-0">
-          <h1 itemprop="name" class="leading-tight text-5xl">
-            Customize your app quickly with the help of our Tailwind CSS experts
-          </h1>
+        <h1 itemprop="name" class="leading-tight text-5xl">
+          Customize your app quickly with the help of our Tailwind CSS experts
+        </h1>
+
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let’s get started
           </nuxt-link>
@@ -16,9 +17,9 @@
 
       <template #icon>
         <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full lg:pb-32"
+          class="h-auto m-auto max-w-2xl w-full"
           format="webp"
-          height="1030"
+          height="936"
           src="/img/hero-images/tailwind-consulting.png"
           width="1344"
           alt=""

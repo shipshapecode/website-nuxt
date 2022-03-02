@@ -7,7 +7,8 @@
         <h1 itemprop="name" class="leading-tight text-5xl">
           Boost performance and easily make the leap from React to Next.js
         </h1>
-        <div>
+
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let’s get started
           </nuxt-link>
