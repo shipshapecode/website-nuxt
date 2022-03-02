@@ -19,8 +19,12 @@
           'lg:order-none': !isFlipped
         }"
       >
-        <h2 class="text-4xl" :data-aos="isFlipped ? 'fade-left' : 'fade-right'">
-          <slot name="header" />
+        <h2
+          v-if="header"
+          class="text-4xl"
+          :data-aos="isFlipped ? 'fade-left' : 'fade-right'"
+        >
+          {{ header }}
         </h2>
         <div :data-aos="isFlipped ? 'fade-left' : 'fade-right'">
           <slot name="content" />
@@ -50,6 +54,10 @@ export default {
     image: {
       type: Object,
       default: () => {}
+    },
+    header: {
+      type: String,
+      default: ''
     },
     isFlipped: {
       type: Boolean,
