@@ -52,8 +52,7 @@
     </AllAboutSpecialty>
 
     <TwoColumnSection
-      data-aos="fade-up"
-      hero-classes="mt-20"
+      class-string="mt-20"
       :image="marketing"
       :is-flipped="true"
     >
@@ -68,7 +67,7 @@
 
     <!-- <SingleQuote :testimonial="testimonial" /> -->
 
-    <TwoColumnSection data-aos="fade-up" :image="community">
+    <TwoColumnSection :image="community">
       <template #header>We ❤️ the Developer Community</template>
       <template #content>
         We’re a team of makers who are passionate about improving software

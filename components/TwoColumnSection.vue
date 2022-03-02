@@ -1,5 +1,9 @@
 <template>
-  <section class="section flex flex-wrap justify-center" :class="heroClasses">
+  <section
+    class="section flex flex-wrap justify-center"
+    :class="classString"
+    data-aos="fade-up"
+  >
     <div
       class="
         section-content
@@ -9,7 +13,11 @@
         lg:gap-32 lg:grid-cols-2
       "
     >
-      <div :class="isFlipped ? 'lg:order-last' : 'null'">
+      <div
+        :class="{
+          'lg:order-last': isFlipped
+        }"
+      >
         <h2 class="text-4xl" data-aos="fade-left">
           <slot name="header" />
         </h2>
@@ -34,7 +42,7 @@
 <script>
 export default {
   props: {
-    heroClasses: {
+    classString: {
       type: String,
       default: ''
     },

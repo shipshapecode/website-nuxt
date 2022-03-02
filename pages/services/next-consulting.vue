@@ -53,8 +53,7 @@
     <SpecialtyInAction specialty="Next.js" :case-studies="caseStudies" />
 
     <TwoColumnSection
-      data-aos="fade-up"
-      hero-classes="mt-20"
+      class-string="mt-20"
       :image="marketing"
       :is-flipped="true"
     >

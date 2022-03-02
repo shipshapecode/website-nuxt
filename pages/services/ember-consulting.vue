@@ -54,8 +54,7 @@
     <SpecialtyInAction :case-studies="caseStudies" specialty="Ember.js" />
 
     <TwoColumnSection
-      data-aos="fade-up"
-      hero-classes="mt-20"
+      class-string="mt-20"
       :image="marketing"
       :is-flipped="true"
     >

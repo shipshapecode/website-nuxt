@@ -52,8 +52,7 @@
     </AllAboutSpecialty>
 
     <TwoColumnSection
-      data-aos="fade-up"
-      hero-classes="mt-20"
+      class-string="mt-20"
       :image="marketing"
       :is-flipped="true"
     >
@@ -68,7 +67,7 @@
 
     <SingleQuote :testimonial="testimonial" />
 
-    <TwoColumnSection data-aos="fade-up" :image="community">
+    <TwoColumnSection :image="community">
       <template #header> We ❤️ the Nuxt.js Community </template>
       <template #content>
         <h3 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h3>

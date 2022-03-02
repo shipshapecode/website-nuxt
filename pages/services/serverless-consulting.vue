@@ -52,8 +52,7 @@
     </AllAboutSpecialty>
 
     <TwoColumnSection
-      data-aos="fade-up"
-      hero-classes="mt-20"
+      class-string="mt-20"
       :image="marketing"
       :is-flipped="true"
     >
@@ -68,8 +67,8 @@
 
     <!-- <SingleQuote :testimonial="testimonial" /> -->
 
-    <TwoColumnSection data-aos="fade-up" :image="community">
-      <template #header>We ❤️ the Developer Community</template>
+    <TwoColumnSection :image="community">
+      <template #header>We ❤️ the Serverless Community</template>
       <template #content>
         We’re a team of makers who are passionate about improving software
         products and the people who create them.
