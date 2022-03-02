@@ -91,7 +91,7 @@ const caseStudies = [
       'Enigma hirer dashboard with a pop-up notification introducing the page',
     imgSrc: '/img/work/enigma/enigma-hirer-dashboard.png',
     logoSrc: '/svgs/clients/enigma.svg',
-    text: 'Enigma is a platform designed to help cybersecurity teams make faster hiring decisions and find...',
+    text: 'Built MVP application that was successfully launched and established for immediate use among initial client base',
     linkName: 'enigma'
   }
 ];
