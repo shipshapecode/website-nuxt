@@ -85,19 +85,22 @@ const caseStudies = [
       'An overview of NIST scores, broken down by category and visualized in a radar graph.',
     imgSrc: '/img/work/expel/nist-overview.png',
     logoSrc: '/svgs/clients/expel.svg',
-    text: 'Expel offers 24x7 security monitoring and response for cloud, hybrid and on-premises environments...'
+    text: 'Centralized NIST score tracking and improved performance with a modernized app',
+    linkName: 'expel'
   },
   {
     imgAlt: '',
     imgSrc: '/svgs/data-graphic.svg',
     logoSrc: '/svgs/clients/netflix.svg',
-    text: "Netflix is the world's leading internet entertainment service with more than 130 million memberships..."
+    text: 'Increased efficiency and data granularity with enhanced finance tools',
+    linkName: 'netflix'
   },
   {
     imgAlt: 'Jebbit Experience Builder Legacy',
     imgSrc: '/img/work/jebbit/jebbit-case-study-screenshot.png',
     logoSrc: '/svgs/clients/jebbit.svg',
-    text: 'Jebbit is an enterprise software platform that enables a future of total data transparency...'
+    text: 'Improved the user experience to support all customers and close a major new client',
+    linkName: 'jebbit'
   }
 ];
 

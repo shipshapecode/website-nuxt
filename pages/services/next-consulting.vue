@@ -90,7 +90,8 @@ const caseStudies = [
       'Enigma hirer dashboard with a pop-up notification introducing the page',
     imgSrc: '/img/work/enigma/enigma-hirer-dashboard.png',
     logoSrc: '/svgs/clients/enigma.svg',
-    text: 'Enigma is a platform designed to help cybersecurity teams make faster hiring decisions and find...'
+    text: 'Enigma is a platform designed to help cybersecurity teams make faster hiring decisions and find...',
+    linkName: 'enigma'
   }
 ];
 
@@ -145,7 +146,7 @@ export default {
   head() {
     const title = 'Next.js Software Consultants & Developers';
     const description =
-      'Wondering,"What is Next js?" or optimizing your Next application? See how Ship Shape\'s Next.js specialists can help build a universal app without the hassle.';
+      'Wondering, "What is Next js?" or optimizing your Next application? See how Ship Shape\'s Next.js specialists can help build a universal app without the hassle.';
     const url = 'https://shipshape.io/services/next-consulting/';
 
     return generateMeta(title, description, url);
