@@ -1,36 +1,17 @@
 <template>
   <section class="section bg-blue-light flex flex-wrap justify-center">
     <div class="section-content">
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          py-8
-          items-center
-          lg:gap-32 lg:grid-cols-2 lg:py-16
-        "
+      <TwoColumnSection
+        :image="headerImage"
+        header="Our fleet of specialties"
+        class-string="lg-header"
       >
-        <div class="lg:order-last" data-aos="fade-up">
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="814"
-            src="/img/services/specialties.png"
-            width="1312"
-            alt=""
-          />
-        </div>
-        <div>
-          <h2 class="text-4xl lg:text-5xl" data-aos="fade-right">
-            Our fleet of specialties
-          </h2>
-          <p data-aos="fade">
-            Our senior-level software consultants ensure your applications are
-            optimized for today and ready for the future.
-          </p>
-        </div>
-      </div>
+        <template #content>
+          Our senior-level software consultants ensure your applications are
+          optimized for today and ready for the future.
+        </template>
+      </TwoColumnSection>
+
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
         <!-- separate these into cards- turn svgs into headers -->
         <div
@@ -100,6 +81,7 @@
           itemtype="http://schema.org/Service"
         >
           <div class="flex flex-col max-w-2xl w-full">
+            <!-- svg classes slightly different - dynamic class -->
             <inline-svg
               class="h-auto w-20 nested-svg pb-6 lg:w-32 lg:pb-12"
               src="/svgs/technologies/next.svg"
@@ -226,9 +208,28 @@
   </section>
 </template>
 
+<script>
+const headerImage = { src: '/img/services/specialties.png', height: '814' };
+
+export default {
+  speedkitComponents: {
+    TwoColumnSection: () => import('@/components/TwoColumnSection')
+  },
+  data() {
+    return { headerImage };
+  }
+};
+</script>
+
 <style lang="scss">
 .nested-svg g,
 .nested-svg path {
   fill: #1b3b5d;
+}
+
+.lg-header {
+  h2 {
+    @apply lg:text-5xl;
+  }
 }
 </style>
