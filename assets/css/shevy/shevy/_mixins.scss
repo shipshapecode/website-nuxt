@@ -27,8 +27,7 @@
     // Line Height Calculation
     @if $font-size <= $line-height-spacing {
       $line-height: $line-height-spacing;
-    }
-    @else {
+    } @else {
       $increment: 1.5;
 
       // Use half increments, while technically breaking the baseline, they are more aesthetically pleasing and still mathematically sound
@@ -37,9 +36,11 @@
       }
 
       @if $font-unit-ems-bool {
-        $line-height: math.div(line-height-spacing($increment, $settings), $font-size);
-      }
-      @else {
+        $line-height: math.div(
+          line-height-spacing($increment, $settings),
+          $font-size
+        );
+      } @else {
         $line-height: line-height-spacing($increment, $settings);
       }
     }
@@ -47,9 +48,9 @@
     // Margin Bottom Calculation
     @if $margin-bottom-bool {
       @if $font-unit-ems-bool {
-        $margin-bottom: math.div($base-spacing, $font-size) * $base-unit-multiplier;
-      }
-      @else {
+        $margin-bottom: math.div($base-spacing, $font-size) *
+          $base-unit-multiplier;
+      } @else {
         $margin-bottom: $base-spacing;
       }
     }
@@ -103,9 +104,9 @@
   // Margin Bottom
   @if $margin-bottom-bool {
     @if $font-unit-ems-bool {
-      $margin-bottom: math.div($base-spacing, $base-font-size) * $base-unit-multiplier;
-    }
-    @else {
+      $margin-bottom: math.div($base-spacing, $base-font-size) *
+        $base-unit-multiplier;
+    } @else {
       $margin-bottom: $base-spacing;
     }
   }
@@ -137,3 +138,45 @@
 
   $shevy: $old !global;
 }
+
+/// 
+/// WIP: Wave background variations
+///
+// @mixin setWaveStyle($svgs) {
+//   @each $svg in $svgs {
+//     .#{$svg} {
+//       &::after {
+//         background-image: url(/svgs/waves/#{$svg}.svg);
+//         background-size: 100vw;
+//         bottom: -20px;
+//         height: 165px;
+//       }
+
+//       @media only screen and (min-width: 2050px) {
+//         &::after {
+//           background-size: 101vw;
+//           bottom: -70px;
+//           height: 300px;
+//         }
+//       }
+
+//       @media only screen and (min-width: 3008px) {
+//         &::after {
+//           bottom: -80px;
+//           height: 450px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @include setWaveStyle(
+//   (
+//     // 'cloud-native-waves',
+//     'ember-waves',
+//     'next-waves',
+//     'nuxt-waves',
+//     // 'serverless-waves',
+//     // 'tailwind-waves'
+//   )
+// );

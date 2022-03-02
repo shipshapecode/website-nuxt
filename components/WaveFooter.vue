@@ -5,12 +5,11 @@
         <div class="flex justify-center lg:justify-start w-full">
           <inline-svg class="footer-logo h-20 w-20" src="/svgs/logo.svg" />
         </div>
-
         <nav
           class="grid grid-cols-2 max-w-5xl pt-12 pb-12 w-full lg:grid-cols-4"
         >
           <div class="p-8 lg:p-4">
-            <h4 class="text-white text-xl md:text-2xl lg:text-3xl">Services</h4>
+            <h2 class="text-white text-xl md:text-2xl lg:text-3xl">Services</h2>
 
             <nuxt-link
               to="/services/app-development/"
@@ -35,9 +34,9 @@
           </div>
 
           <div class="p-8 lg:p-4">
-            <h4 class="text-white text-xl md:text-2xl lg:text-3xl">
+            <h2 class="text-white text-xl md:text-2xl lg:text-3xl">
               Specialties
-            </h4>
+            </h2>
 
             <nuxt-link
               to="/services/app-tours/"
@@ -69,7 +68,7 @@
           </div>
 
           <div class="p-8 lg:p-4">
-            <h4 class="text-white text-xl md:text-2xl lg:text-3xl">Company</h4>
+            <h2 class="text-white text-xl md:text-2xl lg:text-3xl">Company</h2>
 
             <nuxt-link to="/about/" class="block leading-6 py-2 lg:py-1">
               About
@@ -92,7 +91,7 @@
           </div>
 
           <div class="p-8 w-full lg:p-4">
-            <h4 class="text-white text-xl md:text-2xl lg:text-3xl">Connect</h4>
+            <h2 class="text-white text-xl md:text-2xl lg:text-3xl">Connect</h2>
 
             <nuxt-link to="/contact/" class="block leading-6 py-2 lg:py-1">
               Contact

@@ -1,12 +1,13 @@
 <template>
-  <div itemscope itemtype="http://schema.org/Service">
+  <article itemscope itemtype="http://schema.org/Service">
     <HeroBlock hero-classes="ember-consulting waves ember-waves !pb-48 !pt-20">
       <template #content>
         <h1 itemprop="name" class="text-5xl leading-tight">
           Build fast, reliable apps with expert Ember.js development,
           consulting, and training
         </h1>
-        <div>
+
+        <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
           <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let's get started
           </nuxt-link>
@@ -24,326 +25,119 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-navy flex flex-wrap justify-center">
-      <div class="section-content" data-aos="fade-up">
-        <h2 class="text-white text-3xl" data-aos="fade-up">
-          All about Ember.js
-        </h2>
-        <div
-          class="
-            grid
-            space-y-12
-            pt-10
-            pb-32
-            lg:pt-4 lg:grid-cols-8 lg:gap-20 lg:space-y-0
-          "
-        >
-          <div
-            class="
-              bg-blue-light
-              flex
-              items-center
-              p-12
-              rounded-md
-              text-navy
-              lg:col-span-3
-            "
+    <AllAboutSpecialty :benefits="specialtyBenefits" :flip-paragraphs="true">
+      <template #h2> All about Ember.js </template>
+      <template #h3>
+        Ember is great for large companies because of its:
+      </template>
+
+      <template #unboxed-text>
+        <p>
+          For these reasons, we often recommend it for
+          <nuxt-link
+            class="hover:brightness-125 hover:text-red"
+            to="/work/expel"
           >
-            <p class="mb-0">
-              Ember.js is an open source JavaScript web framework. We love its
-              strong opinions, which help engineers work faster and keep their
-              work organized.
-            </p>
-          </div>
+            enterprise app development </nuxt-link
+          >, in-depth apps and dashboards, responsive web applications, and
+          other projects for large firms.
+        </p>
 
-          <p class="text-white lg:col-span-5 lg:content-center lg:p-8">
-            For these reasons, we often recommend it for
-            <nuxt-link to="/work/expel">enterprise app development</nuxt-link>,
-            in-depth apps and dashboards, responsive web applications, and other
-            projects for large firms.
-            <br />
-            <br />
-            If your team is working on an Ember.js app or considering a
-            greenfield project where this framework could be a good fit, turn to
-            our top-tier Ember experts for a full range of support, from
-            consulting to development to team training.
-          </p>
-        </div>
-        <h3 class="text-white text-2xl" data-aos="fade">
-          Ember is great for large companies because of its:
-        </h3>
-        <div
-          class="
-            divide-grey-light divide-y
-            grid grid-cols-1
-            my-20
-            text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
-          "
-        >
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
-            <nuxt-img
-              class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/icons/modular.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">Clear Organization</p>
-          </div>
+        <p>
+          If your team is working on an Ember.js app or considering a greenfield
+          project where this framework could be a good fit, turn to our top-tier
+          Ember experts for a full range of support, from consulting to
+          development to team training.
+        </p>
+      </template>
+      <template #boxed-text>
+        Ember.js is an open-source JavaScript web framework. We love its strong
+        opinions, which help engineers work faster and keep their work
+        organized.
+      </template>
+    </AllAboutSpecialty>
 
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/chart.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">
-              Scalable UI architecture
-            </p>
-          </div>
+    <SpecialtyInAction :case-studies="caseStudies" specialty="Ember.js" />
 
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/retainer.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">Simple updates</p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="600"
-          >
-            <nuxt-img
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/sail.svg"
-              alt=""
-            />
-            <p class="mb-12 text-center w-24 lg:m-0">Commitment to stability</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
-      <div class="section-content">
-        <h2 class="pb-8 text-4xl">Ember.js in action</h2>
-        <div>
-          <div
-            class="
-              space-y-24
-              lg:grid lg:grid-flow-col lg:space-y-0 lg:space-x-6
-            "
-          >
-            <div class="bg-blue-light rounded-b-lg" data-aos="flip-down">
-              <div
-                class="
-                  bg-red
-                  flex
-                  justify-center
-                  pt-8
-                  px-8
-                  relative
-                  rounded-t-lg
-                  lg:pt-12 lg:px-12
-                "
-              >
-                <div class="bg-white h-48 rounded-t-lg w-full">
-                  <nuxt-img
-                    class="
-                      object-cover object-top
-                      h-full
-                      max-w-full
-                      rounded-t-lg
-                      w-full
-                    "
-                    src="/img/work/expel/nist-overview.png"
-                    alt="An overview of NIST scores, broken down by category and visualized in a radar graph."
-                  />
-                </div>
-              </div>
-
-              <div class="p-8 relative lg:p-12">
-                <inline-svg
-                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
-                  src="/svgs/clients/expel.svg"
-                />
-                <p class="mb-16">
-                  Expel offers 24x7 security monitoring and response for cloud,
-                  hybrid and on-premises environments...
-                </p>
-                <nuxt-link class="learn-more" to="/work/expel/">
-                  Dive deeper
-                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                </nuxt-link>
-              </div>
-            </div>
-
-            <div
-              class="bg-blue-light relative rounded-b-lg"
-              data-aos="flip-down"
-              data-aos-delay="200"
-            >
-              <div
-                class="
-                  bg-red
-                  flex
-                  justify-center
-                  pt-8
-                  px-8
-                  relative
-                  rounded-t-lg
-                  lg:pt-12 lg:px-12
-                "
-              >
-                <div class="bg-white h-48 rounded-t-lg w-full">
-                  <nuxt-img
-                    class="object-top h-full max-w-full rounded-t-lg w-full"
-                    src="/svgs/data-graphic.svg"
-                  />
-                </div>
-              </div>
-
-              <div class="relative p-8 lg:p-12">
-                <inline-svg
-                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
-                  src="/svgs/clients/netflix.svg"
-                />
-                <p class="mb-16">
-                  Netflix is the world's leading internet entertainment service
-                  with more than 130 million memberships in over 190
-                  countries...
-                </p>
-                <nuxt-link class="learn-more" to="/work/netflix/">
-                  Dive deeper
-                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                </nuxt-link>
-              </div>
-            </div>
-
-            <div
-              class="bg-blue-light relative rounded-b-lg"
-              data-aos="flip-down"
-              data-aos-delay="400"
-            >
-              <div
-                class="
-                  bg-red
-                  flex
-                  justify-center
-                  pt-8
-                  px-8
-                  relative
-                  rounded-t-lg
-                  lg:pt-12 lg:px-12
-                "
-              >
-                <div class="bg-jebbit-green h-48 rounded-t-lg w-full">
-                  <nuxt-img
-                    class="
-                      object-cover object-top
-                      h-full
-                      max-w-full
-                      rounded-t-lg
-                      w-full
-                    "
-                    src="/img/work/jebbit/jebbit-case-study-screenshot.png"
-                    alt="Jebbit Experience Builder Legacy"
-                  />
-                </div>
-              </div>
-              <div class="p-8 relative lg:p-12">
-                <inline-svg
-                  class="logo-navy h-8 max-w-full mb-8 self-start w-auto"
-                  src="/svgs/clients/jebbit.svg"
-                />
-                <p class="mb-16">
-                  Jebbit is an enterprise software platform that enables a
-                  future of total data transparency between brands and...
-                </p>
-                <nuxt-link class="learn-more" to="/work/jebbit/">
-                  Dive deeper
-                  <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-                </nuxt-link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section flex flex-wrap justify-center" data-aos="fade-down">
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-      >
-        <div>
-          <nuxt-img
-            class="h-auto m-auto max-w-2xl w-full"
-            format="webp"
-            height="792"
-            src="/img/hero-images/mentoring.png"
-            width="1312"
-            alt=""
-          />
-        </div>
-        <div>
-          <h3>We’ll never leave you high and dry</h3>
-          <p>
-            Ship Shape is committed to leaving every engineering team we work
-            with better than we found it. Not only do we build robust, reliable
-            software, but we also train your staff along the way to understand,
-            maintain, and improve your product after our engagement ends.
-          </p>
-        </div>
-      </div>
-    </div>
+    <TwoColumnSection
+      class-string="mt-20"
+      :image="marketing"
+      :is-flipped="true"
+    >
+      <template #header>We’ll never leave you high and dry</template>
+      <template #content
+        >Ship Shape is committed to leaving every engineering team we work with
+        better than we found it. Not only do we build robust, reliable software,
+        but we also train your staff along the way to understand, maintain, and
+        improve your product after our engagement ends.
+      </template>
+    </TwoColumnSection>
 
     <SingleQuote :testimonial="testimonial" />
 
     <CommunityInvolvement />
 
     <WaveMoreLinks class="md:px-20" />
-  </div>
+  </article>
 </template>
 
 <script>
 import { generateMeta } from '~/utils/meta';
+import { expelTestimonial as testimonial } from '~/content/testimonials/index.js';
 
-const testimonial = {
-  name: 'Roger Studner',
-  title: 'Chief Architect at Expel',
-  imgSrc: 'roger',
-  svgSrc: '/svgs/clients/expel-white.svg',
-  quote: `Ship Shape was a great aid to us because they were the voice of Ember best practices to keep our code base current, and they were able to deliver on critical features on our roadmap that we did not have the bandwidth to complete on time. I would absolutely recommend Ship Shape to any other business that is looking for an incredibly skilled partner to work closely with their teams to produce and deliver the highest value.`
+const caseStudies = [
+  {
+    imgAlt:
+      'An overview of NIST scores, broken down by category and visualized in a radar graph.',
+    imgSrc: '/img/work/expel/nist-overview.png',
+    logoSrc: '/svgs/clients/expel.svg',
+    text: 'Centralized NIST score tracking and improved performance with a modernized app',
+    linkName: 'expel'
+  },
+  {
+    imgAlt: '',
+    imgSrc: '/svgs/data-graphic.svg',
+    logoSrc: '/svgs/clients/netflix.svg',
+    text: 'Increased efficiency and data granularity with enhanced finance tools',
+    linkName: 'netflix'
+  },
+  {
+    imgAlt: 'Jebbit Experience Builder Legacy',
+    imgSrc: '/img/work/jebbit/jebbit-case-study-screenshot.png',
+    logoSrc: '/svgs/clients/jebbit.svg',
+    text: 'Improved the user experience to support all customers and close a major new client',
+    linkName: 'jebbit'
+  }
+];
+
+const marketing = {
+  src: '/img/hero-images/mentoring.png',
+  height: '772'
 };
+
+const specialtyBenefits = [
+  { imgSrc: '/svgs/icons/modular.svg', description: 'Clear Organization' },
+  {
+    imgSrc: '/svgs/icons/chart.svg',
+    description: 'Scalable UI architecture'
+  },
+  { imgSrc: '/svgs/icons/retainer.svg', description: 'Simple updates' },
+  { imgSrc: '/svgs/icons/sail.svg', description: 'Commitment to stability' }
+];
 
 export default {
   speedkitComponents: {
+    AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
+    SpecialtyInAction: () => import('@/components/SpecialtyInAction'),
     CommunityInvolvement: () => import('@/components/CommunityInvolvement'),
     HeroBlock: () => import('@/components/HeroBlock'),
+    TwoColumnSection: () => import('@/components/TwoColumnSection'),
     SingleQuote: () => import('@/components/SingleQuote'),
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
-
   data() {
-    return { testimonial };
+    return { caseStudies, marketing, testimonial, specialtyBenefits };
   },
-
   head() {
     const title = 'Ember.js Enterprise App Development';
     const description =
