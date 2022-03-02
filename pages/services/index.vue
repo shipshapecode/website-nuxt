@@ -29,55 +29,17 @@
         <h2 class="py-12 text-4xl lg:text-5xl" data-aos="fade-left">
           High impact, low ego
         </h2>
-        <!-- replace these divs with TwoColumnSection -->
         <div class="divide-[#D8E3E8] divide-y-2">
-          <div
-            class="
-              section-content
-              grid grid-cols-1
-              gap-8
-              items-center
-              pb-12
-              lg:gap-32 lg:grid-cols-2 lg:pb-20
-            "
-            data-aos="fade-left"
-          >
-            <nuxt-img
-              class="h-auto m-auto max-w-2xl w-full"
-              format="webp"
-              height="1034"
-              src="/img/services/design.png"
-              width="1312"
-              alt=""
-            />
-            <p>
+          <TwoColumnSection :image="textSection[0]" :is-flipped="true">
+            <template #content>
               Sailing the open seas to a new destination requires a sturdy
               vessel and a competent crew. Ship Shape’s app development company
               is full of top-tier engineers who tackle your toughest technical
               challenges every step of the way.
-            </p>
-          </div>
-          <div
-            class="
-              section-content
-              grid grid-cols-1
-              gap-8
-              items-center
-              py-16
-              lg:gap-32 lg:grid-cols-2 lg:py-24
-            "
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              class="h-auto m-auto max-w-2xl w-full lg:order-last"
-              format="webp"
-              height="1034"
-              src="/img/services/build.png"
-              width="1312"
-              alt=""
-            />
-            <p>
+            </template>
+          </TwoColumnSection>
+          <TwoColumnSection :image="textSection[1]">
+            <template #content>
               Our software engineers specialize in
               <nuxt-link to="/services/ember-consulting/">Ember.js</nuxt-link>,
               <nuxt-link to="/services/nuxt-consulting/">Nuxt.js</nuxt-link>,
@@ -94,35 +56,16 @@
               product. Plus, we upskill your team as we work together so they
               can sustain and improve your products long after our engagement
               ends.
-            </p>
-          </div>
-          <div
-            class="
-              section-content
-              grid grid-cols-1
-              gap-8
-              items-center
-              py-16
-              lg:gap-32 lg:grid-cols-2 lg-py-24
-            "
-            data-aos="fade-left"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              class="h-auto m-auto max-w-2xl w-full"
-              format="webp"
-              height="950"
-              src="/img/hero-images/open-source.png"
-              width="1312"
-              alt=""
-            />
-            <p>
+            </template>
+          </TwoColumnSection>
+          <TwoColumnSection :image="textSection[2]" :is-flipped="true">
+            <template #content>
               From the future of fintech, to
               <nuxt-link to="/work/enigma">cybersecurity</nuxt-link>, and more,
               we help a wide variety of industries level-up their products and
               their people.
-            </p>
-          </div>
+            </template>
+          </TwoColumnSection>
         </div>
       </div>
     </section>
@@ -169,27 +112,21 @@
 <script>
 import truncate from 'lodash.truncate';
 import { generateMeta } from '~/utils/meta';
+import { enigmaTestimonial as testimonial } from '~/content/testimonials/index.js';
 
-const testimonial = {
-  name: 'Harley Sugarman',
-  title: 'Founder, CEO at Enigma',
-  imgSrc: 'harley',
-  svgSrc: '/svgs/clients/enigma-white.svg',
-  quote: `I loved working with Ship Shape.
-          They helped our small team build a product from the ground up
-          and were strong partners every step of the way. Their domain expertise
-          in Next.js and React helped lay the foundation for a scalable codebase,
-          and they were great at ensuring we adhered to engineering best practices.
-          Every member of the team was a pleasure to work with and (best of all)
-          we ended up launching our MVP on schedule!`
-};
+const textSection = [
+  { src: '/img/services/design.png', height: '1034' },
+  { src: '/img/services/build.png', height: '1034' },
+  { src: '/img/hero-images/open-source.png', height: '1034' }
+];
 
 export default {
   speedkitComponents: {
     HeroBlock: () => import('@/components/HeroBlock'),
     LatestInsights: () => import('@/components/LatestInsights'),
     ServicesBlurbs: () => import('@/components/ServicesBlurbs'),
-    SingleQuote: () => import('@/components/SingleQuote')
+    SingleQuote: () => import('@/components/SingleQuote'),
+    TwoColumnSection: () => import('@/components/TwoColumnSection')
   },
 
   async asyncData({ $content }) {
@@ -220,7 +157,7 @@ export default {
   },
 
   data() {
-    return { testimonial };
+    return { testimonial, textSection };
   },
 
   head() {
