@@ -20,8 +20,9 @@
           media-type="podcast"
           img-src="/img/hero-images/www.png"
           :details="latestPodcastEpisode"
+          data-aos="fade-left"
         />
-        <MediaCard :details="latestBlogPost" />
+        <MediaCard :details="latestBlogPost" data-aos="fade-right" />
       </div>
     </div>
   </section>
