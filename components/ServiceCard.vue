@@ -13,11 +13,11 @@
         <slot name="description" />
       </p>
       <div class="flex flex-col lg:flex-row lg:justify-around">
-        <nuxt-link class="learn-more" to="/services/ember-consulting/">
+        <nuxt-link class="learn-more" :to="learnMoreLink">
           Learn more
           <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
         </nuxt-link>
-        <nuxt-link class="learn-more" to="/work/netflix/">
+        <nuxt-link class="learn-more" :to="caseStudyLink">
           See it in action
           <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
         </nuxt-link>
