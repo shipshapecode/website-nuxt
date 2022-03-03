@@ -115,8 +115,8 @@ import { generateMeta } from '~/utils/meta';
 import { enigmaTestimonial as testimonial } from '~/content/testimonials/index.js';
 
 const textSection = [
-  { src: '/img/services/design.png', height: '1034' },
-  { src: '/img/services/build.png', height: '1034' },
+  { src: '/img/hero-images/design.png', height: '1034' },
+  { src: '/img/hero-images/build.png', height: '1034' },
   { src: '/img/hero-images/open-source.png', height: '1034' }
 ];
 
