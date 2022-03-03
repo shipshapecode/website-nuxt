@@ -59,10 +59,10 @@
 
     <TwoColumnSection
       class-string="mt-20"
+      header="Your co-pilots in the storm"
       :image="marketing"
       :is-flipped="true"
     >
-      <template #header>Your co-pilots in the storm</template>
       <template #content>
         Ship Shape is committed to leaving every engineering team we work with
         better than we found it. Not only do we build robust, reliable software,
@@ -73,8 +73,10 @@
 
     <!-- <SingleQuote :testimonial="testimonial" /> -->
 
-    <TwoColumnSection :image="community">
-      <template #header>We ❤️ the Serverless Community</template>
+    <TwoColumnSection
+      header="We ❤️ the Serverless Community"
+      :image="community"
+    >
       <template #content>
         We’re a team of makers who are passionate about improving software
         products and the people who create them.
