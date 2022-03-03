@@ -67,7 +67,7 @@ window `load` event before starting the animation. This would wait for all depen
 images) to be loaded before my animation started. While this would delay the animation further, it would happen while
 the user was waiting for the page to load anyway and would guarantee a smooth animation.
 
-To accomplish this I beefed up the `useEffect` with an `window.addEventListener` and a simple `onPageLoad` function to
+To accomplish this I beefed up the `useEffect` with a `window.addEventListener` and a simple `onPageLoad` function to
 set the animation state. Because `useEffect` is called after component render, we need to double-check the window `load`
 event has not already fired. To do this I added an if statement before the event listener, checking the readyState of
 the document. I also added a return function for the `useEffect`, cleaning up the even listener if the component was
