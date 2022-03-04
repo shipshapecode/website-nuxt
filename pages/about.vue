@@ -57,45 +57,43 @@
       </div>
     </section>
 
-    <div class="section bg-white flex flex-wrap justify-center">
-      <div
-        class="
-          section-content
-          gap-20
-          grid grid-cols-1
-          items-center
-          lg:gap-32 lg:grid-cols-2
-        "
-        data-aos="fade-right"
-        data-aos-delay="400"
-      >
-        <div>
-          <h3>Fun facts about us</h3>
-          <ul class="navy-bullets">
-            <li>
-              We consistently contribute to the
-              <nuxt-link to="/open-source">open-source community</nuxt-link>.
-            </li>
-            <li>
-              We run a
-              <a href="https://ecologi.com/ship-shape">climate positive</a>
-              shop.
-            </li>
-            <li>
-              We started a
-              <a href="https://www.whiskeywebandwhatnot.fm/"
-                >podcast for developers</a
-              >
-              to share our love for whiskey, web development, and whatnot.
-            </li>
-            <li>We have team members in 8+ locations across North America.</li>
-          </ul>
-        </div>
-        <nuxt-img alt="" class="mt-8" format="webp" src="/img/about/desk.jpg" />
+    <section class="section bg-white flex flex-wrap justify-center">
+      <div class="section-content" data-aos="fade-right" data-aos-delay="400">
+        <h2 class="pb-20">Fun facts about us</h2>
+        <ul class="grid grid-cols-1 lg:gap-12 lg:grid-cols-3">
+          <FunFact img-src="/img/hero-images/www.png" img-width="193">
+            <template #description>
+              <p>
+                We started a
+                <a href="https://www.whiskeywebandwhatnot.fm/">
+                  podcast for developers
+                </a>
+                to share our love for whiskey, web development, and whatnot.
+              </p>
+            </template>
+          </FunFact>
+          <FunFact img-src="/img/about/ecologi.png" img-width="293">
+            <template #description>
+              <p>
+                We consistently contribute to the We run a
+                <a href="https://ecologi.com/ship-shape">climate positive</a>
+                shop.
+              </p>
+            </template>
+          </FunFact>
+          <FunFact img-src="/img/about/octocat.png" img-width="193">
+            <template #description>
+              <p>
+                We consistently contribute to the
+                <nuxt-link to="/open-source">open-source community</nuxt-link>
+              </p>
+            </template>
+          </FunFact>
+        </ul>
       </div>
     </section>
 
-    <div class="waves blue-waves bg-blue-light section flex justify-center">
+    <section class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
         <div class="lg:flex lg:py-20" data-aos="fade-down">
           <nuxt-img
@@ -245,7 +243,7 @@
         </div>
         <!-- create a LatestInsights component since this is being used in 2 pages now  -->
       </div>
-    </div>
+    </section>
 
     <!-- replace with insights component -->
     <div class="section flex flex-wrap justify-center bg-white">
@@ -423,6 +421,7 @@ import { generateMeta } from '~/utils/meta';
 export default {
   speedkitComponents: {
     BenefitsList: () => import('@/components/BenefitsList'),
+    FunFact: () => import('@/components/FunFact'),
     HeroBlock: () => import('@/components/HeroBlock')
   },
 
@@ -585,21 +584,6 @@ export default {
   svg {
     height: 19px;
     width: 23px;
-  }
-}
-
-.navy-bullets {
-  list-style: outside;
-  margin-left: 1.5rem;
-
-  li {
-    margin-bottom: 0.5rem;
-  }
-
-  li::marker {
-    color: #1b3b5d;
-    vertical-align: middle;
-    font-size: 1.5rem;
   }
 }
 </style>
