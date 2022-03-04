@@ -247,6 +247,7 @@
       </div>
     </div>
 
+    <!-- replace with insights component -->
     <div class="section flex flex-wrap justify-center bg-white">
       <div class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]">
         <div
@@ -380,72 +381,7 @@
             Get more contributions
           </nuxt-link>
         </div>
-        <div
-          class="
-            divide-grey-light divide-y
-            grid grid-cols-1
-            my-20
-            text-white
-            lg:divide-x lg:divide-y-0 lg:grid-cols-4
-          "
-        >
-          <div class="flex flex-col items-center px-16" data-aos="flip-down">
-            <nuxt-img
-              alt=""
-              class="h-20 inline-block mb-8 w-auto"
-              src="/svgs/icons/client.svg"
-            />
-
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Strategic Nuxt.js partners
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="200"
-          >
-            <nuxt-img
-              alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/staff.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Active GitHub contributors
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="400"
-          >
-            <nuxt-img
-              alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/fun.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Local tech meetup hosts
-            </p>
-          </div>
-
-          <div
-            class="flex flex-col items-center px-16"
-            data-aos="flip-down"
-            data-aos-delay="600"
-          >
-            <nuxt-img
-              alt=""
-              class="h-20 inline-block mb-8 mt-12 w-auto lg:mt-0"
-              src="/svgs/icons/pwa.svg"
-            />
-            <p class="mb-12 text-center lg:m-0 lg:w-40">
-              Whiskey, Web & Whatnot podcasters
-            </p>
-          </div>
-        </div>
+        <BenefitsList :benefits="benefits" />
       </div>
     </div>
 
@@ -486,6 +422,7 @@ import { generateMeta } from '~/utils/meta';
 
 export default {
   speedkitComponents: {
+    BenefitsList: () => import('@/components/BenefitsList'),
     HeroBlock: () => import('@/components/HeroBlock')
   },
 
@@ -518,6 +455,24 @@ export default {
 
   data() {
     return {
+      benefits: [
+        {
+          imgSrc: '/svgs/icons/client.svg',
+          description: 'Strategic Nuxt.js partners'
+        },
+        {
+          imgSrc: '/svgs/icons/staff.svg',
+          description: 'Active GitHub contributors'
+        },
+        {
+          imgSrc: '/svgs/icons/fun.svg',
+          description: 'Local tech meetup hosts'
+        },
+        {
+          imgSrc: '/svgs/icons/pwa.svg',
+          description: 'Whiskey, Web & Whatnot podcasters'
+        }
+      ],
       mgmt: [
         {
           name: 'Robbie Wagner',
