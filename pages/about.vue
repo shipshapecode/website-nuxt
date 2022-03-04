@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <article>
     <HeroBlock hero-classes="about bg-blue-light">
       <template #icon>
         <nuxt-img
@@ -18,7 +18,7 @@
       </template>
     </HeroBlock>
 
-    <div class="section bg-white flex flex-wrap justify-center">
+    <section class="section bg-white flex flex-wrap justify-center">
       <div class="section-content">
         <h2
           class="py-6 text-4xl lg:flex lg:justify-center lg:py-12"
@@ -55,7 +55,7 @@
           />
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="section bg-white flex flex-wrap justify-center">
       <div
@@ -93,7 +93,7 @@
         </div>
         <nuxt-img alt="" class="mt-8" format="webp" src="/img/about/desk.jpg" />
       </div>
-    </div>
+    </section>
 
     <div class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
@@ -412,7 +412,7 @@
         />
       </template>
     </HeroBlock>
-  </div>
+  </article>
 </template>
 
 <script>
