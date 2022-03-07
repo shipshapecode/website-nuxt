@@ -95,6 +95,7 @@
 
     <section class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
+        <!-- replacee with TwoColumnSection -->
         <div class="lg:flex lg:py-20" data-aos="fade-down">
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full pb-12 lg:order-last"
@@ -115,28 +116,25 @@
           </div>
         </div>
 
-        <div class="w-full">
+        <section class="w-full">
           <div class="space-y-12">
             <!-- two lists - employee and mgmt -->
             <ul>
               <li v-for="(employee, index) in mgmt" :key="employee.name">
                 <div
-                  class="space-y-8 lg:flex lg:items-center lg:gap-x-24 lg:pb-28"
+                  class="
+                    flex flex-col
+                    gap-y-8
+                    lg:flex-row lg:items-center lg:gap-x-24 lg:pb-28
+                  "
                   data-aos="flip-up"
                 >
-                  <div :class="{ 'lg:order-last': index % 2 !== 0 }">
-                    <nuxt-img
-                      class="filter grayscale object-cover shadow-lg rounded-lg"
-                      format="webp"
-                      :src="employee.imgSrc"
-                      alt=""
-                    />
-                  </div>
-
                   <div class="space-y-8">
-                    <div class="text-lg leading-6 font-medium space-y-1">
+                    <div class="leading-6 space-y-1">
                       <h3 class="mb-3">{{ employee.name }}</h3>
-                      <h4 class="text-indigo-600">{{ employee.title }}</h4>
+                      <p class="font-bold text-2xl text-navy">
+                        {{ employee.title }}
+                      </p>
                     </div>
                     <p>{{ employee.blurb ? employee.blurb : null }}</p>
                     <ul class="flex space-x-8">
@@ -168,6 +166,17 @@
                         </a>
                       </li>
                     </ul>
+                  </div>
+                  <div
+                    class="order-first"
+                    :class="{ 'lg:order-last': index % 2 !== 0 }"
+                  >
+                    <nuxt-img
+                      class="filter grayscale object-cover shadow-lg rounded-lg"
+                      format="webp"
+                      :src="employee.imgSrc"
+                      alt=""
+                    />
                   </div>
                 </div>
               </li>
@@ -186,24 +195,15 @@
             >
               <li v-for="employee in team" :key="employee.name">
                 <div
-                  class="space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-12"
+                  class="gap-y-8 grid lg:grid-cols-2 lg:gap-x-12"
                   data-aos="flip-up"
                 >
-                  <div class="aspect-w-3 aspect-h-3">
-                    <nuxt-img
-                      class="filter grayscale object-cover shadow-lg rounded-lg"
-                      format="webp"
-                      :src="employee.imgSrc"
-                      alt=""
-                    />
-                  </div>
-
                   <div class="space-y-8 self-center">
                     <div class="text-lg leading-6 font-medium space-y-1">
                       <h3 class="mb-3">{{ employee.name }}</h3>
-                      <h4 class="text-grey font-medium text-2xl">
+                      <p class="text-grey font-medium text-2xl">
                         {{ employee.title }}
-                      </h4>
+                      </p>
                     </div>
                     <p>{{ employee.blurb ? employee.blurb : null }}</p>
                     <ul class="flex space-x-8">
@@ -236,11 +236,19 @@
                       </li>
                     </ul>
                   </div>
+                  <div class="aspect-w-3 aspect-h-3 order-first">
+                    <nuxt-img
+                      class="filter grayscale object-cover shadow-lg rounded-lg"
+                      format="webp"
+                      :src="employee.imgSrc"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
-        </div>
+        </section>
         <!-- create a LatestInsights component since this is being used in 2 pages now  -->
       </div>
     </section>
