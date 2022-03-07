@@ -366,7 +366,7 @@
       </div>
     </div>
 
-    <div class="section bg-navy flex justify-center lg:py-40">
+    <section class="section bg-navy flex justify-center lg:py-40">
       <div class="section-content flex flex-col justify-center">
         <div
           class="pb-24 lg:flex lg:flex-row lg:items-center lg:gap-x-32"
@@ -389,7 +389,7 @@
         </div>
         <BenefitsList :benefits="benefits" />
       </div>
-    </div>
+    </section>
 
     <HeroBlock hero-classes="waves blue-waves bg-blue-light" data-aos="fade">
       <template #content>
