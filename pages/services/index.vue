@@ -6,9 +6,11 @@
           Software consultants who build it right the first time, every time
         </h1>
         <div>
-          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
-            Work with us
-          </nuxt-link>
+          <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
+            <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
+              Work with us
+            </nuxt-link>
+          </div>
         </div>
       </template>
 
