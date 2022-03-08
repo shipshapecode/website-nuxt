@@ -18,9 +18,9 @@
       <nuxt-img
         class="order-first h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
         format="webp"
-        height="500"
         :src="imgSrc"
-        width="500"
+        :height="imgHeight"
+        :width="imgWidth"
         alt=""
       />
       <nuxt-link
@@ -61,6 +61,14 @@ export default {
     imgSrc: {
       type: String,
       default: '/img/about/desk.jpg'
+    },
+    imgHeight: {
+      type: String,
+      default: '500'
+    },
+    imgWidth: {
+      type: String,
+      default: '500'
     },
     details: {
       type: Object,

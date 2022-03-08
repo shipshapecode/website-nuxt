@@ -18,7 +18,7 @@
       <div>
         <MediaCard
           media-type="podcast"
-          img-src="/img/hero-images/www.png"
+          :img-src="podcastImg.src"
           :details="latestPodcastEpisode"
           data-aos="fade-left"
         />
@@ -29,6 +29,10 @@
 </template>
 
 <script>
+const podcastImg = {
+  src: '/img/hero-images/www.png'
+};
+
 export default {
   speedkitComponents: { MediaCard: () => import('@/components/MediaCard') },
   props: {
@@ -40,6 +44,9 @@ export default {
       type: Object,
       default: () => {}
     }
+  },
+  data() {
+    return { podcastImg };
   }
 };
 </script>
