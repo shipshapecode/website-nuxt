@@ -34,11 +34,7 @@
             <meta itemprop="height" content="128" />
             <meta itemprop="width" content="128" />
           </div>
-
-          <div
-            class="font-medium leading-[unset] text-3xl text-navy"
-            itemprop="name"
-          >
+          <div class="font-medium text-3xl text-navy" itemprop="name">
             Ship Shape
           </div>
         </nuxt-link>
