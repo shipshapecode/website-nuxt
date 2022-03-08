@@ -6,7 +6,7 @@
     itemtype="http://schema.org/Service"
   >
     <div class="flex flex-col max-w-2xl w-full">
-      <h3 class="mb-0">
+      <h3 class="mb-0" itemprop="name">
         <slot name="header" />
       </h3>
       <p class="flex-grow">
