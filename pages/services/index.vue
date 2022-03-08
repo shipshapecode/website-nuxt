@@ -81,11 +81,12 @@
       :latest-podcast-episode="latestPodcastEpisode"
     />
 
-    <HeroBlock hero-classes="waves blue-waves bg-blue-light">
+    <TwoColumnSection
+      class-string="waves blue-waves bg-blue-light lg-header"
+      header="Ready to set sail?"
+      :image="footerCTA"
+    >
       <template #content>
-        <h2 itemprop="name" class="leading-tight text-4xl lg:text-5xl">
-          Ready to set sail?
-        </h2>
         <div>
           <p>
             Reach out to tell us more about your goals and chat about how our
@@ -96,18 +97,7 @@
           </nuxt-link>
         </div>
       </template>
-
-      <template #icon>
-        <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full"
-          height="1034"
-          format="webp"
-          src="/img/hero-images/ember-consulting.png"
-          width="1312"
-          alt=""
-        />
-      </template>
-    </HeroBlock>
+    </TwoColumnSection>
   </article>
 </template>
 
@@ -121,6 +111,11 @@ const textSection = [
   { src: '/img/hero-images/build.png', height: '1034' },
   { src: '/img/hero-images/open-source.png', height: '1034' }
 ];
+
+const footerCTA = {
+  src: '/img/hero-images/ember-consulting.png',
+  height: '1034'
+};
 
 export default {
   speedkitComponents: {
@@ -159,7 +154,7 @@ export default {
   },
 
   data() {
-    return { testimonial, textSection };
+    return { testimonial, textSection, footerCTA };
   },
 
   head() {
@@ -172,3 +167,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.lg-header h2 {
+  @apply lg:text-5xl;
+}
+</style>
