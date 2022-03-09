@@ -95,12 +95,14 @@ import { sephoraTestimonial as testimonial } from '~/content/testimonials/index.
 
 const community = {
   src: '/img/hero-images/ember-consulting.png',
-  height: '1034'
+  height: '1040',
+  width: '1312'
 };
 
 const marketing = {
   src: '/img/hero-images/mentoring.png',
-  height: '772'
+  height: '792',
+  width: '1312'
 };
 
 const specialtyBenefits = [

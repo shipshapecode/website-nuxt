@@ -37,7 +37,7 @@
           format="webp"
           :height="image.height"
           :src="image.src"
-          width="1312"
+          :width="image.width"
         />
       </div>
     </div>

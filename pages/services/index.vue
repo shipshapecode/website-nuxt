@@ -107,14 +107,15 @@ import { generateMeta } from '~/utils/meta';
 import { enigmaTestimonial as testimonial } from '~/content/testimonials/index.js';
 
 const textSection = [
-  { src: '/img/hero-images/design.png', height: '1034' },
-  { src: '/img/hero-images/build.png', height: '1034' },
-  { src: '/img/hero-images/open-source.png', height: '1034' }
+  { src: '/img/hero-images/design.png', width: '1312', height: '1034' },
+  { src: '/img/hero-images/build.png', width: '1312', height: '932' },
+  { src: '/img/hero-images/open-source.png', width: '1312', height: '960' }
 ];
 
 const footerCTA = {
   src: '/img/hero-images/ember-consulting.png',
-  height: '1034'
+  width: '1312',
+  height: '1040'
 };
 
 export default {

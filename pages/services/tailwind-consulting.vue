@@ -80,15 +80,15 @@ import { generateMeta } from '~/utils/meta';
 
 const community = {
   src: '/img/hero-images/ember-consulting.png',
-  height: '1034'
+  height: '1040',
+  width: '1312'
 };
 
 const marketing = {
   src: '/img/hero-images/mentoring.png',
-  height: '772',
-  h2: 'Your co-pilots in the storm'
+  height: '792',
+  width: '1312'
 };
-
 const specialtyBenefits = [
   {
     imgSrc: '/svgs/icons/image.svg',

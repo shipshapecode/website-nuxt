@@ -112,7 +112,8 @@ const caseStudies = [
 
 const marketing = {
   src: '/img/hero-images/mentoring.png',
-  height: '772'
+  height: '792',
+  width: '1312'
 };
 
 const specialtyBenefits = [

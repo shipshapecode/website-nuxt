@@ -36,7 +36,11 @@
 </template>
 
 <script>
-const headerImage = { src: '/img/hero-images/specialties.png', height: '814' };
+const headerImage = {
+  src: '/img/hero-images/specialties.png',
+  height: '775',
+  width: '1248'
+};
 
 const services = [
   {
