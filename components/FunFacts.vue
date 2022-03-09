@@ -10,7 +10,7 @@
             height="336"
             src="/img/hero-images/www.png"
             width="336"
-            alt=""
+            alt="Ship Shape's octopus mascot wearing headphones and holding a tumbler and microphone"
           />
           <p>
             We started a
