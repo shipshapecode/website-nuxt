@@ -6,6 +6,7 @@
           class="mt-8"
           alt="Ship Shape employee group photo"
           format="webp"
+          loading="lazy"
           src="/img/about/group.png"
         />
       </template>
@@ -27,7 +28,7 @@
           Ship Shape /ˈSHipˌSHāp / adj. “To be in first-class order”
         </h2>
         <div
-          class="gap-20 grid grid-cols-1 items-center lg:gap-32 lg:grid-cols-2"
+          class="grid grid-cols-1 items-center gap-20 lg:grid-cols-2 lg:gap-32"
           data-aos="fade-left"
           data-aos-delay="200"
         >
@@ -52,46 +53,13 @@
             height="1278px"
             src="/img/about/ship-shape-sign.png"
             width="1278px"
+            loading="lazy"
           />
         </div>
       </div>
     </section>
 
-    <section class="section bg-white flex flex-wrap justify-center">
-      <div class="section-content" data-aos="fade-right" data-aos-delay="400">
-        <h2 class="pb-20">Fun facts about us</h2>
-        <ul class="grid grid-cols-1 lg:gap-12 lg:grid-cols-3">
-          <FunFact img-src="/img/hero-images/www.png" img-width="193">
-            <template #description>
-              <p>
-                We started a
-                <a href="https://www.whiskeywebandwhatnot.fm/">
-                  podcast for developers
-                </a>
-                to share our love for whiskey, web development, and whatnot.
-              </p>
-            </template>
-          </FunFact>
-          <FunFact img-src="/img/about/ecologi.png" img-width="293">
-            <template #description>
-              <p>
-                We consistently contribute to the We run a
-                <a href="https://ecologi.com/ship-shape">climate positive</a>
-                shop.
-              </p>
-            </template>
-          </FunFact>
-          <FunFact img-src="/img/about/octocat.png" img-width="193">
-            <template #description>
-              <p>
-                We consistently contribute to the
-                <nuxt-link to="/open-source">open-source community</nuxt-link>
-              </p>
-            </template>
-          </FunFact>
-        </ul>
-      </div>
-    </section>
+    <FunFacts />
 
     <section class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
@@ -429,7 +397,7 @@ import { generateMeta } from '~/utils/meta';
 export default {
   speedkitComponents: {
     BenefitsList: () => import('@/components/BenefitsList'),
-    FunFact: () => import('@/components/FunFact'),
+    FunFacts: () => import('@/components/FunFacts'),
     HeroBlock: () => import('@/components/HeroBlock')
   },
 
