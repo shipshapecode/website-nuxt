@@ -10,6 +10,7 @@
             height="336"
             src="/img/hero-images/www.png"
             width="336"
+            alt=""
           />
           <p>
             We started a
@@ -55,6 +56,7 @@
             height="322"
             src="/img/about/octocat.png"
             width="386"
+            alt="GitHub's mascot, Octocat, who has cat ears and tentacle legs"
           />
 
           We consistently contribute to the
