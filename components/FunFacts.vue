@@ -5,14 +5,14 @@
       <ul class="grid grid-cols-1 gap-5 lg:grid-cols-3">
         <li class="bg-blue-light p-5 rounded-md lg:p-12">
           <nuxt-img
-            class="h-auto m-auto my-4 rounded-lg w-32 lg:w-44"
+            class="h-auto m-auto my-8 rounded-lg w-32 lg:w-44"
             format="webp"
             height="336"
             src="/img/hero-images/www.png"
             width="336"
             alt="Ship Shape's octopus mascot wearing headphones and holding a tumbler and microphone"
           />
-          <p>
+          <p class="text-center">
             We started a
             <a href="https://www.whiskeywebandwhatnot.fm/"
               >podcast for developers</a
@@ -35,7 +35,7 @@
             target="_blank"
             rel="noopener noreferrer"
             title="View our Ecologi profile"
-            class="mx-auto my-4 block w-48 lg:w-64"
+            class="mx-auto my-8 block w-48 lg:w-64"
           >
             <img
               alt="We offset our carbon footprint via Ecologi"
@@ -51,7 +51,7 @@
         </li>
         <li class="bg-blue-light p-5 rounded-md lg:p-12">
           <nuxt-img
-            class="h-auto m-auto max-w-2xl my-4 rounded-lg w-36 lg:w-48"
+            class="h-auto m-auto max-w-2xl my-10 rounded-lg w-36 lg:w-48"
             format="webp"
             height="322"
             src="/img/about/octocat.png"
@@ -59,8 +59,10 @@
             alt="GitHub's mascot, Octocat, who has cat ears and tentacle legs"
           />
 
-          We consistently contribute to the
-          <nuxt-link to="/open-source">open-source community</nuxt-link>.
+          <p class="text-center">
+            We consistently contribute to the
+            <nuxt-link to="/open-source">open-source community</nuxt-link>.
+          </p>
         </li>
       </ul>
     </div>
