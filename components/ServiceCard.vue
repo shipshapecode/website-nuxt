@@ -12,19 +12,15 @@
       <p class="flex-grow">
         <slot name="description" />
       </p>
-      <div
-        class="
-          flex flex-col
-          pt-4
-          gap-y-2
-          lg:flex-row lg:justify-between lg:px-6
-        "
-      >
-        <nuxt-link class="learn-more" :to="learnMoreLink">
+      <div class="grid pt-4 gap-y-2 lg:grid-cols-2 lg:px-6">
+        <nuxt-link
+          class="learn-more border-r border-#5f6976"
+          :to="learnMoreLink"
+        >
           Learn more
           <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
         </nuxt-link>
-        <nuxt-link class="learn-more" :to="caseStudyLink">
+        <nuxt-link class="learn-more lg:place-self-end" :to="caseStudyLink">
           See it in action
           <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
         </nuxt-link>
