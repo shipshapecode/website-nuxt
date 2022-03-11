@@ -2,7 +2,7 @@
   <article>
     <HeroBlock hero-classes="services waves blue-waves bg-blue-light !pb-20">
       <template #content>
-        <h1 itemprop="name" class="leading-tight text-5xl lg:text-6xl">
+        <h1 itemprop="name" class="leading-tight text-4xl lg:text-6xl">
           Software consultants who build it right the first time, every time
         </h1>
         <div>
@@ -28,7 +28,7 @@
 
     <section class="section bg-white flex flex-wrap justify-center !pt-32">
       <div>
-        <h2 class="py-12 text-4xl lg:text-5xl" data-aos="fade-left">
+        <h2 class="pt-12 mb-0 text-4xl lg:text-5xl" data-aos="fade-left">
           High impact, low ego
         </h2>
         <div class="divide-[#D8E3E8] divide-y-2">

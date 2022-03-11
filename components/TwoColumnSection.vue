@@ -7,7 +7,7 @@
     <div
       class="
         section-content
-        gap-20
+        gap-8
         grid grid-cols-1
         items-center
         lg:gap-32 lg:grid-cols-2

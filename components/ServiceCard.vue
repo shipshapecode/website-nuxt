@@ -12,7 +12,7 @@
       <p class="flex-grow">
         <slot name="description" />
       </p>
-      <div class="flex flex-col lg:flex-row lg:justify-around">
+      <div class="flex flex-col pt-4 gap-y-2 lg:flex-row lg:justify-around">
         <nuxt-link class="learn-more" :to="learnMoreLink">
           Learn more
           <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
