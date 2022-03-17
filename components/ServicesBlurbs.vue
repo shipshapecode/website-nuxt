@@ -1,153 +1,118 @@
 <template>
-  <div class="section bg-blue-light flex flex-wrap justify-center">
+  <section class="section bg-blue-light flex flex-wrap justify-center">
     <div class="section-content">
-      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <div
-          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
-          data-aos="fade-up"
-          itemscope
-          itemtype="http://schema.org/Service"
+      <TwoColumnSection
+        :image="headerImage"
+        header="Our fleet of specialties"
+        class-string="lg-header"
+      >
+        <template #content>
+          Our senior-level software consultants ensure your applications are
+          optimized for today and ready for the future.
+        </template>
+      </TwoColumnSection>
+
+      <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <ServiceCard
+          v-for="service in services"
+          :key="service.learnMoreLink"
+          :learn-more-link="service.learnMoreLink"
+          :case-study-link="service.caseStudyLink"
         >
-          <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">App Development</h2>
-
-            <p class="flex-grow">
-              Building custom full stack web apps is our speciality. Ship Shape
-              designs, engineers and programs web apps from start-to-finish so
-              that user experience is flawless and reliable for years to come.
-            </p>
-
-            <nuxt-link class="learn-more" to="/services/app-development/">
-              Learn more
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div
-          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
-          data-aos="fade-up"
-          itemscope
-          itemtype="http://schema.org/Service"
-        >
-          <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
-              Next.js Consulting
-            </h2>
-
-            <p class="flex-grow">
-              Performance and optimization are at the core of Next.js. The
-              Next.js team has made the hard decisions for you by providing
-              server side rendering, routing, and other automagical features out
-              of the box. Let our Next.js team help you get started with this
-              powerful framework.
-            </p>
-
-            <nuxt-link class="learn-more" to="/services/next-consulting/">
-              Learn more
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div
-          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
-          data-aos="fade-up"
-          itemscope
-          itemtype="http://schema.org/Service"
-        >
-          <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">Ember Consulting</h2>
-
-            <p class="flex-grow">
-              Ember.js is Ship Shape’s framework of choice, among the multitude
-              of other JavaScript frameworks out there. With Ember, we can
-              accomplish so much more - faster, with less errors and on a larger
-              scale.
-            </p>
-
-            <nuxt-link class="learn-more" to="/services/ember-consulting/">
-              See How
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div
-          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
-          data-aos="fade-up"
-          itemscope
-          itemtype="http://schema.org/Service"
-        >
-          <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
-              Nuxt.js Consulting
-            </h2>
-
-            <p class="flex-grow">
-              Nuxt.js makes progressive web app development simple, powerful and
-              user friendly. Stay ahead of tech giants and build a solid
-              foundation for your digital future with Ship Shape’s Nuxt
-              consulting team.
-            </p>
-
-            <nuxt-link class="learn-more" to="/services/nuxt-consulting/">
-              Learn more
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div
-          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
-          data-aos="fade-up"
-          itemscope
-          itemtype="http://schema.org/Service"
-        >
-          <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">App Tours</h2>
-
-            <p class="flex-grow">
-              We built our own open source library,
-              <a href="https://shepherdjs.dev/">Shepherd.js</a> to guide users
-              through the features and functions of your web app. It’s no
-              surprise that we’ve been tapped to help companies of all sizes to
-              implement user-friendly app tours.
-            </p>
-
-            <nuxt-link class="learn-more" to="/services/app-tours/">
-              Learn more
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-
-        <div
-          class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
-          data-aos="fade-up"
-          itemscope
-          itemtype="http://schema.org/Service"
-        >
-          <div class="flex flex-col max-w-2xl w-full">
-            <h2 class="mb-6 mt-4 text-3xl" itemprop="name">
-              Mentoring and Team Training
-            </h2>
-
-            <p class="flex-grow">
-              Whether you're a Senior Developer or Junior Developer, Ship Shape
-              fosters one-on-one connections that help make a difference in our
-              community. We offer several Ember mentorship programs that
-              identify your goals and prepare you and your team for the future
-              of Ember.
-            </p>
-
-            <nuxt-link class="learn-more" to="/services/mentoring/">
-              Learn more
-              <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-            </nuxt-link>
-          </div>
-        </div>
-      </div>
+          <template #header>
+            <inline-svg
+              class="h-auto nested-svg"
+              :class="service.logoClasses"
+              :src="service.logoSrc"
+            />
+          </template>
+          <template #description>
+            {{ service.description }}
+          </template>
+        </ServiceCard>
+      </section>
     </div>
-  </div>
+  </section>
 </template>
+
+<script>
+const headerImage = {
+  src: '/img/hero-images/specialties.png',
+  height: '775',
+  width: '1248'
+};
+
+const services = [
+  {
+    logoClasses: 'w-20 pb-6 lg:w-32 lg:pb-12',
+    logoSrc: '/svgs/technologies/ember.svg',
+    description:
+      "One of the best frameworks for fast, reliable builds, especially complex apps and dashboards. Ember's opinionated structure lends well to efficiency and organization.",
+    learnMoreLink: '/services/ember-consulting/',
+    caseStudyLink: '/work/netflix/'
+  },
+  {
+    logoClasses: 'w-24 pb-6 lg:w-40 lg:pt-5 lg:pb-12',
+    logoSrc: '/svgs/technologies/nuxt.svg',
+    description:
+      'A performant framework used to create flexible, universal Vue.js web apps, thanks to its simple routing and out-of-the-box optimizations.',
+    learnMoreLink: '/services/nuxt-consulting/',
+    caseStudyLink: '/services/nuxt-consulting/'
+  },
+  {
+    logoClasses: 'w-20 pb-6 lg:w-32 lg:pb-12',
+    logoSrc: '/svgs/technologies/next.svg',
+    description:
+      'A nimble React framework for production with lots of magic built in, from server-side rendering for enhanced SEO to internationalization features.',
+    learnMoreLink: '/services/next-consulting/',
+    caseStudyLink: '/work/enigma/'
+  },
+  {
+    logoClasses: 'w-36 pb-8 lg:w-52 lg:pt-5 lg:pb-20',
+    logoSrc: '/svgs/technologies/tailwind.svg',
+    description:
+      'Match mocks from designers with ease, and automagically remove all unused CSS with this convenient framework.',
+    learnMoreLink: '/services/tailwind-consulting/',
+    caseStudyLink: '/services/tailwind-consulting/'
+  },
+  {
+    logoClasses: 'w-36 pb-8 lg:w-52 lg:pt-5 lg:pb-20',
+    logoSrc: '/svgs/technologies/serverless.svg',
+    description:
+      'Only pay for the computing you need, scale quickly, and reduce maintenance with serverless applications. We’ll show you how.',
+    learnMoreLink: '/services/serverless-consulting/',
+    caseStudyLink: '/services/serverless-consulting/'
+  },
+  {
+    logoClasses: 'w-36 pb-8 lg:w-52 lg:pt-5 lg:pb-20',
+    logoSrc: '/svgs/technologies/cncf.svg',
+    description:
+      'Say goodbye to being locked into vendors, and deliver well-tested, secure products faster with this platform-agnostic methodology.',
+    learnMoreLink: '/services/cloud-native-consulting/',
+    caseStudyLink: '/services/cloud-native-consulting/'
+  }
+];
+
+export default {
+  speedkitComponents: {
+    ServiceCard: () => import('@/components/ServiceCard'),
+    TwoColumnSection: () => import('@/components/TwoColumnSection')
+  },
+  data() {
+    return { headerImage, services };
+  }
+};
+</script>
+
+<style lang="scss">
+.nested-svg g,
+.nested-svg path {
+  fill: #1b3b5d;
+}
+
+.lg-header {
+  h2 {
+    @apply lg:text-5xl;
+  }
+}
+</style>

@@ -7,21 +7,26 @@
     <div
       class="
         section-content
-        gap-20
+        gap-8
         grid grid-cols-1
         items-center
         lg:gap-32 lg:grid-cols-2
       "
     >
       <div
+        class="order-last"
         :class="{
-          'lg:order-last': isFlipped
+          'lg:order-none': !isFlipped
         }"
       >
-        <h2 class="text-4xl" data-aos="fade-left">
-          <slot name="header" />
+        <h2
+          v-if="header"
+          class="text-4xl"
+          :data-aos="isFlipped ? 'fade-left' : 'fade-right'"
+        >
+          {{ header }}
         </h2>
-        <div data-aos="fade-left">
+        <div :data-aos="isFlipped ? 'fade-left' : 'fade-right'">
           <slot name="content" />
         </div>
       </div>
@@ -32,7 +37,7 @@
           format="webp"
           :height="image.height"
           :src="image.src"
-          width="1312"
+          :width="image.width"
         />
       </div>
     </div>
@@ -49,6 +54,10 @@ export default {
     image: {
       type: Object,
       default: () => {}
+    },
+    header: {
+      type: String,
+      default: ''
     },
     isFlipped: {
       type: Boolean,
