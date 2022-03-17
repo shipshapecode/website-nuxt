@@ -127,7 +127,7 @@ export default {
       @apply cursor-pointer text-red;
 
       svg {
-        @apply fill-red ml-3;
+        @apply fill-red translate-x-2;
         > * {
           fill: var(--red);
         }

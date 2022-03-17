@@ -1,7 +1,7 @@
 <template>
   <section>
     <h3 class="capitalize m-0 pb-12 pt-24">Latest {{ mediaType }}</h3>
-    <article class="flex flex-col pb-12 relative lg:flex-row lg:items-center">
+    <article class="flex flex-col mb-12 lg:flex-row lg:items-center">
       <nuxt-img
         class="h-auto max-w-sm mb-7 rounded-md w-full lg:mb-0 lg:mr-7 lg:w-64"
         format="webp"
@@ -29,9 +29,9 @@
         class="
           learn-more
           mt-12
-          right-0
           self-start
-          lg:absolute lg:ml-24 lg:self-end
+          whitespace-nowrap
+          lg:ml-24 lg:self-end
         "
         :href="
           mediaType === 'podcast'
