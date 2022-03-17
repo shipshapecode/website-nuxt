@@ -5,7 +5,7 @@
     itemid="shipshapeorg"
     :class="{
       'bg-navy': $route.name === 'about',
-      'bg-blue-light': $route.name === 'index' || $route.name === 'services'
+      'bg-blue-light': $route.name === 'index'
     }"
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC" />

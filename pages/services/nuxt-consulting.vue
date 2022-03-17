@@ -57,10 +57,10 @@
 
     <TwoColumnSection
       class-string="mt-20"
-      header="Your first mate's in rough waters"
       :image="marketing"
       :is-flipped="true"
     >
+      <template #header>Your first mate's in rough waters</template>
       <template #content>
         Ship Shape is committed to leaving every engineering team we work with
         better than we found it. Not only do we build robust, reliable software,
@@ -71,7 +71,8 @@
 
     <SingleQuote :testimonial="testimonial" />
 
-    <TwoColumnSection :image="community" header="We ❤️ the Nuxt.js Community">
+    <TwoColumnSection :image="community">
+      <template #header> We ❤️ the Nuxt.js Community </template>
       <template #content>
         <h3 class="text-2xl" data-aos="fade-up">Proud Nuxt.js partners</h3>
         <p data-aos="fade-up">
@@ -95,14 +96,12 @@ import { sephoraTestimonial as testimonial } from '~/content/testimonials/index.
 
 const community = {
   src: '/img/hero-images/ember-consulting.png',
-  height: '1040',
-  width: '1312'
+  height: '1034'
 };
 
 const marketing = {
   src: '/img/hero-images/mentoring.png',
-  height: '792',
-  width: '1312'
+  height: '772'
 };
 
 const specialtyBenefits = [

@@ -4,9 +4,9 @@
       <h2 class="pb-8 text-4xl">{{ specialty }} in action</h2>
       <div :class="`gap-5 grid grid-cols-1 lg:grid-cols-${caseStudies.length}`">
         <article
+          class="case-study-article"
           v-for="(study, index) in caseStudies"
           :key="index + 1"
-          class="case-study-article"
           data-aos="flip-down"
           :data-aos-delay="200 * index"
         >

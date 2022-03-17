@@ -59,10 +59,10 @@
 
     <TwoColumnSection
       class-string="mt-20"
-      header="We’ll never leave you high and dry"
       :image="marketing"
       :is-flipped="true"
     >
+      <template #header>We’ll never leave you high and dry</template>
       <template #content>
         Ship Shape is committed to leaving every engineering team we work with
         better than we found it. Not only do we build robust, reliable software,
@@ -73,7 +73,8 @@
 
     <SingleQuote :testimonial="testimonial" />
 
-    <TwoColumnSection header="We ❤️ the Next.js Community" :image="community">
+    <TwoColumnSection :image="community">
+      <template #header>We ❤️ the Next.js Community</template>
       <template #content>
         We’re a team of makers who are passionate about improving software
         products and the people who create them.
@@ -101,14 +102,12 @@ const caseStudies = [
 
 const community = {
   src: '/img/hero-images/ember-consulting.png',
-  height: '1040',
-  width: '1312'
+  height: '1034'
 };
 
 const marketing = {
   src: '/img/hero-images/mentoring.png',
-  height: '792',
-  width: '1312'
+  height: '772'
 };
 
 const specialtyBenefits = [
