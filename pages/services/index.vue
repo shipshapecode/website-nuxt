@@ -28,76 +28,201 @@
 
     <section class="section bg-white flex flex-wrap justify-center !pt-32">
       <div>
-        <h2 class="pt-12 mb-0 text-4xl lg:text-5xl" data-aos="fade-left">
+        <h2 class="pt-12 mb-0 text-4xl lg:text-5xl" data-aos="fade-down">
           High impact, low ego
         </h2>
-        <div class="divide-[#D8E3E8] divide-y-2">
-          <TwoColumnSection :image="textSection[0]" :is-flipped="true">
-            <template #content>
-              Sailing the open seas to a new destination requires a sturdy
-              vessel and a competent crew. Ship Shape’s app development company
-              is full of top-tier engineers who tackle your toughest technical
-              challenges every step of the way.
-            </template>
-          </TwoColumnSection>
-          <TwoColumnSection :image="textSection[1]">
-            <template #content>
-              Our software engineers specialize in
-              <nuxt-link to="/services/ember-consulting/">Ember.js</nuxt-link>,
-              <nuxt-link to="/services/nuxt-consulting/">Nuxt.js</nuxt-link>,
-              <nuxt-link to="/services/next-consulting/">Next.js</nuxt-link>,
-              and emerging technologies like
-              <nuxt-link to="/services/serverless-consulting/"
-                >serverless frameworks</nuxt-link
+
+        <div class="section">
+          <div class="section-content divide-[#D8E3E8] divide-y-2">
+            <section
+              class="flex flex-wrap justify-center py-12"
+              data-aos="fade-right"
+            >
+              <div
+                class="
+                  gap-8
+                  grid grid-cols-1
+                  items-center
+                  lg:gap-48 lg:grid-cols-2
+                "
               >
-              and
-              <nuxt-link to="/services/cloud-native-consulting/"
-                >cloud native applications</nuxt-link
-              >. We combine our high IQ in these technologies with a high EQ to
-              ensure your experience with us is just as good as the final
-              product. Plus, we upskill your team as we work together so they
-              can sustain and improve your products long after our engagement
-              ends.
-            </template>
-          </TwoColumnSection>
-          <TwoColumnSection :image="textSection[2]" :is-flipped="true">
-            <template #content>
-              From the future of fintech, to
-              <nuxt-link to="/work/enigma">cybersecurity</nuxt-link>, and more,
-              we help a wide variety of industries level-up their products and
-              their people.
-            </template>
-          </TwoColumnSection>
+                <div class="order-last">
+                  <div>
+                    Sailing the open seas to a new destination requires a sturdy
+                    vessel and a competent crew. Ship Shape’s app development
+                    company is full of top-tier engineers who tackle your
+                    toughest technical challenges every step of the way.
+                  </div>
+                </div>
+
+                <div>
+                  <nuxt-img
+                    alt=""
+                    class="h-auto m-auto max-w-2xl w-full"
+                    format="webp"
+                    :height="textSection[0].height"
+                    :src="textSection[0].src"
+                    :width="textSection[0].width"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section
+              class="flex flex-wrap justify-center py-12"
+              data-aos="fade-left"
+            >
+              <div
+                class="
+                  gap-8
+                  grid grid-cols-1
+                  items-center
+                  lg:gap-48 lg:grid-cols-2
+                "
+              >
+                <div class="order-last lg:order-none">
+                  <div>
+                    Our software engineers specialize in
+                    <nuxt-link to="/services/ember-consulting/"
+                      >Ember.js</nuxt-link
+                    >,
+                    <nuxt-link to="/services/nuxt-consulting/"
+                      >Nuxt.js</nuxt-link
+                    >,
+                    <nuxt-link to="/services/next-consulting/"
+                      >Next.js</nuxt-link
+                    >, and emerging technologies like
+                    <nuxt-link to="/services/serverless-consulting/"
+                      >serverless frameworks</nuxt-link
+                    >
+                    and
+                    <nuxt-link to="/services/cloud-native-consulting/"
+                      >cloud native applications</nuxt-link
+                    >. We combine our high IQ in these technologies with a high
+                    EQ to ensure your experience with us is just as good as the
+                    final product. Plus, we upskill your team as we work
+                    together so they can sustain and improve your products long
+                    after our engagement ends.
+                  </div>
+                </div>
+
+                <div>
+                  <nuxt-img
+                    alt=""
+                    class="h-auto m-auto max-w-2xl w-full"
+                    format="webp"
+                    :height="textSection[1].height"
+                    :src="textSection[1].src"
+                    :width="textSection[1].width"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section
+              class="flex flex-wrap justify-center py-12"
+              data-aos="fade-right"
+            >
+              <div
+                class="
+                  gap-8
+                  grid grid-cols-1
+                  items-center
+                  lg:gap-48 lg:grid-cols-2
+                "
+              >
+                <div class="order-last">
+                  <div>
+                    From the future of fintech, to
+                    <nuxt-link to="/work/enigma">cybersecurity</nuxt-link>, and
+                    more, we help a wide variety of industries level-up their
+                    products and their people.
+                  </div>
+                </div>
+
+                <div>
+                  <nuxt-img
+                    alt=""
+                    class="h-auto m-auto max-w-2xl w-full"
+                    format="webp"
+                    :height="textSection[2].height"
+                    :src="textSection[2].src"
+                    :width="textSection[2].width"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </section>
 
     <ServicesBlurbs />
 
-    <SingleQuote :testimonial="testimonial" />
+    <SingleQuote class-string="lg:pt-32" :testimonial="testimonial" />
 
     <LatestInsights
       :latest-blog-post="latestBlogPost"
       :latest-podcast-episode="latestPodcastEpisode"
     />
 
-    <TwoColumnSection
-      class-string="waves blue-waves bg-blue-light lg-header"
-      header="Ready to set sail?"
-      :image="footerCTA"
+    <div
+      class="
+        waves
+        blue-waves
+        section
+        bg-blue-light
+        flex flex-wrap
+        justify-center
+      "
     >
-      <template #content>
-        <div>
-          <p>
-            Reach out to tell us more about your goals and chat about how our
-            app development company can help you get there.
-          </p>
-          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
-            Contact us
-          </nuxt-link>
-        </div>
-      </template>
-    </TwoColumnSection>
+      <div class="section-content py-20">
+        <section class="flex flex-wrap justify-center" data-aos="fade">
+          <div
+            class="gap-8 grid grid-cols-1 items-center lg:gap-48 lg:grid-cols-2"
+          >
+            <div class="order-last lg:order-none">
+              <h2 class="text-4xl lg:text-5xl">Ready to set sail?</h2>
+
+              <div>
+                <div>
+                  <p>
+                    Reach out to tell us more about your goals and chat about
+                    how our app development company can help you get there.
+                  </p>
+                  <div
+                    class="
+                      flex
+                      justify-center
+                      mt-3
+                      w-full
+                      lg:justify-start lg:mt-8
+                    "
+                  >
+                    <nuxt-link
+                      class="btn btn-red w-full lg:w-auto"
+                      to="/contact/"
+                    >
+                      Contact us
+                    </nuxt-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <nuxt-img
+                alt=""
+                class="h-auto m-auto max-w-2xl w-full"
+                format="webp"
+                :height="footerCTA.height"
+                :src="footerCTA.src"
+                :width="footerCTA.width"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </article>
 </template>
 
@@ -168,9 +293,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.lg-header h2 {
-  @apply lg:text-5xl;
-}
-</style>

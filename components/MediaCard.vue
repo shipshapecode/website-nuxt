@@ -1,11 +1,11 @@
 <template>
   <section>
-    <h3 class="py-12 capitalize">Latest {{ mediaType }}</h3>
+    <h3 class="capitalize m-0 pb-12 pt-24">Latest {{ mediaType }}</h3>
     <article
       class="items-center grid grid-cols-1 pb-12 lg:gap-12 lg:grid-cols-9"
     >
       <div class="lg:col-span-5">
-        <h4 class="text-xl lg:mb-4">
+        <h4 class="text-2xl lg:mb-4">
           {{ details.title }}
         </h4>
         <p>
@@ -16,7 +16,16 @@
         </p>
       </div>
       <nuxt-img
-        class="order-first h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+        class="
+          order-first
+          h-auto
+          m-auto
+          max-w-md
+          rounded-md
+          w-full
+          pb-10
+          lg:col-span-2
+        "
         format="webp"
         :src="imgSrc"
         :height="imgHeight"

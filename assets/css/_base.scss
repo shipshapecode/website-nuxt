@@ -76,7 +76,7 @@ h6 {
 }
 
 .learn-more {
-  @apply text-navy;
+  @apply font-normal text-navy;
 
   svg {
     fill: var(--navy);

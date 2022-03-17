@@ -6,7 +6,7 @@
     <div class="section-content flex flex-col divide-y-2 divide-[#D8E3E8]">
       <header
         class="
-          pb-24
+          pb-12
           lg:flex lg:flex-row lg:place-content-between lg:items-center
         "
       >
@@ -20,9 +20,9 @@
           media-type="podcast"
           :img-src="podcastImg.src"
           :details="latestPodcastEpisode"
-          data-aos="fade-left"
+          data-aos="fade-up"
         />
-        <MediaCard :details="latestBlogPost" data-aos="fade-right" />
+        <MediaCard :details="latestBlogPost" data-aos="fade-up" />
       </div>
     </div>
   </section>

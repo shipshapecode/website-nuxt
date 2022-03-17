@@ -11,7 +11,7 @@
         gap-y-10
         mb-16
         p-4
-        rounded
+        rounded-md
         lg:mb-20
         xl:grid-cols-2 xl:py-20
       "

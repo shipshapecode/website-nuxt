@@ -1,5 +1,5 @@
 <template>
-  <section class="section bg-blue-light flex flex-wrap justify-center">
+  <section class="section bg-blue-light flex flex-wrap justify-center lg:mb-16">
     <div class="section-content">
       <TwoColumnSection
         :image="headerImage"
@@ -37,7 +37,7 @@
 
 <script>
 const headerImage = {
-  src: '/img/hero-images/specialties.png',
+  src: '/img/services/specialties.png',
   height: '775',
   width: '1248'
 };
