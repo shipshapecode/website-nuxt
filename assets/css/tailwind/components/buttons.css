@@ -1,5 +1,5 @@
 .btn {
-  @apply font-bold inline-block px-16 py-5 rounded text-center whitespace-nowrap;
+  @apply font-bold inline-block px-16 py-5 rounded-md text-center whitespace-nowrap;
   font-size: 16px
 }
 

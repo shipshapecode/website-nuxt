@@ -1,9 +1,10 @@
 <template>
   <div
     class="bg-white flex flex-wrap justify-center px-8 lg:py-16"
+    :class="classString"
     data-aos="fade"
   >
-    <div class="section-content bg-navy mb-10 p-4 rounded lg:mb-20 xl:py-20">
+    <div class="section-content bg-navy mb-16 p-4 rounded-md lg:mb-20 xl:py-20">
       <figure class="flex flex-col p-4 relative text-white xl:px-16 xl:py-0">
         <inline-svg
           class="h-8 max-w-full mb-3 self-start w-auto"
@@ -52,6 +53,10 @@
 <script>
 export default {
   props: {
+    classString: {
+      type: String,
+      default: ''
+    },
     testimonial: {
       type: Object,
       default: () => {}

@@ -1,46 +1,43 @@
 <template>
   <section>
-    <h3 class="py-12 capitalize">Latest {{ mediaType }}</h3>
-    <article
-      class="items-center grid grid-cols-1 pb-12 lg:gap-12 lg:grid-cols-9"
-    >
-      <div class="lg:col-span-5">
-        <h4 class="text-xl lg:mb-4">
-          {{ details.title }}
-        </h4>
-        <p>
-          {{ formatDateWithDots(details.date || details.pubDate) }}
-        </p>
-        <p>
-          {{ details.description }}
-        </p>
-      </div>
+    <h3 class="capitalize m-0 pb-12 pt-24">Latest {{ mediaType }}</h3>
+    <article class="flex flex-col mb-12 lg:flex-row lg:items-center">
       <nuxt-img
-        class="order-first h-auto m-auto max-w-md w-full pb-10 lg:col-span-2"
+        class="h-auto max-w-sm mb-7 rounded-md w-full lg:mb-0 lg:mr-7 lg:w-64"
         format="webp"
         :src="imgSrc"
         :height="imgHeight"
         :width="imgWidth"
         alt=""
       />
-      <nuxt-link
-        v-if="mediaType === 'blog post'"
-        class="
-          learn-more
-          lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
-        "
-        :to="`/blog/${details.slug}/`"
-      >
-        Dive Deeper
-        <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-      </nuxt-link>
+
+      <div class="flex-grow">
+        <h4 class="max-w-3xl text-2xl lg:mb-4">
+          {{ details.title }}
+        </h4>
+
+        <p>
+          {{ formatDateWithDots(details.date || details.pubDate) }}
+        </p>
+
+        <p class="max-w-4xl mb-0">
+          {{ details.description }}
+        </p>
+      </div>
+
       <a
-        v-if="mediaType === 'podcast'"
         class="
           learn-more
-          lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
+          mt-12
+          self-start
+          whitespace-nowrap
+          lg:ml-24 lg:self-end
         "
-        href="https://www.whiskeywebandwhatnot.fm/"
+        :href="
+          mediaType === 'podcast'
+            ? 'https://www.whiskeywebandwhatnot.fm/'
+            : `/blog/${details.slug}/`
+        "
       >
         Dive Deeper
         <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />

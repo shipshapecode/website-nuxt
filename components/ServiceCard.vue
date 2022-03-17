@@ -1,6 +1,14 @@
 <template>
   <article
-    class="bg-white flex flex-grow p-8 justify-center xl:h-104 lg:p-12"
+    class="
+      bg-white
+      flex flex-grow
+      p-8
+      justify-center
+      rounded-md
+      lg:p-12
+      xl:h-104
+    "
     data-aos="fade-up"
     itemscope
     itemtype="http://schema.org/Service"
@@ -12,18 +20,25 @@
       <p class="flex-grow">
         <slot name="description" />
       </p>
-      <div class="grid pt-4 gap-y-2 lg:grid-cols-2 lg:px-6">
-        <nuxt-link
-          class="learn-more border-r border-#5f6976"
-          :to="learnMoreLink"
+      <div class="grid grid-cols-1 gap-y-2 lg:grid-cols-2">
+        <div
+          class="
+            flex
+            justify-start
+            lg:border-grey lg:border-r lg:justify-center
+          "
         >
-          Learn more
-          <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-        </nuxt-link>
-        <nuxt-link class="learn-more lg:place-self-end" :to="caseStudyLink">
-          See it in action
-          <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-        </nuxt-link>
+          <nuxt-link class="learn-more" :to="learnMoreLink">
+            Learn more
+            <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+          </nuxt-link>
+        </div>
+        <div class="flex justify-start lg:justify-center">
+          <nuxt-link class="learn-more" :to="caseStudyLink">
+            See it in action
+            <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
+          </nuxt-link>
+        </div>
       </div>
     </div>
   </article>

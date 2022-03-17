@@ -76,13 +76,10 @@ h6 {
 }
 
 .learn-more {
-  @apply text-navy;
+  @apply font-normal text-navy;
 
   svg {
-    fill: var(--navy);
-    margin-left: 0.25rem;
-    transition-duration: 0.25s;
-    transition-property: margin-left;
+    @apply duration-200 fill-navy ml-1 transition-all;
   }
 
   &:active,
@@ -94,8 +91,8 @@ h6 {
     @apply cursor-pointer text-red;
 
     svg {
-      fill: var(--red);
-      margin-left: 0.75rem;
+      @apply fill-red translate-x-2;
+
       > * {
         fill: var(--red);
       }
