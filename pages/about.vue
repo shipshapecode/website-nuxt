@@ -63,7 +63,7 @@
 
     <section class="waves blue-waves bg-blue-light section flex justify-center">
       <div class="section-content flex flex-wrap justify-center">
-        <!-- replacee with TwoColumnSection -->
+        <!-- replace with TwoColumnSection -->
         <div class="lg:flex lg:py-20" data-aos="fade-down">
           <nuxt-img
             class="h-auto m-auto max-w-2xl w-full pb-12 lg:order-last"
@@ -98,12 +98,11 @@
                   data-aos="flip-up"
                 >
                   <div class="space-y-8">
-                    <div class="leading-6 space-y-1">
-                      <h3 class="mb-3">{{ employee.name }}</h3>
-                      <p class="font-bold text-2xl text-navy">
-                        {{ employee.title }}
-                      </p>
-                    </div>
+                    <h3 class="mb-3">{{ employee.name }}</h3>
+                    <p class="font-bold text-2xl text-navy">
+                      {{ employee.title }}
+                    </p>
+
                     <p>{{ employee.blurb ? employee.blurb : null }}</p>
                     <ul class="flex space-x-8">
                       <li>
@@ -135,17 +134,25 @@
                       </li>
                     </ul>
                   </div>
-                  <div
-                    class="order-first"
+                  <nuxt-img
+                    class="
+                      filter
+                      h-auto
+                      grayscale
+                      object-cover
+                      order-first
+                      shadow-lg
+                      rounded-lg
+                      w-full
+                      lg:w-88
+                    "
                     :class="{ 'lg:order-last': index % 2 !== 0 }"
-                  >
-                    <nuxt-img
-                      class="filter grayscale object-cover shadow-lg rounded-lg"
-                      format="webp"
-                      :src="employee.imgSrc"
-                      alt=""
-                    />
-                  </div>
+                    format="webp"
+                    height="734"
+                    :src="employee.imgSrc"
+                    alt=""
+                    width="734"
+                  />
                 </div>
               </li>
             </ul>
@@ -166,14 +173,14 @@
                   class="gap-y-8 grid lg:grid-cols-2 lg:gap-x-12"
                   data-aos="flip-up"
                 >
-                  <div class="space-y-8 self-center">
-                    <div class="text-lg leading-6 font-medium space-y-1">
+                  <div class="self-center">
+                    <div class="text-lg font-medium">
                       <h3 class="mb-3">{{ employee.name }}</h3>
                       <p class="text-grey font-medium text-2xl">
                         {{ employee.title }}
                       </p>
                     </div>
-                    <p>{{ employee.blurb ? employee.blurb : null }}</p>
+
                     <ul class="flex space-x-8">
                       <li>
                         <a :href="employee.github" class="github-logo">
@@ -204,14 +211,23 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="aspect-w-3 aspect-h-3 order-first">
-                    <nuxt-img
-                      class="filter grayscale object-cover shadow-lg rounded-lg"
-                      format="webp"
-                      :src="employee.imgSrc"
-                      alt=""
-                    />
-                  </div>
+
+                  <nuxt-img
+                    class="
+                      filter
+                      h-auto
+                      grayscale
+                      object-cover
+                      order-first
+                      shadow-lg
+                      rounded-lg
+                      w-full
+                      lg:h-64 lg:w-64
+                    "
+                    format="webp"
+                    :src="employee.imgSrc"
+                    alt=""
+                  />
                 </div>
               </li>
             </ul>
@@ -402,21 +418,24 @@ export default {
   },
 
   async asyncData({ $content }) {
-    const response = await fetch(
-      'https://player.megaphone.fm/playlist/PODRYL5396410253/'
-    );
-    const podcastData = await response.json();
-    const latestPodcastEpisode = podcastData?.episodes[0];
+    let latestPodcastEpisode = {};
+    try {
+      const response = await fetch(
+        'https://player.megaphone.fm/playlist/PODRYL5396410253/'
+      );
+      const podcastData = await response.json();
+      latestPodcastEpisode = podcastData?.episodes[0];
 
-    const description = truncate(
-      latestPodcastEpisode?.summary?.replace(/(<([^>]+)>)/gi, ''),
-      {
-        length: 260,
-        separator: /,?\.* +/
-      }
-    );
+      const description = truncate(
+        latestPodcastEpisode?.summary?.replace(/(<([^>]+)>)/gi, ''),
+        {
+          length: 260,
+          separator: /,?\.* +/
+        }
+      );
 
-    latestPodcastEpisode.description = description;
+      latestPodcastEpisode.description = description;
+    } catch {}
 
     const content = await $content('blog/posts')
       .sortBy('date', 'desc')
@@ -457,7 +476,7 @@ export default {
           linkedin: 'https://www.linkedin.com/in/robertwilliamwagner/',
           github: 'https://github.com/rwwagner90',
           blurb:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+            'Since 2012, Robbie has been using Ember to craft bespoke web applications for companies large and small. He founded Ship Shape in 2017 to provide Ember Consulting for clients and has since ventured into Nuxt and Astro as well. He is a huge Tailwind fanboy and believes it solves CSS once and for all.'
         },
         {
           name: 'Chuck Carpenter',
@@ -494,14 +513,6 @@ export default {
           twitter: '',
           linkedin: 'https://www.linkedin.com/in/kimhanna/',
           github: 'https://github.com/hannakim91'
-        },
-        {
-          name: 'Jessica Justice',
-          title: 'Software Engineer',
-          imgSrc: '/img/blog/authors/jessica.jpg',
-          twitter: '',
-          linkedin: 'https://www.linkedin.com/in/jessica-justice2/',
-          github: 'https://github.com/m1073496'
         }
       ]
     };
