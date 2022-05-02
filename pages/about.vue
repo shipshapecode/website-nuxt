@@ -163,14 +163,14 @@
                 lg:space-y-0
                 lg:grid
                 lg:grid-cols-2
-                lg:gap-x-16
+                lg:gap-x-8
                 lg:gap-y-28
                 lg:pb-24
               "
             >
               <li v-for="employee in team" :key="employee.name">
                 <div
-                  class="gap-y-8 grid lg:grid-cols-2 lg:gap-x-12"
+                  class="gap-y-8 grid lg:grid-cols-2 lg:gap-x-8"
                   data-aos="flip-up"
                 >
                   <div class="self-center">
@@ -181,8 +181,8 @@
                       </p>
                     </div>
 
-                    <ul class="flex space-x-8">
-                      <li>
+                    <ul class="flex mb-0 space-x-8">
+                      <li class="mb-0">
                         <a :href="employee.github" class="github-logo">
                           <span class="sr-only">GitHub</span>
                           <inline-svg
@@ -191,7 +191,7 @@
                           />
                         </a>
                       </li>
-                      <li>
+                      <li class="mb-0">
                         <a :href="employee.linkedin" class="linkedin-logo">
                           <span class="sr-only">LinkedIn</span>
                           <inline-svg
@@ -200,7 +200,7 @@
                           />
                         </a>
                       </li>
-                      <li v-if="employee.twitter">
+                      <li v-if="employee.twitter" class="mb-0">
                         <a :href="employee.twitter" class="twitter-logo">
                           <span class="sr-only">Twitter</span>
                           <inline-svg
@@ -212,22 +212,14 @@
                     </ul>
                   </div>
 
-                  <nuxt-img
-                    class="
-                      filter
-                      h-auto
-                      grayscale
-                      object-cover
-                      order-first
-                      shadow-lg
-                      rounded-lg
-                      w-full
-                      lg:h-64 lg:w-64
-                    "
-                    format="webp"
-                    :src="employee.imgSrc"
-                    alt=""
-                  />
+                  <div class="aspect-h-10 aspect-w-10 order-first">
+                    <nuxt-img
+                      class="filter grayscale object-cover shadow-lg rounded-lg"
+                      format="webp"
+                      :src="employee.imgSrc"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </li>
             </ul>
@@ -513,6 +505,14 @@ export default {
           twitter: '',
           linkedin: 'https://www.linkedin.com/in/kimhanna/',
           github: 'https://github.com/hannakim91'
+        },
+        {
+          name: 'Marika Shanahan',
+          title: 'Software Engineer',
+          imgSrc: '/img/blog/authors/marika.jpg',
+          twitter: '',
+          linkedin: 'https://www.linkedin.com/in/marika-shanahan/',
+          github: 'https://github.com/monshan'
         }
       ]
     };
