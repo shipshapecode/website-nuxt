@@ -478,7 +478,7 @@ export default {
           linkedin: 'https://www.linkedin.com/in/chuckcarpenter/',
           github: 'https://github.com/chuckcarpenter',
           blurb:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+            'Chuck leads teams to deliver high quality, nimble, reliable, and valuable products in order to create demand and increase their user base. He sometimes makes stuff in Javascript, Serverless, and GraphQL.'
         }
       ],
       team: [
