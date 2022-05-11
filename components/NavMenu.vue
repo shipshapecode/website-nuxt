@@ -34,14 +34,7 @@
             <meta itemprop="height" content="128" />
             <meta itemprop="width" content="128" />
           </div>
-          <div
-            class="font-medium leading-[unset] text-3xl"
-            :class="{
-              'text-navy': $route.name !== 'about',
-              'text-white': $route.name === 'about'
-            }"
-            itemprop="name"
-          >
+          <div class="font-medium text-3xl text-navy" itemprop="name">
             Ship Shape
           </div>
         </nuxt-link>
@@ -71,9 +64,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/services/"
             @click.native="toggleNavMenu(false)"
           >
@@ -82,9 +72,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/work/"
             @click.native="toggleNavMenu(false)"
           >
@@ -93,9 +80,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/about/"
             @click.native="toggleNavMenu(false)"
           >
@@ -104,9 +88,6 @@
 
           <nuxt-link
             class="nav-link"
-            :class="{
-              'nav-link-alt': $route.name === 'about'
-            }"
             to="/blog/"
             @click.native="toggleNavMenu(false)"
           >

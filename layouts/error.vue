@@ -4,7 +4,7 @@
     class="section flex flex-wrap justify-center"
   >
     <div class="section-content text-center">
-      <inline-svg class="h-auto inline max-w-2xl w-full" src="/svgs/404.svg" />
+      <inline-svg class="inline h-auto w-full max-w-2xl" src="/svgs/404.svg" />
     </div>
   </div>
 </template>

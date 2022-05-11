@@ -7,13 +7,14 @@
       section
       waves
       white-waves
-      flex flex-wrap
-      justify-center
+      flex
       w-full
+      flex-wrap
+      justify-center
     "
   >
     <div class="section-content flex flex-wrap justify-center">
-      <div class="flex flex-wrap justify-center items-center w-full">
+      <div class="flex w-full flex-wrap items-center justify-center">
         <client-only>
           <ContactForm />
         </client-only>
