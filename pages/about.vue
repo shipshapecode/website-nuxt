@@ -367,33 +367,65 @@
       </div>
     </section>
 
-    <HeroBlock hero-classes="waves blue-waves bg-blue-light" data-aos="fade">
-      <template #content>
-        <h2 itemprop="name" class="leading-tight text-5xl">
-          Want to chart your course to software success?
-        </h2>
-        <div>
-          <p>
-            Reach out to tell us more about your goals and chat about how we can
-            help you get there.
-          </p>
-          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
-            Contact us
-          </nuxt-link>
-        </div>
-      </template>
+    <div
+      class="
+        waves
+        blue-waves
+        section
+        bg-blue-light
+        flex flex-wrap
+        justify-center
+      "
+    >
+      <div class="section-content py-20">
+        <section class="flex flex-wrap justify-center" data-aos="fade">
+          <div
+            class="gap-8 grid grid-cols-1 items-center lg:gap-48 lg:grid-cols-2"
+          >
+            <div class="order-last lg:order-none">
+              <h2 class="text-4xl lg:text-5xl">
+                Want to chart your course to software success?
+              </h2>
 
-      <template #icon>
-        <nuxt-img
-          class="h-auto m-auto max-w-2xl w-full pt-20"
-          height="1034"
-          format="webp"
-          src="/img/hero-images/ember-consulting.png"
-          width="1312"
-          alt=""
-        />
-      </template>
-    </HeroBlock>
+              <div>
+                <div>
+                  <p>
+                    Reach out to tell us more about your goals and chat about
+                    how we can help you get there.
+                  </p>
+                  <div
+                    class="
+                      flex
+                      justify-center
+                      mt-3
+                      w-full
+                      lg:justify-start lg:mt-8
+                    "
+                  >
+                    <nuxt-link
+                      class="btn btn-red w-full lg:w-auto"
+                      to="/contact/"
+                    >
+                      Contact us
+                    </nuxt-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <nuxt-img
+                alt=""
+                class="h-auto m-auto max-w-2xl w-full"
+                format="webp"
+                height="988"
+                src="/img/hero-images/ember-consulting.png"
+                width="1248"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </article>
 </template>
 

@@ -214,9 +214,9 @@
                 alt=""
                 class="h-auto m-auto max-w-2xl w-full"
                 format="webp"
-                :height="footerCTA.height"
-                :src="footerCTA.src"
-                :width="footerCTA.width"
+                height="988"
+                src="/img/hero-images/ember-consulting.png"
+                width="1248"
               />
             </div>
           </div>
@@ -236,12 +236,6 @@ const textSection = [
   { src: '/img/hero-images/build.png', width: '1312', height: '932' },
   { src: '/img/hero-images/open-source.png', width: '1312', height: '960' }
 ];
-
-const footerCTA = {
-  src: '/img/hero-images/ember-consulting.png',
-  width: '1312',
-  height: '1040'
-};
 
 export default {
   speedkitComponents: {
@@ -280,7 +274,7 @@ export default {
   },
 
   data() {
-    return { testimonial, textSection, footerCTA };
+    return { testimonial, textSection };
   },
 
   head() {

@@ -14,7 +14,7 @@
       "
     >
       <div class="flex flex-no-shrink items-center pr-2 pt-2">
-        <nuxt-link to="/" class="logo inline-flex" itemprop="url">
+        <nuxt-link to="/" class="logo inline-flex items-center" itemprop="url">
           <div
             class="inline-block"
             itemprop="logo"
