@@ -2,7 +2,7 @@
 authorId: rwwagner90
 categories:
   - devtools
-date: '2022-02-02'
+date: '2022-05-19'
 slug: five-tips-to-improve-your-terminal-experience
 title: 5 Tips to Improve Your Terminal Experience
 ---
@@ -20,9 +20,10 @@ One of the biggest improvements to my experience in the terminal was from switch
 [fish](https://fishshell.com/). Fish upgrades your terminal with features like autosuggestions, that
 remember commands you have run before and try to auto complete them for you, and automatically
 generates auto completes for other utilities by parsing their man pages, neat!
+
 # Starship
 
-https://starship.rs/
+[Starship](https://starship.rs/)
 
 # MonoLisa
 
@@ -41,3 +42,12 @@ and it was built by the folks at Vercel, who you may have heard of.
 
 
 # asdf
+
+If you have worked on multiple different projects, throughout your career, odds are you have encountered a
+need to switch `node`, `ruby` etc versions based on the project. There are several independent tools that
+exist for managing versions of these tools like [nvm]() and [rvm]() but I have recently been opting more
+for an all-in-one solution [asdf]().
+
+`asdf` supports auto switching versions of tools as you change directories in your terminal, so if you 
+create a `.tool-versions` file and specify the versions there, you can magically use the correct
+versions for every project, as soon as you `cd` into that directory! 🎉
