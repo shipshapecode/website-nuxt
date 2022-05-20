@@ -61,7 +61,7 @@ and it was built by the folks at [Vercel](https://vercel.com/), who you may have
 [![A terminal window showing the current node and ruby versions installed via asdf](/img/blog/five-tips-to-improve-your-terminal-experience/asdf.png)](https://asdf-vm.com/)
 
 If you have worked on multiple different projects, throughout your career, odds are you have encountered a
-need to switch `node`, `ruby` etc versions based on the project. There are several independent tools that
+need to switch `node`, `ruby`, etc. versions depending on the project. There are several independent tools that
 exist for managing versions of these tools like [nvm](https://github.com/nvm-sh/nvm) and [rvm](https://rvm.io/)
 but I have recently been opting more for an all-in-one solution [asdf](https://asdf-vm.com/).
 
