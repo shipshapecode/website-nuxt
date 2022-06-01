@@ -55,7 +55,7 @@
     <TwoColumnSection
       class-string="mt-20"
       header="We’ll never leave you high and dry"
-      :image="marketing"
+      :image="copilot"
       :is-flipped="true"
     >
       <template #content>
@@ -83,14 +83,14 @@
 import { generateMeta } from '~/utils/meta';
 
 const community = {
-  src: '/img/hero-images/ember-consulting.png',
-  height: '1040',
+  src: '/img/services/cloud-native/community.png',
+  height: '1008',
   width: '1312'
 };
 
-const marketing = {
-  src: '/img/hero-images/mentoring.png',
-  height: '792',
+const copilot = {
+  src: '/img/services/cloud-native/copilot.png',
+  height: '1132',
   width: '1312'
 };
 
@@ -122,7 +122,7 @@ export default {
     WaveMoreLinks: () => import('@/components/WaveMoreLinks')
   },
   data() {
-    return { community, marketing, specialtyBenefits };
+    return { community, copilot, specialtyBenefits };
   },
   head() {
     const title = 'Cloud-Native Applications';
