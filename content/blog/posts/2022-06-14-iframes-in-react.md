@@ -3,7 +3,7 @@ authorId: r0bc4ry
 categories:
 - react
 - javascript
-date: '2022-06-13'
+date: '2022-06-14'
 slug: dynamic-iframes-in-react
 title: 'Dynamic Iframes in React'
 ---
