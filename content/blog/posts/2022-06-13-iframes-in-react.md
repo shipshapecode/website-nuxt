@@ -217,6 +217,6 @@ And that's it! We now have a page agnostic login modal that utilizes the app's e
 
 ## Future Updates
 
-There are a couple features missing here that should be taken into consideration before launching to production. Namely, while the iframe is loading what should be shown to the user and what should happen if the iframe has an error while loading? But luckily, with this setup both of those are pretty trivial and mostly come down to UI/UX. A simple `isLoading` state could be used to show/hide a loader and the iframe's built-in `onError` event could be used to handle any loading issues.
+There are a couple features missing here that should be taken into consideration before releasing to production. Namely, while the iframe is loading what should be shown to the user and what should happen if the iframe has an error while loading? Luckily, with this setup both of these are not too complex and mostly come down to UI/UX. An `isLoading` state could be used to show/hide a loader, and the iframe's built-in `onError` event could be used to handle any loading issues.
 
 As always, thanks for reading, and I hope this helps you out!
