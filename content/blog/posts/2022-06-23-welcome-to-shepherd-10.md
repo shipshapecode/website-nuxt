@@ -18,7 +18,9 @@ In previous iterations of Shepherd we can define where the `Step` is placed on t
 ```js
 // Tour
 const tour = new Tour({
-	steps: [{ attachTo: { element: '.selector', on: 'top' }, ...moreOptions}]
+	steps: [
+    { attachTo: { element: '.selector', on: 'top' }, ...moreOptions}
+  ]
 })
 
 // Step
@@ -33,8 +35,10 @@ Shepherd 10 now supports a **callback function** that returns a DOM selector str
 
 ```js
 const step = new Step(tour, {
-	attachTo: { element: () => { '.selector' || HTMLElement || '[data-test-...]' || undefined || null },
-	on: 'top'}
+	attachTo: { 
+    element: () => { '.selector' || HTMLElement || '[data-test-...]' || undefined || null },
+	  on: 'top'
+  }
 }) 
 ```
 
@@ -72,8 +76,10 @@ In the tour, let's say we want a Step to eventually attach to `oranges`. Let's c
 
 ```js
 const step = new Step(tour, {
-	attachTo: { element: () => { '.oranges' },
-	on: 'bottom'}
+	attachTo: { 
+    element: () => { '.oranges' },
+	  on: 'bottom'
+  }
 }) 
 ``` 
 
@@ -81,8 +87,10 @@ And that's it! As long as the callback return value is one of the accepted data 
 
 ```js
 const step = new Step(tour, {
-	attachTo: { element: () => { document.querySelector('.oranges' },
-	on: 'bottom'}
+	attachTo: { 
+    element: () => { document.querySelector('.oranges' },
+	  on: 'bottom'
+  }
 }) 
 ``` 
 
