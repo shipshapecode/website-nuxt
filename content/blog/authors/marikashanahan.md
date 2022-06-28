@@ -1,6 +1,6 @@
 ---
 name: Marika Shanahan
-id: monshan
+id: marikashanahan
 image: /img/blog/authors/marika.jpg
 location: San Diego, CA
 ---
