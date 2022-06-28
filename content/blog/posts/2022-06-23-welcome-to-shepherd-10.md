@@ -5,7 +5,7 @@ categories:
     - packages
 date: '2022-06-23'
 slug: welcome-to-shepherd-10
-title: Welcome to Shepherd 10
+title: 'Welcome to Shepherd 10'
 ---
 
 ## The latest release 🎉
