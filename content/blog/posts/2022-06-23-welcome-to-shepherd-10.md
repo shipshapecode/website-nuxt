@@ -30,7 +30,7 @@ const step = new Step(tour, {
 	...moreOptions
 })
 ```
-Previously the `element` value could be one of two things: a **DOM selector string** or **HTMLElement**.  These work well for static sites and cases when the element is loaded at build time and is not expected to change. But what about Single Page Applications ([SPAs](https://developer.mozilla.org/en-US/docs/Glossary/SPA))? What any other situation that requires highly dynamic content?
+Previously the `element` value could be one of two things: a **DOM selector string** or **HTMLElement**. These work well for static sites and cases when the element is loaded at build time and is not expected to change. But what about Single Page Applications ([SPAs](https://developer.mozilla.org/en-US/docs/Glossary/SPA)) or any other situation that requires highly dynamic content?
 
 Shepherd 10 now supports a **callback function** that returns a DOM selector string, HTMLElement, undefined, or null as an `element` value. 
 
