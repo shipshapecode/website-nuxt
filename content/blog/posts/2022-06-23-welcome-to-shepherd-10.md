@@ -9,7 +9,7 @@ title: 'Welcome to Shepherd 10'
 ---
 
 ## The latest release 🎉
-![shepherd screen shot](/img/blog/shepherd6-site4.png)
+![Screenshot of the shepherd.js homepage showing the features of the library.](/img/blog/shepherd6-site4.png)
 Following the version 9 release in January 2022, Ship Shape's next major release is here with [Shepherd version 10](https://github.com/shipshapecode/shepherd). This new release delivers more flexible tour options and even speedier run time for highly dynamic content. 
 
 ## Where can I attach my Shepherd Step?
