@@ -70,7 +70,8 @@ Here is a simple example where we have a button that expands a custom dropdown m
 	<!-- etc.. -->
 </button>
 ```
-In the tour, let's say we want a Step to eventually attach to `oranges`. Let's configure the callback to select it by its class name.
+
+In the tour, let's say we want a Step to eventually attach to `.oranges`. Let's configure the callback to select it by its class name.
 ```html
 <!-- Sometimes will be on the DOM, not always -->
 <a class="oranges">oranges</a>
