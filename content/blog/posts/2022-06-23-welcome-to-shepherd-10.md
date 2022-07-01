@@ -52,6 +52,7 @@ If you haven't heard of memoization before, not to worry it is simply a way of s
 > In programming, **memoization is an optimization technique** that makes applications more efficient and hence faster. It does this by storing computation results in cache, and retrieving that same information from the cache the next time it's needed instead of computing it again. --[Germán Cocca](https://www.freecodecamp.org/news/author/gercocca/)
 
 <iframe src="https://gifer.com/embed/EVRC" width=480 height=276.480 frameBorder="0" allowFullScreen></iframe>
+<br/>
 
 It's not surprising that the words `memorize` and `memoize` share the same latin root *memo* which means "to be remembered". Instead of constantly wondering what is in the fridge, writing down your list and carrying it with you to the grocery store is a much cleaner active recall.
 
