@@ -14,7 +14,7 @@ title: 'Welcome to Shepherd 10'
 Following the Shepherd version 9 release in January 2022, Ship Shape's next major release is here with [Shepherd version 10](https://github.com/shipshapecode/shepherd). This new release delivers more flexible tour options and an even speedier run time for highly dynamic content. 
 
 ## Where can I attach my Shepherd Step?
-In previous iterations of Shepherd we can define where the `Step` is placed on the DOM with the `attachTo`  object passed as an argument of the options parameter either when setting up a new `Tour` or new `Step` like so:
+In previous iterations of Shepherd, we could define what the `Step` was attached to in the DOM with the `attachTo` option either when setting up a new `Tour` or new `Step` like so:
 
 ```js
 // Tour
