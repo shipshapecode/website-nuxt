@@ -62,7 +62,7 @@ For those familiar with Big O notation, memoization is often described as a trad
 
 For those familiar with Shepherd, very little has changed about how you would define the attachTo element. We still require some element to place the step (or null or undefined), but using the callback opens up our options for placing the step.
 
-Here is a simple example where we have a button that expands a custom dropdown menu. However because menu options are dynamic, they can vary from user to user or login state.
+Here is a simple example where we have a button that expands a custom dropdown menu. However, because menu options are dynamic, they can vary from user to user or login state.
 ```html
 <button class="menu">
 	<a class="apples">apples</a>
