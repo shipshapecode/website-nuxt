@@ -87,7 +87,7 @@ const step = new Step(tour, {
 }) 
 ``` 
 
-And that's it! As long as the callback return value is one of the accepted data types our Step will attach as expected even to dynamic elements. In previous iterations of Shepherd this would not work because the oranges element wouldn't exist at the time of attachTo resolution. Let's take a look at another way we can select  `oranges`.
+And that's it! As long as the callback return value is one of the accepted data types our Step will attach as expected, even to dynamic elements. In previous iterations of Shepherd this was more difficult because the oranges element wouldn't exist at the time of `attachTo` resolution. Let's take a look at another way we can select  `.oranges`.
 
 ```js
 const step = new Step(tour, {
