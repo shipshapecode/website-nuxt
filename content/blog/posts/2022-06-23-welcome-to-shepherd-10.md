@@ -43,7 +43,7 @@ const step = new Step(tour, {
 }) 
 ```
 
-We now resolve the `attachTo.element` in the `before-show` phase which by its name resolves the attachTo specifications just once before the Shepherd Step is shown on the DOM. By also **memoizing** the attachTo resolution, the Shepherd 10 delivers a more performant experience to users as they navigate each step in a tour.
+We now resolve the `attachTo` options in the `before-show` phase which by its name resolves the attachTo specifications just once before the Shepherd Step is shown on the DOM. By also **memoizing** the attachTo resolution, Shepherd 10 delivers a more performant experience to users as they navigate each step in a tour.
 
 ## Memo-what?
 
@@ -54,13 +54,13 @@ If you haven't heard of memoization before, not to worry it is simply a way of s
 <iframe src="https://gifer.com/embed/EVRC" width=480 height=276.480 frameBorder="0" allowFullScreen></iframe>
 <br/>
 
-It's not surprising that the words `memorize` and `memoize` share the same latin root *memo* which means "to be remembered". Instead of constantly wondering what is in the fridge, writing down your list and carrying it with you to the grocery store is a much cleaner active recall.
+It's not surprising that the words `memorize` and `memoize` share the same latin root *memo* which means "to be remembered". Instead of constantly wondering what is in the fridge, if you write down a list and carry it with you to the grocery store, you only have to think about it once.
 
 For those familiar with Big O notation, memoization is often described as a trade of space for time complexity. We take up a bit more space in the cache in want of faster load time.
 
 ## In Action
 
-For those familiar with Shepherd, very little has changed about how you would define the attachTo element. We still require some element to place the step (or null or undefined), but using the callback opens up our options for placing the step.
+For those familiar with Shepherd, very little has changed about how we define the attachTo element. We still require some element to place the step (or null or undefined), but using the callback opens up our options for placing the step.
 
 Here is a simple example where we have a button that expands a custom dropdown menu. However, because menu options are dynamic, they can vary from user to user or login state.
 ```html
@@ -87,7 +87,7 @@ const step = new Step(tour, {
 }) 
 ``` 
 
-And that's it! As long as the callback return value is one of the accepted data types our Step will attach as expected, even to dynamic elements. In previous iterations of Shepherd this was more difficult because the oranges element wouldn't exist at the time of `attachTo` resolution. Let's take a look at another way we can select  `.oranges`.
+And that's it! As long as the callbacks return value is one of the accepted data types our `Step` will attach as expected --even to dynamic elements. In previous iterations of Shepherd this was more difficult because the `.oranges` element wouldn't exist at the time of `attachTo` resolution. Let's take a look at another way we can select  `.oranges`.
 
 ```js
 const step = new Step(tour, {
