@@ -1,6 +1,6 @@
 ---
 authorId: hannakim
-categories: 
+categories:
   - '2022'
   - web accessibility
   - nuxt.js
@@ -10,131 +10,144 @@ slug: accessibility-basics
 title: 'Building (or Rebuilding) a Website with Accessibility in Mind'
 ---
 
-| ![AOL landing page from 1999, comprised of mostly low-resolution graphic ads and blue underlined links to different parts of the web](/img/blog/AOL-1999.png) |
-|:--:|
-| *Remember this beauty?* |
+Websites have come a long way since HTML and CSS were the only tools available to build them. So has design sense-- companies want to express their brand's identity using the latest technologies to create dynamic content that catches and maintains their users' attention.
 
-Websites have come a long way since HTML and CSS were the only tools available to build them. So has design sense-- companies want to express their brand's identity using the latest technologies to create dynamic content that catches and maintains their users' attention. In order to ensure everyone is able to use your website, it is important to make sure the underlying structure of each page is set up in a way that works with the different devices and tools people may be using to interact with them.
+To ensure everyone is able to use your website, it is important to make sure the underlying structure of each page is set up in a way that works with the different devices and tools people may be using to interact with them.
+
+| ![AOL landing page from 1999, comprised of mostly low-resolution graphic ads and blue underlined links to different parts of the web](/img/blog/AOL-1999.png) |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                    _Remember this beauty?_                                                                    |
+
+<br><br/>
 
 ## Navigating a Modern Website with Accessibility Tools
 
 | ![shipshape.io landing page, newly updated this past year](/img/blog/shipshape-home.png) |
-|:--:|
-| *How do you process the content on this landing page?* |
+| :--------------------------------------------------------------------------------------: |
+|                  _How do you process the content on this landing page?_                  |
 
-A visual flow that may instantly make sense for those of us with normal vision and the ability to navigate the GUI with a mouse/trackpad may lead to a vastly different navigational experience for someone without those abilities. Some folks may rely on tools like a screenreader or keyboard to be able to access the digital world. These tools rely on software engineers to create apps with proper DOM structure so their users can to get to the information they need quickly and efficiently.
+<br/>
+
+A visual flow that may instantly make sense for those of us with normal vision and the ability to navigate the GUI with a mouse or trackpad can be vastly different navigational experience for someone without those abilities.
+
+Some folks may rely on tools like a screenreader or keyboard to be able to access the digital world. These tools rely on software engineers to create apps with proper DOM structure so their users can to get to the information they need quickly and efficiently.
 
 ## Generate the DOM Structure First
 
-| ![shipshape.io landing page marked up with arrows starting at the header and zig-zagging across the page to each text area](/img/blog/shipshape-home.png) |
+<br/>
 
-If you are not visually impaired, chances are likely that your eyes jumped to scan each header on the page, starting at the top left. You might have next read a section of body copy, if the header caught your interest. Though your focus may have been on the text, your eyes concurrently processed the two images of our mascot at work "building" apps, which are opposite each segment of copy. You could likely skim through the buttons made up of tech logos on the bottom right-hand corner of the page. 
+![shipshape.io landing page marked up with arrows starting at the header and zig-zagging across the page to each text area](/img/blog/shipshape-home-arrows.png)
 
-Someone without those same abilities could have a fairly similar experience if the page is built with their experience in mind. Based on our abilities as able-bodied developers, our instinct may be to add elements as we see them on a design spec. When building with accessibility in mind, a good rule of thumb is to start by thinking of what elements should be on the page *without* any of the design. Create the scaffolding for the content, then add any styling afterwards to add in the creative touches that differentiate your page.
+If you are not visually impaired, chances are likely that your eyes jumped to scan each header on the page, starting at the top left. You might have next read a section of body copy, if the header caught your interest. Though your focus may have been on the text, your eyes concurrently processed the two images of our mascot at work "building" apps, which are opposite each segment of copy. You could likely skim through the buttons made up of tech logos on the bottom right-hand corner of the page.
 
-## Basic Considerations for A11y 
+Someone without those same abilities could have a fairly similar experience if the page is built with their experience in mind. Based on our abilities as able-bodied developers, our instinct may be to add elements as we see them on a design spec.
 
-Here are a few things to pay attention to so you can jump-start accessibility for your web application.
+When building with accessibility in mind, a good rule of thumb is to start by thinking of what elements should be on the page _without_ any of the design in place. Ccreate the scaffolding for the content first, then add in the creative touches that differentiate your page.
+
+## Basic Considerations for A11y
+
+Here are some basics to pay attention to so you can jump-start accessibility for your web application:
 
 ### Order Elements in Each Section Properly:
 
-Let's take a closer look at this section of our page:
+![Section of shipshape.io with an image taking up the left half of the section and a header and two paragraphs making up the right half](/img/blog/image-before-header-section.png)
 
-| ![Section of shipshape.io with an image taking up the left half of the section and a header and two paragraphs making up the right half](/img/blog/image-before-header.png) |
+Let's take a closer look at this section of our page. Because most languages read left to right, we start our attention on the left side of the page, which this time, is an image and might start coding like so:
 
-```
-<div>
-  <img />
-  <h1>Title</h1>
-  <p>some body copy</p>
-</div>
+```html
+<img />
+<h1>Title</h1>
+<p>some body copy</p>
 ```
 
-vs
+A header should be the leading element in its section; otherwise it can create confusion for non-GUI users. On shipshape.io, we've used [tailwindCSS](https://tailwindcss.com/docs/order) to help us style something like this easily, using the `order` utility. `order-last` forces the `div` with the header and text to come after the image, like so:
 
-```
-<section>
-  <div>
+```html
+<section class="flex">
+  <div class="order-last">
     <h1>Title</h1>
     <p>some body copy</p>
   </div>
   <div>
-    <img>
+    <img />
   </div>
 </section>
-
 ```
-
-### Use Semantic HTML
-
-H-tags are a good starting point for organizing into sections. There are many other semantic HTML elements
-(link MDN) 
-
-Don’t change roles? e.g. instead of div role button use a button 
-This helps navigate the page, especially when primary access is keyboard 
-(Organize?) KEYBOARD NAVIGATION
 
 ### Use Proper H-Tags
 
-Web browsers, plug-ins, and assistive technologies rely on semantic HTML to direct their users to where they want to get on a page
+Accessibility tools rely on well-organized DOM and content to direct their users to where they want to get on a page. Screen reader users are given the option to listen to a list of headings on a page so they can skip around and get to their desired section for further interaction _without_ going through every single element on the page, line by line.
 
-https://usability.yale.edu/web-accessibility/articles/headings#:~:text=Benefits%20of%20Headings,-Organizing%20web%20pages&text=Making%20texts%20larger%20helps%20guide,can%20also%20benefit%20from%20headings
-https://www.w3.org/WAI/tutorials/page-structure/headings/
+An anti-pattern for using `h-tag`'s is to set each header level to a certain set of styles and sizes and using them for different text styles through the page. This promotes [using headers out of order](https://www.w3.org/WAI/tutorials/page-structure/headings/). Instead, first make sure your content is organized in proper order, then create the CSS styles to meet your design needs.
 
-Don’t skip headings for sizing purposes - alter your CSS to meet your design needs
-e.g. using H1 then H5 because you pre-set your css styles to signify certain headers
-Don’t use bold instead of a headline
+![Section of shipshape.io with blocks of text using 5 different styles: large-font blue header, large-font white header, small, bolded white text within a button, small regular-weight blue body text, and small regular-weight white body text](/img/blog/h-tag-don't.png)
 
-If the underlying code for a pages headings is correct, screen reader users can also benefit from headings. Screen reader users can navigate a page according to its headings, listen to a list of all headings, and skip to a desired heading to begin reading at that point. Screen reader users can use headings to skip the repeated blocks of content like headers, menus, and sidebars, for example.
+#### 🚫 Don't do this! 🚫
 
-An anti-pattern for using h-tags is to set each header to a certain set of characteristics. This promotes using headers out of order. Consider the DOM first and use headers in the proper semantic order, and add styling afterwards if you need it to be a certain size, weight, color, etc.
-
-```
+```css
 h1 {
- font-weight: bold;
- font-size: xx-large;
+  color: blue;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: medium;
+  color: white;
+  font-size: 48px;
 }
 
 h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
 
+h4 {
+  color: blue;
+  font-size: 20px;
+}
 
+h5 {
+  color: white;
+  font-size: 20px;
 }
 ```
 
-### Use Descriptive Language
+In the example above, the intention was not to nest each section within each other, therefore we should not be using multiple levels of h-tags to style these elements of text.
 
-Especially for interactive elements 
+### Use Semantic HTML
 
-“View case” vs “download the pdf tools”
-[IMAGE] - before & after of “view case” buttons
-Is there an example within shipshape website?
-Maybe this can be my open source work for June too — updating some view case buttons
+Is your website suffering from "[divitis](https://csscreator.com/divitis)"? Look for segments of your page that can be converted to [semantic HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element), which helps accessibilty tool users differentiate the parts of your page they can navigate. For example, use `<button>` instead of `<div role="button">`, which explicitly describes the element's intended interaction.
 
-https://web.dev/link-text/ - list of generic text [grab SS from lighthouse or get link directly from there]
-bonus: designing with accessibility in mind is important to make the web more accessible to all users. this boosts SEO too - helps search engines understand what a site is about
+### Use Descriptive Language for Interactive Elements
 
+Generic text like "click this" or "link 1" can negatively impact accessibility - think about how a user would be able to know what clicking "this" does, or to what page a user will be directed to by a link. You can alternatively use `aria-label` to describe the link with a short descriptor.
+
+**Bonus:** Using language that clearly communicates what interactive elements like links and buttons do also helps boost your page's SEO rankings. This helps sesarch engines create context for how your content is organized.
 
 ## Tools to Help You Develop an Accessible App
 
-Depending where you are on your journey with accessibility, it may feel like a lot of additional work to incorporate. Here are some tools that can help you break things down into more manageable steps:
+Depending where you are on your journey with accessibility, it may feel like a lot of additional work to incorporate. Here are also some tools that can help you break things down into more manageable steps:
 
 ### Lighthouse Chrome Extension
-[Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) is a good starting place to get a general idea of how your current web app scores for accessibility. This developer tool is available for Chrome-based browsers as well as [Firefox](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/). Lighthouse scans through your web app and offers a rundown of what is and isn't accessible. It can also measure your app's quality for load speed and search engine optimization. Keep in mind scoring 100% does *not* necessarily mean your site is perfectly accessible- manual tests are recommended to fix any gaps the tool may have missed.
+
+[Google Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) is a good starting place to get a general idea of how your current web app scores for accessibility. This developer tool is available for Chrome-based browsers as well as [Firefox](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/).
+
+Lighthouse scans through your web app and offers a rundown of what is and isn't considered accessible. It can also measure your app's quality for load speed and search engine optimization. Keep in mind scoring 100% does _not_ necessarily mean your site is perfectly accessible. Manual tests are recommended to fix any gaps the tool may have missed.
 
 ### Color Contrast Checkers
-Lighhouse will let you know about sections of your website that pass/fail color contrast. You can quickly determine at what colors and sizes for text and background color combinations work while designing with contrast checkers like 
-Primary contrast should pass for different types of colorblindness? Visual ability?
-Hover/etc don’t necessarily need to all pass contrast test as long as you have other cues that someone is over a link for example (e.g. by using semantic html)
+
+Lighhouse will let you know about sections of your website that pass/fail color contrast. You can quickly determine at what colors and sizes of text have enough contrast with their background color by using contrast checkers like [WCAG Color contrast checker](https://chrome.google.com/webstore/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf?hl=en) or [Colour Contrast Checker](https://chrome.google.com/webstore/detail/colour-contrast-checker/nmmjeclfkgjdomacpcflgdkgpphpmnfe?hl=en-GB).
+
+Your primary text should have enough contrast to be readable by folks with different types of colorblindness. Additional text states like `hover` or `active` don’t necessarily need to pass the contrast test as long as you have other cues that someone is over a link for example (i.e.: by using semantic html 😉). 
 
 ### HeadingsMap Browser Extension
-This is a quick way to see your headers are following the correct hierarchy with `h1` at the top of the page once, `h2` for other headings, and lower h-tags nested within the proper sections.
+
+[HeadingsMap](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en) is a quick and easy way to check if your headers are following the correct hierarchy for page navigation.
 
 ### Hands-on Testing Your Web App
-Last but not least, try accessing your website in different ways to make sure things are working how you intended 
-Navigate your page via keyboard only and your device’s built-in assistive technology to see if you get stuck in unintended scenarios, like opening a modal and getting sent back to the top of the page when you close it, or skipping over elements you can normally click on. 
 
-Having accessibility in mind while developing helps keep the web a better experience for a greater set of users online as well as you and your engineering team. Following some basic rules while building new features means less technical debt down the line. 
+Last but not least, try accessing your website in different ways to make sure things are working how you intended. Try going through each of your pages using only your keyboard. Next try with your device’s built-in assistive technology. 
+
+Some common unintended scenarios are skipping over elements you can normally click on, or opening a modal and getting sent back to the top of the page when you close it instead of where you last were.
+
+Having accessibility in mind while developing helps keep the web a better experience for a greater set of users online as well as you and your engineering team. Following some basic rules while building new features means less technical debt to fix these important issues down the line.
