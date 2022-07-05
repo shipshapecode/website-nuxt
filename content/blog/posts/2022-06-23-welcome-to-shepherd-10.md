@@ -19,15 +19,15 @@ In previous iterations of Shepherd, we could define what the `Step` was attached
 ```js
 // Tour
 const tour = new Tour({
-	steps: [
+  steps: [
     { attachTo: { element: '.selector', on: 'top' }, ...moreOptions}
   ]
 })
 
 // Step
 const step = new Step(tour, {
-	attachTo: { element: '.selector' , on: 'top'},
-	...moreOptions
+  attachTo: { element: '.selector' , on: 'top'}, 
+  ...moreOptions
 })
 ```
 Previously the `element` value could be one of two things: a **DOM selector string** or **HTMLElement**. These work well for static sites and cases when the element is loaded at build time and is not expected to change. But what about Single Page Applications ([SPAs](https://developer.mozilla.org/en-US/docs/Glossary/SPA)) or any other situation that requires highly dynamic content?
@@ -36,9 +36,9 @@ Shepherd 10 now supports a **callback function** that returns a DOM selector str
 
 ```js
 const step = new Step(tour, {
-	attachTo: { 
+  attachTo: { 
     element: () => { '.selector' || HTMLElement || '[data-test-...]' || undefined || null },
-	  on: 'top'
+    on: 'top'
   }
 }) 
 ```
@@ -65,9 +65,9 @@ For those familiar with Shepherd, very little has changed about how we define th
 Here is a simple example where we have a button that expands a custom dropdown menu. However, because menu options are dynamic, they can vary from user to user or login state.
 ```html
 <button class="menu">
-	<a class="apples">apples</a>
-	<a class="pears">pears</a>
-	<!-- etc.. -->
+  <a class="apples">apples</a>
+  <a class="pears">pears</a>
+  <!-- etc.. -->
 </button>
 ```
 
@@ -80,20 +80,20 @@ In the tour, let's say we want a Step to eventually attach to `.oranges`. Let's 
 
 ```js
 const step = new Step(tour, {
-	attachTo: { 
+  attachTo: { 
     element: () => { '.oranges' },
-	  on: 'bottom'
+    on: 'bottom'
   }
 }) 
 ``` 
 
-And that's it! As long as the callbacks return value is one of the accepted data types our `Step` will attach as expected --even to dynamic elements. In previous iterations of Shepherd this was more difficult because the `.oranges` element wouldn't exist at the time of `attachTo` resolution. Let's take a look at another way we can select  `.oranges`.
+And that's it! As long as the callbacks return value is one of the accepted data types our `Step` will attach as expected --even to dynamic elements. In previous iterations of Shepherd this was more difficult because the `.oranges` element wouldn't exist at the time of `attachTo` resolution. Let's take a look at another way we can select `.oranges`.
 
 ```js
 const step = new Step(tour, {
-	attachTo: { 
+  attachTo: { 
     element: () => { document.querySelector('.oranges' },
-	  on: 'bottom'
+    on: 'bottom'
   }
 }) 
 ``` 
