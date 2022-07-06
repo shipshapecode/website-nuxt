@@ -23,6 +23,8 @@ Thankfully, there's an answer to that question that isn't too involved. So today
 
 SST will handle generating the serverless functions, provide a way to run them locally and also a method for deploying these functions, along with your frontend code, to AWS.
 
+![SST Homepage](/img/blog/serverlesss-functions-direct-to-aws-with-ember/sst-homepage.png)
+
 ## Generating our SST Project
 
 Before we start you'll want to ensure you have an AWS account with the AWS CLI configured locally.
