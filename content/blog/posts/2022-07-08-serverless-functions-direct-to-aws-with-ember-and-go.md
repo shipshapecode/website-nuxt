@@ -81,9 +81,9 @@ This may take several minutes to complete since SST is conducting an actual init
 
 ![SST server started and provided api endpoint url](/img/blog/serverlesss-functions-direct-to-aws-with-ember/sst-start-outputs-server-url.png)
 
-Now before booting our Ember app we'll probably want to set things up so that the Ember application communicates with the serverless function. We'll do that by generating an application route in the Ember app and sending a fetch request to the `Apiendpoint` url as a gut check to ensure we can retrieve some data.
+Now before booting our Ember app we'll probably want to set things up so that the Ember application communicates with the serverless function. We'll do that by generating an application route in the Ember app and sending a fetch request to the `ApiEndpoint` url as a gut check to ensure we can retrieve some data.
 
-We'll also want to do this using environment variables so we can later handle the different `Apiendpoint` url that will support the deployed production instance of our application. So we'll add a dot env file with `EMBER_APP_API_URL` as an environment variable and set that equal to the `Apiendpoint`.
+We'll also want to do this using environment variables so we can later handle the different `ApiEndpoint` url that will support the deployed production instance of our application. So we'll add a dot env file with `EMBER_APP_API_URL` as an environment variable and set that equal to the `ApiEndpoint`.
 
 ```javascript
 // ./application/route.js
@@ -184,7 +184,7 @@ And there is our Ember app with a Go-based serverless function that is deployabl
 
 If we run `npx sst deploy --stage prod`, SST will handle all the details of deploying the app. Again, this will take several minutes to completely deploy.
 
-Once it's done we'll need to set the prod `Apiendpoint` url provided in the output of the deploy logs as an environment variable in the Ember app and re-deploy using the same command. Once that deploys you've got an Ember app with a Go lang serverless function deployed to AWS!
+Once it's done we'll need to set the prod `ApiEndpoint` url provided in the output of the deploy logs as an environment variable in the Ember app and re-deploy using the same command. Once that deploys you've got an Ember app with a Go lang serverless function deployed to AWS!
 
 
 ![Browser showing the cloudfront distribution deployment](/img/blog/serverlesss-functions-direct-to-aws-with-ember/cloudfront-distribution.png)
