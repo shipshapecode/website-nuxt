@@ -19,7 +19,7 @@ We won't re-hash all the benefits of adding serverless functions alongside your 
 
 Now, as we demonstrated in our last post on this subject, developing and deploying serverless functions to Vercel or Netlify is a breeze because of the tooling they provide. But, what if your project has constraints that require a deployment directly to AWS without use of those other platforms?
 
-Thankfully, there's an answer to that question that isn't too involved and today, we're focusing on deploying serverless functions directly to AWS using a framework called [SST](https://sst.dev/) that makes it trivial to build full-stack serverless apps.
+Thankfully, there's an answer to that question that isn't too involved. So today, we'll focus on deploying serverless functions directly to AWS using a framework called [SST](https://sst.dev/) that makes it trivial to build full-stack serverless apps.
 
 SST will handle generating the serverless functions, provide a way to run them locally and also a method for deploying these functions, along with your frontend code, to AWS.
 
@@ -39,7 +39,7 @@ We could choose the `javascript-starter` template if we wanted to create a serve
 
 ## Adding in Ember
 
-Now that we have a SST project started, let's navigate into that project and generate a new Ember.js application at the SST project root with `npx ember-cli@4.4 new frontend`. We'll call the new Ember project, frontend, to keep things generalized and we'll also note that the frontend code here doesn't have to be Ember. There are many examples that you can auto-generate with the `npx create-sst@latest --examples` command that will come pre-packaged with an example frontend repository.
+Now that we have a SST project started, let's navigate into that project and generate a new Ember.js application at the SST project root with `npx ember-cli@latest new frontend`. We'll call the new Ember project, frontend, to keep things generalized and we'll also note that the frontend code here doesn't have to be Ember. There are many examples that you can auto-generate with the `npx create-sst@latest --examples` command that will come pre-packaged with an example frontend repository. Hopefully, one day one of those examples will include Ember, but for now there's a small piece of manual configuration we need to set in place for things to work.
 
 ## Connecting the Wires
 
