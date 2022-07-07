@@ -13,9 +13,9 @@ title: Go Serverless Functions with Ember and SST
 
 You may recall in our [last post](https://shipshape.io/blog/serverless-functions-ember-glimmer/) on this subject that we made use of some tooling provided by the platforms offered by Vercel and Netlify to introduce serverless functions into Ember and Glimmer applications.
 
-This provided a seamless development experience for running serverless functions locally on your machine and a straightforward method of deploying those same functions alongside the Ember and Glimmer applications to Vercel or Netlify. This allowed us to reap much of the same benefits in an Ember and Glimmer application as are offered by [api-routes](https://nextjs.org/docs/api-routes/introduction) in Next.js applications.
+This provided a seamless development experience for running serverless functions locally on your machine and a straightforward method of deploying those same functions alongside your Ember and Glimmer applications to Vercel or Netlify. This allowed us to reap much of the same benefits in an Ember and Glimmer application as are offered by [API Routes](https://nextjs.org/docs/api-routes/introduction) in Next.js applications.
 
-We won't re-hash all the benefits of adding serverless functions alongside your frontend application, but we do think you can gain greater developer productivity from having them in your project. They can unblock frontend developers from relying on backend developers to write endpoints for some basic API functionality and you could write your entire backend as a set of serverless functions.
+We won't re-hash all the benefits of adding serverless functions alongside your frontend application, but we should mention that we think you can gain greater developer productivity from having them in your project. They can unblock frontend developers from relying on backend developers to write endpoints for some basic API functionality and you could write your entire backend as a set of serverless functions.
 
 Now, as we demonstrated in our last post on this subject, developing and deploying serverless functions to Vercel or Netlify is a breeze because of the tooling they provide. But, what if your project has constraints that require a deployment directly to AWS without the use of those other platforms?
 
@@ -29,7 +29,7 @@ SST will handle generating the serverless functions, provide a way to run them l
 
 Before we start you'll want to ensure you have an AWS account with the AWS CLI configured locally.
 
-By default, if you run `npx create-sst <your-app-name>`, SST provides a full-stack application, including an RDS or Dynamo database, and a GraphQL API as well - among other things. Those offerings are powerful and could be a solution for your project, but for the sake of simplicity and staying focused on only adding serverless functions as API routes for our application, we'll use a more stripped-down [SST template](https://docs.sst.dev/packages/create-sst#--template) to limit what is installed.
+By default, if you run `npx create-sst <your-app-name>`, SST provides a full-stack application, including an RDS or Dynamo database, and a GraphQL API as well - among other things. Those offerings are powerful and could be a solution for your project, but for the sake of simplicity and staying focused on only adding serverless functions as API Routes for our application, we'll use a more stripped-down [SST template](https://docs.sst.dev/packages/create-sst#--template) to limit what is installed.
 
 To get started we'll run `npx create-sst@latest --minimal <your-app-name>`. This will generate a new SST project that includes only the minimal set of things needed to form an SST app with serverless functions. You'll notice that we are presented with an option to choose a template:
 
@@ -75,11 +75,11 @@ export function MyStack({ stack }: StackContext) {
 }
 ```
 
-This will tell your SST project about your Ember application and what it needs to do to build the Ember code and where to save it. After this, we should go ahead and run `npm install` or `yarn` in both the SST project root and the Ember project root. Note, at the time of this writing, we had to use Node 16 and chose the latest LTS, `lts/gallium`.
+This will tell your SST project about your Ember application, how to build the Ember code and where to save the build. After this, we should go ahead and run `npm install` or `yarn` in both the SST project root and the Ember project root. Note, at the time of this writing, we had to use Node 16 and chose the latest LTS, `lts/gallium`, but your mileage may vary.
 
 If you now run `yarn start` or `npm start` from the SST project root this will start the SST side of things, which includes creating debug deployments that help run the serverless function locally. The SST CLI will ask for an environment name which we'll provide as `dev`, but you can call it whatever you like.
 
-This may take several minutes to complete since SST is conducting an actual initial deployment, but at the end of the process you should see something like the following which should include the `ApiEndpoint` where the serverless function can be reached:
+This may take several minutes to complete since SST is conducting an actual initial deployment (SST uses something they call [live lambda development](https://docs.sst.dev/live-lambda-development), which includes deploying services for your development environment to interact with), but at the end of the process you should see something like the following which should include the `ApiEndpoint` where the serverless function can be reached:
 
 ![SST server started and provided API endpoint url](/img/blog/serverlesss-functions-direct-to-aws-with-ember/sst-start-outputs-server-url.png)
 
@@ -103,7 +103,7 @@ export default class ApplicationRoute extends Route {
 }
 ```
 
-We'll also modify the `./config/environment.js` file to set this environment variable in the Ember app for use later on.
+We'll also modify the `./config/environment.js` file to set this environment variable in the Ember app for use later on:
 
 ```javascript
 // .config/environment.js
@@ -149,7 +149,7 @@ module.exports = function (environment) {
 };
 ```
 
-And finally, we'll tweak the serverless function to respond with JSON rather than a string.
+And finally, we'll tweak the serverless function to respond with JSON rather than a string:
 
 ```go
 // ./services/functions/lambda/main.go
@@ -177,17 +177,17 @@ func main() {
 }
 ```
 
-With that wired up you can fire up the ember app as you normally would and check in the browser that the serverless function is returning the data we expected:
+With that wired up you can fire up the Ember app as you normally would and check in the browser that the serverless function is returning the data we expected:
 
 ![Browser showing the Go serverless function response](/img/blog/serverlesss-functions-direct-to-aws-with-ember/browser-showing-go-serverless-response.png)
 
-And there is our Ember app with a Go-based serverless function that is deployable to AWS, we only need to take one more step to deploy it!
+And there is our Ember app with a Go-based serverless function that is deployable to AWS, and we only need to take one more step to deploy it!
+
 ## Deployment to AWS
 
 If we run `npx sst deploy --stage prod`, SST will handle all the details of deploying the app. Again, this will take several minutes to completely deploy.
 
-Once it's done we'll need to set the prod `ApiEndpoint` url provided in the output of the deploy logs as an environment variable in the Ember app and re-deploy using the same command. Once that deploys you've got an Ember app with a Go lang serverless function deployed to AWS!
-
+Once it's done we'll need to set the prod `ApiEndpoint` URL provided in the output of the deploy logs as an environment variable in the Ember app and re-deploy using the same command. Once that deploys you've got an Ember app with a Go lang serverless function deployed to AWS!
 
 ![Browser showing the CloudFront distribution deployment](/img/blog/serverlesss-functions-direct-to-aws-with-ember/cloudfront-distribution.png)
 
@@ -195,4 +195,6 @@ and ...
 
 ![Browser showing the Go serverless function response in the prod deployment](/img/blog/serverlesss-functions-direct-to-aws-with-ember/browser-showing-go-serverless-response-prod-deploy.png)
 
-Now, this is not the only way you can deploy serverless functions and an Ember application directly to AWS, but it is a convenient way to get that done. In future posts on this topic, we might look at alternative means for deployment that require a little more configuration, but which may also provide more control over the deployment and architecture - stay tuned!
+Now, this is not the only way you can deploy serverless functions and an Ember application directly to AWS, but it is a convenient way to get that done. 
+
+In future posts on this topic, we might look at alternative means for deployment that require a little more configuration, but which may also provide more control over the deployment and architecture, so stay tuned!
