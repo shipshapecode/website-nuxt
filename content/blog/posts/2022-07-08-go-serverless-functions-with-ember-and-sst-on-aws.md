@@ -7,8 +7,8 @@ categories:
   - go
   - serverless
 date: '2022-07-08'
-slug: serverlesss-functions-direct-to-aws-with-ember-and-go
-title: Go Serverless Functions with Ember and SST
+slug: go-serverless-functions-with-ember-and-sst-on-aws
+title: Go Serverless Functions with Ember and SST on AWS
 ---
 
 You may recall in our [last post](https://shipshape.io/blog/serverless-functions-ember-glimmer/) on this subject that we made use of some tooling provided by the platforms offered by Vercel and Netlify to introduce serverless functions into Ember and Glimmer applications.
@@ -195,6 +195,6 @@ and ...
 
 ![Browser showing the Go serverless function response in the prod deployment](/img/blog/serverlesss-functions-direct-to-aws-with-ember/browser-showing-go-serverless-response-prod-deploy.png)
 
-Now, this is not the only way you can deploy serverless functions and an Ember application directly to AWS, but it is a convenient way to get that done. 
+Now, this is not the only way you can deploy serverless functions and an Ember application directly to AWS, but it is a convenient way to get that done.
 
 In future posts on this topic, we might look at alternative means for deployment that require a little more configuration, but which may also provide more control over the deployment and architecture, so stay tuned!
