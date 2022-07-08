@@ -13,9 +13,9 @@
           for immediate use among initial client base
         </p>
 
-        <nuxt-link class="btn btn-red mb-12" to="/work/enigma/">
+        <NuxtLink class="btn btn-red mb-12" to="/work/enigma/">
           View Case
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
 
@@ -31,9 +31,9 @@
           Increased efficiency and data granularity with enhanced finance tools
         </p>
 
-        <nuxt-link class="btn btn-red mb-12" to="/work/netflix/">
+        <NuxtLink class="btn btn-red mb-12" to="/work/netflix/">
           View Case
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
 
@@ -50,9 +50,9 @@
           modernized app
         </p>
 
-        <nuxt-link class="btn btn-red mb-12" to="/work/expel/">
+        <NuxtLink class="btn btn-red mb-12" to="/work/expel/">
           View Case
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
 
@@ -68,9 +68,9 @@
           Building a cross platform desktop color management tool
         </p>
 
-        <nuxt-link class="btn btn-red mb-12" to="/work/swach/">
+        <NuxtLink class="btn btn-red mb-12" to="/work/swach/">
           View Case
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
 
@@ -87,9 +87,9 @@
           major new client
         </p>
 
-        <nuxt-link class="btn btn-red mb-12" to="/work/jebbit/">
+        <NuxtLink class="btn btn-red mb-12" to="/work/jebbit/">
           View Case
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
 
@@ -106,9 +106,9 @@
           and fixing data issues
         </p>
 
-        <nuxt-link class="btn btn-red mb-12" to="/work/acquia/">
+        <NuxtLink class="btn btn-red mb-12" to="/work/acquia/">
           View Case
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
   </div>

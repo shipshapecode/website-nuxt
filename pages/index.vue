@@ -1,13 +1,13 @@
 <template>
   <div class="relative">
-    <HeroBlock hero-classes="home bg-blue-light" :critical="true">
+    <HeroBlock hero-classes="home bg-blue-light">
       <template #content>
         <h1 class="leading-none">Our software consultants make waves</h1>
 
         <div class="mt-3 flex w-full justify-center lg:mt-8 lg:justify-start">
-          <nuxt-link to="/contact/" class="btn btn-red w-full lg:w-auto">
+          <NuxtLink to="/contact/" class="btn btn-red w-full lg:w-auto">
             Come on board
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </template>
 
@@ -65,15 +65,6 @@ export default {
     const url = 'https://shipshape.io/';
 
     return generateMeta(title, description, url);
-  },
-  speedkitComponents: {
-    HeroBlock: () => import('@/components/HeroBlock'),
-    BuildTheFuture: () => import('@/components/BuildTheFuture'),
-    WeKnowTheRopes: () => import('@/components/WeKnowTheRopes'),
-    BigNames: () => import('@/components/BigNames'),
-    WhyUsGrid: () => import('@/components/WhyUsGrid'),
-    DoubleQuotes: () => import('@/components/DoubleQuotes'),
-    RecentBlogPosts: () => import('@/components/RecentBlogPosts')
   }
 };
 </script>

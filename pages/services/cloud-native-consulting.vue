@@ -10,9 +10,9 @@
         </h1>
 
         <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
-          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
+          <NuxtLink class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let’s get started
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </template>
 
@@ -114,13 +114,6 @@ const specialtyBenefits = [
 ];
 
 export default {
-  speedkitComponents: {
-    AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
-    HeroBlock: () => import('@/components/HeroBlock'),
-    TwoColumnSection: () => import('@/components/TwoColumnSection'),
-    SingleQuote: () => import('@/components/SingleQuote'),
-    WaveMoreLinks: () => import('@/components/WaveMoreLinks')
-  },
   data() {
     return { community, copilot, specialtyBenefits };
   },

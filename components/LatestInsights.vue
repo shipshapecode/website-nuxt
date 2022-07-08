@@ -11,9 +11,9 @@
         "
       >
         <h2 class="text-4xl lg:text-5xl">Check out the latest insights</h2>
-        <nuxt-link class="btn btn-red w-full lg:w-1/5" to="/blog/">
+        <NuxtLink class="btn btn-red w-full lg:w-1/5" to="/blog/">
           Read on
-        </nuxt-link>
+        </NuxtLink>
       </header>
       <div>
         <MediaCard
@@ -34,7 +34,6 @@ const podcastImg = {
 };
 
 export default {
-  speedkitComponents: { MediaCard: () => import('@/components/MediaCard') },
   props: {
     latestPodcastEpisode: {
       type: Object,

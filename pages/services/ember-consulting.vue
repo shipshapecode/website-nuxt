@@ -8,9 +8,9 @@
         </h1>
 
         <div class="flex justify-center mt-3 w-full lg:justify-start lg:mt-8">
-          <nuxt-link class="btn btn-red w-full lg:w-auto" to="/contact/">
+          <NuxtLink class="btn btn-red w-full lg:w-auto" to="/contact/">
             Let's get started
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </template>
       <template #icon>
@@ -34,11 +34,11 @@
       <template #unboxed-text>
         <p>
           For these reasons, we often recommend it for
-          <nuxt-link
+          <NuxtLink
             class="hover:brightness-125 hover:text-red"
             to="/work/expel"
           >
-            enterprise app development </nuxt-link
+            enterprise app development </NuxtLink
           >, in-depth apps and dashboards, responsive web applications, and
           other projects for large firms.
         </p>
@@ -127,15 +127,6 @@ const specialtyBenefits = [
 ];
 
 export default {
-  speedkitComponents: {
-    AllAboutSpecialty: () => import('@/components/AllAboutSpecialty'),
-    SpecialtyInAction: () => import('@/components/SpecialtyInAction'),
-    CommunityInvolvement: () => import('@/components/CommunityInvolvement'),
-    HeroBlock: () => import('@/components/HeroBlock'),
-    TwoColumnSection: () => import('@/components/TwoColumnSection'),
-    SingleQuote: () => import('@/components/SingleQuote'),
-    WaveMoreLinks: () => import('@/components/WaveMoreLinks')
-  },
   data() {
     return { caseStudies, marketing, testimonial, specialtyBenefits };
   },

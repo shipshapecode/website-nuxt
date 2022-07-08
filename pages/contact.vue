@@ -27,9 +27,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    ContactForm: () => import('@/components/ContactForm')
-  },
   head() {
     const title = 'Contact Our Software Consultants';
     const description =

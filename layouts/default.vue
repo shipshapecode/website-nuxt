@@ -12,21 +12,12 @@
   >
     <meta itemprop="legalName" content="Ship Shape Consulting LLC" />
 
-    <NavMenu :critical="true" />
+    <NavMenu />
 
     <main>
-      <Nuxt />
+      <slot />
     </main>
 
     <WaveFooter />
   </div>
 </template>
-
-<script>
-export default {
-  speedkitComponents: {
-    NavMenu: () => import('@/components/NavMenu'),
-    WaveFooter: () => import('@/components/WaveFooter')
-  }
-};
-</script>

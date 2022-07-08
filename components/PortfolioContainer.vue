@@ -28,13 +28,13 @@
             </p>
 
             <p>
-              <nuxt-link class="learn-more" to="/services/app-tours/">
+              <NuxtLink class="learn-more" to="/services/app-tours/">
                 Learn more
                 <inline-svg
                   class="h-4 inline w-4"
                   src="/svgs/angle-right.svg"
                 />
-              </nuxt-link>
+              </NuxtLink>
             </p>
           </div>
         </div>

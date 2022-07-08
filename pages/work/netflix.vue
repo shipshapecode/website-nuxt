@@ -135,10 +135,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    BottomLinks: () => import('@/components/BottomLinks')
-  },
-
   head() {
     const title = 'Netflix Ember.js Finance Dashboard';
     const description =

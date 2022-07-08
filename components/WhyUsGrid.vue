@@ -35,12 +35,12 @@
               src="/img/innertube.png"
             />
 
-            <nuxt-link
+            <NuxtLink
               class="btn btn-red inline-block mt-6 w-full lg:w-auto"
               to="/about/"
             >
               Meet Our Crew
-            </nuxt-link>
+            </NuxtLink>
           </div>
         </div>
 

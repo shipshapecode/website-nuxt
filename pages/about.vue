@@ -246,12 +246,12 @@
               company.
             </p>
           </div>
-          <nuxt-link
+          <NuxtLink
             class="flex place-content-center btn btn-red w-full lg:w-1/5"
             to="/blog/"
           >
             Get more insights
-          </nuxt-link>
+          </NuxtLink>
         </div>
         <div>
           <div data-aos="fade-left">
@@ -326,7 +326,7 @@
                   {{ latestBlogPost.description }}
                 </p>
               </div>
-              <nuxt-link
+              <NuxtLink
                 class="
                   learn-more
                   lg:col-span-2 lg:justify-self-end lg:self-end lg:pb-16
@@ -335,7 +335,7 @@
               >
                 Dive Deeper
                 <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -356,12 +356,12 @@
               community and pushing the software space forward.
             </p>
           </div>
-          <nuxt-link
+          <NuxtLink
             class="flex place-content-center btn btn-red w-full lg:w-1/5"
             to="/blog/"
           >
             Get more contributions
-          </nuxt-link>
+          </NuxtLink>
         </div>
         <BenefitsList :benefits="benefits" />
       </div>
@@ -402,12 +402,12 @@
                       lg:justify-start lg:mt-8
                     "
                   >
-                    <nuxt-link
+                    <NuxtLink
                       class="btn btn-red w-full lg:w-auto"
                       to="/contact/"
                     >
                       Contact us
-                    </nuxt-link>
+                    </NuxtLink>
                   </div>
                 </div>
               </div>
@@ -435,12 +435,6 @@ import { formatDateWithDots } from '~/utils/date';
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    BenefitsList: () => import('@/components/BenefitsList'),
-    FunFacts: () => import('@/components/FunFacts'),
-    HeroBlock: () => import('@/components/HeroBlock')
-  },
-
   async asyncData({ $content }) {
     let latestPodcastEpisode = {};
     try {
@@ -461,10 +455,11 @@ export default {
       latestPodcastEpisode.description = description;
     } catch {}
 
-    const content = await $content('blog/posts')
+    const content = await useAsyncData('posts-list', () =>
+      queryContent('blog/posts')
+    )
       .sortBy('date', 'desc')
-      .limit(1)
-      .fetch();
+      .limit(1);
 
     const latestBlogPost = content[0];
 

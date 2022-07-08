@@ -28,16 +28,16 @@
             lg:border-grey lg:border-r lg:justify-center
           "
         >
-          <nuxt-link class="learn-more" :to="learnMoreLink">
+          <NuxtLink class="learn-more" :to="learnMoreLink">
             Learn more
             <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-          </nuxt-link>
+          </NuxtLink>
         </div>
         <div class="flex justify-start lg:justify-center">
-          <nuxt-link class="learn-more" :to="caseStudyLink">
+          <NuxtLink class="learn-more" :to="caseStudyLink">
             See it in action
             <inline-svg class="h-4 inline w-6" src="/svgs/arrow.svg" />
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </div>
     </div>

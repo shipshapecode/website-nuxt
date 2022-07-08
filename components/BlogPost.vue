@@ -27,11 +27,6 @@
 
 <script>
 export default {
-  speedkitComponents: {
-    AuthorRow: () => import('@/components/AuthorRow'),
-    BottomLinks: () => import('@/components/BottomLinks')
-  },
-
   props: {
     post: {
       type: Object,

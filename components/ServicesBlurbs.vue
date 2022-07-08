@@ -94,10 +94,6 @@ const services = [
 ];
 
 export default {
-  speedkitComponents: {
-    ServiceCard: () => import('@/components/ServiceCard'),
-    TwoColumnSection: () => import('@/components/TwoColumnSection')
-  },
   data() {
     return { headerImage, services };
   }

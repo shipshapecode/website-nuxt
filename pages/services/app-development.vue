@@ -10,9 +10,9 @@
             progressive web apps.
           </p>
           <div>
-            <nuxt-link class="btn btn-red" to="/contact/">
+            <NuxtLink class="btn btn-red" to="/contact/">
               Let's build together
-            </nuxt-link>
+            </NuxtLink>
           </div>
         </template>
 
@@ -140,7 +140,7 @@
             created top-notch multi-platform apps leveraging Electron. Electron
             allows you to ship a cross platform desktop app and integrate more
             closely with native OS features. Check out our recent work on
-            <nuxt-link to="/work/swach/">Swach</nuxt-link> to learn more.
+            <NuxtLink to="/work/swach/">Swach</NuxtLink> to learn more.
           </p>
         </div>
 
@@ -195,9 +195,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    HeroBlock: () => import('@/components/HeroBlock')
-  },
   head() {
     const title = 'App Development Agency';
     const description =

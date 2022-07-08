@@ -4,49 +4,52 @@ import highlightjs from 'highlight.js';
 import hljsDefineGraphQL from 'highlightjs-graphql';
 import truncate from 'lodash.truncate';
 import showdown from 'showdown';
+import { defineNuxtConfig } from 'nuxt';
 
 const converter = new showdown.Converter();
 
 hljsDefineGraphQL(highlightjs);
 // TODO: Get hljs Vue support
 
-const isProd = process.env.NODE_ENV === 'production';
+// const isProd = process.env.NODE_ENV === 'production';
 
 const imgSrc = 'http://i.imgur.com/30OI4fv.png';
 const twitterUsername = '@shipshapecode';
 
-const constructFeedItem = (post, dir, hostname) => {
-  // note the path used here, we are using a dummy page with an empty layout in order to not send that data along with our other content
-  const filePath = path.join(__dirname, `dist/blog/${post.slug}/index.html`);
-  const content = fs.readFileSync(filePath, { encoding: 'utf8' });
-  const url = `${hostname}/${dir}/${post.slug}`;
-  return {
-    title: post.title,
-    id: url,
-    link: url,
-    description: post.description,
-    content
-  };
-};
+// const constructFeedItem = (post, dir, hostname) => {
+//   // note the path used here, we are using a dummy page with an empty layout in order to not send that data along with our other content
+//   const filePath = path.join(__dirname, `dist/blog/${post.slug}/index.html`);
+//   const content = fs.readFileSync(filePath, { encoding: 'utf8' });
+//   const url = `${hostname}/${dir}/${post.slug}`;
+//   return {
+//     title: post.title,
+//     id: url,
+//     link: url,
+//     description: post.description,
+//     content
+//   };
+// };
 
-const createRSSFeed = async (feed, args) => {
-  const filePath = 'blog/posts';
-  const hostname = isProd ? 'https://shipshape.io' : 'http://localhost:3000';
-  feed.options = {
-    title: 'Ship Shape Insights',
-    description:
-      'Our thoughtful ramblings about Ember.js, Next.js, Nuxt.js, JavaScript, life, liberty and the pursuit of happiness.',
-    link: `${hostname}/feed.xml`
-  };
-  const { $content } = require('@nuxt/content');
-  const posts = await $content(filePath).fetch();
+// const createRSSFeed = async (feed, args) => {
+//   const filePath = 'blog/posts';
+//   const hostname = isProd ? 'https://shipshape.io' : 'http://localhost:3000';
+//   feed.options = {
+//     title: 'Ship Shape Insights',
+//     description:
+//       'Our thoughtful ramblings about Ember.js, Next.js, Nuxt.js, JavaScript, life, liberty and the pursuit of happiness.',
+//     link: `${hostname}/feed.xml`
+//   };
 
-  for (const post of posts) {
-    const feedItem = await constructFeedItem(post, filePath, hostname);
-    feed.addItem(feedItem);
-  }
-  return feed;
-};
+//   const { data: posts } = await useAsyncData('posts-list', () =>
+//     queryContent(filePath)
+//   );
+
+//   for (const post of posts) {
+//     const feedItem = await constructFeedItem(post, filePath, hostname);
+//     feed.addItem(feedItem);
+//   }
+//   return feed;
+// };
 
 const createSitemapRoutes = async () => {
   const routes = [];
@@ -72,10 +75,12 @@ const createSitemapRoutes = async () => {
   return routes;
 };
 
-export default {
+export default defineNuxtConfig({
   target: 'static',
 
-  components: false,
+  components: {
+    dirs: ['~/components']
+  },
 
   /*
    ** Headers of the page
@@ -134,24 +139,14 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    '@nuxtjs/tailwindcss',
+    // '@nuxtjs/tailwindcss',
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     // '@nuxtjs/stylelint-module', // TODO: get stylelint passing,
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-84561982-1',
-        debug: {
-          sendHitTask: isProd
-        }
-      }
-    ],
-    '@nuxt/image',
-    '@nuxtjs/pwa',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/style-resources'
+    '@nuxt/image'
+    // '@nuxtjs/pwa',
+    // '@nuxtjs/sitemap'
   ],
 
   optimizedImages: {
@@ -162,53 +157,17 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    [
-      'nuxt-font-loader-strategy',
-      {
-        fonts: [
-          {
-            fileExtensions: ['woff2'],
-            fontFamily: 'Pier Sans',
-            fontFaces: [
-              {
-                preload: true,
-                localSrc: ['Pier Sans'],
-                src: '@/assets/fonts/PierSans-Regular',
-                fontWeight: 'normal',
-                fontStyle: 'normal'
-              },
-              {
-                preload: true,
-                localSrc: ['Pier Sans'],
-                src: '@/assets/fonts/PierSans-Bold',
-                fontWeight: 'bold',
-                fontStyle: 'normal'
-              },
-              {
-                preload: true,
-                localSrc: ['Pier Sans'],
-                src: '@/assets/fonts/PierSans-Light',
-                fontWeight: 300,
-                fontStyle: 'normal'
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    '@nuxtjs/feed',
-    '@nuxtjs/recaptcha',
-    [
-      'nuxt-validate',
-      {
-        classes: true,
-        classNames: {
-          invalid: 'error'
-        }
-      }
-    ],
-    '@nuxt/content',
-    'nuxt-speedkit'
+    // '@nuxtjs/feed',
+    // [
+    //   'nuxt-validate',
+    //   {
+    //     classes: true,
+    //     classNames: {
+    //       invalid: 'error'
+    //     }
+    //   }
+    // ],
+    // '@nuxt/content'
   ],
 
   /*
@@ -273,14 +232,14 @@ export default {
     }
   },
 
-  feed: [
-    {
-      path: '/feed.xml',
-      create: createRSSFeed,
-      cacheTime: 1000 * 60 * 15,
-      type: 'rss2'
-    }
-  ],
+  // feed: [
+  //   {
+  //     path: '/feed.xml',
+  //     create: createRSSFeed,
+  //     cacheTime: 1000 * 60 * 15,
+  //     type: 'rss2'
+  //   }
+  // ],
 
   generate: {
     fallback: '404.html'
@@ -310,31 +269,6 @@ export default {
     }
   },
 
-  speedkit: {
-    detection: {
-      performance: true,
-      browserSupport: true
-    },
-    performanceMetrics: {
-      device: {
-        hardwareConcurrency: { min: 2, max: 48 },
-        deviceMemory: { min: 2 }
-      },
-      timing: {
-        fcp: 800,
-        dcl: 1200
-      },
-      lighthouseDetectionByUserAgent: false
-    },
-
-    componentAutoImport: false,
-    componentPrefix: undefined
-  },
-
-  styleResources: {
-    scss: ['./assets/css/_variables.scss']
-  },
-
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.scss'
   },
@@ -357,5 +291,14 @@ export default {
         document.author = author;
       }
     }
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/css/_variables.scss";'
+        }
+      }
+    }
   }
-};
+});

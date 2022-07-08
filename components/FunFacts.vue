@@ -65,7 +65,7 @@
           <div class="flex justify-center w-full">
             <p>
               We consistently contribute to the
-              <nuxt-link to="/open-source">open source community</nuxt-link>.
+              <NuxtLink to="/open-source">open source community</NuxtLink>.
             </p>
           </div>
         </li>

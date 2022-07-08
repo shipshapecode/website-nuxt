@@ -8,10 +8,6 @@ import { generateMeta } from '~/utils/meta';
 export default {
   scrollToTop: true,
 
-  speedkitComponents: {
-    BlogPost: () => import('@/components/BlogPost')
-  },
-
   async asyncData({ $content, params }) {
     const posts = await $content('blog/posts')
       .where({ slug: params.slug })

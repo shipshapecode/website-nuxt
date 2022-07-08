@@ -10,9 +10,9 @@
           long term.
         </p>
         <div>
-          <nuxt-link class="btn btn-red" to="/contact/">
+          <NuxtLink class="btn btn-red" to="/contact/">
             Work with us
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </template>
 
@@ -35,11 +35,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    HeroBlock: () => import('@/components/HeroBlock'),
-    MentoringBlurbs: () => import('@/components/MentoringBlurbs')
-  },
-
   head() {
     const title = 'Ember & Open Source Mentoring';
     const description =

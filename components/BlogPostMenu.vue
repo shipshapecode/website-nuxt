@@ -5,23 +5,23 @@
       :key="post.slug"
       class="blog-post border-b-2 border-blue-light border-solid py-3"
     >
-      <nuxt-link class="title" :to="`/blog/${post.slug}/`">
+      <NuxtLink class="title" :to="`/blog/${post.slug}/`">
         {{ post.linktitle || post.title }}
-      </nuxt-link>
+      </NuxtLink>
 
       <div class="attribution">
         By {{ post.author.name }} {{ formatDate(post.date) }}
       </div>
 
       <div class="tags pb-4 pt-4">
-        <nuxt-link
+        <NuxtLink
           v-for="tag in post.categories"
           :key="tag"
           :to="`/blog/categories/${tag.replace(/ |\./g, '-')}/`"
           class="blog-tag mr-2"
         >
           {{ tag }}
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
   </div>

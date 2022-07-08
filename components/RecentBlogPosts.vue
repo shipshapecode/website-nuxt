@@ -6,12 +6,12 @@
       <div class="flex flex-wrap justify-center">
         <div class="flex flex-wrap items-center justify-between mb-16 w-full">
           <h3 class="m-0 text-navy">Ahoy - advice and insights ahead!</h3>
-          <nuxt-link
+          <NuxtLink
             to="/blog/"
             class="btn btn-red mt-4 w-full lg:mt-0 lg:w-auto"
           >
             See more insights
-          </nuxt-link>
+          </NuxtLink>
         </div>
 
         <div
@@ -36,7 +36,7 @@
               {{ formatDate(post.date) }}
             </div>
 
-            <nuxt-link
+            <NuxtLink
               class="
                 blog-link
                 block
@@ -51,7 +51,7 @@
               :to="`/blog/${post.slug}/`"
             >
               {{ post.linktitle || post.title }}
-            </nuxt-link>
+            </NuxtLink>
 
             <div class="attribution bottom-0 mb-4">
               By {{ post.author.name }}

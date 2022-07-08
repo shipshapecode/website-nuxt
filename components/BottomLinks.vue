@@ -7,7 +7,7 @@
       w-full
     "
   >
-    <nuxt-link
+    <NuxtLink
       class="
         border-r-2 border-blue-light border-solid
         flex-1
@@ -24,9 +24,9 @@
       <h3 class="text-xl lg:text-4xl">
         {{ previousLinkText }}
       </h3>
-    </nuxt-link>
+    </NuxtLink>
 
-    <nuxt-link
+    <NuxtLink
       class="flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-blue-light"
       :to="nextLink"
     >
@@ -35,7 +35,7 @@
       <h3 class="text-xl lg:text-4xl">
         {{ nextLinkText }}
       </h3>
-    </nuxt-link>
+    </NuxtLink>
   </div>
 </template>
 

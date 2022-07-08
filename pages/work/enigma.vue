@@ -200,10 +200,6 @@ import { generateMeta } from '~/utils/meta';
 import { enigmaTestimonial as testimonial } from '~/content/testimonials/index.js';
 
 export default {
-  speedkitComponents: {
-    BottomLinks: () => import('@/components/BottomLinks'),
-    SingleQuote: () => import('@/components/SingleQuote')
-  },
   data() {
     return { testimonial };
   },

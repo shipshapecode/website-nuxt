@@ -14,7 +14,7 @@
       "
     >
       <div class="flex flex-no-shrink items-center pr-2 pt-2">
-        <nuxt-link to="/" class="logo inline-flex items-center" itemprop="url">
+        <NuxtLink to="/" class="logo inline-flex items-center" itemprop="url">
           <div
             class="inline-block"
             itemprop="logo"
@@ -37,7 +37,7 @@
           <div class="font-medium text-3xl text-navy" itemprop="name">
             Ship Shape
           </div>
-        </nuxt-link>
+        </NuxtLink>
       </div>
 
       <div class="block lg:hidden">
@@ -62,45 +62,45 @@
             </button>
           </div>
 
-          <nuxt-link
+          <NuxtLink
             class="nav-link"
             to="/services/"
             @click.native="toggleNavMenu(false)"
           >
             Services
-          </nuxt-link>
+          </NuxtLink>
 
-          <nuxt-link
+          <NuxtLink
             class="nav-link"
             to="/work/"
             @click.native="toggleNavMenu(false)"
           >
             Work
-          </nuxt-link>
+          </NuxtLink>
 
-          <nuxt-link
+          <NuxtLink
             class="nav-link"
             to="/about/"
             @click.native="toggleNavMenu(false)"
           >
             About
-          </nuxt-link>
+          </NuxtLink>
 
-          <nuxt-link
+          <NuxtLink
             class="nav-link"
             to="/blog/"
             @click.native="toggleNavMenu(false)"
           >
             Blog
-          </nuxt-link>
+          </NuxtLink>
 
-          <nuxt-link
+          <NuxtLink
             class="nav-link contact-link"
             to="/contact/"
             @click.native="toggleNavMenu(false)"
           >
             Contact
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </div>
     </div>

@@ -39,10 +39,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    HeroBlock: () => import('@/components/HeroBlock')
-  },
-
   head() {
     const title = 'Whiskey, Web, & Whatnot: A Software Engineering Podcast';
     const description =

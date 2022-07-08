@@ -10,7 +10,7 @@
           data-aos="flip-down"
           :data-aos-delay="200 * index"
         >
-          <nuxt-link :to="`/work/${study.linkName}/`">
+          <NuxtLink :to="`/work/${study.linkName}/`">
             <div
               class="
                 bg-blue-light
@@ -90,7 +90,7 @@
                 </div>
               </div>
             </div>
-          </nuxt-link>
+          </NuxtLink>
         </article>
       </div>
     </div>

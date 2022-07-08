@@ -19,9 +19,9 @@
       <div class="pl-2 pb-2">
         By
 
-        <nuxt-link :to="`/blog/authors/${id}/`" itemprop="name">
+        <NuxtLink :to="`/blog/authors/${id}/`" itemprop="name">
           {{ name }}
-        </nuxt-link>
+        </NuxtLink>
 
         |
       </div>

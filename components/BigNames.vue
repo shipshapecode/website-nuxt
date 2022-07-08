@@ -28,12 +28,12 @@
             lg:bottom-auto lg:mb-0 lg:relative lg:justify-end lg:w-auto
           "
         >
-          <nuxt-link
+          <NuxtLink
             to="/contact/"
             class="btn btn-red mr-16 w-full lg:mb-10 lg:mr-0 lg:w-auto"
           >
             Dive deeper
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </div>
 
@@ -54,7 +54,7 @@
             width="138"
           />
         </a>
-        <nuxt-link class="text-center" to="/work/expel" aria-label="Expel">
+        <NuxtLink class="text-center" to="/work/expel" aria-label="Expel">
           <nuxt-img
             alt="Expel logo"
             class="h-full inline w-full max-w-xxs"
@@ -63,8 +63,8 @@
             src="/svgs/clients/expel.svg"
             width="275"
           />
-        </nuxt-link>
-        <nuxt-link class="text-center" to="/work/netflix/" aria-label="Netflix">
+        </NuxtLink>
+        <NuxtLink class="text-center" to="/work/netflix/" aria-label="Netflix">
           <nuxt-img
             alt="Netflix logo"
             class="h-full inline w-full max-w-xxs"
@@ -73,7 +73,7 @@
             src="/svgs/clients/netflix.svg"
             width="136"
           />
-        </nuxt-link>
+        </NuxtLink>
         <a
           class="text-center"
           href="https://www.sephora.sg/"

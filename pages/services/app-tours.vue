@@ -9,9 +9,9 @@
           help new users get up to speed quickly with your web app.
         </p>
         <div>
-          <nuxt-link class="btn btn-red" to="/contact/">
+          <NuxtLink class="btn btn-red" to="/contact/">
             Let's build together
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </template>
 
@@ -110,11 +110,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    HeroBlock: () => import('@/components/HeroBlock'),
-    WhyShepherd: () => import('@/components/WhyShepherd')
-  },
-
   head() {
     const title = 'App Tours with Shepherd.js';
     const description =

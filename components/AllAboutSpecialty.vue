@@ -48,9 +48,6 @@
 
 <script>
 export default {
-  speedkitComponents: {
-    BenefitsList: () => import('@/components/BenefitsList')
-  },
   props: {
     benefits: {
       type: Array,

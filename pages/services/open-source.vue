@@ -9,9 +9,9 @@
           developers.
         </p>
         <div>
-          <nuxt-link to="/contact/" class="btn btn-red">
+          <NuxtLink to="/contact/" class="btn btn-red">
             Join our community
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </template>
 
@@ -41,10 +41,10 @@
           Contact us today.
         </p>
 
-        <nuxt-link class="learn-more" to="/contact/">
+        <NuxtLink class="learn-more" to="/contact/">
           Contact us
           <inline-svg class="h-4 inline w-4" src="/svgs/angle-right.svg" />
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -54,11 +54,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    HeroBlock: () => import('@/components/HeroBlock'),
-    PortfolioContainer: () => import('@/components/PortfolioContainer')
-  },
-
   head() {
     const title = 'Open Source Software';
     const description =

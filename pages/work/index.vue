@@ -42,12 +42,12 @@
                 source community.
               </p>
 
-              <nuxt-link
+              <NuxtLink
                 class="btn btn-white text-center"
                 to="/services/open-source/"
               >
                 Learn more
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
 
@@ -67,12 +67,12 @@
                 improve future frameworks.
               </p>
 
-              <nuxt-link
+              <NuxtLink
                 class="btn btn-white text-center"
                 to="/services/open-source/"
               >
                 Learn more
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
 
@@ -91,12 +91,12 @@
                 developers of all backgrounds.
               </p>
 
-              <nuxt-link
+              <NuxtLink
                 class="btn btn-white text-center"
                 to="/services/ember-consulting/"
               >
                 See why
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -109,10 +109,6 @@
 import { generateMeta } from '~/utils/meta';
 
 export default {
-  speedkitComponents: {
-    CaseStudiesList: () => import('@/components/CaseStudiesList'),
-    ClientsGrid: () => import('@/components/ClientsGrid')
-  },
   head() {
     const title = 'Our Work - Enterprise Custom App Development';
     const description =
