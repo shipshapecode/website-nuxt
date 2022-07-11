@@ -1,11 +1,9 @@
 ---
 authorId: hannakim
 categories:
-  - '2022'
-  - web accessibility
   - nuxt.js
   - a11y
-date: '2022-07-01'
+date: '2022-07-11'
 slug: accessibility-basics
 title: 'Building (or Rebuilding) a Website with Accessibility in Mind'
 ---
@@ -28,9 +26,9 @@ To ensure everyone is able to use your website, it is important to make sure the
 
 <br/>
 
-A visual flow that may instantly make sense for those of us with normal vision and the ability to navigate the GUI with a mouse or trackpad can be vastly different navigational experience for someone without those abilities.
+A visual flow that may instantly make sense for those of us with normal vision and the ability to navigate the GUI with a mouse or trackpad can be a vastly different experience for someone without those abilities.
 
-Some folks may rely on tools like a screenreader or keyboard to be able to access the digital world. These tools rely on software engineers to create apps with proper DOM structure so their users can to get to the information they need quickly and efficiently.
+Some folks may rely on tools like a screen reader or keyboard to be able to access the digital world. These tools rely on software engineers to create apps with proper DOM structure so their users can to get to the information they need quickly and efficiently.
 
 ## Generate the DOM Structure First
 
@@ -40,9 +38,9 @@ Some folks may rely on tools like a screenreader or keyboard to be able to acces
 
 If you are not visually impaired, chances are likely that your eyes jumped to scan each header on the page, starting at the top left. You might have next read a section of body copy, if the header caught your interest. Though your focus may have been on the text, your eyes concurrently processed the two images of our mascot at work "building" apps, which are opposite each segment of copy. You could likely skim through the buttons made up of tech logos on the bottom right-hand corner of the page.
 
-Someone without those same abilities could have a fairly similar experience if the page is built with their experience in mind. Based on our abilities as able-bodied developers, our instinct may be to add elements as we see them on a design spec.
+Someone without those same abilities could have a fairly similar experience if the page is built with their experience in mind. Based on our abilities as developers without a visual disability, our instinct may be to add elements as we see them on a design spec.
 
-When building with accessibility in mind, a good rule of thumb is to start by thinking of what elements should be on the page _without_ any of the design in place. Ccreate the scaffolding for the content first, then add in the creative touches that differentiate your page.
+When building with accessibility in mind, a good rule of thumb is to start by thinking of what elements should be on the page _without_ any of the design in place. Create the scaffolding for the content first, then add in the creative touches that differentiate your page.
 
 ## Basic Considerations for A11y
 
@@ -80,11 +78,13 @@ Accessibility tools rely on well-organized DOM and content to direct their users
 
 An anti-pattern for using `h-tag`'s is to set each header level to a certain set of styles and sizes and using them for different text styles through the page. This promotes [using headers out of order](https://www.w3.org/WAI/tutorials/page-structure/headings/). Instead, first make sure your content is organized in proper order, then create the CSS styles to meet your design needs.
 
-![Section of shipshape.io with blocks of text using 5 different styles: large-font blue header, large-font white header, small, bolded white text within a button, small regular-weight blue body text, and small regular-weight white body text](/img/blog/h-tag-don't.png)
-
 #### 🚫 Don't do this! 🚫
 
+<img alt="Section of shipshape.io with blocks of text using 5 different styles: large-font blue header, large-font white header, small, bolded white text within a button, small regular-weight blue body text, and small regular-weight white body text" src="/img/blog/h-tag-don't.png" align="left" style="padding-right: 2rem" />
+
+
 ```css
+
 h1 {
   color: blue;
   font-size: 48px;
@@ -110,9 +110,19 @@ h5 {
   color: white;
   font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
 ```
 
-In the example above, the intention was not to nest each section within each other, therefore we should not be using multiple levels of h-tags to style these elements of text.
+In the example above, the intention was not to nest each section within each other, therefore we should not be using multiple levels of h-tags to style these elements of text, and instead create the right classes for each set of styles.
 
 ### Use Semantic HTML
 
@@ -138,7 +148,7 @@ Lighthouse scans through your web app and offers a rundown of what is and isn't 
 
 Lighhouse will let you know about sections of your website that pass/fail color contrast. You can quickly determine at what colors and sizes of text have enough contrast with their background color by using contrast checkers like [WCAG Color contrast checker](https://chrome.google.com/webstore/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf?hl=en) or [Colour Contrast Checker](https://chrome.google.com/webstore/detail/colour-contrast-checker/nmmjeclfkgjdomacpcflgdkgpphpmnfe?hl=en-GB).
 
-Your primary text should have enough contrast to be readable by folks with different types of colorblindness. Additional text states like `hover` or `active` don’t necessarily need to pass the contrast test as long as you have other cues that someone is over a link for example (i.e.: by using semantic html 😉). 
+Your primary text should have enough contrast to be readable by folks with different types of color blindness. Additional text states like `hover` or `active` don’t necessarily need to pass the contrast test as long as you have other cues that someone is over a link for example (i.e.: by using semantic html 😉). 
 
 ### HeadingsMap Browser Extension
 
