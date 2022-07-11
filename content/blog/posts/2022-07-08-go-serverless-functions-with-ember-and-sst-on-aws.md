@@ -6,7 +6,7 @@ categories:
   - javascript
   - go
   - serverless
-date: '2022-07-08'
+date: '2022-07-12'
 slug: go-serverless-functions-with-ember-and-sst-on-aws
 title: Go Serverless Functions with Ember and SST on AWS
 ---
