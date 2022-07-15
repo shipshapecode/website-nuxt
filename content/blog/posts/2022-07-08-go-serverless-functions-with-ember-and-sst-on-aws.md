@@ -11,7 +11,7 @@ slug: go-serverless-functions-with-ember-and-sst-on-aws
 title: Go Serverless Functions with Ember and SST on AWS
 ---
 
-You may recall in our [last post](https://shipshape.io/blog/serverless-functions-ember-glimmer/) on serverless functions that we made use of some the tooling introduced by Vercel and Netlify for Ember and Glimmer applications.
+You may recall in our [last post](https://shipshape.io/blog/serverless-functions-ember-glimmer/) on serverless functions that we made use of some tooling introduced by Vercel and Netlify for Ember and Glimmer applications.
 
 These tools provide a seamless development experience for running serverless functions locally on your machine and a straightforward method of deploying those functions alongside our Ember and Glimmer applications to Vercel or Netlify. This allows us to reap much of the same benefits in an Ember and Glimmer application as are offered by [API Routes](https://nextjs.org/docs/api-routes/introduction) in Next.js applications.
 
@@ -85,7 +85,7 @@ This may take several minutes to complete since SST is conducting an actual init
 
 Now before booting our Ember app we'll probably want to set things up so that the Ember application communicates with the serverless function. We'll do that by generating an application route in the Ember app and sending a fetch request to the `ApiEndpoint` URL as a gut check to ensure we can retrieve some data.
 
-We'll also want to do this using environment variables so we can later handle the different `ApiEndpoint` URL that will support the deployed production instance of our application. So we'll add a `.env` file with `EMBER_APP_API_URL` as an environment variable and set that equal to the `ApiEndpoint`.
+We'll also want to do this using environment variables for both development and production environments so we can later handle the different `ApiEndpoint` URLs that will support the development and deployed production instance of our application. So we'll add a `.env` file with `EMBER_APP_API_URL` as an environment variable and set that equal to the `ApiEndpoint`.
 
 ```javascript
 // ./application/route.js
@@ -197,4 +197,4 @@ and ...
 
 Now, this is not the only way you can deploy serverless functions and an Ember application directly to AWS, but it sure is a convenient one.
 
-In future posts on this topic, we might look at alternative means for deployment that require a little more configuration, but which provides more control over the deployment and architecture, so stay tuned!
+In future posts on this topic, we might look at alternative means for deployment that require a little more configuration, but which provide more control over the deployment and architecture, so stay tuned!
