@@ -516,7 +516,7 @@ export default {
       team: [
         {
           name: 'Rob Cary',
-          title: 'Senior Software Engineer',
+          title: 'Lead Engineer',
           imgSrc: '/img/blog/authors/rob.jpg',
           twitter: 'https://twitter.com/r0bc4ry',
           linkedin: 'https://www.linkedin.com/in/r0bc4ry/',
