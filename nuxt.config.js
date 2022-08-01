@@ -154,8 +154,8 @@ export default {
     '@nuxtjs/style-resources'
   ],
 
-  optimizedImages: {
-    optimizeImages: true
+  image: {
+    dir: 'assets/images'
   },
 
   /*
