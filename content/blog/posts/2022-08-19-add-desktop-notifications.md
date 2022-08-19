@@ -74,7 +74,7 @@ async _showNotification() {
 
 This method is a bit more straightforward. We check permission, as noted in the previous code example, and as long as we're not denied, a notification can be shown. 
 
-There's only one required argument, a title. Here we are adding a basic option for body text as well. This will ~just~ show a notification and the user can dismiss it or select to go to browser settings, if they'd like to change the permissions. Let's make sure our instance fires off when loaded before we move on.
+There's only one required argument, a title. Here we are adding a basic option for body text as well. This will show a notification and the user can dismiss it or select to go to browser settings, if they'd like to change the permissions. Let's make sure our instance fires off when loaded before we move on.
 
 ```js
 class NotificationService {
