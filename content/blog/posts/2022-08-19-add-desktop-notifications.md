@@ -74,7 +74,7 @@ async _showNotification() {
 
 This method is a bit more straightforward. We check permission, as noted in the previous code example, and as long as we're not denied, a notification can be shown. 
 
-There's ~really~ only one required argument, a title. Here we are adding a basic option for body text as well. This will ~just~ show a notification and the user can dismiss it or select to go to browser settings, if they'd like to change the permissions. Let's make sure our instance fires off when loaded before we move on.
+There's only one required argument, a title. Here we are adding a basic option for body text as well. This will show a notification and the user can dismiss it or select to go to browser settings, if they'd like to change the permissions. Let's make sure our instance fires off when loaded before we move on.
 
 ```js
 class NotificationService {
@@ -89,7 +89,7 @@ class NotificationService {
 
 What we've now created sends a basic notification; one without any interaction with the user. To add interactivity, we have to add `actions` to the options hash, which allows us to watch for and respond to user actions.
 
-The (spec)[https://developer.mozilla.org/en-US/docs/Web/API/notification] requires that we only can do that if we're triggering the notification via a service worker and responding to events there. Let's create a basic service worker file and add a listener. Create a file called `service-worker.js` and add the following code.
+The [spec](https://developer.mozilla.org/en-US/docs/Web/API/notification) requires that we only can do that if we're triggering the notification via a service worker and responding to events there. Let's create a basic service worker file and add a listener. Create a file called `service-worker.js` and add the following code.
 
 ```js
 self.addEventListener('notificationclick', function(event) {
@@ -169,7 +169,7 @@ self.addEventListener('notificationclick', function(event) {
 });
 ```
 
-Here we've updated the worker to check if the user clicks the `subscribe` button. When the event captured and checked that it is to subscribe, we open a new window with our RSS subscription (link)[https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fshipshape.io%2Ffeed.xml].  
+Here we've updated the worker to check if the user clicks the `subscribe` button. When the event captured and checked that it is to subscribe, we open a new window with our RSS subscription [link](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fshipshape.io%2Ffeed.xml).  
 
 If they click `dismiss`, nothing happens and the notification is dismissed. In case you want some kind of persistence, we could add some way to track the user selecting to dismiss and save that state to something like localStorage.
 
