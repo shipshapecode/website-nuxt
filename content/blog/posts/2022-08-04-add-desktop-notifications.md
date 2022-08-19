@@ -36,7 +36,7 @@ class NotificationService {
 new NotificationService();
 ```
 
-We arecreating the JavaScript class, `NotificationService`, with methods that will handle checking the permission settings, requesting permissions, and then showing a notification if granted. 
+We are creating the JavaScript class, `NotificationService`, with methods that will handle checking the permission settings, requesting permissions, and then showing a notification if granted. 
 
 Let's start with checking for and asking for permission to show notifications from our site.  
 
