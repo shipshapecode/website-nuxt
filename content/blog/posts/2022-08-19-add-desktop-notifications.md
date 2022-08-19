@@ -3,7 +3,7 @@ authorId: chuckcarpenter
 categories:
   - notifications
   - javascript
-date: ''
+date: '2022-08-19'
 slug: add-desktop-notifications
 title: Adding desktop notifications to your app/site
 ---
