@@ -29,6 +29,10 @@ Spike branches are often made just to deciminate the information for a suggested
 
 During interviews must understand the company culutre and what tools will actually be used and accepted across the organization before starting on work
 
+# Proposing a new solution
+
+It's often best to at some point document the why, what what and minimal changes to get a new featre/tooling across the goal post.
+
 # Parallel Fields
 
 - Software Engineer
