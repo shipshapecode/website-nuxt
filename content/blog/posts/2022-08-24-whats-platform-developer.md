@@ -16,13 +16,18 @@ Don't rock the boat, a mentor of mine once suggest don't make or suggest any maj
 This does not mean though that you cant enable small suggestions such as enabling new lint rules, though keep in mind if there
 are a ton of small changes these MR's should have the rule set to warn and many small merge requests here are better for the sake of the pull/merge request viewer.
 
+This also might be using existing project management solutions to reduce friciton for existing developers.
+
 # Explaning Platform Engineering to New Developers
 
 This can often be pretty hard, solutions often must be prototyped either in scratch projects outside of work repos, refactors can often take many months to deliver, with multiple iterations often requiring us to identify the most pertitent part of a suggested change.
 
 Spike branches are often made just to deciminate the information for a suggested change.
-Developers must also be carful and understand the company culutre and what tools will actually be used and accepted across the organization.
 
+
+# Interviewing Developers across the org for pain points
+
+During interviews must understand the company culutre and what tools will actually be used and accepted across the organization before starting on work
 
 # Parallel Fields
 
@@ -39,7 +44,7 @@ Developers must also be carful and understand the company culutre and what tools
 - No CI or not well thought out ones
 - No E2E testing in CI or overlaping or tests that should be split
 - No CD or automated deployment
-- Precommit rules not set
+- Precommit rules not set, flakey etc
 - Not enforcing node version
 - Flakey tests that should be skipped or revaluated.
 - Backstage - centralized documentation 
@@ -51,6 +56,10 @@ Developers must also be carful and understand the company culutre and what tools
 > Platform engineering teams apply software engineering principles to accelerate software delivery. 
 
 [SRE vs. Platform Engineering](https://www.getambassador.io/resources/rise-of-cloud-native-engineering-organizations/)
+
+---
+
+Increase development valocity
 
 # Notes
 
