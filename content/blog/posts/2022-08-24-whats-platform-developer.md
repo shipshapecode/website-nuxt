@@ -16,6 +16,14 @@ Don't rock the boat, a mentor of mine once suggest don't make or suggest any maj
 This does not mean though that you cant enable small suggestions such as enabling new lint rules, though keep in mind if there
 are a ton of small changes these MR's should have the rule set to warn and many small merge requests here are better for the sake of the pull/merge request viewer.
 
+# Explaning Platform Engineering to New Developers
+
+This can often be pretty hard, solutions often must be prototyped either in scratch projects outside of work repos, refactors can often take many months to deliver, with multiple iterations often requiring us to identify the most pertitent part of a suggested change.
+
+Spike branches are often made just to deciminate the information for a suggested change.
+Developers must also be carful and understand the company culutre and what tools will actually be used and accepted across the organization.
+
+
 # Parallel Fields
 
 - Software Engineer
