@@ -53,6 +53,9 @@ It's often best to at some point document the why, what what and minimal changes
 - Flakey tests that should be skipped or revaluated.
 - Application and infrastructure 
 
+## Infrastucture Issues
+
+- Orgnizations with self signed root CA's but no method's to automate renewel across infrastructure (kube nodes)
 
 ## Organizational Issues
 
