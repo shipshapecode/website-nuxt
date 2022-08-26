@@ -11,7 +11,7 @@ title: What is a platform developer
 
 # Preface
 
-Don't rock the boat, a mentor of mine once suggest don't make or suggest any major changes in the first three months.
+Since we are often comming into orgnizations with a long history, Don't rock the boat, a mentor of mine once suggest don't make or suggest any major changes in the first three months.
 
 This does not mean though that you cant enable small suggestions such as enabling new lint rules, though keep in mind if there
 are a ton of small changes these MR's should have the rule set to warn and many small merge requests here are better for the sake of the pull/merge request viewer.
@@ -42,18 +42,24 @@ It's often best to at some point document the why, what what and minimal changes
 
 # Identifiying force muliplers or places where a companies are dying by a thousand cuts.
 
-- Not following proper async communication, questions should be asked in initial post
-- meetings should have purpose incase they can be addressed ahead of time
-- Not well defined tickets/acceptiance critera (which feeds into E2E)
+
+## Actual Platform and Developer Experence Issues
+
 - No CI or not well thought out ones
 - No E2E testing in CI or overlaping or tests that should be split
 - No CD or automated deployment
 - Precommit rules not set, flakey etc
 - Not enforcing node version
 - Flakey tests that should be skipped or revaluated.
-- Backstage - centralized documentation 
 - Application and infrastructure 
 
+
+## Organizational Issues
+
+- Not following proper async communication, questions should be asked in initial post
+- meetings should have purpose incase they can be addressed ahead of time
+- Not well defined tickets/acceptiance critera (which feeds into E2E)
+- - Backstage - centralized documentation 
 
 # Scratch Section
 
@@ -62,6 +68,8 @@ It's often best to at some point document the why, what what and minimal changes
 [SRE vs. Platform Engineering](https://www.getambassador.io/resources/rise-of-cloud-native-engineering-organizations/)
 
 ---
+
+> A constant focus on eliminating toil
 
 Increase development valocity
 
