@@ -76,6 +76,10 @@ It's often best to at some point document the why, what what and minimal changes
 
 Increase development valocity
 
+---
+
+Un paralizing a compony plagued by afraid to break things 
+
 # Notes
 
 https://platformengineering.org/blog/what-is-platform-engineering
