@@ -1,23 +1,23 @@
 
 # Why
 
-When doing doing some greenfield work with a native application and [Supabase](https://supabase.com/) there was not an easy
-way to set usesr's passwords without having a way to handle the redirect back from supabase.
+When doing some greenfield work with a native application and [Supabase](https://supabase.com/) there was not an easy
+way to set users' passwords without having a way to handle the redirect back from Supabase.
 
 
 # What
 
-The script found in the snippet below allows us to set a a password for a live email that we have access to that has been added to our supabase
-instace.
+The script found in the snippet below allows us to set a password for a live email that we have access to that has been added to our supabase
+instance.
 
 # How
 
 
 The [supabase-js](https://github.com/supabase/supabase-js) provides the [passwordResetForEmail function](https://supabase.com/docs/reference/javascript/auth-api-resetpasswordforemail).
 
-Normally you're server call's this when a passwored rest is attempted, the user recevies an email with a URL with a password reset token.
+Normally your server call's this when a password reset is attempted, the user receives an email with a URL with a password reset token.
 
-The link in the email takes us a supabase URL which then redirects us back to our.
+The link in the email takes us to a supabase URL which then redirects us back to our server.
 
 
 ```javascript
