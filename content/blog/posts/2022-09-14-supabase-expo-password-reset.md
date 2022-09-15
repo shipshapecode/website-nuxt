@@ -1,3 +1,12 @@
+---
+authorId: ncrmro
+categories: 
+  - supabase
+  - rollup
+date: '2022-09-15'
+slug: supabase-account-password-reset-cli
+title: How to reset a supabase account password without working frontend.
+---
 
 # Why
 
