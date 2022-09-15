@@ -28,7 +28,7 @@ The link in the email takes us to a supabase URL which then redirects us back to
  * This will email you a link to supabase which will redirect you to localhost
  * with a token in the query param
  * the script will wait for you to input the full URL
- * Example URL https://ktpqdrvkcmewncabhiyt.supabase.co/auth/v1/verify?token=41a3248bbd27d3b19f3e0cf5f5dbfc298bd53fd42a9791469870edc4&type=recovery&redirect_to=http://localhost:3000
+ * Example URL https://ktpqdrvkcmewncabhiyt.supabase.co/auth/v1/verify?token=FAKE_TOKEN&type=recovery&redirect_to=http://localhost:3000
  */
 //
 const { createClient } = require("@supabase/supabase-js");
