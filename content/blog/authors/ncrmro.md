@@ -1,6 +1,6 @@
 ---
 name: Nicholas Romero
-id: ncrmro
-image: /img/blog/authors/ncrmro.jpg
+id: nromero
+image: /img/blog/authors/nromero.jpg
 location: Houston, TX
 ---
