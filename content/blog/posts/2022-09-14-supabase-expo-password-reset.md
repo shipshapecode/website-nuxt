@@ -24,7 +24,7 @@ instance.
 
 The [supabase-js](https://github.com/supabase/supabase-js) package provides the [passwordResetForEmail function](https://supabase.com/docs/reference/javascript/auth-api-resetpasswordforemail).
 
-Normally your server call's this when a password reset is attempted, the user receives an email with a URL with a password reset token.
+Normally, your server calls this when a password reset is attempted. The user then receives an email with a URL and a password reset token.
 
 The link in the email takes us to a supabase URL which then redirects us back to our server.
 
