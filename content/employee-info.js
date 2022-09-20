@@ -39,7 +39,7 @@ export const employeeInfo = {
       github: 'https://github.com/jaredgalanis'
     },
     {
-      name: 'Nic Romero',
+      name: 'Nicholas Romero',
       title: 'Senior Software Engineer',
       imgSrc: '/img/blog/authors/nic.jpg',
       twitter: 'https://twitter.com/ncrmro',
