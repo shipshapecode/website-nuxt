@@ -6,22 +6,22 @@ categories:
   - community
 date: '2022-08-30'
 slug: conference-101
-title: 'Some Takeaways from Navigating My First Tech Conference'
+title: '5 Takeaways From Attending My First Tech Conference'
 ---
 
 ## In-person Conferences Are Back!
 
 I had the chance to attend my first in-person tech conference, [CascadiaJS](https://2022.cascadiajs.com/), earlier this month and I'm very glad to have live events back in full swing again!
 
-As software engineers, we're lucky to be in a field that allowed a fairly easy migration to remote work. Virtual conferences and hackathons were plenty available the last few years, but there is something special about in-person events. They facillitate connection in a way I don't think we can quite replicate digitally, though as metaverse creation tools keep evolving, this may change.
+As software engineers, we're lucky to be in a field that allowed a fairly easy migration to remote work. Virtual conferences and hackathons were plenty available the last few years, but there is something special about in-person events. They litate connection in a way I don't think we can quite replicate digitally, though as metaverse creation tools keep evolving, this may change.
 
 As I’m getting ready to head to my next conference, here are some things I’ll be keeping in mind I wanted to share:
 
 ## What to Wear to a Conference
 
-I started my career in software development during the pandemic, so I got very used to living in sweatpants and other forms of (athelesure)[https://www.youtube.com/watch?v=CYRENWT8lz8].
+I started my career in software development during the pandemic, so I got very used to living in sweatpants and other forms of (athleisure)[https://www.youtube.com/watch?v=CYRENWT8lz8].
 
-As the conference date approached, I realized I had not figured out what to wear the next few days. Would it be alright to go off media tropes of casually dressed developers, or should I play it safe and get myself some business attire? I asked for advice from more seasoned folks in the field and it turned out people wore a mix of both. One recommendation would be to have some comfortable shoes, since you'll likely spend a decent amount of time walking around the venue or standing around while chatting wtih others.
+As the conference date approached, I realized I had not figured out what to wear the next few days. Would it be alright to go off media tropes of casually dressed developers, or should I play it safe and get myself some business attire? I asked for advice from more seasoned folks in the field and it turned out people wore a mix of both. One recommendation would be to have some comfortable shoes, since you'll likely spend a decent amount of time walking around the venue or standing around while chatting with others.
 
 ## What to Bring
 
@@ -37,9 +37,9 @@ This may depend on your learning style, as some people absorb information best b
 
 ### Attend Talks & Workshops
 
-Talks and workshops take up the bulk of a tech conference schedule, and for good reason - they give us a glimpse on interesting things others have learned or come across. This may be particular to the conference I attended, but in a nutshell, I learned how far web development has come, from tools that make our work easier and those that make the web experience richer and more expansive.
+Talks and workshops take up the bulk of a tech conference schedule, and for good reason - they give us a glimpse of interesting things others have learned or come across. This may be particular to the conference I attended, but in a nutshell, I learned how far web development has come, from tools that make our work easier and those that make the web experience richer and more expansive.
 
-As a newer developer, it also gave me a chance to assess what I know and how much I've come across in my journey so far in tech. For example, while listening in on a talk on "data as a frontend developer," I realized it wasn't as black a blackbox as I keep imagining it.
+As a newer developer, it also gave me a chance to assess what I know and how much I've come across in my journey so far in tech. For example, while listening in on a talk on understanding data for frontend developers, I realized the concepts were not as unfamiliar I had imagined it to be.
 
 ### Don't Forget About the #hallwaytrack
 
@@ -47,7 +47,7 @@ Some would argue the opportunity to meet and get to know others in the industry 
 
 During the breaks from talks (or if I'm honest, also while looking for seating at talks), I found myself seeking familiar faces. It’s often the easier option for many of us to stick with our co-workers and friends at large events. I challenged myself to stop defaulting to my comfort zone and get out there and meet new people. I found that most everyone is happy to chat and it's up to us to take the initiative to start conversations.
 
-[PHOTO]
+![Pacman game scene made of happy hour snacks (cheese and grapes)](/img/blog/pacman-cheese.jpeg)
 The organizers went over the "Pac-Man Rule" - we can display with our body language that we are open to others joining our conversations, which may be an easier start than jumping into a conversation. Instead of closing off into an encircled huddle, leave room for someone to join in.
 
 Another way I met new people was by asking to sit with them during mealtimes, if I saw an open seat. Food seems to be a natural conducer of community - it puts us in a good mood and offers us time to slow down so we can share conversations.
