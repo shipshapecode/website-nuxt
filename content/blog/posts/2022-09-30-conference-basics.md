@@ -13,7 +13,7 @@ title: '5 Takeaways From Attending My First Tech Conference'
 
 I had the chance to attend my first in-person tech conference, [CascadiaJS](https://2022.cascadiajs.com/), earlier this month and I'm very glad to have live events back in full swing again!
 
-As software engineers, we're lucky to be in a field that allowed a fairly easy migration to remote work. Virtual conferences and hackathons were plenty available the last few years, but there is something special about in-person events. They litate connection in a way I don't think we can quite replicate digitally, though as metaverse creation tools keep evolving, this may change.
+As software engineers, we're lucky to be in a field that allowed a fairly easy migration to remote work. Virtual conferences and hackathons were plenty available the last few years, but there is something special about in-person events. They facilitate connection in a way I don't think we can quite replicate digitally, though as metaverse creation tools keep evolving, this may change.
 
 As I’m getting ready to head to my next conference, here are some things I’ll be keeping in mind I wanted to share:
 
@@ -39,7 +39,7 @@ This may depend on your learning style, as some people absorb information best b
 
 Talks and workshops take up the bulk of a tech conference schedule, and for good reason - they give us a glimpse of interesting things others have learned or come across. This may be particular to the conference I attended, but in a nutshell, I learned how far web development has come, from tools that make our work easier and those that make the web experience richer and more expansive.
 
-As a newer developer, it also gave me a chance to assess what I know and how much I've come across in my journey so far in tech. For example, while listening in on a talk on understanding data for frontend developers, I realized the concepts were not as unfamiliar I had imagined it to be.
+As a newer developer, it also gave me a chance to assess what I know and how much I've come across in my journey so far in tech. For example, while listening in on a talk on understanding data for frontend developers, I realized the concepts were not as unfamiliar I had imagined them to be.
 
 ### Don't Forget About the #hallwaytrack
 
