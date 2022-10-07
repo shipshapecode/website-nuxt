@@ -4,8 +4,8 @@ categories:
   - devlife
   - developertips
   - community
-date: '2022-08-30'
-slug: conference-101
+date: '2022-09-30'
+slug: five-conference-takeaways
 title: '5 Takeaways From Attending My First Tech Conference'
 ---
 
